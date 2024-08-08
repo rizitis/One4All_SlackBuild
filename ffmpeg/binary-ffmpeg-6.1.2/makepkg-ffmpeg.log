@@ -1,0 +1,335 @@
+
+Thu Aug  8 21:58:00 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libavcodec.so	libavcodec.so.60.31.102
+usr/lib64/libavcodec.so.60	libavcodec.so.60.31.102
+usr/lib64/libavdevice.so	libavdevice.so.60.3.100
+usr/lib64/libavdevice.so.60	libavdevice.so.60.3.100
+usr/lib64/libavfilter.so	libavfilter.so.9.12.100
+usr/lib64/libavfilter.so.9	libavfilter.so.9.12.100
+usr/lib64/libavformat.so	libavformat.so.60.16.100
+usr/lib64/libavformat.so.60	libavformat.so.60.16.100
+usr/lib64/libavutil.so	libavutil.so.58.29.100
+usr/lib64/libavutil.so.58	libavutil.so.58.29.100
+usr/lib64/libpostproc.so	libpostproc.so.57.3.100
+usr/lib64/libpostproc.so.57	libpostproc.so.57.3.100
+usr/lib64/libswresample.so	libswresample.so.4.12.100
+usr/lib64/libswresample.so.4	libswresample.so.4.12.100
+usr/lib64/libswscale.so	libswscale.so.7.5.100
+usr/lib64/libswscale.so.7	libswscale.so.7.5.100
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libavcodec.so )
+( cd usr/lib64 ; ln -sf libavcodec.so.60.31.102 libavcodec.so )
+( cd usr/lib64 ; rm -rf libavcodec.so.60 )
+( cd usr/lib64 ; ln -sf libavcodec.so.60.31.102 libavcodec.so.60 )
+( cd usr/lib64 ; rm -rf libavdevice.so )
+( cd usr/lib64 ; ln -sf libavdevice.so.60.3.100 libavdevice.so )
+( cd usr/lib64 ; rm -rf libavdevice.so.60 )
+( cd usr/lib64 ; ln -sf libavdevice.so.60.3.100 libavdevice.so.60 )
+( cd usr/lib64 ; rm -rf libavfilter.so )
+( cd usr/lib64 ; ln -sf libavfilter.so.9.12.100 libavfilter.so )
+( cd usr/lib64 ; rm -rf libavfilter.so.9 )
+( cd usr/lib64 ; ln -sf libavfilter.so.9.12.100 libavfilter.so.9 )
+( cd usr/lib64 ; rm -rf libavformat.so )
+( cd usr/lib64 ; ln -sf libavformat.so.60.16.100 libavformat.so )
+( cd usr/lib64 ; rm -rf libavformat.so.60 )
+( cd usr/lib64 ; ln -sf libavformat.so.60.16.100 libavformat.so.60 )
+( cd usr/lib64 ; rm -rf libavutil.so )
+( cd usr/lib64 ; ln -sf libavutil.so.58.29.100 libavutil.so )
+( cd usr/lib64 ; rm -rf libavutil.so.58 )
+( cd usr/lib64 ; ln -sf libavutil.so.58.29.100 libavutil.so.58 )
+( cd usr/lib64 ; rm -rf libpostproc.so )
+( cd usr/lib64 ; ln -sf libpostproc.so.57.3.100 libpostproc.so )
+( cd usr/lib64 ; rm -rf libpostproc.so.57 )
+( cd usr/lib64 ; ln -sf libpostproc.so.57.3.100 libpostproc.so.57 )
+( cd usr/lib64 ; rm -rf libswresample.so )
+( cd usr/lib64 ; ln -sf libswresample.so.4.12.100 libswresample.so )
+( cd usr/lib64 ; rm -rf libswresample.so.4 )
+( cd usr/lib64 ; ln -sf libswresample.so.4.12.100 libswresample.so.4 )
+( cd usr/lib64 ; rm -rf libswscale.so )
+( cd usr/lib64 ; ln -sf libswscale.so.7.5.100 libswscale.so )
+( cd usr/lib64 ; rm -rf libswscale.so.7 )
+( cd usr/lib64 ; ln -sf libswscale.so.7.5.100 libswscale.so.7 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libpostproc.so.57'
+removed './usr/lib64/libavutil.so'
+removed './usr/lib64/libavdevice.so.60'
+removed './usr/lib64/libswresample.so'
+removed './usr/lib64/libswresample.so.4'
+removed './usr/lib64/libavfilter.so'
+removed './usr/lib64/libavdevice.so'
+removed './usr/lib64/libavcodec.so'
+removed './usr/lib64/libavformat.so.60'
+removed './usr/lib64/libavformat.so'
+removed './usr/lib64/libavfilter.so.9'
+removed './usr/lib64/libpostproc.so'
+removed './usr/lib64/libavutil.so.58'
+removed './usr/lib64/libswscale.so'
+removed './usr/lib64/libavcodec.so.60'
+removed './usr/lib64/libswscale.so.7'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/BUILDS/TEMPLATE.SLACKBUILDS/my_builds/ffmpeg/binary-ffmpeg-6.1.2/ffmpeg-6.1.2-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/ffmpeg
+usr/bin/ffplay
+usr/bin/ffprobe
+usr/doc/
+usr/doc/ffmpeg-6.1.2/
+usr/doc/ffmpeg-6.1.2/ffmpeg.SlackBuild
+usr/include/
+usr/include/libavcodec/
+usr/include/libavcodec/ac3_parser.h
+usr/include/libavcodec/adts_parser.h
+usr/include/libavcodec/avcodec.h
+usr/include/libavcodec/avdct.h
+usr/include/libavcodec/avfft.h
+usr/include/libavcodec/bsf.h
+usr/include/libavcodec/codec.h
+usr/include/libavcodec/codec_desc.h
+usr/include/libavcodec/codec_id.h
+usr/include/libavcodec/codec_par.h
+usr/include/libavcodec/d3d11va.h
+usr/include/libavcodec/defs.h
+usr/include/libavcodec/dirac.h
+usr/include/libavcodec/dv_profile.h
+usr/include/libavcodec/dxva2.h
+usr/include/libavcodec/jni.h
+usr/include/libavcodec/mediacodec.h
+usr/include/libavcodec/packet.h
+usr/include/libavcodec/qsv.h
+usr/include/libavcodec/vdpau.h
+usr/include/libavcodec/version.h
+usr/include/libavcodec/version_major.h
+usr/include/libavcodec/videotoolbox.h
+usr/include/libavcodec/vorbis_parser.h
+usr/include/libavcodec/xvmc.h
+usr/include/libavdevice/
+usr/include/libavdevice/avdevice.h
+usr/include/libavdevice/version.h
+usr/include/libavdevice/version_major.h
+usr/include/libavfilter/
+usr/include/libavfilter/avfilter.h
+usr/include/libavfilter/buffersink.h
+usr/include/libavfilter/buffersrc.h
+usr/include/libavfilter/version.h
+usr/include/libavfilter/version_major.h
+usr/include/libavformat/
+usr/include/libavformat/avformat.h
+usr/include/libavformat/avio.h
+usr/include/libavformat/version.h
+usr/include/libavformat/version_major.h
+usr/include/libavutil/
+usr/include/libavutil/adler32.h
+usr/include/libavutil/aes.h
+usr/include/libavutil/aes_ctr.h
+usr/include/libavutil/ambient_viewing_environment.h
+usr/include/libavutil/attributes.h
+usr/include/libavutil/audio_fifo.h
+usr/include/libavutil/avassert.h
+usr/include/libavutil/avconfig.h
+usr/include/libavutil/avstring.h
+usr/include/libavutil/avutil.h
+usr/include/libavutil/base64.h
+usr/include/libavutil/blowfish.h
+usr/include/libavutil/bprint.h
+usr/include/libavutil/bswap.h
+usr/include/libavutil/buffer.h
+usr/include/libavutil/camellia.h
+usr/include/libavutil/cast5.h
+usr/include/libavutil/channel_layout.h
+usr/include/libavutil/common.h
+usr/include/libavutil/cpu.h
+usr/include/libavutil/crc.h
+usr/include/libavutil/csp.h
+usr/include/libavutil/des.h
+usr/include/libavutil/detection_bbox.h
+usr/include/libavutil/dict.h
+usr/include/libavutil/display.h
+usr/include/libavutil/dovi_meta.h
+usr/include/libavutil/downmix_info.h
+usr/include/libavutil/encryption_info.h
+usr/include/libavutil/error.h
+usr/include/libavutil/eval.h
+usr/include/libavutil/executor.h
+usr/include/libavutil/ffversion.h
+usr/include/libavutil/fifo.h
+usr/include/libavutil/file.h
+usr/include/libavutil/film_grain_params.h
+usr/include/libavutil/frame.h
+usr/include/libavutil/hash.h
+usr/include/libavutil/hdr_dynamic_metadata.h
+usr/include/libavutil/hdr_dynamic_vivid_metadata.h
+usr/include/libavutil/hmac.h
+usr/include/libavutil/hwcontext.h
+usr/include/libavutil/hwcontext_cuda.h
+usr/include/libavutil/hwcontext_d3d11va.h
+usr/include/libavutil/hwcontext_drm.h
+usr/include/libavutil/hwcontext_dxva2.h
+usr/include/libavutil/hwcontext_mediacodec.h
+usr/include/libavutil/hwcontext_opencl.h
+usr/include/libavutil/hwcontext_qsv.h
+usr/include/libavutil/hwcontext_vaapi.h
+usr/include/libavutil/hwcontext_vdpau.h
+usr/include/libavutil/hwcontext_videotoolbox.h
+usr/include/libavutil/hwcontext_vulkan.h
+usr/include/libavutil/imgutils.h
+usr/include/libavutil/intfloat.h
+usr/include/libavutil/intreadwrite.h
+usr/include/libavutil/lfg.h
+usr/include/libavutil/log.h
+usr/include/libavutil/lzo.h
+usr/include/libavutil/macros.h
+usr/include/libavutil/mastering_display_metadata.h
+usr/include/libavutil/mathematics.h
+usr/include/libavutil/md5.h
+usr/include/libavutil/mem.h
+usr/include/libavutil/motion_vector.h
+usr/include/libavutil/murmur3.h
+usr/include/libavutil/opt.h
+usr/include/libavutil/parseutils.h
+usr/include/libavutil/pixdesc.h
+usr/include/libavutil/pixelutils.h
+usr/include/libavutil/pixfmt.h
+usr/include/libavutil/random_seed.h
+usr/include/libavutil/rational.h
+usr/include/libavutil/rc4.h
+usr/include/libavutil/replaygain.h
+usr/include/libavutil/ripemd.h
+usr/include/libavutil/samplefmt.h
+usr/include/libavutil/sha.h
+usr/include/libavutil/sha512.h
+usr/include/libavutil/spherical.h
+usr/include/libavutil/stereo3d.h
+usr/include/libavutil/tea.h
+usr/include/libavutil/threadmessage.h
+usr/include/libavutil/time.h
+usr/include/libavutil/timecode.h
+usr/include/libavutil/timestamp.h
+usr/include/libavutil/tree.h
+usr/include/libavutil/twofish.h
+usr/include/libavutil/tx.h
+usr/include/libavutil/uuid.h
+usr/include/libavutil/version.h
+usr/include/libavutil/video_enc_params.h
+usr/include/libavutil/video_hint.h
+usr/include/libavutil/xtea.h
+usr/include/libpostproc/
+usr/include/libpostproc/postprocess.h
+usr/include/libpostproc/version.h
+usr/include/libpostproc/version_major.h
+usr/include/libswresample/
+usr/include/libswresample/swresample.h
+usr/include/libswresample/version.h
+usr/include/libswresample/version_major.h
+usr/include/libswscale/
+usr/include/libswscale/swscale.h
+usr/include/libswscale/version.h
+usr/include/libswscale/version_major.h
+usr/lib64/
+usr/lib64/libavcodec.so.60.31.102
+usr/lib64/libavdevice.so.60.3.100
+usr/lib64/libavfilter.so.9.12.100
+usr/lib64/libavformat.so.60.16.100
+usr/lib64/libavutil.so.58.29.100
+usr/lib64/libpostproc.so.57.3.100
+usr/lib64/libswresample.so.4.12.100
+usr/lib64/libswscale.so.7.5.100
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libavcodec.pc
+usr/lib64/pkgconfig/libavdevice.pc
+usr/lib64/pkgconfig/libavfilter.pc
+usr/lib64/pkgconfig/libavformat.pc
+usr/lib64/pkgconfig/libavutil.pc
+usr/lib64/pkgconfig/libpostproc.pc
+usr/lib64/pkgconfig/libswresample.pc
+usr/lib64/pkgconfig/libswscale.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/ffmpeg-all.1.gz
+usr/man/man1/ffmpeg-bitstream-filters.1.gz
+usr/man/man1/ffmpeg-codecs.1.gz
+usr/man/man1/ffmpeg-devices.1.gz
+usr/man/man1/ffmpeg-filters.1.gz
+usr/man/man1/ffmpeg-formats.1.gz
+usr/man/man1/ffmpeg-protocols.1.gz
+usr/man/man1/ffmpeg-resampler.1.gz
+usr/man/man1/ffmpeg-scaler.1.gz
+usr/man/man1/ffmpeg-utils.1.gz
+usr/man/man1/ffmpeg.1.gz
+usr/man/man1/ffplay-all.1.gz
+usr/man/man1/ffplay.1.gz
+usr/man/man1/ffprobe-all.1.gz
+usr/man/man1/ffprobe.1.gz
+usr/man/man3/
+usr/man/man3/libavcodec.3.gz
+usr/man/man3/libavdevice.3.gz
+usr/man/man3/libavfilter.3.gz
+usr/man/man3/libavformat.3.gz
+usr/man/man3/libavutil.3.gz
+usr/man/man3/libswresample.3.gz
+usr/man/man3/libswscale.3.gz
+usr/share/
+usr/share/ffmpeg/
+usr/share/ffmpeg/examples/
+usr/share/ffmpeg/examples/Makefile
+usr/share/ffmpeg/examples/README
+usr/share/ffmpeg/examples/avio_http_serve_files.c
+usr/share/ffmpeg/examples/avio_list_dir.c
+usr/share/ffmpeg/examples/avio_read_callback.c
+usr/share/ffmpeg/examples/decode_audio.c
+usr/share/ffmpeg/examples/decode_filter_audio.c
+usr/share/ffmpeg/examples/decode_filter_video.c
+usr/share/ffmpeg/examples/decode_video.c
+usr/share/ffmpeg/examples/demux_decode.c
+usr/share/ffmpeg/examples/encode_audio.c
+usr/share/ffmpeg/examples/encode_video.c
+usr/share/ffmpeg/examples/extract_mvs.c
+usr/share/ffmpeg/examples/filter_audio.c
+usr/share/ffmpeg/examples/hw_decode.c
+usr/share/ffmpeg/examples/mux.c
+usr/share/ffmpeg/examples/qsv_decode.c
+usr/share/ffmpeg/examples/qsv_transcode.c
+usr/share/ffmpeg/examples/remux.c
+usr/share/ffmpeg/examples/resample_audio.c
+usr/share/ffmpeg/examples/scale_video.c
+usr/share/ffmpeg/examples/show_metadata.c
+usr/share/ffmpeg/examples/transcode.c
+usr/share/ffmpeg/examples/transcode_aac.c
+usr/share/ffmpeg/examples/vaapi_encode.c
+usr/share/ffmpeg/examples/vaapi_transcode.c
+usr/share/ffmpeg/ffprobe.xsd
+usr/share/ffmpeg/libvpx-1080p.ffpreset
+usr/share/ffmpeg/libvpx-1080p50_60.ffpreset
+usr/share/ffmpeg/libvpx-360p.ffpreset
+usr/share/ffmpeg/libvpx-720p.ffpreset
+usr/share/ffmpeg/libvpx-720p50_60.ffpreset
+
+Slackware package /home/omen/BUILDS/TEMPLATE.SLACKBUILDS/my_builds/ffmpeg/binary-ffmpeg-6.1.2/ffmpeg-6.1.2-x86_64-1_rtz.tlz created.
+

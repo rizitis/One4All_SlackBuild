@@ -1,0 +1,567 @@
+#!/bin/bash
+
+Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
+   # All rights reserved 08/2024
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+   cd $(dirname "$0") ; CWD=$(pwd)
+
+##########################-slackdesc-########################################
+# If you have slackdesc installed you need these, else ignore them and comment them.
+# https://slack-desc.sourceforge.net/
+# example of use:
+   mkdesc="$(which slackdesc)" || true
+   Homepage="https://ffmpeg.org"
+   SortDesc="software to record, convert and stream audio and video"
+   LongDesc="FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. It supports the most obscure ancient formats up to the cutting edge. It includes libavcodec, the leading audio/video codec library."
+#############################################################################
+   SRCURL="https://ffmpeg.org/releases/ffmpeg-6.1.2.tar.xz"
+   COMPRESS="tar.xz"
+   SRCNAM=ffmpeg
+   PRGNAM=ffmpeg
+   VERSION=6.1.2
+
+   wget -O $SRCNAM-$VERSION.$COMPRESS "$SRCURL"
+
+   BUILD=${BUILD:-1}
+   TAG=${TAG:-_rtz}
+   PKGTYPE=${PKGTYPE:-tlz}   
+   PKG=$CWD/package-$PRGNAM
+   TMP=$CWD/work
+   OUTPUT=$CWD/binary-$PRGNAM-$VERSION
+   
+   DATE="$(date)"
+   NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
+   DOCS="ABOUT* AUTHORS BUGS ChangeLog* COPYING CREDITS FAQ GPL* HACKING \
+      LICENSE MAINTAINERS NEWS README* TODO"
+   
+   if [ -z "$ARCH" ]; then
+  case "$( uname -m )" in
+    i?86) ARCH=i586 ;;
+    arm*) ARCH=arm ;;
+       *) ARCH=$( uname -m ) ;;
+  esac
+fi
+
+if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
+  exit 0
+fi 
+
+  if [ "$ARCH" = "i586" ]; then
+  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "i686" ]; then
+  SLKCFLAGS="-O2 -march=i686 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "x86_64" ]; then
+  SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+else
+  SLKCFLAGS="-O2"
+  LIBDIRSUFFIX=""
+fi
+
+
+
+  set -e
+
+   prepare_build(){
+	rm -rf "$PKG" "$OUTPUT" "$COMPRESS" "$CWD"/error-"$PRGNAM".log
+	mkdir -p "$TMP" "$PKG" "$OUTPUT"
+	rm -rf "$TMP"/$PRGNAM-$VERSION
+	
+	get_out () {
+		if [ -f $1 ] ; then
+			case $1 in
+				*.tar.bz2)   tar xvjf $1    ;;
+				*.tar.gz)    tar xvzf $1    ;;
+				*.tar.xz)    tar xvJf $1    ;;
+				*.bz2)       bunzip2 $1     ;;
+				*.rar)       rar x $1       ;;
+				*.gz)        gunzip $1      ;;
+				*.tar)       tar xvf $1     ;;
+				*.tbz2)      tar xvjf $1    ;;
+				*.tgz)       tar xvzf $1    ;;
+				*.zip)       unzip $1       ;;
+				*.Z)         uncompress $1  ;;
+				*.7z)        7z x $1        ;;
+				*)           echo "don't know how to extract '$1'..." ;;
+			esac
+		else
+			echo "'$1' is not a valid file!"
+		fi
+       }
+   	cd "$TMP"
+   get_out "$CWD"/"$SRCNAM"-"$VERSION"."$COMPRESS" || exit
+   cd $SRCNAM-$VERSION || exit
+   }
+
+   patch_build() {
+   # GCC 14 "fix":
+SLKCFLAGS="$SLKCFLAGS -Wno-error=int-conversion -Wno-error=incompatible-pointer-types"
+
+# If PulseAudio is not found, use the _alsa $TAG and disable it in the build:
+if [ ! -r /usr/lib${LIBDIRSUFFIX}/pkgconfig/libpulse.pc ]; then
+  TAG="_alsa"
+  PULSEAUDIO=no
+fi
+
+zcat "$CWD"/add-av_stream_get_first_dts_for-chromium.patch.gz | patch -p1 --verbose || exit 1
+#zcat "$CWD"/ffmpeg.vulkan.diff.gz | patch -p1 --verbose || exit 1
+patch -p0 < "$CWD"/configure.patch
+zcat $CWD/FFmpeg-devel-v2-1-2-lavc-vaapi_decode-Make-it-possible-to-send-multiple-slice-params-buffers.patch.gz | patch -p1 --verbose || exit 1
+zcat $CWD/FFmpeg-devel-v2-2-2-lavc-vaapi_av1-Avoid-sending-the-same-slice-buffer-multiple-times.patch.gz | patch -p1 --verbose || exit 1
+   }
+
+   chrooting(){
+   	chown -R root:root .
+	find -L . \
+	  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+	  -o -perm 511 \) -exec chmod 755 {} \; -o \
+	  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+	  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+   }
+
+   auto_build() {
+	CFLAGS="$SLKCFLAGS" \
+	CXXFLAGS="$SLKCFLAGS" \
+	./configure \
+  --prefix=/usr \
+  --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --shlibdir=/usr/lib${LIBDIRSUFFIX} \
+  --docdir=/usr/doc/$PKGNAM-$VERSION/html \
+  --mandir=/usr/man \
+  --disable-debug \
+  --enable-shared \
+  --disable-static \
+  --enable-gpl \
+  --enable-version3 \
+  --arch=$ARCH \
+  $non_free \
+  $aac \
+  $chromaprint \
+  $decklink \
+  $fdk \
+  $fontconfig \
+  $freetype \
+  $fribidi \
+  $gnutls \
+  $ladspa \
+  $libass \
+  $libbluray \
+  $libbs2b \
+  $libcaca \
+  $libcdio \
+  $libcelt \
+  $libdc1394 \
+  $libflite \
+  $libfrei0r \
+  $libgme \
+  $libgsm \
+  $libiec61883 \
+  $libilbc \
+  $libmodplug \
+  $libopenal \
+  $libopencv \
+  $libopus \
+  $librtmp \
+  $libsnappy \
+  $libspeex \
+  $libssh \
+  $libtheora \
+  $libtwolame \
+  $libv4l2 \
+  $libvidstab \
+  $libvorbis \
+  $libvpx \
+  $libwebp \
+  $libx264 \
+  $libx265 \
+  $libxvid \
+  $libzmq \
+  $libzvbi \
+  $mp3lame \
+  $opencl \
+  $opencore_amr \
+  $opengl \
+  $openjpeg \
+  $pulse \
+  $rubberband \
+  $samba \
+  $ssl \
+  $tesseract \
+  $liblensfun \
+  $libxml2 \
+  $librsvg \
+  $vulkan \
+  $libjack \
+  $libglslang \
+  $libdrm \
+  $libaom \
+  $lv2 \
+  $libdav1d \
+  $rabbitmq \
+  $libcodec2 \
+  $libsoxr \
+  $libsrt \
+  $libzimg \
+  $vapoursynth \
+  $libshaderc \
+  $libgcrypt \
+  $libplacebo \
+  $lcms2 \
+  $gmp \
+  $libaribb24 \
+  $libjxl \
+  $librist \
+  $libshine \
+  $svtav1 \
+  $libmysofa \
+  $libxavs2 \
+  $libvmaf || exit 1
+
+make $NUMJOBS || make || exit 1
+make install DESTDIR=$PKG || exit 1
+make install-man DESTDIR=$PKG || exit 1
+   }
+   
+   meson_build(){
+	  mkdir build
+	  cd build
+	  CFLAGS="$SLKCFLAGS" \
+	  CXXFLAGS="$SLKCFLAGS" \
+	  meson .. \
+	    --buildtype=release \
+	    --infodir=/usr/info \
+	    --libdir=/usr/lib${LIBDIRSUFFIX} \
+	    --localstatedir=/var \
+	    --mandir=/usr/man \
+	    --prefix=/usr \
+	    --sysconfdir=/etc \
+	    -Dstrip=true
+	  "${NINJA:=ninja}" "$NUMJOBS"
+	  DESTDIR=$PKG $NINJA install
+	cd ..
+   }
+   
+   python_build(){
+	python2 setup.py install --root="$PKG"
+	python3 setup.py install --root="$PKG"
+
+	python3 -m build --wheel --no-isolation
+	python3 -m installer --destdir "$PKG" dist/*.whl
+   }
+   
+   cmake_build(){
+	  mkdir -p build
+cd build
+  cmake \
+    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
+    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DLIB_SUFFIX=${LIBDIRSUFFIX} \
+    -DEXCLUDE_PLPLOT=true \
+    -DCMAKE_BUILD_TYPE=Release ..
+  make
+  make install/strip DESTDIR=$PKG
+cd ..
+   }
+   
+   haskel_build(){
+	CFLAGS="$SLKCFLAGS" \
+	CXXFLAGS="$SLKCFLAGS" \
+	  runghc Setup configure \
+	  --prefix=/usr \
+	  --libdir=/usr/lib${LIBDIRSUFFIX} \
+	  --libsubdir=ghc-"${GHC_VERSION}"/$SRCNAM-$VERSION \
+	  --enable-shared \
+	  --enable-library-profiling \
+	  --docdir=/usr/doc/$PRGNAM-$VERSION
+
+
+	  runghc Setup build
+	  runghc Setup haddock
+	  runghc Setup copy --destdir="$PKG"
+	  runghc Setup register --gen-pkg-config
+
+	PKGCONFD=/usr/lib${LIBDIRSUFFIX}/ghc-${GHC_VERSION}/package.conf.d
+	PKGID=$( grep -E "^id: " $SRCNAM-$VERSION.conf | cut -d" " -f2 )
+	  mkdir -p "$PKG"/"$PKGCONFD"
+	  mv $SRCNAM-$VERSION.conf "$PKG"/"$PKGCONFD"/"$PKGID".conf
+   }
+   
+   custom_build(){
+   # Select one of these for HTTPS support
+ssl=""          ; [ "${OPENSSL:-no}" != "no" ]  && \
+  { ssl="--enable-openssl" ; non_free="--enable-nonfree" ; }
+gnutls=""     ; [ "${GNUTLS:-yes}" != "no" ]      && gnutls="--enable-gnutls"
+
+# Select one of these for RTMP[E] support
+librtmp=""    ; [ "${RTMP:-no}" != "no" ]         && librtmp="--enable-librtmp"
+gmp=""        ; [ "${GMP:-no}" != "no" ]          && gmp="--enable-gmp"
+libgcrypt=""  ; [ "${GCRYPT:-yes}" != "no" ]      && libgcrypt="--enable-gcrypt"
+
+# Select one of these for GLSL->SPIRV compilation (Required for Vulkan support)
+libglslang="" ; [ "${GLSLANG:-no}" != "no" ]      && libglslang="--enable-libglslang"
+shaderc=""    ; [ "${SHADERC:-yes}" != "no" ]     && libshaderc="--enable-libshaderc"
+
+libx264=""    ; [ "${X264:-no}" != "no" ]         && libx264="--enable-libx264"
+libcelt=""    ; [ "${CELT:-no}" != "no" ]         && libcelt="--enable-libcelt"
+libdc1394=""  ; [ "${DC1394:-no}" != "no" ]       && libdc1394="--enable-libdc1394"
+libgsm=""     ; [ "${GSM:-no}" != "no" ]          && libgsm="--enable-libgsm"
+libxvid=""    ; [ "${XVID:-no}" != "no" ]         && libxvid="--enable-libxvid"
+libiec61883=""; [ "${IEC61883:-no}" != "no" ]     && libiec61883="--enable-libiec61883"
+libilbc=""    ; [ "${ILBC:-no}" != "no" ]         && libilbc="--enable-libilbc"
+libmodplug="" ; [ "${MODPLUG:-no}" != "no" ]      && libmodplug="--enable-libmodplug"
+libtwolame="" ; [ "${TWOLAME:-no}" != "no" ]      && libtwolame="--enable-libtwolame"
+ladspa=""     ; [ "${LADSPA:-no}" != "no" ]       && ladspa="--enable-ladspa"
+libflite=""   ; [ "${FLITE:-no}" != "no" ]        && libflite="--enable-libflite"
+libx265=""    ; [ "${X265:-no}" != "no" ]         && libx265="--enable-libx265"
+libzvbi=""    ; [ "${ZVBI:-no}" != "no" ]         && libzvbi="--enable-libzvbi"
+libgme=""     ; [ "${GME:-no}" != "no" ]          && libgme="--enable-libgme"
+libsnappy=""  ; [ "${SNAPPY:-no}" != "no" ]       && libsnappy="--enable-libsnappy"
+libzmq=""     ; [ "${ZMQ:-no}" != "no" ]          && libzmq="--enable-libzmq"
+libbs2b=""    ; [ "${BS2B:-no}" != "no" ]         && libbs2b="--enable-libbs2b"
+rubberband="" ; [ "${RUBBERBAND:-no}" != "no" ]   && rubberband="--enable-librubberband"
+tesseract=""  ; [ "${TESSERACT:-no}" != "no" ]    && tesseract="--enable-libtesseract"
+libjack=""    ; [ "${JACK:-no}" != "no" ]         && libjack="--enable-libjack"
+lv2=""        ; [ "${LV2:-no}" != "no" ]          && lv2="--enable-lv2"
+rabbitmq=""   ; [ "${RABBITMQ:-no}" != "no" ]     && rabbitmq="--enable-librabbitmq"
+libcodec2=""  ; [ "${CODEC2:-no}" != "no" ]       && libcodec2="--enable-libcodec2"
+libsoxr=""    ; [ "${SOXR:-no}" != "no" ]         && libsoxr="--enable-libsoxr"
+libsrt=""     ; [ "${SRT:-no}" != "no" ]          && libsrt="--enable-libsrt"
+libzimg=""    ; [ "${ZIMG:-no}" != "no" ]         && libzimg="--enable-libzimg"
+chromaprint=""  ; [ "${CHROMAPRINT:-no}" != "no" ] && chromaprint="--enable-chromaprint"
+vapoursynth=""  ; [ "${VAPOURSYNTH:-no}" != "no" ] && vapoursynth="--enable-vapoursynth"
+opencore_amr="" ; [ "${OPENCORE:-no}" != "no" ] && \
+  opencore_amr="--enable-libopencore-amrnb --enable-libopencore-amrwb"
+fdk=""          ; [ "${FDK_AAC:-no}" != "no" ]  && \
+  { fdk="--enable-libfdk-aac"; non_free="--enable-nonfree" ; }
+decklink=""   ; [ "${DECKLINK:-no}" != "no" ]   && \
+  { decklink="--enable-decklink" ; \
+    SLKCFLAGS="$SLKCFLAGS -I/usr/include/decklink" ; }
+libaribb24="" ; [ "${ARIBB24:-no}" != "no" ]     && libaribb24="--enable-libaribb24"
+libjxl=""     ; [ "${JXL:-no}" != "no" ]         && libjxl="--enable-libjxl"
+librist=""    ; [ "${RIST:-no}" != "no" ]        && librist="--enable-librist"
+libshine=""   ; [ "${SHINE:-no}" != "no" ]       && libshine="--enable-libshine"
+svtav1=""     ; [ "${SVTAV1:-no}" != "no" ]      && svtav1="--enable-libsvtav1"
+libmysofa=""  ; [ "${MYSOFA:-no}" != "no" ]      && libmysofa="--enable-libmysofa"
+libxavs2=""   ; [ "${XAVS2:-no}" != "no" ]       && libxavs2="--enable-libxavs2"
+libvmaf=""    ; [ "${VMAF:-no}" != "no" ]         && libvmaf="--enable-libvmaf"
+
+# Needs older opencv than we ship. See https://trac.ffmpeg.org/ticket/7059
+libopencv=""  ; [ "${OPENCV:-no}" != "no" ]       && libopencv="--enable-libopencv"
+
+# Needs newer lensfun than we ship. See https://trac.ffmpeg.org/ticket/9112
+liblensfun="" ; [ "${LENSFUN:-no}" != "no" ]     && liblensfun="--enable-liblensfun"
+
+# Default enabled features:
+fontconfig="" ; [ "${FONTCONFIG:-yes}" != "no" ]  && fontconfig="--enable-libfontconfig"
+freetype=""   ; [ "${FREETYPE:-yes}" != "no" ]    && freetype="--enable-libfreetype"
+fribidi=""    ; [ "${FRIBIDI:-yes}" != "no" ]     && fribidi="--enable-libfribidi"
+libaom=""     ; [ "${AOM:-yes}" != "no" ]          && libaom="--enable-libaom"
+libbluray=""  ; [ "${BLURAY:-yes}" != "no" ]      && libbluray="--enable-libbluray"
+libcaca=""    ; [ "${CACA:-yes}" != "no" ]        && libcaca="--enable-libcaca"
+libcdio=""    ; [ "${LIBCDIO:-yes}" != "no" ]     && libcdio="--enable-libcdio"
+libdav1d=""   ; [ "${DAV1D:-yes}" != "no" ]        && libdav1d="--enable-libdav1d"
+libssh=""     ; [ "${LIBSSH:-yes}" != "no" ]      && libssh="--enable-libssh"
+libtheora=""  ; [ "${THEORA:-yes}" != "no" ]      && libtheora="--enable-libtheora"
+libv4l2=""    ; [ "${V4L2:-yes}" != "no" ]        && libv4l2="--enable-libv4l2"
+libvorbis=""  ; [ "${VORBIS:-yes}" != "no" ]      && libvorbis="--enable-libvorbis"
+libvpx=""     ; [ "${VPX:-yes}" != "no" ]         && libvpx="--enable-libvpx"
+libwebp=""    ; [ "${WEBP:-yes}" != "no" ]        && libwebp="--enable-libwebp"
+mp3lame=""    ; [ "${LAME:-yes}" != "no" ]        && mp3lame="--enable-libmp3lame"
+opencl=""     ; [ "${OPENCL:-yes}" != "no" ]      && opencl="--enable-opencl"
+opengl=""     ; [ "${OPENGL:-yes}" != "no" ]      && opengl="--enable-opengl"
+openjpeg=""   ; [ "${JP2:-yes}" != "no" ]         && openjpeg="--enable-libopenjpeg"
+pulse=""      ; [ "${PULSEAUDIO:-yes}" != "no" ]  && pulse="--enable-libpulse"
+samba=""      ; [ "${SAMBA:-yes}" != "no" ]       && samba="--enable-libsmbclient"
+libfrei0r=""  ; [ "${FREI0R:-yes}" != "no" ]      && libfrei0r="--enable-frei0r"
+libspeex=""   ; [ "${SPEEX:-yes}" != "no" ]       && libspeex="--enable-libspeex"
+libopenal=""  ; [ "${OPENAL:-yes}" != "no" ]      && libopenal="--enable-openal"
+libopus=""    ; [ "${OPUS:-yes}" != "no" ]        && libopus="--enable-libopus"
+libvidstab="" ; [ "${VIDSTAB:-yes}" != "no" ]     && libvidstab="--enable-libvidstab"
+libxml2=""    ; [ "${LIBXML2:-yes}" != "no" ]     && libxml2="--enable-libxml2"
+librsvg=""    ; [ "${LIBRSVG:-yes}" != "no" ]     && librsvg="--enable-librsvg"
+libdrm=""     ; [ "${LIBDRM:-yes}" != "no" ]      && libdrm="--enable-libdrm"
+vulkan=""     ; [ "${VULKAN:-yes}" != "no" ]      && vulkan="--enable-vulkan"
+libass=""     ; [ "${ASS:-yes}" != "no" ]         && libass="--enable-libass"
+libplacebo="" ; [ "${PLACEBO:-yes}" != "no" ]     && libplacebo="--enable-libplacebo"
+lcms2=""      ; [ "${LCMS2:-yes}" != "no" ]       && lcms2="--enable-lcms2"
+
+# No default patent encumbered features:
+aac=""        ; [ "${AAC:-no}" = "no" ]           && aac="--disable-encoder=aac"
+   }
+   
+   after_build(){
+	  mkdir -p "$PKG"/usr/doc/$PRGNAM-$VERSION
+	  cp -a "$DOCS" "$PKG"/usr/doc/$PRGNAM-"$VERSION" || true
+	  cat "$CWD"/$PRGNAM.SlackBuild > "$PKG"/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+	  find "$PKG"/usr/doc/$PRGNAM-$VERSION -type f -exec chmod 644 {} \;
+
+	  mkdir -p "$PKG"/install
+if [ -f "$CWD"/doinst.sh ]; then
+	  cat "$CWD"/doinst.sh >> "$PKG"/install/doinst.sh
+	elif [ -f "$CWD"/doinst.sh.gz ]; then
+	  zcat "$CWD"/doinst.sh.gz >> "$PKG"/install/doinst.sh
+	else
+	  cat <<MKINS >> "$PKG"/install/doinst.sh
+config() {
+  for infile in \$1; do
+    NEW="\$infile"
+    OLD="\$(dirname \$NEW)/\$(basename \$NEW .new)"
+    if [ ! -r \$OLD ]; then
+      mv \$NEW \$OLD
+    elif [ "\$(cat \$OLD | md5sum)" = "\$(cat \$NEW | md5sum)" ]; then
+      rm \$NEW
+    fi
+  done
+}
+
+preserve_perms() {
+  NEW="\$1"
+  OLD="\$(dirname \$NEW)/\$(basename \$NEW .new)"
+  if [ -e \$OLD ]; then
+    cp -a \$OLD \${NEW}.incoming
+    cat \$NEW > \${NEW}.incoming
+    mv \${NEW}.incoming \$NEW
+  fi
+  config \$NEW
+}
+
+
+preserve_perms etc/rc.d/rc.INIT.new
+config etc/configfile.new
+
+
+if [ -x usr/bin/update-desktop-database ]; then
+  chroot . /usr/bin/update-desktop-database usr/share/applications > /dev/null 2>&1
+fi
+
+if [ -d usr/share/icons/hicolor ]; then
+  if [ -x /usr/bin/gtk-update-icon-cache ]; then
+    chroot . /usr/bin/gtk-update-icon-cache -f -t usr/share/icons/hicolor 1> /dev/null 2> /dev/null
+  fi
+fi
+
+if [ -e usr/share/glib-2.0/schemas ]; then
+  if [ -x /usr/bin/glib-compile-schemas ]; then
+    /usr/bin/glib-compile-schemas usr/share/glib-2.0/schemas >/dev/null 2>&1
+  fi
+fi 
+
+if [ -x usr/bin/update-mime-database ]; then
+  chroot . /usr/bin/update-mime-database usr/share/mime >/dev/null 2>&1
+fi
+
+MKINS
+fi
+	if [ -f "$CWD"/slack-desc ]; then
+	  cat "$CWD"/slack-desc > "$PKG"/install/slack-desc
+	 elif [ -x "$mkdesc" ]; then
+	  $mkdesc "$PRGNAM" "$SortDesc" "$LongDesc" "$Homepage" > "$PKG"/install/slack-desc
+	 else
+	  echo " "
+	  echo "Not slack-desc found or created   :-("
+	  echo "You must have a slack-desc in $CWD"
+	  echo "Or you must create one. Please read lines: 25-33 of $PRGNAM.SlackBuild"
+	  echo " "
+	  exit 1
+	fi 
+	
+	if [ -f "$CWD"/slack-required ]; then
+	  cat "$CWD"/slack-required > "$PKG"/install/slack-required
+	fi
+	
+	if [ -f "$CWD"/slack-suggests ]; then
+	  cat "$CWD"/slack-suggests > "$PKG"/install/slack-suggests
+	fi
+	
+	if [ -f "$CWD"/slack-conflicts ]; then
+	  cat "$CWD"/slack-conflicts > "$PKG"/install/slack-conflicts
+	fi
+	
+	if [ -d "$PKG"/usr/man ]; then
+	  ( cd "$PKG"/usr/man
+	  find . -type f -exec gzip -9 {} \;
+	  for i in $(find . -type l) ; do ln -s $(readlink "$i").gz "$i".gz ; rm "$i" ; done
+	  ) 
+	fi
+
+	if [ -d "$PKG"/usr/info ]; then
+	  gzip -9 "$PKG"/usr/info/*.info
+	  rm -f "$PKG"/usr/info/dir
+	fi
+
+   }
+   
+   package_build() {
+	  rm -f "$PKG"/{,usr/}lib${LIBDIRSUFFIX}/*.la
+	  find "$PKG" | xargs file | grep -e "executable" -e "shared object" | grep ELF \
+	  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+	  
+	  find "$PKG" -name perllocal.pod \
+	  -o -name ".packlist" \
+	  -o -name "*.bs" \
+	  | xargs rm -f
+
+	  cd "$PKG" || exit
+	  makepkg -l y -c n "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
+	  echo "$DATE $Packager" | sed -e '1r /dev/stdin' "$OUTPUT/makepkg-${PRGNAM}.log" > "$OUTPUT/makepkg-${PRGNAM}.log.tmp" && mv "$OUTPUT/makepkg-${PRGNAM}.log.tmp" "$OUTPUT/makepkg-${PRGNAM}.log"
+
+	  
+	  cd "$OUTPUT" || exit
+	  md5sum $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".md5
+	  cat "$PKG"/install/slack-desc | grep "^${PRGNAM}" > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".txt
+	if [ -f "$PKG"/install/slack-required ]; then
+	  cat "$PKG"/install/slack-required > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG".dep 
+	fi
+   }
+   
+   clean_src(){
+	cd $CWD || exit
+	rm -r package-"$PRGNAM" work *.$COMPRESS 
+   }
+
+   pkg_install(){
+	upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
+   }
+
+# default most of the times
+prepare_build
+patch_build
+custom_build
+chrooting
+
+# uncomment only what you need.
+
+auto_build
+#meson_build
+#python_build
+#cmake_build
+#haskel_build
+
+
+after_build
+package_build
+
+#pkg_install
+clean_src
+
