@@ -1,0 +1,11 @@
+gtk-fortran: gtk-fortran (bindings to the Fortran language)
+gtk-fortran:
+gtk-fortran: The gtk-fortran project provides bindings to the Fortran language
+gtk-fortran: for the GTK libraries (GTK, Cairo, GdkPixbuf, GLib...) With
+gtk-fortran: gtk-fortran you can build GTK graphical user interfaces (GUI) use
+gtk-fortran: GdkPixbuf to draw bitmaps, you can use Cairo to make vectorial
+gtk-fortran: drawing,also integrate scientific plotting via its additional PLplot
+gtk-fortran: gtk-fortran has numerous functions of the generalist GLib library.
+gtk-fortran:
+gtk-fortran:
+gtk-fortran: https://github.com/vmagnin/gtk-fortran/wiki

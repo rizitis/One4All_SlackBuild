@@ -1,0 +1,117 @@
+
+Thu Aug  8 19:58:43 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/BUILDS/TEMPLATE.SLACKBUILDS/my_builds/conjure.SlackBuild/binary-Conjure-0.1.2/Conjure-0.1.2-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-conflicts
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/doc/
+usr/doc/Conjure-0.1.2/
+usr/doc/Conjure-0.1.2/Conjure.SlackBuild
+usr/local/
+usr/local/bin/
+usr/local/bin/Conjure
+usr/share/
+usr/share/appdata/
+usr/share/appdata/io.github.nate_xyz.Conjure.appdata.xml
+usr/share/applications/
+usr/share/applications/io.github.nate_xyz.Conjure.desktop
+usr/share/conjure/
+usr/share/conjure/conjure/
+usr/share/conjure/conjure.gresource
+usr/share/conjure/conjure/__init__.py
+usr/share/conjure/conjure/app.py
+usr/share/conjure/conjure/magic.py
+usr/share/conjure/conjure/main.py
+usr/share/conjure/conjure/util.py
+usr/share/conjure/conjure/views/
+usr/share/conjure/conjure/views/__init__.py
+usr/share/conjure/conjure/views/blob_image.py
+usr/share/conjure/conjure/views/command_panel.py
+usr/share/conjure/conjure/views/commands/
+usr/share/conjure/conjure/views/commands/__init__.py
+usr/share/conjure/conjure/views/commands/amount_method.py
+usr/share/conjure/conjure/views/commands/angle.py
+usr/share/conjure/conjure/views/commands/auto_threshold.py
+usr/share/conjure/conjure/views/commands/blur.py
+usr/share/conjure/conjure/views/commands/color_alpha.py
+usr/share/conjure/conjure/views/commands/color_threshold.py
+usr/share/conjure/conjure/views/commands/color_threshold_start_stop.py
+usr/share/conjure/conjure/views/commands/crop.py
+usr/share/conjure/conjure/views/commands/factor.py
+usr/share/conjure/conjure/views/commands/fx.py
+usr/share/conjure/conjure/views/commands/kmeans.py
+usr/share/conjure/conjure/views/commands/low_high.py
+usr/share/conjure/conjure/views/commands/low_high_white_black.py
+usr/share/conjure/conjure/views/commands/noise.py
+usr/share/conjure/conjure/views/commands/ordered_dither.py
+usr/share/conjure/conjure/views/commands/polaroid.py
+usr/share/conjure/conjure/views/commands/posterize.py
+usr/share/conjure/conjure/views/commands/quantize.py
+usr/share/conjure/conjure/views/commands/radius.py
+usr/share/conjure/conjure/views/commands/radius_sigma.py
+usr/share/conjure/conjure/views/commands/radius_sigma_amount_threshold.py
+usr/share/conjure/conjure/views/commands/radius_sigma_angle.py
+usr/share/conjure/conjure/views/commands/radius_sigma_threshold.py
+usr/share/conjure/conjure/views/commands/radius_sigma_xy.py
+usr/share/conjure/conjure/views/commands/resize.py
+usr/share/conjure/conjure/views/commands/rotate.py
+usr/share/conjure/conjure/views/commands/shade.py
+usr/share/conjure/conjure/views/commands/sharpen.py
+usr/share/conjure/conjure/views/commands/statistic.py
+usr/share/conjure/conjure/views/commands/threshold.py
+usr/share/conjure/conjure/views/commands/threshold_softness.py
+usr/share/conjure/conjure/views/commands/thresholds.py
+usr/share/conjure/conjure/views/commands/wave.py
+usr/share/conjure/conjure/views/commands/width_height_offset.py
+usr/share/conjure/conjure/views/display_image.py
+usr/share/conjure/conjure/views/dropped_image.py
+usr/share/conjure/conjure/views/history_panel.py
+usr/share/conjure/conjure/views/image_drop_page.py
+usr/share/conjure/conjure/views/save_dialog.py
+usr/share/conjure/conjure/window.py
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/io.github.nate_xyz.Conjure.gschema.xml
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/io.github.nate_xyz.Conjure.svg
+usr/share/icons/hicolor/symbolic/
+usr/share/icons/hicolor/symbolic/apps/
+usr/share/icons/hicolor/symbolic/apps/io.github.nate_xyz.Conjure-symbolic.svg
+usr/share/locale/
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/conjure.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/conjure.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/conjure.mo
+WARNING:  zero length file usr/share/conjure/conjure/__init__.py
+
+Slackware package /home/omen/BUILDS/TEMPLATE.SLACKBUILDS/my_builds/conjure.SlackBuild/binary-Conjure-0.1.2/Conjure-0.1.2-x86_64-1_rtz.tlz created.
+

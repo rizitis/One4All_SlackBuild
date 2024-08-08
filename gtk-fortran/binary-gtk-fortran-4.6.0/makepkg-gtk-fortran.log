@@ -1,0 +1,89 @@
+
+Thu Aug  8 19:28:44 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libgtk-4-fortran.so	libgtk-4-fortran.so.4.6.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libgtk-4-fortran.so )
+( cd usr/lib64 ; ln -sf libgtk-4-fortran.so.4.6.0 libgtk-4-fortran.so )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libgtk-4-fortran.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/BUILDS/TEMPLATE.SLACKBUILDS/my_builds/gtk-fortran/binary-gtk-fortran-4.6.0/gtk-fortran-4.6.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gtk-4-fortran
+usr/bin/gtk-4-fortran-modscan
+usr/bin/gtk-4-fortran-pymodscan
+usr/doc/
+usr/doc/gtk-fortran-4.6.0/
+usr/doc/gtk-fortran-4.6.0/gtk-fortran.SlackBuild
+usr/include/
+usr/include/gtk-4-fortran/
+usr/include/gtk-4-fortran/cairo.mod
+usr/include/gtk-4-fortran/g.mod
+usr/include/gtk-4-fortran/gdk.mod
+usr/include/gtk-4-fortran/gdk_events.mod
+usr/include/gtk-4-fortran/gdk_pixbuf.mod
+usr/include/gtk-4-fortran/gdk_pixbuf_hl.mod
+usr/include/gtk-4-fortran/graphene.mod
+usr/include/gtk-4-fortran/gsk.mod
+usr/include/gtk-4-fortran/gtk.mod
+usr/include/gtk-4-fortran/gtk_draw_hl.mod
+usr/include/gtk-4-fortran/gtk_hl.mod
+usr/include/gtk-4-fortran/gtk_hl_assistant.mod
+usr/include/gtk-4-fortran/gtk_hl_button.mod
+usr/include/gtk-4-fortran/gtk_hl_chooser.mod
+usr/include/gtk-4-fortran/gtk_hl_combobox.mod
+usr/include/gtk-4-fortran/gtk_hl_container.mod
+usr/include/gtk-4-fortran/gtk_hl_dialog.mod
+usr/include/gtk-4-fortran/gtk_hl_entry.mod
+usr/include/gtk-4-fortran/gtk_hl_infobar.mod
+usr/include/gtk-4-fortran/gtk_hl_misc.mod
+usr/include/gtk-4-fortran/gtk_hl_progress.mod
+usr/include/gtk-4-fortran/gtk_hl_spin_slider.mod
+usr/include/gtk-4-fortran/gtk_hl_tree.mod
+usr/include/gtk-4-fortran/gtk_os_dependent.mod
+usr/include/gtk-4-fortran/gtk_sup.mod
+usr/include/gtk-4-fortran/pango.mod
+usr/lib64/
+usr/lib64/libgtk-4-fortran.a
+usr/lib64/libgtk-4-fortran.so.4.6.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/gtk-4-fortran.pc
+usr/share/
+usr/share/gtk-fortran/
+usr/share/gtk-fortran/gtk-4-enumerators.lis
+usr/share/gtk-fortran/gtk-4-fortran-index.csv
+usr/share/man/
+usr/share/man/man1/
+usr/share/man/man1/gtk-4-fortran-modscan.1
+WARNING:  /usr/share/man (with possibly not gzipped man pages) detected
+
+Slackware package /home/omen/BUILDS/TEMPLATE.SLACKBUILDS/my_builds/gtk-fortran/binary-gtk-fortran-4.6.0/gtk-fortran-4.6.0-x86_64-1_rtz.tlz created.
+
