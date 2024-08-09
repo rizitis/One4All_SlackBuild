@@ -251,6 +251,14 @@ perl Build.PL \
 	  mv $SRCNAM-$VERSION.conf "$PKG"/"$PKGCONFD"/"$PKGID".conf
    }
    
+   cargo_build(){
+   CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
+
+cargo_build --release 
+# add here INSTALL -Dm* commands.
+   }
+   
    custom_build(){
     cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
 	cmake --build ./build --config Release --target all
@@ -401,7 +409,7 @@ chrooting
 #cmake_build
 #perl_build
 #haskel_build
-
+#cargo_build
 custom_build
 
 after_build
