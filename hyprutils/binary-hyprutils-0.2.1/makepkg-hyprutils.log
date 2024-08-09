@@ -1,0 +1,73 @@
+
+Fri Aug  9 14:15:01 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libhyprutils.so	libhyprutils.so.1
+usr/lib64/libhyprutils.so.1	libhyprutils.so.0.2.1
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libhyprutils.so )
+( cd usr/lib64 ; ln -sf libhyprutils.so.1 libhyprutils.so )
+( cd usr/lib64 ; rm -rf libhyprutils.so.1 )
+( cd usr/lib64 ; ln -sf libhyprutils.so.0.2.1 libhyprutils.so.1 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libhyprutils.so.1'
+removed './usr/lib64/libhyprutils.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/hyprutils/binary-hyprutils-0.2.1/hyprutils-0.2.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/hyprutils-0.2.1/
+usr/doc/hyprutils-0.2.1/hyprutils.SlackBuild
+usr/include/
+usr/include/hyprutils/
+usr/include/hyprutils/math/
+usr/include/hyprutils/math/Box.hpp
+usr/include/hyprutils/math/Edges.hpp
+usr/include/hyprutils/math/Misc.hpp
+usr/include/hyprutils/math/Region.hpp
+usr/include/hyprutils/math/Vector2D.hpp
+usr/include/hyprutils/memory/
+usr/include/hyprutils/memory/SharedPtr.hpp
+usr/include/hyprutils/memory/WeakPtr.hpp
+usr/include/hyprutils/path/
+usr/include/hyprutils/path/Path.hpp
+usr/include/hyprutils/signal/
+usr/include/hyprutils/signal/Listener.hpp
+usr/include/hyprutils/signal/Signal.hpp
+usr/include/hyprutils/string/
+usr/include/hyprutils/string/String.hpp
+usr/include/hyprutils/string/VarList.hpp
+usr/include/hyprutils/utils/
+usr/include/hyprutils/utils/ScopeGuard.hpp
+usr/lib64/
+usr/lib64/libhyprutils.so.0.2.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/hyprutils.pc
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/hyprutils/binary-hyprutils-0.2.1/hyprutils-0.2.1-x86_64-1_rtz.tlz created.
+
