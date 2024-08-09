@@ -1,0 +1,11 @@
+coppwr: coppwr (Low level PipeWire control GUI)
+coppwr:
+coppwr: coppwr is a tool that provides low level control over the PipeWire
+coppwr: multimedia server.It aims to expose and provide as many ways to
+coppwr: inspect and control the many aspects of the PipeWire multimedia
+coppwr: server as possible.It can be used as a diagnostic tool for PipeWire
+coppwr: and to help develop software that interacts with it. End-users of
+coppwr: PipeWire that want to configure it should look into simpler tools
+coppwr: recommended by the PipeWire devs.
+coppwr:
+coppwr: Homepage: https://github.com/dimtpap/coppwr
