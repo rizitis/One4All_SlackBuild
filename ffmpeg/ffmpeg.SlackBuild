@@ -552,9 +552,6 @@ prepare_build
 patch_build
 custom_build
 chrooting
-
-# uncomment only what you need.
-
 auto_build
 #meson_build
 #python_build
