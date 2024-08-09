@@ -258,6 +258,26 @@ CXXFLAGS="$SLKCFLAGS" \
 cargo_build --release 
 # add here INSTALL -Dm* commands.
    }
+
+
+# golang_build dont need root access in Slackware if your setup is as SlackBuilds.org suggest for go.
+# examples for golang_build...
+   golang_build(){
+	  export CGO_CPPFLAGS="${CPPFLAGS}"
+	  export CGO_CFLAGS="${CFLAGS}"
+	  export CGO_CXXFLAGS="${CXXFLAGS}"
+	  export CGO_LDFLAGS="${LDFLAGS}"
+	  export GOFLAGS="???"
+	  CGO_ENABLED=0 \
+	  GOOS=linux \
+	  GOARCH=amd64 \
+	  go build \
+	  -ldflags='-w -s -extldflags "-static"' \
+	  ????
+
+  mkdir -p "$PKG"/usr/bin/
+  install -Dm755 "$PRGNAM"-"$VERSION"/? "$PKG"/usr/bin/"$PRGNAM"
+  }
    
    custom_build(){
     cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
@@ -410,6 +430,7 @@ chrooting
 #perl_build
 #haskel_build
 #cargo_build
+#golang_build  # PROBABLY NOT ROOT FOR GO...
 custom_build
 
 after_build
