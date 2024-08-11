@@ -1,0 +1,64 @@
+
+Sun Aug 11 13:53:30 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/openseachest/binary-openseachest-v23.12/openseachest-v23.12-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/openSeaChest_Basics
+usr/bin/openSeaChest_Configure
+usr/bin/openSeaChest_Erase
+usr/bin/openSeaChest_Firmware
+usr/bin/openSeaChest_Format
+usr/bin/openSeaChest_GenericTests
+usr/bin/openSeaChest_Info
+usr/bin/openSeaChest_Logs
+usr/bin/openSeaChest_NVMe
+usr/bin/openSeaChest_PassthroughTest
+usr/bin/openSeaChest_PowerControl
+usr/bin/openSeaChest_Reservations
+usr/bin/openSeaChest_SMART
+usr/bin/openSeaChest_Security
+usr/bin/openSeaChest_ZBD
+usr/doc/
+usr/doc/openseachest-v23.12/
+usr/doc/openseachest-v23.12/openseachest.SlackBuild
+usr/man/
+usr/man/man8/
+usr/man/man8/openSeaChest.8.gz
+usr/man/man8/openSeaChest_Basics.8.gz
+usr/man/man8/openSeaChest_Configure.8.gz
+usr/man/man8/openSeaChest_Erase.8.gz
+usr/man/man8/openSeaChest_Firmware.8.gz
+usr/man/man8/openSeaChest_Format.8.gz
+usr/man/man8/openSeaChest_GenericTests.8.gz
+usr/man/man8/openSeaChest_Info.8.gz
+usr/man/man8/openSeaChest_Logs.8.gz
+usr/man/man8/openSeaChest_NVMe.8.gz
+usr/man/man8/openSeaChest_PassthroughTest.8.gz
+usr/man/man8/openSeaChest_PowerControl.8.gz
+usr/man/man8/openSeaChest_Reservations.8.gz
+usr/man/man8/openSeaChest_SMART.8.gz
+usr/man/man8/openSeaChest_Security.8.gz
+usr/man/man8/openSeaChest_ZBD.8.gz
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/openseachest/binary-openseachest-v23.12/openseachest-v23.12-x86_64-1_rtz.tlz created.
+
