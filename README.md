@@ -45,6 +45,10 @@ Optional but very useful dependency is [slackdesc](https://slack-desc.sourceforg
       <td>Easy create/modify slack-desc and doinst.sh</td>
       <td>Flexibly for special and complex builds</td>
    </tr>
+   <tr>
+      <td>Provide:package.t?z.sig package.t?z.txt package.t?z.md5 package_build.log</td>
+      <td>Support:sla </td>
+   </tr>
 </table>
 
 > You can also run SlackBuild in user mode if needed (google-golang tec...) and only for makepkg using sudo...
