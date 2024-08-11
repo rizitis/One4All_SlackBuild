@@ -38,6 +38,19 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
    VERSION=0.2.1
    GITCHEK=
 
+   BUILD=${BUILD:-1}
+   TAG=${TAG:-_rtz}
+   PKGTYPE=${PKGTYPE:-tlz}   
+   PKG=$CWD/package-$PRGNAM
+   TMP=$CWD/work
+   OUTPUT=$CWD/binary-$PRGNAM-$VERSION
+     
+   DATE="$(date)"
+   NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
+   DOCS="ABOUT* AUTHORS BUGS ChangeLog* COPYING CREDITS FAQ GPL* HACKING \
+      LICENSE MAINTAINERS NEWS README* TODO"
+      
+download_src(){
    if [[ $COMPRESS != "git" ]]; then
   wget -O $SRCNAM-$VERSION.$COMPRESS "$SRCURL"
 else
@@ -49,19 +62,7 @@ else
     git checkout $GITCHEK
   fi
 fi
-
-   BUILD=${BUILD:-1}
-   TAG=${TAG:-_rtz}
-   PKGTYPE=${PKGTYPE:-tlz}   
-   PKG=$CWD/package-$PRGNAM
-   TMP=$CWD/work
-   OUTPUT=$CWD/binary-$PRGNAM-$VERSION
-   
-   DATE="$(date)"
-   NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
-   DOCS="ABOUT* AUTHORS BUGS ChangeLog* COPYING CREDITS FAQ GPL* HACKING \
-      LICENSE MAINTAINERS NEWS README* TODO"
-   
+ }  
    if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586 ;;
@@ -127,6 +128,7 @@ if [[ $COMPRESS != "git" ]]; then
    get_out "$CWD"/"$SRCNAM"-"$VERSION"."$COMPRESS" || exit
    cd $SRCNAM-$VERSION || cd $PRGNAM-$VERSION ||exit
   else
+  mv "$CWD"/"$SRCNAM" "$TMP"
    cd $SRCNAM || cd $PRGNAM ||exit
 fi
    }
@@ -428,6 +430,7 @@ fi
  } 
 
 # default most of the times
+download_src
 prepare_build
 chrooting
 
