@@ -1,8 +1,17 @@
 # One4All_SlackBuild
 
 
-> Personal [SlackBuild Template](https://github.com/rizitis/One4All_SlackBuild/blob/main/TEMPLATE.SlackBuild) for autotools,cmake,meson,python,haskel,perl,cargo,google-golang... (all in one)
-> the present is our past.
+> Personal [SlackBuild Template](https://github.com/rizitis/One4All_SlackBuild/blob/main/TEMPLATE.SlackBuild) for:
+<p>[1]: autotools <br>
+[2]: cmake<br>
+[3]: meson<br>
+[4]: python <br>
+[5]: haskel<br>
+[6]: perl<br>
+[7]: cargo<br>
+[8]: google-golang <br>
+[9]: custom and complex builds<br>
+
 
 *One TEMPLATE for most of SlackBuilds...
 Here are some optional builds...*
@@ -37,3 +46,5 @@ Optional but very useful dependency is [slackdesc](https://slack-desc.sourceforg
       <td>Flexibly for special and complex builds</td>
    </tr>
 </table>
+
+> You can also run SlackBuild in user mode if needed (google-golang tec...) and only for makepkg using sudo...
