@@ -282,9 +282,7 @@ cargo_build --release
   }
    
    custom_build(){
-    cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
-	cmake --build ./build --config Release --target all
-DESTDIR=$PKG cmake --install build
+    true
   }
    
    after_build(){
@@ -424,8 +422,8 @@ fi
    
    
   sig_package(){
-#  Add you id_rsa example:
-  prikey_path="~/.ssh/id_rsa"
+#  Add you id_rsa, example:
+  prikey_path="/home/root/.ssh/id_rsa"
  openssl dgst -sha256 -sign $prikey_path  -out "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".sig "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 
  } 
 
