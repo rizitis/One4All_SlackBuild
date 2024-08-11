@@ -1,5 +1,4 @@
 # One4All_SlackBuild
-<<<<<<< HEAD
 
 
 > Personal [SlackBuild Template](https://github.com/rizitis/One4All_SlackBuild/blob/main/TEMPLATE.SlackBuild) for autotools,cmake,meson,python,haskel,perl,cargo,google-golang... (all in one)
@@ -47,5 +46,5 @@ Personal SlackBuild Template for autotools,cmake,meson,python,haskel,perl,cargo,
 Here are some optional builds...
   
   Optional but very useful dependency is [slackdesc](https://slack-desc.sourceforge.net/)
->>>>>>> 3456788a6b15f57da7dea595d48ca41c5a905bdf
+
 
