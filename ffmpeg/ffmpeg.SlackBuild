@@ -126,6 +126,7 @@ if [ ! -r /usr/lib${LIBDIRSUFFIX}/pkgconfig/libpulse.pc ]; then
   PULSEAUDIO=no
 fi
 
+#patch -p1 < $CWD/ffmpeg-7.0.2-chromium_method-1.patch || exit
 zcat "$CWD"/add-av_stream_get_first_dts_for-chromium.patch.gz | patch -p1 --verbose || exit 1
 zcat "$CWD"/ffmpeg.vulkan.diff.gz | patch -p1 --verbose || exit 1
 zcat $CWD/FFmpeg-devel-v2-1-2-lavc-vaapi_decode-Make-it-possible-to-send-multiple-slice-params-buffers.patch.gz | patch -p1 --verbose || exit 1
@@ -144,7 +145,7 @@ zcat $CWD/FFmpeg-devel-v2-2-2-lavc-vaapi_av1-Avoid-sending-the-same-slice-buffer
    auto_build() {
 	CFLAGS="$SLKCFLAGS" \
 	CXXFLAGS="$SLKCFLAGS" \
-	./configure \
+    PKG_CONFIG_PATH=/usr/lib64/pkgconfig/libplacebo.pc ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --shlibdir=/usr/lib${LIBDIRSUFFIX} \

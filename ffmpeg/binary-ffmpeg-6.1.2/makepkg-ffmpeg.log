@@ -1,5 +1,5 @@
 
-Thu Aug  8 21:58:00 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Sun Aug 11 13:26:13 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -89,7 +89,7 @@ special permissions, then DO NOT reset them here!
 Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
-Creating Slackware package:  /home/omen/BUILDS/TEMPLATE.SLACKBUILDS/my_builds/ffmpeg/binary-ffmpeg-6.1.2/ffmpeg-6.1.2-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/ffmpeg/binary-ffmpeg-6.1.2/ffmpeg-6.1.2-x86_64-1_rtz.tlz
 
 ./
 install/
@@ -101,6 +101,42 @@ usr/bin/ffmpeg
 usr/bin/ffplay
 usr/bin/ffprobe
 usr/doc/
+usr/doc/-6.1.2/
+usr/doc/-6.1.2/html/
+usr/doc/-6.1.2/html/bootstrap.min.css
+usr/doc/-6.1.2/html/community.html
+usr/doc/-6.1.2/html/default.css
+usr/doc/-6.1.2/html/developer.html
+usr/doc/-6.1.2/html/faq.html
+usr/doc/-6.1.2/html/fate.html
+usr/doc/-6.1.2/html/ffmpeg-all.html
+usr/doc/-6.1.2/html/ffmpeg-bitstream-filters.html
+usr/doc/-6.1.2/html/ffmpeg-codecs.html
+usr/doc/-6.1.2/html/ffmpeg-devices.html
+usr/doc/-6.1.2/html/ffmpeg-filters.html
+usr/doc/-6.1.2/html/ffmpeg-formats.html
+usr/doc/-6.1.2/html/ffmpeg-protocols.html
+usr/doc/-6.1.2/html/ffmpeg-resampler.html
+usr/doc/-6.1.2/html/ffmpeg-scaler.html
+usr/doc/-6.1.2/html/ffmpeg-utils.html
+usr/doc/-6.1.2/html/ffmpeg.html
+usr/doc/-6.1.2/html/ffplay-all.html
+usr/doc/-6.1.2/html/ffplay.html
+usr/doc/-6.1.2/html/ffprobe-all.html
+usr/doc/-6.1.2/html/ffprobe.html
+usr/doc/-6.1.2/html/general.html
+usr/doc/-6.1.2/html/git-howto.html
+usr/doc/-6.1.2/html/libavcodec.html
+usr/doc/-6.1.2/html/libavdevice.html
+usr/doc/-6.1.2/html/libavfilter.html
+usr/doc/-6.1.2/html/libavformat.html
+usr/doc/-6.1.2/html/libavutil.html
+usr/doc/-6.1.2/html/libswresample.html
+usr/doc/-6.1.2/html/libswscale.html
+usr/doc/-6.1.2/html/mailing-list-faq.html
+usr/doc/-6.1.2/html/nut.html
+usr/doc/-6.1.2/html/platform.html
+usr/doc/-6.1.2/html/style.min.css
 usr/doc/ffmpeg-6.1.2/
 usr/doc/ffmpeg-6.1.2/ffmpeg.SlackBuild
 usr/include/
@@ -331,5 +367,5 @@ usr/share/ffmpeg/libvpx-360p.ffpreset
 usr/share/ffmpeg/libvpx-720p.ffpreset
 usr/share/ffmpeg/libvpx-720p50_60.ffpreset
 
-Slackware package /home/omen/BUILDS/TEMPLATE.SLACKBUILDS/my_builds/ffmpeg/binary-ffmpeg-6.1.2/ffmpeg-6.1.2-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/ffmpeg/binary-ffmpeg-6.1.2/ffmpeg-6.1.2-x86_64-1_rtz.tlz created.
 
