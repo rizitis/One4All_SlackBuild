@@ -418,6 +418,14 @@ fi
    pkg_install(){
 	upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
    }
+   
+   
+   
+  sig_package(){
+#  Add you id_rsa example:
+  prikey_path="~/.ssh/id_rsa"
+ openssl dgst -sha256 -sign $prikey_path  -out "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".sig "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 
+ } 
 
 # default most of the times
 prepare_build
@@ -436,6 +444,7 @@ custom_build
 after_build
 package_build
 
-#pkg_install
+pkg_install
 clean_src
+#sig_package
 
