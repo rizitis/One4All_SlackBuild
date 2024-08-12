@@ -56,3 +56,6 @@ Optional but very useful dependency is [slackdesc](https://slack-desc.sourceforg
 ##### NOTE: 
 *Althought its stable and builds  packages fine, its a personal work in progress.<br>
 When I found something useful it added in TEMPLATE.SlackBuild.*
+
+##### Inspired
+Thanks to:<br> [pete4abw/makesbld](https://github.com/pete4abw/makesbld) <br> [Alien's SlackBuild Toolkit](https://alien.slackbook.org/AST/)<br> [Martin Lefebvre](https://www.slackwiki.com/Different_Approach_To_Buildscripts)<br>[Robby Workman](https://www.slackwiki.com/Writing_A_SlackBuild_Script) <br>and [SlackBuildsOrg](https://github.com/SlackBuildsOrg/templates)
