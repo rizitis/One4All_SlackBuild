@@ -47,8 +47,53 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
      
    DATE="$(date)"
    NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
-   DOCS="ABOUT* AUTHORS BUGS ChangeLog* COPYING CREDITS FAQ GPL* HACKING \
-      LICENSE MAINTAINERS NEWS README* TODO"
+   DOCS=\
+"ABOUT \
+ABOUT-NLS \
+ANNOUNCE \
+AUTHORS \
+*BUGS* \
+ChangeLog \
+Changelog \
+CHANGELOG \
+Changes \
+CHANGES \
+COPYING \
+COPYRIGHT \
+CREDITS \
+CONFIGURATION* \
+CONTRIBUTING* \
+CONTRIBUTORS \
+doc \
+docs* \
+Doc \
+Docs* \
+*FAQ* \
+FEATURES \
+FILES \
+GPL* \
+HACKING \
+History \
+HISTORY \
+index.ht* \
+*INDEX* \
+INSTALL* \
+License* \
+LICENSE* \
+LSM \
+MANIFEST \
+NEWS \
+*README* \
+*Readme* \
+*RELEASE* \
+RELNOTES \
+Roadmap \
+ROADMAP \
+SITES \
+THANKS \
+TIPS \
+TODO \
+VERSION"
       
 download_src(){
    if [[ $COMPRESS != "git" ]]; then
