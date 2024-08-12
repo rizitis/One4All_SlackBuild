@@ -36,7 +36,7 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
    # IF you need:git checkout, else leave it empty.    
    GITCHEK=
    # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z
-   #OR repos: cvn, cvs, git
+   #OR repos: cvn, cvs, git, lftp
    COMPRESS="tar.gz"
    SRCNAM=coppwr
    PRGNAM=coppwr
@@ -455,6 +455,9 @@ download_src(){
   elif [[ $COMPRESS = "cvs" ]]; then
     CVS="$(which cvs)"
     $CVS -z3 -f "$SRCURL"
+  elif [[ $COMPRESS = "lftp" ]]; then
+    LFTP="$(which lftp)"
+    $LFTP -c mirror "$SRCURL"
   else
     wget -O "$SRCNAM"-"$VERSION"."$COMPRESS" "$SRCURL"
   fi
@@ -489,7 +492,7 @@ download_src(){
        }
    	
         cd "$TMP" || exit 
-        if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" ]]; then
+        if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" ]]; then
           get_out "$CWD"/"$SRCNAM"-"$VERSION"."$COMPRESS" || exit
            cd $SRCNAM-$VERSION || cd $PRGNAM-$VERSION ||exit
           else
