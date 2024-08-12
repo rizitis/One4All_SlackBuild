@@ -52,3 +52,7 @@ Optional but very useful dependency is [slackdesc](https://slack-desc.sourceforg
 </table>
 
 > You can also run SlackBuild in user mode if needed (google-golang etc...) and only for makepkg using sudo...
+
+##### NOTE: 
+*Althought its stable and builds  packages fine, its a personal work in progress.<br>
+When I found something useful it added in TEMPLATE.SlackBuild.*
