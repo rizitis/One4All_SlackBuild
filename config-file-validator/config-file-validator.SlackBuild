@@ -31,11 +31,11 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
 #   SortDesc="performs syntax validation"
 #   LongDesc="Config-file-validator only performs syntax validation.We are working toward adding support for schema validation in future releases.The config-file-validator is built as a statically linked binary the statically-linked binary can be moved to a location on your operating system PATH."
 #############################################################################
-   SRCURL="https://github.com/Boeing/config-file-validator/archive/refs/tags/v1.6.0.tar.gz"
+   SRCURL="https://github.com/Boeing/config-file-validator/archive/refs/tags/v1.7.0.tar.gz"
    COMPRESS="tar.gz"
    SRCNAM=config-file-validator
    PRGNAM=config-file-validator
-   VERSION=1.6.0
+   VERSION=1.7.0
    GITCHEK=
 
    if [[ $COMPRESS != "git" ]]; then
