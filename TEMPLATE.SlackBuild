@@ -253,9 +253,12 @@ CXXFLAGS="$SLKCFLAGS" \
           }
 
 
-        preserve_perms etc/rc.d/rc.INIT.new
-        config etc/configfile.new
+#        preserve_perms etc/rc.d/rc.INIT.new
+#        config etc/configfile.new
 
+        if [ -x /usr/bin/fc-cache ]; then
+          /usr/bin/fc-cache -fv /usr/share/fonts/
+        fi
 
         if [ -x usr/bin/update-desktop-database ]; then
           chroot . /usr/bin/update-desktop-database usr/share/applications > /dev/null 2>&1
