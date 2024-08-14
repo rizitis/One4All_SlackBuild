@@ -27,20 +27,21 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
 # https://slack-desc.sourceforge.net/
 # example of use:
    mkdesc="$(which slackdesc)" || true
-   Homepage="Homepage: https://github.com/dimtpap/coppwr"
-   SortDesc="Low level PipeWire control GUI"
-   LongDesc="coppwr is a tool that provides low level control over the PipeWire multimedia server.It aims to expose and provide as many ways to inspect and control the many aspects of the PipeWire multimedia server as possible.It can be used as a diagnostic tool for PipeWire and to help develop software that interacts with it. End-users of PipeWire that want to configure it should look into simpler tools recommended by the PipeWire devs."
+   Homepage="Homepage: https://github.com/sugarlabs/sugar-toolkit-gtk3"
+            #|--------------------------------------|#
+   SortDesc="services and a set of GTK+ widgets"
+   LongDesc="Sugar Toolkit provides services and a set of GTK+ widgets to build activities and other Sugar components on Linux based computers.This is the GTK+ 3 binding of the Sugar Toolkit."
 #############################################################################
 # EDIT FOLLOWING AS NEEDED:
-   SRCURL="https://github.com/dimtpap/coppwr/archive/refs/tags/1.6.0.tar.gz"
+   SRCURL="https://github.com/sugarlabs/sugar-toolkit-gtk3/archive/refs/tags/v0.121.tar.gz"
    # IF you need:git checkout, else leave it empty.    
    GITCHEK=
    # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z
    #OR repos: cvn, cvs, git, lftp
    COMPRESS="tar.gz"
-   SRCNAM=coppwr
-   PRGNAM=coppwr
-   VERSION=1.6.0
+   SRCNAM=sugar-toolkit-gtk3
+   PRGNAM=sugar-toolkit-gtk3
+   VERSION=0.121
 
    BUILD=${BUILD:-1}
    TAG=${TAG:-_rtz}
@@ -212,7 +213,9 @@ CXXFLAGS="$SLKCFLAGS" \
   }
    
    custom_build(){
-    true
+    ./autogen.sh
+    make
+        make install DESTDIR=$PKG
   }
    
    after_build(){
@@ -321,7 +324,9 @@ MKINS
 
    }
    
+   
    package_build() {
+   cd $PKG || exit 66
 	  rm -f "$PKG"/{,usr/}lib${LIBDIRSUFFIX}/*.la
 	  find "$PKG" | xargs file | grep -e "executable" -e "shared object" | grep ELF \
 	  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
@@ -396,7 +401,7 @@ fi
      
    DATE="$(date)"
    NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
-   DOCS=\
+DOCS=\
 "ABOUT \
 ABOUT-NLS \
 ANNOUNCE \
@@ -472,27 +477,44 @@ download_src(){
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
 	rm -rf "$TMP"/$PRGNAM-$VERSION
 	
-	get_out () {
-		if [ -f $1 ] ; then
-			case $1 in
-				*.tar.bz2)   tar xvjf $1    ;;
-				*.tar.gz)    tar xvzf $1    ;;
-				*.tar.xz)    tar xvJf $1    ;;
-				*.bz2)       bunzip2 $1     ;;
-				*.rar)       rar x $1       ;;
-				*.gz)        gunzip $1      ;;
-				*.tar)       tar xvf $1     ;;
-				*.tbz2)      tar xvjf $1    ;;
-				*.tgz)       tar xvzf $1    ;;
-				*.zip)       unzip $1       ;;
-				*.Z)         uncompress $1  ;;
-				*.7z)        7z x $1        ;;
-				*)           echo "don't know how to extract '$1'..." ;;
-			esac
-		else
-			echo "'$1' is not a valid file!"
-		fi
-       }
+	get_out() {
+    if [ -f "$1" ] ; then
+        case "$1" in
+            *.tar.bz2)  tar xvjf "$1" ;;
+            *.tar.gz)   tar xvzf "$1" ;;
+            *.tar.xz)   tar xvJf "$1" ;;
+            *.bz2)      bunzip2 "$1"  ;;
+            *.rar)      rar x "$1"    ;;
+            *.gz)       gunzip "$1"   ;;
+            *.tar)      tar xvf "$1"  ;;
+            *.tbz2)     tar xvjf "$1" ;;
+            *.tgz)      tar xvzf "$1" ;;
+            *.zip)      unzip "$1"    ;;
+            *.Z)        uncompress "$1" ;;
+            *.7z)       7z x "$1"     ;;
+            *)          echo "Error: Don't know how to extract '$1'." ;;
+        esac
+    elif [ -n "$SRCNAM" ] && [ -n "$VERSION" ] && [ -f "$SRCNAM-$VERSION" ]; then
+        case "$SRCNAM-$VERSION" in
+            *.tar.bz2)  tar xvjf "$SRCNAM-$VERSION" ;;
+            *.tar.gz)   tar xvzf "$SRCNAM-$VERSION" ;;
+            *.tar.xz)   tar xvJf "$SRCNAM-$VERSION" ;;
+            *.bz2)      bunzip2 "$SRCNAM-$VERSION"  ;;
+            *.rar)      rar x "$SRCNAM-$VERSION"    ;;
+            *.gz)       gunzip "$SRCNAM-$VERSION"   ;;
+            *.tar)      tar xvf "$SRCNAM-$VERSION"  ;;
+            *.tbz2)     tar xvjf "$SRCNAM-$VERSION" ;;
+            *.tgz)      tar xvzf "$SRCNAM-$VERSION" ;;
+            *.zip)      unzip "$SRCNAM-$VERSION"    ;;
+            *.Z)        uncompress "$SRCNAM-$VERSION" ;;
+            *.7z)       7z x "$SRCNAM-$VERSION"     ;;
+            *)          echo "Error: Don't know how to extract '$SRCNAM-$VERSION'." ;;
+        esac
+    else
+        echo "Error: '$1' is not a valid file!"
+    fi
+}
+
    	
         cd "$TMP" || exit 
         if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" ]]; then
@@ -517,15 +539,13 @@ chrooting
 #cmake_build
 #perl_build
 #haskel_build
-cargo_build
+#cargo_build
 #golang_build
-#custom_build
+custom_build
 
 # default most of times #
 after_build
 package_build
 clean_src
 #pkg_install
-#sig_package
-
-
+sig_package
