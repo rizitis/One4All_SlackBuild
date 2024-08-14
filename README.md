@@ -28,6 +28,8 @@ Here are some optional builds...*
 | hyprutils | custom | git clone |
 | mozjs129 | mach+custom | tar.xz |
 | openSeaChest | meson |git+ SourceCode_With_Submodules.tar.xz |
+| obs-studio | cmake |git clone+tar.gz |
+
 
 
 #### REQUIRED

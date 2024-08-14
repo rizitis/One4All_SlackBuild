@@ -1,0 +1,11 @@
+obs-studio: obs-studio (video capturing,recording, streaming...)
+obs-studio:
+obs-studio: OBS Studio is software designed for capturing, compositing,
+obs-studio: encoding, recording, and streaming video content, efficiently.It's
+obs-studio: distributed under the GNU General Public License v2 (or any later
+obs-studio: version) - see the accompanying COPYING file for more details.
+obs-studio:
+obs-studio:
+obs-studio:
+obs-studio:
+obs-studio: Homepage: https://obsproject.com/
