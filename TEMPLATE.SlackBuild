@@ -187,15 +187,7 @@ CXXFLAGS="$SLKCFLAGS" \
 /usr/bin/cargo build --release 
 
         install -Dm755 "target/release/$PRGNAM" "$PKG/usr/bin/$PRGNAM"
-        install -Dm644 "assets/io.github.dimtpap.coppwr.desktop" "$PKG/usr/share/applications/io.github.dimtpap.coppwr.desktop"
-	install -Dm644 "assets/io.github.dimtpap.coppwr.metainfo.xml" "$PKG/usr/share/metainfo/io.github.dimtpap.coppwr.metainfo.xml"
-	install -Dm644 "assets/icon/scalable.svg" "$PKG/usr/share/icons/hicolor/scalable/apps/io.github.dimtpap.coppwr.svg"
-	install -Dm644 "assets/icon/512.png" "$PKG/usr/share/icons/hicolor/512x512/apps/io.github.dimtpap.coppwr.png"
-	install -Dm644 "assets/icon/256.png" "$PKG/usr/share/icons/hicolor/256x256/apps/io.github.dimtpap.coppwr.png"
-	install -Dm644 "assets/icon/128.png" "$PKG/usr/share/icons/hicolor/128x128/apps/io.github.dimtpap.coppwr.png"
-	install -Dm644 "assets/icon/64.png" "$PKG/usr/share/icons/hicolor/64x64/apps/io.github.dimtpap.coppwr.png"
-	install -Dm644 "assets/icon/48.png" "$PKG/usr/share/icons/hicolor/48x48/apps/io.github.dimtpap.coppwr.png"
-	install -Dm644 "assets/icon/32.png" "$PKG/usr/share/icons/hicolor/32x32/apps/io.github.dimtpap.coppwr.png"
+        # rest of commands...
 
    }
 
