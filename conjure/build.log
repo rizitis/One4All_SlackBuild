@@ -1,0 +1,453 @@
+Starting build process...
+--2024-08-16 21:40:02--  https://github.com/nate-xyz/conjure/archive/refs/tags/v0.1.2.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/nate-xyz/conjure/tar.gz/refs/tags/v0.1.2 [following]
+--2024-08-16 21:40:03--  https://codeload.github.com/nate-xyz/conjure/tar.gz/refs/tags/v0.1.2
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.9
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘conjure-0.1.2.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  421K
+    50K .......... .......... .......... .......... ..........  841K
+   100K .......... .......... .......... .......... .......... 5.58M
+   150K .......... .......... .......... .......... .......... 6.99M
+   200K .......... .......... .......... .......... ..........  986K
+   250K .......... .......... .......... .......... .......... 5.44M
+   300K .......... .......... .......... .......... .......... 6.60M
+   350K .......... .......... .......... .......... ..........  326K
+   400K .......... .......... .......... .......... .......... 56.2M
+   450K .......... .......... .......... .......... .......... 62.5M
+   500K .......... .......... .......... .......... .......... 55.2M
+   550K .......... .......... .......... .......... .......... 65.0M
+   600K .......... .......... .......... .......... .......... 61.9M
+   650K .......... .......... .......... .......... .......... 61.6M
+   700K .......... .......... .......... .......... .......... 74.5M
+   750K .......... .......... .......... .......... .......... 78.3M
+   800K .......... .......... .......... .......... .......... 76.1M
+   850K .......... .......... .......... .......... .......... 79.8M
+   900K .......... .......... .......... .......... .......... 88.5M
+   950K .......... .......... .......... .......... .......... 4.29M
+  1000K .......... .......... .......... .......... .......... 1.11M
+  1050K .......... .......... .......... .......... .......... 6.77M
+  1100K .......... .......... .......... .......... ..........  717K
+  1150K .......... .......... .......... .......... .......... 5.77M
+  1200K .......... .......... .......... .......... .......... 23.9M
+  1250K .......... .......... .......... .......... .......... 68.2M
+  1300K .......... .......... .......... .......... .......... 99.7M
+  1350K .......... .......... .......... .......... .......... 85.8M
+  1400K .......... .......... .......... .......... .......... 1.60M
+  1450K .......... .......... .......... .......... .......... 4.80M
+  1500K .......... .......... .......... .......... .......... 5.60M
+  1550K .......... .......... .......... .......... .......... 4.96M
+  1600K .......... .......... .......... .......... .......... 1.46M
+  1650K .......... .......... .......... .......... .......... 6.82M
+  1700K .......... .......... .......... .......... .......... 5.20M
+  1750K .......... .......... .......... .......... .......... 1.50M
+  1800K .......... .......... .......... .......... .......... 4.96M
+  1850K .......... .......... .......... .......... .......... 4.91M
+  1900K .......... .......... .......... .......... .......... 5.07M
+  1950K .......... .......... .......... .......... .......... 1.52M
+  2000K .......... .......... .......... .......... .......... 6.13M
+  2050K .......... .......... .......... .......... .......... 4.88M
+  2100K .......... .......... .......... .......... .......... 5.15M
+  2150K .......... .......... .......... .......... .......... 1.46M
+  2200K .......... .......... .......... .......... .......... 4.71M
+  2250K .......... .......... .......... .......... .......... 5.29M
+  2300K .......... .......... .......... .......... .......... 5.17M
+  2350K .......                                                54.3M=0.9s
+
+2024-08-16 21:40:04 (2.67 MB/s) - ‘conjure-0.1.2.tar.gz’ saved [2414177]
+
+conjure-0.1.2/
+conjure-0.1.2/.github/
+conjure-0.1.2/.github/FUNDING.yml
+conjure-0.1.2/.gitignore
+conjure-0.1.2/COPYING
+conjure-0.1.2/README.md
+conjure-0.1.2/conjure/
+conjure-0.1.2/conjure/__init__.py
+conjure-0.1.2/conjure/app.py
+conjure-0.1.2/conjure/assets/
+conjure-0.1.2/conjure/assets/icons/
+conjure-0.1.2/conjure/assets/icons/arrow-into-box-symbolic.svg
+conjure-0.1.2/conjure/assets/icons/document-save-symbolic.svg
+conjure-0.1.2/conjure/assets/icons/image-missing-symbolic.svg
+conjure-0.1.2/conjure/assets/icons/image-round-symbolic.svg
+conjure-0.1.2/conjure/assets/icons/magic-wand-symbolic.svg
+conjure-0.1.2/conjure/conjure.gresource.xml
+conjure-0.1.2/conjure/conjure.in
+conjure-0.1.2/conjure/magic.py
+conjure-0.1.2/conjure/main.py
+conjure-0.1.2/conjure/meson.build
+conjure-0.1.2/conjure/style.css
+conjure-0.1.2/conjure/ui/
+conjure-0.1.2/conjure/ui/help-overlay.ui
+conjure-0.1.2/conjure/ui/window.ui
+conjure-0.1.2/conjure/util.py
+conjure-0.1.2/conjure/views/
+conjure-0.1.2/conjure/views/__init__.py
+conjure-0.1.2/conjure/views/blob_image.py
+conjure-0.1.2/conjure/views/command_panel.py
+conjure-0.1.2/conjure/views/commands/
+conjure-0.1.2/conjure/views/commands/__init__.py
+conjure-0.1.2/conjure/views/commands/amount_method.py
+conjure-0.1.2/conjure/views/commands/angle.py
+conjure-0.1.2/conjure/views/commands/auto_threshold.py
+conjure-0.1.2/conjure/views/commands/blur.py
+conjure-0.1.2/conjure/views/commands/color_alpha.py
+conjure-0.1.2/conjure/views/commands/color_threshold.py
+conjure-0.1.2/conjure/views/commands/color_threshold_start_stop.py
+conjure-0.1.2/conjure/views/commands/crop.py
+conjure-0.1.2/conjure/views/commands/factor.py
+conjure-0.1.2/conjure/views/commands/fx.py
+conjure-0.1.2/conjure/views/commands/kmeans.py
+conjure-0.1.2/conjure/views/commands/low_high.py
+conjure-0.1.2/conjure/views/commands/low_high_white_black.py
+conjure-0.1.2/conjure/views/commands/meson.build
+conjure-0.1.2/conjure/views/commands/noise.py
+conjure-0.1.2/conjure/views/commands/ordered_dither.py
+conjure-0.1.2/conjure/views/commands/polaroid.py
+conjure-0.1.2/conjure/views/commands/posterize.py
+conjure-0.1.2/conjure/views/commands/quantize.py
+conjure-0.1.2/conjure/views/commands/radius.py
+conjure-0.1.2/conjure/views/commands/radius_sigma.py
+conjure-0.1.2/conjure/views/commands/radius_sigma_amount_threshold.py
+conjure-0.1.2/conjure/views/commands/radius_sigma_angle.py
+conjure-0.1.2/conjure/views/commands/radius_sigma_threshold.py
+conjure-0.1.2/conjure/views/commands/radius_sigma_xy.py
+conjure-0.1.2/conjure/views/commands/resize.py
+conjure-0.1.2/conjure/views/commands/rotate.py
+conjure-0.1.2/conjure/views/commands/shade.py
+conjure-0.1.2/conjure/views/commands/sharpen.py
+conjure-0.1.2/conjure/views/commands/statistic.py
+conjure-0.1.2/conjure/views/commands/threshold.py
+conjure-0.1.2/conjure/views/commands/threshold_softness.py
+conjure-0.1.2/conjure/views/commands/thresholds.py
+conjure-0.1.2/conjure/views/commands/ui/
+conjure-0.1.2/conjure/views/commands/ui/amount_method.ui
+conjure-0.1.2/conjure/views/commands/ui/angle.ui
+conjure-0.1.2/conjure/views/commands/ui/auto_threshold.ui
+conjure-0.1.2/conjure/views/commands/ui/blur.ui
+conjure-0.1.2/conjure/views/commands/ui/color_alpha.ui
+conjure-0.1.2/conjure/views/commands/ui/color_threshold.ui
+conjure-0.1.2/conjure/views/commands/ui/color_threshold_start_stop.ui
+conjure-0.1.2/conjure/views/commands/ui/crop.ui
+conjure-0.1.2/conjure/views/commands/ui/factor.ui
+conjure-0.1.2/conjure/views/commands/ui/fx.ui
+conjure-0.1.2/conjure/views/commands/ui/kmeans.ui
+conjure-0.1.2/conjure/views/commands/ui/low_high.ui
+conjure-0.1.2/conjure/views/commands/ui/low_high_white_black.ui
+conjure-0.1.2/conjure/views/commands/ui/noise.ui
+conjure-0.1.2/conjure/views/commands/ui/ordered_dither.ui
+conjure-0.1.2/conjure/views/commands/ui/polaroid.ui
+conjure-0.1.2/conjure/views/commands/ui/posterize.ui
+conjure-0.1.2/conjure/views/commands/ui/quantize.ui
+conjure-0.1.2/conjure/views/commands/ui/radius.ui
+conjure-0.1.2/conjure/views/commands/ui/radius_sigma.ui
+conjure-0.1.2/conjure/views/commands/ui/radius_sigma_amount_threshold.ui
+conjure-0.1.2/conjure/views/commands/ui/radius_sigma_angle.ui
+conjure-0.1.2/conjure/views/commands/ui/radius_sigma_threshold.ui
+conjure-0.1.2/conjure/views/commands/ui/radius_sigma_xy.ui
+conjure-0.1.2/conjure/views/commands/ui/resize.ui
+conjure-0.1.2/conjure/views/commands/ui/rotate.ui
+conjure-0.1.2/conjure/views/commands/ui/shade.ui
+conjure-0.1.2/conjure/views/commands/ui/sharpen.ui
+conjure-0.1.2/conjure/views/commands/ui/statistic.ui
+conjure-0.1.2/conjure/views/commands/ui/threshold.ui
+conjure-0.1.2/conjure/views/commands/ui/threshold_softness.ui
+conjure-0.1.2/conjure/views/commands/ui/thresholds.ui
+conjure-0.1.2/conjure/views/commands/ui/wave.ui
+conjure-0.1.2/conjure/views/commands/ui/width_height_offset.ui
+conjure-0.1.2/conjure/views/commands/wave.py
+conjure-0.1.2/conjure/views/commands/width_height_offset.py
+conjure-0.1.2/conjure/views/display_image.py
+conjure-0.1.2/conjure/views/dropped_image.py
+conjure-0.1.2/conjure/views/history_panel.py
+conjure-0.1.2/conjure/views/image_drop_page.py
+conjure-0.1.2/conjure/views/meson.build
+conjure-0.1.2/conjure/views/save_dialog.py
+conjure-0.1.2/conjure/views/ui/
+conjure-0.1.2/conjure/views/ui/command_panel.ui
+conjure-0.1.2/conjure/views/ui/display_image.ui
+conjure-0.1.2/conjure/views/ui/history_panel.ui
+conjure-0.1.2/conjure/views/ui/image_card.ui
+conjure-0.1.2/conjure/views/ui/image_drop_page.ui
+conjure-0.1.2/conjure/views/ui/save_dialog.ui
+conjure-0.1.2/conjure/window.py
+conjure-0.1.2/data/
+conjure-0.1.2/data/icons/
+conjure-0.1.2/data/icons/hicolor/
+conjure-0.1.2/data/icons/hicolor/logo.png
+conjure-0.1.2/data/icons/hicolor/scalable/
+conjure-0.1.2/data/icons/hicolor/scalable/apps/
+conjure-0.1.2/data/icons/hicolor/scalable/apps/io.github.nate_xyz.Conjure.Devel.svg
+conjure-0.1.2/data/icons/hicolor/scalable/apps/io.github.nate_xyz.Conjure.svg
+conjure-0.1.2/data/icons/hicolor/symbolic/
+conjure-0.1.2/data/icons/hicolor/symbolic/apps/
+conjure-0.1.2/data/icons/hicolor/symbolic/apps/io.github.nate_xyz.Conjure-symbolic.svg
+conjure-0.1.2/data/icons/icon.svg
+conjure-0.1.2/data/icons/meson.build
+conjure-0.1.2/data/io.github.nate_xyz.Conjure.appdata.xml.in
+conjure-0.1.2/data/io.github.nate_xyz.Conjure.desktop.in
+conjure-0.1.2/data/io.github.nate_xyz.Conjure.gschema.xml
+conjure-0.1.2/data/meson.build
+conjure-0.1.2/data/screenshots/
+conjure-0.1.2/data/screenshots/conjure-0.png
+conjure-0.1.2/data/screenshots/conjure-1.png
+conjure-0.1.2/data/screenshots/conjure-2.png
+conjure-0.1.2/flatpak/
+conjure-0.1.2/flatpak/imagemagick.json
+conjure-0.1.2/flatpak/io.github.nate_xyz.Conjure.json
+conjure-0.1.2/flatpak/pypi-dependencies.json
+conjure-0.1.2/meson.build
+conjure-0.1.2/po/
+conjure-0.1.2/po/LINGUAS
+conjure-0.1.2/po/POTFILES
+conjure-0.1.2/po/conjure.pot
+conjure-0.1.2/po/it.po
+conjure-0.1.2/po/meson.build
+conjure-0.1.2/po/nl.po
+conjure-0.1.2/po/tr.po
+conjure-0.1.2/requirements.txt
+conjure-0.1.2/run.sh
+conjure-0.1.2/setup.sh
+The Meson build system
+Version: 1.5.1
+Source dir: /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2
+Build dir: /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/build
+Build type: native build
+Project name: conjure
+Project version: 0.1.2
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Program appstream-util found: YES (/usr/bin/appstream-util)
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Build-time dependency gio-2.0 found: YES 2.80.4
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program python3 found: YES (/usr/bin/python3)
+../conjure/meson.build:15: WARNING: Project targets '>= 0.59.0' but uses feature deprecated since '0.55.0': ExternalProgram.path. use ExternalProgram.full_path() instead
+Configuring conjure using configuration
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 found: YES 2.80.4 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 9
+WARNING: Deprecated features used:
+ * 0.55.0: {'ExternalProgram.path'}
+
+conjure 0.1.2
+
+  Directories
+    prefix       : /usr
+    libdir       : lib64
+    datadir      : share
+    bindir       : bin
+
+  User defined options
+    buildtype    : release
+    infodir      : /usr/info
+    libdir       : /usr/lib64
+    localstatedir: /var
+    prefix       : /usr
+    strip        : true
+    sysconfdir   : /etc
+
+Found ninja-1.12.1 at /usr/bin/ninja
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+[1/6] Building translation po/nl/LC_MESSAGES/conjure-nl.mo
+[2/6] Building translation po/tr/LC_MESSAGES/conjure-tr.mo
+[3/6] Building translation po/it/LC_MESSAGES/conjure-it.mo
+[4/6] Generating conjure/conjure_gresource with a custom command
+[5/6] Merging translations for data/io.github.nate_xyz.Conjure.desktop
+[6/6] Merging translations for data/io.github.nate_xyz.Conjure.appdata.xml
+[0/1] Installing files.
+Installing data/io.github.nate_xyz.Conjure.desktop to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/applications
+Installing data/io.github.nate_xyz.Conjure.appdata.xml to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/appdata
+Installing conjure/conjure.gresource to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure
+Installing po/it/LC_MESSAGES/conjure.mo to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/locale/it/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/conjure.mo to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/locale/nl/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/conjure.mo to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/locale/tr/LC_MESSAGES
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/data/io.github.nate_xyz.Conjure.gschema.xml to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/glib-2.0/schemas
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/data/icons/hicolor/scalable/apps/io.github.nate_xyz.Conjure.svg to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/icons/hicolor/scalable/apps
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/data/icons/hicolor/symbolic/apps/io.github.nate_xyz.Conjure-symbolic.svg to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/icons/hicolor/symbolic/apps
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/build/conjure/conjure to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/bin
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/__init__.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/amount_method.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/angle.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/auto_threshold.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/blur.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/color_alpha.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/color_threshold_start_stop.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/color_threshold.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/crop.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/factor.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/fx.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/kmeans.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/low_high_white_black.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/low_high.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/noise.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/ordered_dither.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/polaroid.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/posterize.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/quantize.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/radius_sigma_amount_threshold.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/radius_sigma_angle.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/radius_sigma_threshold.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/radius_sigma_xy.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/radius_sigma.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/radius.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/resize.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/rotate.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/shade.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/sharpen.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/statistic.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/threshold_softness.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/threshold.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/thresholds.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/wave.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/commands/width_height_offset.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views/commands
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/__init__.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/image_drop_page.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/dropped_image.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/blob_image.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/command_panel.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/display_image.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/history_panel.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/views/save_dialog.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure/views
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/__init__.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/main.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/app.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/window.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/util.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure
+Installing /home/omen/GITHUB/One4All_SlackBuild/conjure/work/conjure-0.1.2/conjure/magic.py to /home/omen/GITHUB/One4All_SlackBuild/conjure/package-Conjure/usr/share/conjure/conjure
+Skipping custom install script because DESTDIR is set '/usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas'
+Skipping custom install script because DESTDIR is set '/usr/bin/gtk4-update-icon-cache -q -t -f /usr/share/icons/hicolor'
+Skipping custom install script because DESTDIR is set '/usr/bin/update-desktop-database -q /usr/share/applications'
+cp: cannot stat 'ABOUT ABOUT-NLS ANNOUNCE AUTHORS *BUGS* ChangeLog Changelog CHANGELOG Changes CHANGES COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS doc docs* Doc Docs* *FAQ* FEATURES FILES GPL* HACKING History HISTORY index.ht* *INDEX* INSTALL* License* LICENSE* LSM MANIFEST NEWS *README* *Readme* *RELEASE* RELNOTES Roadmap ROADMAP SITES THANKS TIPS TODO VERSION': File name too long
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/conjure/binary-Conjure-0.1.2/Conjure-0.1.2-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-conflicts
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/doc/
+usr/doc/Conjure-0.1.2/
+usr/doc/Conjure-0.1.2/Conjure.SlackBuild
+usr/local/
+usr/local/bin/
+usr/local/bin/Conjure
+usr/share/
+usr/share/appdata/
+usr/share/appdata/io.github.nate_xyz.Conjure.appdata.xml
+usr/share/applications/
+usr/share/applications/io.github.nate_xyz.Conjure.desktop
+usr/share/conjure/
+usr/share/conjure/conjure/
+usr/share/conjure/conjure.gresource
+usr/share/conjure/conjure/__init__.py
+usr/share/conjure/conjure/app.py
+usr/share/conjure/conjure/magic.py
+usr/share/conjure/conjure/main.py
+usr/share/conjure/conjure/util.py
+usr/share/conjure/conjure/views/
+usr/share/conjure/conjure/views/__init__.py
+usr/share/conjure/conjure/views/blob_image.py
+usr/share/conjure/conjure/views/command_panel.py
+usr/share/conjure/conjure/views/commands/
+usr/share/conjure/conjure/views/commands/__init__.py
+usr/share/conjure/conjure/views/commands/amount_method.py
+usr/share/conjure/conjure/views/commands/angle.py
+usr/share/conjure/conjure/views/commands/auto_threshold.py
+usr/share/conjure/conjure/views/commands/blur.py
+usr/share/conjure/conjure/views/commands/color_alpha.py
+usr/share/conjure/conjure/views/commands/color_threshold.py
+usr/share/conjure/conjure/views/commands/color_threshold_start_stop.py
+usr/share/conjure/conjure/views/commands/crop.py
+usr/share/conjure/conjure/views/commands/factor.py
+usr/share/conjure/conjure/views/commands/fx.py
+usr/share/conjure/conjure/views/commands/kmeans.py
+usr/share/conjure/conjure/views/commands/low_high.py
+usr/share/conjure/conjure/views/commands/low_high_white_black.py
+usr/share/conjure/conjure/views/commands/noise.py
+usr/share/conjure/conjure/views/commands/ordered_dither.py
+usr/share/conjure/conjure/views/commands/polaroid.py
+usr/share/conjure/conjure/views/commands/posterize.py
+usr/share/conjure/conjure/views/commands/quantize.py
+usr/share/conjure/conjure/views/commands/radius.py
+usr/share/conjure/conjure/views/commands/radius_sigma.py
+usr/share/conjure/conjure/views/commands/radius_sigma_amount_threshold.py
+usr/share/conjure/conjure/views/commands/radius_sigma_angle.py
+usr/share/conjure/conjure/views/commands/radius_sigma_threshold.py
+usr/share/conjure/conjure/views/commands/radius_sigma_xy.py
+usr/share/conjure/conjure/views/commands/resize.py
+usr/share/conjure/conjure/views/commands/rotate.py
+usr/share/conjure/conjure/views/commands/shade.py
+usr/share/conjure/conjure/views/commands/sharpen.py
+usr/share/conjure/conjure/views/commands/statistic.py
+usr/share/conjure/conjure/views/commands/threshold.py
+usr/share/conjure/conjure/views/commands/threshold_softness.py
+usr/share/conjure/conjure/views/commands/thresholds.py
+usr/share/conjure/conjure/views/commands/wave.py
+usr/share/conjure/conjure/views/commands/width_height_offset.py
+usr/share/conjure/conjure/views/display_image.py
+usr/share/conjure/conjure/views/dropped_image.py
+usr/share/conjure/conjure/views/history_panel.py
+usr/share/conjure/conjure/views/image_drop_page.py
+usr/share/conjure/conjure/views/save_dialog.py
+usr/share/conjure/conjure/window.py
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/io.github.nate_xyz.Conjure.gschema.xml
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/io.github.nate_xyz.Conjure.svg
+usr/share/icons/hicolor/symbolic/
+usr/share/icons/hicolor/symbolic/apps/
+usr/share/icons/hicolor/symbolic/apps/io.github.nate_xyz.Conjure-symbolic.svg
+usr/share/locale/
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/conjure.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/conjure.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/conjure.mo
+WARNING:  zero length file usr/share/conjure/conjure/__init__.py
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/conjure/binary-Conjure-0.1.2/Conjure-0.1.2-x86_64-1_rtz.tlz created.
+
+Build process completed in 0 minutes and 4 seconds.
