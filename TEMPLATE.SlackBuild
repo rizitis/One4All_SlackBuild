@@ -528,9 +528,9 @@ download_src(){
 download_src
 prepare_build
 patch_build
+chrooting
 
 # uncomment what you need:
-chrooting
 #auto_build
 #meson_build
 #python_build
