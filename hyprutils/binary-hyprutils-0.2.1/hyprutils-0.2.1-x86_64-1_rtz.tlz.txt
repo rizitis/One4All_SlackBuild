@@ -8,4 +8,4 @@ hyprutils:
 hyprutils:
 hyprutils:
 hyprutils:
-hyprutils: https://github.com/hyprwm/hyprutils
+hyprutils: Homepage: https://github.com/hyprwm/hyprutils

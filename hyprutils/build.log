@@ -1,0 +1,289 @@
+Starting build process...
+Cloning into 'hyprutils'...
+Not searching for unused variables given on the command line.
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring hyprutils in Release
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'pixman-1'
+--   Found pixman-1, version 0.43.4
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/work/hyprutils/build
+[  5%] Building CXX object CMakeFiles/hyprutils.dir/src/math/Box.cpp.o
+[ 11%] Building CXX object CMakeFiles/hyprutils.dir/src/math/Region.cpp.o
+[ 16%] Building CXX object CMakeFiles/hyprutils.dir/src/math/Vector2D.cpp.o
+[ 22%] Building CXX object CMakeFiles/hyprutils.dir/src/path/Path.cpp.o
+[ 27%] Building CXX object CMakeFiles/hyprutils.dir/src/signal/Listener.cpp.o
+[ 33%] Building CXX object CMakeFiles/hyprutils.dir/src/signal/Signal.cpp.o
+[ 38%] Building CXX object CMakeFiles/hyprutils.dir/src/string/String.cpp.o
+[ 44%] Building CXX object CMakeFiles/hyprutils.dir/src/string/VarList.cpp.o
+[ 50%] Building CXX object CMakeFiles/hyprutils.dir/src/utils/ScopeGuard.cpp.o
+[ 55%] Linking CXX shared library libhyprutils.so
+[ 55%] Built target hyprutils
+[ 61%] Building CXX object CMakeFiles/hyprutils_memory.dir/tests/memory.cpp.o
+[ 66%] Linking CXX executable hyprutils_memory
+[ 66%] Built target hyprutils_memory
+[ 72%] Building CXX object CMakeFiles/hyprutils_string.dir/tests/string.cpp.o
+[ 77%] Linking CXX executable hyprutils_string
+[ 77%] Built target hyprutils_string
+[ 83%] Building CXX object CMakeFiles/hyprutils_signal.dir/tests/signal.cpp.o
+[ 88%] Linking CXX executable hyprutils_signal
+[ 88%] Built target hyprutils_signal
+[ 94%] Building CXX object CMakeFiles/hyprutils_math.dir/tests/math.cpp.o
+[100%] Linking CXX executable hyprutils_math
+[100%] Built target hyprutils_math
+-- Install configuration: "Release"
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/lib64/libhyprutils.so.0.2.1
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/lib64/libhyprutils.so.1
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/lib64/libhyprutils.so
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/signal
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/signal/Listener.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/signal/Signal.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/memory
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/memory/SharedPtr.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/memory/WeakPtr.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/utils
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/utils/ScopeGuard.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math/Region.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math/Misc.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math/Box.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math/Edges.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math/Vector2D.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/path
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/path/Path.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/string
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/string/String.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/string/VarList.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/lib64/pkgconfig/hyprutils.pc
+cp: cannot stat 'ABOUT ABOUT-NLS ANNOUNCE AUTHORS *BUGS* ChangeLog Changelog CHANGELOG Changes CHANGES COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS doc docs* Doc Docs* *FAQ* FEATURES FILES GPL* HACKING History HISTORY index.ht* *INDEX* INSTALL* License* LICENSE* LSM MANIFEST NEWS *README* *Readme* *RELEASE* RELNOTES Roadmap ROADMAP SITES THANKS TIPS TODO VERSION': File name too long
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libhyprutils.so	libhyprutils.so.1
+usr/lib64/libhyprutils.so.1	libhyprutils.so.0.2.1
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libhyprutils.so )
+( cd usr/lib64 ; ln -sf libhyprutils.so.1 libhyprutils.so )
+( cd usr/lib64 ; rm -rf libhyprutils.so.1 )
+( cd usr/lib64 ; ln -sf libhyprutils.so.0.2.1 libhyprutils.so.1 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libhyprutils.so.1'
+removed './usr/lib64/libhyprutils.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/hyprutils/binary-hyprutils-0.2.1/hyprutils-0.2.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/hyprutils-0.2.1/
+usr/doc/hyprutils-0.2.1/hyprutils.SlackBuild
+usr/include/
+usr/include/hyprutils/
+usr/include/hyprutils/math/
+usr/include/hyprutils/math/Box.hpp
+usr/include/hyprutils/math/Edges.hpp
+usr/include/hyprutils/math/Misc.hpp
+usr/include/hyprutils/math/Region.hpp
+usr/include/hyprutils/math/Vector2D.hpp
+usr/include/hyprutils/memory/
+usr/include/hyprutils/memory/SharedPtr.hpp
+usr/include/hyprutils/memory/WeakPtr.hpp
+usr/include/hyprutils/path/
+usr/include/hyprutils/path/Path.hpp
+usr/include/hyprutils/signal/
+usr/include/hyprutils/signal/Listener.hpp
+usr/include/hyprutils/signal/Signal.hpp
+usr/include/hyprutils/string/
+usr/include/hyprutils/string/String.hpp
+usr/include/hyprutils/string/VarList.hpp
+usr/include/hyprutils/utils/
+usr/include/hyprutils/utils/ScopeGuard.hpp
+usr/lib64/
+usr/lib64/libhyprutils.so.0.2.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/hyprutils.pc
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/hyprutils/binary-hyprutils-0.2.1/hyprutils-0.2.1-x86_64-1_rtz.tlz created.
+
+rm: cannot remove '*.git': No such file or directory
+Starting build process...
+Cloning into 'hyprutils'...
+Not searching for unused variables given on the command line.
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring hyprutils in Release
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'pixman-1'
+--   Found pixman-1, version 0.43.4
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/work/hyprutils/build
+[  5%] Building CXX object CMakeFiles/hyprutils.dir/src/math/Box.cpp.o
+[ 11%] Building CXX object CMakeFiles/hyprutils.dir/src/math/Region.cpp.o
+[ 16%] Building CXX object CMakeFiles/hyprutils.dir/src/math/Vector2D.cpp.o
+[ 22%] Building CXX object CMakeFiles/hyprutils.dir/src/path/Path.cpp.o
+[ 27%] Building CXX object CMakeFiles/hyprutils.dir/src/signal/Listener.cpp.o
+[ 33%] Building CXX object CMakeFiles/hyprutils.dir/src/signal/Signal.cpp.o
+[ 38%] Building CXX object CMakeFiles/hyprutils.dir/src/string/String.cpp.o
+[ 44%] Building CXX object CMakeFiles/hyprutils.dir/src/string/VarList.cpp.o
+[ 50%] Building CXX object CMakeFiles/hyprutils.dir/src/utils/ScopeGuard.cpp.o
+[ 55%] Linking CXX shared library libhyprutils.so
+[ 55%] Built target hyprutils
+[ 61%] Building CXX object CMakeFiles/hyprutils_memory.dir/tests/memory.cpp.o
+[ 66%] Linking CXX executable hyprutils_memory
+[ 66%] Built target hyprutils_memory
+[ 72%] Building CXX object CMakeFiles/hyprutils_string.dir/tests/string.cpp.o
+[ 77%] Linking CXX executable hyprutils_string
+[ 77%] Built target hyprutils_string
+[ 83%] Building CXX object CMakeFiles/hyprutils_signal.dir/tests/signal.cpp.o
+[ 88%] Linking CXX executable hyprutils_signal
+[ 88%] Built target hyprutils_signal
+[ 94%] Building CXX object CMakeFiles/hyprutils_math.dir/tests/math.cpp.o
+[100%] Linking CXX executable hyprutils_math
+[100%] Built target hyprutils_math
+-- Install configuration: "Release"
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/lib64/libhyprutils.so.0.2.1
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/lib64/libhyprutils.so.1
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/lib64/libhyprutils.so
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/signal
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/signal/Listener.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/signal/Signal.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/memory
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/memory/SharedPtr.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/memory/WeakPtr.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/utils
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/utils/ScopeGuard.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math/Region.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math/Misc.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math/Box.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math/Edges.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/math/Vector2D.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/path
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/path/Path.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/string
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/string/String.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/include/hyprutils/string/VarList.hpp
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/hyprutils/package-hyprutils/usr/lib64/pkgconfig/hyprutils.pc
+cp: cannot stat 'ABOUT ABOUT-NLS ANNOUNCE AUTHORS *BUGS* ChangeLog Changelog CHANGELOG Changes CHANGES COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS doc docs* Doc Docs* *FAQ* FEATURES FILES GPL* HACKING History HISTORY index.ht* *INDEX* INSTALL* License* LICENSE* LSM MANIFEST NEWS *README* *Readme* *RELEASE* RELNOTES Roadmap ROADMAP SITES THANKS TIPS TODO VERSION': File name too long
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libhyprutils.so	libhyprutils.so.1
+usr/lib64/libhyprutils.so.1	libhyprutils.so.0.2.1
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libhyprutils.so )
+( cd usr/lib64 ; ln -sf libhyprutils.so.1 libhyprutils.so )
+( cd usr/lib64 ; rm -rf libhyprutils.so.1 )
+( cd usr/lib64 ; ln -sf libhyprutils.so.0.2.1 libhyprutils.so.1 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libhyprutils.so.1'
+removed './usr/lib64/libhyprutils.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/hyprutils/binary-hyprutils-0.2.1/hyprutils-0.2.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/hyprutils-0.2.1/
+usr/doc/hyprutils-0.2.1/hyprutils.SlackBuild
+usr/include/
+usr/include/hyprutils/
+usr/include/hyprutils/math/
+usr/include/hyprutils/math/Box.hpp
+usr/include/hyprutils/math/Edges.hpp
+usr/include/hyprutils/math/Misc.hpp
+usr/include/hyprutils/math/Region.hpp
+usr/include/hyprutils/math/Vector2D.hpp
+usr/include/hyprutils/memory/
+usr/include/hyprutils/memory/SharedPtr.hpp
+usr/include/hyprutils/memory/WeakPtr.hpp
+usr/include/hyprutils/path/
+usr/include/hyprutils/path/Path.hpp
+usr/include/hyprutils/signal/
+usr/include/hyprutils/signal/Listener.hpp
+usr/include/hyprutils/signal/Signal.hpp
+usr/include/hyprutils/string/
+usr/include/hyprutils/string/String.hpp
+usr/include/hyprutils/string/VarList.hpp
+usr/include/hyprutils/utils/
+usr/include/hyprutils/utils/ScopeGuard.hpp
+usr/lib64/
+usr/lib64/libhyprutils.so.0.2.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/hyprutils.pc
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/hyprutils/binary-hyprutils-0.2.1/hyprutils-0.2.1-x86_64-1_rtz.tlz created.
+
+rm: cannot remove '*.git': No such file or directory
+Build process completed in 0 minutes and 10 seconds.
