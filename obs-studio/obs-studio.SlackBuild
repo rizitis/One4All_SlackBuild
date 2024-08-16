@@ -21,6 +21,13 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
    cd $(dirname "$0") ; CWD=$(pwd)
+# Setup build log file
+LOGFILE="$CWD/build.log"
+exec > >(tee -a "$LOGFILE") 2>&1
+
+echo "Starting build process..."
+start_time=$(date +%s)
+
 
 ##########################-slackdesc-########################################
 # If you have slackdesc installed you need these, else ignore them and comment them.
@@ -399,7 +406,8 @@ MKINS
    
    
    # END OF EDIT # Just uncomment needed functions at the end of script!
-
+   
+   
    if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586 ;;
@@ -559,6 +567,7 @@ download_src(){
    
 
 # default most of times #
+
 download_src
 prepare_build
 patch_build
@@ -581,4 +590,7 @@ clean_src
 #pkg_install
 sig_package
 
-
+# Calculate and display build time
+end_time=$(date +%s)
+elapsed_time=$((end_time - start_time))
+echo "Build process completed in $((elapsed_time / 60)) minutes and $((elapsed_time % 60)) seconds."

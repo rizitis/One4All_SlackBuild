@@ -21,27 +21,34 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
    cd $(dirname "$0") ; CWD=$(pwd)
+# Setup build log file
+LOGFILE="$CWD/build.log"
+exec > >(tee -a "$LOGFILE") 2>&1
+
+echo "Starting build process..."
+start_time=$(date +%s)
+
 
 ##########################-slackdesc-########################################
 # If you have slackdesc installed you need these, else ignore them and comment them.
 # https://slack-desc.sourceforge.net/
 # example of use:
    mkdesc="$(which slackdesc)" || true
-   Homepage="Homepage: https://github.com/sugarlabs/sugar-toolkit-gtk3"
+   Homepage="Homepage: https://obsproject.com/"
             #|--------------------------------------|#
-   SortDesc="services and a set of GTK+ widgets"
-   LongDesc="Sugar Toolkit provides services and a set of GTK+ widgets to build activities and other Sugar components on Linux based computers.This is the GTK+ 3 binding of the Sugar Toolkit."
+   SortDesc="video capturing,recording, streaming..."
+   LongDesc="OBS Studio is software designed for capturing, compositing, encoding, recording, and streaming video content, efficiently.It's distributed under the GNU General Public License v2 (or any later version) - see the accompanying COPYING file for more details."
 #############################################################################
 # EDIT FOLLOWING AS NEEDED:
-   SRCURL="https://github.com/sugarlabs/sugar-toolkit-gtk3/archive/refs/tags/v0.121.tar.gz"
+   SRCURL="https://github.com/obsproject/obs-studio/archive/30.2.2/obs-studio-30.2.2.tar.gz"
    # IF you need:git checkout, else leave it empty.    
    GITCHEK=
    # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z
    #OR repos: cvn, cvs, git, lftp
    COMPRESS="tar.gz"
-   SRCNAM=sugar-toolkit-gtk3
-   PRGNAM=sugar-toolkit-gtk3
-   VERSION=0.121
+   SRCNAM=obs-studio
+   PRGNAM=obs-studio
+   VERSION=30.2.2
 
    BUILD=${BUILD:-1}
    TAG=${TAG:-_rtz}
@@ -54,11 +61,10 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
    
 # START EDIT FUNCTIONS AS FOR YOUR NEEDS    
 
-   patch_build(){
-#	patch -p0 < smallpatch || exit
-#	zcat $CWD/bigpatch.diff.gz | patch -p1 || exit
-	true
-   }
+   patch_build() { 
+true
+}
+
 
    chrooting(){
    	chown -R root:root .
@@ -114,15 +120,47 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
    }
    
    cmake_build(){
-	mkdir -p build
+   cd $TMP || exit
+   wget https://cdn-fastly.obsproject.com/downloads/cef_binary_5060_linux_x86_64_v3.tar.xz
+   tar -xf cef_binary_5060_linux_x86_64_v3.tar.xz
+   cd cef_binary_5060_linux_x86_64 || exit
+   strip -v Release/*.so
+   cmake \
+      -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
+      -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
+      -DCMAKE_BUILD_TYPE=Release .
+
+    make libcef_dll_wrapper
+     
+   cd $TMP/$SRCNAM-$VERSION/plugins || exit
+   git clone https://github.com/obsproject/obs-browser
+   git clone https://github.com/obsproject/obs-websocket 
+
+   cd  $TMP/$SRCNAM-$VERSION || exit 
+   mkdir -p build
 	cd build
-	  cmake \
-	    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
-	    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
-	    -DCMAKE_INSTALL_PREFIX=/usr \
-	    -DLIB_SUFFIX=${LIBDIRSUFFIX} \
-	    -DMAN_INSTALL_DIR=/usr/man \
-	    -DCMAKE_BUILD_TYPE=Release ..
+	cmake \
+    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS -Wno-error=stringop-overflow" \
+    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS -Wno-error=stringop-overflow" \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DLIB_SUFFIX=${LIBDIRSUFFIX} \
+    -DOS_POSIX=ON \
+    -DOBS_VERSION_OVERRIDE=${VERSION} \
+    -DCMAKE_SKIP_INSTALL_RPATH=ON \
+    -DUNIX_STRUCTURE=ON \
+    -DCEF_ROOT_DIR="$TMP/cef_binary_5060_linux_x86_64" \
+    -DCALM_DEPRECATION=ON \
+    -DENABLE_AJA=OFF \
+    -DENABLE_LIBFDK=ON \
+    -DENABLE_JACK=ON \
+    -DENABLE_WEBRTC=OFF \
+    -DENABLE_WEBSOCKET=OFF \
+    -DOpenGL_GL_PREFERENCE=GLVND \
+    -DCALM_DEPRECATION=ON \
+    -DENABLE_VST=ON \
+    -DENABLE_NATIVE_NVENC=OFF \
+    -DCMAKE_BUILD_TYPE=Release ..
 	  make
 	  make install/strip DESTDIR=$PKG
 	cd ..
@@ -368,7 +406,8 @@ MKINS
    
    
    # END OF EDIT # Just uncomment needed functions at the end of script!
-
+   
+   
    if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586 ;;
@@ -528,20 +567,21 @@ download_src(){
    
 
 # default most of times #
+
 download_src
 prepare_build
-
+patch_build
 # uncomment what you need:
 chrooting
 #auto_build
 #meson_build
 #python_build
-#cmake_build
+cmake_build
 #perl_build
 #haskel_build
 #cargo_build
 #golang_build
-custom_build
+#custom_build
 
 # default most of times #
 after_build
@@ -549,3 +589,8 @@ package_build
 clean_src
 #pkg_install
 sig_package
+
+# Calculate and display build time
+end_time=$(date +%s)
+elapsed_time=$((end_time - start_time))
+echo "Build process completed in $((elapsed_time / 60)) minutes and $((elapsed_time % 60)) seconds."
