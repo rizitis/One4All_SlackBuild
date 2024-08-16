@@ -1,4 +1,4 @@
-Markdown: Markdown (Python implementation of John Gruber's Markdown)
+Markdown: Markdown (Python implementation John Gruber's Markdown)
 Markdown:
 Markdown: This is a Python implementation of John Gruber's Markdown. It is
 Markdown: almost completely compliant with the reference implementation,
@@ -8,4 +8,4 @@ Markdown: supported by the Available Extensions.
 Markdown:
 Markdown:
 Markdown:
-Markdown: https://github.com/vmagnin/gtk-fortran/wiki
+Markdown: Homepage: https://github.com/Python-Markdown

@@ -1,0 +1,730 @@
+Starting build process...
+--2024-08-16 20:58:56--  https://github.com/Python-Markdown/markdown/releases/download/3.6/Markdown-3.6.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/692146/cf0c9b12-a854-43eb-ab55-e3ae7d32f4f4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240816%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240816T175811Z&X-Amz-Expires=300&X-Amz-Signature=44fec187d8c30f3eef33f1ae226dd9bf19d69f90b9e4f26d2b4fb714b5ac8e80&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=692146&response-content-disposition=attachment%3B%20filename%3DMarkdown-3.6.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2024-08-16 20:58:56--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/692146/cf0c9b12-a854-43eb-ab55-e3ae7d32f4f4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240816%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240816T175811Z&X-Amz-Expires=300&X-Amz-Signature=44fec187d8c30f3eef33f1ae226dd9bf19d69f90b9e4f26d2b4fb714b5ac8e80&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=692146&response-content-disposition=attachment%3B%20filename%3DMarkdown-3.6.tar.gz&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 354715 (346K) [application/octet-stream]
+Saving to: ‘Markdown-3.6.tar.gz’
+
+     0K .......... .......... .......... .......... .......... 14%  761K 0s
+    50K .......... .......... .......... .......... .......... 28%  768K 0s
+   100K .......... .......... .......... .......... .......... 43% 3.83M 0s
+   150K .......... .......... .......... .......... .......... 57% 1.37M 0s
+   200K .......... .......... .......... .......... .......... 72% 4.94M 0s
+   250K .......... .......... .......... .......... .......... 86% 5.31M 0s
+   300K .......... .......... .......... .......... ......    100% 6.47M=0.2s
+
+2024-08-16 20:58:57 (1.65 MB/s) - ‘Markdown-3.6.tar.gz’ saved [354715/354715]
+
+Markdown-3.6/
+Markdown-3.6/INSTALL.md
+Markdown-3.6/LICENSE.md
+Markdown-3.6/MANIFEST.in
+Markdown-3.6/Markdown.egg-info/
+Markdown-3.6/Markdown.egg-info/PKG-INFO
+Markdown-3.6/Markdown.egg-info/SOURCES.txt
+Markdown-3.6/Markdown.egg-info/dependency_links.txt
+Markdown-3.6/Markdown.egg-info/entry_points.txt
+Markdown-3.6/Markdown.egg-info/requires.txt
+Markdown-3.6/Markdown.egg-info/top_level.txt
+Markdown-3.6/PKG-INFO
+Markdown-3.6/README.md
+Markdown-3.6/docs/
+Markdown-3.6/docs/authors.md
+Markdown-3.6/docs/change_log/
+Markdown-3.6/docs/change_log/index.md
+Markdown-3.6/docs/change_log/release-2.0.md
+Markdown-3.6/docs/change_log/release-2.1.md
+Markdown-3.6/docs/change_log/release-2.2.md
+Markdown-3.6/docs/change_log/release-2.3.md
+Markdown-3.6/docs/change_log/release-2.4.md
+Markdown-3.6/docs/change_log/release-2.5.md
+Markdown-3.6/docs/change_log/release-2.6.md
+Markdown-3.6/docs/changelog.md
+Markdown-3.6/docs/cli.md
+Markdown-3.6/docs/contributing.md
+Markdown-3.6/docs/custom.css
+Markdown-3.6/docs/extensions/
+Markdown-3.6/docs/extensions/abbreviations.md
+Markdown-3.6/docs/extensions/admonition.md
+Markdown-3.6/docs/extensions/api.md
+Markdown-3.6/docs/extensions/attr_list.md
+Markdown-3.6/docs/extensions/code_hilite.md
+Markdown-3.6/docs/extensions/definition_lists.md
+Markdown-3.6/docs/extensions/extra.md
+Markdown-3.6/docs/extensions/fenced_code_blocks.md
+Markdown-3.6/docs/extensions/footnotes.md
+Markdown-3.6/docs/extensions/index.md
+Markdown-3.6/docs/extensions/legacy_attrs.md
+Markdown-3.6/docs/extensions/legacy_em.md
+Markdown-3.6/docs/extensions/md_in_html.md
+Markdown-3.6/docs/extensions/meta_data.md
+Markdown-3.6/docs/extensions/nl2br.md
+Markdown-3.6/docs/extensions/sane_lists.md
+Markdown-3.6/docs/extensions/smarty.md
+Markdown-3.6/docs/extensions/tables.md
+Markdown-3.6/docs/extensions/toc.md
+Markdown-3.6/docs/extensions/wikilinks.md
+Markdown-3.6/docs/favicon.ico
+Markdown-3.6/docs/index.md
+Markdown-3.6/docs/install.md
+Markdown-3.6/docs/mkdocstrings.css
+Markdown-3.6/docs/py.png
+Markdown-3.6/docs/reference.md
+Markdown-3.6/docs/templates/
+Markdown-3.6/docs/templates/python/
+Markdown-3.6/docs/templates/python/nature/
+Markdown-3.6/docs/templates/python/nature/attribute.html
+Markdown-3.6/docs/templates/python/nature/class.html
+Markdown-3.6/docs/templates/python/nature/docstring/
+Markdown-3.6/docs/templates/python/nature/docstring/admonition.html
+Markdown-3.6/docs/templates/python/nature/function.html
+Markdown-3.6/docs/templates/python/nature/module.html
+Markdown-3.6/docs/test_tools.md
+Markdown-3.6/makefile
+Markdown-3.6/markdown/
+Markdown-3.6/markdown/__init__.py
+Markdown-3.6/markdown/__main__.py
+Markdown-3.6/markdown/__meta__.py
+Markdown-3.6/markdown/blockparser.py
+Markdown-3.6/markdown/blockprocessors.py
+Markdown-3.6/markdown/core.py
+Markdown-3.6/markdown/extensions/
+Markdown-3.6/markdown/extensions/__init__.py
+Markdown-3.6/markdown/extensions/abbr.py
+Markdown-3.6/markdown/extensions/admonition.py
+Markdown-3.6/markdown/extensions/attr_list.py
+Markdown-3.6/markdown/extensions/codehilite.py
+Markdown-3.6/markdown/extensions/def_list.py
+Markdown-3.6/markdown/extensions/extra.py
+Markdown-3.6/markdown/extensions/fenced_code.py
+Markdown-3.6/markdown/extensions/footnotes.py
+Markdown-3.6/markdown/extensions/legacy_attrs.py
+Markdown-3.6/markdown/extensions/legacy_em.py
+Markdown-3.6/markdown/extensions/md_in_html.py
+Markdown-3.6/markdown/extensions/meta.py
+Markdown-3.6/markdown/extensions/nl2br.py
+Markdown-3.6/markdown/extensions/sane_lists.py
+Markdown-3.6/markdown/extensions/smarty.py
+Markdown-3.6/markdown/extensions/tables.py
+Markdown-3.6/markdown/extensions/toc.py
+Markdown-3.6/markdown/extensions/wikilinks.py
+Markdown-3.6/markdown/htmlparser.py
+Markdown-3.6/markdown/inlinepatterns.py
+Markdown-3.6/markdown/postprocessors.py
+Markdown-3.6/markdown/preprocessors.py
+Markdown-3.6/markdown/serializers.py
+Markdown-3.6/markdown/test_tools.py
+Markdown-3.6/markdown/treeprocessors.py
+Markdown-3.6/markdown/util.py
+Markdown-3.6/mkdocs.yml
+Markdown-3.6/pyproject.toml
+Markdown-3.6/scripts/
+Markdown-3.6/scripts/gen_ref_nav.py
+Markdown-3.6/scripts/griffe_extensions.py
+Markdown-3.6/setup.cfg
+Markdown-3.6/tests/
+Markdown-3.6/tests/__init__.py
+Markdown-3.6/tests/basic/
+Markdown-3.6/tests/basic/amps-and-angle-encoding.html
+Markdown-3.6/tests/basic/amps-and-angle-encoding.txt
+Markdown-3.6/tests/basic/angle-links-and-img.html
+Markdown-3.6/tests/basic/angle-links-and-img.txt
+Markdown-3.6/tests/basic/auto-links.html
+Markdown-3.6/tests/basic/auto-links.txt
+Markdown-3.6/tests/basic/backlash-escapes.html
+Markdown-3.6/tests/basic/backlash-escapes.txt
+Markdown-3.6/tests/basic/blockquotes-with-code-blocks.html
+Markdown-3.6/tests/basic/blockquotes-with-code-blocks.txt
+Markdown-3.6/tests/basic/codeblock-in-list.html
+Markdown-3.6/tests/basic/codeblock-in-list.txt
+Markdown-3.6/tests/basic/hard-wrapped.html
+Markdown-3.6/tests/basic/hard-wrapped.txt
+Markdown-3.6/tests/basic/horizontal-rules.html
+Markdown-3.6/tests/basic/horizontal-rules.txt
+Markdown-3.6/tests/basic/links-inline.html
+Markdown-3.6/tests/basic/links-inline.txt
+Markdown-3.6/tests/basic/links-reference.html
+Markdown-3.6/tests/basic/links-reference.txt
+Markdown-3.6/tests/basic/literal-quotes.html
+Markdown-3.6/tests/basic/literal-quotes.txt
+Markdown-3.6/tests/basic/markdown-documentation-basics.html
+Markdown-3.6/tests/basic/markdown-documentation-basics.txt
+Markdown-3.6/tests/basic/markdown-syntax.html
+Markdown-3.6/tests/basic/markdown-syntax.txt
+Markdown-3.6/tests/basic/nested-blockquotes.html
+Markdown-3.6/tests/basic/nested-blockquotes.txt
+Markdown-3.6/tests/basic/ordered-and-unordered-list.html
+Markdown-3.6/tests/basic/ordered-and-unordered-list.txt
+Markdown-3.6/tests/basic/strong-and-em-together.html
+Markdown-3.6/tests/basic/strong-and-em-together.txt
+Markdown-3.6/tests/basic/tabs.html
+Markdown-3.6/tests/basic/tabs.txt
+Markdown-3.6/tests/basic/tidyness.html
+Markdown-3.6/tests/basic/tidyness.txt
+Markdown-3.6/tests/extensions/
+Markdown-3.6/tests/extensions/admonition.html
+Markdown-3.6/tests/extensions/admonition.txt
+Markdown-3.6/tests/extensions/attr_list.html
+Markdown-3.6/tests/extensions/attr_list.txt
+Markdown-3.6/tests/extensions/codehilite.html
+Markdown-3.6/tests/extensions/codehilite.txt
+Markdown-3.6/tests/extensions/extra/
+Markdown-3.6/tests/extensions/extra/def-in-list.html
+Markdown-3.6/tests/extensions/extra/def-in-list.txt
+Markdown-3.6/tests/extensions/extra/extra_config.html
+Markdown-3.6/tests/extensions/extra/extra_config.txt
+Markdown-3.6/tests/extensions/extra/footnote.html
+Markdown-3.6/tests/extensions/extra/footnote.txt
+Markdown-3.6/tests/extensions/extra/footnote_many_footnotes.html
+Markdown-3.6/tests/extensions/extra/footnote_many_footnotes.txt
+Markdown-3.6/tests/extensions/extra/footnote_placeholder.html
+Markdown-3.6/tests/extensions/extra/footnote_placeholder.txt
+Markdown-3.6/tests/extensions/extra/footnote_placeholder_depth.html
+Markdown-3.6/tests/extensions/extra/footnote_placeholder_depth.txt
+Markdown-3.6/tests/extensions/extra/loose_def_list.html
+Markdown-3.6/tests/extensions/extra/loose_def_list.txt
+Markdown-3.6/tests/extensions/extra/markdown-syntax.html
+Markdown-3.6/tests/extensions/extra/markdown-syntax.txt
+Markdown-3.6/tests/extensions/extra/named_markers.html
+Markdown-3.6/tests/extensions/extra/named_markers.txt
+Markdown-3.6/tests/extensions/extra/raw-html.html
+Markdown-3.6/tests/extensions/extra/raw-html.txt
+Markdown-3.6/tests/extensions/extra/simple_def-lists.html
+Markdown-3.6/tests/extensions/extra/simple_def-lists.txt
+Markdown-3.6/tests/extensions/github_flavored.html
+Markdown-3.6/tests/extensions/github_flavored.txt
+Markdown-3.6/tests/extensions/nl2br_w_attr_list.html
+Markdown-3.6/tests/extensions/nl2br_w_attr_list.txt
+Markdown-3.6/tests/extensions/sane_lists.html
+Markdown-3.6/tests/extensions/sane_lists.txt
+Markdown-3.6/tests/extensions/toc.html
+Markdown-3.6/tests/extensions/toc.txt
+Markdown-3.6/tests/extensions/toc_invalid.html
+Markdown-3.6/tests/extensions/toc_invalid.txt
+Markdown-3.6/tests/extensions/toc_nested.html
+Markdown-3.6/tests/extensions/toc_nested.txt
+Markdown-3.6/tests/extensions/toc_nested2.html
+Markdown-3.6/tests/extensions/toc_nested2.txt
+Markdown-3.6/tests/extensions/toc_nested_list.html
+Markdown-3.6/tests/extensions/toc_nested_list.txt
+Markdown-3.6/tests/extensions/toc_out_of_order.html
+Markdown-3.6/tests/extensions/toc_out_of_order.txt
+Markdown-3.6/tests/extensions/wikilinks.html
+Markdown-3.6/tests/extensions/wikilinks.txt
+Markdown-3.6/tests/misc/
+Markdown-3.6/tests/misc/CRLF_line_ends.html
+Markdown-3.6/tests/misc/CRLF_line_ends.txt
+Markdown-3.6/tests/misc/adjacent-headers.html
+Markdown-3.6/tests/misc/adjacent-headers.txt
+Markdown-3.6/tests/misc/arabic.html
+Markdown-3.6/tests/misc/arabic.txt
+Markdown-3.6/tests/misc/autolinks_with_asterisks.html
+Markdown-3.6/tests/misc/autolinks_with_asterisks.txt
+Markdown-3.6/tests/misc/autolinks_with_asterisks_russian.html
+Markdown-3.6/tests/misc/autolinks_with_asterisks_russian.txt
+Markdown-3.6/tests/misc/backtick-escape.html
+Markdown-3.6/tests/misc/backtick-escape.txt
+Markdown-3.6/tests/misc/bidi.html
+Markdown-3.6/tests/misc/bidi.txt
+Markdown-3.6/tests/misc/blank-block-quote.html
+Markdown-3.6/tests/misc/blank-block-quote.txt
+Markdown-3.6/tests/misc/blank_lines_in_codeblocks.html
+Markdown-3.6/tests/misc/blank_lines_in_codeblocks.txt
+Markdown-3.6/tests/misc/blockquote-below-paragraph.html
+Markdown-3.6/tests/misc/blockquote-below-paragraph.txt
+Markdown-3.6/tests/misc/blockquote-hr.html
+Markdown-3.6/tests/misc/blockquote-hr.txt
+Markdown-3.6/tests/misc/blockquote.html
+Markdown-3.6/tests/misc/blockquote.txt
+Markdown-3.6/tests/misc/bold_links.html
+Markdown-3.6/tests/misc/bold_links.txt
+Markdown-3.6/tests/misc/br.html
+Markdown-3.6/tests/misc/br.txt
+Markdown-3.6/tests/misc/bracket_re.html
+Markdown-3.6/tests/misc/bracket_re.txt
+Markdown-3.6/tests/misc/brackets-in-img-title.html
+Markdown-3.6/tests/misc/brackets-in-img-title.txt
+Markdown-3.6/tests/misc/code-first-line.html
+Markdown-3.6/tests/misc/code-first-line.txt
+Markdown-3.6/tests/misc/em-around-links.html
+Markdown-3.6/tests/misc/em-around-links.txt
+Markdown-3.6/tests/misc/em_strong.html
+Markdown-3.6/tests/misc/em_strong.txt
+Markdown-3.6/tests/misc/em_strong_complex.html
+Markdown-3.6/tests/misc/em_strong_complex.txt
+Markdown-3.6/tests/misc/email.html
+Markdown-3.6/tests/misc/email.txt
+Markdown-3.6/tests/misc/escaped_links.html
+Markdown-3.6/tests/misc/escaped_links.txt
+Markdown-3.6/tests/misc/funky-list.html
+Markdown-3.6/tests/misc/funky-list.txt
+Markdown-3.6/tests/misc/h1.html
+Markdown-3.6/tests/misc/h1.txt
+Markdown-3.6/tests/misc/hash.html
+Markdown-3.6/tests/misc/hash.txt
+Markdown-3.6/tests/misc/header-in-lists.html
+Markdown-3.6/tests/misc/header-in-lists.txt
+Markdown-3.6/tests/misc/headers.html
+Markdown-3.6/tests/misc/headers.txt
+Markdown-3.6/tests/misc/hline.html
+Markdown-3.6/tests/misc/hline.txt
+Markdown-3.6/tests/misc/image-2.html
+Markdown-3.6/tests/misc/image-2.txt
+Markdown-3.6/tests/misc/image_in_links.html
+Markdown-3.6/tests/misc/image_in_links.txt
+Markdown-3.6/tests/misc/ins-at-start-of-paragraph.html
+Markdown-3.6/tests/misc/ins-at-start-of-paragraph.txt
+Markdown-3.6/tests/misc/inside_html.html
+Markdown-3.6/tests/misc/inside_html.txt
+Markdown-3.6/tests/misc/japanese.html
+Markdown-3.6/tests/misc/japanese.txt
+Markdown-3.6/tests/misc/lazy-block-quote.html
+Markdown-3.6/tests/misc/lazy-block-quote.txt
+Markdown-3.6/tests/misc/link-with-parenthesis.html
+Markdown-3.6/tests/misc/link-with-parenthesis.txt
+Markdown-3.6/tests/misc/lists.html
+Markdown-3.6/tests/misc/lists.txt
+Markdown-3.6/tests/misc/lists2.html
+Markdown-3.6/tests/misc/lists2.txt
+Markdown-3.6/tests/misc/lists3.html
+Markdown-3.6/tests/misc/lists3.txt
+Markdown-3.6/tests/misc/lists4.html
+Markdown-3.6/tests/misc/lists4.txt
+Markdown-3.6/tests/misc/lists5.html
+Markdown-3.6/tests/misc/lists5.txt
+Markdown-3.6/tests/misc/lists6.html
+Markdown-3.6/tests/misc/lists6.txt
+Markdown-3.6/tests/misc/lists7.html
+Markdown-3.6/tests/misc/lists7.txt
+Markdown-3.6/tests/misc/lists8.html
+Markdown-3.6/tests/misc/lists8.txt
+Markdown-3.6/tests/misc/missing-link-def.html
+Markdown-3.6/tests/misc/missing-link-def.txt
+Markdown-3.6/tests/misc/multi-paragraph-block-quote.html
+Markdown-3.6/tests/misc/multi-paragraph-block-quote.txt
+Markdown-3.6/tests/misc/multi-test.html
+Markdown-3.6/tests/misc/multi-test.txt
+Markdown-3.6/tests/misc/nested-lists.html
+Markdown-3.6/tests/misc/nested-lists.txt
+Markdown-3.6/tests/misc/nested-patterns.html
+Markdown-3.6/tests/misc/nested-patterns.txt
+Markdown-3.6/tests/misc/normalize.html
+Markdown-3.6/tests/misc/normalize.txt
+Markdown-3.6/tests/misc/numeric-entity.html
+Markdown-3.6/tests/misc/numeric-entity.txt
+Markdown-3.6/tests/misc/para-with-hr.html
+Markdown-3.6/tests/misc/para-with-hr.txt
+Markdown-3.6/tests/misc/russian.html
+Markdown-3.6/tests/misc/russian.txt
+Markdown-3.6/tests/misc/smart_em.html
+Markdown-3.6/tests/misc/smart_em.txt
+Markdown-3.6/tests/misc/some-test.html
+Markdown-3.6/tests/misc/some-test.txt
+Markdown-3.6/tests/misc/span.html
+Markdown-3.6/tests/misc/span.txt
+Markdown-3.6/tests/misc/strong-with-underscores.html
+Markdown-3.6/tests/misc/strong-with-underscores.txt
+Markdown-3.6/tests/misc/stronintags.html
+Markdown-3.6/tests/misc/stronintags.txt
+Markdown-3.6/tests/misc/tabs-in-lists.html
+Markdown-3.6/tests/misc/tabs-in-lists.txt
+Markdown-3.6/tests/misc/two-spaces.html
+Markdown-3.6/tests/misc/two-spaces.txt
+Markdown-3.6/tests/misc/uche.html
+Markdown-3.6/tests/misc/uche.txt
+Markdown-3.6/tests/misc/underscores.html
+Markdown-3.6/tests/misc/underscores.txt
+Markdown-3.6/tests/misc/url_spaces.html
+Markdown-3.6/tests/misc/url_spaces.txt
+Markdown-3.6/tests/pl/
+Markdown-3.6/tests/pl/Tests_2004/
+Markdown-3.6/tests/pl/Tests_2004/Amps and angle encoding.html
+Markdown-3.6/tests/pl/Tests_2004/Auto links.html
+Markdown-3.6/tests/pl/Tests_2004/Backslash escapes.html
+Markdown-3.6/tests/pl/Tests_2004/Blockquotes with code blocks.html
+Markdown-3.6/tests/pl/Tests_2004/Hard-wrapped paragraphs with list-like lines.html
+Markdown-3.6/tests/pl/Tests_2004/Horizontal rules.html
+Markdown-3.6/tests/pl/Tests_2004/Inline HTML (Advanced).html
+Markdown-3.6/tests/pl/Tests_2004/Inline HTML (Simple).html
+Markdown-3.6/tests/pl/Tests_2004/Inline HTML comments.html
+Markdown-3.6/tests/pl/Tests_2004/Links, inline style.html
+Markdown-3.6/tests/pl/Tests_2004/Links, reference style.html
+Markdown-3.6/tests/pl/Tests_2004/Literal quotes in titles.html
+Markdown-3.6/tests/pl/Tests_2004/Markdown Documentation - Basics.html
+Markdown-3.6/tests/pl/Tests_2004/Markdown Documentation - Syntax.html
+Markdown-3.6/tests/pl/Tests_2004/Nested blockquotes.html
+Markdown-3.6/tests/pl/Tests_2004/Ordered and unordered lists.html
+Markdown-3.6/tests/pl/Tests_2004/Strong and em together.html
+Markdown-3.6/tests/pl/Tests_2004/Tabs.html
+Markdown-3.6/tests/pl/Tests_2004/Tidyness.html
+Markdown-3.6/tests/pl/Tests_2004/Yuri-Attributes.html
+Markdown-3.6/tests/pl/Tests_2004/Yuri-Email.html
+Markdown-3.6/tests/pl/Tests_2004/Yuri-Footnotes.html
+Markdown-3.6/tests/pl/Tests_2004/Yuri-Links-in-Headers.html
+Markdown-3.6/tests/pl/Tests_2007/
+Markdown-3.6/tests/pl/Tests_2007/Amps and angle encoding.html
+Markdown-3.6/tests/pl/Tests_2007/Auto links.html
+Markdown-3.6/tests/pl/Tests_2007/Backslash escapes.html
+Markdown-3.6/tests/pl/Tests_2007/Blockquotes with code blocks.html
+Markdown-3.6/tests/pl/Tests_2007/Code Blocks.html
+Markdown-3.6/tests/pl/Tests_2007/Code Spans.html
+Markdown-3.6/tests/pl/Tests_2007/Hard-wrapped paragraphs with list-like lines.html
+Markdown-3.6/tests/pl/Tests_2007/Horizontal rules.html
+Markdown-3.6/tests/pl/Tests_2007/Images.html
+Markdown-3.6/tests/pl/Tests_2007/Inline HTML (Advanced).html
+Markdown-3.6/tests/pl/Tests_2007/Inline HTML (Simple).html
+Markdown-3.6/tests/pl/Tests_2007/Inline HTML comments.html
+Markdown-3.6/tests/pl/Tests_2007/Links, inline style.html
+Markdown-3.6/tests/pl/Tests_2007/Links, reference style.html
+Markdown-3.6/tests/pl/Tests_2007/Links, shortcut references.html
+Markdown-3.6/tests/pl/Tests_2007/Literal quotes in titles.html
+Markdown-3.6/tests/pl/Tests_2007/Markdown Documentation - Basics.html
+Markdown-3.6/tests/pl/Tests_2007/Markdown Documentation - Syntax.html
+Markdown-3.6/tests/pl/Tests_2007/Nested blockquotes.html
+Markdown-3.6/tests/pl/Tests_2007/Ordered and unordered lists.html
+Markdown-3.6/tests/pl/Tests_2007/Strong and em together.html
+Markdown-3.6/tests/pl/Tests_2007/Tabs.html
+Markdown-3.6/tests/pl/Tests_2007/Tidyness.html
+Markdown-3.6/tests/test_apis.py
+Markdown-3.6/tests/test_extensions.py
+Markdown-3.6/tests/test_legacy.py
+Markdown-3.6/tests/test_meta.py
+Markdown-3.6/tests/test_syntax/
+Markdown-3.6/tests/test_syntax/__init__.py
+Markdown-3.6/tests/test_syntax/blocks/
+Markdown-3.6/tests/test_syntax/blocks/__init__.py
+Markdown-3.6/tests/test_syntax/blocks/test_blockquotes.py
+Markdown-3.6/tests/test_syntax/blocks/test_code_blocks.py
+Markdown-3.6/tests/test_syntax/blocks/test_headers.py
+Markdown-3.6/tests/test_syntax/blocks/test_hr.py
+Markdown-3.6/tests/test_syntax/blocks/test_html_blocks.py
+Markdown-3.6/tests/test_syntax/blocks/test_paragraphs.py
+Markdown-3.6/tests/test_syntax/blocks/test_ul.py
+Markdown-3.6/tests/test_syntax/extensions/
+Markdown-3.6/tests/test_syntax/extensions/__init__.py
+Markdown-3.6/tests/test_syntax/extensions/test_abbr.py
+Markdown-3.6/tests/test_syntax/extensions/test_admonition.py
+Markdown-3.6/tests/test_syntax/extensions/test_attr_list.py
+Markdown-3.6/tests/test_syntax/extensions/test_code_hilite.py
+Markdown-3.6/tests/test_syntax/extensions/test_def_list.py
+Markdown-3.6/tests/test_syntax/extensions/test_fenced_code.py
+Markdown-3.6/tests/test_syntax/extensions/test_footnotes.py
+Markdown-3.6/tests/test_syntax/extensions/test_legacy_attrs.py
+Markdown-3.6/tests/test_syntax/extensions/test_legacy_em.py
+Markdown-3.6/tests/test_syntax/extensions/test_md_in_html.py
+Markdown-3.6/tests/test_syntax/extensions/test_smarty.py
+Markdown-3.6/tests/test_syntax/extensions/test_tables.py
+Markdown-3.6/tests/test_syntax/extensions/test_toc.py
+Markdown-3.6/tests/test_syntax/inline/
+Markdown-3.6/tests/test_syntax/inline/__init__.py
+Markdown-3.6/tests/test_syntax/inline/test_autolinks.py
+Markdown-3.6/tests/test_syntax/inline/test_emphasis.py
+Markdown-3.6/tests/test_syntax/inline/test_entities.py
+Markdown-3.6/tests/test_syntax/inline/test_images.py
+Markdown-3.6/tests/test_syntax/inline/test_links.py
+Markdown-3.6/tests/test_syntax/inline/test_raw_html.py
+Markdown-3.6/tox.ini
+* Getting build dependencies for wheel...
+running egg_info
+writing Markdown.egg-info/PKG-INFO
+writing dependency_links to Markdown.egg-info/dependency_links.txt
+writing entry points to Markdown.egg-info/entry_points.txt
+writing requirements to Markdown.egg-info/requires.txt
+writing top-level names to Markdown.egg-info/top_level.txt
+reading manifest file 'Markdown.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching 'MANIFEST'
+warning: no files found matching '*-requirements.txt'
+adding license file 'LICENSE.md'
+writing manifest file 'Markdown.egg-info/SOURCES.txt'
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/markdown
+copying markdown/postprocessors.py -> build/lib/markdown
+copying markdown/serializers.py -> build/lib/markdown
+copying markdown/htmlparser.py -> build/lib/markdown
+copying markdown/__meta__.py -> build/lib/markdown
+copying markdown/util.py -> build/lib/markdown
+copying markdown/core.py -> build/lib/markdown
+copying markdown/blockparser.py -> build/lib/markdown
+copying markdown/__main__.py -> build/lib/markdown
+copying markdown/preprocessors.py -> build/lib/markdown
+copying markdown/blockprocessors.py -> build/lib/markdown
+copying markdown/inlinepatterns.py -> build/lib/markdown
+copying markdown/treeprocessors.py -> build/lib/markdown
+copying markdown/__init__.py -> build/lib/markdown
+copying markdown/test_tools.py -> build/lib/markdown
+creating build/lib/markdown/extensions
+copying markdown/extensions/wikilinks.py -> build/lib/markdown/extensions
+copying markdown/extensions/legacy_em.py -> build/lib/markdown/extensions
+copying markdown/extensions/admonition.py -> build/lib/markdown/extensions
+copying markdown/extensions/attr_list.py -> build/lib/markdown/extensions
+copying markdown/extensions/sane_lists.py -> build/lib/markdown/extensions
+copying markdown/extensions/legacy_attrs.py -> build/lib/markdown/extensions
+copying markdown/extensions/codehilite.py -> build/lib/markdown/extensions
+copying markdown/extensions/fenced_code.py -> build/lib/markdown/extensions
+copying markdown/extensions/smarty.py -> build/lib/markdown/extensions
+copying markdown/extensions/extra.py -> build/lib/markdown/extensions
+copying markdown/extensions/footnotes.py -> build/lib/markdown/extensions
+copying markdown/extensions/def_list.py -> build/lib/markdown/extensions
+copying markdown/extensions/abbr.py -> build/lib/markdown/extensions
+copying markdown/extensions/tables.py -> build/lib/markdown/extensions
+copying markdown/extensions/nl2br.py -> build/lib/markdown/extensions
+copying markdown/extensions/toc.py -> build/lib/markdown/extensions
+copying markdown/extensions/meta.py -> build/lib/markdown/extensions
+copying markdown/extensions/md_in_html.py -> build/lib/markdown/extensions
+copying markdown/extensions/__init__.py -> build/lib/markdown/extensions
+running egg_info
+writing Markdown.egg-info/PKG-INFO
+writing dependency_links to Markdown.egg-info/dependency_links.txt
+writing entry points to Markdown.egg-info/entry_points.txt
+writing requirements to Markdown.egg-info/requires.txt
+writing top-level names to Markdown.egg-info/top_level.txt
+reading manifest file 'Markdown.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching 'MANIFEST'
+warning: no files found matching '*-requirements.txt'
+adding license file 'LICENSE.md'
+writing manifest file 'Markdown.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/markdown
+copying build/lib/markdown/postprocessors.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/serializers.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/htmlparser.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/__meta__.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/util.py -> build/bdist.linux-x86_64/wheel/./markdown
+creating build/bdist.linux-x86_64/wheel/markdown/extensions
+copying build/lib/markdown/extensions/wikilinks.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/legacy_em.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/admonition.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/attr_list.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/sane_lists.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/legacy_attrs.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/codehilite.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/fenced_code.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/smarty.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/extra.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/footnotes.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/def_list.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/abbr.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/tables.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/nl2br.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/toc.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/meta.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/md_in_html.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/extensions/__init__.py -> build/bdist.linux-x86_64/wheel/./markdown/extensions
+copying build/lib/markdown/core.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/blockparser.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/__main__.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/preprocessors.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/blockprocessors.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/inlinepatterns.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/treeprocessors.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/__init__.py -> build/bdist.linux-x86_64/wheel/./markdown
+copying build/lib/markdown/test_tools.py -> build/bdist.linux-x86_64/wheel/./markdown
+running install_egg_info
+Copying Markdown.egg-info to build/bdist.linux-x86_64/wheel/./Markdown-3.6-py3.11.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/Markdown-3.6.dist-info/WHEEL
+creating '/home/omen/GITHUB/One4All_SlackBuild/Markdown/work/Markdown-3.6/dist/.tmp-b8qfs18z/Markdown-3.6-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'markdown/__init__.py'
+adding 'markdown/__main__.py'
+adding 'markdown/__meta__.py'
+adding 'markdown/blockparser.py'
+adding 'markdown/blockprocessors.py'
+adding 'markdown/core.py'
+adding 'markdown/htmlparser.py'
+adding 'markdown/inlinepatterns.py'
+adding 'markdown/postprocessors.py'
+adding 'markdown/preprocessors.py'
+adding 'markdown/serializers.py'
+adding 'markdown/test_tools.py'
+adding 'markdown/treeprocessors.py'
+adding 'markdown/util.py'
+adding 'markdown/extensions/__init__.py'
+adding 'markdown/extensions/abbr.py'
+adding 'markdown/extensions/admonition.py'
+adding 'markdown/extensions/attr_list.py'
+adding 'markdown/extensions/codehilite.py'
+adding 'markdown/extensions/def_list.py'
+adding 'markdown/extensions/extra.py'
+adding 'markdown/extensions/fenced_code.py'
+adding 'markdown/extensions/footnotes.py'
+adding 'markdown/extensions/legacy_attrs.py'
+adding 'markdown/extensions/legacy_em.py'
+adding 'markdown/extensions/md_in_html.py'
+adding 'markdown/extensions/meta.py'
+adding 'markdown/extensions/nl2br.py'
+adding 'markdown/extensions/sane_lists.py'
+adding 'markdown/extensions/smarty.py'
+adding 'markdown/extensions/tables.py'
+adding 'markdown/extensions/toc.py'
+adding 'markdown/extensions/wikilinks.py'
+adding 'Markdown-3.6.dist-info/LICENSE.md'
+adding 'Markdown-3.6.dist-info/METADATA'
+adding 'Markdown-3.6.dist-info/WHEEL'
+adding 'Markdown-3.6.dist-info/entry_points.txt'
+adding 'Markdown-3.6.dist-info/top_level.txt'
+adding 'Markdown-3.6.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built Markdown-3.6-py3-none-any.whl
+cp: cannot stat 'ABOUT ABOUT-NLS ANNOUNCE AUTHORS *BUGS* ChangeLog Changelog CHANGELOG Changes CHANGES COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS doc docs* Doc Docs* *FAQ* FEATURES FILES GPL* HACKING History HISTORY index.ht* *INDEX* INSTALL* License* LICENSE* LSM MANIFEST NEWS *README* *Readme* *RELEASE* RELNOTES Roadmap ROADMAP SITES THANKS TIPS TODO VERSION': File name too long
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/Markdown/binary-Markdown-3.6/Markdown-3.6-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/markdown_py
+usr/doc/
+usr/doc/Markdown-3.6/
+usr/doc/Markdown-3.6/Markdown.SlackBuild
+usr/lib/
+usr/lib/python3.11/
+usr/lib/python3.11/site-packages/
+usr/lib/python3.11/site-packages/Markdown-3.6.dist-info/
+usr/lib/python3.11/site-packages/Markdown-3.6.dist-info/LICENSE.md
+usr/lib/python3.11/site-packages/Markdown-3.6.dist-info/METADATA
+usr/lib/python3.11/site-packages/Markdown-3.6.dist-info/RECORD
+usr/lib/python3.11/site-packages/Markdown-3.6.dist-info/WHEEL
+usr/lib/python3.11/site-packages/Markdown-3.6.dist-info/entry_points.txt
+usr/lib/python3.11/site-packages/Markdown-3.6.dist-info/top_level.txt
+usr/lib/python3.11/site-packages/markdown/
+usr/lib/python3.11/site-packages/markdown/__init__.py
+usr/lib/python3.11/site-packages/markdown/__main__.py
+usr/lib/python3.11/site-packages/markdown/__meta__.py
+usr/lib/python3.11/site-packages/markdown/__pycache__/
+usr/lib/python3.11/site-packages/markdown/__pycache__/__init__.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/__init__.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/__main__.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/__main__.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/__meta__.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/__meta__.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/blockparser.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/blockparser.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/blockprocessors.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/blockprocessors.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/core.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/core.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/htmlparser.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/htmlparser.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/inlinepatterns.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/inlinepatterns.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/postprocessors.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/postprocessors.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/preprocessors.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/preprocessors.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/serializers.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/serializers.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/test_tools.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/test_tools.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/treeprocessors.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/treeprocessors.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/util.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/__pycache__/util.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/blockparser.py
+usr/lib/python3.11/site-packages/markdown/blockprocessors.py
+usr/lib/python3.11/site-packages/markdown/core.py
+usr/lib/python3.11/site-packages/markdown/extensions/
+usr/lib/python3.11/site-packages/markdown/extensions/__init__.py
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/__init__.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/__init__.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/abbr.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/abbr.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/admonition.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/admonition.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/attr_list.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/attr_list.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/codehilite.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/codehilite.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/def_list.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/def_list.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/extra.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/extra.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/fenced_code.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/fenced_code.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/footnotes.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/footnotes.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/legacy_attrs.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/legacy_attrs.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/legacy_em.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/legacy_em.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/md_in_html.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/md_in_html.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/meta.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/meta.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/nl2br.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/nl2br.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/sane_lists.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/sane_lists.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/smarty.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/smarty.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/tables.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/tables.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/toc.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/toc.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/wikilinks.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/__pycache__/wikilinks.cpython-311.pyc
+usr/lib/python3.11/site-packages/markdown/extensions/abbr.py
+usr/lib/python3.11/site-packages/markdown/extensions/admonition.py
+usr/lib/python3.11/site-packages/markdown/extensions/attr_list.py
+usr/lib/python3.11/site-packages/markdown/extensions/codehilite.py
+usr/lib/python3.11/site-packages/markdown/extensions/def_list.py
+usr/lib/python3.11/site-packages/markdown/extensions/extra.py
+usr/lib/python3.11/site-packages/markdown/extensions/fenced_code.py
+usr/lib/python3.11/site-packages/markdown/extensions/footnotes.py
+usr/lib/python3.11/site-packages/markdown/extensions/legacy_attrs.py
+usr/lib/python3.11/site-packages/markdown/extensions/legacy_em.py
+usr/lib/python3.11/site-packages/markdown/extensions/md_in_html.py
+usr/lib/python3.11/site-packages/markdown/extensions/meta.py
+usr/lib/python3.11/site-packages/markdown/extensions/nl2br.py
+usr/lib/python3.11/site-packages/markdown/extensions/sane_lists.py
+usr/lib/python3.11/site-packages/markdown/extensions/smarty.py
+usr/lib/python3.11/site-packages/markdown/extensions/tables.py
+usr/lib/python3.11/site-packages/markdown/extensions/toc.py
+usr/lib/python3.11/site-packages/markdown/extensions/wikilinks.py
+usr/lib/python3.11/site-packages/markdown/htmlparser.py
+usr/lib/python3.11/site-packages/markdown/inlinepatterns.py
+usr/lib/python3.11/site-packages/markdown/postprocessors.py
+usr/lib/python3.11/site-packages/markdown/preprocessors.py
+usr/lib/python3.11/site-packages/markdown/serializers.py
+usr/lib/python3.11/site-packages/markdown/test_tools.py
+usr/lib/python3.11/site-packages/markdown/treeprocessors.py
+usr/lib/python3.11/site-packages/markdown/util.py
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/Markdown/binary-Markdown-3.6/Markdown-3.6-x86_64-1_rtz.tlz created.
+
+Build process completed in 0 minutes and 4 seconds.
