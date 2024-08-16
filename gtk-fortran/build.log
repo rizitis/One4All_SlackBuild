@@ -1,0 +1,768 @@
+Starting build process...
+--2024-08-16 22:21:12--  https://github.com/vmagnin/gtk-fortran/archive/refs/tags/v4.6.0.tar.gz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/vmagnin/gtk-fortran/tar.gz/refs/tags/v4.6.0 [following]
+--2024-08-16 22:21:13--  https://codeload.github.com/vmagnin/gtk-fortran/tar.gz/refs/tags/v4.6.0
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘gtk-fortran-4.6.0.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  431K
+    50K .......... .......... .......... .......... ..........  925K
+   100K .......... .......... .......... .......... .......... 3.56M
+   150K .......... .......... .......... .......... .......... 6.63M
+   200K .......... .......... .......... .......... .......... 1.03M
+   250K .......... .......... .......... .......... .......... 4.97M
+   300K .......... .......... .......... .......... .......... 6.00M
+   350K .......... .......... .......... .......... ..........  607K
+   400K .......... .......... .......... .......... ..........  690K
+   450K .......... .......... .......... .......... .......... 79.4M
+   500K .......... .......... .......... .......... .......... 56.9M
+   550K .......... .......... .......... .......... .......... 82.6M
+   600K .......... .......... .......... .......... .......... 79.1M
+   650K .......... .......... .......... .......... .......... 90.7M
+   700K .......... .......... .......... .......... .......... 85.9M
+   750K .......... .......... .......... .......... .......... 93.5M
+   800K .......... .......... .......... .......... .......... 96.6M
+   850K .......... .......... .......... .......... ..........  105M
+   900K .......... .......... .......... .......... .......... 96.2M
+   950K .......... .......... .......... .......... .......... 97.8M
+  1000K .......... .......... .......... .......... .......... 4.54M
+  1050K .......... .......... .......... .......... .......... 1.15M
+  1100K .......... .......... .......... .......... .......... 5.89M
+  1150K .......... .......... .......... .......... ..........  721K
+  1200K .......... .......... .......... .......... .......... 7.38M
+  1250K .......... .......... .......... .......... .......... 10.0M
+  1300K .......... .......... .......... .......... .......... 91.8M
+  1350K .......... .......... .......... .......... ..........  100M
+  1400K .......... .......... .......... .......... .......... 97.6M
+  1450K .......... .......... .......... .......... .......... 1.63M
+  1500K .......... .......... .......... .......... .......... 4.77M
+  1550K .......... .......... .......... .......... .......... 5.80M
+  1600K .......... .......... .......... .......... .......... 5.02M
+  1650K .......... .......... .......... .......... .......... 1.53M
+  1700K .......... .......... .......... .......... .......... 4.99M
+  1750K .......... .......... .......... .......... .......... 5.09M
+  1800K .......... .......... .......... .......... .......... 6.61M
+  1850K .......... .......... .......... .......... .......... 1.50M
+  1900K .......... .......... .......... .......... .......... 5.07M
+  1950K .......... .......... .......... .......... .......... 5.21M
+  2000K .......... .......... .......... .......... .......... 5.37M
+  2050K .......... .......... .......... .......... .......... 1.42M
+  2100K .......... .......... .......... .......... .......... 6.87M
+  2150K .......... .......... .......... .......... .......... 5.53M
+  2200K .......... .......... .......... .......... .......... 5.11M
+  2250K .......... .......... .......... .......... .......... 1.55M
+  2300K .......... .......... .......... .......... .......... 4.84M
+  2350K .......... .......... .......... .......... .......... 4.99M
+  2400K .......... .......... .......... .......... .......... 5.03M
+  2450K .......... .......... .......... .......... .......... 1.63M
+  2500K .......... .......... .......... .......... .......... 5.44M
+  2550K .......... .......... .......... .......... .......... 4.84M
+  2600K .......... .......... .......... .......... .......... 4.81M
+  2650K .......... .......... .......... .......... .......... 1.64M
+  2700K .......... .......... .......... .......... .......... 6.49M
+  2750K .......... .......... .......... .......... .......... 3.83M
+  2800K .......... .......... .......... .......... .......... 5.08M
+  2850K .......... .......... .......... .......... .......... 1.74M
+  2900K .......... .......... .......... .......... .......... 5.10M
+  2950K .......... .......... .......... .......... .......... 4.98M
+  3000K .......... .......... .......... .......... .......... 5.17M
+  3050K .......... .......... .......... .......... .......... 1.77M
+  3100K .......... .......... .......... .......... .......... 3.28M
+  3150K .......... .......... .......... .......... .......... 6.72M
+  3200K .......... .......... .......... .......... .......... 5.26M
+  3250K .......... .......... .......... .......... .......... 5.29M
+  3300K .......... .......... .......... .......... .......... 1.56M
+  3350K .......... .......... .......... .......... .......... 5.21M
+  3400K .......... .......... .......... .......... .......... 6.65M
+  3450K .......... .......... .......... .......... .......... 5.16M
+  3500K .......... .......... .......... .......... .......... 1.61M
+  3550K .......... .......... .......... .......... .......... 5.31M
+  3600K .......... .......... .......... .......... .......... 5.23M
+  3650K .......... .......... .......... .......... .......... 4.94M
+  3700K .......... .......... .......... .......... .......... 2.10M
+  3750K .......... .......... .......... .......... .......... 3.23M
+  3800K .......... .......... .......... .......... .......... 5.40M
+  3850K .......... .......... .......... .......... .......... 5.03M
+  3900K .......... .......... .......... .......... .......... 2.13M
+  3950K .......... .......... .......... .......... .......... 3.23M
+  4000K .......... .......... .......... .......... .......... 4.98M
+  4050K .......... .......... .......... .......... .......... 5.25M
+  4100K .......... .......... .......... .......... .......... 4.93M
+  4150K .......... .......... .......... .......... .......... 1.90M
+  4200K .......... .......... .......... .......... .......... 4.22M
+  4250K .......... .......... .......... .......... .......... 4.81M
+  4300K .......... .......... .......... .......... .......... 4.82M
+  4350K .......... .......... .......... .......... .......... 2.38M
+  4400K .......... .......... .......... .......... .......... 3.47M
+  4450K .......... .......... .......... .......... .......... 4.01M
+  4500K .......... .......... .......... .......... .......... 4.95M
+  4550K .......... .......... .......... .......               1.93M=1.5s
+
+2024-08-16 22:21:16 (3.03 MB/s) - ‘gtk-fortran-4.6.0.tar.gz’ saved [4697411]
+
+gtk-fortran-4.6.0/
+gtk-fortran-4.6.0/.github/
+gtk-fortran-4.6.0/.github/ISSUE_TEMPLATE/
+gtk-fortran-4.6.0/.github/ISSUE_TEMPLATE/bug_report.md
+gtk-fortran-4.6.0/.gitignore
+gtk-fortran-4.6.0/CHANGELOG.md
+gtk-fortran-4.6.0/CITATION.cff
+gtk-fortran-4.6.0/CMakeLists.txt
+gtk-fortran-4.6.0/INSTALL.md
+gtk-fortran-4.6.0/LICENSE
+gtk-fortran-4.6.0/LICENSE_EXCEPTION
+gtk-fortran-4.6.0/README-high-level.md
+gtk-fortran-4.6.0/README.md
+gtk-fortran-4.6.0/VERSIONS
+gtk-fortran-4.6.0/cmake/
+gtk-fortran-4.6.0/cmake/DefaultFlags.cmake
+gtk-fortran-4.6.0/cmake/README.md
+gtk-fortran-4.6.0/cmake/cmake_uninstall.cmake.in
+gtk-fortran-4.6.0/codemeta.json
+gtk-fortran-4.6.0/examples/
+gtk-fortran-4.6.0/examples/CMakeLists.txt
+gtk-fortran-4.6.0/examples/README.md
+gtk-fortran-4.6.0/examples/bazaar.f90
+gtk-fortran-4.6.0/examples/cairo-basics-click.f90
+gtk-fortran-4.6.0/examples/cairo-basics.f90
+gtk-fortran-4.6.0/examples/cairo-tests.f90
+gtk-fortran-4.6.0/examples/demo_sound.ogg
+gtk-fortran-4.6.0/examples/gio_demo.f90
+gtk-fortran-4.6.0/examples/gtkbuilder.cmb
+gtk-fortran-4.6.0/examples/gtkbuilder.ui
+gtk-fortran-4.6.0/examples/gtkbuilder2.f90
+gtk-fortran-4.6.0/examples/gtkhello.f90
+gtk-fortran-4.6.0/examples/gtkzero_gapp.f90
+gtk-fortran-4.6.0/examples/hl_assistant.f90
+gtk-fortran-4.6.0/examples/hl_cairo1.f90
+gtk-fortran-4.6.0/examples/hl_cairo_clock.f90
+gtk-fortran-4.6.0/examples/hl_cairo_viewer.f90
+gtk-fortran-4.6.0/examples/hl_choosers.f90
+gtk-fortran-4.6.0/examples/hl_combo.f90
+gtk-fortran-4.6.0/examples/hl_containers.f90
+gtk-fortran-4.6.0/examples/hl_dialog.f90
+gtk-fortran-4.6.0/examples/hl_infobar.f90
+gtk-fortran-4.6.0/examples/hl_list1.f90
+gtk-fortran-4.6.0/examples/hl_list_n.f90
+gtk-fortran-4.6.0/examples/hl_list_renderers.f90
+gtk-fortran-4.6.0/examples/hl_pbar.f90
+gtk-fortran-4.6.0/examples/hl_sliders.f90
+gtk-fortran-4.6.0/examples/hl_sliders2.f90
+gtk-fortran-4.6.0/examples/hl_textview.f90
+gtk-fortran-4.6.0/examples/hl_tree.f90
+gtk-fortran-4.6.0/examples/julia_pixbuf.f90
+gtk-fortran-4.6.0/examples/list_demo.f90
+gtk-fortran-4.6.0/examples/mandelbrot_pixbuf.f90
+gtk-fortran-4.6.0/examples/mandelbrot_pixbuf_zoom.f90
+gtk-fortran-4.6.0/examples/menubar.f90
+gtk-fortran-4.6.0/examples/notebooks.f90
+gtk-fortran-4.6.0/examples/pixbuf_without_gui.f90
+gtk-fortran-4.6.0/examples/regex.f90
+gtk-fortran-4.6.0/examples/tests.f90
+gtk-fortran-4.6.0/examples/tests_gtk_sup.f90
+gtk-fortran-4.6.0/fpm.toml
+gtk-fortran-4.6.0/logo/
+gtk-fortran-4.6.0/logo/README.md
+gtk-fortran-4.6.0/logo/gtk-fortran-logo.svg
+gtk-fortran-4.6.0/logo/logo-gtk-fortran-big.png
+gtk-fortran-4.6.0/logo/logo-gtk-fortran-small.png
+gtk-fortran-4.6.0/logo/logo-gtk-fortran.png
+gtk-fortran-4.6.0/plplot/
+gtk-fortran-4.6.0/plplot/CMakeLists.txt
+gtk-fortran-4.6.0/plplot/README.md
+gtk-fortran-4.6.0/plplot/hl_plplot17e.f90
+gtk-fortran-4.6.0/plplot/hl_plplot17e_gto.f90
+gtk-fortran-4.6.0/plplot/hl_plplot1e.f90
+gtk-fortran-4.6.0/plplot/hl_plplot30e.f90
+gtk-fortran-4.6.0/plplot/hl_plplot4e.f90
+gtk-fortran-4.6.0/plplot/hl_plplot8e.f90
+gtk-fortran-4.6.0/screenshots/
+gtk-fortran-4.6.0/screenshots/Julia_gtk-fortran_animated.gif
+gtk-fortran-4.6.0/screenshots/README.md
+gtk-fortran-4.6.0/screenshots/Screenshot_video_tutorial.png
+gtk-fortran-4.6.0/screenshots/bazaar-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/bazaar-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/bazaar_about_box.tiff
+gtk-fortran-4.6.0/screenshots/cairo-basics-click-fedora34.png
+gtk-fortran-4.6.0/screenshots/cairo-basics-gtk-fortran.png
+gtk-fortran-4.6.0/screenshots/cairo-basics-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/cairo-basics_MacOSX.tiff
+gtk-fortran-4.6.0/screenshots/cairo-tests-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/cairo-tests-ubuntu_22_10.png
+gtk-fortran-4.6.0/screenshots/gtkbuilder-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/gtkbuilder2-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/gtkf-sketcher_fedora15.png
+gtk-fortran-4.6.0/screenshots/gtkhello-kubuntu_19.10.png
+gtk-fortran-4.6.0/screenshots/gtkhello2-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/gtkhello2.png
+gtk-fortran-4.6.0/screenshots/gtkzero-kubuntu_19.10.png
+gtk-fortran-4.6.0/screenshots/hl_assistant-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/hl_cairo1-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/hl_cairo_clock-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/hl_cairo_viewer-fedora38.png
+gtk-fortran-4.6.0/screenshots/hl_cairo_viewer-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/hl_choosers-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/hl_combo-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/hl_containers-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/hl_dialog-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/hl_dialog-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/hl_dialog.png
+gtk-fortran-4.6.0/screenshots/hl_infobar-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/hl_list1-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/hl_list_n-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/hl_list_n_2+3.png
+gtk-fortran-4.6.0/screenshots/hl_list_renderers-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/hl_pbar-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/hl_plplot17e_MSYS2_Windows7.png
+gtk-fortran-4.6.0/screenshots/hl_plplot1e_MSYS2_Windows7.png
+gtk-fortran-4.6.0/screenshots/hl_plplot30e_MSYS2_Windows7.png
+gtk-fortran-4.6.0/screenshots/hl_plplot4e_MSYS2_Windows7.png
+gtk-fortran-4.6.0/screenshots/hl_plplot8e_MSYS2_Windows7.png
+gtk-fortran-4.6.0/screenshots/hl_radio-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/hl_sliders-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/hl_sliders2-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/hl_textview-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/hl_tree_fedora15.png
+gtk-fortran-4.6.0/screenshots/julia_pixbuf-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/julia_pixbuf-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/julia_pixbuf.tiff
+gtk-fortran-4.6.0/screenshots/julia_pixbuf_fedora15.png
+gtk-fortran-4.6.0/screenshots/list_demo-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/mandelbrot-gtk-fortran.png
+gtk-fortran-4.6.0/screenshots/mandelbrot-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/mandelbrot_pixbuf-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/mandelbrot_pixbuf_zoom-kubuntu_16_04.png
+gtk-fortran-4.6.0/screenshots/menubar-fedora_33.png
+gtk-fortran-4.6.0/screenshots/notebooks-ubuntu_11_04_32bits.png
+gtk-fortran-4.6.0/screenshots/sierpinski_triangle.png
+gtk-fortran-4.6.0/sketcher/
+gtk-fortran-4.6.0/sketcher/CMakeLists.txt
+gtk-fortran-4.6.0/sketcher/README.md
+gtk-fortran-4.6.0/sketcher/data/
+gtk-fortran-4.6.0/sketcher/data/apache2.0.lic
+gtk-fortran-4.6.0/sketcher/data/bsd.lic
+gtk-fortran-4.6.0/sketcher/data/freeware.lic
+gtk-fortran-4.6.0/sketcher/data/gnu-gpl-v2.lic
+gtk-fortran-4.6.0/sketcher/data/gnu-gpl-v3.lic
+gtk-fortran-4.6.0/sketcher/data/gnu-lgpl-v2.1.lic
+gtk-fortran-4.6.0/sketcher/data/gnu-lgpl-v2.lic
+gtk-fortran-4.6.0/sketcher/data/zlib.lic
+gtk-fortran-4.6.0/sketcher/default.options
+gtk-fortran-4.6.0/sketcher/example.glade
+gtk-fortran-4.6.0/sketcher/gtkf-sketcher.f90
+gtk-fortran-4.6.0/sketcher/gtkf-sketcher.glade
+gtk-fortran-4.6.0/src/
+gtk-fortran-4.6.0/src/CMakeLists.txt
+gtk-fortran-4.6.0/src/README.md
+gtk-fortran-4.6.0/src/alt_build_test.sh
+gtk-fortran-4.6.0/src/api_compatibility.f90
+gtk-fortran-4.6.0/src/build.sh
+gtk-fortran-4.6.0/src/cairo-auto.f90
+gtk-fortran-4.6.0/src/cfwrapper/
+gtk-fortran-4.6.0/src/cfwrapper/README.md
+gtk-fortran-4.6.0/src/cfwrapper/analyze.py
+gtk-fortran-4.6.0/src/cfwrapper/cfwrapper.py
+gtk-fortran-4.6.0/src/cfwrapper/cleaning.py
+gtk-fortran-4.6.0/src/cfwrapper/enums.py
+gtk-fortran-4.6.0/src/cfwrapper/errors.py
+gtk-fortran-4.6.0/src/cfwrapper/fortran.py
+gtk-fortran-4.6.0/src/cfwrapper/globals_const.py
+gtk-fortran-4.6.0/src/cfwrapper/gtk-fortran-hash.pkl
+gtk-fortran-4.6.0/src/cfwrapper/lib_versions.py
+gtk-fortran-4.6.0/src/cfwrapper/run_tests.py
+gtk-fortran-4.6.0/src/cfwrapper/scan_types_and_enums.py
+gtk-fortran-4.6.0/src/cfwrapper/stats.py
+gtk-fortran-4.6.0/src/extract_enums.pl
+gtk-fortran-4.6.0/src/extract_events.pl
+gtk-fortran-4.6.0/src/extract_hl_doc.py
+gtk-fortran-4.6.0/src/gdk-auto.f90
+gtk-fortran-4.6.0/src/gdk-pixbuf-auto.f90
+gtk-fortran-4.6.0/src/gdk-pixbuf-hl.f90
+gtk-fortran-4.6.0/src/gdkevents-auto.f90
+gtk-fortran-4.6.0/src/glib-auto.f90
+gtk-fortran-4.6.0/src/graphene-auto.f90
+gtk-fortran-4.6.0/src/gsk-auto.f90
+gtk-fortran-4.6.0/src/gtk-auto.in
+gtk-fortran-4.6.0/src/gtk-draw-hl.f90
+gtk-fortran-4.6.0/src/gtk-enumerators.lis
+gtk-fortran-4.6.0/src/gtk-fortran-index.csv
+gtk-fortran-4.6.0/src/gtk-fortran-modscan.man
+gtk-fortran-4.6.0/src/gtk-fortran.f90
+gtk-fortran-4.6.0/src/gtk-fortran.pc.in
+gtk-fortran-4.6.0/src/gtk-fortran_funptr.csv
+gtk-fortran-4.6.0/src/gtk-fortran_types.csv
+gtk-fortran-4.6.0/src/gtk-hl-assistant.f90
+gtk-fortran-4.6.0/src/gtk-hl-button.f90
+gtk-fortran-4.6.0/src/gtk-hl-chooser.f90
+gtk-fortran-4.6.0/src/gtk-hl-combobox.f90
+gtk-fortran-4.6.0/src/gtk-hl-container.f90
+gtk-fortran-4.6.0/src/gtk-hl-dialog.f90
+gtk-fortran-4.6.0/src/gtk-hl-entry.f90
+gtk-fortran-4.6.0/src/gtk-hl-infobar.f90
+gtk-fortran-4.6.0/src/gtk-hl-misc.f90
+gtk-fortran-4.6.0/src/gtk-hl-progress.f90
+gtk-fortran-4.6.0/src/gtk-hl-spin-slider.f90
+gtk-fortran-4.6.0/src/gtk-hl-tree.f90
+gtk-fortran-4.6.0/src/gtk-hl.f90
+gtk-fortran-4.6.0/src/gtk-sup.f90
+gtk-fortran-4.6.0/src/gtk.f90
+gtk-fortran-4.6.0/src/gtkenums-auto.in
+gtk-fortran-4.6.0/src/pango-auto.f90
+gtk-fortran-4.6.0/src/plplot_extra.f90
+gtk-fortran-4.6.0/src/screenshots.sh
+gtk-fortran-4.6.0/src/show_versions.sh
+gtk-fortran-4.6.0/src/test_extra.sh
+gtk-fortran-4.6.0/src/tools.py
+gtk-fortran-4.6.0/src/unix-print-auto.f90
+gtk-fortran-4.6.0/src/usemodules.pl
+gtk-fortran-4.6.0/src/usemodules.py
+gtk-fortran-4.6.0/tutorials/
+gtk-fortran-4.6.0/tutorials/README.md
+gtk-fortran-4.6.0/tutorials/my_first_gtk_app1.f90
+gtk-fortran-4.6.0/tutorials/my_first_gtk_app2.f90
+gtk-fortran-4.6.0/tutorials/my_first_gtk_app3.f90
+gtk-fortran-4.6.0/tutorials/my_first_gtk_app4.f90
+gtk-fortran-4.6.0/tutorials/my_first_gtk_app5.f90
+gtk-fortran-4.6.0/tutorials/my_first_gtk_app6.f90
+gtk-fortran-4.6.0/tutorials/my_first_gtk_app7.f90
+-- The Fortran compiler identification is GNU 14.2.0
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Check for working Fortran compiler: /usr/bin/f95 - skipped
+-- Building gtk-4-fortran 4.6.0
+-- Based on GTK 4.14.2 and GLib 2.80.0
+-- GNUInstallDirs: /usr lib64 include bin share share/man
+-- System: Linux 6.10.5 x86_64
+-- Compiler: GNU 14.2.0 /usr/bin/f95
+-- Build type is: Release
+-- Compilation flags:  -pthread -O3 -mtune=native -march=native
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'gtk4'
+--   Found gtk4, version 4.14.4
+-- >>> PLPLOT excluded as command option
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_CXX_FLAGS
+    CMAKE_C_FLAGS
+    LIB_SUFFIX
+
+
+-- Build files have been written to: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build
+[  1%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gdk-pixbuf-auto.f90.o
+[  2%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/api_compatibility.f90.o
+[  3%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/cairo-auto.f90.o
+[  4%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gdk-auto.f90.o
+[  5%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/glib-auto.f90.o
+[  6%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk.f90.o
+[  7%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-sup.f90.o
+[  8%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gdk-pixbuf-hl.f90.o
+[  9%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gdkevents-auto.f90.o
+[ 10%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/graphene-auto.f90.o
+[ 11%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gsk-auto.f90.o
+[ 12%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-draw-hl.f90.o
+[ 13%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-assistant.f90.o
+[ 14%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-misc.f90.o
+[ 15%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-button.f90.o
+[ 16%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-container.f90.o
+[ 17%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-entry.f90.o
+[ 18%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-chooser.f90.o
+[ 19%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-combobox.f90.o
+[ 20%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-dialog.f90.o
+[ 21%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-infobar.f90.o
+[ 22%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-progress.f90.o
+[ 23%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-spin-slider.f90.o
+[ 24%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl-tree.f90.o
+[ 25%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/gtk-hl.f90.o
+[ 26%] Building Fortran object src/CMakeFiles/gtk-fortran_object.dir/pango-auto.f90.o
+[ 26%] Built target gtk-fortran_object
+[ 27%] Linking Fortran static library libgtk-4-fortran.a
+[ 27%] Built target gtk-fortran_static
+[ 28%] Linking Fortran shared library libgtk-4-fortran.so
+/usr/bin/ld: CMakeFiles/gtk-fortran_object.dir/gtk-hl-assistant.f90.o: warning: relocation against `hl_gtk_assistant_destroy' in read-only section `.rodata'
+/usr/bin/ld: warning: creating DT_TEXTREL in a shared object
+[ 28%] Built target gtk-fortran_shared
+[ 29%] Building Fortran object src/CMakeFiles/gtk-4-fortran.dir/gtk-fortran.out.f90.o
+[ 30%] Linking Fortran executable gtk-4-fortran
+[ 30%] Built target gtk-4-fortran
+[ 30%] Built target pkgconfig
+[ 30%] Built target usemodules
+[ 30%] Built target manpage
+[ 31%] Building Fortran object examples/CMakeFiles/gtkzero_gapp.dir/gtkzero_gapp.f90.o
+[ 32%] Linking Fortran executable gtkzero_gapp
+[ 32%] Built target gtkzero_gapp
+[ 33%] Building Fortran object examples/CMakeFiles/gtkhello.dir/gtkhello.f90.o
+[ 34%] Linking Fortran executable gtkhello
+[ 34%] Built target gtkhello
+[ 35%] Building Fortran object examples/CMakeFiles/list_demo.dir/list_demo.f90.o
+[ 36%] Linking Fortran executable list_demo
+[ 36%] Built target list_demo
+[ 37%] Building Fortran object examples/CMakeFiles/gio_demo.dir/gio_demo.f90.o
+[ 38%] Linking Fortran executable gio_demo
+[ 38%] Built target gio_demo
+[ 39%] Building Fortran object examples/CMakeFiles/tests.dir/tests.f90.o
+[ 40%] Linking Fortran executable tests
+[ 40%] Built target tests
+[ 41%] Building Fortran object examples/CMakeFiles/tests_gtk_sup.dir/tests_gtk_sup.f90.o
+[ 42%] Linking Fortran executable tests_gtk_sup
+[ 42%] Built target tests_gtk_sup
+[ 43%] Building Fortran object examples/CMakeFiles/notebooks.dir/notebooks.f90.o
+[ 44%] Linking Fortran executable notebooks
+[ 44%] Built target notebooks
+[ 45%] Building Fortran object examples/CMakeFiles/julia_pixbuf.dir/julia_pixbuf.f90.o
+[ 46%] Linking Fortran executable julia_pixbuf
+[ 46%] Built target julia_pixbuf
+[ 47%] Building Fortran object examples/CMakeFiles/mandelbrot_pixbuf.dir/mandelbrot_pixbuf.f90.o
+[ 48%] Linking Fortran executable mandelbrot_pixbuf
+[ 48%] Built target mandelbrot_pixbuf
+[ 49%] Building Fortran object examples/CMakeFiles/mandelbrot_pixbuf_zoom.dir/mandelbrot_pixbuf_zoom.f90.o
+[ 50%] Linking Fortran executable mandelbrot_pixbuf_zoom
+[ 50%] Built target mandelbrot_pixbuf_zoom
+[ 51%] Building Fortran object examples/CMakeFiles/menubar.dir/menubar.f90.o
+[ 52%] Linking Fortran executable menubar
+[ 52%] Built target menubar
+[ 53%] Building Fortran object examples/CMakeFiles/cairo-tests.dir/cairo-tests.f90.o
+[ 54%] Linking Fortran executable cairo-tests
+[ 54%] Built target cairo-tests
+[ 55%] Building Fortran object examples/CMakeFiles/cairo-basics.dir/cairo-basics.f90.o
+[ 56%] Linking Fortran executable cairo-basics
+[ 56%] Built target cairo-basics
+[ 57%] Building Fortran object examples/CMakeFiles/cairo-basics-click.dir/cairo-basics-click.f90.o
+[ 58%] Linking Fortran executable cairo-basics-click
+[ 58%] Built target cairo-basics-click
+[ 58%] Building Fortran object examples/CMakeFiles/bazaar.dir/bazaar.f90.o
+[ 59%] Linking Fortran executable bazaar
+[ 59%] Built target bazaar
+[ 60%] Building Fortran object examples/CMakeFiles/pixbuf_without_gui.dir/pixbuf_without_gui.f90.o
+[ 61%] Linking Fortran executable pixbuf_without_gui
+[ 61%] Built target pixbuf_without_gui
+[ 62%] Building Fortran object examples/CMakeFiles/regex.dir/regex.f90.o
+[ 63%] Linking Fortran executable regex
+[ 63%] Built target regex
+[ 64%] Building Fortran object examples/CMakeFiles/hl_assistant.dir/hl_assistant.f90.o
+[ 65%] Linking Fortran executable hl_assistant
+[ 65%] Built target hl_assistant
+[ 66%] Building Fortran object examples/CMakeFiles/hl_choosers.dir/hl_choosers.f90.o
+[ 67%] Linking Fortran executable hl_choosers
+[ 67%] Built target hl_choosers
+[ 68%] Building Fortran object examples/CMakeFiles/hl_combo.dir/hl_combo.f90.o
+[ 69%] Linking Fortran executable hl_combo
+[ 69%] Built target hl_combo
+[ 70%] Building Fortran object examples/CMakeFiles/hl_containers.dir/hl_containers.f90.o
+[ 71%] Linking Fortran executable hl_containers
+[ 71%] Built target hl_containers
+[ 72%] Building Fortran object examples/CMakeFiles/hl_dialog.dir/hl_dialog.f90.o
+[ 73%] Linking Fortran executable hl_dialog
+[ 73%] Built target hl_dialog
+[ 74%] Building Fortran object examples/CMakeFiles/hl_list1.dir/hl_list1.f90.o
+[ 75%] Linking Fortran executable hl_list1
+[ 75%] Built target hl_list1
+[ 76%] Building Fortran object examples/CMakeFiles/hl_list_n.dir/hl_list_n.f90.o
+[ 77%] Linking Fortran executable hl_list_n
+[ 77%] Built target hl_list_n
+[ 78%] Building Fortran object examples/CMakeFiles/hl_list_renderers.dir/hl_list_renderers.f90.o
+[ 79%] Linking Fortran executable hl_list_renderers
+[ 79%] Built target hl_list_renderers
+[ 80%] Building Fortran object examples/CMakeFiles/hl_pbar.dir/hl_pbar.f90.o
+[ 81%] Linking Fortran executable hl_pbar
+[ 81%] Built target hl_pbar
+[ 82%] Building Fortran object examples/CMakeFiles/hl_sliders.dir/hl_sliders.f90.o
+[ 83%] Linking Fortran executable hl_sliders
+[ 83%] Built target hl_sliders
+[ 84%] Building Fortran object examples/CMakeFiles/hl_sliders2.dir/hl_sliders2.f90.o
+[ 85%] Linking Fortran executable hl_sliders2
+[ 85%] Built target hl_sliders2
+[ 86%] Building Fortran object examples/CMakeFiles/hl_textview.dir/hl_textview.f90.o
+[ 87%] Linking Fortran executable hl_textview
+[ 87%] Built target hl_textview
+[ 88%] Building Fortran object examples/CMakeFiles/hl_tree.dir/hl_tree.f90.o
+[ 89%] Linking Fortran executable hl_tree
+[ 89%] Built target hl_tree
+[ 90%] Building Fortran object examples/CMakeFiles/hl_cairo1.dir/hl_cairo1.f90.o
+[ 90%] Linking Fortran executable hl_cairo1
+[ 90%] Built target hl_cairo1
+[ 91%] Building Fortran object examples/CMakeFiles/hl_cairo_clock.dir/hl_cairo_clock.f90.o
+[ 92%] Linking Fortran executable hl_cairo_clock
+[ 92%] Built target hl_cairo_clock
+[ 93%] Building Fortran object examples/CMakeFiles/hl_cairo_viewer.dir/hl_cairo_viewer.f90.o
+[ 94%] Linking Fortran executable hl_cairo_viewer
+[ 94%] Built target hl_cairo_viewer
+[ 95%] Building Fortran object examples/CMakeFiles/hl_infobar.dir/hl_infobar.f90.o
+[ 96%] Linking Fortran executable hl_infobar
+[ 96%] Built target hl_infobar
+[ 97%] Building Fortran object examples/CMakeFiles/gtkbuilder2.dir/gtkbuilder2.f90.o
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/examples/gtkbuilder2.f90:72:27:
+
+   72 |   subroutine button2clicked(widget, gdata) bind(c)
+      |                           1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/examples/gtkbuilder2.f90:65:27:
+
+   65 |   subroutine button1clicked(widget, gdata) bind(c)
+      |                           1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/examples/gtkbuilder2.f90:58:18:
+
+   58 |   subroutine hello(widget, gdata) bind(c)
+      |                  1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/examples/gtkbuilder2.f90:49:20:
+
+   49 |   subroutine destroy(widget, gdata) bind(c)
+      |                    1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+[ 98%] Linking Fortran executable gtkbuilder2
+[ 98%] Built target gtkbuilder2
+[ 99%] Building Fortran object sketcher/CMakeFiles/gtkf-sketcher.dir/gtkf-sketcher.out.f90.o
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:787:30:
+
+  787 |   subroutine show_about_dialog (widget, gdata) bind(c)
+      |                              1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:760:28:
+
+  760 |   subroutine default_options (widget, gdata ) bind(c)
+      |                            1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:733:33:
+
+  733 |   subroutine save_default_options (widget, gdata ) bind(c)
+      |                                 1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:386:24:
+
+  386 |   subroutine write_files (widget, gdata ) bind(c)
+      |                        1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:254:22:
+
+  254 |   subroutine file_open (widget, gdata ) bind(c)
+      |                      1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:245:36:
+
+  245 |   subroutine widgetshandlers_toggled (widget, gdata) bind(c)
+      |                                    1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:236:34:
+
+  236 |   subroutine include_files_toggled (widget, gdata) bind(c)
+      |                                  1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:227:31:
+
+  227 |   subroutine use_hl_gtk_toggled (widget, gdata) bind(c)
+      |                               1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:218:42:
+
+  218 |   subroutine update_used_functions_toggled (widget, gdata) bind(c)
+      |                                          1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:209:35:
+
+  209 |   subroutine widget_symbols_toggled (widget, gdata) bind(c)
+      |                                   1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:200:43:
+
+  200 |   subroutine overwrite_handlerfiles_toggled (widget, gdata) bind(c)
+      |                                           1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:191:40:
+
+  191 |   subroutine create_handlerfiles_toggled (widget, gdata) bind(c)
+      |                                        1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:182:34:
+
+  182 |   subroutine create_subdir_toggled (widget, gdata) bind(c)
+      |                                  1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+/home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/work/gtk-fortran-4.6.0/build/sketcher/gtkf-sketcher.out.f90:163:20:
+
+  163 |   subroutine destroy (widget, gdata) bind(c)
+      |                    1
+Warning: ‘dllexport’ attribute directive ignored [-Wattributes]
+[100%] Linking Fortran executable gtkf-sketcher
+[100%] Built target gtkf-sketcher
+[ 26%] Built target gtk-fortran_object
+[ 27%] Built target gtk-fortran_static
+[ 28%] Built target gtk-fortran_shared
+[ 30%] Built target gtk-4-fortran
+[ 30%] Built target pkgconfig
+[ 30%] Built target usemodules
+[ 30%] Built target manpage
+[ 32%] Built target gtkzero_gapp
+[ 34%] Built target gtkhello
+[ 36%] Built target list_demo
+[ 38%] Built target gio_demo
+[ 40%] Built target tests
+[ 42%] Built target tests_gtk_sup
+[ 44%] Built target notebooks
+[ 46%] Built target julia_pixbuf
+[ 48%] Built target mandelbrot_pixbuf
+[ 50%] Built target mandelbrot_pixbuf_zoom
+[ 52%] Built target menubar
+[ 54%] Built target cairo-tests
+[ 56%] Built target cairo-basics
+[ 58%] Built target cairo-basics-click
+[ 59%] Built target bazaar
+[ 61%] Built target pixbuf_without_gui
+[ 63%] Built target regex
+[ 65%] Built target hl_assistant
+[ 67%] Built target hl_choosers
+[ 69%] Built target hl_combo
+[ 71%] Built target hl_containers
+[ 73%] Built target hl_dialog
+[ 75%] Built target hl_list1
+[ 77%] Built target hl_list_n
+[ 79%] Built target hl_list_renderers
+[ 81%] Built target hl_pbar
+[ 83%] Built target hl_sliders
+[ 85%] Built target hl_sliders2
+[ 87%] Built target hl_textview
+[ 89%] Built target hl_tree
+[ 90%] Built target hl_cairo1
+[ 92%] Built target hl_cairo_clock
+[ 94%] Built target hl_cairo_viewer
+[ 96%] Built target hl_infobar
+[ 98%] Built target gtkbuilder2
+[100%] Built target gtkf-sketcher
+Installing the project stripped...
+-- Install configuration: "RELEASE"
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/lib64/libgtk-4-fortran.a
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/lib64/libgtk-4-fortran.so.4.6.0
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/lib64/libgtk-4-fortran.so
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_progress.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_draw_hl.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_assistant.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gdk_events.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/graphene.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/pango.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gdk_pixbuf_hl.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_combobox.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_entry.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_spin_slider.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gdk_pixbuf.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/g.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_infobar.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_misc.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_container.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_os_dependent.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_sup.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gdk.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_chooser.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_button.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/cairo.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_tree.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gsk.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/include/gtk-4-fortran/gtk_hl_dialog.mod
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/bin/gtk-4-fortran-modscan
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/bin/gtk-4-fortran-pymodscan
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/bin/gtk-4-fortran
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/share/gtk-fortran/gtk-4-fortran-index.csv
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/share/gtk-fortran/gtk-4-enumerators.lis
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/lib64/pkgconfig/gtk-4-fortran.pc
+-- Installing: /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/package-gtk-fortran/usr/share/man/man1/gtk-4-fortran-modscan.1
+cp: cannot stat 'ABOUT ABOUT-NLS ANNOUNCE AUTHORS *BUGS* ChangeLog Changelog CHANGELOG Changes CHANGES COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS doc docs* Doc Docs* *FAQ* FEATURES FILES GPL* HACKING History HISTORY index.ht* *INDEX* INSTALL* License* LICENSE* LSM MANIFEST NEWS *README* *Readme* *RELEASE* RELNOTES Roadmap ROADMAP SITES THANKS TIPS TODO VERSION': File name too long
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libgtk-4-fortran.so	libgtk-4-fortran.so.4.6.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libgtk-4-fortran.so )
+( cd usr/lib64 ; ln -sf libgtk-4-fortran.so.4.6.0 libgtk-4-fortran.so )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libgtk-4-fortran.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/binary-gtk-fortran-4.6.0/gtk-fortran-4.6.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gtk-4-fortran
+usr/bin/gtk-4-fortran-modscan
+usr/bin/gtk-4-fortran-pymodscan
+usr/doc/
+usr/doc/gtk-fortran-4.6.0/
+usr/doc/gtk-fortran-4.6.0/gtk-fortran.SlackBuild
+usr/include/
+usr/include/gtk-4-fortran/
+usr/include/gtk-4-fortran/cairo.mod
+usr/include/gtk-4-fortran/g.mod
+usr/include/gtk-4-fortran/gdk.mod
+usr/include/gtk-4-fortran/gdk_events.mod
+usr/include/gtk-4-fortran/gdk_pixbuf.mod
+usr/include/gtk-4-fortran/gdk_pixbuf_hl.mod
+usr/include/gtk-4-fortran/graphene.mod
+usr/include/gtk-4-fortran/gsk.mod
+usr/include/gtk-4-fortran/gtk.mod
+usr/include/gtk-4-fortran/gtk_draw_hl.mod
+usr/include/gtk-4-fortran/gtk_hl.mod
+usr/include/gtk-4-fortran/gtk_hl_assistant.mod
+usr/include/gtk-4-fortran/gtk_hl_button.mod
+usr/include/gtk-4-fortran/gtk_hl_chooser.mod
+usr/include/gtk-4-fortran/gtk_hl_combobox.mod
+usr/include/gtk-4-fortran/gtk_hl_container.mod
+usr/include/gtk-4-fortran/gtk_hl_dialog.mod
+usr/include/gtk-4-fortran/gtk_hl_entry.mod
+usr/include/gtk-4-fortran/gtk_hl_infobar.mod
+usr/include/gtk-4-fortran/gtk_hl_misc.mod
+usr/include/gtk-4-fortran/gtk_hl_progress.mod
+usr/include/gtk-4-fortran/gtk_hl_spin_slider.mod
+usr/include/gtk-4-fortran/gtk_hl_tree.mod
+usr/include/gtk-4-fortran/gtk_os_dependent.mod
+usr/include/gtk-4-fortran/gtk_sup.mod
+usr/include/gtk-4-fortran/pango.mod
+usr/lib64/
+usr/lib64/libgtk-4-fortran.a
+usr/lib64/libgtk-4-fortran.so.4.6.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/gtk-4-fortran.pc
+usr/share/
+usr/share/gtk-fortran/
+usr/share/gtk-fortran/gtk-4-enumerators.lis
+usr/share/gtk-fortran/gtk-4-fortran-index.csv
+usr/share/man/
+usr/share/man/man1/
+usr/share/man/man1/gtk-4-fortran-modscan.1
+WARNING:  /usr/share/man (with possibly not gzipped man pages) detected
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/binary-gtk-fortran-4.6.0/gtk-fortran-4.6.0-x86_64-1_rtz.tlz created.
+
+Build process completed in 0 minutes and 20 seconds.

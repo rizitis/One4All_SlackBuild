@@ -1,5 +1,5 @@
 
-Thu Aug  8 19:28:44 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Fri Aug 16 22:21:12 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -29,7 +29,7 @@ special permissions, then DO NOT reset them here!
 Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
-Creating Slackware package:  /home/omen/BUILDS/TEMPLATE.SLACKBUILDS/my_builds/gtk-fortran/binary-gtk-fortran-4.6.0/gtk-fortran-4.6.0-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/binary-gtk-fortran-4.6.0/gtk-fortran-4.6.0-x86_64-1_rtz.tlz
 
 ./
 install/
@@ -85,5 +85,5 @@ usr/share/man/man1/
 usr/share/man/man1/gtk-4-fortran-modscan.1
 WARNING:  /usr/share/man (with possibly not gzipped man pages) detected
 
-Slackware package /home/omen/BUILDS/TEMPLATE.SLACKBUILDS/my_builds/gtk-fortran/binary-gtk-fortran-4.6.0/gtk-fortran-4.6.0-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/gtk-fortran/binary-gtk-fortran-4.6.0/gtk-fortran-4.6.0-x86_64-1_rtz.tlz created.
 
