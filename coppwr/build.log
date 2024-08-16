@@ -1,0 +1,464 @@
+Starting build process...
+--2024-08-16 21:44:33--  https://github.com/dimtpap/coppwr/archive/refs/tags/1.6.0.tar.gz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/dimtpap/coppwr/tar.gz/refs/tags/1.6.0 [following]
+--2024-08-16 21:44:34--  https://codeload.github.com/dimtpap/coppwr/tar.gz/refs/tags/1.6.0
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.9
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘coppwr-1.6.0.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  415K
+    50K .......... .......... .......... .......... ..........  839K
+   100K .......... .......... .......... .......... .......... 5.41M
+   150K .......... .......... .......... .......... .......... 7.41M
+   200K .......... .......... .......... .......... ..........  993K
+   250K .......... .......... .......... .......... .......... 5.11M
+   300K .......... .......... .......... .......... .......... 5.49M
+   350K .......... .......... .......... .......... ..........  529K
+   400K .......... .......... .......... .......... .......... 21.2M
+   450K .......... .......... .......... .......... .......... 86.5M
+   500K .......... .......... .......... .......... .......... 88.0M
+   550K .......... .......... .......... .......... .......... 55.5M
+   600K .......... .......... .......... .......... .......... 3.91M
+   650K .......... .......... .......... .......... .......... 5.03M
+   700K .......... .......... .......... .......... .......... 1.16M
+   750K .......... .......... .......... .......... .......... 6.49M
+   800K .......... .......... .......... .......... .......... 5.13M
+   850K                                                        37.3G=0.4s
+
+2024-08-16 21:44:35 (1.87 MB/s) - ‘coppwr-1.6.0.tar.gz’ saved [870420]
+
+coppwr-1.6.0/
+coppwr-1.6.0/.github/
+coppwr-1.6.0/.github/ISSUE_TEMPLATE/
+coppwr-1.6.0/.github/ISSUE_TEMPLATE/bug_report.md
+coppwr-1.6.0/.github/ISSUE_TEMPLATE/feature_request.md
+coppwr-1.6.0/.github/workflows/
+coppwr-1.6.0/.github/workflows/main.yml
+coppwr-1.6.0/.gitignore
+coppwr-1.6.0/Cargo.lock
+coppwr-1.6.0/Cargo.toml
+coppwr-1.6.0/LICENSE
+coppwr-1.6.0/README.md
+coppwr-1.6.0/assets/
+coppwr-1.6.0/assets/icon/
+coppwr-1.6.0/assets/icon/128.png
+coppwr-1.6.0/assets/icon/256.png
+coppwr-1.6.0/assets/icon/32.png
+coppwr-1.6.0/assets/icon/48.png
+coppwr-1.6.0/assets/icon/512.png
+coppwr-1.6.0/assets/icon/64.png
+coppwr-1.6.0/assets/icon/scalable.svg
+coppwr-1.6.0/assets/io.github.dimtpap.coppwr.desktop
+coppwr-1.6.0/assets/io.github.dimtpap.coppwr.metainfo.xml
+coppwr-1.6.0/assets/screenshots/
+coppwr-1.6.0/assets/screenshots/all.png
+coppwr-1.6.0/assets/screenshots/disconnected.png
+coppwr-1.6.0/assets/screenshots/globaltracker.png
+coppwr-1.6.0/assets/screenshots/graph.png
+coppwr-1.6.0/assets/screenshots/profiler.png
+coppwr-1.6.0/src/
+coppwr-1.6.0/src/backend/
+coppwr-1.6.0/src/backend/bind.rs
+coppwr-1.6.0/src/backend/connection.rs
+coppwr-1.6.0/src/backend/listeners.rs
+coppwr-1.6.0/src/backend/mod.rs
+coppwr-1.6.0/src/backend/pipewire.rs
+coppwr-1.6.0/src/backend/pods/
+coppwr-1.6.0/src/backend/pods/mod.rs
+coppwr-1.6.0/src/backend/pods/profiler.rs
+coppwr-1.6.0/src/backend/util.rs
+coppwr-1.6.0/src/main.rs
+coppwr-1.6.0/src/ui/
+coppwr-1.6.0/src/ui/app.rs
+coppwr-1.6.0/src/ui/context_manager.rs
+coppwr-1.6.0/src/ui/global.rs
+coppwr-1.6.0/src/ui/globals_store.rs
+coppwr-1.6.0/src/ui/graph.rs
+coppwr-1.6.0/src/ui/metadata_editor.rs
+coppwr-1.6.0/src/ui/mod.rs
+coppwr-1.6.0/src/ui/object_creator.rs
+coppwr-1.6.0/src/ui/profiler.rs
+coppwr-1.6.0/src/ui/tool.rs
+coppwr-1.6.0/src/ui/util/
+coppwr-1.6.0/src/ui/util/mod.rs
+coppwr-1.6.0/src/ui/util/persistence.rs
+coppwr-1.6.0/src/ui/util/uis.rs
+   Compiling proc-macro2 v1.0.81
+   Compiling unicode-ident v1.0.12
+   Compiling autocfg v1.2.0
+   Compiling cfg-if v1.0.0
+   Compiling serde v1.0.200
+   Compiling libc v0.2.154
+   Compiling once_cell v1.19.0
+   Compiling memchr v2.7.2
+   Compiling version_check v0.9.4
+   Compiling log v0.4.21
+   Compiling pin-project-lite v0.2.14
+   Compiling pkg-config v0.3.30
+   Compiling crossbeam-utils v0.8.19
+   Compiling hashbrown v0.14.5
+   Compiling equivalent v1.0.1
+   Compiling cc v1.0.96
+   Compiling smallvec v1.13.2
+   Compiling futures-core v0.3.30
+   Compiling regex-syntax v0.8.3
+   Compiling libloading v0.8.3
+   Compiling rustix v0.38.34
+   Compiling linux-raw-sys v0.4.13
+   Compiling futures-io v0.3.30
+   Compiling syn v1.0.109
+   Compiling dlib v0.5.2
+   Compiling parking v2.2.0
+   Compiling tracing-core v0.1.32
+   Compiling downcast-rs v1.2.1
+   Compiling typenum v1.17.0
+   Compiling futures-sink v0.3.30
+   Compiling scoped-tls v1.0.1
+   Compiling futures-channel v0.3.30
+   Compiling futures-task v0.3.30
+   Compiling winnow v0.5.40
+   Compiling pin-utils v0.1.0
+   Compiling generic-array v0.14.7
+   Compiling ttf-parser v0.20.0
+   Compiling target-lexicon v0.12.14
+   Compiling slab v0.4.9
+   Compiling bitflags v1.3.2
+   Compiling thiserror v1.0.59
+   Compiling glob v0.3.1
+   Compiling ahash v0.8.11
+   Compiling aho-corasick v1.1.3
+   Compiling quote v1.0.36
+   Compiling quick-xml v0.31.0
+   Compiling indexmap v2.2.6
+   Compiling wayland-sys v0.31.1
+   Compiling concurrent-queue v2.5.0
+   Compiling syn v2.0.60
+   Compiling clang-sys v1.7.0
+   Compiling event-listener v4.0.3
+   Compiling event-listener v5.3.0
+   Compiling winnow v0.6.7
+   Compiling fastrand v2.1.0
+   Compiling event-listener v2.5.3
+   Compiling io-lifetimes v1.0.11
+   Compiling ab_glyph_rasterizer v0.1.8
+   Compiling event-listener-strategy v0.5.2
+   Compiling event-listener-strategy v0.4.0
+   Compiling getrandom v0.2.14
+   Compiling memoffset v0.7.1
+   Compiling polling v2.8.0
+   Compiling lock_api v0.4.12
+   Compiling wayland-backend v0.3.3
+   Compiling futures-lite v2.3.0
+   Compiling cfg_aliases v0.1.1
+   Compiling rustix v0.37.27
+   Compiling zerocopy v0.7.32
+   Compiling async-task v4.7.1
+   Compiling khronos_api v3.1.0
+   Compiling parking_lot_core v0.9.10
+   Compiling waker-fn v1.1.1
+   Compiling fastrand v1.9.0
+   Compiling atomic-waker v1.1.2
+   Compiling wayland-scanner v0.31.1
+   Compiling byteorder v1.5.0
+   Compiling minimal-lexical v0.2.1
+   Compiling cfg-expr v0.15.8
+   Compiling piper v0.2.1
+   Compiling futures-lite v1.13.0
+   Compiling nom v7.1.3
+   Compiling rand_core v0.6.4
+   Compiling async-lock v3.3.0
+   Compiling async-channel v2.2.1
+   Compiling async-lock v2.8.0
+   Compiling crossbeam-epoch v0.9.18
+   Compiling async-io v1.13.0
+   Compiling regex-automata v0.4.6
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.6
+   Compiling async-fs v1.6.0
+   Compiling ppv-lite86 v0.2.17
+   Compiling linux-raw-sys v0.3.8
+   Compiling scopeguard v1.2.0
+   Compiling static_assertions v1.1.0
+   Compiling version-compare v0.2.0
+   Compiling unicode-width v0.1.12
+   Compiling rayon-core v1.12.1
+   Compiling owned_ttf_parser v0.20.0
+   Compiling bindgen v0.69.4
+   Compiling yansi-term v0.1.2
+   Compiling heck v0.5.0
+   Compiling either v1.11.0
+   Compiling rand_chacha v0.3.1
+   Compiling ab_glyph v0.2.25
+   Compiling blocking v1.6.0
+   Compiling itertools v0.12.1
+   Compiling annotate-snippets v0.9.2
+   Compiling crossbeam-deque v0.8.5
+   Compiling digest v0.10.7
+   Compiling socket2 v0.4.10
+   Compiling lazycell v1.3.0
+   Compiling lazy_static v1.4.0
+   Compiling bitflags v2.5.0
+   Compiling toml_datetime v0.6.5
+   Compiling serde_spanned v0.6.5
+   Compiling rustc-hash v1.1.0
+   Compiling xml-rs v0.8.20
+   Compiling shlex v1.3.0
+   Compiling cpufeatures v0.2.12
+   Compiling parking_lot v0.12.2
+   Compiling nix v0.26.4
+   Compiling sha1 v0.10.6
+   Compiling toml_edit v0.19.15
+   Compiling toml_edit v0.22.12
+   Compiling rand v0.8.5
+   Compiling async-executor v1.11.0
+   Compiling cexpr v0.6.0
+   Compiling xdg-home v1.1.0
+   Compiling async-broadcast v0.5.1
+   Compiling x11-dl v2.21.0
+   Compiling ordered-stream v0.2.0
+   Compiling gl_generator v0.14.0
+   Compiling xkeysym v0.2.0
+   Compiling cursor-icon v1.1.0
+   Compiling xcursor v0.3.5
+   Compiling smithay-client-toolkit v0.18.1
+   Compiling hex v0.4.3
+   Compiling memmap2 v0.9.4
+   Compiling rayon v1.10.0
+   Compiling nohash-hasher v0.2.0
+   Compiling strict-num v0.1.1
+   Compiling percent-encoding v2.3.1
+   Compiling arrayref v0.3.7
+   Compiling base64 v0.21.7
+   Compiling tinyvec_macros v0.1.1
+   Compiling arrayvec v0.7.4
+   Compiling x11rb-protocol v0.13.1
+   Compiling as-raw-xcb-connection v1.0.1
+   Compiling tinyvec v1.6.0
+   Compiling winit v0.29.15
+   Compiling crc32fast v1.4.0
+   Compiling raw-window-handle v0.5.2
+   Compiling simd-adler32 v0.3.7
+   Compiling glutin_glx_sys v0.5.0
+   Compiling glutin_egl_sys v0.6.0
+   Compiling proc-macro-error-attr v1.0.4
+   Compiling adler v1.0.2
+   Compiling unicode-bidi v0.3.15
+   Compiling raw-window-handle v0.6.1
+   Compiling smol_str v0.2.1
+   Compiling miniz_oxide v0.7.2
+   Compiling regex v1.10.4
+   Compiling form_urlencoded v1.2.1
+   Compiling glutin v0.31.3
+   Compiling num-traits v0.2.18
+   Compiling toml v0.8.12
+   Compiling memoffset v0.9.1
+   Compiling proc-macro-error v1.0.4
+   Compiling async-once-cell v0.5.3
+   Compiling proc-macro-crate v1.3.1
+   Compiling system-deps v6.2.2
+   Compiling unicode-normalization v0.1.23
+   Compiling flate2 v1.0.30
+   Compiling fdeflate v0.3.4
+   Compiling glutin-winit v0.4.2
+   Compiling zvariant_utils v1.0.1
+   Compiling slotmap v1.0.7
+   Compiling home v0.5.9
+   Compiling paste v1.0.14
+   Compiling anyhow v1.0.82
+   Compiling unicode-segmentation v1.11.0
+   Compiling png v0.17.13
+   Compiling idna v0.5.0
+   Compiling dirs-sys-next v0.1.2
+   Compiling glow v0.13.1
+   Compiling litrs v0.4.1
+   Compiling heck v0.4.1
+   Compiling color_quant v1.1.0
+   Compiling convert_case v0.6.0
+   Compiling url v2.5.0
+   Compiling web-time v0.2.4
+   Compiling directories-next v2.0.0
+   Compiling document-features v0.2.8
+   Compiling libspa v0.8.0 (https://gitlab.freedesktop.org/dimtpap/pipewire-rs.git?rev=605d15996f3258b3e1cc34e445dfbdf16a366c7e#605d1599)
+   Compiling webbrowser v0.8.15
+   Compiling zvariant_derive v3.15.2
+   Compiling zbus_macros v3.15.2
+   Compiling derivative v2.2.0
+   Compiling duplicate v1.0.0
+   Compiling serde_derive v1.0.200
+   Compiling bytemuck_derive v1.6.0
+   Compiling tracing-attributes v0.1.27
+   Compiling futures-macro v0.3.30
+   Compiling thiserror-impl v1.0.59
+   Compiling enumflags2_derive v0.7.9
+   Compiling enumn v0.1.13
+   Compiling async-recursion v1.1.1
+   Compiling serde_repr v0.1.19
+   Compiling async-trait v0.1.80
+   Compiling futures-util v0.3.30
+   Compiling tracing v0.1.40
+   Compiling bytemuck v1.15.0
+   Compiling tiny-skia-path v0.11.4
+   Compiling image v0.24.9
+   Compiling tiny-skia v0.11.4
+   Compiling libspa-sys v0.8.0 (https://gitlab.freedesktop.org/dimtpap/pipewire-rs.git?rev=605d15996f3258b3e1cc34e445dfbdf16a366c7e#605d1599)
+   Compiling pipewire-sys v0.8.0 (https://gitlab.freedesktop.org/dimtpap/pipewire-rs.git?rev=605d15996f3258b3e1cc34e445dfbdf16a366c7e#605d1599)
+   Compiling futures-executor v0.3.30
+   Compiling futures v0.3.30
+   Compiling cookie-factory v0.3.3
+   Compiling enumflags2 v0.7.9
+   Compiling accesskit v0.12.3
+   Compiling ecolor v0.27.2
+   Compiling emath v0.27.2
+   Compiling zvariant v3.15.2
+   Compiling ron v0.8.1
+   Compiling xkbcommon-dl v0.4.2
+   Compiling nix v0.27.1
+   Compiling epaint v0.27.2
+   Compiling accesskit_consumer v0.16.1
+   Compiling zbus_names v2.6.1
+   Compiling zbus v3.15.2
+   Compiling egui v0.27.2
+   Compiling pipewire v0.8.0 (https://gitlab.freedesktop.org/dimtpap/pipewire-rs.git?rev=605d15996f3258b3e1cc34e445dfbdf16a366c7e#605d1599)
+   Compiling polling v3.7.0
+   Compiling x11rb v0.13.1
+   Compiling calloop v0.12.4
+   Compiling wayland-client v0.31.2
+   Compiling wayland-csd-frame v0.3.0
+   Compiling atspi-common v0.3.0
+   Compiling arboard v3.4.0
+   Compiling wayland-protocols v0.31.2
+   Compiling wayland-cursor v0.31.1
+   Compiling calloop-wayland-source v0.2.0
+   Compiling egui_glow v0.27.2
+   Compiling egui_node_graph v0.4.0 (https://github.com/dimtpap/egui_node_graph.git?rev=3e99a2af2025e72365a4ec5048011041a85002e5#3e99a2af)
+   Compiling egui_plot v0.27.2
+   Compiling egui_dock v0.12.0
+   Compiling atspi-proxies v0.3.0
+   Compiling wayland-protocols-wlr v0.2.0
+   Compiling wayland-protocols-plasma v0.2.0
+   Compiling atspi-connection v0.3.0
+   Compiling atspi v0.19.0
+   Compiling accesskit_unix v0.6.2
+   Compiling sctk-adwaita v0.8.1
+   Compiling smithay-clipboard v0.7.1
+   Compiling accesskit_winit v0.16.1
+   Compiling egui-winit v0.27.2
+   Compiling eframe v0.27.2
+   Compiling coppwr v1.6.0 (/home/omen/GITHUB/One4All_SlackBuild/coppwr/work/coppwr-1.6.0)
+warning: field `1` is never read
+  --> src/backend/mod.rs:69:28
+   |
+69 |     ClientPermissions(u32, u32, Vec<pw::permissions::Permission>),
+   |     -----------------      ^^^
+   |     |
+   |     field in this variant
+   |
+   = note: `#[warn(dead_code)]` on by default
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+69 |     ClientPermissions(u32, (), Vec<pw::permissions::Permission>),
+   |                            ~~
+
+warning: multiple fields are never read
+  --> src/backend/pods/profiler.rs:61:9
+   |
+60 | pub struct Clock {
+   |            ----- fields in this struct
+61 |     pub flags: i32,
+   |         ^^^^^
+62 |     pub id: i32,
+   |         ^^
+63 |     pub name: String,
+   |         ^^^^
+64 |     pub nsec: i64,
+   |         ^^^^
+65 |     pub rate: Fraction,
+66 |     pub position: i64,
+   |         ^^^^^^^^
+...
+70 |     pub next_nsec: i64,
+   |         ^^^^^^^^^
+71 |     pub transport_state: Option<i32>, // Since https://gitlab.freedesktop.org/pipewire/pipewire/-/commit/ccf899a709140b79547b93d8f5eca6b9...
+   |         ^^^^^^^^^^^^^^^
+   |
+   = note: `Clock` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+
+warning: field `status` is never read
+   --> src/backend/pods/profiler.rs:119:9
+    |
+112 | pub struct NodeBlock {
+    |            --------- field in this struct
+...
+119 |     pub status: i32,
+    |         ^^^^^^
+    |
+    = note: `NodeBlock` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: `coppwr` (bin "coppwr") generated 3 warnings
+    Finished `release` profile [optimized] target(s) in 1m 59s
+cp: cannot stat 'ABOUT ABOUT-NLS ANNOUNCE AUTHORS *BUGS* ChangeLog Changelog CHANGELOG Changes CHANGES COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS doc docs* Doc Docs* *FAQ* FEATURES FILES GPL* HACKING History HISTORY index.ht* *INDEX* INSTALL* License* LICENSE* LSM MANIFEST NEWS *README* *Readme* *RELEASE* RELNOTES Roadmap ROADMAP SITES THANKS TIPS TODO VERSION': File name too long
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/coppwr/binary-coppwr-1.6.0/coppwr-1.6.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/coppwr
+usr/doc/
+usr/doc/coppwr-1.6.0/
+usr/doc/coppwr-1.6.0/coppwr.SlackBuild
+usr/share/
+usr/share/applications/
+usr/share/applications/io.github.dimtpap.coppwr.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/128x128/apps/io.github.dimtpap.coppwr.png
+usr/share/icons/hicolor/256x256/
+usr/share/icons/hicolor/256x256/apps/
+usr/share/icons/hicolor/256x256/apps/io.github.dimtpap.coppwr.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/io.github.dimtpap.coppwr.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/io.github.dimtpap.coppwr.png
+usr/share/icons/hicolor/512x512/
+usr/share/icons/hicolor/512x512/apps/
+usr/share/icons/hicolor/512x512/apps/io.github.dimtpap.coppwr.png
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/io.github.dimtpap.coppwr.png
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/io.github.dimtpap.coppwr.svg
+usr/share/metainfo/
+usr/share/metainfo/io.github.dimtpap.coppwr.metainfo.xml
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/coppwr/binary-coppwr-1.6.0/coppwr-1.6.0-x86_64-1_rtz.tlz created.
+
+Build process completed in 2 minutes and 6 seconds.
