@@ -1,12 +1,27 @@
 
-Fri Aug  9 03:44:32 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Sat Aug 17 00:36:20 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
+usr/include/mozjs-129/ProfilingCategoryList.h	../../mozglue/baseprofiler/public/ProfilingCategoryList.h
+usr/include/mozjs-129/js-config.h	../../js/src/js-config.h
+usr/include/mozjs-129/js/PrefsGenerated.h	../../../js/src/../../js/public/PrefsGenerated.h
+usr/include/mozjs-129/js/ProfilingCategoryList.h	../../../js/src/../../mozglue/baseprofiler/public/ProfilingCategoryList.h
+usr/include/mozjs-129/mozilla/intl/unicode_bidi_ffi_generated.h	../../../../intl/bidi/unicode_bidi_ffi_generated.h
 usr/lib64/libmozjs-129.so	libmozjs-129.so.0
 usr/lib64/libmozjs-129.so.0	libmozjs-129.so.0.0.0
 
 Making symbolic link creation script:
+( cd usr/include/mozjs-129 ; rm -rf ProfilingCategoryList.h )
+( cd usr/include/mozjs-129 ; ln -sf ../../mozglue/baseprofiler/public/ProfilingCategoryList.h ProfilingCategoryList.h )
+( cd usr/include/mozjs-129 ; rm -rf js-config.h )
+( cd usr/include/mozjs-129 ; ln -sf ../../js/src/js-config.h js-config.h )
+( cd usr/include/mozjs-129/js ; rm -rf PrefsGenerated.h )
+( cd usr/include/mozjs-129/js ; ln -sf ../../../js/src/../../js/public/PrefsGenerated.h PrefsGenerated.h )
+( cd usr/include/mozjs-129/js ; rm -rf ProfilingCategoryList.h )
+( cd usr/include/mozjs-129/js ; ln -sf ../../../js/src/../../mozglue/baseprofiler/public/ProfilingCategoryList.h ProfilingCategoryList.h )
+( cd usr/include/mozjs-129/mozilla/intl ; rm -rf unicode_bidi_ffi_generated.h )
+( cd usr/include/mozjs-129/mozilla/intl ; ln -sf ../../../../intl/bidi/unicode_bidi_ffi_generated.h unicode_bidi_ffi_generated.h )
 ( cd usr/lib64 ; rm -rf libmozjs-129.so )
 ( cd usr/lib64 ; ln -sf libmozjs-129.so.0 libmozjs-129.so )
 ( cd usr/lib64 ; rm -rf libmozjs-129.so.0 )
@@ -23,6 +38,11 @@ remove the symbolic links ([y]es, [n]o)? y
 Removing symbolic links:
 removed './usr/lib64/libmozjs-129.so.0'
 removed './usr/lib64/libmozjs-129.so'
+removed './usr/include/mozjs-129/mozilla/intl/unicode_bidi_ffi_generated.h'
+removed './usr/include/mozjs-129/js/PrefsGenerated.h'
+removed './usr/include/mozjs-129/js/ProfilingCategoryList.h'
+removed './usr/include/mozjs-129/js-config.h'
+removed './usr/include/mozjs-129/ProfilingCategoryList.h'
 
 Updating your ./install/doinst.sh...
 
@@ -44,62 +64,19 @@ usr/bin/
 usr/bin/js129
 usr/doc/
 usr/doc/mozjs129-129.0/
-usr/doc/mozjs129-129.0/README.txt
 usr/doc/mozjs129-129.0/mozjs129.SlackBuild
 usr/include/
 usr/include/mozjs-129/
-usr/include/mozjs-129/BaseAndGeckoProfilerDetail.h
-usr/include/mozjs-129/BaseProfileJSONWriter.h
 usr/include/mozjs-129/BaseProfiler.h
-usr/include/mozjs-129/BaseProfilerCounts.h
-usr/include/mozjs-129/BaseProfilerDetail.h
-usr/include/mozjs-129/BaseProfilerLabels.h
-usr/include/mozjs-129/BaseProfilerMarkerTypes.h
-usr/include/mozjs-129/BaseProfilerMarkers.h
-usr/include/mozjs-129/BaseProfilerMarkersDetail.h
-usr/include/mozjs-129/BaseProfilerMarkersPrerequisites.h
-usr/include/mozjs-129/BaseProfilerRAIIMacro.h
 usr/include/mozjs-129/BaseProfilerSharedLibraries.h
-usr/include/mozjs-129/BaseProfilerState.h
-usr/include/mozjs-129/BaseProfilerUtils.h
 usr/include/mozjs-129/BaseProfilingCategory.h
-usr/include/mozjs-129/BaseProfilingStack.h
-usr/include/mozjs-129/FailureLatch.h
-usr/include/mozjs-129/FdPrintf.h
-usr/include/mozjs-129/ModuloBuffer.h
-usr/include/mozjs-129/Mutex.h
-usr/include/mozjs-129/NamespaceImports.h
 usr/include/mozjs-129/PHC.h
-usr/include/mozjs-129/PowerOfTwo.h
-usr/include/mozjs-129/ProfileBufferChunk.h
-usr/include/mozjs-129/ProfileBufferChunkManager.h
-usr/include/mozjs-129/ProfileBufferChunkManagerSingle.h
-usr/include/mozjs-129/ProfileBufferChunkManagerWithLocalLimit.h
-usr/include/mozjs-129/ProfileBufferControlledChunkManager.h
-usr/include/mozjs-129/ProfileBufferEntryKinds.h
-usr/include/mozjs-129/ProfileBufferEntrySerialization.h
-usr/include/mozjs-129/ProfileBufferIndex.h
-usr/include/mozjs-129/ProfileChunkedBuffer.h
-usr/include/mozjs-129/ProfileChunkedBufferDetail.h
-usr/include/mozjs-129/ProfilerBufferSize.h
-usr/include/mozjs-129/ProgressLogger.h
-usr/include/mozjs-129/ProportionValue.h
-usr/include/mozjs-129/Utils.h
 usr/include/mozjs-129/double-conversion/
-usr/include/mozjs-129/double-conversion/bignum-dtoa.h
-usr/include/mozjs-129/double-conversion/bignum.h
-usr/include/mozjs-129/double-conversion/cached-powers.h
-usr/include/mozjs-129/double-conversion/diy-fp.h
 usr/include/mozjs-129/double-conversion/double-conversion.h
 usr/include/mozjs-129/double-conversion/double-to-string.h
-usr/include/mozjs-129/double-conversion/fast-dtoa.h
-usr/include/mozjs-129/double-conversion/fixed-dtoa.h
-usr/include/mozjs-129/double-conversion/ieee.h
 usr/include/mozjs-129/double-conversion/string-to-double.h
-usr/include/mozjs-129/double-conversion/strtod.h
 usr/include/mozjs-129/double-conversion/utils.h
 usr/include/mozjs-129/encoding_rs_mem.h
-usr/include/mozjs-129/encoding_rs_mem_cpp.h
 usr/include/mozjs-129/fdlibm.h
 usr/include/mozjs-129/function2/
 usr/include/mozjs-129/function2/function2.hpp
@@ -245,19 +222,10 @@ usr/include/mozjs-129/js/shadow/String.h
 usr/include/mozjs-129/js/shadow/Symbol.h
 usr/include/mozjs-129/js/shadow/Zone.h
 usr/include/mozjs-129/jsapi.h
-usr/include/mozjs-129/jsdate.h
-usr/include/mozjs-129/jsexn.h
 usr/include/mozjs-129/jsfriendapi.h
-usr/include/mozjs-129/jslibmath.h
-usr/include/mozjs-129/jsmath.h
-usr/include/mozjs-129/jsnum.h
 usr/include/mozjs-129/jspubtd.h
 usr/include/mozjs-129/jstypes.h
-usr/include/mozjs-129/k_log.h
-usr/include/mozjs-129/k_logf.h
-usr/include/mozjs-129/leb128iterator.h
 usr/include/mozjs-129/malloc_decls.h
-usr/include/mozjs-129/math_private.h
 usr/include/mozjs-129/mozilla/
 usr/include/mozjs-129/mozilla/Algorithm.h
 usr/include/mozjs-129/mozilla/Alignment.h
@@ -273,7 +241,6 @@ usr/include/mozjs-129/mozilla/AutoProfilerLabel.h
 usr/include/mozjs-129/mozilla/AwakeTimeStamp.h
 usr/include/mozjs-129/mozilla/BaseAndGeckoProfilerDetail.h
 usr/include/mozjs-129/mozilla/BaseProfileJSONWriter.h
-usr/include/mozjs-129/mozilla/BaseProfiler.h
 usr/include/mozjs-129/mozilla/BaseProfilerCounts.h
 usr/include/mozjs-129/mozilla/BaseProfilerDetail.h
 usr/include/mozjs-129/mozilla/BaseProfilerLabels.h
@@ -282,11 +249,8 @@ usr/include/mozjs-129/mozilla/BaseProfilerMarkers.h
 usr/include/mozjs-129/mozilla/BaseProfilerMarkersDetail.h
 usr/include/mozjs-129/mozilla/BaseProfilerMarkersPrerequisites.h
 usr/include/mozjs-129/mozilla/BaseProfilerRAIIMacro.h
-usr/include/mozjs-129/mozilla/BaseProfilerSharedLibraries.h
 usr/include/mozjs-129/mozilla/BaseProfilerState.h
 usr/include/mozjs-129/mozilla/BaseProfilerUtils.h
-usr/include/mozjs-129/mozilla/BaseProfilingCategory.h
-usr/include/mozjs-129/mozilla/BaseProfilingStack.h
 usr/include/mozjs-129/mozilla/BinarySearch.h
 usr/include/mozjs-129/mozilla/BitSet.h
 usr/include/mozjs-129/mozilla/BloomFilter.h
@@ -300,11 +264,11 @@ usr/include/mozjs-129/mozilla/CompactPair.h
 usr/include/mozjs-129/mozilla/Compiler.h
 usr/include/mozjs-129/mozilla/Compression.h
 usr/include/mozjs-129/mozilla/DbgMacro.h
-usr/include/mozjs-129/mozilla/Debug.h
 usr/include/mozjs-129/mozilla/DebugOnly.h
+usr/include/mozjs-129/mozilla/Decimal.h
 usr/include/mozjs-129/mozilla/DefineEnum.h
+usr/include/mozjs-129/mozilla/DoubleConversion.h
 usr/include/mozjs-129/mozilla/DoublyLinkedList.h
-usr/include/mozjs-129/mozilla/DynamicallyLinkedFunctionPtr.h
 usr/include/mozjs-129/mozilla/EndianUtils.h
 usr/include/mozjs-129/mozilla/EnumSet.h
 usr/include/mozjs-129/mozilla/EnumTypeTraits.h
@@ -317,11 +281,9 @@ usr/include/mozjs-129/mozilla/FloatingPoint.h
 usr/include/mozjs-129/mozilla/FunctionRef.h
 usr/include/mozjs-129/mozilla/FunctionTypeTraits.h
 usr/include/mozjs-129/mozilla/Fuzzing.h
-usr/include/mozjs-129/mozilla/GetKnownFolderPath.h
 usr/include/mozjs-129/mozilla/HashFunctions.h
 usr/include/mozjs-129/mozilla/HashTable.h
 usr/include/mozjs-129/mozilla/HelperMacros.h
-usr/include/mozjs-129/mozilla/ImportDir.h
 usr/include/mozjs-129/mozilla/InitializedOnce.h
 usr/include/mozjs-129/mozilla/IntegerPrintfMacros.h
 usr/include/mozjs-129/mozilla/IntegerRange.h
@@ -345,10 +307,6 @@ usr/include/mozjs-129/mozilla/MmapFaultHandler.h
 usr/include/mozjs-129/mozilla/ModuloBuffer.h
 usr/include/mozjs-129/mozilla/MoveOnlyFunction.h
 usr/include/mozjs-129/mozilla/MruCache.h
-usr/include/mozjs-129/mozilla/MutexPlatformData_noop.h
-usr/include/mozjs-129/mozilla/MutexPlatformData_posix.h
-usr/include/mozjs-129/mozilla/MutexPlatformData_windows.h
-usr/include/mozjs-129/mozilla/NativeNt.h
 usr/include/mozjs-129/mozilla/NeverDestroyed.h
 usr/include/mozjs-129/mozilla/NonDereferenceable.h
 usr/include/mozjs-129/mozilla/NotNull.h
@@ -362,9 +320,7 @@ usr/include/mozjs-129/mozilla/PlatformRWLock.h
 usr/include/mozjs-129/mozilla/PodOperations.h
 usr/include/mozjs-129/mozilla/Poison.h
 usr/include/mozjs-129/mozilla/PowerOfTwo.h
-usr/include/mozjs-129/mozilla/PreXULSkeletonUI.h
 usr/include/mozjs-129/mozilla/Printf.h
-usr/include/mozjs-129/mozilla/ProcessType.h
 usr/include/mozjs-129/mozilla/ProfileBufferChunk.h
 usr/include/mozjs-129/mozilla/ProfileBufferChunkManager.h
 usr/include/mozjs-129/mozilla/ProfileBufferChunkManagerSingle.h
@@ -391,7 +347,6 @@ usr/include/mozjs-129/mozilla/ResultExtensions.h
 usr/include/mozjs-129/mozilla/ResultVariant.h
 usr/include/mozjs-129/mozilla/ReverseIterator.h
 usr/include/mozjs-129/mozilla/RollingMean.h
-usr/include/mozjs-129/mozilla/RuntimeExceptionModule.h
 usr/include/mozjs-129/mozilla/SHA1.h
 usr/include/mozjs-129/mozilla/SIMD.h
 usr/include/mozjs-129/mozilla/SPSCQueue.h
@@ -405,8 +360,6 @@ usr/include/mozjs-129/mozilla/Span.h
 usr/include/mozjs-129/mozilla/SplayTree.h
 usr/include/mozjs-129/mozilla/Sprintf.h
 usr/include/mozjs-129/mozilla/StackWalk.h
-usr/include/mozjs-129/mozilla/StackWalkThread.h
-usr/include/mozjs-129/mozilla/StackWalk_windows.h
 usr/include/mozjs-129/mozilla/StaticAnalysisFunctions.h
 usr/include/mozjs-129/mozilla/StringBuffer.h
 usr/include/mozjs-129/mozilla/TaggedAnonymousMemory.h
@@ -417,10 +370,8 @@ usr/include/mozjs-129/mozilla/ThreadLocal.h
 usr/include/mozjs-129/mozilla/ThreadSafeWeakPtr.h
 usr/include/mozjs-129/mozilla/ThreadSafety.h
 usr/include/mozjs-129/mozilla/TimeStamp.h
-usr/include/mozjs-129/mozilla/TimeStamp_windows.h
 usr/include/mozjs-129/mozilla/ToString.h
 usr/include/mozjs-129/mozilla/Try.h
-usr/include/mozjs-129/mozilla/TsanOptions.h
 usr/include/mozjs-129/mozilla/TypedEnumBits.h
 usr/include/mozjs-129/mozilla/Types.h
 usr/include/mozjs-129/mozilla/UniquePtr.h
@@ -430,19 +381,7 @@ usr/include/mozjs-129/mozilla/Uptime.h
 usr/include/mozjs-129/mozilla/Utf8.h
 usr/include/mozjs-129/mozilla/Variant.h
 usr/include/mozjs-129/mozilla/Vector.h
-usr/include/mozjs-129/mozilla/WasiAtomic.h
 usr/include/mozjs-129/mozilla/WeakPtr.h
-usr/include/mozjs-129/mozilla/WinUtils.h
-usr/include/mozjs-129/mozilla/WindowsDiagnostics.h
-usr/include/mozjs-129/mozilla/WindowsDpiAwareness.h
-usr/include/mozjs-129/mozilla/WindowsDpiInitialization.h
-usr/include/mozjs-129/mozilla/WindowsEnumProcessModules.h
-usr/include/mozjs-129/mozilla/WindowsMapRemoteView.h
-usr/include/mozjs-129/mozilla/WindowsProcessMitigations.h
-usr/include/mozjs-129/mozilla/WindowsStackCookie.h
-usr/include/mozjs-129/mozilla/WindowsUnicode.h
-usr/include/mozjs-129/mozilla/WindowsUnwindInfo.h
-usr/include/mozjs-129/mozilla/WindowsVersion.h
 usr/include/mozjs-129/mozilla/WrappingOperations.h
 usr/include/mozjs-129/mozilla/XorShift128PlusRNG.h
 usr/include/mozjs-129/mozilla/cxxalloc.h
@@ -459,7 +398,6 @@ usr/include/mozjs-129/mozilla/intl/Collator.h
 usr/include/mozjs-129/mozilla/intl/Currency.h
 usr/include/mozjs-129/mozilla/intl/DateIntervalFormat.h
 usr/include/mozjs-129/mozilla/intl/DateTimeFormat.h
-usr/include/mozjs-129/mozilla/intl/DateTimeFormatUtils.h
 usr/include/mozjs-129/mozilla/intl/DateTimePart.h
 usr/include/mozjs-129/mozilla/intl/DateTimePatternGenerator.h
 usr/include/mozjs-129/mozilla/intl/DisplayNames.h
@@ -476,15 +414,12 @@ usr/include/mozjs-129/mozilla/intl/LocaleCanonicalizer.h
 usr/include/mozjs-129/mozilla/intl/MeasureUnit.h
 usr/include/mozjs-129/mozilla/intl/MeasureUnitGenerated.h
 usr/include/mozjs-129/mozilla/intl/NumberFormat.h
-usr/include/mozjs-129/mozilla/intl/NumberFormatFields.h
-usr/include/mozjs-129/mozilla/intl/NumberFormatterSkeleton.h
 usr/include/mozjs-129/mozilla/intl/NumberParser.h
 usr/include/mozjs-129/mozilla/intl/NumberPart.h
 usr/include/mozjs-129/mozilla/intl/NumberRangeFormat.h
 usr/include/mozjs-129/mozilla/intl/NumberingSystem.h
 usr/include/mozjs-129/mozilla/intl/PluralRules.h
 usr/include/mozjs-129/mozilla/intl/RelativeTimeFormat.h
-usr/include/mozjs-129/mozilla/intl/ScopedICUObject.h
 usr/include/mozjs-129/mozilla/intl/String.h
 usr/include/mozjs-129/mozilla/intl/TimeZone.h
 usr/include/mozjs-129/mozilla/intl/UnicodeProperties.h
@@ -493,15 +428,204 @@ usr/include/mozjs-129/mozilla/leb128iterator.h
 usr/include/mozjs-129/mozilla/mozalloc.h
 usr/include/mozjs-129/mozilla/mozalloc_abort.h
 usr/include/mozjs-129/mozilla/mozalloc_oom.h
-usr/include/mozjs-129/mozilla/throw_gcc.h
-usr/include/mozjs-129/mozjemalloc.h
 usr/include/mozjs-129/mozjemalloc_types.h
 usr/include/mozjs-129/mozmemory.h
 usr/include/mozjs-129/mozmemory_utils.h
 usr/include/mozjs-129/mozmemory_wrap.h
-usr/include/mozjs-129/rb.h
-usr/include/mozjs-129/replace_malloc.h
-usr/include/mozjs-129/replace_malloc_bridge.h
+usr/include/mozjs-129/unicode/
+usr/include/mozjs-129/unicode/alphaindex.h
+usr/include/mozjs-129/unicode/appendable.h
+usr/include/mozjs-129/unicode/basictz.h
+usr/include/mozjs-129/unicode/brkiter.h
+usr/include/mozjs-129/unicode/bytestream.h
+usr/include/mozjs-129/unicode/bytestrie.h
+usr/include/mozjs-129/unicode/bytestriebuilder.h
+usr/include/mozjs-129/unicode/calendar.h
+usr/include/mozjs-129/unicode/caniter.h
+usr/include/mozjs-129/unicode/casemap.h
+usr/include/mozjs-129/unicode/char16ptr.h
+usr/include/mozjs-129/unicode/chariter.h
+usr/include/mozjs-129/unicode/choicfmt.h
+usr/include/mozjs-129/unicode/coleitr.h
+usr/include/mozjs-129/unicode/coll.h
+usr/include/mozjs-129/unicode/compactdecimalformat.h
+usr/include/mozjs-129/unicode/curramt.h
+usr/include/mozjs-129/unicode/currpinf.h
+usr/include/mozjs-129/unicode/currunit.h
+usr/include/mozjs-129/unicode/datefmt.h
+usr/include/mozjs-129/unicode/dbbi.h
+usr/include/mozjs-129/unicode/dcfmtsym.h
+usr/include/mozjs-129/unicode/decimfmt.h
+usr/include/mozjs-129/unicode/displayoptions.h
+usr/include/mozjs-129/unicode/docmain.h
+usr/include/mozjs-129/unicode/dtfmtsym.h
+usr/include/mozjs-129/unicode/dtintrv.h
+usr/include/mozjs-129/unicode/dtitvfmt.h
+usr/include/mozjs-129/unicode/dtitvinf.h
+usr/include/mozjs-129/unicode/dtptngen.h
+usr/include/mozjs-129/unicode/dtrule.h
+usr/include/mozjs-129/unicode/edits.h
+usr/include/mozjs-129/unicode/enumset.h
+usr/include/mozjs-129/unicode/errorcode.h
+usr/include/mozjs-129/unicode/fieldpos.h
+usr/include/mozjs-129/unicode/filteredbrk.h
+usr/include/mozjs-129/unicode/fmtable.h
+usr/include/mozjs-129/unicode/format.h
+usr/include/mozjs-129/unicode/formattednumber.h
+usr/include/mozjs-129/unicode/formattedvalue.h
+usr/include/mozjs-129/unicode/fpositer.h
+usr/include/mozjs-129/unicode/gender.h
+usr/include/mozjs-129/unicode/gregocal.h
+usr/include/mozjs-129/unicode/icudataver.h
+usr/include/mozjs-129/unicode/icuplug.h
+usr/include/mozjs-129/unicode/idna.h
+usr/include/mozjs-129/unicode/listformatter.h
+usr/include/mozjs-129/unicode/localebuilder.h
+usr/include/mozjs-129/unicode/localematcher.h
+usr/include/mozjs-129/unicode/localpointer.h
+usr/include/mozjs-129/unicode/locdspnm.h
+usr/include/mozjs-129/unicode/locid.h
+usr/include/mozjs-129/unicode/measfmt.h
+usr/include/mozjs-129/unicode/measunit.h
+usr/include/mozjs-129/unicode/measure.h
+usr/include/mozjs-129/unicode/messagepattern.h
+usr/include/mozjs-129/unicode/msgfmt.h
+usr/include/mozjs-129/unicode/normalizer2.h
+usr/include/mozjs-129/unicode/normlzr.h
+usr/include/mozjs-129/unicode/nounit.h
+usr/include/mozjs-129/unicode/numberformatter.h
+usr/include/mozjs-129/unicode/numberrangeformatter.h
+usr/include/mozjs-129/unicode/numfmt.h
+usr/include/mozjs-129/unicode/numsys.h
+usr/include/mozjs-129/unicode/parseerr.h
+usr/include/mozjs-129/unicode/parsepos.h
+usr/include/mozjs-129/unicode/platform.h
+usr/include/mozjs-129/unicode/plurfmt.h
+usr/include/mozjs-129/unicode/plurrule.h
+usr/include/mozjs-129/unicode/ptypes.h
+usr/include/mozjs-129/unicode/putil.h
+usr/include/mozjs-129/unicode/rbbi.h
+usr/include/mozjs-129/unicode/rbnf.h
+usr/include/mozjs-129/unicode/rbtz.h
+usr/include/mozjs-129/unicode/regex.h
+usr/include/mozjs-129/unicode/region.h
+usr/include/mozjs-129/unicode/reldatefmt.h
+usr/include/mozjs-129/unicode/rep.h
+usr/include/mozjs-129/unicode/resbund.h
+usr/include/mozjs-129/unicode/schriter.h
+usr/include/mozjs-129/unicode/scientificnumberformatter.h
+usr/include/mozjs-129/unicode/search.h
+usr/include/mozjs-129/unicode/selfmt.h
+usr/include/mozjs-129/unicode/simpleformatter.h
+usr/include/mozjs-129/unicode/simplenumberformatter.h
+usr/include/mozjs-129/unicode/simpletz.h
+usr/include/mozjs-129/unicode/smpdtfmt.h
+usr/include/mozjs-129/unicode/sortkey.h
+usr/include/mozjs-129/unicode/std_string.h
+usr/include/mozjs-129/unicode/strenum.h
+usr/include/mozjs-129/unicode/stringoptions.h
+usr/include/mozjs-129/unicode/stringpiece.h
+usr/include/mozjs-129/unicode/stringtriebuilder.h
+usr/include/mozjs-129/unicode/stsearch.h
+usr/include/mozjs-129/unicode/symtable.h
+usr/include/mozjs-129/unicode/tblcoll.h
+usr/include/mozjs-129/unicode/timezone.h
+usr/include/mozjs-129/unicode/tmunit.h
+usr/include/mozjs-129/unicode/tmutamt.h
+usr/include/mozjs-129/unicode/tmutfmt.h
+usr/include/mozjs-129/unicode/translit.h
+usr/include/mozjs-129/unicode/tzfmt.h
+usr/include/mozjs-129/unicode/tznames.h
+usr/include/mozjs-129/unicode/tzrule.h
+usr/include/mozjs-129/unicode/tztrans.h
+usr/include/mozjs-129/unicode/ubidi.h
+usr/include/mozjs-129/unicode/ubiditransform.h
+usr/include/mozjs-129/unicode/ubrk.h
+usr/include/mozjs-129/unicode/ucal.h
+usr/include/mozjs-129/unicode/ucasemap.h
+usr/include/mozjs-129/unicode/ucat.h
+usr/include/mozjs-129/unicode/uchar.h
+usr/include/mozjs-129/unicode/ucharstrie.h
+usr/include/mozjs-129/unicode/ucharstriebuilder.h
+usr/include/mozjs-129/unicode/uchriter.h
+usr/include/mozjs-129/unicode/uclean.h
+usr/include/mozjs-129/unicode/ucnv.h
+usr/include/mozjs-129/unicode/ucnv_cb.h
+usr/include/mozjs-129/unicode/ucnv_err.h
+usr/include/mozjs-129/unicode/ucnvsel.h
+usr/include/mozjs-129/unicode/ucol.h
+usr/include/mozjs-129/unicode/ucoleitr.h
+usr/include/mozjs-129/unicode/uconfig.h
+usr/include/mozjs-129/unicode/ucpmap.h
+usr/include/mozjs-129/unicode/ucptrie.h
+usr/include/mozjs-129/unicode/ucsdet.h
+usr/include/mozjs-129/unicode/ucurr.h
+usr/include/mozjs-129/unicode/udat.h
+usr/include/mozjs-129/unicode/udata.h
+usr/include/mozjs-129/unicode/udateintervalformat.h
+usr/include/mozjs-129/unicode/udatpg.h
+usr/include/mozjs-129/unicode/udisplaycontext.h
+usr/include/mozjs-129/unicode/udisplayoptions.h
+usr/include/mozjs-129/unicode/uenum.h
+usr/include/mozjs-129/unicode/ufieldpositer.h
+usr/include/mozjs-129/unicode/uformattable.h
+usr/include/mozjs-129/unicode/uformattednumber.h
+usr/include/mozjs-129/unicode/uformattedvalue.h
+usr/include/mozjs-129/unicode/ugender.h
+usr/include/mozjs-129/unicode/uidna.h
+usr/include/mozjs-129/unicode/uiter.h
+usr/include/mozjs-129/unicode/uldnames.h
+usr/include/mozjs-129/unicode/ulistformatter.h
+usr/include/mozjs-129/unicode/uloc.h
+usr/include/mozjs-129/unicode/ulocdata.h
+usr/include/mozjs-129/unicode/umachine.h
+usr/include/mozjs-129/unicode/umisc.h
+usr/include/mozjs-129/unicode/umsg.h
+usr/include/mozjs-129/unicode/umutablecptrie.h
+usr/include/mozjs-129/unicode/unifilt.h
+usr/include/mozjs-129/unicode/unifunct.h
+usr/include/mozjs-129/unicode/unimatch.h
+usr/include/mozjs-129/unicode/unirepl.h
+usr/include/mozjs-129/unicode/uniset.h
+usr/include/mozjs-129/unicode/unistr.h
+usr/include/mozjs-129/unicode/unorm.h
+usr/include/mozjs-129/unicode/unorm2.h
+usr/include/mozjs-129/unicode/unum.h
+usr/include/mozjs-129/unicode/unumberformatter.h
+usr/include/mozjs-129/unicode/unumberoptions.h
+usr/include/mozjs-129/unicode/unumberrangeformatter.h
+usr/include/mozjs-129/unicode/unumsys.h
+usr/include/mozjs-129/unicode/uobject.h
+usr/include/mozjs-129/unicode/upluralrules.h
+usr/include/mozjs-129/unicode/uregex.h
+usr/include/mozjs-129/unicode/uregion.h
+usr/include/mozjs-129/unicode/ureldatefmt.h
+usr/include/mozjs-129/unicode/urename.h
+usr/include/mozjs-129/unicode/urep.h
+usr/include/mozjs-129/unicode/ures.h
+usr/include/mozjs-129/unicode/uscript.h
+usr/include/mozjs-129/unicode/usearch.h
+usr/include/mozjs-129/unicode/uset.h
+usr/include/mozjs-129/unicode/usetiter.h
+usr/include/mozjs-129/unicode/ushape.h
+usr/include/mozjs-129/unicode/usimplenumberformatter.h
+usr/include/mozjs-129/unicode/uspoof.h
+usr/include/mozjs-129/unicode/usprep.h
+usr/include/mozjs-129/unicode/ustring.h
+usr/include/mozjs-129/unicode/ustringtrie.h
+usr/include/mozjs-129/unicode/utext.h
+usr/include/mozjs-129/unicode/utf.h
+usr/include/mozjs-129/unicode/utf16.h
+usr/include/mozjs-129/unicode/utf32.h
+usr/include/mozjs-129/unicode/utf8.h
+usr/include/mozjs-129/unicode/utf_old.h
+usr/include/mozjs-129/unicode/utmscale.h
+usr/include/mozjs-129/unicode/utrace.h
+usr/include/mozjs-129/unicode/utrans.h
+usr/include/mozjs-129/unicode/utypes.h
+usr/include/mozjs-129/unicode/uvernum.h
+usr/include/mozjs-129/unicode/uversion.h
+usr/include/mozjs-129/unicode/vtzone.h
 usr/lib64/
 usr/lib64/libmozjs-129.so.0.0.0
 usr/lib64/pkgconfig/
