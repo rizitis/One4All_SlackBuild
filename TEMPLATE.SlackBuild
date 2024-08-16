@@ -120,50 +120,18 @@ true
    }
    
    cmake_build(){
-   cd $TMP || exit
-   wget https://cdn-fastly.obsproject.com/downloads/cef_binary_5060_linux_x86_64_v3.tar.xz
-   tar -xf cef_binary_5060_linux_x86_64_v3.tar.xz
-   cd cef_binary_5060_linux_x86_64 || exit
-   strip -v Release/*.so
-   cmake \
-      -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
-      -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
-      -DCMAKE_BUILD_TYPE=Release .
-
-    make libcef_dll_wrapper
-     
-   cd $TMP/$SRCNAM-$VERSION/plugins || exit
-   git clone https://github.com/obsproject/obs-browser
-   git clone https://github.com/obsproject/obs-websocket 
-
-   cd  $TMP/$SRCNAM-$VERSION || exit 
-   mkdir -p build
-	cd build
-	cmake \
-    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS -Wno-error=stringop-overflow" \
-    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS -Wno-error=stringop-overflow" \
-    -DCMAKE_BUILD_TYPE=Release \
+	  mkdir -p build
+cd build
+  cmake \
+    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
+    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_SUFFIX=${LIBDIRSUFFIX} \
-    -DOS_POSIX=ON \
-    -DOBS_VERSION_OVERRIDE=${VERSION} \
-    -DCMAKE_SKIP_INSTALL_RPATH=ON \
-    -DUNIX_STRUCTURE=ON \
-    -DCEF_ROOT_DIR="$TMP/cef_binary_5060_linux_x86_64" \
-    -DCALM_DEPRECATION=ON \
-    -DENABLE_AJA=OFF \
-    -DENABLE_LIBFDK=ON \
-    -DENABLE_JACK=ON \
-    -DENABLE_WEBRTC=OFF \
-    -DENABLE_WEBSOCKET=OFF \
-    -DOpenGL_GL_PREFERENCE=GLVND \
-    -DCALM_DEPRECATION=ON \
-    -DENABLE_VST=ON \
-    -DENABLE_NATIVE_NVENC=OFF \
+    -DEXCLUDE_PLPLOT=true \
     -DCMAKE_BUILD_TYPE=Release ..
-	  make
-	  make install/strip DESTDIR=$PKG
-	cd ..
+  make
+  make install/strip DESTDIR=$PKG
+cd ..
    }
 
    perl_build(){
@@ -251,9 +219,7 @@ CXXFLAGS="$SLKCFLAGS" \
   }
    
    custom_build(){
-    ./autogen.sh
-    make
-        make install DESTDIR=$PKG
+    true
   }
    
    after_build(){
@@ -567,10 +533,10 @@ download_src(){
    
 
 # default most of times #
-
 download_src
 prepare_build
 patch_build
+
 # uncomment what you need:
 chrooting
 #auto_build
