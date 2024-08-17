@@ -48,8 +48,8 @@ Optional but very useful dependency is [slackdesc](https://slack-desc.sourceforg
       <td>Flexibly for special and complex builds</td>
    </tr>
    <tr>
-      <td>Provide: package.dep package.t?z.sig package.t?z.txt package.t?z.md5 makepkg-package.log</td>
-      <td>Support: slack-required slack-conflicts slack-suggests build.log</td>
+      <td>Provide: package.dep package.t?z.sig package.t?z.txt package.t?z.md5 makepkg-package.log  build.lo</td>
+      <td>Support: slack-required slack-conflicts slack-suggestsg</td>
    </tr>
 </table>
 
