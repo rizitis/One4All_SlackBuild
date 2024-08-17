@@ -49,7 +49,7 @@ Optional but very useful dependency is [slackdesc](https://slack-desc.sourceforg
    </tr>
    <tr>
       <td>Provide: package.dep package.t?z.sig package.t?z.txt package.t?z.md5 makepkg-package.log</td>
-      <td>Support: slack-required slack-conflicts slack-suggests </td>
+      <td>Support: slack-required slack-conflicts slack-suggests build.log</td>
    </tr>
 </table>
 
