@@ -34,21 +34,21 @@ start_time=$(date +%s)
 # https://slack-desc.sourceforge.net/
 # example of use:
    mkdesc="$(which slackdesc)" || true
-   Homepage="Homepage: https://obsproject.com/"
+   Homepage="Homepage: https://gitlab.gnome.org/GNOME/gnome-power-manager"
             #|--------------------------------------|#
-   SortDesc="video capturing,recording, streaming..."
-   LongDesc="OBS Studio is software designed for capturing, compositing, encoding, recording, and streaming video content, efficiently.It's distributed under the GNU General Public License v2 (or any later version) - see the accompanying COPYING file for more details."
+   SortDesc="GNOME power management service"
+   LongDesc="GNOME Power Manager uses the information and facilities provided by UPower displaying icons and handling user callbacks in an interactive GNOME session."
 #############################################################################
 # EDIT FOLLOWING AS NEEDED:
-   SRCURL="https://github.com/obsproject/obs-studio/archive/30.2.2/obs-studio-30.2.2.tar.gz"
+   SRCURL="https://gitlab.gnome.org/GNOME/gnome-power-manager/-/archive/GNOME_POWER_MANAGER_43_0/gnome-power-manager-GNOME_POWER_MANAGER_43_0.tar.gz"
    # IF you need:git checkout, else leave it empty.    
    GITCHEK=
    # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z
    #OR repos: cvn, cvs, git, lftp
    COMPRESS="tar.gz"
-   SRCNAM=obs-studio
-   PRGNAM=obs-studio
-   VERSION=30.2.2
+   SRCNAM=gnome-power-manager-GNOME_POWER_MANAGER_43_0
+   PRGNAM=gnome-power-manager
+   VERSION=43.0
 
    BUILD=${BUILD:-1}
    TAG=${TAG:-_rtz}
@@ -120,17 +120,21 @@ true
    }
    
    cmake_build(){
-	  mkdir -p build
-cd build
-  cmake \
-    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
-    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
-    -DCMAKE_INSTALL_PREFIX=/usr \
-    -DLIB_SUFFIX=${LIBDIRSUFFIX} \
-    -DEXCLUDE_PLPLOT=true \
-    -DCMAKE_BUILD_TYPE=Release ..
-  make
-  make install/strip DESTDIR=$PKG
+   mkdir -p build
+  cd build
+  CFLAGS="$SLKCFLAGS" \
+  CXXFLAGS="$SLKCFLAGS" \
+  meson setup .. \
+  --prefix=/usr \
+  --buildtype=release \
+  --libdir=lib${LIBDIRSUFFIX} \
+  --libexecdir=/usr/libexec \
+  --sysconfdir=/etc \
+  --infodir=/usr/info \
+  --mandir=/usr/man \
+  --localstatedir=/var 
+   "${NINJA:=ninja}"
+   DESTDIR=$PKG $NINJA install
 cd ..
    }
 
@@ -187,8 +191,7 @@ CXXFLAGS="$SLKCFLAGS" \
 /usr/bin/cargo build --release 
 
         install -Dm755 "target/release/$PRGNAM" "$PKG/usr/bin/$PRGNAM"
-        # rest of commands...
-
+        
    }
 
 # golang_build dont need root access in Slackware if your setup is as SlackBuilds.org suggest for go.
@@ -211,7 +214,9 @@ CXXFLAGS="$SLKCFLAGS" \
   }
    
    custom_build(){
-    true
+    ./autogen.sh
+    make
+        make install DESTDIR=$PKG
   }
    
    after_build(){
@@ -515,8 +520,8 @@ download_src(){
    	
         cd "$TMP" || exit 
         if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" ]]; then
-          get_out "$CWD"/"$SRCNAM"-"$VERSION"."$COMPRESS" || exit
-           cd $SRCNAM-$VERSION || cd $PRGNAM-$VERSION ||exit
+          get_out "$CWD"/"$SRCNAM"-"$VERSION"."$COMPRESS" || get_out "$CWD"/"$SRCNAM"."$COMPRESS" || exit
+           cd $SRCNAM-$VERSION || cd $PRGNAM-$VERSION || cd $SRCNAM || exit
           else
           mv "$CWD"/"$SRCNAM" "$TMP"
            cd $SRCNAM || cd $PRGNAM ||exit
@@ -525,12 +530,12 @@ download_src(){
    
 
 # default most of times #
+
 download_src
 prepare_build
 patch_build
-chrooting
-
 # uncomment what you need:
+chrooting
 #auto_build
 #meson_build
 #python_build
