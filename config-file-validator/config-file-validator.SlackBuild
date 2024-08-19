@@ -23,6 +23,7 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
    cd $(dirname "$0") ; CWD=$(pwd)
 # Setup build log file
 LOGFILE="$CWD/build.log"
+rm $LOGFILE || true
 exec > >(tee -a "$LOGFILE") 2>&1
 
 echo "Starting build process..."
@@ -40,7 +41,7 @@ start_time=$(date +%s)
    LongDesc=
 #############################################################################
 # EDIT FOLLOWING AS NEEDED:
-   SRCURL="https://github.com/Boeing/config-file-validator/archive/refs/tags/v1.7.0.tar.gz"
+   SRCURL="https://github.com/Boeing/config-file-validator/archive/refs/tags/v1.7.1.tar.gz"
    # IF you need:git checkout, else leave it empty.    
    GITCHEK=
    # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z
@@ -48,7 +49,7 @@ start_time=$(date +%s)
    COMPRESS="tar.gz"
    SRCNAM=config-file-validator
    PRGNAM=config-file-validator
-   VERSION=1.7.0
+   VERSION=1.7.1
 
    BUILD=${BUILD:-1}
    TAG=${TAG:-_rtz}
@@ -390,7 +391,7 @@ sudo	rm -r package-"$PRGNAM" work *.$COMPRESS
    }
 
    pkg_install(){
-	upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
+sudo	upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
    }
    
    
@@ -398,7 +399,7 @@ sudo	rm -r package-"$PRGNAM" work *.$COMPRESS
   sig_package(){
 #  Add you id_rsa, example:
     prikey_path="/root/id_rsa"
-         openssl dgst -sha256 -sign $prikey_path  -out "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".sig "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 
+   sudo     openssl dgst -sha256 -sign $prikey_path  -out "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".sig "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 
    } 
    
    
@@ -509,7 +510,7 @@ download_src(){
   set -e
 
    prepare_build(){
-	rm -rf "$PKG" "$OUTPUT" "$COMPRESS" "$CWD"/error-"$PRGNAM".log
+	rm -rf "$PKG" "$OUTPUT" "$COMPRESS" 
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
 	rm -rf "$TMP"/$PRGNAM-$VERSION
 	
@@ -584,8 +585,8 @@ golang_build
 after_build
 package_build
 clean_src
-#pkg_install
-#sig_package
+pkg_install
+sig_package
 
 # Calculate and display build time
 end_time=$(date +%s)

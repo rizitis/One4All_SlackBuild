@@ -1,5 +1,5 @@
 
-Fri Aug 16 21:35:13 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Mon Aug 19 22:41:49 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -15,20 +15,21 @@ special permissions, then DO NOT reset them here!
 Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
-Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/config-file-validator/binary-config-file-validator-1.7.0/config-file-validator-1.7.0-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/config-file-validator/binary-config-file-validator-1.7.1/config-file-validator-1.7.1-x86_64-1_rtz.tlz
 
 ./
 install/
 install/doinst.sh
 install/slack-desc
 install/slack-required
+install/slack-suggests
 usr/
 usr/doc/
-usr/doc/config-file-validator-1.7.0/
-usr/doc/config-file-validator-1.7.0/config-file-validator.SlackBuild
+usr/doc/config-file-validator-1.7.1/
+usr/doc/config-file-validator-1.7.1/config-file-validator.SlackBuild
 usr/local/
 usr/local/bin/
 usr/local/bin/validator
 
-Slackware package /home/omen/GITHUB/One4All_SlackBuild/config-file-validator/binary-config-file-validator-1.7.0/config-file-validator-1.7.0-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/config-file-validator/binary-config-file-validator-1.7.1/config-file-validator-1.7.1-x86_64-1_rtz.tlz created.
 
