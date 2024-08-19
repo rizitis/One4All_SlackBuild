@@ -475,7 +475,7 @@ download_src(){
   set -e
 
    prepare_build(){
-	rm -rf "$PKG" "$OUTPUT" "$COMPRESS" "$CWD"/error-"$PRGNAM".log
+	rm -rf "$PKG" "$OUTPUT" "$COMPRESS" "$CWD"/build.log
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
 	rm -rf "$TMP"/$PRGNAM-$VERSION
 	
