@@ -217,6 +217,7 @@ CXXFLAGS="$SLKCFLAGS" \
    custom_build(){
     .var=$(date)
     echo "$date foo-123 as dep" 
+    sleep 4
     echo "$date foo2 was a dep" > foo2wasdep.txt
   }
    
@@ -536,7 +537,7 @@ download_src(){
 #prepare_build
 #patch_build
 # uncomment what you need:
-chrooting
+#chrooting
 #auto_build
 #meson_build
 #python_build
