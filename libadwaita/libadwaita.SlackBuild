@@ -1,2 +1,4 @@
-#!/bin/bash
-echo "TESTING SCRIPT libadwaita"
+var=$(date)
+echo "libadwait test" > builded.txt
+echo "$var" > builded.txt
+

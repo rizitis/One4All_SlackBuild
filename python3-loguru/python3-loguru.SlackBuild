@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "loguru test"
+var=$(date)
+echo "loguru test" > builded.txt
+echo "$var" > builded.txt
