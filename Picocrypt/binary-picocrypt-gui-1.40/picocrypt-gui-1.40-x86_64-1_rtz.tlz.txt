@@ -1,0 +1,11 @@
+picocrypt-gui: picocrypt-gui (secure encryption tool)
+picocrypt-gui:
+picocrypt-gui: Picocrypt is a very small (hence Pico), very simple, yet very secure
+picocrypt-gui: encryption tool that you can use to protect your files. It's
+picocrypt-gui: designed to be the go-to tool for encryption, with a focus on
+picocrypt-gui: security, simplicity, and reliability. Picocrypt uses the secure
+picocrypt-gui: XChaCha20 cipher and the Argon2id key derivation function to provide
+picocrypt-gui: a high level of security, even from three-letter agencies like the
+picocrypt-gui: NSA. Your privacy and security is under attack. Take it back with
+picocrypt-gui: confidence by protecting your files with Picocrypt.
+picocrypt-gui: https://github.com/Picocrypt/Picocrypt
