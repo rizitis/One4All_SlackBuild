@@ -1,4 +1,0 @@
-var=$(date)
-echo "wand test" > builded.txt
-echo "$var" > builded.txt
-

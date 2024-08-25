@@ -1,3 +1,0 @@
-#!/bin/bash
-var1=$(date)
-echo "$date" > buildded.txt
