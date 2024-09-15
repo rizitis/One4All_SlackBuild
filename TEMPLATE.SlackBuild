@@ -20,14 +20,20 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-   cd $(dirname "$0") ; CWD=$(pwd)
+# Move to the script's directory
+cd "$(dirname "$0")" || exit 1
+CWD=$(pwd)
+
 # Setup build log file
 LOGFILE="$CWD/build.log"
-rm $LOGFILE || true
-exec > >(tee -a "$LOGFILE") 2>&1
+rm -v "$LOGFILE" 2>/dev/null || true  # Quietly remove the old log if it exists
 
+# Redirect all output to the log file
+exec > >(tee -a "$LOGFILE") 2>&1
+echo "Log file is located at $LOGFILE"
 echo "Starting build process..."
 start_time=$(date +%s)
+
 
 
 ##########################-slackdesc-########################################
@@ -35,10 +41,10 @@ start_time=$(date +%s)
 # slackdesc HomePage: https://slack-desc.sourceforge.net/
 # example of use:
    mkdesc="$(which slackdesc)" || true
-   Homepage="Homepage: https://gitlab.gnome.org/GNOME/gnome-power-manager"
+   Homepage="Homepage:https://github.com/bcyran/timewall"
             #|--------------------------------------|#
-   SortDesc="GNOME power management service"
-   LongDesc="GNOME Power Manager uses the information and facilities provided by UPower displaying icons and handling user callbacks in an interactive GNOME session."
+   SortDesc="Apple dynamic HEIF wallpapers"
+   LongDesc="Apple dynamic HEIF wallpapers on GNU/Linux.Support for original HEIF/HEIC dynamic wallpaper files used in MacOS.Support for all schedule types: sun position based, time based, dark/light mode.Set wallpaper once and continuously (daemon mode).Preview wallpaper changes.Display wallpaper metadata.Extract all images and metadata as XML."
 ##########################-Desktop-Entry-####################################
 # if you need to create Desktop entry edit and call desktop_entry in your build else ignore it.
 desktop_entry() {
@@ -59,15 +65,15 @@ EOF
 }
 ############################## MAIN VARS #########################################
 # EDIT FOLLOWING AS NEEDED:
-   SRCURL="https://gitlab.gnome.org/GNOME/gnome-power-manager/-/archive/GNOME_POWER_MANAGER_43_0/gnome-power-manager-GNOME_POWER_MANAGER_43_0.tar.gz"
+   SRCURL="https://github.com/bcyran/timewall/archive/1.2.0.tar.gz"
    # IF you need:git checkout, else leave it empty.    
    GITCHEK=
    # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z
    #OR repos: cvn, cvs, git, lftp
    COMPRESS="tar.gz"
-   SRCNAM=gnome-power-manager-GNOME_POWER_MANAGER_43_0
-   PRGNAM=gnome-power-manager
-   VERSION=43.0
+   SRCNAM=timewall
+   PRGNAM=timewall
+   VERSION=1.2.0
 
    BUILD=${BUILD:-1}
    TAG=${TAG:-_rtz}
@@ -207,9 +213,16 @@ cd ..
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 
-/usr/bin/cargo build --release 
+    export SHELL_COMPLETIONS_DIR="completions"
+    mkdir -p "${SHELL_COMPLETIONS_DIR}"
+    cargo build --release --locked
+#    cargo test --release --locked
 
-        install -Dm755 "target/release/$PRGNAM" "$PKG/usr/bin/$PRGNAM"
+    install -Dm755 "target/release/$PRGNAM" "$PKG/usr/bin/$PRGNAM"
+    install -Dm 644 README.md LICENSE -t "$PKG/usr/share/doc/$PRGNAM"
+    install -Dm 644 "completions/$PRGNAM.bash" -t "$PKG/usr/share/bash-completion/completions"
+    install -Dm 644 "completions/_$PRGNAM" -t "$PKG/usr/share/zsh/site-functions"
+    install -Dm 644 "completions/$PRGNAM.fish" -t "$PKG/usr/share/fish/vendor_completions.d"
         
    }
 
@@ -494,7 +507,7 @@ download_src(){
   set -e
 
    prepare_build(){
-	rm -rf "$PKG" "$OUTPUT" "$COMPRESS" "$CWD"/build.log
+	rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
 	rm -rf "$TMP"/$PRGNAM-$VERSION
 	
@@ -558,10 +571,10 @@ chrooting
 #auto_build
 #meson_build
 #python_build
-cmake_build
+#cmake_build
 #perl_build
 #haskel_build
-#cargo_build
+cargo_build
 #golang_build
 #custom_build
 
