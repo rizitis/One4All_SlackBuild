@@ -32,14 +32,32 @@ start_time=$(date +%s)
 
 ##########################-slackdesc-########################################
 # If you have slackdesc installed you need these, else ignore them and comment them.
-# https://slack-desc.sourceforge.net/
+# slackdesc HomePage: https://slack-desc.sourceforge.net/
 # example of use:
    mkdesc="$(which slackdesc)" || true
    Homepage="Homepage: https://gitlab.gnome.org/GNOME/gnome-power-manager"
             #|--------------------------------------|#
    SortDesc="GNOME power management service"
    LongDesc="GNOME Power Manager uses the information and facilities provided by UPower displaying icons and handling user callbacks in an interactive GNOME session."
-#############################################################################
+##########################-Desktop-Entry-####################################
+# if you need to create Desktop entry edit and call desktop_entry in your build else ignore it.
+desktop_entry() {
+mkdir -p "$PKG"/usr/share/applications
+cat <<EOF >> "$PKG"/usr/share/applications/$PRGNAM.desktop
+[Desktop Entry]
+Version=1.0
+Name=$PRGNAM
+Comment=$SortDesc
+GenericName=
+Exec=$PRGNAM
+Icon=$PRGNAM
+Terminal=true
+Type=Application
+Categories=Utility;
+Keywords=
+EOF
+}
+############################## MAIN VARS #########################################
 # EDIT FOLLOWING AS NEEDED:
    SRCURL="https://gitlab.gnome.org/GNOME/gnome-power-manager/-/archive/GNOME_POWER_MANAGER_43_0/gnome-power-manager-GNOME_POWER_MANAGER_43_0.tar.gz"
    # IF you need:git checkout, else leave it empty.    
@@ -60,7 +78,7 @@ start_time=$(date +%s)
 
 
    
-# START EDIT FUNCTIONS AS FOR YOUR NEEDS    
+# EDIT FUNCTIONS AS FOR YOUR NEEDS    
 
    patch_build() { 
 true
@@ -369,7 +387,7 @@ MKINS
    } 
    
    
-   # END OF EDIT # Just uncomment needed functions at the end of script!
+############ END OF EDIT # Just uncomment needed functions at the end of script! ###################
    
    
    if [ -z "$ARCH" ]; then
