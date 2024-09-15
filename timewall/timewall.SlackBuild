@@ -20,14 +20,20 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-   cd $(dirname "$0") ; CWD=$(pwd)
+# Move to the script's directory
+cd "$(dirname "$0")" || exit 1
+CWD=$(pwd)
+
 # Setup build log file
 LOGFILE="$CWD/build.log"
-rm $LOGFILE || true
-exec > >(tee -a "$LOGFILE") 2>&1
+rm -v "$LOGFILE" 2>/dev/null || true  # Quietly remove the old log if it exists
 
+# Redirect all output to the log file
+exec > >(tee -a "$LOGFILE") 2>&1
+echo "Log file is located at $LOGFILE"
 echo "Starting build process..."
 start_time=$(date +%s)
+
 
 
 ##########################-slackdesc-########################################
@@ -501,7 +507,7 @@ download_src(){
   set -e
 
    prepare_build(){
-	rm -rf "$PKG" "$OUTPUT" "$COMPRESS" "$CWD"/build.log
+	rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
 	rm -rf "$TMP"/$PRGNAM-$VERSION
 	
@@ -576,7 +582,7 @@ cargo_build
 after_build
 package_build
 clean_src
-pkg_install
+#pkg_install
 sig_package
 
 # Calculate and display build time
