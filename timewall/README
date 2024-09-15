@@ -1,6 +1,6 @@
 1.
 After installation finish if you intend to use sun position based wallpapers, you need to provide timewall with your approximate location.
-as user create:
+as user AND root create:
 
 mkdir -p ~/.config/timewall/
 touch ~/.config/timewall/config.toml
@@ -13,6 +13,9 @@ lon = 17.02 # replace it with yours
 
 To set the wallpaper just run as user:
 timewall set path/to/wallpaper.heif
+
+NOTE: We also want /root/.config/timewall/config.toml to be there.
+because we start timewall from rc.local...sometimes
 
 2.
 To download heif wallpapers:
