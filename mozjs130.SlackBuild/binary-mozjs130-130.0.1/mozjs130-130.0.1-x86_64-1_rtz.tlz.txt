@@ -1,0 +1,11 @@
+mozjs130: mozjs130 (Mozilla's JavaScript Engine)
+mozjs130:
+mozjs130: SpiderMonkey is Mozilla's JavaScript engine written in C/C++. It is
+mozjs130: used in various Mozilla products (including Firefox) and is
+mozjs130: available under MPL/GPL/LGPL tri-license.
+mozjs130:
+mozjs130:
+mozjs130:
+mozjs130:
+mozjs130:
+mozjs130: Homepage: https://developer.mozilla.org
