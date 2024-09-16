@@ -31,6 +31,7 @@ stop() {
 
 restart() {
     stop
+    sleep 2
     start
 }
 
@@ -62,4 +63,3 @@ case "$1" in
 esac
 
 exit 0
-
