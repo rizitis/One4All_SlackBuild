@@ -27,7 +27,7 @@ timewall set --daemon
 
 or for start it on boot time: 
 cp  rc.timewall /etc/rc.d/rc.timewall
-chmod +x /etc/rc.d/rc.timewall
+sudo chmod 755 /etc/rc.d/rc.timewall
 
 # Add this to /etc/rc.d/rc.local
 if [ -x /etc/rc.d/rc.timewall ]; then
