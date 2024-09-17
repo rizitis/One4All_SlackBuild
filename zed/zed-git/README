@@ -1,0 +1,31 @@
+This is "hack" cargo release build for zed git version. You ll have all benefits of zed BUT auto-updates are not disabled...
+
+zed with all this auto updates but no sanboxed is not so secure...
+I m trying to ran zed using firejail but I failed, so now I copy all needed libs in "user mode" and see what happens.(?)
+
+My plan is something like this:
+~/.local/bin/zed/
+                ├── run_app.sh      # Script to set environment and run the app, called from ~/.local/share/applications/zed.desktop
+                ├── zed             # The app binary
+                └── lib/            # Folder containing all necessary shared libraries
+                    ├── libssl.so.3
+                    ├── libcrypto.so.3
+                    ├── libcurl.so.4
+                    └── ...
+
+
+How to build AND install:
+1. ran script as user
+It will build AND install zed in user $HOME.
+
+How to ran:
+1. In theory there is an ~/.local/share/applications/zed.desktop
+It working ok, by clicking icon desktop entry which will call the run_app.sh
+2. run_app.sh set LD_PATH to  ~/.local/bin/zed/lib and start zed...
+3. If desktop entry dont work or not appears (no doinst.sh exist...needed logout login) or try call zed from terminal:
+~/.local/bin/zed/run_app.sh
+4. Be sure that  ~/.local/bin is on your $USER $PATH
+
+NOTE:
+1. Althought zed works fine in my testings , this is a testing work!
+2. This is not a valid SlackBuild, no slackdesc exist, no doinst.sh etc... no binary provided! 

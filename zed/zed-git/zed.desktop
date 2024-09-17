@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Zed
+Comment=Run zed with Firejail for isolation
+Exec=/home/USER_NAME/.local/bin/zed/run_app.sh
+Icon=/home/USER_NAME/.local/bin/zed/zed.png
+Terminal=false
+Type=Application
+Categories=Utility;
