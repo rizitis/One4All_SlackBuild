@@ -1,6 +1,7 @@
 #!/bin/sh
 #
 # rc.timewall: Slackware-style init script for timewall (dynamic wallpaper daemon)
+# you can call it from rc.local on start up.
 
 DAEMON=/usr/bin/timewall  # Adjust the path if your timewall binary is elsewhere
 DAEMON_OPTS="set --daemon"
