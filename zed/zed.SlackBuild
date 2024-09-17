@@ -613,7 +613,7 @@ cargo_build
 after_build
 package_build
 clean_src
-pkg_install
+#pkg_install
 sig_package
 
 # Calculate and display build time
