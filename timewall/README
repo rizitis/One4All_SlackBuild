@@ -6,7 +6,7 @@ mkdir -p ~/.config/timewall/
 touch ~/.config/timewall/config.toml
 
 And in toml file add yours:
- 
+
 [location]
 lat = 51.11 # replace it with yours
 lon = 17.02 # replace it with yours
@@ -23,11 +23,12 @@ To preview the wallpaper, run:
 
 timewall preview path/to/wallpaper.heif
 
-5. 
+5.
 To have timewall ran on startup add (or create) ~/.config/autostart/ a desktop entry.
 You can modify as for your needs the example_timewall.desktop and cp it in ~/.config/autostart/
 
+6. If you have a folder with some .heic images you can ran a cyclic_wallpapers script.
+one example might be something like this:
+https://github.com/bcyran/timewall/issues/116#issuecomment-2356654516
 
 More infos: https://github.com/bcyran/timewall?tab=readme-ov-file
-
-

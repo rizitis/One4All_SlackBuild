@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/usr/bin/timewall set /home/user-name/path-to/Backgrounds/ISS.heic
+Exec=sh -c '/usr/bin/timewall set $(readlink -f /home/omen/.cache/timewall/last_wall)'
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
