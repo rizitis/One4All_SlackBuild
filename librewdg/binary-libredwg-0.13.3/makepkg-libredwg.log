@@ -1,0 +1,125 @@
+
+Wed Sep 18 18:20:12 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libredwg.so.0	libredwg.so.0.0.13
+usr/lib64/libredwg.so	libredwg.so.0.0.13
+usr/lib64/python3.11/site-packages/_LibreDWG.so.0	_LibreDWG.so.0.0.0
+usr/lib64/python3.11/site-packages/_LibreDWG.so	_LibreDWG.so.0.0.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libredwg.so.0 )
+( cd usr/lib64 ; ln -sf libredwg.so.0.0.13 libredwg.so.0 )
+( cd usr/lib64 ; rm -rf libredwg.so )
+( cd usr/lib64 ; ln -sf libredwg.so.0.0.13 libredwg.so )
+( cd usr/lib64/python3.11/site-packages ; rm -rf _LibreDWG.so.0 )
+( cd usr/lib64/python3.11/site-packages ; ln -sf _LibreDWG.so.0.0.0 _LibreDWG.so.0 )
+( cd usr/lib64/python3.11/site-packages ; rm -rf _LibreDWG.so )
+( cd usr/lib64/python3.11/site-packages ; ln -sf _LibreDWG.so.0.0.0 _LibreDWG.so )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/python3.11/site-packages/_LibreDWG.so.0'
+removed './usr/lib64/python3.11/site-packages/_LibreDWG.so'
+removed './usr/lib64/libredwg.so'
+removed './usr/lib64/libredwg.so.0'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/librewdg/binary-libredwg-0.13.3/libredwg-0.13.3-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/dwg2dxf
+usr/bin/dwg2SVG
+usr/bin/dwgadd
+usr/bin/dwgbmp
+usr/bin/dwgfilter
+usr/bin/dwggrep
+usr/bin/dwglayers
+usr/bin/dwgread
+usr/bin/dwgrewrite
+usr/bin/dwgwrite
+usr/bin/dxf2dwg
+usr/bin/dxfwrite
+usr/doc/
+usr/doc/libredwg-0.13.3/
+usr/doc/libredwg-0.13.3/libredwg.SlackBuild
+usr/include/
+usr/include/dwg_api.h
+usr/include/dwg.h
+usr/lib/
+usr/lib64/
+usr/lib64/libredwg.so.0.0.13
+usr/lib64/perl5/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libredwg.pc
+usr/lib64/python3.11/
+usr/lib64/python3.11/site-packages/
+usr/lib64/python3.11/site-packages/_LibreDWG.la
+usr/lib64/python3.11/site-packages/_LibreDWG.so.0.0.0
+usr/lib/python3.11/
+usr/lib/python3.11/site-packages/
+usr/lib/python3.11/site-packages/LibreDWG.py
+usr/lib/python3.11/site-packages/__pycache__/
+usr/lib/python3.11/site-packages/__pycache__/LibreDWG.cpython-311.opt-1.pyc
+usr/lib/python3.11/site-packages/__pycache__/LibreDWG.cpython-311.pyc
+usr/local/
+usr/local/lib64/
+usr/local/lib64/perl5/
+usr/local/lib64/perl5/auto/
+usr/local/lib64/perl5/auto/LibreDWG/
+usr/local/lib64/perl5/auto/LibreDWG/LibreDWG.so
+usr/local/lib64/perl5/LibreDWG.pm
+usr/man/
+usr/man/man1/
+usr/man/man1/dwg2dxf.1.gz
+usr/man/man1/dwg2SVG.1.gz
+usr/man/man1/dwgadd.1.gz
+usr/man/man1/dwgbmp.1.gz
+usr/man/man1/dwgfilter.1.gz
+usr/man/man1/dwggrep.1.gz
+usr/man/man1/dwglayers.1.gz
+usr/man/man1/dwgread.1.gz
+usr/man/man1/dwgrewrite.1.gz
+usr/man/man1/dwgwrite.1.gz
+usr/man/man1/dxf2dwg.1.gz
+usr/man/man1/dxfwrite.1.gz
+usr/man/man5/
+usr/man/man5/dwgadd.5.gz
+usr/share/
+usr/share/info/
+usr/share/info/dir
+usr/share/info/LibreDWG.info
+usr/share/info/LibreDWG.info-1
+usr/share/info/LibreDWG.info-2
+usr/share/libredwg/
+usr/share/libredwg/dwgadd.example
+usr/share/libredwg/dwgadd.example_r10
+usr/share/libredwg/dwgadd.example_r11
+usr/share/libredwg/dwgadd.example_r1_4
+usr/share/libredwg/dwgadd.example_r2_10
+usr/share/libredwg/load_dwg.py
+WARNING:  /usr/share/info (with possibly not gzipped info pages) detected
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/librewdg/binary-libredwg-0.13.3/libredwg-0.13.3-x86_64-1_rtz.tlz created.
+

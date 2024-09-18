@@ -1,0 +1,11 @@
+libredwg: libredwg (free implementation of the DWG file forma)
+libredwg:
+libredwg: A free C library to read and write DWG files.LibreDWG is a fork from
+libredwg: LibDWG due to its usage of Esperanto,which we think is not the best
+libredwg: strategy for a free software project which aims to get lots of
+libredwg: contributors.The strings API is utf8 and encodes to the internal
+libredwg: 8-bitor or UCS-2 This program is licensed under the terms of the GNU
+libredwg: General under the terms of the GNU General Public License version 3
+libredwg:
+libredwg:
+libredwg: https://www.gnu.org/software/libredwg/
