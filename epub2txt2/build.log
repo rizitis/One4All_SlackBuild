@@ -1,0 +1,157 @@
+Log file is located at /home/omen/GITHUB/One4All_SlackBuild/epub2txt2/build.log
+Starting build process...
+--2024-09-18 17:53:52--  https://github.com/kevinboone/epub2txt2/archive/refs/tags/v2.08.tar.gz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/kevinboone/epub2txt2/tar.gz/refs/tags/v2.08 [following]
+--2024-09-18 17:53:52--  https://codeload.github.com/kevinboone/epub2txt2/tar.gz/refs/tags/v2.08
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘epub2txt2-2.08.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  436K
+    50K .......... .......... .........                        7.66M=0.1s
+
+2024-09-18 17:53:53 (672 KB/s) - ‘epub2txt2-2.08.tar.gz’ saved [81592]
+
+epub2txt2-2.08/
+epub2txt2-2.08/.gitignore
+epub2txt2-2.08/LICENSE
+epub2txt2-2.08/Makefile
+epub2txt2-2.08/README.md
+epub2txt2-2.08/TODO
+epub2txt2-2.08/man1/
+epub2txt2-2.08/man1/epub2txt.1
+epub2txt2-2.08/src/
+epub2txt2-2.08/src/convertutf.c
+epub2txt2-2.08/src/convertutf.h
+epub2txt2-2.08/src/defs.h
+epub2txt2-2.08/src/epub2txt.c
+epub2txt2-2.08/src/epub2txt.h
+epub2txt2-2.08/src/list.c
+epub2txt2-2.08/src/list.h
+epub2txt2-2.08/src/log.c
+epub2txt2-2.08/src/log.h
+epub2txt2-2.08/src/main.c
+epub2txt2-2.08/src/string.c
+epub2txt2-2.08/src/string.h
+epub2txt2-2.08/src/sxmlc.c
+epub2txt2-2.08/src/sxmlc.h
+epub2txt2-2.08/src/sxmlsearch.c
+epub2txt2-2.08/src/sxmlsearch.h
+epub2txt2-2.08/src/util.c
+epub2txt2-2.08/src/util.h
+epub2txt2-2.08/src/wrap.c
+epub2txt2-2.08/src/wrap.h
+epub2txt2-2.08/src/wstring.c
+epub2txt2-2.08/src/wstring.h
+epub2txt2-2.08/src/xhtml.c
+epub2txt2-2.08/src/xhtml.h
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/convertutf.deps -c -o build/convertutf.o src/convertutf.c 
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/epub2txt.deps -c -o build/epub2txt.o src/epub2txt.c 
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/list.deps -c -o build/list.o src/list.c 
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/log.deps -c -o build/log.o src/log.c 
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/main.deps -c -o build/main.o src/main.c 
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/string.deps -c -o build/string.o src/string.c 
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/sxmlc.deps -c -o build/sxmlc.o src/sxmlc.c 
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/sxmlsearch.deps -c -o build/sxmlsearch.o src/sxmlsearch.c 
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/util.deps -c -o build/util.o src/util.c 
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/wrap.deps -c -o build/wrap.o src/wrap.c 
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/wstring.deps -c -o build/wstring.o src/wstring.c 
+gcc -Wall -Wno-unused-result -O3  -DVERSION=\"2.08\" -DAPPNAME=\"epub2txt\" -MD -MF build/xhtml.deps -c -o build/xhtml.o src/xhtml.c 
+gcc -o epub2txt  -s  build/convertutf.o build/epub2txt.o build/list.o build/log.o build/main.o build/string.o build/sxmlc.o build/sxmlsearch.o build/util.o build/wrap.o build/wstring.o build/xhtml.o 
+install -D -m 755 epub2txt /home/omen/GITHUB/One4All_SlackBuild/epub2txt2/package-epub2txt2//usr//bin/epub2txt
+install -D -m 644 man1/epub2txt.1 /home/omen/GITHUB/One4All_SlackBuild/epub2txt2/package-epub2txt2//usr//share/man/man1/epub2txt.1
+cp: cannot stat 'ABOUT ABOUT-NLS ANNOUNCE AUTHORS *BUGS* ChangeLog Changelog CHANGELOG Changes CHANGES COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS doc docs* Doc Docs* *FAQ* FEATURES FILES GPL* HACKING History HISTORY index.ht* *INDEX* INSTALL* License* LICENSE* LSM MANIFEST NEWS *README* *Readme* *RELEASE* RELNOTES Roadmap ROADMAP SITES THANKS TIPS TODO VERSION': File name too long
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/epub2txt2/binary-epub2txt2-2.08/epub2txt2-2.08-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/epub2txt
+usr/doc/
+usr/doc/epub2txt2-2.08/
+usr/doc/epub2txt2-2.08/epub2txt2.SlackBuild
+usr/share/
+usr/share/man/
+usr/share/man/man1/
+usr/share/man/man1/epub2txt.1
+WARNING:  /usr/share/man (with possibly not gzipped man pages) detected
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/epub2txt2/binary-epub2txt2-2.08/epub2txt2-2.08-x86_64-1_rtz.tlz created.
+
+
++==============================================================================
+| Upgrading epub2txt2-2.06-x86_64-1_rtz package using /home/omen/GITHUB/One4All_SlackBuild/epub2txt2/binary-epub2txt2-2.08/epub2txt2-2.08-x86_64-1_rtz.tlz
++==============================================================================
+Pre-installing package epub2txt2-2.08-x86_64-1_rtz...
+Removing package: epub2txt2-2.06-x86_64-1_rtz-upgraded-2024-09-18,17:53:56
+  --> Deleting /usr/doc/epub2txt2-2.06/LICENSE
+  --> Deleting /usr/doc/epub2txt2-2.06/README.md
+  --> Deleting /usr/doc/epub2txt2-2.06/TODO
+  --> Deleting /usr/doc/epub2txt2-2.06/epub2txt2.SlackBuild
+  --> Deleting empty directory /usr/doc/epub2txt2-2.06/
+Verifying package epub2txt2-2.08-x86_64-1_rtz.tlz.
+Installing package epub2txt2-2.08-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# epub2txt2 (Extract text from EPUB documents)
+#
+# A simple command-line utility for extracting text from EPUB
+# documents and, optionally, re-flowing it to fit a text display of a
+# particular number of columns. It is written entirely in
+# ANSI-standard C, and should run on any Unix-like system with a C
+# compiler.
+#
+# https://github.com/kevinboone/epub2txt2
+Executing install script for epub2txt2-2.08-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
+/usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
+/usr/share/fonts/TTF/oxygen: caching, new cache contents: 3 fonts, 0 dirs
+/usr/share/fonts/TTF/static: caching, new cache contents: 36 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package epub2txt2-2.08-x86_64-1_rtz.tlz installed.
+Package epub2txt2-2.06-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/epub2txt2/binary-epub2txt2-2.08/epub2txt2-2.08-x86_64-1_rtz.tlz.
+Build process completed in 0 minutes and 7 seconds.

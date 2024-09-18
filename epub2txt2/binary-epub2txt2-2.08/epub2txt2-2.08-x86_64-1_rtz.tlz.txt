@@ -1,0 +1,11 @@
+epub2txt2: epub2txt2 (Extract text from EPUB documents)
+epub2txt2:
+epub2txt2: A simple command-line utility for extracting text from EPUB
+epub2txt2: documents and, optionally, re-flowing it to fit a text display of a
+epub2txt2: particular number of columns. It is written entirely in
+epub2txt2: ANSI-standard C, and should run on any Unix-like system with a C
+epub2txt2: compiler.
+epub2txt2:
+epub2txt2:
+epub2txt2:
+epub2txt2: https://github.com/kevinboone/epub2txt2
