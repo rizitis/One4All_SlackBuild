@@ -86,7 +86,7 @@ EOF
 # EDIT FUNCTIONS AS FOR YOUR NEEDS
 
    patch_build() {
-wget https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/blob/main/resources/assets/logo-light.png
+wget https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/blob/main/resources/assets/logo-light.png?raw=true
 }
 
 
@@ -251,7 +251,7 @@ CXXFLAGS="$SLKCFLAGS" \
    chmod +x $PKG/usr/local/bin/"$PRGNAM"
    desktop_entry
    mkdir -p "$PKG"/usr/share/pixmaps
-   cp logo-light.png "$PKG"/usr/share/pixmaps/uad-ng.png
+   cp logo-light.png?raw=true "$PKG"/usr/share/pixmaps/uad-ng.png
   }
 
    after_build(){
