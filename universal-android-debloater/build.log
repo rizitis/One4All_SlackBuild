@@ -1,0 +1,247 @@
+Log file is located at /home/omen/GITHUB/One4All_SlackBuild/universal-android-debloater/build.log
+Starting build process...
+--2024-09-19 22:59:02--  https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/releases/download/v1.1.0/uad-ng-noselfupdate-linux.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/710425233/a205fc31-9789-4695-a65b-2af17de4df79?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240919%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240919T195808Z&X-Amz-Expires=300&X-Amz-Signature=5c69c80834bdaf9e5dc2f93a4f3fdc3184fe39dc78805d460229294513fd9824&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Duad-ng-noselfupdate-linux.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2024-09-19 22:59:03--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/710425233/a205fc31-9789-4695-a65b-2af17de4df79?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240919%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240919T195808Z&X-Amz-Expires=300&X-Amz-Signature=5c69c80834bdaf9e5dc2f93a4f3fdc3184fe39dc78805d460229294513fd9824&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Duad-ng-noselfupdate-linux.tar.gz&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6572289 (6.3M) [application/octet-stream]
+Saving to: ‘uad-ng-noselfupdate-linux-1.1.0.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  0%  736K 9s
+    50K .......... .......... .......... .......... ..........  1% 3.04M 5s
+   100K .......... .......... .......... .......... ..........  2% 1.06M 5s
+   150K .......... .......... .......... .......... ..........  3% 4.24M 4s
+   200K .......... .......... .......... .......... ..........  3% 5.30M 4s
+   250K .......... .......... .......... .......... ..........  4% 1.61M 4s
+   300K .......... .......... .......... .......... ..........  5% 3.05M 3s
+   350K .......... .......... .......... .......... ..........  6% 4.78M 3s
+   400K .......... .......... .......... .......... ..........  7% 5.27M 3s
+   450K .......... .......... .......... .......... ..........  7%  327K 4s
+   500K .......... .......... .......... .......... ..........  8% 86.4M 4s
+   550K .......... .......... .......... .......... ..........  9%  121M 4s
+   600K .......... .......... .......... .......... .......... 10% 95.6M 3s
+   650K .......... .......... .......... .......... .......... 10%  168M 3s
+   700K .......... .......... .......... .......... .......... 11%  136M 3s
+   750K .......... .......... .......... .......... .......... 12% 1.04M 3s
+   800K .......... .......... .......... .......... .......... 13% 3.84M 3s
+   850K .......... .......... .......... .......... .......... 14% 6.01M 3s
+   900K .......... .......... .......... .......... .......... 14%  882K 3s
+   950K .......... .......... .......... .......... .......... 15%  130M 3s
+  1000K .......... .......... .......... .......... .......... 16% 76.9M 3s
+  1050K .......... .......... .......... .......... .......... 17%  136M 2s
+  1100K .......... .......... .......... .......... .......... 17%  105M 2s
+  1150K .......... .......... .......... .......... .......... 18%  155M 2s
+  1200K .......... .......... .......... .......... .......... 19%  186M 2s
+  1250K .......... .......... .......... .......... .......... 20%  177M 2s
+  1300K .......... .......... .......... .......... .......... 21%  177M 2s
+  1350K .......... .......... .......... .......... .......... 21% 3.03M 2s
+  1400K .......... .......... .......... .......... .......... 22% 3.84M 2s
+  1450K .......... .......... .......... .......... .......... 23% 5.14M 2s
+  1500K .......... .......... .......... .......... .......... 24% 3.35M 2s
+  1550K .......... .......... .......... .......... .......... 24% 3.55M 2s
+  1600K .......... .......... .......... .......... .......... 25% 3.01M 2s
+  1650K .......... .......... .......... .......... .......... 26% 4.41M 2s
+  1700K .......... .......... .......... .......... .......... 27% 4.79M 2s
+  1750K .......... .......... .......... .......... .......... 28% 4.67M 2s
+  1800K .......... .......... .......... .......... .......... 28% 2.89M 2s
+  1850K .......... .......... .......... .......... .......... 29% 3.78M 2s
+  1900K .......... .......... .......... .......... .......... 30% 3.50M 2s
+  1950K .......... .......... .......... .......... .......... 31% 5.83M 1s
+  2000K .......... .......... .......... .......... .......... 31% 3.72M 1s
+  2050K .......... .......... .......... .......... .......... 32% 3.03M 1s
+  2100K .......... .......... .......... .......... .......... 33% 4.40M 1s
+  2150K .......... .......... .......... .......... .......... 34% 5.93M 1s
+  2200K .......... .......... .......... .......... .......... 35% 4.00M 1s
+  2250K .......... .......... .......... .......... .......... 35% 3.71M 1s
+  2300K .......... .......... .......... .......... .......... 36% 3.13M 1s
+  2350K .......... .......... .......... .......... .......... 37% 4.15M 1s
+  2400K .......... .......... .......... .......... .......... 38% 5.16M 1s
+  2450K .......... .......... .......... .......... .......... 38% 4.41M 1s
+  2500K .......... .......... .......... .......... .......... 39% 4.73M 1s
+  2550K .......... .......... .......... .......... .......... 40% 2.73M 1s
+  2600K .......... .......... .......... .......... .......... 41% 4.40M 1s
+  2650K .......... .......... .......... .......... .......... 42% 4.16M 1s
+  2700K .......... .......... .......... .......... .......... 42% 3.42M 1s
+  2750K .......... .......... .......... .......... .......... 43% 5.31M 1s
+  2800K .......... .......... .......... .......... .......... 44% 4.09M 1s
+  2850K .......... .......... .......... .......... .......... 45% 4.54M 1s
+  2900K .......... .......... .......... .......... .......... 45% 2.83M 1s
+  2950K .......... .......... .......... .......... .......... 46% 3.37M 1s
+  3000K .......... .......... .......... .......... .......... 47% 4.58M 1s
+  3050K .......... .......... .......... .......... .......... 48% 5.60M 1s
+  3100K .......... .......... .......... .......... .......... 49% 3.40M 1s
+  3150K .......... .......... .......... .......... .......... 49% 3.16M 1s
+  3200K .......... .......... .......... .......... .......... 50% 2.87M 1s
+  3250K .......... .......... .......... .......... .......... 51%  537K 1s
+  3300K .......... .......... .......... .......... .......... 52%  644K 1s
+  3350K .......... .......... .......... .......... .......... 52%  226M 1s
+  3400K .......... .......... .......... .......... .......... 53%  204M 1s
+  3450K .......... .......... .......... .......... .......... 54% 1.23M 1s
+  3500K .......... .......... .......... .......... .......... 55%  137M 1s
+  3550K .......... .......... .......... .......... .......... 56%  211M 1s
+  3600K .......... .......... .......... .......... .......... 56% 1.61M 1s
+  3650K .......... .......... .......... .......... .......... 57% 2.12M 1s
+  3700K .......... .......... .......... .......... .......... 58% 3.34M 1s
+  3750K .......... .......... .......... .......... .......... 59%  254M 1s
+  3800K .......... .......... .......... .......... .......... 59%  303M 1s
+  3850K .......... .......... .......... .......... .......... 60% 2.48M 1s
+  3900K .......... .......... .......... .......... .......... 61% 1.59M 1s
+  3950K .......... .......... .......... .......... .......... 62% 2.19M 1s
+  4000K .......... .......... .......... .......... .......... 63%  567K 1s
+  4050K .......... .......... .......... .......... .......... 63%  305M 1s
+  4100K .......... .......... .......... .......... .......... 64%  314M 1s
+  4150K .......... .......... .......... .......... .......... 65% 3.50M 1s
+  4200K .......... .......... .......... .......... .......... 66% 1.46M 1s
+  4250K .......... .......... .......... .......... .......... 66% 1.66M 1s
+  4300K .......... .......... .......... .......... .......... 67% 1.17M 1s
+  4350K .......... .......... .......... .......... .......... 68% 1.77M 1s
+  4400K .......... .......... .......... .......... .......... 69% 1.51M 1s
+  4450K .......... .......... .......... .......... .......... 70% 2.06M 1s
+  4500K .......... .......... .......... .......... .......... 70% 1.49M 1s
+  4550K .......... .......... .......... .......... .......... 71% 1.97M 1s
+  4600K .......... .......... .......... .......... .......... 72% 1.53M 1s
+  4650K .......... .......... .......... .......... .......... 73% 1.87M 1s
+  4700K .......... .......... .......... .......... .......... 74% 1.30M 1s
+  4750K .......... .......... .......... .......... .......... 74% 1.89M 1s
+  4800K .......... .......... .......... .......... .......... 75% 1.53M 1s
+  4850K .......... .......... .......... .......... .......... 76% 2.12M 1s
+  4900K .......... .......... .......... .......... .......... 77% 1.51M 1s
+  4950K .......... .......... .......... .......... .......... 77% 1.96M 1s
+  5000K .......... .......... .......... .......... .......... 78% 1.62M 1s
+  5050K .......... .......... .......... .......... .......... 79% 2.11M 1s
+  5100K .......... .......... .......... .......... .......... 80% 1.20M 0s
+  5150K .......... .......... .......... .......... .......... 81% 2.28M 0s
+  5200K .......... .......... .......... .......... .......... 81% 1.50M 0s
+  5250K .......... .......... .......... .......... .......... 82% 1.86M 0s
+  5300K .......... .......... .......... .......... .......... 83% 1.67M 0s
+  5350K .......... .......... .......... .......... .......... 84% 2.06M 0s
+  5400K .......... .......... .......... .......... .......... 84% 2.20M 0s
+  5450K .......... .......... .......... .......... .......... 85% 1.59M 0s
+  5500K .......... .......... .......... .......... .......... 86%  923K 0s
+  5550K .......... .......... .......... .......... .......... 87%  600K 0s
+  5600K .......... .......... .......... .......... .......... 88% 2.07M 0s
+  5650K .......... .......... .......... .......... .......... 88% 14.2M 0s
+  5700K .......... .......... .......... .......... .......... 89% 1.34M 0s
+  5750K .......... .......... .......... .......... .......... 90% 1.11M 0s
+  5800K .......... .......... .......... .......... .......... 91% 1.19M 0s
+  5850K .......... .......... .......... .......... .......... 91% 1.13M 0s
+  5900K .......... .......... .......... .......... .......... 92%  764K 0s
+  5950K .......... .......... .......... .......... .......... 93%  435K 0s
+  6000K .......... .......... .......... .......... .......... 94% 4.13M 0s
+  6050K .......... .......... .......... .......... .......... 95% 1.17M 0s
+  6100K .......... .......... .......... .......... .......... 95%  406K 0s
+  6150K .......... .......... .......... .......... .......... 96% 1.28M 0s
+  6200K .......... .......... .......... .......... .......... 97%  649K 0s
+  6250K .......... .......... .......... .......... .......... 98%  669K 0s
+  6300K .......... .......... .......... .......... .......... 98%  297K 0s
+  6350K .......... .......... .......... .......... .......... 99%  545K 0s
+  6400K .......... ........                                   100%  210K=3.4s
+
+2024-09-19 22:59:07 (1.83 MB/s) - ‘uad-ng-noselfupdate-linux-1.1.0.tar.gz’ saved [6572289/6572289]
+
+uad-ng-noselfupdate-linux
+BIN_PKG = YES
+hm...lets continiue and see what happens
+--2024-09-19 22:59:07--  https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/blob/main/resources/assets/logo-light.png
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘logo-light.png.2’
+
+     0K .......... .......... .......... .......... ..........  464K
+    50K .......... .......... .......... .......... ..........  893K
+   100K .......... .......... .......... .......... .......... 5.31M
+   150K .......... .......... ...                              5.21M=0.2s
+
+2024-09-19 22:59:08 (978 KB/s) - ‘logo-light.png.2’ saved [177846]
+
+cp: cannot stat 'ABOUT ABOUT-NLS ANNOUNCE AUTHORS *BUGS* ChangeLog Changelog CHANGELOG Changes CHANGES COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS doc docs* Doc Docs* *FAQ* FEATURES FILES GPL* HACKING History HISTORY index.ht* *INDEX* INSTALL* License* LICENSE* LSM MANIFEST NEWS *README* *Readme* *RELEASE* RELNOTES Roadmap ROADMAP SITES THANKS TIPS TODO VERSION': File name too long
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/universal-android-debloater/binary-uad-ng-1.1.0/uad-ng-1.1.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/doc/
+usr/doc/uad-ng-1.1.0/
+usr/doc/uad-ng-1.1.0/uad-ng.SlackBuild
+usr/local/
+usr/local/bin/
+usr/local/bin/uad-ng
+usr/share/
+usr/share/applications/
+usr/share/applications/uad-ng.desktop
+usr/share/pixmaps/
+usr/share/pixmaps/uad-ng.png
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/universal-android-debloater/binary-uad-ng-1.1.0/uad-ng-1.1.0-x86_64-1_rtz.tlz created.
+
+
++==============================================================================
+| Installing new package /home/omen/GITHUB/One4All_SlackBuild/universal-android-debloater/binary-uad-ng-1.1.0/uad-ng-1.1.0-x86_64-1_rtz.tlz
++==============================================================================
+
+Verifying package uad-ng-1.1.0-x86_64-1_rtz.tlz.
+Installing package uad-ng-1.1.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# uad-ng (ADB debloat non-rooted Android devices)
+#
+# Universal Android Debloater Next Generation. Cross-platform GUI
+# written in Rust using ADB to debloat non-rooted Android devices.
+# DISCLAIMER: Use at your own risk. We're not responsible for anything
+# that could happen to your phone.
+#
+# github.com/Universal-Debloater-Alliance
+Executing install script for uad-ng-1.1.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
+/usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
+/usr/share/fonts/TTF/oxygen: caching, new cache contents: 3 fonts, 0 dirs
+/usr/share/fonts/TTF/static: caching, new cache contents: 36 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package uad-ng-1.1.0-x86_64-1_rtz.tlz installed.
+Build process completed in 0 minutes and 15 seconds.
