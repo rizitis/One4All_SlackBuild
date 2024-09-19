@@ -1,0 +1,11 @@
+tags: tags (A simple text tagger)
+tags:
+tags: A GNOME text tagger inspired by the TextAnalysisTool.NET tool.The
+tags: main goal is to aid log analysis by tagging lines with user defined
+tags: colors. Tags have a description name, a visibility toggle, a color
+tags: scheme and a hit counter.
+tags:
+tags:
+tags:
+tags:
+tags: https://github.com/phastmike/tags
