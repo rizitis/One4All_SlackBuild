@@ -26,7 +26,7 @@ Here are some optional builds...*
 | ffmpeg | compelx+custom | tar.xz |
 | gtk-fortran | cmake | git+tar.gz |
 | hyprutils | custom | git clone |
-| mozjs129 | mach+custom | tar.xz |
+| mozjs130 | mach+custom | tar.xz |
 | openSeaChest | meson |git+ SourceCode_With_Submodules.tar.xz |
 | obs-studio | cmake |git clone+tar.gz |
 
