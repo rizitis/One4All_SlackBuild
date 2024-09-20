@@ -83,7 +83,7 @@ When I found something useful it will be added in TEMPLATE.SlackBuild.*
 
 > [!CAUTION]
 *But if you want to build using one of my SlackBuilds here, then you must have [slackdesc](https://github.com/rizitis/One4All_SlackBuild#required) in your installation, else create a manually slack-desc the traditioanl way before you ran SlackBuild*<p>
-This repo is not provided as binary repo for Slackware-current or as SlackBuilds repo, its just **MY** repo [i]which provide the TEMPLATE.SlackBuild[/i].
+This repo is not provided as binary repo for Slackware-current or as SlackBuilds repo, its just **MY** repo ***which provide the TEMPLATE.SlackBuild***.
 
 > [!TIP]
 > You can edit and ran, ***if needed***, SlackBuilds as regular user...<sup>go, rust, etc.. </sup>
