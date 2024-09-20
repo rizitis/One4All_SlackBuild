@@ -1,5 +1,5 @@
 
-Fri Sep 20 19:56:40 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Fri Sep 20 20:08:52 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -76,7 +76,8 @@ usr/local/bin/slack-revert-revert.sh
 usr/local/bin/Slackware-Commander.sh
 usr/local/bin/Slackware-Commander-uninstall.sh
 usr/local/bin/SLCMD2.sh
-usr/local/bin/weather-forcast
+usr/local/bin/SLCMD3.sh
+usr/local/bin/weather_forcast
 usr/local/bin/whoRyou
 usr/man/
 usr/man/man1/

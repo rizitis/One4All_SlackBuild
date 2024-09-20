@@ -79,7 +79,8 @@ usr/local/bin/slack-revert-revert.sh
 usr/local/bin/Slackware-Commander.sh
 usr/local/bin/Slackware-Commander-uninstall.sh
 usr/local/bin/SLCMD2.sh
-usr/local/bin/weather-forcast
+usr/local/bin/SLCMD3.sh
+usr/local/bin/weather_forcast
 usr/local/bin/whoRyou
 usr/man/
 usr/man/man1/
@@ -221,15 +222,10 @@ Slackware package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binar
 rm: cannot remove '*.git': No such file or directory
 
 +==============================================================================
-| Upgrading Slackware-Commander-3.0.5-x86_64-2_rtz package using /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-git.version/Slackware-Commander-git.version-x86_64-1_rtz.tlz
+| Upgrading Slackware-Commander-git.version-x86_64-1_rtz package using /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-git.version/Slackware-Commander-git.version-x86_64-1_rtz.tlz
 +==============================================================================
 Pre-installing package Slackware-Commander-git.version-x86_64-1_rtz...
-Removing package: Slackware-Commander-3.0.5-x86_64-2_rtz-upgraded-2024-09-20,19:56:43
-  --> Deleting /usr/doc/Slackware-Commander-3.0.5/LICENSE
-  --> Deleting /usr/doc/Slackware-Commander-3.0.5/README.md
-  --> Deleting /usr/doc/Slackware-Commander-3.0.5/Slackware-Commander.SlackBuild
-  --> Deleting /usr/doc/Slackware-Commander-3.0.5/TODO
-  --> Deleting empty directory /usr/doc/Slackware-Commander-3.0.5/
+Removing package: Slackware-Commander-git.version-x86_64-1_rtz-upgraded-2024-09-20,20:08:55
 Verifying package Slackware-Commander-git.version-x86_64-1_rtz.tlz.
 Installing package Slackware-Commander-git.version-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
@@ -267,5 +263,5 @@ Font directories:
 /root/.fontconfig: not cleaning non-existent cache directory
 /usr/bin/fc-cache: succeeded
 Package Slackware-Commander-git.version-x86_64-1_rtz.tlz installed.
-Package Slackware-Commander-3.0.5-x86_64-2_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-git.version/Slackware-Commander-git.version-x86_64-1_rtz.tlz.
-Build process completed in 0 minutes and 6 seconds.
+Package Slackware-Commander-git.version-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-git.version/Slackware-Commander-git.version-x86_64-1_rtz.tlz.
+Build process completed in 0 minutes and 7 seconds.

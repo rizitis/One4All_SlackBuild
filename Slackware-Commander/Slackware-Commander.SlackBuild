@@ -279,6 +279,8 @@ CXXFLAGS="$SLKCFLAGS" \
    chmod +x "$PKG"/"$dir3"/whoRyou
    cp SLCMD2.sh "$PKG"/"$dir3"
    chmod +x "$PKG"/"$dir3"/SLCMD2.sh
+   cp SLCMD3.sh "$PKG"/"$dir3"
+   chmod +x "$PKG"/"$dir3"/SLCMD3.sh
    cp ./{slack-revert,slack-revert-revert.sh} "$PKG"/"$dir3"
    chmod +x "$PKG"/"$dir3"/slack-revert*
    cp Slackware-Commander-uninstall.sh "$PKG"/"$dir3"
@@ -289,8 +291,8 @@ CXXFLAGS="$SLKCFLAGS" \
    chmod +x "$PKG"/"$dir3"/inxifetch
    cp isnum "$PKG"/"$dir3"
    chmod +x "$PKG"/"$dir3"/isnum
-   cp weather-forcast "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/weather-forcast
+   cp weather_forcast "$PKG"/"$dir3"
+   chmod +x "$PKG"/"$dir3"/weather_forcast
    cp print_version "$PKG"/"$dir3"
    chmod +x "$PKG"/"$dir3"/print_version
 
