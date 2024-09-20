@@ -240,12 +240,10 @@ Slackware package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binar
 rm: cannot remove '*.git': No such file or directory
 
 +==============================================================================
-| Upgrading Slackware-Commander-git.version-x86_64-1_rtz package using /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz
+| Upgrading Slackware-Commander-5.0.0-x86_64-1_rtz package using /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz
 +==============================================================================
 Pre-installing package Slackware-Commander-5.0.0-x86_64-1_rtz...
-Removing package: Slackware-Commander-git.version-x86_64-1_rtz-upgraded-2024-09-20,20:19:22
-  --> Deleting /usr/doc/Slackware-Commander-git.version/Slackware-Commander.SlackBuild
-  --> Deleting empty directory /usr/doc/Slackware-Commander-git.version/
+Removing package: Slackware-Commander-5.0.0-x86_64-1_rtz-upgraded-2024-09-20,20:22:35
 Verifying package Slackware-Commander-5.0.0-x86_64-1_rtz.tlz.
 Installing package Slackware-Commander-5.0.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
@@ -283,5 +281,5 @@ Font directories:
 /root/.fontconfig: not cleaning non-existent cache directory
 /usr/bin/fc-cache: succeeded
 Package Slackware-Commander-5.0.0-x86_64-1_rtz.tlz installed.
-Package Slackware-Commander-git.version-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz.
+Package Slackware-Commander-5.0.0-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz.
 Build process completed in 0 minutes and 7 seconds.
