@@ -76,14 +76,15 @@ Optional but very useful dependency is [slackdesc](https://slack-desc.sourceforg
  
 > [!NOTE] 
 *Althought TEMPLATE.SlackBuild its stable and build  packages fine, its a personal work in progress.<br>
-When I found something useful it will be added in TEMPLATE.SlackBuild.*
+When I found something useful it will be added in TEMPLATE.SlackBuild.*<br>
+This repo is not provided as binary repo for Slackware-current or as SlackBuilds repo, its just **MY** repo ***which provide the TEMPLATE.SlackBuild***.
 
 > [!IMPORTANT]
 <br> *If you want to use for your personal builds this TEMPLATE of SlackBuilds install [slackdesc](https://github.com/rizitis/One4All_SlackBuild#required) is optional*<br>
 
 > [!CAUTION]
-*But if you want to build using one of my SlackBuilds here, then you must have [slackdesc](https://github.com/rizitis/One4All_SlackBuild#required) in your installation, else create a manually slack-desc the traditioanl way before you ran SlackBuild*<p>
-This repo is not provided as binary repo for Slackware-current or as SlackBuilds repo, its just **MY** repo ***which provide the TEMPLATE.SlackBuild***.
+*But if you want to build using one of my SlackBuilds here, then you must have [slackdesc](https://github.com/rizitis/One4All_SlackBuild#required) in your installation, else create manually a slack-desc the traditioanl way before you ran SlackBuild*<p>
+
 
 > [!TIP]
 > You can edit and ran, ***if needed***, SlackBuilds as regular user...<sup>go, rust, etc.. </sup>
