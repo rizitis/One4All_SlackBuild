@@ -1,0 +1,11 @@
+gpu-screen-recorder: gpu-screen-recorder (screen recorder for Linux)
+gpu-screen-recorder:
+gpu-screen-recorder: A shadowplay-like screen recorder for Linux. The fastest screen
+gpu-screen-recorder: recorder for Linux
+gpu-screen-recorder:
+gpu-screen-recorder:
+gpu-screen-recorder:
+gpu-screen-recorder:
+gpu-screen-recorder:
+gpu-screen-recorder:
+gpu-screen-recorder: https://git.dec05eba.com/gpu-screen-recorder

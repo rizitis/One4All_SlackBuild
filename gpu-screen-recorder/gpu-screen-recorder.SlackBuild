@@ -73,7 +73,7 @@ EOF
    VERSION=r791.aef223d
 
    # When source package after extract conatins just a binary set BIN_PKG=YES else leave it empty or whatever but YES.
-   BIN_PKG=NO
+   BIN_PKG=YES
 
    BUILD=${BUILD:-1}
    TAG=${TAG:-_rtz}
@@ -570,9 +570,8 @@ meson_build
 # default most of times #
 after_build
 package_build
-#clean_src
-#pkg_install
-#sig_package
+clean_src
+pkg_install
 
 # Calculate and display build time
 end_time=$(date +%s)

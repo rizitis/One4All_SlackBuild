@@ -1,0 +1,289 @@
+Log file is located at /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/build.log
+Starting build process...
+--2024-09-20 16:55:57--  https://dec05eba.com/snapshot/gpu-screen-recorder.git.r791.aef223d.tar.gz
+Resolving dec05eba.com (dec05eba.com)... 31.208.83.99
+Connecting to dec05eba.com (dec05eba.com)|31.208.83.99|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 216609 (212K) [application/gzip]
+Saving to: ‘gpu-screen-recorder-r791.aef223d.tar.gz’
+
+     0K .......... .......... .......... .......... .......... 23%  104K 2s
+    50K .......... .......... .......... .......... .......... 47% 92.9K 1s
+   100K .......... .......... .......... .......... .......... 70% 46.6K 1s
+   150K .......... .......... .......... .......... .......... 94% 77.6K 0s
+   200K .......... .                                          100%  136K=2.8s
+
+2024-09-20 16:56:01 (75.0 KB/s) - ‘gpu-screen-recorder-r791.aef223d.tar.gz’ saved [216609/216609]
+
+.gitignore
+LICENSE
+README.md
+TODO
+external/
+external/NvFBC.h
+external/nvEncodeAPI.h
+extra/
+extra/gpu-screen-recorder.env
+extra/gpu-screen-recorder.service
+extra/gsr-nvidia.conf
+extra/meson_post_install.sh
+include/
+include/capture/
+include/capture/capture.h
+include/capture/kms.h
+include/capture/nvfbc.h
+include/capture/portal.h
+include/capture/xcomposite.h
+include/color_conversion.h
+include/cuda.h
+include/cursor.h
+include/damage.h
+include/dbus.h
+include/defs.h
+include/egl.h
+include/encoder/
+include/encoder/video/
+include/encoder/video/cuda.h
+include/encoder/video/software.h
+include/encoder/video/vaapi.h
+include/encoder/video/video.h
+include/library_loader.h
+include/overclock.h
+include/pipewire.h
+include/shader.h
+include/sound.hpp
+include/utils.h
+include/vec2.h
+include/window_texture.h
+include/xnvctrl.h
+install.sh
+kms/
+kms/client/
+kms/client/kms_client.c
+kms/client/kms_client.h
+kms/kms_shared.h
+kms/server/
+kms/server/.gitignore
+kms/server/kms_server.c
+kms/server/project.conf
+meson.build
+meson_options.txt
+project.conf
+scripts/
+scripts/interactive.sh
+scripts/list-sinks.sh
+scripts/record-application-name.sh
+scripts/record-save-application-name.sh
+scripts/replay-application-name.sh
+scripts/save-recording.sh
+scripts/save-replay.sh
+scripts/start-recording.sh
+scripts/start-replay.sh
+scripts/stop-replay.sh
+scripts/toggle-recording-selected.sh
+scripts/twitch-stream-local-copy.sh
+scripts/twitch-stream.sh
+scripts/youtube-hls-stream.sh
+src/
+src/capture/
+src/capture/capture.c
+src/capture/kms.c
+src/capture/nvfbc.c
+src/capture/portal.c
+src/capture/xcomposite.c
+src/color_conversion.c
+src/cuda.c
+src/cursor.c
+src/damage.c
+src/dbus.c
+src/egl.c
+src/encoder/
+src/encoder/video/
+src/encoder/video/cuda.c
+src/encoder/video/software.c
+src/encoder/video/vaapi.c
+src/encoder/video/video.c
+src/library_loader.c
+src/main.cpp
+src/overclock.c
+src/pipewire.c
+src/shader.c
+src/sound.cpp
+src/utils.c
+src/window_texture.c
+src/xnvctrl.c
+study/
+study/color_space_transform_matrix.png
+study/create_matrix.py
+uninstall.sh
+BIN_PKG = YES
+hm...lets continiue and see what happens
+The Meson build system
+Version: 1.5.1
+Source dir: /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/work
+Build dir: /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/work/build
+Build type: native build
+Project name: gpu-screen-recorder
+Project version: 4.1.8
+C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+C linker for the host machine: cc ld.bfd 2.43.1-slack151
+C++ compiler for the host machine: ccache c++ (gcc 14.2.0 "c++ (GCC) 14.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.43.1-slack151
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Run-time dependency threads found: YES
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Run-time dependency libavcodec found: YES 61.3.100
+Run-time dependency libavformat found: YES 61.1.100
+Run-time dependency libavutil found: YES 59.8.100
+Run-time dependency x11 found: YES 1.8.10
+Run-time dependency xcomposite found: YES 0.4.6
+Run-time dependency xrandr found: YES 1.5.4
+Run-time dependency xfixes found: YES 6.0.1
+Run-time dependency xdamage found: YES 1.1.6
+Run-time dependency libpulse found: YES 17.0
+Run-time dependency libswresample found: YES 5.1.100
+Run-time dependency libavfilter found: YES 10.1.100
+Run-time dependency libva found: YES 1.22.0
+Run-time dependency libva-drm found: YES 1.22.0
+Run-time dependency libcap found: YES 2.70
+Run-time dependency libdrm found: YES 2.4.123
+Run-time dependency wayland-egl found: YES 18.1.0
+Run-time dependency wayland-client found: YES 1.23.1
+Run-time dependency dbus-1 found: YES 1.14.10
+Run-time dependency libpipewire-0.3 found: YES 1.2.3
+Run-time dependency libspa-0.2 found: YES 0.2
+Dependency libdrm found: YES 2.4.123 (cached)
+Build targets in project: 2
+
+gpu-screen-recorder 4.1.8
+
+  User defined options
+    buildtype    : release
+    infodir      : /usr/info
+    libdir       : /usr/lib64
+    localstatedir: /var
+    mandir       : /usr/man
+    prefix       : /usr
+    strip        : true
+    sysconfdir   : /etc
+    systemd      : false
+
+Found ninja-1.12.1 at /usr/bin/ninja
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+[1/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_video.c.o
+[2/28] Compiling C object gpu-screen-recorder.p/src_capture_capture.c.o
+[3/28] Compiling C object gpu-screen-recorder.p/src_capture_xcomposite.c.o
+[4/28] Compiling C object gpu-screen-recorder.p/src_capture_kms.c.o
+[5/28] Compiling C object gsr-kms-server.p/kms_server_kms_server.c.o
+[6/28] Compiling C object gpu-screen-recorder.p/kms_client_kms_client.c.o
+[7/28] Compiling C object gpu-screen-recorder.p/src_capture_nvfbc.c.o
+[8/28] Compiling C object gpu-screen-recorder.p/src_xnvctrl.c.o
+[9/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_cuda.c.o
+[10/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_vaapi.c.o
+[11/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_software.c.o
+[12/28] Compiling C object gpu-screen-recorder.p/src_cuda.c.o
+[13/28] Compiling C object gpu-screen-recorder.p/src_overclock.c.o
+[14/28] Compiling C object gpu-screen-recorder.p/src_window_texture.c.o
+[15/28] Compiling C object gpu-screen-recorder.p/src_shader.c.o
+[16/28] Compiling C object gpu-screen-recorder.p/src_egl.c.o
+[17/28] Compiling C object gpu-screen-recorder.p/src_color_conversion.c.o
+[18/28] Compiling C object gpu-screen-recorder.p/src_utils.c.o
+[19/28] Compiling C object gpu-screen-recorder.p/src_library_loader.c.o
+[20/28] Compiling C object gpu-screen-recorder.p/src_cursor.c.o
+[21/28] Compiling C object gpu-screen-recorder.p/src_damage.c.o
+[22/28] Compiling C object gpu-screen-recorder.p/src_dbus.c.o
+[23/28] Compiling C object gpu-screen-recorder.p/src_pipewire.c.o
+[24/28] Compiling C++ object gpu-screen-recorder.p/src_sound.cpp.o
+[25/28] Compiling C++ object gpu-screen-recorder.p/src_main.cpp.o
+[26/28] Compiling C object gpu-screen-recorder.p/src_capture_portal.c.o
+[27/28] Linking target gsr-kms-server
+[28/28] Linking target gpu-screen-recorder
+[0/1] Installing files.
+/home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/work/extra/meson_post_install.sh: line 4: /usr/sbin/setcap: No such file or directory
+\n!!! Please re-run install as root\n
+Installing gsr-kms-server to /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/package-gpu-screen-recorder/usr/bin
+Stripping target 'gsr-kms-server'.
+Installing gpu-screen-recorder to /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/package-gpu-screen-recorder/usr/bin
+Stripping target 'gpu-screen-recorder'.
+Installing /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/work/extra/gsr-nvidia.conf to /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/package-gpu-screen-recorder/usr/lib/modprobe.d
+Running custom install script '/home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/work/extra/meson_post_install.sh'
+cp: cannot stat 'ABOUT AUTHORS *BUGS* ChangeLog CHANGELOG COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS *FAQ* FEATURES HACKING History HISTORY *INDEX* INSTALL* License* LICENSE* MANIFEST NEWS *README* *Readme* *RELEASE* SITES THANKS TODO VERSION': No such file or directory
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/binary-gpu-screen-recorder-r791.aef223d/gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gpu-screen-recorder
+usr/bin/gsr-kms-server
+usr/doc/
+usr/doc/gpu-screen-recorder-r791.aef223d/
+usr/doc/gpu-screen-recorder-r791.aef223d/gpu-screen-recorder.SlackBuild
+usr/lib/
+usr/lib/modprobe.d/
+usr/lib/modprobe.d/gsr-nvidia.conf
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/binary-gpu-screen-recorder-r791.aef223d/gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz created.
+
+
++==============================================================================
+| Installing new package /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/binary-gpu-screen-recorder-r791.aef223d/gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz
++==============================================================================
+
+Verifying package gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz.
+Installing package gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# gpu-screen-recorder (screen recorder for Linux)
+#
+# A shadowplay-like screen recorder for Linux. The fastest screen
+# recorder for Linux
+#
+# https://git.dec05eba.com/gpu-screen-recorder
+Executing install script for gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
+/usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
+/usr/share/fonts/TTF/oxygen: caching, new cache contents: 3 fonts, 0 dirs
+/usr/share/fonts/TTF/static: caching, new cache contents: 36 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz installed.
+Build process completed in 0 minutes and 9 seconds.
