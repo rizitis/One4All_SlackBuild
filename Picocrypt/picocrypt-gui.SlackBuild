@@ -41,28 +41,31 @@ start_time=$(date +%s)
    LongDesc="Picocrypt is a very small (hence Pico), very simple, yet very secure encryption tool that you can use to protect your files. It's designed to be the go-to tool for encryption, with a focus on security, simplicity, and reliability. Picocrypt uses the secure XChaCha20 cipher and the Argon2id key derivation function to provide a high level of security, even from three-letter agencies like the NSA. Your privacy and security is under attack. Take it back with confidence by protecting your files with Picocrypt."
 #############################################################################
 # EDIT FOLLOWING AS NEEDED:
-   SRCURL="https://github.com/Picocrypt/Picocrypt/releases/download/1.40/Picocrypt.deb"
-   # IF you need:git checkout, else leave it empty.    
-   GITCHEK=
+SRCNAM=Picocrypt
+PRGNAM=picocrypt-gui
+# If you dont auto-download from github latest release, leave DEV and PRJ empty...
+DEV=Picocrypt
+PRJ=Picocrypt
+VERSION=$(curl --silent -L "https://api.github.com/repos/$DEV/$PRJ/releases/latest" | jq -r '.tag_name' | sed 's/^v//')
+   SRCURL="https://github.com/Picocrypt/Picocrypt/releases/download/$VERSION/Picocrypt.deb"
    # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z (for deb rpm etc use custom_build for all progress)
-   #OR repos: cvn, cvs, git, lftp
+   # OR repos: cvn, cvs, git, lftp
    COMPRESS="deb"
-   SRCNAM=Picocrypt
-   PRGNAM=picocrypt-gui
-   VERSION=1.40
+   # IF you need:git checkout, else leave it empty.
+   GITCHEK=
 
    BUILD=${BUILD:-1}
    TAG=${TAG:-_rtz}
-   PKGTYPE=${PKGTYPE:-tlz}   
+   PKGTYPE=${PKGTYPE:-tlz}
    PKG=$CWD/package-$PRGNAM
    TMP=$CWD/work
    OUTPUT=$CWD/binary-$PRGNAM-$VERSION
 
 
-   
-# START EDIT FUNCTIONS AS FOR YOUR NEEDS    
 
-   patch_build() { 
+# START EDIT FUNCTIONS AS FOR YOUR NEEDS
+
+   patch_build() {
 true
 }
 
@@ -92,7 +95,7 @@ true
 	make "$NUMJOBS"
 	make install DESTDIR="$PKG"
    }
-   
+
    meson_build(){
 	  mkdir build
 	  cd build
@@ -111,7 +114,7 @@ true
 	  DESTDIR=$PKG $NINJA install
 	cd ..
    }
-   
+
    python_build(){
 	python2 setup.py install --root="$PKG"
 	python3 setup.py install --root="$PKG"
@@ -119,7 +122,7 @@ true
 	python3 -m build --wheel --no-isolation
 	python3 -m installer --destdir "$PKG" dist/*.whl
    }
-   
+
    cmake_build(){
    mkdir -p build
   cd build
@@ -133,7 +136,7 @@ true
   --sysconfdir=/etc \
   --infodir=/usr/info \
   --mandir=/usr/man \
-  --localstatedir=/var 
+  --localstatedir=/var
    "${NINJA:=ninja}"
    DESTDIR=$PKG $NINJA install
 cd ..
@@ -152,7 +155,7 @@ cd ..
 
 # Build method #2
 # requires perl-Module-Build or perl-Module-Build-Tiny
-        perl Build.PL \ 
+        perl Build.PL \
           --installdirs vendor \
           --config installvendorman1dir=/usr/man/man1 \
           --config installvendorman3dir=/usr/man/man3
@@ -184,15 +187,15 @@ cd ..
 	  mkdir -p "$PKG"/"$PKGCONFD"
 	  mv $SRCNAM-$VERSION.conf "$PKG"/"$PKGCONFD"/"$PKGID".conf
    }
-   
+
    cargo_build() {
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 
-/usr/bin/cargo build --release 
+/usr/bin/cargo build --release
 
         install -Dm755 "target/release/$PRGNAM" "$PKG/usr/bin/$PRGNAM"
-        
+
    }
 
 # golang_build dont need root access in Slackware if your setup is as SlackBuilds.org suggest for go.
@@ -213,18 +216,18 @@ CXXFLAGS="$SLKCFLAGS" \
   mkdir -p "$PKG"/usr/bin/
   install -Dm755 "$PRGNAM"-"$VERSION"/? "$PKG"/usr/bin/"$PRGNAM"
   }
-   
+
    custom_build(){
-    rm -rf "$PKG" "$OUTPUT" "$COMPRESS" 
+    rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
 	rm -rf "$TMP"/$PRGNAM-$VERSION
 	cd $TMP || exit
 	wget -c $SRCURL
 	ar x $SRCNAM.$COMPRESS
 	rm debian-binary control.tar.xz
-	tar -xJf data.tar.xz -C $PKG 
+	tar -xJf data.tar.xz -C $PKG
   }
-   
+
    after_build(){
 	  mkdir -p "$PKG"/usr/doc/$PRGNAM-$VERSION
 	  cp -a "$DOCS" "$PKG"/usr/doc/$PRGNAM-"$VERSION" || true
@@ -284,7 +287,7 @@ CXXFLAGS="$SLKCFLAGS" \
           if [ -x /usr/bin/glib-compile-schemas ]; then
             /usr/bin/glib-compile-schemas usr/share/glib-2.0/schemas >/dev/null 2>&1
           fi
-        fi 
+        fi
 
         if [ -x usr/bin/update-mime-database ]; then
           chroot . /usr/bin/update-mime-database usr/share/mime >/dev/null 2>&1
@@ -303,25 +306,25 @@ MKINS
 	  echo "Or you must create one. Please read lines: 25-33 of $PRGNAM.SlackBuild"
 	  echo " "
 	  exit 1
-	fi 
-	
+	fi
+
 	if [ -f "$CWD"/slack-required ]; then
 	  cat "$CWD"/slack-required > "$PKG"/install/slack-required
 	fi
-	
+
 	if [ -f "$CWD"/slack-suggests ]; then
 	  cat "$CWD"/slack-suggests > "$PKG"/install/slack-suggests
 	fi
-	
+
 	if [ -f "$CWD"/slack-conflicts ]; then
 	  cat "$CWD"/slack-conflicts > "$PKG"/install/slack-conflicts
 	fi
-	
+
 	if [ -d "$PKG"/usr/man ]; then
 	  ( cd "$PKG"/usr/man
 	  find . -type f -exec gzip -9 {} \;
 	  for i in $(find . -type l) ; do ln -s $(readlink "$i").gz "$i".gz ; rm "$i" ; done
-	  ) 
+	  )
 	fi
 
 	if [ -d "$PKG"/usr/info ]; then
@@ -330,14 +333,14 @@ MKINS
 	fi
 
    }
-   
-   
+
+
    package_build() {
    cd $PKG || exit 66
 	  rm -f "$PKG"/{,usr/}lib${LIBDIRSUFFIX}/*.la
 	  find "$PKG" | xargs file | grep -e "executable" -e "shared object" | grep ELF \
 	  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
-	  
+
 	  find "$PKG" -name perllocal.pod \
 	  -o -name ".packlist" \
 	  -o -name "*.bs" \
@@ -347,36 +350,36 @@ MKINS
 	  makepkg -l y -c n "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
 	  echo "$DATE $Packager" | sed -e '1r /dev/stdin' "$OUTPUT/makepkg-${PRGNAM}.log" > "$OUTPUT/makepkg-${PRGNAM}.log.tmp" && mv "$OUTPUT/makepkg-${PRGNAM}.log.tmp" "$OUTPUT/makepkg-${PRGNAM}.log"
 
-	  
+
 	  cd "$OUTPUT" || exit
 	  md5sum $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".md5
 	  cat "$PKG"/install/slack-desc | grep "^${PRGNAM}" > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".txt
 	if [ -f "$PKG"/install/slack-required ]; then
-	  cat "$PKG"/install/slack-required > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG".dep 
+	  cat "$PKG"/install/slack-required > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG".dep
 	fi
    }
-   
+
    clean_src(){
 	cd $CWD || exit
-	rm -r package-"$PRGNAM" work *.$COMPRESS 
+	rm -r package-"$PRGNAM" work *.$COMPRESS
    }
 
    pkg_install(){
 	upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
    }
-   
-   
-   
+
+
+
   sig_package(){
 #  Add you id_rsa, example:
     prikey_path="/root/id_rsa"
-         openssl dgst -sha256 -sign $prikey_path  -out "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".sig "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 
-   } 
-   
-   
+         openssl dgst -sha256 -sign $prikey_path  -out "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".sig "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
+   }
+
+
    # END OF EDIT # Just uncomment needed functions at the end of script!
-   
-   
+
+
    if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586 ;;
@@ -388,7 +391,7 @@ fi
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
   exit 0
-fi 
+fi
 
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
@@ -406,7 +409,7 @@ else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""
 fi
-     
+
    DATE="$(date)"
    NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
 DOCS=\
@@ -481,10 +484,10 @@ download_src(){
   set -e
 
    prepare_build(){
-	rm -rf "$PKG" "$OUTPUT" "$COMPRESS" 
+	rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
 	rm -rf "$TMP"/$PRGNAM-$VERSION
-	
+
 	get_out() {
     if [ -f "$1" ] ; then
         case "$1" in
@@ -523,8 +526,8 @@ download_src(){
     fi
 }
 
-   	
-        cd "$TMP" || exit 
+
+        cd "$TMP" || exit
         if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" ]]; then
           get_out "$CWD"/"$SRCNAM"-"$VERSION"."$COMPRESS" || get_out "$CWD"/"$SRCNAM"."$COMPRESS" || exit
            cd $SRCNAM-$VERSION || cd $PRGNAM-$VERSION || cd $SRCNAM || exit
@@ -533,7 +536,7 @@ download_src(){
            cd $SRCNAM || cd $PRGNAM ||exit
         fi
    }
-   
+
 
 # default most of times #
 

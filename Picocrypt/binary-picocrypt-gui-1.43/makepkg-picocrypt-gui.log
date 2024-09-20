@@ -1,5 +1,5 @@
 
-Sun Aug 25 20:53:36 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Fri Sep 20 23:44:01 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -15,7 +15,7 @@ special permissions, then DO NOT reset them here!
 Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
-Creating Slackware package:  /home/omen/BUILDS/mybuilds/dfg/Picocrypt/binary-picocrypt-gui-1.40/picocrypt-gui-1.40-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/Picocrypt/binary-picocrypt-gui-1.43/picocrypt-gui-1.43-x86_64-1_rtz.tlz
 
 ./
 install/
@@ -25,13 +25,13 @@ usr/
 usr/bin/
 usr/bin/picocrypt-gui
 usr/doc/
-usr/doc/picocrypt-gui-1.40/
-usr/doc/picocrypt-gui-1.40/picocrypt-gui.SlackBuild
+usr/doc/picocrypt-gui-1.43/
+usr/doc/picocrypt-gui-1.43/picocrypt-gui.SlackBuild
 usr/share/
 usr/share/applications/
 usr/share/applications/picocrypt.desktop
 usr/share/icons/
 usr/share/icons/picocrypt.svg
 
-Slackware package /home/omen/BUILDS/mybuilds/dfg/Picocrypt/binary-picocrypt-gui-1.40/picocrypt-gui-1.40-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/Picocrypt/binary-picocrypt-gui-1.43/picocrypt-gui-1.43-x86_64-1_rtz.tlz created.
 
