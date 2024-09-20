@@ -1,5 +1,5 @@
 
-Fri Sep 20 19:47:16 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Fri Sep 20 19:56:40 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -15,7 +15,7 @@ special permissions, then DO NOT reset them here!
 Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
-Creating Slackware package:  /home/omen/GITHUB/SC.SlackBuild/binary-Slackware-Commander-1.git/Slackware-Commander-1.git-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-git.version/Slackware-Commander-git.version-x86_64-1_rtz.tlz
 
 ./
 etc/
@@ -26,8 +26,8 @@ install/doinst.sh
 install/slack-desc
 usr/
 usr/doc/
-usr/doc/Slackware-Commander-1.git/
-usr/doc/Slackware-Commander-1.git/Slackware-Commander.SlackBuild
+usr/doc/Slackware-Commander-git.version/
+usr/doc/Slackware-Commander-git.version/Slackware-Commander.SlackBuild
 usr/info/
 usr/info/Slackware-Commander.info.gz
 usr/local/
@@ -213,5 +213,5 @@ usr/share/icons/Slackware-Commander/wrench-tool-icon.png
 usr/share/icons/Slackware-Commander/youtube-subscribe-bell-icon.png
 usr/share/icons/Slackware-Commander/youtube-subscribe-bell-icon.webp
 
-Slackware package /home/omen/GITHUB/SC.SlackBuild/binary-Slackware-Commander-1.git/Slackware-Commander-1.git-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-git.version/Slackware-Commander-git.version-x86_64-1_rtz.tlz created.
 

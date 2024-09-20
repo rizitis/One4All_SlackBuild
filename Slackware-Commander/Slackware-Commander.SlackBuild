@@ -70,7 +70,7 @@ EOF
    COMPRESS="git"
    SRCNAM=Slackware-Commander
    PRGNAM=Slackware-Commander
-   VERSION=1.git
+   VERSION=git.version
 
    # When source package after extract conatins just a binary set BIN_PKG=YES else leave it empty or whatever but YES.
    BIN_PKG=NO
@@ -433,7 +433,7 @@ MKINS
 
    clean_src(){
 	cd $CWD || exit
-	rm -r package-"$PRGNAM" work *.$COMPRESS
+	rm -r package-"$PRGNAM" work *.$COMPRESS || true
    }
 
    pkg_install(){
@@ -618,9 +618,9 @@ custom_build
 # default most of times #
 after_build
 package_build
-#clean_src
-#pkg_install
-#sig_package
+clean_src
+pkg_install
+sig_package
 
 # Calculate and display build time
 end_time=$(date +%s)

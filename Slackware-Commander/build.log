@@ -1,4 +1,4 @@
-Log file is located at /home/omen/GITHUB/SC.SlackBuild/build.log
+Log file is located at /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/build.log
 Starting build process...
 Cloning into 'Slackware-Commander'...
 cp: cannot stat 'ABOUT AUTHORS *BUGS* ChangeLog CHANGELOG COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS *FAQ* FEATURES HACKING History HISTORY *INDEX* INSTALL* License* LICENSE* MANIFEST NEWS *README* *Readme* *RELEASE* SITES THANKS TODO VERSION': No such file or directory
@@ -18,7 +18,7 @@ special permissions, then DO NOT reset them here!
 Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
-Creating Slackware package:  /home/omen/GITHUB/SC.SlackBuild/binary-Slackware-Commander-1.git/Slackware-Commander-1.git-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-git.version/Slackware-Commander-git.version-x86_64-1_rtz.tlz
 
 ./
 etc/
@@ -29,8 +29,8 @@ install/doinst.sh
 install/slack-desc
 usr/
 usr/doc/
-usr/doc/Slackware-Commander-1.git/
-usr/doc/Slackware-Commander-1.git/Slackware-Commander.SlackBuild
+usr/doc/Slackware-Commander-git.version/
+usr/doc/Slackware-Commander-git.version/Slackware-Commander.SlackBuild
 usr/info/
 usr/info/Slackware-Commander.info.gz
 usr/local/
@@ -216,6 +216,56 @@ usr/share/icons/Slackware-Commander/wrench-tool-icon.png
 usr/share/icons/Slackware-Commander/youtube-subscribe-bell-icon.png
 usr/share/icons/Slackware-Commander/youtube-subscribe-bell-icon.webp
 
-Slackware package /home/omen/GITHUB/SC.SlackBuild/binary-Slackware-Commander-1.git/Slackware-Commander-1.git-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-git.version/Slackware-Commander-git.version-x86_64-1_rtz.tlz created.
 
-Build process completed in 0 minutes and 3 seconds.
+rm: cannot remove '*.git': No such file or directory
+
++==============================================================================
+| Upgrading Slackware-Commander-3.0.5-x86_64-2_rtz package using /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-git.version/Slackware-Commander-git.version-x86_64-1_rtz.tlz
++==============================================================================
+Pre-installing package Slackware-Commander-git.version-x86_64-1_rtz...
+Removing package: Slackware-Commander-3.0.5-x86_64-2_rtz-upgraded-2024-09-20,19:56:43
+  --> Deleting /usr/doc/Slackware-Commander-3.0.5/LICENSE
+  --> Deleting /usr/doc/Slackware-Commander-3.0.5/README.md
+  --> Deleting /usr/doc/Slackware-Commander-3.0.5/Slackware-Commander.SlackBuild
+  --> Deleting /usr/doc/Slackware-Commander-3.0.5/TODO
+  --> Deleting empty directory /usr/doc/Slackware-Commander-3.0.5/
+Verifying package Slackware-Commander-git.version-x86_64-1_rtz.tlz.
+Installing package Slackware-Commander-git.version-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# Slackware-Commander (Slackware control center)
+#
+# A shadowplay-like screen recorder for Linux. The fastest screen
+# recorder for Linux
+#
+# https://git.dec05eba.com/gpu-screen-recorder
+Executing install script for Slackware-Commander-git.version-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
+/usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
+/usr/share/fonts/TTF/oxygen: caching, new cache contents: 3 fonts, 0 dirs
+/usr/share/fonts/TTF/static: caching, new cache contents: 36 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package Slackware-Commander-git.version-x86_64-1_rtz.tlz installed.
+Package Slackware-Commander-3.0.5-x86_64-2_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-git.version/Slackware-Commander-git.version-x86_64-1_rtz.tlz.
+Build process completed in 0 minutes and 6 seconds.
