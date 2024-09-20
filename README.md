@@ -32,6 +32,21 @@ Here are some optional builds:*
 | mozjs130 | mach+custom | tar.xz |
 | openSeaChest | meson |git+ SourceCode_With_Submodules.tar.xz |
 | obs-studio | cmake |git clone+tar.gz |
+<p>
+<table>
+   <tr>
+      <td>One SlackBuild Template for all builds</td>
+      <td>All kind of repos and src compression types supported</td>
+   </tr>
+   <tr>
+      <td>Easy create/modify slack-desc and doinst.sh</td>
+      <td>Flexibly for special and complex builds</td>
+   </tr>
+   <tr>
+      <td>Provide: package.dep package.t?z.sig package.t?z.txt package.t?z.md5 makepkg-package.log  build.lo</td>
+      <td>Support: slack-required slack-conflicts slack-suggestsg</td>
+   </tr>
+</table>
 
 
 > Supported for download and extract src package types are:
@@ -56,23 +71,6 @@ Here are some optional builds:*
 #### REQUIRED
 
 Optional but very useful dependency is [slackdesc](https://slack-desc.sourceforge.net/) <p>
-
-
- <table>
-   <tr>
-      <td>One SlackBuild Template for all builds</td>
-      <td>All kind of repos and src compression types supported</td>
-   </tr>
-   <tr>
-      <td>Easy create/modify slack-desc and doinst.sh</td>
-      <td>Flexibly for special and complex builds</td>
-   </tr>
-   <tr>
-      <td>Provide: package.dep package.t?z.sig package.t?z.txt package.t?z.md5 makepkg-package.log  build.lo</td>
-      <td>Support: slack-required slack-conflicts slack-suggestsg</td>
-   </tr>
-</table>
-
  
 > [!NOTE] 
 *Althought TEMPLATE.SlackBuild its stable and build  packages fine, its a personal work in progress.<br>
