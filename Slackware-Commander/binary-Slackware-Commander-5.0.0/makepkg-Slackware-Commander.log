@@ -1,26 +1,5 @@
-Log file is located at /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/build.log
-Starting build process...
-Cloning into 'Slackware-Commander'...
-Note: switching to '44c7b01bd192cf6cf48fbc1729a82f70dc156aab'.
 
-You are in 'detached HEAD' state. You can look around, make experimental
-changes and commit them, and you can discard any commits you make in this
-state without impacting any branches by switching back to a branch.
-
-If you want to create a new branch to retain commits you create, you may
-do so (now or later) by using -c with the switch command. Example:
-
-  git switch -c <new-branch-name>
-
-Or undo this operation with:
-
-  git switch -
-
-Turn off this advice by setting config variable advice.detachedHead to false
-
-HEAD is now at 44c7b01 bump version
-cp: cannot stat 'ABOUT AUTHORS *BUGS* ChangeLog CHANGELOG COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS *FAQ* FEATURES HACKING History HISTORY *INDEX* INSTALL* License* LICENSE* MANIFEST NEWS *README* *Readme* *RELEASE* SITES THANKS TODO VERSION': No such file or directory
-
+Fri Sep 20 20:19:19 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -237,51 +216,3 @@ usr/share/icons/Slackware-Commander/youtube-subscribe-bell-icon.webp
 
 Slackware package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz created.
 
-rm: cannot remove '*.git': No such file or directory
-
-+==============================================================================
-| Upgrading Slackware-Commander-git.version-x86_64-1_rtz package using /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz
-+==============================================================================
-Pre-installing package Slackware-Commander-5.0.0-x86_64-1_rtz...
-Removing package: Slackware-Commander-git.version-x86_64-1_rtz-upgraded-2024-09-20,20:19:22
-  --> Deleting /usr/doc/Slackware-Commander-git.version/Slackware-Commander.SlackBuild
-  --> Deleting empty directory /usr/doc/Slackware-Commander-git.version/
-Verifying package Slackware-Commander-5.0.0-x86_64-1_rtz.tlz.
-Installing package Slackware-Commander-5.0.0-x86_64-1_rtz.tlz:
-PACKAGE DESCRIPTION:
-# Slackware-Commander (Slackware control center)
-#
-# A shadowplay-like screen recorder for Linux. The fastest screen
-# recorder for Linux
-#
-# https://git.dec05eba.com/gpu-screen-recorder
-Executing install script for Slackware-Commander-5.0.0-x86_64-1_rtz.tlz.
-Font directories:
-	/usr/share/fonts
-/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
-/usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
-/usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
-/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
-/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
-/usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
-/usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
-/usr/share/fonts/TTF/oxygen: caching, new cache contents: 3 fonts, 0 dirs
-/usr/share/fonts/TTF/static: caching, new cache contents: 36 fonts, 0 dirs
-/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
-/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
-/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
-/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
-/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
-/usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
-/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
-/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
-/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
-/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
-/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
-/var/cache/fontconfig: cleaning cache directory
-/root/.cache/fontconfig: not cleaning non-existent cache directory
-/root/.fontconfig: not cleaning non-existent cache directory
-/usr/bin/fc-cache: succeeded
-Package Slackware-Commander-5.0.0-x86_64-1_rtz.tlz installed.
-Package Slackware-Commander-git.version-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz.
-Build process completed in 0 minutes and 7 seconds.

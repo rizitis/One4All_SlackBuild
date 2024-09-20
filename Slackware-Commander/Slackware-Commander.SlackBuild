@@ -63,14 +63,14 @@ EOF
 ############################## MAIN VARS #########################################
 # EDIT FOLLOWING AS NEEDED:
    SRCURL="https://github.com/rizitis/Slackware-Commander"
-   # IF you need:git checkout, else leave it empty.
-   GITCHEK=
+   # https://github.com/rizitis/Slackware-Commander/commit/44c7b01bd192cf6cf48fbc1729a82f70dc156aab
+   GITCHEK=44c7b01bd192cf6cf48fbc1729a82f70dc156aab
    # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z
    #OR repos: cvn, cvs, git, lftp
    COMPRESS="git"
    SRCNAM=Slackware-Commander
    PRGNAM=Slackware-Commander
-   VERSION=git.version
+   VERSION=5.0.0
 
    # When source package after extract conatins just a binary set BIN_PKG=YES else leave it empty or whatever but YES.
    BIN_PKG=NO
