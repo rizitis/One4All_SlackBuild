@@ -555,7 +555,7 @@ if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRES
     else
      echo "BIN_PKG = $BIN_PKG"
   fi
-  echo "hm...lets continiue and see what happens"
+  echo "hm...lets continue and see what happens"
   else
   mv "$CWD"/"$SRCNAM" "$TMP"
    cd $SRCNAM || cd $PRGNAM ||exit
