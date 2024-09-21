@@ -43,7 +43,7 @@ start_time=$(date +%s)
 # If a README or README.md dont exist in CWD then SortDec discribtion, if not empty, will be added in a README file.
 
 ##########################-GITHUB-AUTO UPDATE-#####################################
-# 
+# If you dont use AUTO_UPD ignore them. (AUTO_UPD is used to following latest release/tag of a package without editting Slackbuild everytime...)
 DEV=
 PRJ=
 AUTO_UPD=$(curl --silent -L "https://api.github.com/repos/$DEV/$PRJ/releases/latest" | jq -r '.tag_name' | sed 's/^v//')
