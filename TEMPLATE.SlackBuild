@@ -239,60 +239,15 @@ CXXFLAGS="$SLKCFLAGS" \
 
 
    custom_build() {
-   dir1=/usr/share/icons/
-   dir2=/usr/share/applications/
-   dir3=/usr/local/bin/
-   dir4=/etc/inxifetch/
-
-  # create pkg dirs
-   mkdir -p "$PKG"/"$dir1"
-   mkdir -p "$PKG"/"$dir2"
-   mkdir -p "$PKG"/"$dir3"
-   mkdir -p "$PKG"/"$dir4"
-   mkdir -p "$PKG"/usr/man/man1
-   mkdir -p "$PKG"/usr/info
-
-  # one by one is better to know wtf is going on...
-   cp -R Slackware-Commander "$PKG"/"$dir1"
-   cp Slackware-Commander.desktop "$PKG"/"$dir2"
-   cp Slackware-Commander.sh "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/Slackware-Commander.sh
-   cp -R panic "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/*.sh
-   cp rcstatus "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/rcstatus
-   cp restart-services "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/restart-services
-   cp SBKS "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/SBKS
-   cp ldtree "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/ldtree
-   cp whoRyou "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/whoRyou
-   cp SLCMD2.sh "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/SLCMD2.sh
-   cp SLCMD3.sh "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/SLCMD3.sh
-   cp ./{slack-revert,slack-revert-revert.sh} "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/slack-revert*
-   cp Slackware-Commander-uninstall.sh "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/Slackware-Commander-uninstall.sh
-   cp slackpkg_build "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/slackpkg_build
-   cp inxifetch "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/inxifetch
-   cp isnum "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/isnum
-   cp weather_forcast "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/weather_forcast
-   cp print_version "$PKG"/"$dir3"
-   chmod +x "$PKG"/"$dir3"/print_version
-
-   # Files .conf,man,info etc...
-   cat inxifetch.conf > "$PKG"/"$dir4"/inxifetch.conf.new
-   cp Slackware-Commander.1 "$PKG"/usr/man/man1
-   cp Slackware-Commander.info "$PKG"/usr/info/
-
+   # example for deb package
+   rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
+	mkdir -p "$TMP" "$PKG" "$OUTPUT"
+	rm -rf "$TMP"/$PRGNAM-$VERSION
+	cd $TMP || exit
+	wget -c $SRCURL
+	ar x $SRCNAM.$COMPRESS
+	rm debian-binary control.tar.xz
+	tar -xJf data.tar.xz -C $PKG
   }
 
    after_build(){
@@ -574,7 +529,7 @@ fi
 }
 # here ^^ end prepare_build function ;) #
 
-# Base System vars, here is the top of Script LOL. 
+# Base System vars, here is the top of Script LOL.
    if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586 ;;
