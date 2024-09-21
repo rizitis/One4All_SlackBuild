@@ -3,7 +3,7 @@
 
 > Personal [SlackBuild Template](https://github.com/rizitis/One4All_SlackBuild/blob/main/TEMPLATE.SlackBuild) for:
 <p>
-   
+
 - [x] autotools
 - [x] cmake
 - [x] meson
@@ -19,10 +19,10 @@
 *One TEMPLATE for most of SlackBuilds...<br>
 Here are some optional builds:*
 
-| PRGNAM |Template | SRC COMPRESS | 
-| ------------- |:-------------:| -----:| 
-| Markdown | python | git+tar.gz | 
-| a68g | autotools | tar.gz | 
+| PRGNAM |Template | SRC COMPRESS |
+| ------------- |:-------------:| -----:|
+| Markdown | python | git+tar.gz |
+| a68g | autotools | tar.gz |
 | config-file-validator | google-golang | git+tar.gz |
 | conjure | meson | git+tar.gz |
 | coppwrr | cargo | git+tar.gz |
@@ -71,15 +71,15 @@ Here are some optional builds:*
 #### REQUIRED
 
 Optional but very useful dependency is [slackdesc](https://slack-desc.sourceforge.net/) <p>
- 
-> [!NOTE] 
+
+> [!NOTE]
 *Althought TEMPLATE.SlackBuild its stable and build  packages fine, its a personal work in progress.<br>
 When I found something useful it will be added in TEMPLATE.SlackBuild.*<br>
 This repo is not provided as binary repo for Slackware-current or as SlackBuilds repo, its just **MY** repo ***which provide the TEMPLATE.SlackBuild***.
 
 > [!IMPORTANT]
 <br> *If you want to use for your personal builds this TEMPLATE of SlackBuilds install [slackdesc](https://github.com/rizitis/One4All_SlackBuild#required) is optional*<br>
-
+<br> *If you want to use the AUTO_UPD option which auto found latest release or tag version of package from github you need [jq](https://slackbuilds.org/repository/15.0/system/jq/) in your installation*
 > [!CAUTION]
 *But if you want to build using one of my SlackBuilds here, then you must have [slackdesc](https://github.com/rizitis/One4All_SlackBuild#required) in your installation, else create manually a slack-desc the traditioanl way before you ran SlackBuild*<p>
 
