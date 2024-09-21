@@ -1,25 +1,245 @@
-Log file is located at /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/build.log
 Starting build process...
-Cloning into 'Slackware-Commander'...
-Note: switching to '44c7b01bd192cf6cf48fbc1729a82f70dc156aab'.
+Latest release version: 5.0.0
+--2024-09-21 15:01:52--  https://github.com/rizitis/Slackware-Commander/releases/download/5.0.0/Slackware-Commander-5.0.0.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2024-09-21 15:01:53 ERROR 404: Not Found.
 
-You are in 'detached HEAD' state. You can look around, make experimental
-changes and commit them, and you can discard any commits you make in this
-state without impacting any branches by switching back to a branch.
+--2024-09-21 15:01:53--  https://github.com/rizitis/Slackware-Commander/archive/refs/tags/5.0.0.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/rizitis/Slackware-Commander/tar.gz/refs/tags/5.0.0 [following]
+--2024-09-21 15:01:53--  https://codeload.github.com/rizitis/Slackware-Commander/tar.gz/refs/tags/5.0.0
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.9
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘Slackware-Commander-5.0.0.tar.gz’
 
-If you want to create a new branch to retain commits you create, you may
-do so (now or later) by using -c with the switch command. Example:
+     0K .......... .......... .......... .......... ..........  433K
+    50K .......... .......... .......... .......... ..........  859K
+   100K .......... .......... .......... .......... .......... 5.43M
+   150K .......... .......... .......... .......... .......... 6.68M
+   200K .......... .......... .......... .......... .......... 1.01M
+   250K .......... .......... .......... .......... .......... 5.10M
+   300K .......... .......... .......... .......... .......... 5.37M
+   350K .......... .......... .......... .......... ..........  655K
+   400K .......... .......... .......... .......... .......... 3.56M
+   450K .......... .......... .......... .......... ..........  110M
+   500K .......... .......... .......... .......... ..........  103M
+   550K .......... .......... .......... .......... .......... 1.60M
+   600K .......... .......... .......... .......... .......... 17.1M
+   650K .......... .......... .......... .......... .......... 8.47M
+   700K .......... .......... .......... .......... .......... 10.7M
+   750K .......... .......... .......... .......... ..........  102M
+   800K .......... .......... .......... .......... ..........  161M
+   850K .......... .......... .......... .......... .......... 5.74M
+   900K .......... .......... .......... .......... .......... 5.27M
+   950K .......... .......... .......... .......... .......... 3.41M
+  1000K .......... .......... .......... .......... .......... 3.71M
+  1050K .......... .......... .......... .......... .......... 5.23M
+  1100K .......... .......... .......... .......... .......... 4.91M
+  1150K .......... .......... .                                8.96M=0.5s
 
-  git switch -c <new-branch-name>
+2024-09-21 15:01:54 (2.49 MB/s) - ‘Slackware-Commander-5.0.0.tar.gz’ saved [1199197]
 
-Or undo this operation with:
-
-  git switch -
-
-Turn off this advice by setting config variable advice.detachedHead to false
-
-HEAD is now at 44c7b01 bump version
-cp: cannot stat 'ABOUT AUTHORS *BUGS* ChangeLog CHANGELOG COPYING COPYRIGHT CREDITS CONFIGURATION* CONTRIBUTING* CONTRIBUTORS *FAQ* FEATURES HACKING History HISTORY *INDEX* INSTALL* License* LICENSE* MANIFEST NEWS *README* *Readme* *RELEASE* SITES THANKS TODO VERSION': No such file or directory
+Slackware-Commander-5.0.0/
+Slackware-Commander-5.0.0/1scl1.png
+Slackware-Commander-5.0.0/2scl1.png
+Slackware-Commander-5.0.0/GNUSteps.png
+Slackware-Commander-5.0.0/LICENSE
+Slackware-Commander-5.0.0/README.md
+Slackware-Commander-5.0.0/SBKS
+Slackware-Commander-5.0.0/SLCMD2.sh
+Slackware-Commander-5.0.0/SLCMD3.sh
+Slackware-Commander-5.0.0/Slackware-Commander-3.0.3.png
+Slackware-Commander-5.0.0/Slackware-Commander-dark3.0.3.png
+Slackware-Commander-5.0.0/Slackware-Commander-uninstall.sh
+Slackware-Commander-5.0.0/Slackware-Commander.1
+Slackware-Commander-5.0.0/Slackware-Commander.desktop
+Slackware-Commander-5.0.0/Slackware-Commander.info
+Slackware-Commander-5.0.0/Slackware-Commander.sh
+Slackware-Commander-5.0.0/Slackware-Commander/
+Slackware-Commander-5.0.0/Slackware-Commander/Slackware-Commander2.png
+Slackware-Commander-5.0.0/Slackware-Commander/alert-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/alert-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/bolt-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/bolt-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/branding-logo-design-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/branding-logo-design-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/business-management-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/business-management-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/carpenter-tools-icon-1.png
+Slackware-Commander-5.0.0/Slackware-Commander/carpenter-tools-icon-1.webp
+Slackware-Commander-5.0.0/Slackware-Commander/carpenter-tools-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/carpenter-tools-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/clip-line-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/clip-line-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/configuration-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/configuration-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/construction-hinge-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/construction-hinges-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/creative-commons-by-attribution-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/cruelty-free-sign-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/dashboard-line-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/dashboard-line-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/deep-water-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/deep-water-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/designer-artist-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/designer-artist-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/dimension-3d-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/diy-do-it-yourself-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/diy-do-it-yourself-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/downtime-arrow-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/drill-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/flexible-customizable-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/flexible-customizable-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/green-circle-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/green-circle-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/hammer-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/hammer-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/hammer-line-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/hashtag-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/hashtag-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/home-improvement-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/it-icon-1.png
+Slackware-Commander-5.0.0/Slackware-Commander/it-icon-1.webp
+Slackware-Commander-5.0.0/Slackware-Commander/it-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/it-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/maintenance-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/maintenance-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/manager-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/manager-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/myspace-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/online-community-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/online-community-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/paint-roller-bucket-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/paint-roller-bucket-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/pin-line-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/pin-line-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/plier-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/plier-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/process-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/process-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/project-work-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/project-work-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/push-pin-blue-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/push-pin-green-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/push-pin-green-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/pushpin-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/pushpin-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/red-circle-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/red-circle-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/repairing-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/repairing-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/scissor-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/select-area-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/select-area-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/service-provider-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/service-provider-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/service-tools-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/service-tools-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/setting-icon-1.png
+Slackware-Commander-5.0.0/Slackware-Commander/setting-icon-1.webp
+Slackware-Commander-5.0.0/Slackware-Commander/setting-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/setting-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/setting-line-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/setting-line-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/settings-icon-1.png
+Slackware-Commander-5.0.0/Slackware-Commander/settings-icon-1.webp
+Slackware-Commander-5.0.0/Slackware-Commander/settings-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/settings-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/settings-line-icon-1.png
+Slackware-Commander-5.0.0/Slackware-Commander/settings-line-icon-1.webp
+Slackware-Commander-5.0.0/Slackware-Commander/settings-line-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/settings-line-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/share-group-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/share-group-member-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/share-group-member-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/silence-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/silence-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/sl_logo.png
+Slackware-Commander-5.0.0/Slackware-Commander/sl_logo1.png
+Slackware-Commander-5.0.0/Slackware-Commander/slackware_logo_med.png
+Slackware-Commander-5.0.0/Slackware-Commander/slackware_whitelogo_med.png
+Slackware-Commander-5.0.0/Slackware-Commander/solution-strategy-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/solution-strategy-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/solution-thinking-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/solution-thinking-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/speed-test-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/speed-test-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/team-collaboration-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/this-way-up-symbol-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/this-way-up-symbol-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/thumbtack-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/thumbtack-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/toolbox-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/toolbox-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/tools-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/tools-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/uptime-arrow-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/workshop-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/workshop-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/wow-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/wrench-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/wrench-icon.webp
+Slackware-Commander-5.0.0/Slackware-Commander/wrench-tool-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/youtube-subscribe-bell-icon.png
+Slackware-Commander-5.0.0/Slackware-Commander/youtube-subscribe-bell-icon.webp
+Slackware-Commander-5.0.0/Sway.png
+Slackware-Commander-5.0.0/TODO
+Slackware-Commander-5.0.0/inxifetch
+Slackware-Commander-5.0.0/inxifetch.conf
+Slackware-Commander-5.0.0/isnum
+Slackware-Commander-5.0.0/ldtree
+Slackware-Commander-5.0.0/panic/
+Slackware-Commander-5.0.0/panic/30years_SLACKWARE-2.sh
+Slackware-Commander-5.0.0/panic/30years_SLACKWARE.sh
+Slackware-Commander-5.0.0/panic/BSOD-2.sh
+Slackware-Commander-5.0.0/panic/BSOD.sh
+Slackware-Commander-5.0.0/panic/bash-songs.sh
+Slackware-Commander-5.0.0/panic/christmas.sh
+Slackware-Commander-5.0.0/panic/fun-21.sh
+Slackware-Commander-5.0.0/panic/fun1.sh
+Slackware-Commander-5.0.0/panic/fun10.sh
+Slackware-Commander-5.0.0/panic/fun11.sh
+Slackware-Commander-5.0.0/panic/fun12.sh
+Slackware-Commander-5.0.0/panic/fun13.sh
+Slackware-Commander-5.0.0/panic/fun14.sh
+Slackware-Commander-5.0.0/panic/fun15.sh
+Slackware-Commander-5.0.0/panic/fun16.sh
+Slackware-Commander-5.0.0/panic/fun17.sh
+Slackware-Commander-5.0.0/panic/fun18.sh
+Slackware-Commander-5.0.0/panic/fun19.sh
+Slackware-Commander-5.0.0/panic/fun2.sh
+Slackware-Commander-5.0.0/panic/fun20.sh
+Slackware-Commander-5.0.0/panic/fun3.sh
+Slackware-Commander-5.0.0/panic/fun4.sh
+Slackware-Commander-5.0.0/panic/fun5.sh
+Slackware-Commander-5.0.0/panic/fun6.sh
+Slackware-Commander-5.0.0/panic/fun7.sh
+Slackware-Commander-5.0.0/panic/fun8.sh
+Slackware-Commander-5.0.0/panic/fun9.sh
+Slackware-Commander-5.0.0/panic/hacking-sounds
+Slackware-Commander-5.0.0/panic/init-bong.sh
+Slackware-Commander-5.0.0/panic/parania.sh
+Slackware-Commander-5.0.0/print_version
+Slackware-Commander-5.0.0/rcstatus
+Slackware-Commander-5.0.0/restart-services
+Slackware-Commander-5.0.0/sl_logo.png
+Slackware-Commander-5.0.0/sl_logo1.png
+Slackware-Commander-5.0.0/slack-required
+Slackware-Commander-5.0.0/slack-revert
+Slackware-Commander-5.0.0/slack-revert-revert.sh
+Slackware-Commander-5.0.0/slackpkg_build
+Slackware-Commander-5.0.0/slackware_logo_med.png
+Slackware-Commander-5.0.0/slackware_whitelogo_med.png
+Slackware-Commander-5.0.0/weather_forcast
+Slackware-Commander-5.0.0/whoRyou
+hm...lets continiue and see what happens
+cp: cannot stat 'AUTHORS ChangeLog Changelog CHANGELOG COPYING COPYRIGHT CONFIGURATION* CONTRIBUTING* *FAQ* GPL* HACKING index.ht* *INDEX* INSTALL* License* LICENSE* *README* *Readme* *RELEASE* TODO VERSION': No such file or directory
 
 Slackware package maker, version 3.14159265.
 
@@ -36,7 +256,7 @@ special permissions, then DO NOT reset them here!
 Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
-Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz
 
 ./
 etc/
@@ -235,51 +455,6 @@ usr/share/icons/Slackware-Commander/wrench-tool-icon.png
 usr/share/icons/Slackware-Commander/youtube-subscribe-bell-icon.png
 usr/share/icons/Slackware-Commander/youtube-subscribe-bell-icon.webp
 
-Slackware package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz created.
 
-rm: cannot remove '*.git': No such file or directory
-
-+==============================================================================
-| Upgrading Slackware-Commander-5.0.0-x86_64-1_rtz package using /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz
-+==============================================================================
-Pre-installing package Slackware-Commander-5.0.0-x86_64-1_rtz...
-Removing package: Slackware-Commander-5.0.0-x86_64-1_rtz-upgraded-2024-09-20,20:22:35
-Verifying package Slackware-Commander-5.0.0-x86_64-1_rtz.tlz.
-Installing package Slackware-Commander-5.0.0-x86_64-1_rtz.tlz:
-PACKAGE DESCRIPTION:
-# Slackware-Commander (Slackware control center)
-#
-# A shadowplay-like screen recorder for Linux. The fastest screen
-# recorder for Linux
-#
-# https://git.dec05eba.com/gpu-screen-recorder
-Executing install script for Slackware-Commander-5.0.0-x86_64-1_rtz.tlz.
-Font directories:
-	/usr/share/fonts
-/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
-/usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
-/usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
-/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
-/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
-/usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
-/usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
-/usr/share/fonts/TTF/oxygen: caching, new cache contents: 3 fonts, 0 dirs
-/usr/share/fonts/TTF/static: caching, new cache contents: 36 fonts, 0 dirs
-/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
-/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
-/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
-/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
-/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
-/usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
-/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
-/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
-/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
-/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
-/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
-/var/cache/fontconfig: cleaning cache directory
-/root/.cache/fontconfig: not cleaning non-existent cache directory
-/root/.fontconfig: not cleaning non-existent cache directory
-/usr/bin/fc-cache: succeeded
-Package Slackware-Commander-5.0.0-x86_64-1_rtz.tlz installed.
-Package Slackware-Commander-5.0.0-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz.
-Build process completed in 0 minutes and 7 seconds.
+Build process completed in 0 minutes and 3 seconds.

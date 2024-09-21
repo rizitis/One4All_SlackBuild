@@ -20,30 +20,60 @@ Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# Move to the script's directory
-cd "$(dirname "$0")" || exit 1
-CWD=$(pwd)
+   cd $(dirname "$0") ; CWD=$(pwd)
+DATE="$(date)"
 # Setup build log file
 LOGFILE="$CWD/build.log"
-rm -v "$LOGFILE" 2>/dev/null || true  # Quietly remove the old log if it exists
-# Redirect all output to the log file
+rm $LOGFILE || true
 exec > >(tee -a "$LOGFILE") 2>&1
-echo "Log file is located at $LOGFILE"
+
 echo "Starting build process..."
 start_time=$(date +%s)
 
+
 ##########################-slackdesc-########################################
 # If you have slackdesc installed you need these, else ignore them and comment them.
-# slackdesc HomePage: https://slack-desc.sourceforge.net/
+# https://slack-desc.sourceforge.net/
 # example of use:
    mkdesc="$(which slackdesc)" || true
-   Homepage="https://git.dec05eba.com/gpu-screen-recorder"
+   Homepage="https://github.com/rizitis/Slackware-Commander"
             #|--------------------------------------|#
-   SortDesc="Slackware control center"
+   SortDesc="Slackware-Commander"
             #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
-   LongDesc="A shadowplay-like screen recorder for Linux. The fastest screen recorder for Linux"
+   LongDesc="Slackware-Commander"
+
+##########################-GITHUB-AUTO UPDATE-#####################################
+# Uncomment AUTO_UPD if you are following a valid github repo/package for auto track latest release/tag package-version every time you ran SlackBuild.
+DEV=rizitis
+PRJ=Slackware-Commander
+AUTO_UPD=$(curl --silent -L "https://api.github.com/repos/$DEV/$PRJ/releases/latest" | jq -r '.tag_name' | sed 's/^v//')
+
+#######################################################################
+# If use AUTO UPDATE 'VERSION=$AUTO_UPD'  or as a regular package version 'VERSION=0.1.2' etc...
+VERSION=$AUTO_UPD
+# Binary (output) name
+PRGNAM=Slackware-Commander
+# If not special SRCNAM needed then we use the same name as PRGNAM.
+SRCNAM=Slackware-Commander
+# Download link if use AUTO_UPD then SRCmust be empty
+SRCURL=
+# Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z (for deb rpm etc use custom_build for all progress)
+# OR repos: cvn, cvs, git, lftp
+COMPRESS="tar.gz"
+# IF you need:git checkout, else leave it empty.
+GITCHEK=
+# When source package after extract conatins just a binary or we build directly in then set BIN_PKG=YES else leave it empty or whatever but YES.
+BIN_PKG=
+######################-WORK_DIRS and OUTPUT-#################################
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rtz}
+PKGTYPE=${PKGTYPE:-tlz}
+PKG=$CWD/package-$PRGNAM
+TMP=$CWD/work
+OUTPUT=$CWD/binary-$PRGNAM-$VERSION
+
 ##########################-Desktop-Entry-####################################
-# if you need to create Desktop entry edit and call desktop_entry in your build else ignore it.
+# ONLY if you need to create a Desktop entry edit it and call desktop_entry function in your build function, else just ignore it.
 desktop_entry() {
 mkdir -p "$PKG"/usr/share/applications
 cat <<EOF >> "$PKG"/usr/share/applications/$PRGNAM.desktop
@@ -51,54 +81,22 @@ cat <<EOF >> "$PKG"/usr/share/applications/$PRGNAM.desktop
 Version=1.0
 Name=$PRGNAM
 Comment=$SortDesc
-GenericName=
+GenericName=$SRCNAM
 Exec=$PRGNAM
 Icon=$PRGNAM
-Terminal=true
+Terminal=false
 Type=Application
 Categories=Utility;
 Keywords=
 EOF
 }
-############################## MAIN VARS #########################################
-# EDIT FOLLOWING AS NEEDED:
-   SRCURL="https://github.com/rizitis/Slackware-Commander"
-   # https://github.com/rizitis/Slackware-Commander/commit/44c7b01bd192cf6cf48fbc1729a82f70dc156aab
-   GITCHEK=44c7b01bd192cf6cf48fbc1729a82f70dc156aab
-   # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z
-   #OR repos: cvn, cvs, git, lftp
-   COMPRESS="git"
-   SRCNAM=Slackware-Commander
-   PRGNAM=Slackware-Commander
-   VERSION=5.0.0
 
-   # When source package after extract conatins just a binary set BIN_PKG=YES else leave it empty or whatever but YES.
-   BIN_PKG=NO
-
-   BUILD=${BUILD:-1}
-   TAG=${TAG:-_rtz}
-   PKGTYPE=${PKGTYPE:-tlz}
-   PKG=$CWD/package-$PRGNAM
-   TMP=$CWD/work
-   OUTPUT=$CWD/binary-$PRGNAM-$VERSION
-
-
-
-# EDIT FUNCTIONS AS FOR YOUR NEEDS
+## EDIT YOUR BUILD FUNCTIONS AS FOR YOUR NEEDS ##
 
    patch_build() {
 true
 }
 
-
-   chrooting(){
-   	chown -R root:root .
-	find -L . \
-	  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-	  -o -perm 511 \) -exec chmod 755 {} \; -o \
-	  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
-	  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
-   }
 
    auto_build() {
 	CFLAGS="$SLKCFLAGS" \
@@ -130,7 +128,6 @@ true
 	    --mandir=/usr/man \
 	    --prefix=/usr \
 	    --sysconfdir=/etc \
-		-Dsystemd=false \
 	    -Dstrip=true
 	  "${NINJA:=ninja}" "$NUMJOBS"
 	  DESTDIR=$PKG $NINJA install
@@ -214,16 +211,9 @@ cd ..
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 
-    export SHELL_COMPLETIONS_DIR="completions"
-    mkdir -p "${SHELL_COMPLETIONS_DIR}"
-    cargo build --release --locked
-#    cargo test --release --locked
+/usr/bin/cargo build --release
 
-    install -Dm755 "target/release/$PRGNAM" "$PKG/usr/bin/$PRGNAM"
-    install -Dm 644 README.md LICENSE -t "$PKG/usr/share/doc/$PRGNAM"
-    install -Dm 644 "completions/$PRGNAM.bash" -t "$PKG/usr/share/bash-completion/completions"
-    install -Dm 644 "completions/_$PRGNAM" -t "$PKG/usr/share/zsh/site-functions"
-    install -Dm 644 "completions/$PRGNAM.fish" -t "$PKG/usr/share/fish/vendor_completions.d"
+        install -Dm755 "target/release/$PRGNAM" "$PKG/usr/bin/$PRGNAM"
 
    }
 
@@ -245,6 +235,7 @@ CXXFLAGS="$SLKCFLAGS" \
   mkdir -p "$PKG"/usr/bin/
   install -Dm755 "$PRGNAM"-"$VERSION"/? "$PKG"/usr/bin/"$PRGNAM"
   }
+
 
    custom_build() {
    dir1=/usr/share/icons/
@@ -300,6 +291,7 @@ CXXFLAGS="$SLKCFLAGS" \
    cat inxifetch.conf > "$PKG"/"$dir4"/inxifetch.conf.new
    cp Slackware-Commander.1 "$PKG"/usr/man/man1
    cp Slackware-Commander.info "$PKG"/usr/info/
+
   }
 
    after_build(){
@@ -421,13 +413,15 @@ MKINS
 	  | xargs rm -f
 
 	  cd "$PKG" || exit
-	  makepkg -l y -c n "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
+# add sudo here in case you build as user , else makepkg stop...
+sudo  makepkg -l y -c n "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
 	  echo "$DATE $Packager" | sed -e '1r /dev/stdin' "$OUTPUT/makepkg-${PRGNAM}.log" > "$OUTPUT/makepkg-${PRGNAM}.log.tmp" && mv "$OUTPUT/makepkg-${PRGNAM}.log.tmp" "$OUTPUT/makepkg-${PRGNAM}.log"
 
 
 	  cd "$OUTPUT" || exit
 	  md5sum $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".md5
 	  cat "$PKG"/install/slack-desc | grep "^${PRGNAM}" > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".txt
+	  cat $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".txt > README
 	if [ -f "$PKG"/install/slack-required ]; then
 	  cat "$PKG"/install/slack-required > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG".dep
 	fi
@@ -435,7 +429,7 @@ MKINS
 
    clean_src(){
 	cd $CWD || exit
-	rm -r package-"$PRGNAM" work *.$COMPRESS || true
+	rm -r package-"$PRGNAM" work *.$COMPRESS
    }
 
    pkg_install(){
@@ -451,96 +445,65 @@ MKINS
    }
 
 
-############ END OF EDIT # Just uncomment needed functions at the end of script! ###################
+   # END OF EDIT MOST OF TIMES #
 
 
-   if [ -z "$ARCH" ]; then
-  case "$( uname -m )" in
-    i?86) ARCH=i586 ;;
-    arm*) ARCH=arm ;;
-       *) ARCH=$( uname -m ) ;;
-  esac
-fi
 
-if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
-  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
-  exit 0
-fi
+download_src() {
+  if [[ -z "$VERSION" || -z "$AUTO_UPD" ]]; then
+    echo "$VERSION or $AUTO_UPD is not set."
+    exit 1
+  fi
 
-if [ "$ARCH" = "i586" ]; then
-  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
-  LIBDIRSUFFIX=""
-elif [ "$ARCH" = "i686" ]; then
-  SLKCFLAGS="-O2 -march=i686 -mtune=i686"
-  LIBDIRSUFFIX=""
-elif [ "$ARCH" = "x86_64" ]; then
-  SLKCFLAGS="-O2 -march=x86-64 -mtune=generic -fPIC"
-  LIBDIRSUFFIX="64"
-elif [ "$ARCH" = "aarch64" ]; then
-  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
-  LIBDIRSUFFIX="64"
-else
-  SLKCFLAGS="-O2"
-  LIBDIRSUFFIX=""
-fi
-
-   DATE="$(date)"
-   NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
-DOCS=\
-"ABOUT \
-AUTHORS \
-*BUGS* \
-ChangeLog \
-CHANGELOG \
-COPYING \
-COPYRIGHT \
-CREDITS \
-CONFIGURATION* \
-CONTRIBUTING* \
-CONTRIBUTORS \
-*FAQ* \
-FEATURES \
-HACKING \
-History \
-HISTORY \
-*INDEX* \
-INSTALL* \
-License* \
-LICENSE* \
-MANIFEST \
-NEWS \
-*README* \
-*Readme* \
-*RELEASE* \
-SITES \
-THANKS \
-TODO \
-VERSION"
-
-download_src(){
-  if [[ $COMPRESS = "git" ]]; then
-    GIT="$(which git)"
-    $GIT clone "$SRCURL"
-    if [ -n "$GITCHEK" ]; then
-      cd "$SRCNAM" || cd "$PRGNAM" || exit
-      $GIT checkout "$GITCHEK"
+  if [[ "$VERSION" != "$AUTO_UPD" ]]; then
+    sleep 1
+    if [[ $COMPRESS == "git" ]]; then
+      GIT="$(which git)"
+      $GIT clone "$SRCURL"
+      if [[ -n "$GITCHEK" ]]; then
+        cd "$SRCNAM" || cd "$PRGNAM" || exit
+        $GIT checkout "$GITCHEK"
+      fi
+    elif [[ $COMPRESS == "svn" ]]; then
+      SVN="$(which svn)"
+      $SVN co "$SRCURL"
+    elif [[ $COMPRESS == "cvs" ]]; then
+      CVS="$(which cvs)"
+      $CVS -z3 -f "$SRCURL"
+    elif [[ $COMPRESS == "lftp" ]]; then
+      LFTP="$(which lftp)"
+      $LFTP -c mirror "$SRCURL"
+    else
+      wget -O "$SRCNAM"-"$VERSION"."$COMPRESS" "$SRCURL"
     fi
-  elif [[ $COMPRESS = "svn" ]]; then
-    SVN="$(which svn)"
-    $SVN co "$SRCURL"
-  elif [[ $COMPRESS = "cvs" ]]; then
-    CVS="$(which cvs)"
-    $CVS -z3 -f "$SRCURL"
-  elif [[ $COMPRESS = "lftp" ]]; then
-    LFTP="$(which lftp)"
-    $LFTP -c mirror "$SRCURL"
+  elif [[ "$VERSION" == "$AUTO_UPD" ]]; then
+    # If the release version is "null", fall back to fetching from tags
+    if [[ "$VERSION" == "null" || -z "$VERSION" ]]; then
+      # Get the latest tag if release is not available
+      VERSION=$(curl --silent -L "https://api.github.com/repos/$DEV/$PRJ/tags" | jq -r '.[0].name' | sed 's/^v//')
+      echo "Falling back to latest tag: $VERSION"
+      wget -c https://github.com/"$DEV"/"$PRJ"/archive/v"$VERSION"/"$SRCNAM"-"$VERSION"."$COMPRESS"
+    else
+    echo "Latest release version: $VERSION"
+      wget -c https://github.com/"$DEV"/"$PRJ"/releases/download/"$VERSION"/"$SRCNAM"-"$VERSION"."$COMPRESS" || wget -O "$SRCNAM"-"$VERSION"."$COMPRESS" https://github.com/"$DEV"/"$PRJ"/archive/refs/tags/"$VERSION"."$COMPRESS"
+    fi
   else
-    wget -O "$SRCNAM"-"$VERSION"."$COMPRESS" "$SRCURL"
+    echo "Download_src Messed up $VERSION"
+    exit 8
   fi
 }
-  set -e
 
-   prepare_build(){
+chrooting(){
+   	chown -R root:root .
+	find -L . \
+	  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+	  -o -perm 511 \) -exec chmod 755 {} \; -o \
+	  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+	  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+   }
+
+
+prepare_build(){
 	rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
 	rm -rf "$TMP"/$PRGNAM-$VERSION
@@ -587,7 +550,7 @@ download_src(){
 cd "$TMP" || exit
 if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" ]]; then
   get_out "$CWD"/"$SRCNAM"-"$VERSION"."$COMPRESS" || get_out "$CWD"/"$SRCNAM"."$COMPRESS" || exit
-  if [ $BIN_PKG != "YES" ]; then
+  if [[ $BIN_PKG != "YES" ]]; then
      cd $SRCNAM-$VERSION || cd $PRGNAM-$VERSION || cd $SRCNAM || exit
     else
      echo "BIN_PKG = $BIN_PKG"
@@ -599,14 +562,51 @@ if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRES
 fi
    }
 
+   if [ -z "$ARCH" ]; then
+  case "$( uname -m )" in
+    i?86) ARCH=i586 ;;
+    arm*) ARCH=arm ;;
+       *) ARCH=$( uname -m ) ;;
+  esac
+fi
 
-# default most of times #
+if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
+  exit 0
+fi
 
+if [ "$ARCH" = "i586" ]; then
+  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "i686" ]; then
+  SLKCFLAGS="-O2 -march=i686 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "x86_64" ]; then
+  SLKCFLAGS="-O2 -march=x86-64 -mtune=generic -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
+  LIBDIRSUFFIX="64"
+else
+  SLKCFLAGS="-O2"
+  LIBDIRSUFFIX=""
+fi
+
+
+NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
+
+DOCS="AUTHORS ChangeLog Changelog CHANGELOG COPYING COPYRIGHT CONFIGURATION* CONTRIBUTING* *FAQ* GPL* HACKING index.ht* *INDEX* INSTALL* License* LICENSE* *README* *Readme* *RELEASE* TODO VERSION"
+
+
+  set -e
+
+# default most of times exept custom_build() and if you build as user (chrooting)#
 download_src
 prepare_build
-#patch_build
-# uncomment what you need:
+patch_build
 chrooting
+
+# uncomment what you need:
 #auto_build
 #meson_build
 #python_build
@@ -620,9 +620,11 @@ custom_build
 # default most of times #
 after_build
 package_build
+
+# uncomment what you need:
 clean_src
-pkg_install
-sig_package
+#pkg_install
+#sig_package
 
 # Calculate and display build time
 end_time=$(date +%s)

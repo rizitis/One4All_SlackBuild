@@ -44,6 +44,7 @@ start_time=$(date +%s)
    Homepage="Homepage:https://github.com/bcyran/timewall"
             #|--------------------------------------|#
    SortDesc="Apple dynamic HEIF wallpapers"
+           #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
    LongDesc="Apple dynamic HEIF wallpapers on GNU/Linux.Support for original HEIF/HEIC dynamic wallpaper files used in MacOS.Support for all schedule types: sun position based, time based, dark/light mode.Set wallpaper once and continuously (daemon mode).Preview wallpaper changes.Display wallpaper metadata.Extract all images and metadata as XML."
 ##########################-Desktop-Entry-####################################
 # if you need to create Desktop entry edit and call desktop_entry in your build else ignore it.
