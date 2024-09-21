@@ -35,25 +35,26 @@ start_time=$(date +%s)
 # If you have slackdesc installed you need these, else ignore them (empty)
 # https://slack-desc.sourceforge.net/
    mkdesc="$(which slackdesc)" || true
-   Homepage="https://github.com/rizitis/Slackware-Commander"
+   Homepage=""
             #|--------------------------------------|#
-   SortDesc="GUI & scripts Slackware control center "
+   SortDesc=""
             #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
-   LongDesc="Slackware-Commander is a gtk gui app which help you to maintain your Slackware system from a graphical menu. It use  yad and gtkdialog for the graphical interface."
+   LongDesc=""
 # If a README or README.md dont exist in CWD then SortDec discribtion, if not empty, will be added in a README file.
+
 ##########################-GITHUB-AUTO UPDATE-#####################################
-# Uncomment AUTO_UPD if you are following a valid github repo/package for auto track latest release/tag package-version every time you ran SlackBuild.
-DEV=rizitis
-PRJ=Slackware-Commander
+# 
+DEV=
+PRJ=
 AUTO_UPD=$(curl --silent -L "https://api.github.com/repos/$DEV/$PRJ/releases/latest" | jq -r '.tag_name' | sed 's/^v//')
 
-#######################################################################
+############################-SRC AND PACKAGE VARS-##################################
 # If use AUTO UPDATE 'VERSION=$AUTO_UPD'  or as a regular package version 'VERSION=0.1.2' etc...
-VERSION=$AUTO_UPD
+VERSION=
 # Binary (output) name
-PRGNAM=Slackware-Commander
+PRGNAM=
 # If not special SRCNAM needed then we use the same name as PRGNAM.
-SRCNAM=Slackware-Commander
+SRCNAM=
 # Download link if use AUTO_UPD then SRCmust be empty
 SRCURL=
 # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z (for deb rpm etc use custom_build for all progress)
@@ -63,6 +64,7 @@ COMPRESS="tar.gz"
 GITCHEK=
 # When source package after extract conatins just a binary or we build directly in then set BIN_PKG=YES else leave it empty or whatever but YES.
 BIN_PKG=
+
 ######################-WORK_DIRS and OUTPUT-#################################
 BUILD=${BUILD:-1}
 TAG=${TAG:-_rtz}
@@ -570,9 +572,9 @@ if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRES
    cd $SRCNAM || cd $PRGNAM ||exit
 fi
 }
-# here end prepare_build function ;) #
+# here ^^ end prepare_build function ;) #
 
-# System vars, here is the top of Script LOL. 
+# Base System vars, here is the top of Script LOL. 
    if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586 ;;
@@ -611,7 +613,7 @@ DOCS="AUTHORS ChangeLog Changelog CHANGELOG COPYING COPYRIGHT CONFIGURATION* CON
 
   set -e
 
-# default most of times exept custom_build() and if you build as user (chrooting)#
+# default most of times exept custom_build() or if you build as user (no chrooting)#
 download_src
 prepare_build
 patch_build
