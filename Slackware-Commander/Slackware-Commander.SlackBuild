@@ -38,9 +38,9 @@ start_time=$(date +%s)
    mkdesc="$(which slackdesc)" || true
    Homepage="https://github.com/rizitis/Slackware-Commander"
             #|--------------------------------------|#
-   SortDesc="Slackware-Commander"
+   SortDesc="GUI & scripts Slackware control center "
             #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
-   LongDesc="Slackware-Commander"
+   LongDesc="Slackware-Commander is a gtk gui app which help you to maintain your Slackware system from a graphical menu. It use  yad and gtkdialog for the graphical interface."
 
 ##########################-GITHUB-AUTO UPDATE-#####################################
 # Uncomment AUTO_UPD if you are following a valid github repo/package for auto track latest release/tag package-version every time you ran SlackBuild.
@@ -624,7 +624,7 @@ package_build
 # uncomment what you need:
 clean_src
 #pkg_install
-#sig_package
+sig_package
 
 # Calculate and display build time
 end_time=$(date +%s)
