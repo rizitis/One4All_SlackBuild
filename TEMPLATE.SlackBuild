@@ -31,17 +31,16 @@ echo "Starting build process..."
 start_time=$(date +%s)
 
 
-##########################-slackdesc-########################################
-# If you have slackdesc installed you need these, else ignore them and comment them.
+##########################-slackdesc-README-####################################
+# If you have slackdesc installed you need these, else ignore them (empty)
 # https://slack-desc.sourceforge.net/
-# example of use:
    mkdesc="$(which slackdesc)" || true
    Homepage="https://github.com/rizitis/Slackware-Commander"
             #|--------------------------------------|#
    SortDesc="GUI & scripts Slackware control center "
             #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
    LongDesc="Slackware-Commander is a gtk gui app which help you to maintain your Slackware system from a graphical menu. It use  yad and gtkdialog for the graphical interface."
-
+# If a README or README.md dont exist in CWD then SortDec discribtion, if not empty, will be added in a README file.
 ##########################-GITHUB-AUTO UPDATE-#####################################
 # Uncomment AUTO_UPD if you are following a valid github repo/package for auto track latest release/tag package-version every time you ran SlackBuild.
 DEV=rizitis
@@ -543,6 +542,16 @@ prepare_build(){
         esac
     else
         echo "Error: '$1' is not a valid file!"
+    fi
+
+    if [[ ! -e "$CWD/README" && ! -e "$CWD/README.md" ]]; then
+      # If neither file exists, create README
+      echo "Creating README in: $CWD"
+      > "$CWD/README"
+      echo "$PRGNAM $SortDesc" > "$CWD/README"
+    else
+    pwd
+      echo "README or README.md already exists, skipping creation."
     fi
 }
 
