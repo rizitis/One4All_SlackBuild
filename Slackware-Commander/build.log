@@ -1,49 +1,49 @@
 Starting build process...
 Latest release version: 5.0.0
---2024-09-21 15:16:54--  https://github.com/rizitis/Slackware-Commander/releases/download/5.0.0/Slackware-Commander-5.0.0.tar.gz
+--2024-09-21 15:58:25--  https://github.com/rizitis/Slackware-Commander/releases/download/5.0.0/Slackware-Commander-5.0.0.tar.gz
 Resolving github.com (github.com)... 140.82.121.4
 Connecting to github.com (github.com)|140.82.121.4|:443... connected.
 HTTP request sent, awaiting response... 404 Not Found
-2024-09-21 15:16:54 ERROR 404: Not Found.
+2024-09-21 15:58:25 ERROR 404: Not Found.
 
---2024-09-21 15:16:54--  https://github.com/rizitis/Slackware-Commander/archive/refs/tags/5.0.0.tar.gz
+--2024-09-21 15:58:25--  https://github.com/rizitis/Slackware-Commander/archive/refs/tags/5.0.0.tar.gz
 Resolving github.com (github.com)... 140.82.121.4
 Connecting to github.com (github.com)|140.82.121.4|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://codeload.github.com/rizitis/Slackware-Commander/tar.gz/refs/tags/5.0.0 [following]
---2024-09-21 15:16:55--  https://codeload.github.com/rizitis/Slackware-Commander/tar.gz/refs/tags/5.0.0
-Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
-Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+--2024-09-21 15:58:26--  https://codeload.github.com/rizitis/Slackware-Commander/tar.gz/refs/tags/5.0.0
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.9
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.9|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/x-gzip]
+Length: 1199197 (1.1M) [application/x-gzip]
 Saving to: ‘Slackware-Commander-5.0.0.tar.gz’
 
-     0K .......... .......... .......... .......... ..........  436K
-    50K .......... .......... .......... .......... ..........  868K
-   100K .......... .......... .......... .......... .......... 5.32M
-   150K .......... .......... .......... .......... .......... 5.42M
-   200K .......... .......... .......... .......... .......... 1.05M
-   250K .......... .......... .......... .......... .......... 3.51M
-   300K .......... .......... .......... .......... ..........  634K
-   350K .......... .......... .......... .......... .......... 2.21M
-   400K .......... .......... .......... .......... .......... 8.75M
-   450K .......... .......... .......... .......... ..........  127M
-   500K .......... .......... .......... .......... ..........  121M
-   550K .......... .......... .......... .......... ..........  292M
-   600K .......... .......... .......... .......... .......... 1.93M
-   650K .......... .......... .......... .......... .......... 62.6M
-   700K .......... .......... .......... .......... .......... 58.6M
-   750K .......... .......... .......... .......... .......... 19.8M
-   800K .......... .......... .......... .......... .......... 1.99M
-   850K .......... .......... .......... .......... .......... 5.40M
-   900K .......... .......... .......... .......... .......... 2.63M
-   950K .......... .......... .......... .......... .......... 4.76M
-  1000K .......... .......... .......... .......... .......... 7.37M
-  1050K .......... .......... .......... .......... .......... 3.15M
-  1100K .......... .......... .......... .......... .......... 4.53M
-  1150K .......... .......... .                                 939K=0.5s
+     0K .......... .......... .......... .......... ..........  4%  159K 7s
+    50K .......... .......... .......... .......... ..........  8%  282K 5s
+   100K .......... .......... .......... .......... .......... 12%  436K 4s
+   150K .......... .......... .......... .......... .......... 17%  832K 3s
+   200K .......... .......... .......... .......... .......... 21%  836K 3s
+   250K .......... .......... .......... .......... .......... 25%  864K 2s
+   300K .......... .......... .......... .......... .......... 29%  718K 2s
+   350K .......... .......... .......... .......... .......... 34%  487K 2s
+   400K .......... .......... .......... .......... .......... 38%  236K 2s
+   450K .......... .......... .......... .......... .......... 42% 2.25M 2s
+   500K .......... .......... .......... .......... .......... 46%  431K 1s
+   550K .......... .......... .......... .......... .......... 51%  307K 1s
+   600K .......... .......... .......... .......... .......... 55%  252K 1s
+   650K .......... .......... .......... .......... .......... 59%  364K 1s
+   700K .......... .......... .......... .......... .......... 64%  315K 1s
+   750K .......... .......... .......... .......... .......... 68%  225K 1s
+   800K .......... .......... .......... .......... .......... 72%  276K 1s
+   850K .......... .......... .......... .......... .......... 76%  250K 1s
+   900K .......... .......... .......... .......... .......... 81%  254K 1s
+   950K .......... .......... .......... .......... .......... 85%  304K 1s
+  1000K .......... .......... .......... .......... .......... 89%  365K 0s
+  1050K .......... .......... .......... .......... .......... 93%  432K 0s
+  1100K .......... .......... .......... .......... .......... 98%  417K 0s
+  1150K .......... .......... .                               100%  387K=3.4s
 
-2024-09-21 15:16:56 (2.26 MB/s) - ‘Slackware-Commander-5.0.0.tar.gz’ saved [1199197]
+2024-09-21 15:58:29 (349 KB/s) - ‘Slackware-Commander-5.0.0.tar.gz’ saved [1199197/1199197]
 
 Slackware-Commander-5.0.0/
 Slackware-Commander-5.0.0/1scl1.png
@@ -238,7 +238,8 @@ Slackware-Commander-5.0.0/slackware_logo_med.png
 Slackware-Commander-5.0.0/slackware_whitelogo_med.png
 Slackware-Commander-5.0.0/weather_forcast
 Slackware-Commander-5.0.0/whoRyou
-hm...lets continiue and see what happens
+Creating README in: /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander
+hm...lets continue and see what happens
 cp: cannot stat 'AUTHORS ChangeLog Changelog CHANGELOG COPYING COPYRIGHT CONFIGURATION* CONTRIBUTING* *FAQ* GPL* HACKING index.ht* *INDEX* INSTALL* License* LICENSE* *README* *Readme* *RELEASE* TODO VERSION': No such file or directory
 
 Slackware package maker, version 3.14159265.
@@ -457,4 +458,4 @@ usr/share/icons/Slackware-Commander/youtube-subscribe-bell-icon.webp
 
 Slackware package /home/omen/GITHUB/One4All_SlackBuild/Slackware-Commander/binary-Slackware-Commander-5.0.0/Slackware-Commander-5.0.0-x86_64-1_rtz.tlz created.
 
-Build process completed in 0 minutes and 4 seconds.
+Build process completed in 0 minutes and 6 seconds.
