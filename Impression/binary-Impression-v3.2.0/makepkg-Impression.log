@@ -1,0 +1,89 @@
+
+Sat Sep 21 18:19:34 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/Impression/binary-Impression-v3.2.0/Impression-v3.2.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/impression
+usr/doc/
+usr/doc/Impression-v3.2.0/
+usr/doc/Impression-v3.2.0/Impression.SlackBuild
+usr/share/
+usr/share/applications/
+usr/share/applications/io.gitlab.adhami3310.Impression.desktop
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/io.gitlab.adhami3310.Impression.gschema.xml
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/io.gitlab.adhami3310.Impression.svg
+usr/share/icons/hicolor/symbolic/
+usr/share/icons/hicolor/symbolic/apps/
+usr/share/icons/hicolor/symbolic/apps/io.gitlab.adhami3310.Impression-symbolic.svg
+usr/share/impression/
+usr/share/impression/icons/
+usr/share/impression/icons/hicolor/
+usr/share/impression/icons/hicolor/scalable/
+usr/share/impression/icons/hicolor/scalable/actions/
+usr/share/impression/icons/hicolor/scalable/actions/check-round-outline-symbolic.svg
+usr/share/impression/icons/hicolor/scalable/actions/error-symbolic.svg
+usr/share/impression/icons/hicolor/scalable/actions/flash-symbolic.svg
+usr/share/impression/icons/hicolor/scalable/actions/image-missing-symbolic.svg
+usr/share/impression/icons/hicolor/scalable/actions/paper-symbolic.svg
+usr/share/impression/icons/hicolor/scalable/actions/usb-stick-symbolic.svg
+usr/share/impression/icons/hicolor/scalable/actions/view-refresh-symbolic.svg
+usr/share/impression/resources.gresource
+usr/share/locale/
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/impression.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/impression.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/impression.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/impression.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/impression.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/impression.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/impression.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/impression.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/impression.mo
+usr/share/metainfo/
+usr/share/metainfo/io.gitlab.adhami3310.Impression.metainfo.xml
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/Impression/binary-Impression-v3.2.0/Impression-v3.2.0-x86_64-1_rtz.tlz created.
+
