@@ -569,8 +569,10 @@ if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRES
   mv "$CWD"/"$SRCNAM" "$TMP"
    cd $SRCNAM || cd $PRGNAM ||exit
 fi
-   }
+}
+# here end prepare_build function ;) #
 
+# System vars, here is the top of Script LOL. 
    if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586 ;;
