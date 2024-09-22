@@ -80,6 +80,7 @@ This repo is not provided as binary repo for Slackware-current or as SlackBuilds
 > [!IMPORTANT]
 <br> *If you want to use for your personal builds this TEMPLATE of SlackBuilds install [slackdesc](https://github.com/rizitis/One4All_SlackBuild#required) is optional*<br>
 <br> *If you want to use the AUTO_UPD option which auto found latest release or tag version of package from github you need [jq](https://slackbuilds.org/repository/15.0/system/jq/) in your installation*
+
 > [!CAUTION]
 *But if you want to build using one of my SlackBuilds here, then you must have [slackdesc](https://github.com/rizitis/One4All_SlackBuild#required) in your installation, else create manually a slack-desc the traditioanl way before you ran SlackBuild*<p>
 
