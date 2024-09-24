@@ -1,0 +1,99 @@
+Starting build process...
+Cloning into 'Eeel'...
+cp: cannot stat 'LICENSE* *README* *Readme* docs DOCS': No such file or directory
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/eeel/binary-eeel-custom/eeel-custom-x86_64-1_rtz.tlz
+
+./
+etc/
+etc/eeel/
+etc/eeel/eeel.env
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/doc/
+usr/doc/eeel-custom/
+usr/doc/eeel-custom/eeel.SlackBuild
+usr/local/
+usr/local/bin/
+usr/local/bin/eeel.py
+usr/local/bin/run_eeel.sh
+usr/share/
+usr/share/applications/
+usr/share/applications/eeel.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/eeel.png
+usr/share/pixmaps/
+usr/share/pixmaps/eeel/
+usr/share/pixmaps/eeel/icons/
+usr/share/pixmaps/eeel/icons/10.png
+usr/share/pixmaps/eeel/icons/11.png
+usr/share/pixmaps/eeel/icons/12.png
+usr/share/pixmaps/eeel/icons/13.png
+usr/share/pixmaps/eeel/icons/14.png
+usr/share/pixmaps/eeel/icons/15.png
+usr/share/pixmaps/eeel/icons/16.png
+usr/share/pixmaps/eeel/icons/17.png
+usr/share/pixmaps/eeel/icons/1.png
+usr/share/pixmaps/eeel/icons/2.png
+usr/share/pixmaps/eeel/icons/3.png
+usr/share/pixmaps/eeel/icons/4.png
+usr/share/pixmaps/eeel/icons/5.png
+usr/share/pixmaps/eeel/icons/6.png
+usr/share/pixmaps/eeel/icons/7.png
+usr/share/pixmaps/eeel/icons/8712729_picture_iso_premium_icon.png
+usr/share/pixmaps/eeel/icons/8712789_backward_iso_premium_icon.png
+usr/share/pixmaps/eeel/icons/8712837_lab_iso_premium_icon.png
+usr/share/pixmaps/eeel/icons/8.png
+usr/share/pixmaps/eeel/icons/9.png
+usr/share/pixmaps/eeel/icons/academic.png
+usr/share/pixmaps/eeel/icons/accessibility.png
+usr/share/pixmaps/eeel/icons/audio.png
+usr/share/pixmaps/eeel/icons/business.png
+usr/share/pixmaps/eeel/icons/desktop.png
+usr/share/pixmaps/eeel/icons/development.png
+usr/share/pixmaps/eeel/icons/eeel-3d.png
+usr/share/pixmaps/eeel/icons/eel2.png
+usr/share/pixmaps/eeel/icons/eel-fish.png
+usr/share/pixmaps/eeel/icons/eel-ico.png
+usr/share/pixmaps/eeel/icons/eel.png
+usr/share/pixmaps/eeel/icons/electric-eel.png
+usr/share/pixmaps/eeel/icons/games.png
+usr/share/pixmaps/eeel/icons/gis.png
+usr/share/pixmaps/eeel/icons/gladde-paling-dance.gif
+usr/share/pixmaps/eeel/icons/graphics.png
+usr/share/pixmaps/eeel/icons/ham.png
+usr/share/pixmaps/eeel/icons/haskell.png
+usr/share/pixmaps/eeel/icons/libraries.png
+usr/share/pixmaps/eeel/icons/misc.png
+usr/share/pixmaps/eeel/icons/mutlimedia.png
+usr/share/pixmaps/eeel/icons/network.png
+usr/share/pixmaps/eeel/icons/office.png
+usr/share/pixmaps/eeel/icons/perl.png
+usr/share/pixmaps/eeel/icons/python.png
+usr/share/pixmaps/eeel/icons/ruby.png
+usr/share/pixmaps/eeel/icons/system.png
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/eeel/binary-eeel-custom/eeel-custom-x86_64-1_rtz.tlz created.
+
+rm: cannot remove '*.git': No such file or directory
