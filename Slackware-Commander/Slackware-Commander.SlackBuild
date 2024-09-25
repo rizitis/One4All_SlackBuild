@@ -64,7 +64,7 @@ GITCHEK=
 # When source package after extract conatins just a binary or we build directly in then set BIN_PKG=YES else leave it empty or whatever but YES.
 BIN_PKG=
 ######################-WORK_DIRS and OUTPUT-#################################
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_rtz}
 PKGTYPE=${PKGTYPE:-tlz}
 PKG=$CWD/package-$PRGNAM
@@ -631,9 +631,9 @@ after_build
 package_build
 
 # uncomment what you need:
-clean_src
-#pkg_install
+pkg_install
 sig_package
+clean_src
 
 # Calculate and display build time
 end_time=$(date +%s)
