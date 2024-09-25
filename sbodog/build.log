@@ -1,0 +1,140 @@
+Starting build process...
+Cloning into 'SBoDog'...
+cp: cannot stat 'LICENSE* *README* *Readme* docs DOCS': No such file or directory
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/sbodog/binary-sbodog-custom/sbodog-custom-x86_64-1_rtz.tlz
+
+./
+etc/
+etc/sbodog/
+etc/sbodog/sbodog.env
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/sbodog-custom/
+usr/doc/sbodog-custom/sbodog.SlackBuild
+usr/local/
+usr/local/bin/
+usr/local/bin/run_sbodog.sh
+usr/local/bin/sbodog.py
+usr/share/
+usr/share/applications/
+usr/share/applications/sbodog.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/sbodog.png
+usr/share/pixmaps/
+usr/share/pixmaps/sbodog/
+usr/share/pixmaps/sbodog/icons/
+usr/share/pixmaps/sbodog/icons/10.png
+usr/share/pixmaps/sbodog/icons/11.png
+usr/share/pixmaps/sbodog/icons/12.png
+usr/share/pixmaps/sbodog/icons/13.png
+usr/share/pixmaps/sbodog/icons/14.png
+usr/share/pixmaps/sbodog/icons/15.png
+usr/share/pixmaps/sbodog/icons/16.png
+usr/share/pixmaps/sbodog/icons/17.png
+usr/share/pixmaps/sbodog/icons/1.png
+usr/share/pixmaps/sbodog/icons/2.png
+usr/share/pixmaps/sbodog/icons/3.png
+usr/share/pixmaps/sbodog/icons/4.png
+usr/share/pixmaps/sbodog/icons/5.png
+usr/share/pixmaps/sbodog/icons/6.png
+usr/share/pixmaps/sbodog/icons/7.png
+usr/share/pixmaps/sbodog/icons/8712729_picture_iso_premium_icon.png
+usr/share/pixmaps/sbodog/icons/8712789_backward_iso_premium_icon.png
+usr/share/pixmaps/sbodog/icons/8712837_lab_iso_premium_icon.png
+usr/share/pixmaps/sbodog/icons/8.png
+usr/share/pixmaps/sbodog/icons/9.png
+usr/share/pixmaps/sbodog/icons/academic.png
+usr/share/pixmaps/sbodog/icons/accessibility.png
+usr/share/pixmaps/sbodog/icons/audio.png
+usr/share/pixmaps/sbodog/icons/boxer_dog_animal_48.png
+usr/share/pixmaps/sbodog/icons/business.png
+usr/share/pixmaps/sbodog/icons/desktop.png
+usr/share/pixmaps/sbodog/icons/development.png
+usr/share/pixmaps/sbodog/icons/eeel-3d.png
+usr/share/pixmaps/sbodog/icons/games.png
+usr/share/pixmaps/sbodog/icons/gis.png
+usr/share/pixmaps/sbodog/icons/graphics.png
+usr/share/pixmaps/sbodog/icons/ham.png
+usr/share/pixmaps/sbodog/icons/haskell.png
+usr/share/pixmaps/sbodog/icons/hot_dog_fast_food_icon_512.png
+usr/share/pixmaps/sbodog/icons/libraries.png
+usr/share/pixmaps/sbodog/icons/misc.png
+usr/share/pixmaps/sbodog/icons/mutlimedia.png
+usr/share/pixmaps/sbodog/icons/network.png
+usr/share/pixmaps/sbodog/icons/office.png
+usr/share/pixmaps/sbodog/icons/perl.png
+usr/share/pixmaps/sbodog/icons/python.png
+usr/share/pixmaps/sbodog/icons/ruby.png
+usr/share/pixmaps/sbodog/icons/sbodog-1.png
+usr/share/pixmaps/sbodog/icons/sbodog-48.png
+usr/share/pixmaps/sbodog/icons/sbodog-64.png
+usr/share/pixmaps/sbodog/icons/sbodog.png
+usr/share/pixmaps/sbodog/icons/system.png
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/sbodog/binary-sbodog-custom/sbodog-custom-x86_64-1_rtz.tlz created.
+
+
++==============================================================================
+| Installing new package /home/omen/GITHUB/One4All_SlackBuild/sbodog/binary-sbodog-custom/sbodog-custom-x86_64-1_rtz.tlz
++==============================================================================
+
+Verifying package sbodog-custom-x86_64-1_rtz.tlz.
+Installing package sbodog-custom-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# sbodog (sbopkg gui plugin.)
+#
+# SBoDog helps you to work on SlackBuilds from sbo , ponce repos in a
+# nice gui using sbopkg package manager.
+#
+# https://github.com/rizitis/SBoDog
+Executing install script for sbodog-custom-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
+/usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
+/usr/share/fonts/TTF/oxygen: caching, new cache contents: 3 fonts, 0 dirs
+/usr/share/fonts/TTF/static: caching, new cache contents: 36 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package sbodog-custom-x86_64-1_rtz.tlz installed.
+rm: cannot remove '*.git': No such file or directory
