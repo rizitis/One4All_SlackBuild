@@ -1,0 +1,4 @@
+Dont ran as root.
+Dont chroot
+Script will ask sudo paswaord only for makepkg command at the end.
+
