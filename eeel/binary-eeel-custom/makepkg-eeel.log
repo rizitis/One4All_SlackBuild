@@ -1,5 +1,5 @@
 
-Wed Sep 25 14:21:56 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Fri Sep 27 14:27:17 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -44,6 +44,7 @@ usr/share/icons/hicolor/48x48/apps/eeel.png
 usr/share/pixmaps/
 usr/share/pixmaps/eeel/
 usr/share/pixmaps/eeel/icons/
+usr/share/pixmaps/eeel/icons/1.png
 usr/share/pixmaps/eeel/icons/10.png
 usr/share/pixmaps/eeel/icons/11.png
 usr/share/pixmaps/eeel/icons/12.png
@@ -52,17 +53,16 @@ usr/share/pixmaps/eeel/icons/14.png
 usr/share/pixmaps/eeel/icons/15.png
 usr/share/pixmaps/eeel/icons/16.png
 usr/share/pixmaps/eeel/icons/17.png
-usr/share/pixmaps/eeel/icons/1.png
 usr/share/pixmaps/eeel/icons/2.png
 usr/share/pixmaps/eeel/icons/3.png
 usr/share/pixmaps/eeel/icons/4.png
 usr/share/pixmaps/eeel/icons/5.png
 usr/share/pixmaps/eeel/icons/6.png
 usr/share/pixmaps/eeel/icons/7.png
+usr/share/pixmaps/eeel/icons/8.png
 usr/share/pixmaps/eeel/icons/8712729_picture_iso_premium_icon.png
 usr/share/pixmaps/eeel/icons/8712789_backward_iso_premium_icon.png
 usr/share/pixmaps/eeel/icons/8712837_lab_iso_premium_icon.png
-usr/share/pixmaps/eeel/icons/8.png
 usr/share/pixmaps/eeel/icons/9.png
 usr/share/pixmaps/eeel/icons/academic.png
 usr/share/pixmaps/eeel/icons/accessibility.png
@@ -71,10 +71,10 @@ usr/share/pixmaps/eeel/icons/business.png
 usr/share/pixmaps/eeel/icons/desktop.png
 usr/share/pixmaps/eeel/icons/development.png
 usr/share/pixmaps/eeel/icons/eeel-3d.png
-usr/share/pixmaps/eeel/icons/eel2.png
 usr/share/pixmaps/eeel/icons/eel-fish.png
 usr/share/pixmaps/eeel/icons/eel-ico.png
 usr/share/pixmaps/eeel/icons/eel.png
+usr/share/pixmaps/eeel/icons/eel2.png
 usr/share/pixmaps/eeel/icons/electric-eel.png
 usr/share/pixmaps/eeel/icons/games.png
 usr/share/pixmaps/eeel/icons/gis.png
