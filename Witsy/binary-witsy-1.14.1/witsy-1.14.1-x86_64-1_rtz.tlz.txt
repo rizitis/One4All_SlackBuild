@@ -1,0 +1,11 @@
+witsy: witsy (Generative AI desktop application)
+witsy:
+witsy: Generate content in any application: From any editable content in
+witsy: any application Hit the Prompt anywhere shortcut
+witsy: (Shift+Control+Space / ^⇧Space) Enter your prompt in the window
+witsy: that pops up Watch Witsy enter the text directly in your
+witsy: application!
+witsy:
+witsy:
+witsy:
+witsy: https://github.com/nbonamy/witsy

@@ -1,0 +1,118 @@
+
+Fri Sep 27 21:10:09 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/Witsy/binary-witsy-1.14.1/witsy-1.14.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/witsy-1.14.1/
+usr/doc/witsy-1.14.1/witsy.SlackBuild
+usr/local/
+usr/local/bin/
+usr/local/bin/witsy
+usr/local/bin/Witsy-linux-x64/
+usr/local/bin/Witsy-linux-x64/chrome_100_percent.pak
+usr/local/bin/Witsy-linux-x64/chrome_200_percent.pak
+usr/local/bin/Witsy-linux-x64/chrome_crashpad_handler
+usr/local/bin/Witsy-linux-x64/chrome-sandbox
+usr/local/bin/Witsy-linux-x64/icon.png
+usr/local/bin/Witsy-linux-x64/icudtl.dat
+usr/local/bin/Witsy-linux-x64/libEGL.so
+usr/local/bin/Witsy-linux-x64/libffmpeg.so
+usr/local/bin/Witsy-linux-x64/libGLESv2.so
+usr/local/bin/Witsy-linux-x64/libvk_swiftshader.so
+usr/local/bin/Witsy-linux-x64/libvulkan.so.1
+usr/local/bin/Witsy-linux-x64/LICENSE
+usr/local/bin/Witsy-linux-x64/LICENSES.chromium.html
+usr/local/bin/Witsy-linux-x64/locales/
+usr/local/bin/Witsy-linux-x64/locales/af.pak
+usr/local/bin/Witsy-linux-x64/locales/am.pak
+usr/local/bin/Witsy-linux-x64/locales/ar.pak
+usr/local/bin/Witsy-linux-x64/locales/bg.pak
+usr/local/bin/Witsy-linux-x64/locales/bn.pak
+usr/local/bin/Witsy-linux-x64/locales/ca.pak
+usr/local/bin/Witsy-linux-x64/locales/cs.pak
+usr/local/bin/Witsy-linux-x64/locales/da.pak
+usr/local/bin/Witsy-linux-x64/locales/de.pak
+usr/local/bin/Witsy-linux-x64/locales/el.pak
+usr/local/bin/Witsy-linux-x64/locales/en-GB.pak
+usr/local/bin/Witsy-linux-x64/locales/en-US.pak
+usr/local/bin/Witsy-linux-x64/locales/es-419.pak
+usr/local/bin/Witsy-linux-x64/locales/es.pak
+usr/local/bin/Witsy-linux-x64/locales/et.pak
+usr/local/bin/Witsy-linux-x64/locales/fa.pak
+usr/local/bin/Witsy-linux-x64/locales/fil.pak
+usr/local/bin/Witsy-linux-x64/locales/fi.pak
+usr/local/bin/Witsy-linux-x64/locales/fr.pak
+usr/local/bin/Witsy-linux-x64/locales/gu.pak
+usr/local/bin/Witsy-linux-x64/locales/he.pak
+usr/local/bin/Witsy-linux-x64/locales/hi.pak
+usr/local/bin/Witsy-linux-x64/locales/hr.pak
+usr/local/bin/Witsy-linux-x64/locales/hu.pak
+usr/local/bin/Witsy-linux-x64/locales/id.pak
+usr/local/bin/Witsy-linux-x64/locales/it.pak
+usr/local/bin/Witsy-linux-x64/locales/ja.pak
+usr/local/bin/Witsy-linux-x64/locales/kn.pak
+usr/local/bin/Witsy-linux-x64/locales/ko.pak
+usr/local/bin/Witsy-linux-x64/locales/lt.pak
+usr/local/bin/Witsy-linux-x64/locales/lv.pak
+usr/local/bin/Witsy-linux-x64/locales/ml.pak
+usr/local/bin/Witsy-linux-x64/locales/mr.pak
+usr/local/bin/Witsy-linux-x64/locales/ms.pak
+usr/local/bin/Witsy-linux-x64/locales/nb.pak
+usr/local/bin/Witsy-linux-x64/locales/nl.pak
+usr/local/bin/Witsy-linux-x64/locales/pl.pak
+usr/local/bin/Witsy-linux-x64/locales/pt-BR.pak
+usr/local/bin/Witsy-linux-x64/locales/pt-PT.pak
+usr/local/bin/Witsy-linux-x64/locales/ro.pak
+usr/local/bin/Witsy-linux-x64/locales/ru.pak
+usr/local/bin/Witsy-linux-x64/locales/sk.pak
+usr/local/bin/Witsy-linux-x64/locales/sl.pak
+usr/local/bin/Witsy-linux-x64/locales/sr.pak
+usr/local/bin/Witsy-linux-x64/locales/sv.pak
+usr/local/bin/Witsy-linux-x64/locales/sw.pak
+usr/local/bin/Witsy-linux-x64/locales/ta.pak
+usr/local/bin/Witsy-linux-x64/locales/te.pak
+usr/local/bin/Witsy-linux-x64/locales/th.pak
+usr/local/bin/Witsy-linux-x64/locales/tr.pak
+usr/local/bin/Witsy-linux-x64/locales/uk.pak
+usr/local/bin/Witsy-linux-x64/locales/ur.pak
+usr/local/bin/Witsy-linux-x64/locales/vi.pak
+usr/local/bin/Witsy-linux-x64/locales/zh-CN.pak
+usr/local/bin/Witsy-linux-x64/locales/zh-TW.pak
+usr/local/bin/Witsy-linux-x64/resources/
+usr/local/bin/Witsy-linux-x64/resources/app.asar
+usr/local/bin/Witsy-linux-x64/resources/bulbTemplate@2x.png
+usr/local/bin/Witsy-linux-x64/resources/bulbTemplate.png
+usr/local/bin/Witsy-linux-x64/resources.pak
+usr/local/bin/Witsy-linux-x64/snapshot_blob.bin
+usr/local/bin/Witsy-linux-x64/v8_context_snapshot.bin
+usr/local/bin/Witsy-linux-x64/version
+usr/local/bin/Witsy-linux-x64/vk_swiftshader_icd.json
+usr/local/bin/Witsy-linux-x64/Witsy
+usr/share/
+usr/share/applications/
+usr/share/applications/witsy.desktop
+usr/share/pixmaps/
+usr/share/pixmaps/witsy.png
+
+Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/Witsy/binary-witsy-1.14.1/witsy-1.14.1-x86_64-1_rtz.tlz created.
+
