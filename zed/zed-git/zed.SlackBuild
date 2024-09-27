@@ -289,7 +289,7 @@ CXXFLAGS="$SLKCFLAGS" \
 #### installpkg at ~/ ########
    cp -R "$PRGNAM"/"$HOME"/.* "$HOME"/
 #### if you dont like ^^ comment it and cp manually ######
-rm -r binary* work
+rm -rf binary* work/.* work "$PRGNAM"
   }
 
    after_build(){
