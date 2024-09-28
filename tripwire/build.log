@@ -1,0 +1,1943 @@
+Starting build process...
+Cloning into 'tripwire-open-source'...
+patching file src/Makefile.in
+patching file src/core/Makefile.in
+patching file src/core/file_unix.cpp
+patching file src/core/hashtable.h
+patching file src/core/stringutil.cpp
+patching file src/core/types.h
+patching file src/cryptlib/Makefile.in
+patching file src/cryptlib/asn.cpp
+patching file src/cryptlib/asn.h
+patching file src/cryptlib/config.h
+patching file src/cryptlib/cryptlib.cpp
+patching file src/cryptlib/cryptlib.h
+patching file src/cryptlib/des.cpp
+patching file src/cryptlib/des.h
+patching file src/cryptlib/elgamal.cpp
+patching file src/cryptlib/elgamal.h
+patching file src/cryptlib/filters.cpp
+patching file src/cryptlib/filters.h
+patching file src/cryptlib/forkjoin.cpp
+patching file src/cryptlib/forkjoin.h
+patching file src/cryptlib/integer.cpp
+patching file src/cryptlib/integer.h
+patching file src/cryptlib/iterhash.h
+patching file src/cryptlib/misc.cpp
+patching file src/cryptlib/misc.h
+patching file src/cryptlib/queue.cpp
+patching file src/cryptlib/queue.h
+patching file src/cryptlib/rng.cpp
+patching file src/cryptlib/rng.h
+patching file src/cryptlib/sha.cpp
+patching file src/cryptlib/sha.h
+patching file src/cryptlib/zbits.cpp
+patching file src/cryptlib/zbits.h
+patching file src/cryptlib/zdeflate.cpp
+patching file src/cryptlib/zdeflate.h
+patching file src/cryptlib/zinflate.cpp
+patching file src/cryptlib/zinflate.h
+patching file src/cryptlib/ztrees.cpp
+patching file src/cryptlib/ztrees.h
+patching file src/db/Makefile.in
+patching file src/fco/Makefile.in
+patching file src/fco/signature.cpp
+patching file src/fco/signature.h
+patching file src/fs/Makefile.in
+patching file src/siggen/Makefile.in
+patching file src/tripwire/Makefile.in
+patching file src/tripwire/mailmessage.h
+patching file src/tw/Makefile.in
+patching file src/tw/twutil.cpp
+patching file src/twadmin/Makefile.in
+patching file src/twcrypto/Makefile.in
+patching file src/twcrypto/bytequeue.cpp
+patching file src/twcrypto/bytequeue.h
+patching file src/twcrypto/crypto.cpp
+patching file src/twcrypto/cryptoarchive.cpp
+patching file src/twparser/Makefile.in
+patching file src/twprint/Makefile.in
+patching file src/twtest/Makefile.in
+patching file src/twtest/platform_t.cpp
+patching file src/twtest/serializerimpl_t.cpp
+patching file src/twtest/signature_t.cpp
+patching file src/util/Makefile.in
+configure.ac:9: warning: 'AM_CONFIG_HEADER': this macro is obsolete.
+configure.ac:9: You should use the 'AC_CONFIG_HEADERS' macro instead.
+aclocal.m4:707: AM_CONFIG_HEADER is expanded from...
+configure.ac:9: the top level
+configure.ac:94: warning: The macro 'AC_HEADER_STDC' is obsolete.
+configure.ac:94: You should run autoupdate.
+./lib/autoconf/headers.m4:663: AC_HEADER_STDC is expanded from...
+configure.ac:94: the top level
+configure.ac:120: warning: The macro 'AC_HEADER_TIME' is obsolete.
+configure.ac:120: You should run autoupdate.
+./lib/autoconf/headers.m4:702: AC_HEADER_TIME is expanded from...
+configure.ac:120: the top level
+configure.ac:234: warning: The macro 'AC_LANG_CPLUSPLUS' is obsolete.
+configure.ac:234: You should run autoupdate.
+./lib/autoconf/c.m4:270: AC_LANG_CPLUSPLUS is expanded from...
+configure.ac:234: the top level
+configure.ac:239: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+configure.ac:239: You should run autoupdate.
+./lib/autoconf/general.m4:2845: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/headers.m4:89: _AC_CHECK_HEADER_COMPILE is expanded from...
+./lib/autoconf/headers.m4:56: AC_CHECK_HEADER is expanded from...
+configure.ac:239: the top level
+configure.ac:272: warning: The macro 'AC_TRY_LINK' is obsolete.
+configure.ac:272: You should run autoupdate.
+./lib/autoconf/general.m4:2918: AC_TRY_LINK is expanded from...
+configure.ac:272: the top level
+configure.ac:272: warning: The macro 'AC_TRY_LINK' is obsolete.
+configure.ac:272: You should run autoupdate.
+./lib/autoconf/general.m4:2918: AC_TRY_LINK is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2892: _AC_LINK_IFELSE is expanded from...
+./lib/autoconf/general.m4:2909: AC_LINK_IFELSE is expanded from...
+./lib/autoconf/general.m4:2918: AC_TRY_LINK is expanded from...
+configure.ac:272: the top level
+configure.ac:384: warning: The macro 'AC_TRY_LINK' is obsolete.
+configure.ac:384: You should run autoupdate.
+./lib/autoconf/general.m4:2918: AC_TRY_LINK is expanded from...
+configure.ac:384: the top level
+configure.ac:415: warning: The macro 'AC_TRY_RUN' is obsolete.
+configure.ac:415: You should run autoupdate.
+./lib/autoconf/general.m4:2995: AC_TRY_RUN is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+configure.ac:415: the top level
+Preparing the tripwire build system...please wait
+
+Found GNU Autoconf version 2.72
+Found GNU Automake version 1.17
+Found GNU Libtool version 2.5.3
+
+Automatically preparing build ... done
+
+The tripwire build system is now prepared.  To build here, run:
+  ./configure
+  make
+checking build system type... x86_64-slackware-linux-gnu
+checking host system type... x86_64-slackware-linux-gnu
+checking target system type... x86_64-slackware-linux-gnu
+checking for a BSD-compatible install... /usr/bin/ginstall -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... none
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... none
+checking for ranlib... ranlib
+checking for bison... bison -y
+checking whether ln -s works... yes
+checking whether ln works... yes
+checking for ar... ar
+checking for vi... /usr/bin/vi
+checking for sendmail... /usr/sbin/sendmail
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for sys/time.h... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for sys/param.h... yes
+checking for sys/mount.h... yes
+checking for sys/ustat.h... no
+checking for sys/sysmacros.h... yes
+checking for sys/syslog.h... yes
+checking for sys/socket.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/unistd.h... yes
+checking for syslog.h... yes
+checking for langinfo.h... yes
+checking for sys/statfs.h... yes
+checking for sys/select.h... yes
+checking for signum.h... no
+checking for bits/signum.h... no
+checking for stdarg.h... yes
+checking for sys/utsname.h... yes
+checking for memory.h... yes
+checking for sys/fs/vx_ioctl.h... no
+checking for malloc.h... yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking whether byte ordering is bigendian... no
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of time_t... 8
+checking for struct stat.st_rdev... yes
+checking for struct stat.st_blocks... yes
+checking for strftime... yes
+checking for gethostname... yes
+checking for gethostid... yes
+checking for mkstemp... yes
+checking for swab... yes
+checking for fcntl.h... yes
+checking for posix_fadvise... yes
+checking for CommonCrypto/CommonDigest.h... no
+checking for door.h... no
+checking for port.h... no
+checking for socket in -lc... yes
+checking for gethostbyname in -lc... yes
+checking for locale... yes
+checking for wchar.h... yes
+checking for OpenSSL directory... /usr
+checking for openssl/md5.h... yes
+checking for openssl/sha.h... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating man/Makefile
+config.status: creating man/man4/Makefile
+config.status: creating man/man5/Makefile
+config.status: creating man/man8/Makefile
+config.status: creating src/Makefile
+config.status: creating src/cryptlib/Makefile
+config.status: creating src/core/Makefile
+config.status: creating src/db/Makefile
+config.status: creating src/fco/Makefile
+config.status: creating src/fs/Makefile
+config.status: creating src/tw/Makefile
+config.status: creating src/twcrypto/Makefile
+config.status: creating src/twparser/Makefile
+config.status: creating src/util/Makefile
+config.status: creating src/twprint/Makefile
+config.status: creating src/twadmin/Makefile
+config.status: creating src/siggen/Makefile
+config.status: creating src/tripwire/Makefile
+config.status: creating src/twtest/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing mk_lib commands
+config.status: executing mk_bin commands
+make  all-recursive
+make[1]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source'
+Making all in man
+make[2]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/man'
+Making all in man4
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/man/man4'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/man/man4'
+Making all in man5
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/man/man5'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/man/man5'
+Making all in man8
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/man/man8'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/man/man8'
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/man'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/man'
+make[2]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/man'
+Making all in src
+make[2]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src'
+Making all in cryptlib
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/cryptlib'
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o algebra.o algebra.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o asn.o asn.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o cryptlib.o cryptlib.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o des.o des.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o dessp.o dessp.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o elgamal.o elgamal.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o eprecomp.o eprecomp.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o filters.o filters.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o forkjoin.o forkjoin.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o integer.o integer.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o iterhash.o iterhash.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o misc.o misc.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o nbtheory.o nbtheory.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o pch.o pch.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o queue.o queue.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o rng.o rng.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o sha.o sha.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o zbits.o zbits.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o zdeflate.o zdeflate.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o zinflate.o zinflate.cpp
+g++ -DHAVE_CONFIG_H		   -I.. -I../..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o ztrees.o ztrees.cpp
+zdeflate.cpp: In member function ‘void Deflator::init_hash()’:
+zdeflate.cpp:145:22: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  145 |    register unsigned j;
+      |                      ^
+zdeflate.cpp: In member function ‘int Deflator::longest_match(IPos)’:
+zdeflate.cpp:208:20: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  208 |    register ibyte *scan = window + strstart;     /* current string */
+      |                    ^~~~
+zdeflate.cpp:209:20: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  209 |    register ibyte *match;                        /* matched string */
+      |                    ^~~~~
+zdeflate.cpp:210:17: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  210 |    register int len;                           /* length of current match */
+      |                 ^~~
+zdeflate.cpp:212:43: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+  212 |    IPos limit = strstart > (IPos)MAX_DIST ? strstart - (IPos)MAX_DIST : NIL;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+zdeflate.cpp:230:20: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |    register ibyte *strend = window + strstart + MAX_MATCH;
+      |                    ^~~~~~
+zdeflate.cpp:231:19: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  231 |    register ibyte scan_end1 = scan[best_len-1];
+      |                   ^~~~~~~~~
+zdeflate.cpp:232:19: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  232 |    register ibyte scan_end  = scan[best_len];
+      |                   ^~~~~~~~
+zinflate.cpp: In member function ‘int Inflator::huft_build(unsigned int*, unsigned int, unsigned int, const word16*, const word16*, huft**, int*)’:
+zinflate.cpp:255:21: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  255 |   register unsigned i;          /* counter, current code */
+      |                     ^
+zdeflate.cpp: In member function ‘unsigned int Deflator::fill_window(const ibyte*, unsigned int)’:
+zdeflate.cpp:355:22: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  355 |    register unsigned n, m;
+      |                      ^
+zdeflate.cpp:355:25: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  355 |    register unsigned n, m;
+      |                         ^
+zinflate.cpp:256:21: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  256 |   register unsigned j;          /* counter */
+      |                     ^
+zinflate.cpp:257:16: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  257 |   register int k;               /* number of bits in current code */
+      |                ^
+zinflate.cpp:259:22: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  259 |   register unsigned *p;         /* pointer into c[], b[], or v[] */
+      |                      ^
+zinflate.cpp:260:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  260 |   register huft *q;      /* points to current table */
+      |                  ^
+zdeflate.cpp:374:47: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+  374 |          head[n] = (Pos)(m >= (unsigned)WSIZE ? m-WSIZE : NIL);
+      |                          ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+zinflate.cpp:264:16: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  264 |   register int w;               /* bits before this table == (l * h) */
+      |                ^
+zdeflate.cpp:378:47: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+  378 |          prev[n] = (Pos)(m >= (unsigned)WSIZE ? m-WSIZE : NIL);
+      |                          ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+zinflate.cpp: In member function ‘int Inflator::huft_free(huft*)’:
+zinflate.cpp:438:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  438 |   register huft *p, *q;
+      |                  ^
+zdeflate.cpp: In member function ‘int Deflator::lazy_deflate(const ibyte*, unsigned int)’:
+zdeflate.cpp:492:22: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  492 |    register unsigned ml = match_length; /* length of best match */
+      |                      ^~
+zinflate.cpp:438:22: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  438 |   register huft *p, *q;
+      |                      ^
+zinflate.cpp: In member function ‘int Inflator::inflate_codes(huft*, huft*, int, int)’:
+zinflate.cpp:457:21: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  457 |   register unsigned e;  /* table entry flag/number of extra bits */
+      |                     ^
+zinflate.cpp:462:19: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  462 |   register word32 b;       /* bit buffer */
+      |                   ^
+zinflate.cpp:463:21: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  463 |   register unsigned k;  /* number of bits in bit buffer */
+      |                     ^
+zinflate.cpp: In member function ‘int Inflator::inflate_stored()’:
+zinflate.cpp:565:19: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  565 |   register word32 b;       /* bit buffer */
+      |                   ^
+zinflate.cpp:566:21: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  566 |   register unsigned k;  /* number of bits in bit buffer */
+      |                     ^
+zinflate.cpp: In member function ‘int Inflator::inflate_dynamic()’:
+zinflate.cpp:684:19: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  684 |   register word32 b;       /* bit buffer */
+      |                   ^
+zinflate.cpp:685:21: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  685 |   register unsigned k;  /* number of bits in bit buffer */
+      |                     ^
+zinflate.cpp: In member function ‘int Inflator::inflate_block(bool&)’:
+zinflate.cpp:832:19: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  832 |   register word32 b;       /* bit buffer */
+      |                   ^
+zinflate.cpp:833:21: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  833 |   register unsigned k;  /* number of bits in bit buffer */
+      |                     ^
+des.cpp: In constructor ‘DES::DES(const ibyte*, CipherDir)’:
+des.cpp:173:30: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  173 |        register unsigned int i,j,l;
+      |                              ^
+des.cpp:173:32: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  173 |        register unsigned int i,j,l;
+      |                                ^
+des.cpp:173:34: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  173 |        register unsigned int i,j,l;
+      |                                  ^
+ztrees.cpp: In function ‘unsigned int reverse(unsigned int, int)’:
+ztrees.cpp:100:22: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  100 |    register unsigned res = 0;
+      |                      ^~~
+ztrees.cpp: In constructor ‘CodeTree::CodeTree(int, BufferedTransformation&)’:
+ztrees.cpp:129:26: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  129 |    register unsigned int code; /* code value */
+      |                          ^~~~
+ztrees.cpp: In member function ‘void CodeTree::init_block()’:
+ztrees.cpp:194:26: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  194 |    register unsigned int n; /* iterates over tree elements */
+      |                          ^
+sha.cpp: In static member function ‘static void SHA::Transform(word32*, const word32*)’:
+sha.cpp:118:21: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  118 |     register word32 A, B, C, D, E;
+      |                     ^
+sha.cpp:118:24: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  118 |     register word32 A, B, C, D, E;
+      |                        ^
+sha.cpp:118:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  118 |     register word32 A, B, C, D, E;
+      |                           ^
+sha.cpp:118:30: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  118 |     register word32 A, B, C, D, E;
+      |                              ^
+sha.cpp:118:33: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  118 |     register word32 A, B, C, D, E;
+      |                                 ^
+integer.cpp: In function ‘void MontgomeryReduce(word*, word*, const word*, const word*, const word*, unsigned int)’:
+integer.cpp:745:14: warning: unused variable ‘carry’ [-Wunused-variable]
+  745 |         word carry = Add(R, R, M, N);
+      |              ^~~~~
+integer.cpp: In function ‘void CorrectQuotientEstimate(word*, word*, word&, word&, const word*, unsigned int)’:
+integer.cpp:905:10: warning: unused variable ‘borrow’ [-Wunused-variable]
+  905 |     word borrow = Subtract(R, R, T, N+2);
+      |          ^~~~~~
+integer.cpp: In member function ‘Integer& Integer::operator++()’:
+integer.cpp:1619:14: warning: unused variable ‘borrow’ [-Wunused-variable]
+ 1619 |         word borrow = Decrement(reg, reg.size);
+      |              ^~~~~~
+rm -f libcryptlib.a
+ar cr libcryptlib.a algebra.o asn.o cryptlib.o des.o dessp.o elgamal.o eprecomp.o filters.o forkjoin.o integer.o iterhash.o misc.o nbtheory.o pch.o queue.o rng.o sha.o zbits.o zdeflate.o zinflate.o ztrees.o 
+ranlib libcryptlib.a
+ln -f libcryptlib.a ../../lib/libcryptlib.a
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/cryptlib'
+Making all in core
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/core'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o file_unix.o file_unix.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o unixfsservices.o unixfsservices.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o archive.o archive.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o charutil.o charutil.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o cmdlineparser.o cmdlineparser.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o codeconvert.o codeconvert.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o core.o core.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o coreerrors.o coreerrors.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o corestrings.o corestrings.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o crc32.o crc32.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o debug.o debug.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o displayencoder.o displayencoder.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o displayutil.o displayutil.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o epoch.o epoch.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o error.o error.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o errorbucketimpl.o errorbucketimpl.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o errortable.o errortable.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o errorutil.o errorutil.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fileerror.o fileerror.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fileheader.o fileheader.cpp
+archive.cpp:793:7: warning: multi-line comment [-Wcomment]
+  793 | #if 0 // IS_SUNPRO \
+      |       ^
+file_unix.cpp: In member function ‘void cFile::Close()’:
+file_unix.cpp:279:28: warning: ignoring return value of ‘bool std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::empty() const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  279 |     mpData->mFileName.empty();
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/14.2.0/string:54,
+                 from ./../core/stdcore.h:99,
+                 from file_unix.cpp:41:
+/usr/include/c++/14.2.0/bits/basic_string.h:1231:7: note: declared here
+ 1231 |       empty() const _GLIBCXX_NOEXCEPT
+      |       ^~~~~
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fsservices.o fsservices.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o growheap.o growheap.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o hashtable.o hashtable.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o haval.o haval.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o msystem.o msystem.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o ntmbs.o ntmbs.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o refcountobj.o refcountobj.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o serializable.o serializable.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o serializer.o serializer.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o serializerimpl.o serializerimpl.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o serializerutil.o serializerutil.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o serstring.o serstring.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o srefcountobj.o srefcountobj.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o srefcounttbl.o srefcounttbl.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdcore.o stdcore.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stringutil.o stringutil.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o timeconvert.o timeconvert.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o tw_signal.o tw_signal.cpp
+msystem.cpp: In function ‘char** c2alloc(const char**, int*)’:
+msystem.cpp:256:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  256 |     register int i;     /* counter in a for loop */
+      |                  ^
+msystem.cpp: In function ‘int initenv()’:
+msystem.cpp:287:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  287 |     register int i;
+      |                  ^
+msystem.cpp:288:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  288 |     register int rval;
+      |                  ^~~~
+msystem.cpp: In function ‘void le_clobber()’:
+msystem.cpp:309:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  309 |     register int i;     /* counter in a for loop */
+      |                  ^
+msystem.cpp: In function ‘int le_getenv(const char*)’:
+msystem.cpp:347:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  347 |     register int i;         /* counter in a for loop */
+      |                  ^
+msystem.cpp:348:20: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  348 |     register char *p, *q;       /* used to compare two strings */
+      |                    ^
+msystem.cpp:348:24: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  348 |     register char *p, *q;       /* used to compare two strings */
+      |                        ^
+msystem.cpp: In function ‘int le_set(const char*)’:
+msystem.cpp:388:20: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  388 |     register char *p, *q;       /* what is to be put into env */
+      |                    ^
+msystem.cpp:388:24: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  388 |     register char *p, *q;       /* what is to be put into env */
+      |                        ^
+msystem.cpp:389:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  389 |     register int n;         /* where a previous definition is */
+      |                  ^
+msystem.cpp: In function ‘int le_unset(const char*)’:
+msystem.cpp:478:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  478 |     register int i;     /* counter in a for loop */
+      |                  ^
+msystem.cpp: In function ‘const char* shellenv()’:
+msystem.cpp:598:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  598 |     register int i;     /* counter in a for loop */
+      |                  ^
+msystem.cpp:599:26: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  599 |     register const char *shptr; /* points to shell name */
+      |                          ^~~~~
+msystem.cpp: In function ‘int msystem(const char*)’:
+msystem.cpp:634:26: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  634 |     register const char *p;     /* temoporary pointers */
+      |                          ^
+msystem.cpp:635:26: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  635 |     register const char* shptr;     /* the program to be run */
+      |                          ^~~~~
+msystem.cpp:636:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  636 |     register int i;         /* index number of child */
+      |                  ^
+msystem.cpp: In function ‘FILE* mpopen(const char*, const char*)’:
+msystem.cpp:687:26: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  687 |     register const char *p;     /* temoporary pointers */
+      |                          ^
+msystem.cpp:688:26: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  688 |     register const char *shptr;     /* the program to be run */
+      |                          ^~~~~
+msystem.cpp:690:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  690 |     register int indx;      /* index number of child */
+      |                  ^~~~
+msystem.cpp: In function ‘int mpclose(FILE*)’:
+msystem.cpp:736:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  736 |     register int indx;  /* used to look for corresponding pid */
+      |                  ^~~~
+msystem.cpp:737:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  737 |     register int rstatus;   /* return status of command */
+      |                  ^~~~~~~
+msystem.cpp: In function ‘int mfpopen(const char*, FILE**)’:
+msystem.cpp:774:26: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  774 |     register const char *p;     /* temoporary pointers */
+      |                          ^
+msystem.cpp:775:26: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  775 |     register const char *shptr;     /* the program to be run */
+      |                          ^~~~~
+msystem.cpp:776:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  776 |     register int indx;      /* index number of child */
+      |                  ^~~~
+msystem.cpp: In function ‘int mfpclose(int, FILE**)’:
+msystem.cpp:819:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  819 |     register int rstatus;   /* return status of command */
+      |                  ^~~~~~~
+msystem.cpp: In function ‘int mxfpopen(const char**, FILE**)’:
+msystem.cpp:853:22: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  853 |         register int indx;              /* index number of child */
+      |                      ^~~~
+msystem.cpp: In function ‘int schild(const char*, const char**, const char**, FILE**, int)’:
+msystem.cpp:913:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  913 |     register int i;         /* counter in for loop */
+      |                  ^
+msystem.cpp:914:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  914 |     register int ch_pid;        /* child PID */
+      |                  ^~~~~~
+msystem.cpp:915:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  915 |     register int euid, egid;    /* in case reset[gu]id is -1 */
+      |                  ^~~~
+msystem.cpp:915:24: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  915 |     register int euid, egid;    /* in case reset[gu]id is -1 */
+      |                        ^~~~
+msystem.cpp: In function ‘int echild(int)’:
+msystem.cpp:1032:18: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+ 1032 |     register int r;     /* PID of process just exited */
+      |                  ^
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twlimits.o twlimits.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twlocale.o twlocale.cpp
+haval.cpp: In function ‘void haval_hash_block(haval_state*)’:
+haval.cpp:451:23: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  451 |   register haval_word t0 = state->fingerprint[0],    /* make use of */
+      |                       ^~
+haval.cpp:452:23: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  452 |                       t1 = state->fingerprint[1],    /* internal registers */
+      |                       ^~
+haval.cpp:453:23: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  453 |                       t2 = state->fingerprint[2],
+      |                       ^~
+haval.cpp:454:23: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  454 |                       t3 = state->fingerprint[3],
+      |                       ^~
+haval.cpp:455:23: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  455 |                       t4 = state->fingerprint[4],
+      |                       ^~
+haval.cpp:456:23: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  456 |                       t5 = state->fingerprint[5],
+      |                       ^~
+haval.cpp:457:23: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  457 |                       t6 = state->fingerprint[6],
+      |                       ^~
+haval.cpp:458:23: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  458 |                       t7 = state->fingerprint[7],
+      |                       ^~
+haval.cpp:459:24: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  459 |                       *w = state->block;
+      |                        ^
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:462:3: note: in expansion of macro ‘FF_1’
+  462 |   FF_1(t7, t6, t5, t4, t3, t2, t1, t0, *(w   ));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:463:3: note: in expansion of macro ‘FF_1’
+  463 |   FF_1(t6, t5, t4, t3, t2, t1, t0, t7, *(w+ 1));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:464:3: note: in expansion of macro ‘FF_1’
+  464 |   FF_1(t5, t4, t3, t2, t1, t0, t7, t6, *(w+ 2));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:465:3: note: in expansion of macro ‘FF_1’
+  465 |   FF_1(t4, t3, t2, t1, t0, t7, t6, t5, *(w+ 3));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:466:3: note: in expansion of macro ‘FF_1’
+  466 |   FF_1(t3, t2, t1, t0, t7, t6, t5, t4, *(w+ 4));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:467:3: note: in expansion of macro ‘FF_1’
+  467 |   FF_1(t2, t1, t0, t7, t6, t5, t4, t3, *(w+ 5));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:468:3: note: in expansion of macro ‘FF_1’
+  468 |   FF_1(t1, t0, t7, t6, t5, t4, t3, t2, *(w+ 6));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:469:3: note: in expansion of macro ‘FF_1’
+  469 |   FF_1(t0, t7, t6, t5, t4, t3, t2, t1, *(w+ 7));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:471:3: note: in expansion of macro ‘FF_1’
+  471 |   FF_1(t7, t6, t5, t4, t3, t2, t1, t0, *(w+ 8));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:472:3: note: in expansion of macro ‘FF_1’
+  472 |   FF_1(t6, t5, t4, t3, t2, t1, t0, t7, *(w+ 9));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:473:3: note: in expansion of macro ‘FF_1’
+  473 |   FF_1(t5, t4, t3, t2, t1, t0, t7, t6, *(w+10));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:474:3: note: in expansion of macro ‘FF_1’
+  474 |   FF_1(t4, t3, t2, t1, t0, t7, t6, t5, *(w+11));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:475:3: note: in expansion of macro ‘FF_1’
+  475 |   FF_1(t3, t2, t1, t0, t7, t6, t5, t4, *(w+12));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:476:3: note: in expansion of macro ‘FF_1’
+  476 |   FF_1(t2, t1, t0, t7, t6, t5, t4, t3, *(w+13));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:477:3: note: in expansion of macro ‘FF_1’
+  477 |   FF_1(t1, t0, t7, t6, t5, t4, t3, t2, *(w+14));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:478:3: note: in expansion of macro ‘FF_1’
+  478 |   FF_1(t0, t7, t6, t5, t4, t3, t2, t1, *(w+15));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:480:3: note: in expansion of macro ‘FF_1’
+  480 |   FF_1(t7, t6, t5, t4, t3, t2, t1, t0, *(w+16));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:481:3: note: in expansion of macro ‘FF_1’
+  481 |   FF_1(t6, t5, t4, t3, t2, t1, t0, t7, *(w+17));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:482:3: note: in expansion of macro ‘FF_1’
+  482 |   FF_1(t5, t4, t3, t2, t1, t0, t7, t6, *(w+18));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:483:3: note: in expansion of macro ‘FF_1’
+  483 |   FF_1(t4, t3, t2, t1, t0, t7, t6, t5, *(w+19));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:484:3: note: in expansion of macro ‘FF_1’
+  484 |   FF_1(t3, t2, t1, t0, t7, t6, t5, t4, *(w+20));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:485:3: note: in expansion of macro ‘FF_1’
+  485 |   FF_1(t2, t1, t0, t7, t6, t5, t4, t3, *(w+21));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:486:3: note: in expansion of macro ‘FF_1’
+  486 |   FF_1(t1, t0, t7, t6, t5, t4, t3, t2, *(w+22));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:487:3: note: in expansion of macro ‘FF_1’
+  487 |   FF_1(t0, t7, t6, t5, t4, t3, t2, t1, *(w+23));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:489:3: note: in expansion of macro ‘FF_1’
+  489 |   FF_1(t7, t6, t5, t4, t3, t2, t1, t0, *(w+24));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:490:3: note: in expansion of macro ‘FF_1’
+  490 |   FF_1(t6, t5, t4, t3, t2, t1, t0, t7, *(w+25));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:491:3: note: in expansion of macro ‘FF_1’
+  491 |   FF_1(t5, t4, t3, t2, t1, t0, t7, t6, *(w+26));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:492:3: note: in expansion of macro ‘FF_1’
+  492 |   FF_1(t4, t3, t2, t1, t0, t7, t6, t5, *(w+27));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:493:3: note: in expansion of macro ‘FF_1’
+  493 |   FF_1(t3, t2, t1, t0, t7, t6, t5, t4, *(w+28));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:494:3: note: in expansion of macro ‘FF_1’
+  494 |   FF_1(t2, t1, t0, t7, t6, t5, t4, t3, *(w+29));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:495:3: note: in expansion of macro ‘FF_1’
+  495 |   FF_1(t1, t0, t7, t6, t5, t4, t3, t2, *(w+30));
+      |   ^~~~
+haval.cpp:225:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  225 |       register haval_word temp = Fphi_1(x6, x5, x4, x3, x2, x1, x0);     \
+      |                           ^~~~
+haval.cpp:496:3: note: in expansion of macro ‘FF_1’
+  496 |   FF_1(t0, t7, t6, t5, t4, t3, t2, t1, *(w+31));
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:499:3: note: in expansion of macro ‘FF_2’
+  499 |   FF_2(t7, t6, t5, t4, t3, t2, t1, t0, *(w+ 5), 0x452821E6);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:500:3: note: in expansion of macro ‘FF_2’
+  500 |   FF_2(t6, t5, t4, t3, t2, t1, t0, t7, *(w+14), 0x38D01377);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:501:3: note: in expansion of macro ‘FF_2’
+  501 |   FF_2(t5, t4, t3, t2, t1, t0, t7, t6, *(w+26), 0xBE5466CF);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:502:3: note: in expansion of macro ‘FF_2’
+  502 |   FF_2(t4, t3, t2, t1, t0, t7, t6, t5, *(w+18), 0x34E90C6C);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:503:3: note: in expansion of macro ‘FF_2’
+  503 |   FF_2(t3, t2, t1, t0, t7, t6, t5, t4, *(w+11), 0xC0AC29B7);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:504:3: note: in expansion of macro ‘FF_2’
+  504 |   FF_2(t2, t1, t0, t7, t6, t5, t4, t3, *(w+28), 0xC97C50DD);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:505:3: note: in expansion of macro ‘FF_2’
+  505 |   FF_2(t1, t0, t7, t6, t5, t4, t3, t2, *(w+ 7), 0x3F84D5B5);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:506:3: note: in expansion of macro ‘FF_2’
+  506 |   FF_2(t0, t7, t6, t5, t4, t3, t2, t1, *(w+16), 0xB5470917);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:508:3: note: in expansion of macro ‘FF_2’
+  508 |   FF_2(t7, t6, t5, t4, t3, t2, t1, t0, *(w   ), 0x9216D5D9);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:509:3: note: in expansion of macro ‘FF_2’
+  509 |   FF_2(t6, t5, t4, t3, t2, t1, t0, t7, *(w+23), 0x8979FB1B);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:510:3: note: in expansion of macro ‘FF_2’
+  510 |   FF_2(t5, t4, t3, t2, t1, t0, t7, t6, *(w+20), 0xD1310BA6);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:511:3: note: in expansion of macro ‘FF_2’
+  511 |   FF_2(t4, t3, t2, t1, t0, t7, t6, t5, *(w+22), 0x98DFB5AC);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:512:3: note: in expansion of macro ‘FF_2’
+  512 |   FF_2(t3, t2, t1, t0, t7, t6, t5, t4, *(w+ 1), 0x2FFD72DB);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:513:3: note: in expansion of macro ‘FF_2’
+  513 |   FF_2(t2, t1, t0, t7, t6, t5, t4, t3, *(w+10), 0xD01ADFB7);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:514:3: note: in expansion of macro ‘FF_2’
+  514 |   FF_2(t1, t0, t7, t6, t5, t4, t3, t2, *(w+ 4), 0xB8E1AFED);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:515:3: note: in expansion of macro ‘FF_2’
+  515 |   FF_2(t0, t7, t6, t5, t4, t3, t2, t1, *(w+ 8), 0x6A267E96);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:517:3: note: in expansion of macro ‘FF_2’
+  517 |   FF_2(t7, t6, t5, t4, t3, t2, t1, t0, *(w+30), 0xBA7C9045);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:518:3: note: in expansion of macro ‘FF_2’
+  518 |   FF_2(t6, t5, t4, t3, t2, t1, t0, t7, *(w+ 3), 0xF12C7F99);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:519:3: note: in expansion of macro ‘FF_2’
+  519 |   FF_2(t5, t4, t3, t2, t1, t0, t7, t6, *(w+21), 0x24A19947);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:520:3: note: in expansion of macro ‘FF_2’
+  520 |   FF_2(t4, t3, t2, t1, t0, t7, t6, t5, *(w+ 9), 0xB3916CF7);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:521:3: note: in expansion of macro ‘FF_2’
+  521 |   FF_2(t3, t2, t1, t0, t7, t6, t5, t4, *(w+17), 0x0801F2E2);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:522:3: note: in expansion of macro ‘FF_2’
+  522 |   FF_2(t2, t1, t0, t7, t6, t5, t4, t3, *(w+24), 0x858EFC16);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:523:3: note: in expansion of macro ‘FF_2’
+  523 |   FF_2(t1, t0, t7, t6, t5, t4, t3, t2, *(w+29), 0x636920D8);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:524:3: note: in expansion of macro ‘FF_2’
+  524 |   FF_2(t0, t7, t6, t5, t4, t3, t2, t1, *(w+ 6), 0x71574E69);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:526:3: note: in expansion of macro ‘FF_2’
+  526 |   FF_2(t7, t6, t5, t4, t3, t2, t1, t0, *(w+19), 0xA458FEA3);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:527:3: note: in expansion of macro ‘FF_2’
+  527 |   FF_2(t6, t5, t4, t3, t2, t1, t0, t7, *(w+12), 0xF4933D7E);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:528:3: note: in expansion of macro ‘FF_2’
+  528 |   FF_2(t5, t4, t3, t2, t1, t0, t7, t6, *(w+15), 0x0D95748F);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:529:3: note: in expansion of macro ‘FF_2’
+  529 |   FF_2(t4, t3, t2, t1, t0, t7, t6, t5, *(w+13), 0x728EB658);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:530:3: note: in expansion of macro ‘FF_2’
+  530 |   FF_2(t3, t2, t1, t0, t7, t6, t5, t4, *(w+ 2), 0x718BCD58);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:531:3: note: in expansion of macro ‘FF_2’
+  531 |   FF_2(t2, t1, t0, t7, t6, t5, t4, t3, *(w+25), 0x82154AEE);
+      |   ^~~~
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o unixexcept.o unixexcept.cpp
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:532:3: note: in expansion of macro ‘FF_2’
+  532 |   FF_2(t1, t0, t7, t6, t5, t4, t3, t2, *(w+31), 0x7B54A41D);
+      |   ^~~~
+haval.cpp:230:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  230 |       register haval_word temp = Fphi_2(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:533:3: note: in expansion of macro ‘FF_2’
+  533 |   FF_2(t0, t7, t6, t5, t4, t3, t2, t1, *(w+27), 0xC25A59B5);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:536:3: note: in expansion of macro ‘FF_3’
+  536 |   FF_3(t7, t6, t5, t4, t3, t2, t1, t0, *(w+19), 0x9C30D539);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:537:3: note: in expansion of macro ‘FF_3’
+  537 |   FF_3(t6, t5, t4, t3, t2, t1, t0, t7, *(w+ 9), 0x2AF26013);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:538:3: note: in expansion of macro ‘FF_3’
+  538 |   FF_3(t5, t4, t3, t2, t1, t0, t7, t6, *(w+ 4), 0xC5D1B023);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:539:3: note: in expansion of macro ‘FF_3’
+  539 |   FF_3(t4, t3, t2, t1, t0, t7, t6, t5, *(w+20), 0x286085F0);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:540:3: note: in expansion of macro ‘FF_3’
+  540 |   FF_3(t3, t2, t1, t0, t7, t6, t5, t4, *(w+28), 0xCA417918);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:541:3: note: in expansion of macro ‘FF_3’
+  541 |   FF_3(t2, t1, t0, t7, t6, t5, t4, t3, *(w+17), 0xB8DB38EF);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:542:3: note: in expansion of macro ‘FF_3’
+  542 |   FF_3(t1, t0, t7, t6, t5, t4, t3, t2, *(w+ 8), 0x8E79DCB0);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:543:3: note: in expansion of macro ‘FF_3’
+  543 |   FF_3(t0, t7, t6, t5, t4, t3, t2, t1, *(w+22), 0x603A180E);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:545:3: note: in expansion of macro ‘FF_3’
+  545 |   FF_3(t7, t6, t5, t4, t3, t2, t1, t0, *(w+29), 0x6C9E0E8B);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:546:3: note: in expansion of macro ‘FF_3’
+  546 |   FF_3(t6, t5, t4, t3, t2, t1, t0, t7, *(w+14), 0xB01E8A3E);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:547:3: note: in expansion of macro ‘FF_3’
+  547 |   FF_3(t5, t4, t3, t2, t1, t0, t7, t6, *(w+25), 0xD71577C1);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:548:3: note: in expansion of macro ‘FF_3’
+  548 |   FF_3(t4, t3, t2, t1, t0, t7, t6, t5, *(w+12), 0xBD314B27);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:549:3: note: in expansion of macro ‘FF_3’
+  549 |   FF_3(t3, t2, t1, t0, t7, t6, t5, t4, *(w+24), 0x78AF2FDA);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:550:3: note: in expansion of macro ‘FF_3’
+  550 |   FF_3(t2, t1, t0, t7, t6, t5, t4, t3, *(w+30), 0x55605C60);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:551:3: note: in expansion of macro ‘FF_3’
+  551 |   FF_3(t1, t0, t7, t6, t5, t4, t3, t2, *(w+16), 0xE65525F3);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:552:3: note: in expansion of macro ‘FF_3’
+  552 |   FF_3(t0, t7, t6, t5, t4, t3, t2, t1, *(w+26), 0xAA55AB94);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:554:3: note: in expansion of macro ‘FF_3’
+  554 |   FF_3(t7, t6, t5, t4, t3, t2, t1, t0, *(w+31), 0x57489862);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:555:3: note: in expansion of macro ‘FF_3’
+  555 |   FF_3(t6, t5, t4, t3, t2, t1, t0, t7, *(w+15), 0x63E81440);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:556:3: note: in expansion of macro ‘FF_3’
+  556 |   FF_3(t5, t4, t3, t2, t1, t0, t7, t6, *(w+ 7), 0x55CA396A);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:557:3: note: in expansion of macro ‘FF_3’
+  557 |   FF_3(t4, t3, t2, t1, t0, t7, t6, t5, *(w+ 3), 0x2AAB10B6);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:558:3: note: in expansion of macro ‘FF_3’
+  558 |   FF_3(t3, t2, t1, t0, t7, t6, t5, t4, *(w+ 1), 0xB4CC5C34);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:559:3: note: in expansion of macro ‘FF_3’
+  559 |   FF_3(t2, t1, t0, t7, t6, t5, t4, t3, *(w   ), 0x1141E8CE);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:560:3: note: in expansion of macro ‘FF_3’
+  560 |   FF_3(t1, t0, t7, t6, t5, t4, t3, t2, *(w+18), 0xA15486AF);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:561:3: note: in expansion of macro ‘FF_3’
+  561 |   FF_3(t0, t7, t6, t5, t4, t3, t2, t1, *(w+27), 0x7C72E993);
+      |   ^~~~
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o usernotify.o usernotify.cpp
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:563:3: note: in expansion of macro ‘FF_3’
+  563 |   FF_3(t7, t6, t5, t4, t3, t2, t1, t0, *(w+13), 0xB3EE1411);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:564:3: note: in expansion of macro ‘FF_3’
+  564 |   FF_3(t6, t5, t4, t3, t2, t1, t0, t7, *(w+ 6), 0x636FBC2A);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:565:3: note: in expansion of macro ‘FF_3’
+  565 |   FF_3(t5, t4, t3, t2, t1, t0, t7, t6, *(w+21), 0x2BA9C55D);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:566:3: note: in expansion of macro ‘FF_3’
+  566 |   FF_3(t4, t3, t2, t1, t0, t7, t6, t5, *(w+10), 0x741831F6);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:567:3: note: in expansion of macro ‘FF_3’
+  567 |   FF_3(t3, t2, t1, t0, t7, t6, t5, t4, *(w+23), 0xCE5C3E16);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:568:3: note: in expansion of macro ‘FF_3’
+  568 |   FF_3(t2, t1, t0, t7, t6, t5, t4, t3, *(w+11), 0x9B87931E);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:569:3: note: in expansion of macro ‘FF_3’
+  569 |   FF_3(t1, t0, t7, t6, t5, t4, t3, t2, *(w+ 5), 0xAFD6BA33);
+      |   ^~~~
+haval.cpp:235:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  235 |       register haval_word temp = Fphi_3(x6, x5, x4, x3, x2, x1, x0);      \
+      |                           ^~~~
+haval.cpp:570:3: note: in expansion of macro ‘FF_3’
+  570 |   FF_3(t0, t7, t6, t5, t4, t3, t2, t1, *(w+ 2), 0x6C24CF5C);
+      |   ^~~~
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o usernotifystdout.o usernotifystdout.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o wchar16.o wchar16.cpp
+rm -f libcore.a
+ar cr libcore.a file_unix.o unixfsservices.o archive.o charutil.o cmdlineparser.o codeconvert.o core.o coreerrors.o corestrings.o crc32.o debug.o displayencoder.o displayutil.o epoch.o error.o errorbucketimpl.o errortable.o errorutil.o fileerror.o fileheader.o fsservices.o growheap.o hashtable.o haval.o msystem.o ntmbs.o refcountobj.o serializable.o serializer.o serializerimpl.o serializerutil.o serstring.o srefcountobj.o srefcounttbl.o stdcore.o stringutil.o timeconvert.o tw_signal.o twlimits.o twlocale.o unixexcept.o usernotify.o usernotifystdout.o wchar16.o 
+ranlib libcore.a
+ar ru ../../lib/libtripwire.a file_unix.o unixfsservices.o archive.o charutil.o cmdlineparser.o codeconvert.o core.o coreerrors.o corestrings.o crc32.o debug.o displayencoder.o displayutil.o epoch.o error.o errorbucketimpl.o errortable.o errorutil.o fileerror.o fileheader.o fsservices.o growheap.o hashtable.o haval.o msystem.o ntmbs.o refcountobj.o serializable.o serializer.o serializerimpl.o serializerutil.o serstring.o srefcountobj.o srefcounttbl.o stdcore.o stringutil.o timeconvert.o tw_signal.o twlimits.o twlocale.o unixexcept.o usernotify.o usernotifystdout.o wchar16.o 
+ar: creating ../../lib/libtripwire.a
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/core'
+Making all in db
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/db'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o blockfile.o blockfile.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o blockrecordarray.o blockrecordarray.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o blockrecordfile.o blockrecordfile.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o db.o db.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o dberrors.o dberrors.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o hierdatabase.o hierdatabase.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o hierdbpath.o hierdbpath.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stddb.o stddb.cpp
+rm -f libdb.a
+ar cr libdb.a blockfile.o blockrecordarray.o blockrecordfile.o db.o dberrors.o hierdatabase.o hierdbpath.o stddb.o 
+ranlib libdb.a
+ar ru ../../lib/libtripwire.a blockfile.o blockrecordarray.o blockrecordfile.o db.o dberrors.o hierdatabase.o hierdbpath.o stddb.o
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/db'
+Making all in fco
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/fco'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fco.o fco.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcocompare.o fcocompare.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcodatasourceiter.o fcodatasourceiter.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcodatasourceiterimpl.o fcodatasourceiterimpl.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcoerrors.o fcoerrors.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fconame.o fconame.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fconametbl.o fconametbl.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcopropimpl.o fcopropimpl.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcopropvector.o fcopropvector.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcosetimpl.o fcosetimpl.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcospec.o fcospec.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcospecattr.o fcospecattr.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcospechelper.o fcospechelper.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcospecimpl.o fcospecimpl.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcospeclist.o fcospeclist.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcospecutil.o fcospecutil.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcostrings.o fcostrings.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcoundefprop.o fcoundefprop.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o genreinfo.o genreinfo.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o genrespeclist.o genrespeclist.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o genreswitcher.o genreswitcher.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o signature.o signature.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdfco.o stdfco.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twfactory.o twfactory.cpp
+signature.cpp:157:36: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  157 | char* btob64(const register ibyte* pcbitvec, register char* pcout, int numbits)
+      |                                    ^~~~~~~~
+signature.cpp:157:61: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  157 | char* btob64(const register ibyte* pcbitvec, register char* pcout, int numbits)
+      |                                                             ^~~~~
+signature.cpp: In function ‘char* btob64(const ibyte*, char*, int)’:
+signature.cpp:159:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  159 |     register unsigned int val;
+      |                           ^~~
+signature.cpp:160:27: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  160 |     register int          offset;
+      |                           ^~~~~~
+signature.cpp: In function ‘char* pltob64(uint32*, char*, int)’:
+signature.cpp:203:22: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  203 |     register int     i;
+      |                      ^
+signature.cpp:204:22: warning: ISO C++17 does not allow ‘register’ storage class specifier [-Wregister]
+  204 |     register uint32* plto;
+      |                      ^~~~
+signature.cpp: In member function ‘virtual void cMD5Signature::Init()’:
+signature.cpp:498:13: warning: ‘int MD5_Init(MD5_CTX*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  498 |     MD5_Init(&mMD5Info);
+      |     ~~~~~~~~^~~~~~~~~~~
+In file included from signature.h:55,
+                 from signature.cpp:37:
+/usr/include/openssl/md5.h:49:27: note: declared here
+   49 | OSSL_DEPRECATEDIN_3_0 int MD5_Init(MD5_CTX *c);
+      |                           ^~~~~~~~
+signature.cpp: In member function ‘virtual void cMD5Signature::Update(const ibyte*, int)’:
+signature.cpp:509:15: warning: ‘int MD5_Update(MD5_CTX*, const void*, size_t)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  509 |     MD5_Update(&mMD5Info, (uint8*)pbData, cbDataLen);
+      |     ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/openssl/md5.h:50:27: note: declared here
+   50 | OSSL_DEPRECATEDIN_3_0 int MD5_Update(MD5_CTX *c, const void *data, size_t len);
+      |                           ^~~~~~~~~~
+signature.cpp: In member function ‘virtual void cMD5Signature::Finit()’:
+signature.cpp:520:14: warning: ‘int MD5_Final(unsigned char*, MD5_CTX*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  520 |     MD5_Final(md5_digest, &mMD5Info);
+      |     ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/openssl/md5.h:51:27: note: declared here
+   51 | OSSL_DEPRECATEDIN_3_0 int MD5_Final(unsigned char *md, MD5_CTX *c);
+      |                           ^~~~~~~~~
+signature.cpp: In member function ‘virtual void cSHASignature::Init()’:
+signature.cpp:623:14: warning: ‘int SHA1_Init(SHA_CTX*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  623 |     SHA1_Init(&mSHAInfo);
+      |     ~~~~~~~~~^~~~~~~~~~~
+In file included from signature.h:65:
+/usr/include/openssl/sha.h:49:27: note: declared here
+   49 | OSSL_DEPRECATEDIN_3_0 int SHA1_Init(SHA_CTX *c);
+      |                           ^~~~~~~~~
+signature.cpp: In member function ‘virtual void cSHASignature::Update(const ibyte*, int)’:
+signature.cpp:635:16: warning: ‘int SHA1_Update(SHA_CTX*, const void*, size_t)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  635 |     SHA1_Update(&mSHAInfo, (uint8*)pbData, cbDataLen);
+      |     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/openssl/sha.h:50:27: note: declared here
+   50 | OSSL_DEPRECATEDIN_3_0 int SHA1_Update(SHA_CTX *c, const void *data, size_t len);
+      |                           ^~~~~~~~~~~
+signature.cpp: In member function ‘virtual void cSHASignature::Finit()’:
+signature.cpp:646:15: warning: ‘int SHA1_Final(unsigned char*, SHA_CTX*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  646 |     SHA1_Final((unsigned char*)sha_digest, &mSHAInfo);
+      |     ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/openssl/sha.h:51:27: note: declared here
+   51 | OSSL_DEPRECATEDIN_3_0 int SHA1_Final(unsigned char *md, SHA_CTX *c);
+      |                           ^~~~~~~~~~
+rm -f libfco.a
+ar cr libfco.a fco.o fcocompare.o fcodatasourceiter.o fcodatasourceiterimpl.o fcoerrors.o fconame.o fconametbl.o fcopropimpl.o fcopropvector.o fcosetimpl.o fcospec.o fcospecattr.o fcospechelper.o fcospecimpl.o fcospeclist.o fcospecutil.o fcostrings.o fcoundefprop.o genreinfo.o genrespeclist.o genreswitcher.o signature.o stdfco.o twfactory.o 
+ranlib libfco.a
+ar ru ../../lib/libtripwire.a fco.o fcocompare.o fcodatasourceiter.o fcodatasourceiterimpl.o fcoerrors.o fconame.o fconametbl.o fcopropimpl.o fcopropvector.o fcosetimpl.o fcospec.o fcospecattr.o fcospechelper.o fcospecimpl.o fcospeclist.o fcospecutil.o fcostrings.o fcoundefprop.o genreinfo.o genrespeclist.o genreswitcher.o signature.o stdfco.o twfactory.o
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/fco'
+Making all in fs
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/fs'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fs.o fs.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fsdatasourceiter.o fsdatasourceiter.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fserrors.o fserrors.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fsfactory.o fsfactory.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fsnametranslator.o fsnametranslator.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fsobject.o fsobject.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fsparserutil.o fsparserutil.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fspropcalc.o fspropcalc.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fspropdisplayer.o fspropdisplayer.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fspropset.o fspropset.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fsstrings.o fsstrings.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fsvisitor.o fsvisitor.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdfs.o stdfs.cpp
+fspropcalc.cpp: In static member function ‘static bool cFSPropCalc::GetSymLinkStr(const TSTRING&, cArchive&, size_t)’:
+fspropcalc.cpp:89:23: warning: argument 2 is null but the corresponding size argument 3 value is 18446744073709551615 [-Wnonnull]
+   89 |     int rtn = readlink(strName.c_str(), buf, size);
+      |               ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/bits/sigstksz.h:24,
+                 from /usr/include/signal.h:328,
+                 from /usr/include/sys/param.h:28,
+                 from ./../core/fsservices.h:69,
+                 from fspropcalc.h:52,
+                 from fspropcalc.cpp:42:
+/usr/include/unistd.h:838:16: note: in a call to function ‘ssize_t readlink(const char*, char*, size_t)’ declared with attribute ‘access (write_only, 2, 3)’
+  838 | extern ssize_t readlink (const char *__restrict __path,
+      |                ^~~~~~~~
+fsparserutil.cpp: In function ‘void trim_leading_whitespace(std::string&)’:
+fsparserutil.cpp:180:97: warning: ‘std::pointer_to_unary_function<_Arg, _Result> std::ptr_fun(_Result (*)(_Arg)) [with _Arg = int; _Result = int]’ is deprecated: use 'std::function' instead [-Wdeprecated-declarations]
+  180 |     str.erase(str.begin(), std::find_if(str.begin(), str.end(), std::not1(std::ptr_fun<int, int>(std::isspace))));
+      |                                                                           ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /usr/include/c++/14.2.0/bits/unique_ptr.h:38,
+                 from /usr/include/c++/14.2.0/memory:78,
+                 from ./../core/stdcore.h:96,
+                 from stdfs.h:38,
+                 from fsparserutil.cpp:40:
+/usr/include/c++/14.2.0/bits/stl_function.h:1123:5: note: declared here
+ 1123 |     ptr_fun(_Result (*__x)(_Arg))
+      |     ^~~~~~~
+fsparserutil.cpp:180:74: warning: ‘constexpr std::unary_negate<_Predicate> std::not1(const _Predicate&) [with _Predicate = pointer_to_unary_function<int, int>]’ is deprecated: use 'std::not_fn' instead [-Wdeprecated-declarations]
+  180 |     str.erase(str.begin(), std::find_if(str.begin(), str.end(), std::not1(std::ptr_fun<int, int>(std::isspace))));
+      |                                                                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14.2.0/bits/stl_function.h:1043:5: note: declared here
+ 1043 |     not1(const _Predicate& __pred)
+      |     ^~~~
+fspropdisplayer.cpp: In member function ‘virtual void cFSPropDisplayer::Merge(const iFCOPropDisplayer*)’:
+fspropdisplayer.cpp:144:43: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  144 |     const cFSPropDisplayer* const pfspd = static_cast<const cFSPropDisplayer* const>(ppd);
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fspropdisplayer.cpp: In member function ‘virtual void cFSPropDisplayer::InitForProp(const iFCO*, int)’:
+fspropdisplayer.cpp:263:13: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  263 |             static_cast<const cFCOPropInt64* const>(pFCO->GetPropSet()->GetPropAt(cFSPropSet::PROP_UID))->GetValue();
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fspropdisplayer.cpp:282:13: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  282 |             static_cast<const cFCOPropInt64* const>(pFCO->GetPropSet()->GetPropAt(cFSPropSet::PROP_GID))->GetValue();
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fspropdisplayer.cpp: In member function ‘virtual TSTRING cFSPropDisplayer::PropAsString(const iFCO*, int, int, int) const’:
+fspropdisplayer.cpp:333:53: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  333 |             const cFCOPropInt64* const pTypedProp = static_cast<const cFCOPropInt64* const>(pProp);
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fspropdisplayer.cpp:341:53: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  341 |             const cFCOPropInt64* const pTypedProp = static_cast<const cFCOPropInt64* const>(pProp);
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fspropdisplayer.cpp:348:54: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  348 |             const cFCOPropUint64* const pTypedProp = static_cast<const cFCOPropUint64* const>(pProp);
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fspropdisplayer.cpp:356:53: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  356 |             const cFCOPropInt64* const pTypedProp = static_cast<const cFCOPropInt64* const>(pProp);
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fspropdisplayer.cpp:370:53: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  370 |             const cFCOPropInt64* const pTypedProp = static_cast<const cFCOPropInt64* const>(pProp);
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rm -f libfs.a
+ar cr libfs.a fs.o fsdatasourceiter.o fserrors.o fsfactory.o fsnametranslator.o fsobject.o fsparserutil.o fspropcalc.o fspropdisplayer.o fspropset.o fsstrings.o fsvisitor.o stdfs.o 
+ranlib libfs.a
+ar ru ../../lib/libtripwire.a fs.o fsdatasourceiter.o fserrors.o fsfactory.o fsnametranslator.o fsobject.o fsparserutil.o fspropcalc.o fspropdisplayer.o fspropset.o fsstrings.o fsvisitor.o stdfs.o
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/fs'
+Making all in tw
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/tw'
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o configfile.o configfile.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o dbdatasource.o dbdatasource.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o dbdebug.o dbdebug.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o dbexplore.o dbexplore.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcodatabasefile.o fcodatabasefile.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcodatabaseutil.o fcodatabaseutil.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcoreport.o fcoreport.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcoreportutil.o fcoreportutil.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o filemanipulator.o filemanipulator.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o headerinfo.o headerinfo.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o policyfile.o policyfile.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdtw.o stdtw.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o systeminfo.o systeminfo.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o textdbviewer.o textdbviewer.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o textreportviewer.o textreportviewer.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o tw.o tw.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twerrors.o twerrors.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twinit.o twinit.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twstrings.o twstrings.cpp
+g++ -DHAVE_CONFIG_H -DCONFIG_DIR=\"/etc\" -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twutil.o twutil.cpp
+rm -f libtw.a
+ar cr libtw.a configfile.o dbdatasource.o dbdebug.o dbexplore.o fcodatabasefile.o fcodatabaseutil.o fcoreport.o fcoreportutil.o filemanipulator.o headerinfo.o policyfile.o stdtw.o systeminfo.o textdbviewer.o textreportviewer.o tw.o twerrors.o twinit.o twstrings.o twutil.o 
+ranlib libtw.a
+ar ru ../../lib/libtripwire.a configfile.o dbdatasource.o dbdebug.o dbexplore.o fcodatabasefile.o fcodatabaseutil.o fcoreport.o fcoreportutil.o filemanipulator.o headerinfo.o policyfile.o stdtw.o systeminfo.o textdbviewer.o textreportviewer.o tw.o twerrors.o twinit.o twstrings.o twutil.o
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/tw'
+Making all in twcrypto
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/twcrypto'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o bytequeue.o bytequeue.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o crypto.o crypto.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o cryptoarchive.o cryptoarchive.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o keyfile.o keyfile.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdtwcrypto.o stdtwcrypto.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twcrypto.o twcrypto.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twcryptoerrors.o twcryptoerrors.cpp
+rm -f libtwcrypto.a
+ar cr libtwcrypto.a bytequeue.o crypto.o cryptoarchive.o keyfile.o stdtwcrypto.o twcrypto.o twcryptoerrors.o 
+ranlib libtwcrypto.a
+ar ru ../../lib/libtripwire.a bytequeue.o crypto.o cryptoarchive.o keyfile.o stdtwcrypto.o twcrypto.o twcryptoerrors.o
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/twcrypto'
+Making all in twparser
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/twparser'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o genreparseinfo.o genreparseinfo.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o parserhelper.o parserhelper.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o parserobjects.o parserobjects.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o policyparser.o policyparser.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdtwparser.o stdtwparser.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twparser.o twparser.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twparsererrors.o twparsererrors.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twparserstrings.o twparserstrings.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o yylex.o yylex.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o yyparse.o yyparse.cpp
+In file included from parserhelper.h:44,
+                 from twparsererrors.cpp:41:
+parserobjects.h: In copy constructor ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’:
+parserobjects.h:211:17: warning: implicitly-declared ‘cParseSpecMask& cParseSpecMask::operator=(const cParseSpecMask&)’ is deprecated [-Wdeprecated-copy]
+  211 |         *this = sm;
+      |                 ^~
+parserobjects.h:209:5: note: because ‘cParseSpecMask’ has user-provided ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’
+  209 |     cParseSpecMask(const cParseSpecMask& sm)
+      |     ^~~~~~~~~~~~~~
+In file included from parserhelper.h:44,
+                 from parserhelper.cpp:46:
+parserobjects.h: In copy constructor ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’:
+parserobjects.h:211:17: warning: implicitly-declared ‘cParseSpecMask& cParseSpecMask::operator=(const cParseSpecMask&)’ is deprecated [-Wdeprecated-copy]
+  211 |         *this = sm;
+      |                 ^~
+parserobjects.h:209:5: note: because ‘cParseSpecMask’ has user-provided ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’
+  209 |     cParseSpecMask(const cParseSpecMask& sm)
+      |     ^~~~~~~~~~~~~~
+In file included from parserhelper.h:44,
+                 from policyparser.h:52,
+                 from yylex.cpp:525:
+parserobjects.h: In copy constructor ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’:
+parserobjects.h:211:17: warning: implicitly-declared ‘cParseSpecMask& cParseSpecMask::operator=(const cParseSpecMask&)’ is deprecated [-Wdeprecated-copy]
+  211 |         *this = sm;
+      |                 ^~
+parserobjects.h:209:5: note: because ‘cParseSpecMask’ has user-provided ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’
+  209 |     cParseSpecMask(const cParseSpecMask& sm)
+      |     ^~~~~~~~~~~~~~
+yylex.cpp: In member function ‘int yy_scan::yylex()’:
+yylex.cpp:835:35: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+  835 |         yy_base[yyst] > yy_nxtmax && yy_default[yyst] == yy_endst));
+      |                                   ^
+yylex.cpp:1157:3: warning: label ‘yy_reject’ defined but not used [-Wunused-label]
+ 1157 |   yy_reject:
+      |   ^~~~~~~~~
+yylex.cpp:1165:3: warning: label ‘yy_more’ defined but not used [-Wunused-label]
+ 1165 |   yy_more:
+      |   ^~~~~~~
+parserhelper.cpp: In static member function ‘static void cParserUtil::CreatePropVector(const TSTRING&, cFCOPropVector&, iParserGenreUtil*)’:
+parserhelper.cpp:682:100: warning: ‘std::pointer_to_unary_function<_Arg, _Result> std::ptr_fun(_Result (*)(_Arg)) [with _Arg = int; _Result = int]’ is deprecated: use 'std::function' instead [-Wdeprecated-declarations]
+  682 |     strPropList.erase(std::remove_if(strPropList.begin(), strPropList.end(), std::ptr_fun<int, int>(std::isspace)),
+      |                                                                              ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /usr/include/c++/14.2.0/bits/unique_ptr.h:38,
+                 from /usr/include/c++/14.2.0/memory:78,
+                 from ./../core/stdcore.h:96,
+                 from stdtwparser.h:38,
+                 from parserhelper.cpp:40:
+/usr/include/c++/14.2.0/bits/stl_function.h:1123:5: note: declared here
+ 1123 |     ptr_fun(_Result (*__x)(_Arg))
+      |     ^~~~~~~
+In file included from parserhelper.h:44,
+                 from genreparseinfo.cpp:42:
+parserobjects.h: In copy constructor ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’:
+parserobjects.h:211:17: warning: implicitly-declared ‘cParseSpecMask& cParseSpecMask::operator=(const cParseSpecMask&)’ is deprecated [-Wdeprecated-copy]
+  211 |         *this = sm;
+      |                 ^~
+parserobjects.h:209:5: note: because ‘cParseSpecMask’ has user-provided ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’
+  209 |     cParseSpecMask(const cParseSpecMask& sm)
+      |     ^~~~~~~~~~~~~~
+In file included from parserobjects.cpp:40:
+parserobjects.h: In copy constructor ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’:
+parserobjects.h:211:17: warning: implicitly-declared ‘cParseSpecMask& cParseSpecMask::operator=(const cParseSpecMask&)’ is deprecated [-Wdeprecated-copy]
+  211 |         *this = sm;
+      |                 ^~
+parserobjects.h:209:5: note: because ‘cParseSpecMask’ has user-provided ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’
+  209 |     cParseSpecMask(const cParseSpecMask& sm)
+      |     ^~~~~~~~~~~~~~
+In file included from parserhelper.h:44,
+                 from policyparser.h:52,
+                 from policyparser.cpp:41:
+parserobjects.h: In copy constructor ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’:
+parserobjects.h:211:17: warning: implicitly-declared ‘cParseSpecMask& cParseSpecMask::operator=(const cParseSpecMask&)’ is deprecated [-Wdeprecated-copy]
+  211 |         *this = sm;
+      |                 ^~
+parserobjects.h:209:5: note: because ‘cParseSpecMask’ has user-provided ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’
+  209 |     cParseSpecMask(const cParseSpecMask& sm)
+      |     ^~~~~~~~~~~~~~
+policyparser.cpp: In function ‘std::string convert_to_encoded_hex(char)’:
+policyparser.cpp:198:40: warning: possibly dangling reference to a temporary [-Wdangling-reference]
+  198 |     const std::num_put<char>*pnp = 0, &np = tss::GetFacet(sstr.getloc(), pnp);
+      |                                        ^~
+policyparser.cpp:198:58: note: the temporary was destroyed at the end of the full expression ‘tss::GetFacet<std::num_put<char> >(std::ios_base::getloc() const(), pnp)’
+  198 |     const std::num_put<char>*pnp = 0, &np = tss::GetFacet(sstr.getloc(), pnp);
+      |                                             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from parserhelper.h:44,
+                 from yyparse.cpp:39:
+parserobjects.h: In copy constructor ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’:
+parserobjects.h:211:17: warning: implicitly-declared ‘cParseSpecMask& cParseSpecMask::operator=(const cParseSpecMask&)’ is deprecated [-Wdeprecated-copy]
+  211 |         *this = sm;
+      |                 ^~
+parserobjects.h:209:5: note: because ‘cParseSpecMask’ has user-provided ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’
+  209 |     cParseSpecMask(const cParseSpecMask& sm)
+      |     ^~~~~~~~~~~~~~
+yyparse.cpp: In member function ‘int yy_parse::yyparse(yy_scan*)’:
+yyparse.cpp:1280:17: warning: suggest explicit braces around empty body in ‘do’ statement [-Wempty-body]
+ 1280 |                 ;
+      |                 ^
+yyparse.cpp:1234:1: warning: label ‘yyerrlabel’ defined but not used [-Wunused-label]
+ 1234 | yyerrlabel: ;       /* come here from YYERROR   */
+      | ^~~~~~~~~~
+yyparse.cpp:1250:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1250 |         if (yyi != yychar) {
+      |         ^~
+yyparse.cpp:1257:5: note: here
+ 1257 |     case 1:     /* partially recovered */
+      |     ^~~~
+rm -f libtwparser.a
+ar cr libtwparser.a genreparseinfo.o parserhelper.o parserobjects.o policyparser.o stdtwparser.o twparser.o twparsererrors.o twparserstrings.o yylex.o yyparse.o 
+ranlib libtwparser.a
+ar ru ../../lib/libtripwire.a genreparseinfo.o parserhelper.o parserobjects.o policyparser.o stdtwparser.o twparser.o twparsererrors.o twparserstrings.o yylex.o yyparse.o
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/twparser'
+Making all in util
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/util'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fileutil.o fileutil.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdutil.o stdutil.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stringencoder.o stringencoder.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o util.o util.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o utilerrors.o utilerrors.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o utilstrings.o utilstrings.cpp
+fileutil.cpp: In static member function ‘static bool cFileUtil::IsDir(const TSTRING&)’:
+fileutil.cpp:114:12: warning: catching polymorphic type ‘class eFSServices’ by value [-Wcatch-value=]
+  114 |     catch (eFSServices)
+      |            ^~~~~~~~~~~
+fileutil.cpp: In static member function ‘static bool cFileUtil::IsRegularFile(const TSTRING&)’:
+fileutil.cpp:129:12: warning: catching polymorphic type ‘class eFSServices’ by value [-Wcatch-value=]
+  129 |     catch (eFSServices)
+      |            ^~~~~~~~~~~
+rm -f libutil.a
+ar cr libutil.a fileutil.o stdutil.o stringencoder.o util.o utilerrors.o utilstrings.o 
+ranlib libutil.a
+ar ru ../../lib/libtripwire.a fileutil.o stdutil.o stringencoder.o util.o utilerrors.o utilstrings.o
+ranlib ../../lib/libtripwire.a
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/util'
+Making all in twprint
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/twprint'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdtwprint.o stdtwprint.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twprint.o twprint.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twprintcmdline.o twprintcmdline.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twprinterrors.o twprinterrors.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twprintmain.o twprintmain.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twprintstrings.o twprintstrings.cpp
+twprintmain.cpp: In function ‘int main(int, const char**)’:
+twprintmain.cpp:96:43: warning: ‘void (* std::set_unexpected(unexpected_handler))()’ is deprecated [-Wdeprecated-declarations]
+   96 |         EXCEPTION_NAMESPACE set_unexpected(tw_unexpected_handler);
+In file included from /usr/include/c++/14.2.0/ext/concurrence.h:34,
+                 from /usr/include/c++/14.2.0/bits/shared_ptr_base.h:62,
+                 from /usr/include/c++/14.2.0/bits/shared_ptr.h:53,
+                 from /usr/include/c++/14.2.0/memory:80,
+                 from ./../core/stdcore.h:96,
+                 from stdtwprint.h:38,
+                 from twprintmain.cpp:36:
+/usr/include/c++/14.2.0/exception:92:22: note: declared here
+   92 |   unexpected_handler set_unexpected(unexpected_handler) _GLIBCXX_USE_NOEXCEPT;
+      |                      ^~~~~~~~~~~~~~
+g++  -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter  -L../../lib -o twprint stdtwprint.o twprint.o twprintcmdline.o twprinterrors.o twprintmain.o twprintstrings.o  -ltripwire -lcryptlib  -lcrypto
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/twprint'
+Making all in twadmin
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/twadmin'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o keygeneration.o keygeneration.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdtwadmin.o stdtwadmin.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twadmin.o twadmin.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twadmincl.o twadmincl.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twadminerrors.o twadminerrors.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twadminmain.o twadminmain.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twadminstrings.o twadminstrings.cpp
+twadminmain.cpp: In function ‘int main(int, const char**, const char**)’:
+twadminmain.cpp:87:43: warning: ‘void (* std::set_unexpected(unexpected_handler))()’ is deprecated [-Wdeprecated-declarations]
+   87 |         EXCEPTION_NAMESPACE set_unexpected(tw_unexpected_handler);
+In file included from /usr/include/c++/14.2.0/ext/concurrence.h:34,
+                 from /usr/include/c++/14.2.0/bits/shared_ptr_base.h:62,
+                 from /usr/include/c++/14.2.0/bits/shared_ptr.h:53,
+                 from /usr/include/c++/14.2.0/memory:80,
+                 from ./../core/stdcore.h:96,
+                 from stdtwadmin.h:38,
+                 from twadminmain.cpp:36:
+/usr/include/c++/14.2.0/exception:92:22: note: declared here
+   92 |   unexpected_handler set_unexpected(unexpected_handler) _GLIBCXX_USE_NOEXCEPT;
+      |                      ^~~~~~~~~~~~~~
+In file included from ./../twparser/parserhelper.h:44,
+                 from ./../twparser/policyparser.h:52,
+                 from twadmincl.cpp:57:
+./../twparser/parserobjects.h: In copy constructor ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’:
+./../twparser/parserobjects.h:211:17: warning: implicitly-declared ‘cParseSpecMask& cParseSpecMask::operator=(const cParseSpecMask&)’ is deprecated [-Wdeprecated-copy]
+  211 |         *this = sm;
+      |                 ^~
+./../twparser/parserobjects.h:209:5: note: because ‘cParseSpecMask’ has user-provided ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’
+  209 |     cParseSpecMask(const cParseSpecMask& sm)
+      |     ^~~~~~~~~~~~~~
+g++  -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter  -L../../lib -o twadmin keygeneration.o stdtwadmin.o twadmin.o twadmincl.o twadminerrors.o twadminmain.o twadminstrings.o  -ltripwire -lcryptlib  -lcrypto
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/twadmin'
+Making all in siggen
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/siggen'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o siggen.o siggen.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o siggencmdline.o siggencmdline.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o siggenmain.o siggenmain.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o siggenstrings.o siggenstrings.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdsiggen.o stdsiggen.cpp
+siggenmain.cpp: In function ‘int main(int, const char**)’:
+siggenmain.cpp:115:43: warning: ‘void (* std::set_unexpected(unexpected_handler))()’ is deprecated [-Wdeprecated-declarations]
+  115 |         EXCEPTION_NAMESPACE set_unexpected(tw_unexpected_handler);
+In file included from /usr/include/c++/14.2.0/ext/concurrence.h:34,
+                 from /usr/include/c++/14.2.0/bits/shared_ptr_base.h:62,
+                 from /usr/include/c++/14.2.0/bits/shared_ptr.h:53,
+                 from /usr/include/c++/14.2.0/memory:80,
+                 from ./../core/stdcore.h:96,
+                 from stdsiggen.h:38,
+                 from siggenmain.cpp:33:
+/usr/include/c++/14.2.0/exception:92:22: note: declared here
+   92 |   unexpected_handler set_unexpected(unexpected_handler) _GLIBCXX_USE_NOEXCEPT;
+      |                      ^~~~~~~~~~~~~~
+g++  -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter  -L../../lib -o siggen siggen.o siggencmdline.o siggenmain.o siggenstrings.o stdsiggen.o  -ltripwire -lcryptlib  -lcrypto
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/siggen'
+Making all in tripwire
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/tripwire'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o generatedb.o generatedb.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o integritycheck.o integritycheck.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o mailmessage.o mailmessage.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o pipedmailmessage.o pipedmailmessage.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o policyupdate.o policyupdate.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o smtpmailmessage.o smtpmailmessage.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdtripwire.o stdtripwire.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o syslog_trip.o syslog_trip.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o tripwire.o tripwire.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o tripwireerrors.o tripwireerrors.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o tripwiremain.o tripwiremain.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o tripwirestrings.o tripwirestrings.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o tripwireutil.o tripwireutil.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twcmdline.o twcmdline.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twcmdlineutil.o twcmdlineutil.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o updatedb.o updatedb.cpp
+In file included from ./../twparser/parserhelper.h:44,
+                 from ./../twparser/policyparser.h:52,
+                 from twcmdlineutil.cpp:38:
+./../twparser/parserobjects.h: In copy constructor ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’:
+./../twparser/parserobjects.h:211:17: warning: implicitly-declared ‘cParseSpecMask& cParseSpecMask::operator=(const cParseSpecMask&)’ is deprecated [-Wdeprecated-copy]
+  211 |         *this = sm;
+      |                 ^~
+./../twparser/parserobjects.h:209:5: note: because ‘cParseSpecMask’ has user-provided ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’
+  209 |     cParseSpecMask(const cParseSpecMask& sm)
+      |     ^~~~~~~~~~~~~~
+tripwiremain.cpp: In function ‘int main(int, const char**, const char**)’:
+tripwiremain.cpp:124:43: warning: ‘void (* std::set_unexpected(unexpected_handler))()’ is deprecated [-Wdeprecated-declarations]
+  124 |         EXCEPTION_NAMESPACE set_unexpected(tw_unexpected_handler);
+In file included from /usr/include/c++/14.2.0/ext/concurrence.h:34,
+                 from /usr/include/c++/14.2.0/bits/shared_ptr_base.h:62,
+                 from /usr/include/c++/14.2.0/bits/shared_ptr.h:53,
+                 from /usr/include/c++/14.2.0/memory:80,
+                 from ./../core/stdcore.h:96,
+                 from stdtripwire.h:38,
+                 from tripwiremain.cpp:34:
+/usr/include/c++/14.2.0/exception:92:22: note: declared here
+   92 |   unexpected_handler set_unexpected(unexpected_handler) _GLIBCXX_USE_NOEXCEPT;
+      |                      ^~~~~~~~~~~~~~
+g++  -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter  -L../../lib -o tripwire generatedb.o integritycheck.o mailmessage.o pipedmailmessage.o policyupdate.o smtpmailmessage.o stdtripwire.o syslog_trip.o tripwire.o tripwireerrors.o tripwiremain.o tripwirestrings.o tripwireutil.o twcmdline.o twcmdlineutil.o updatedb.o  -ltripwire -lcryptlib  -lcrypto
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/tripwire'
+Making all in twtest
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/twtest'
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o archive_t.o archive_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o blockfile_t.o blockfile_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o blockrecordarray_t.o blockrecordarray_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o charutil_t.o charutil_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o cmdlineparser_t.o cmdlineparser_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o codeconvert_t.o codeconvert_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o configfile_t.o configfile_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o cryptoarchive_t.o cryptoarchive_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o crypto_t.o crypto_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o dbdatasource_t.o dbdatasource_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o debug_t.o debug_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o displayencoder_t.o displayencoder_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o error_t.o error_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o errorbucketimpl_t.o errorbucketimpl_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcocompare_t.o fcocompare_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcodatabasefile_t.o fcodatabasefile_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fconame_t.o fconame_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fconametbl_t.o fconametbl_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fconametranslator_t.o fconametranslator_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcopropimpl_t.o fcopropimpl_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcopropvector_t.o fcopropvector_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcoreport_t.o fcoreport_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcosetimpl_t.o fcosetimpl_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcospec_t.o fcospec_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcospecattr_t.o fcospecattr_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcospechelper_t.o fcospechelper_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcospeclist_t.o fcospeclist_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fcospecutil_t.o fcospecutil_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o file_t.o file_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fileheader_t.o fileheader_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fileutil_t.o fileutil_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fsdatasourceiter_t.o fsdatasourceiter_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fsobject_t.o fsobject_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fspropcalc_t.o fspropcalc_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fspropdisplayer_t.o fspropdisplayer_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fspropset_t.o fspropset_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o fsspec_t.o fsspec_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o genre_t.o genre_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o genrespeclist_t.o genrespeclist_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o genreswitcher_t.o genreswitcher_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o growheap_t.o growheap_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o hashtable_t.o hashtable_t.cpp
+fcoreport_t.cpp: In function ‘void TestFCOReport()’:
+fcoreport_t.cpp:108:13: warning: variable ‘time_finish’ set but not used [-Wunused-but-set-variable]
+  108 |     time_t  time_finish;
+      |             ^~~~~~~~~~~
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o hierdatabase_t.o hierdatabase_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o keyfile_t.o keyfile_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o platform_t.o platform_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o policyparser_t.o policyparser_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o refcountobj_t.o refcountobj_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o resources_t.o resources_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o serializer_t.o serializer_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o serializerimpl_t.o serializerimpl_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o signature_t.o signature_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o srefcountobj_t.o srefcountobj_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stdtest.o stdtest.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o stringencoder_t.o stringencoder_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o tasktimer_t.o tasktimer_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o tchar_t.o tchar_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o test.o test.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o textreportviewer_t.o textreportviewer_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twlocale_t.o twlocale_t.cpp
+In file included from ./../twparser/parserhelper.h:44,
+                 from policyparser_t.cpp:42:
+./../twparser/parserobjects.h: In copy constructor ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’:
+./../twparser/parserobjects.h:211:17: warning: implicitly-declared ‘cParseSpecMask& cParseSpecMask::operator=(const cParseSpecMask&)’ is deprecated [-Wdeprecated-copy]
+  211 |         *this = sm;
+      |                 ^~
+./../twparser/parserobjects.h:209:5: note: because ‘cParseSpecMask’ has user-provided ‘cParseSpecMask::cParseSpecMask(const cParseSpecMask&)’
+  209 |     cParseSpecMask(const cParseSpecMask& sm)
+      |     ^~~~~~~~~~~~~~
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o twutil_t.o twutil_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o types_t.o types_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o unixfsservices_t.o unixfsservices_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o usernotifystdout_t.o usernotifystdout_t.cpp
+g++ -DHAVE_CONFIG_H		 -I. -I../..  -I./..   -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter -c -o wchar16_t.o wchar16_t.cpp
+test.cpp: In function ‘int main(int, char**)’:
+test.cpp:452:43: warning: ‘void (* std::set_unexpected(unexpected_handler))()’ is deprecated [-Wdeprecated-declarations]
+  452 |         EXCEPTION_NAMESPACE set_unexpected(tw_unexpected_handler);
+In file included from /usr/include/c++/14.2.0/ext/concurrence.h:34,
+                 from /usr/include/c++/14.2.0/bits/shared_ptr_base.h:62,
+                 from /usr/include/c++/14.2.0/bits/shared_ptr.h:53,
+                 from /usr/include/c++/14.2.0/memory:80,
+                 from ./../core/stdcore.h:96,
+                 from stdtest.h:32,
+                 from test.cpp:37:
+/usr/include/c++/14.2.0/exception:92:22: note: declared here
+   92 |   unexpected_handler set_unexpected(unexpected_handler) _GLIBCXX_USE_NOEXCEPT;
+      |                      ^~~~~~~~~~~~~~
+textreportviewer_t.cpp: In function ‘void MakeFile(TSTRING&)’:
+textreportviewer_t.cpp:462:24: warning: catching polymorphic type ‘class eFSServices’ by value [-Wcatch-value=]
+  462 |     catch (eFSServices e)
+      |                        ^
+textreportviewer_t.cpp: At global scope:
+textreportviewer_t.cpp:66:13: warning: ‘void TraceReport(const cFCOReport&, cDebug&)’ defined but not used [-Wunused-function]
+   66 | static void TraceReport(const cFCOReport& r, cDebug& d)
+      |             ^~~~~~~~~~~
+g++  -O -pipe -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wextra -Wno-unused-parameter  -L../../lib -o twtest archive_t.o blockfile_t.o blockrecordarray_t.o charutil_t.o cmdlineparser_t.o codeconvert_t.o configfile_t.o cryptoarchive_t.o crypto_t.o dbdatasource_t.o debug_t.o displayencoder_t.o error_t.o errorbucketimpl_t.o fcocompare_t.o fcodatabasefile_t.o fconame_t.o fconametbl_t.o fconametranslator_t.o fcopropimpl_t.o fcopropvector_t.o fcoreport_t.o fcosetimpl_t.o fcospec_t.o fcospecattr_t.o fcospechelper_t.o fcospeclist_t.o fcospecutil_t.o file_t.o fileheader_t.o fileutil_t.o fsdatasourceiter_t.o fsobject_t.o fspropcalc_t.o fspropdisplayer_t.o fspropset_t.o fsspec_t.o genre_t.o genrespeclist_t.o genreswitcher_t.o growheap_t.o hashtable_t.o hierdatabase_t.o keyfile_t.o platform_t.o policyparser_t.o refcountobj_t.o resources_t.o serializer_t.o serializerimpl_t.o signature_t.o srefcountobj_t.o stdtest.o stringencoder_t.o tasktimer_t.o tchar_t.o test.o textreportviewer_t.o twlocale_t.o twutil_t.o types_t.o unixfsservices_t.o usernotifystdout_t.o wchar16_t.o  -ltripwire -lcryptlib  -lcrypto
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src/twtest'
+make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src'
+make[2]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source/src'
+make[2]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source'
+make[2]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source'
+make[1]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/work/tripwire-open-source'
+cp: cannot stat 'AUTHORS ChangeLog Changelog CHANGELOG COPYING COPYRIGHT CONFIGURATION* CONTRIBUTING* *FAQ* GPL* HACKING index.ht* *INDEX* INSTALL* License* LICENSE* *README* *Readme* *RELEASE* TODO VERSION': No such file or directory
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/binary-tripwire-clone.git.4c84a88/tripwire-clone.git.4c84a88-x86_64-1_rtz.tlz
+
+./
+etc/
+etc/tripwire/
+etc/tripwire/twcfg.txt
+etc/tripwire/twpol.txt
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/siggen
+usr/bin/tripwire
+usr/bin/twadmin
+usr/bin/twprint
+usr/doc/
+usr/doc/tripwire-clone.git.4c84a88/
+usr/doc/tripwire-clone.git.4c84a88/tripwire.SlackBuild
+usr/man/
+usr/man/man4/
+usr/man/man4/twconfig.4.gz
+usr/man/man4/twpolicy.4.gz
+usr/man/man5/
+usr/man/man5/twfiles.5.gz
+usr/man/man8/
+usr/man/man8/siggen.8.gz
+usr/man/man8/tripwire.8.gz
+usr/man/man8/twadmin.8.gz
+usr/man/man8/twintro.8.gz
+usr/man/man8/twprint.8.gz
+usr/share/
+usr/share/tripwire/
+usr/share/tripwire/install.cfg
+usr/share/tripwire/install.sh
+var/
+var/lib/
+var/lib/tripwire/
+var/lib/tripwire/report/
+
+Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/binary-tripwire-clone.git.4c84a88/tripwire-clone.git.4c84a88-x86_64-1_rtz.tlz created.
+
+
++==============================================================================
+| Upgrading tripwire-clone.git.4c84a88-x86_64-1_rtz package using /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/binary-tripwire-clone.git.4c84a88/tripwire-clone.git.4c84a88-x86_64-1_rtz.tlz
++==============================================================================
+Pre-installing package tripwire-clone.git.4c84a88-x86_64-1_rtz...
+Removing package: tripwire-clone.git.4c84a88-x86_64-1_rtz-upgraded-2024-09-29,01:21:14
+Verifying package tripwire-clone.git.4c84a88-x86_64-1_rtz.tlz.
+Installing package tripwire-clone.git.4c84a88-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# tripwire (intrusion detection system)
+#
+# Open Source Tripwire® is a security and data integrity tool for
+# monitoring and alerting on file & directory changes. This project is
+# based on code originally contributed by Tripwire, Inc. in 2000.A
+# Tripwire check compares the current filesystem state against a known
+# baseline state, and alerts on any changes it detects. The baseline
+# and check behavior are controlled by a policy file.
+#
+# https://github.com/Tripwire/tripwire-open-source
+Executing install script for tripwire-clone.git.4c84a88-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
+/usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
+/usr/share/fonts/TTF/oxygen: caching, new cache contents: 3 fonts, 0 dirs
+/usr/share/fonts/TTF/static: caching, new cache contents: 36 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package tripwire-clone.git.4c84a88-x86_64-1_rtz.tlz installed.
+Package tripwire-clone.git.4c84a88-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/binary-tripwire-clone.git.4c84a88/tripwire-clone.git.4c84a88-x86_64-1_rtz.tlz.
+rm: cannot remove '*.git': No such file or directory

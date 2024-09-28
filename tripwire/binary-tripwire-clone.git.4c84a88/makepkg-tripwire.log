@@ -1,0 +1,60 @@
+
+Sun Sep 29 01:20:42 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/binary-tripwire-clone.git.4c84a88/tripwire-clone.git.4c84a88-x86_64-1_rtz.tlz
+
+./
+etc/
+etc/tripwire/
+etc/tripwire/twcfg.txt
+etc/tripwire/twpol.txt
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/siggen
+usr/bin/tripwire
+usr/bin/twadmin
+usr/bin/twprint
+usr/doc/
+usr/doc/tripwire-clone.git.4c84a88/
+usr/doc/tripwire-clone.git.4c84a88/tripwire.SlackBuild
+usr/man/
+usr/man/man4/
+usr/man/man4/twconfig.4.gz
+usr/man/man4/twpolicy.4.gz
+usr/man/man5/
+usr/man/man5/twfiles.5.gz
+usr/man/man8/
+usr/man/man8/siggen.8.gz
+usr/man/man8/tripwire.8.gz
+usr/man/man8/twadmin.8.gz
+usr/man/man8/twintro.8.gz
+usr/man/man8/twprint.8.gz
+usr/share/
+usr/share/tripwire/
+usr/share/tripwire/install.cfg
+usr/share/tripwire/install.sh
+var/
+var/lib/
+var/lib/tripwire/
+var/lib/tripwire/report/
+
+Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/tripwire/binary-tripwire-clone.git.4c84a88/tripwire-clone.git.4c84a88-x86_64-1_rtz.tlz created.
+

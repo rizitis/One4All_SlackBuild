@@ -1,0 +1,56 @@
+Issue: CVE-2024-47176 (cups-browsed ≤ 2.0.1)
+############################################
+
+Tip: Install Tripwire monitor the /etc/cups/ppd/ directory for new file creation.
+Read "twpol.txt" to see the rule.
+ If you want a full twpoll.txt use Arch (https://aur.archlinux.org/cgit/aur.git/tree/twpol.txt?h=tripwire-git) but add this line in:
+ /etc/cups/ppd/ -> $(ReadOnly);
+
+Tripwire.SlackBuilds
+After installation finish follow these steps:
+sudo twadmin --generate-keys -L /etc/tripwire/tripwire-local.key
+sudo twadmin --generate-keys -S /etc/tripwire/tripwire-site.key
+sudo twadmin --create-cfgfile -S /etc/tripwire/tripwire-site.key /etc/tripwire/twcfg.txt
+sudo tripwire --init
+
+Now you are ok run a check:
+sudo tripwire --check -r report.twr
+
+Test if work by creating a fake ppd in /etc/cups/ppd
+sudo touch /etc/cups/ppd/fake.ppd
+
+Now check again:
+sudo tripwire --check -r report.twr
+You should have an Error!
+
+Remove fake.ppd:
+rm /etc/cups/ppd/fake.ppd
+But thats not enough, you must update database:
+sudo tripwire --update -a -r report.twr
+
+You can Automate Tripwire Checks using Cron... ;)
+
+####################################################
+
+Tip:
+chmod 755 /etc/cups/ppd
+chown root:lp /etc/cups/ppd
+
+#####################################################
+In case you need network interface to allow access from a specific network interface (e.g., for a specific subnet)
+Tips:
+sudo nano /etc/cups/cupsd.conf
+Listen 192.168.1.10:631
+This means CUPS will only accept connections from the specified IP.
+
+Configure your firewall to allow access to port 631 only from specific trusted IPs or subnets, thus blocking unwanted traffic:
+sudo iptables -A INPUT -p tcp -s <trusted-IP> --dport 631 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 631 -j DROP
+
+Limit IP Addresses: You can allow access only from specific IP addresses or ranges. In the same cupsd.conf file, use the <Location /> block to restrict access:
+<Location />
+    Order allow,deny
+    Allow from 192.168.1.0/24  # Allow local network
+    Allow from <specific-IP>    # Allow specific remote IP
+    Deny from all               # Deny others
+</Location>

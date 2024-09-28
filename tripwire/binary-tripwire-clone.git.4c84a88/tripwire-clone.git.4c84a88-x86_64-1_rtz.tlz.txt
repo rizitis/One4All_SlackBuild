@@ -1,0 +1,11 @@
+tripwire: tripwire (intrusion detection system)
+tripwire:
+tripwire: Open Source Tripwire® is a security and data integrity tool for
+tripwire: monitoring and alerting on file & directory changes. This project is
+tripwire: based on code originally contributed by Tripwire, Inc. in 2000.A
+tripwire: Tripwire check compares the current filesystem state against a known
+tripwire: baseline state, and alerts on any changes it detects. The baseline
+tripwire: and check behavior are controlled by a policy file.
+tripwire:
+tripwire:
+tripwire: https://github.com/Tripwire/tripwire-open-source
