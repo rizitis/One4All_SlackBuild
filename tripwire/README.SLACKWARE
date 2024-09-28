@@ -6,7 +6,7 @@ Read "twpol.txt" to see the rule.
  If you want a full twpoll.txt use Arch (https://aur.archlinux.org/cgit/aur.git/tree/twpol.txt?h=tripwire-git) but add this line in:
  /etc/cups/ppd/ -> $(ReadOnly);
 
-./tripwire.SlackBuilds
+./tripwire.SlackBuild
 After installation finish follow these steps:
 sudo twadmin --generate-keys -L /etc/tripwire/tripwire-local.key
 sudo twadmin --generate-keys -S /etc/tripwire/tripwire-site.key
