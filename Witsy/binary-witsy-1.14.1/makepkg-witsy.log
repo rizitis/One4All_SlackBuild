@@ -1,5 +1,5 @@
 
-Fri Sep 27 21:10:09 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Sat Sep 28 17:47:01 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -15,7 +15,10 @@ special permissions, then DO NOT reset them here!
 Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
-Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/Witsy/binary-witsy-1.14.1/witsy-1.14.1-x86_64-1_rtz.tlz
+WARNING: rpath found in ./usr/local/bin/Witsy-linux-x64/libffmpeg.so:   RUNPATH              $ORIGIN
+WARNING: rpath found in ./usr/local/bin/Witsy-linux-x64/Witsy:   RPATH                $ORIGIN
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/Witsy/binary-witsy-1.14.1/witsy-1.14.1-x86_64-1_rtz.tlz
 
 ./
 install/
@@ -114,5 +117,5 @@ usr/share/applications/witsy.desktop
 usr/share/pixmaps/
 usr/share/pixmaps/witsy.png
 
-Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/Witsy/binary-witsy-1.14.1/witsy-1.14.1-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/Witsy/binary-witsy-1.14.1/witsy-1.14.1-x86_64-1_rtz.tlz created.
 
