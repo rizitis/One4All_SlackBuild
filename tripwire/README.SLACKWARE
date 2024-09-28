@@ -4,7 +4,8 @@ Issue: CVE-2024-47176 (cups-browsed ≤ 2.0.1)
 Tip: Install Tripwire monitor the /etc/cups/ppd/ directory for new file creation.
 Read "twpol.txt" to see the rule.
  If you want a full twpoll.txt use Arch (https://aur.archlinux.org/cgit/aur.git/tree/twpol.txt?h=tripwire-git) but add this line in:
- /etc/cups/ppd/ -> $(ReadOnly);
+ /etc/cups/ppd/ -> $(ReadOnly); 
+or /etc/cups/ppd/  -> $(SEC_CONFIG) ; But i preffer the first one.
 
 ./tripwire.SlackBuild
 After installation finish follow these steps:
