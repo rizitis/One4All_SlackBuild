@@ -1,0 +1,107 @@
+
+Sat Sep 28 22:28:19 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/BUILDS/gpacman/rembg/binary-rembg-2.0.59/rembg-2.0.59-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/rembg
+usr/doc/
+usr/doc/rembg-2.0.59/
+usr/doc/rembg-2.0.59/rembg.SlackBuild
+usr/lib/
+usr/lib/python3.11/
+usr/lib/python3.11/site-packages/
+usr/lib/python3.11/site-packages/rembg/
+usr/lib/python3.11/site-packages/rembg-2.0.59-py3.11.egg-info/
+usr/lib/python3.11/site-packages/rembg-2.0.59-py3.11.egg-info/PKG-INFO
+usr/lib/python3.11/site-packages/rembg-2.0.59-py3.11.egg-info/SOURCES.txt
+usr/lib/python3.11/site-packages/rembg-2.0.59-py3.11.egg-info/dependency_links.txt
+usr/lib/python3.11/site-packages/rembg-2.0.59-py3.11.egg-info/entry_points.txt
+usr/lib/python3.11/site-packages/rembg-2.0.59-py3.11.egg-info/requires.txt
+usr/lib/python3.11/site-packages/rembg-2.0.59-py3.11.egg-info/top_level.txt
+usr/lib/python3.11/site-packages/rembg/__init__.py
+usr/lib/python3.11/site-packages/rembg/__pycache__/
+usr/lib/python3.11/site-packages/rembg/__pycache__/__init__.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/__pycache__/_version.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/__pycache__/bg.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/__pycache__/cli.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/__pycache__/session_factory.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/_version.py
+usr/lib/python3.11/site-packages/rembg/bg.py
+usr/lib/python3.11/site-packages/rembg/cli.py
+usr/lib/python3.11/site-packages/rembg/commands/
+usr/lib/python3.11/site-packages/rembg/commands/__init__.py
+usr/lib/python3.11/site-packages/rembg/commands/__pycache__/
+usr/lib/python3.11/site-packages/rembg/commands/__pycache__/__init__.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/commands/__pycache__/b_command.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/commands/__pycache__/d_command.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/commands/__pycache__/i_command.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/commands/__pycache__/p_command.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/commands/__pycache__/s_command.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/commands/b_command.py
+usr/lib/python3.11/site-packages/rembg/commands/d_command.py
+usr/lib/python3.11/site-packages/rembg/commands/i_command.py
+usr/lib/python3.11/site-packages/rembg/commands/p_command.py
+usr/lib/python3.11/site-packages/rembg/commands/s_command.py
+usr/lib/python3.11/site-packages/rembg/session_factory.py
+usr/lib/python3.11/site-packages/rembg/sessions/
+usr/lib/python3.11/site-packages/rembg/sessions/__init__.py
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/__init__.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/base.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/birefnet_cod.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/birefnet_dis.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/birefnet_general.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/birefnet_general_lite.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/birefnet_hrsod.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/birefnet_massive.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/birefnet_portrait.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/dis_anime.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/dis_general_use.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/sam.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/silueta.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/u2net.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/u2net_cloth_seg.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/u2net_custom.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/u2net_human_seg.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/__pycache__/u2netp.cpython-311.pyc
+usr/lib/python3.11/site-packages/rembg/sessions/base.py
+usr/lib/python3.11/site-packages/rembg/sessions/birefnet_cod.py
+usr/lib/python3.11/site-packages/rembg/sessions/birefnet_dis.py
+usr/lib/python3.11/site-packages/rembg/sessions/birefnet_general.py
+usr/lib/python3.11/site-packages/rembg/sessions/birefnet_general_lite.py
+usr/lib/python3.11/site-packages/rembg/sessions/birefnet_hrsod.py
+usr/lib/python3.11/site-packages/rembg/sessions/birefnet_massive.py
+usr/lib/python3.11/site-packages/rembg/sessions/birefnet_portrait.py
+usr/lib/python3.11/site-packages/rembg/sessions/dis_anime.py
+usr/lib/python3.11/site-packages/rembg/sessions/dis_general_use.py
+usr/lib/python3.11/site-packages/rembg/sessions/sam.py
+usr/lib/python3.11/site-packages/rembg/sessions/silueta.py
+usr/lib/python3.11/site-packages/rembg/sessions/u2net.py
+usr/lib/python3.11/site-packages/rembg/sessions/u2net_cloth_seg.py
+usr/lib/python3.11/site-packages/rembg/sessions/u2net_custom.py
+usr/lib/python3.11/site-packages/rembg/sessions/u2net_human_seg.py
+usr/lib/python3.11/site-packages/rembg/sessions/u2netp.py
+
+Slackware package /home/omen/BUILDS/gpacman/rembg/binary-rembg-2.0.59/rembg-2.0.59-x86_64-1_rtz.tlz created.
+
