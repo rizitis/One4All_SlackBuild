@@ -1,19 +1,19 @@
 Log file is located at /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/build.log
 Starting build process...
---2024-09-20 16:55:57--  https://dec05eba.com/snapshot/gpu-screen-recorder.git.r791.aef223d.tar.gz
+--2024-09-28 19:07:52--  https://dec05eba.com/snapshot/gpu-screen-recorder.git.r791.aef223d.tar.gz
 Resolving dec05eba.com (dec05eba.com)... 31.208.83.99
 Connecting to dec05eba.com (dec05eba.com)|31.208.83.99|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 216609 (212K) [application/gzip]
 Saving to: ‘gpu-screen-recorder-r791.aef223d.tar.gz’
 
-     0K .......... .......... .......... .......... .......... 23%  104K 2s
-    50K .......... .......... .......... .......... .......... 47% 92.9K 1s
-   100K .......... .......... .......... .......... .......... 70% 46.6K 1s
-   150K .......... .......... .......... .......... .......... 94% 77.6K 0s
-   200K .......... .                                          100%  136K=2.8s
+     0K .......... .......... .......... .......... .......... 23%  587K 0s
+    50K .......... .......... .......... .......... .......... 47%  616K 0s
+   100K .......... .......... .......... .......... .......... 70% 8.21M 0s
+   150K .......... .......... .......... .......... .......... 94% 5.13M 0s
+   200K .......... .                                          100%  876K=0.2s
 
-2024-09-20 16:56:01 (75.0 KB/s) - ‘gpu-screen-recorder-r791.aef223d.tar.gz’ saved [216609/216609]
+2024-09-28 19:07:52 (1.06 MB/s) - ‘gpu-screen-recorder-r791.aef223d.tar.gz’ saved [216609/216609]
 
 .gitignore
 LICENSE
@@ -119,7 +119,7 @@ uninstall.sh
 BIN_PKG = YES
 hm...lets continiue and see what happens
 The Meson build system
-Version: 1.5.1
+Version: 1.5.2
 Source dir: /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/work
 Build dir: /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/work/build
 Build type: native build
@@ -151,7 +151,7 @@ Run-time dependency libdrm found: YES 2.4.123
 Run-time dependency wayland-egl found: YES 18.1.0
 Run-time dependency wayland-client found: YES 1.23.1
 Run-time dependency dbus-1 found: YES 1.14.10
-Run-time dependency libpipewire-0.3 found: YES 1.2.3
+Run-time dependency libpipewire-0.3 found: YES 1.2.5
 Run-time dependency libspa-0.2 found: YES 0.2
 Dependency libdrm found: YES 2.4.123 (cached)
 Build targets in project: 2
@@ -171,32 +171,32 @@ gpu-screen-recorder 4.1.8
 
 Found ninja-1.12.1 at /usr/bin/ninja
 WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
-[1/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_video.c.o
-[2/28] Compiling C object gpu-screen-recorder.p/src_capture_capture.c.o
-[3/28] Compiling C object gpu-screen-recorder.p/src_capture_xcomposite.c.o
-[4/28] Compiling C object gpu-screen-recorder.p/src_capture_kms.c.o
-[5/28] Compiling C object gsr-kms-server.p/kms_server_kms_server.c.o
-[6/28] Compiling C object gpu-screen-recorder.p/kms_client_kms_client.c.o
-[7/28] Compiling C object gpu-screen-recorder.p/src_capture_nvfbc.c.o
-[8/28] Compiling C object gpu-screen-recorder.p/src_xnvctrl.c.o
-[9/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_cuda.c.o
-[10/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_vaapi.c.o
-[11/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_software.c.o
-[12/28] Compiling C object gpu-screen-recorder.p/src_cuda.c.o
-[13/28] Compiling C object gpu-screen-recorder.p/src_overclock.c.o
-[14/28] Compiling C object gpu-screen-recorder.p/src_window_texture.c.o
-[15/28] Compiling C object gpu-screen-recorder.p/src_shader.c.o
-[16/28] Compiling C object gpu-screen-recorder.p/src_egl.c.o
-[17/28] Compiling C object gpu-screen-recorder.p/src_color_conversion.c.o
-[18/28] Compiling C object gpu-screen-recorder.p/src_utils.c.o
-[19/28] Compiling C object gpu-screen-recorder.p/src_library_loader.c.o
-[20/28] Compiling C object gpu-screen-recorder.p/src_cursor.c.o
+[1/28] Compiling C object gpu-screen-recorder.p/src_capture_capture.c.o
+[2/28] Compiling C object gpu-screen-recorder.p/src_xnvctrl.c.o
+[3/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_video.c.o
+[4/28] Compiling C object gsr-kms-server.p/kms_server_kms_server.c.o
+[5/28] Compiling C object gpu-screen-recorder.p/kms_client_kms_client.c.o
+[6/28] Compiling C object gpu-screen-recorder.p/src_capture_nvfbc.c.o
+[7/28] Compiling C object gpu-screen-recorder.p/src_capture_kms.c.o
+[8/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_cuda.c.o
+[9/28] Compiling C object gpu-screen-recorder.p/src_cuda.c.o
+[10/28] Compiling C object gpu-screen-recorder.p/src_overclock.c.o
+[11/28] Compiling C object gpu-screen-recorder.p/src_window_texture.c.o
+[12/28] Compiling C object gpu-screen-recorder.p/src_shader.c.o
+[13/28] Compiling C object gpu-screen-recorder.p/src_color_conversion.c.o
+[14/28] Compiling C object gpu-screen-recorder.p/src_capture_xcomposite.c.o
+[15/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_vaapi.c.o
+[16/28] Compiling C object gpu-screen-recorder.p/src_encoder_video_software.c.o
+[17/28] Compiling C object gpu-screen-recorder.p/src_egl.c.o
+[18/28] Compiling C object gpu-screen-recorder.p/src_library_loader.c.o
+[19/28] Compiling C object gpu-screen-recorder.p/src_cursor.c.o
+[20/28] Compiling C object gpu-screen-recorder.p/src_utils.c.o
 [21/28] Compiling C object gpu-screen-recorder.p/src_damage.c.o
-[22/28] Compiling C object gpu-screen-recorder.p/src_dbus.c.o
+[22/28] Compiling C object gpu-screen-recorder.p/src_capture_portal.c.o
 [23/28] Compiling C object gpu-screen-recorder.p/src_pipewire.c.o
-[24/28] Compiling C++ object gpu-screen-recorder.p/src_sound.cpp.o
-[25/28] Compiling C++ object gpu-screen-recorder.p/src_main.cpp.o
-[26/28] Compiling C object gpu-screen-recorder.p/src_capture_portal.c.o
+[24/28] Compiling C++ object gpu-screen-recorder.p/src_main.cpp.o
+[25/28] Compiling C object gpu-screen-recorder.p/src_dbus.c.o
+[26/28] Compiling C++ object gpu-screen-recorder.p/src_sound.cpp.o
 [27/28] Linking target gsr-kms-server
 [28/28] Linking target gpu-screen-recorder
 [0/1] Installing files.
@@ -225,6 +225,7 @@ special permissions, then DO NOT reset them here!
 Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
+
 Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/binary-gpu-screen-recorder-r791.aef223d/gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz
 
 ./
@@ -246,9 +247,14 @@ Slackware package /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/binar
 
 
 +==============================================================================
-| Installing new package /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/binary-gpu-screen-recorder-r791.aef223d/gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz
+| Upgrading gpu-screen-recorder-r791.aef223d-x86_64-1_rtz package using /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/binary-gpu-screen-recorder-r791.aef223d/gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz
 +==============================================================================
-
+Pre-installing package gpu-screen-recorder-r791.aef223d-x86_64-1_rtz...
+Removing package: gpu-screen-recorder-r791.aef223d-x86_64-1_rtz-upgraded-2024-09-28,19:07:55
+WARNING: /usr/share/applications/gpu-screen-recorder.desktop changed after package installation.
+  --> Deleting /usr/share/applications/gpu-screen-recorder.desktop
+  --> Deleting /usr/share/icons/hicolor/64x64/apps/gpu-screen-recorder.png
+  --> Deleting /usr/share/pixmaps/gpu-screen-recorder.png
 Verifying package gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz.
 Installing package gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
@@ -286,4 +292,5 @@ Font directories:
 /root/.fontconfig: not cleaning non-existent cache directory
 /usr/bin/fc-cache: succeeded
 Package gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz installed.
-Build process completed in 0 minutes and 9 seconds.
+Package gpu-screen-recorder-r791.aef223d-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-recorder/binary-gpu-screen-recorder-r791.aef223d/gpu-screen-recorder-r791.aef223d-x86_64-1_rtz.tlz.
+Build process completed in 0 minutes and 7 seconds.

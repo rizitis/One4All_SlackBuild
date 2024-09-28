@@ -51,13 +51,13 @@ cat <<EOF >> "$PKG"/usr/share/applications/$PRGNAM.desktop
 Version=1.0
 Name=$PRGNAM
 Comment=$SortDesc
-GenericName=
-Exec=$PRGNAM
+GenericName=$PRGNAM
+Exec=konsole --hold -e $PRGNAM -w screen -f 60 -a default_output -o "/tmp/Videos/video.mp4"
 Icon=$PRGNAM
 Terminal=true
 Type=Application
 Categories=Utility;
-Keywords=
+Keywords=screen-recorder
 EOF
 }
 ############################## MAIN VARS #########################################
@@ -135,6 +135,14 @@ true
 	  "${NINJA:=ninja}" "$NUMJOBS"
 	  DESTDIR=$PKG $NINJA install
 	cd ..
+#desktop_entry
+#mkdir -p $PKG/usr/share/pixmaps/
+#pushd $PKG/usr/share/pixmaps/
+#wget -O $PRGNAM.png https://dec05eba.com/images/gpu_screen_recorder_logo.png
+#mkdir -p $PKG/usr/share/icons/hicolor/64x64/apps/
+#cd $PKG/usr/share/icons/hicolor/64x64/apps/
+#wget -O $PRGNAM.png https://dec05eba.com/images/gpu_screen_recorder_logo_small.png
+#popd
    }
 
    python_build(){
