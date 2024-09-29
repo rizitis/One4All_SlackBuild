@@ -1,0 +1,11 @@
+qt-sudo: qt-sudo (Clone LXQt sudo tool, without LXQt libs)
+qt-sudo:
+qt-sudo: Clone LXQt sudo tool, without LXQt libs
+qt-sudo:
+qt-sudo:
+qt-sudo:
+qt-sudo:
+qt-sudo:
+qt-sudo:
+qt-sudo:
+qt-sudo: https://github.com/aarnt/qt-sudo

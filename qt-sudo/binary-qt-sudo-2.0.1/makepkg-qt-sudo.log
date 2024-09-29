@@ -1,0 +1,34 @@
+
+Sun Sep 29 11:38:48 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+WARNING: rpath found in ./usr/bin/qt-sudo:   RPATH                /usr/lib64
+
+Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/qt-sudo
+usr/doc/
+usr/doc/qt-sudo-2.0.1/
+usr/doc/qt-sudo-2.0.1/qt-sudo.SlackBuild
+
+Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz created.
+
