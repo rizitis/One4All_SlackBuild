@@ -1,0 +1,11 @@
+vtracer: vtracer (Convert PNG to SVG)
+vtracer:
+vtracer: visioncortex VTracer is an open source software to convert raster
+vtracer: images (like jpg & png) into vector graphics (svg). It can vectorize
+vtracer: graphics and photographs and trace the curves to output compact
+vtracer: vector files.
+vtracer:
+vtracer:
+vtracer:
+vtracer:
+vtracer: https://github.com/visioncortex/vtracer

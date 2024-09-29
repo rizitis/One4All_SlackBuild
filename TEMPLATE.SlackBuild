@@ -98,6 +98,9 @@ EOF
 true
 }
 
+  custom_build () {
+  true
+  }
 
    auto_build() {
 	CFLAGS="$SLKCFLAGS" \
@@ -238,7 +241,7 @@ CXXFLAGS="$SLKCFLAGS" \
   }
 
 
-  custom_build() {
+  qmake6_build() {
       # Export necessary environment variables (optional if you want to make them available globally)
       export QMAKE_CFLAGS="$QMAKE_CFLAGS"
       export QMAKE_CXXFLAGS="$QMAKE_CXXFLAGS"
@@ -256,6 +259,17 @@ CXXFLAGS="$SLKCFLAGS" \
 
       # Install the compiled binaries
       make install
+  }
+  
+  debian_build () {
+  rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
+	mkdir -p "$TMP" "$PKG" "$OUTPUT"
+	rm -rf "$TMP"/$PRGNAM-$VERSION
+	cd $TMP || exit
+	wget -c $SRCURL
+	ar x $SRCNAM.$COMPRESS
+	rm debian-binary control.tar.xz
+	tar -xJf data.tar.xz -C $PKG
   }
 
 
@@ -605,6 +619,8 @@ chrooting
 #meson_build
 #python_build
 #cmake_build
+#qmake6_build
+#debian_build
 #perl_build
 #haskel_build
 #cargo_build
