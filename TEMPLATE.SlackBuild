@@ -35,26 +35,26 @@ start_time=$(date +%s)
 # If you have slackdesc installed you need these, else ignore them (empty)
 # https://slack-desc.sourceforge.net/
    mkdesc="$(which slackdesc)" || true
-   Homepage="https://github.com/aarnt/qt-sudo"
+   Homepage="https://github.com/visioncortex/vtracer"
             #|--------------------------------------|#
-   SortDesc="Clone LXQt sudo tool, without LXQt libs"
+   SortDesc="Convert PNG to SVG"
             #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
-    LongDesc="Clone LXQt sudo tool, without LXQt libs"
+    LongDesc="visioncortex VTracer is an open source software to convert raster images (like jpg & png) into vector graphics (svg). It can vectorize graphics and photographs and trace the curves to output compact vector files."
 # If a README or README.md dont exist in CWD then SortDec discribtion, if not empty, will be added in a README file.
 
 ##########################-GITHUB-AUTO UPDATE-#####################################
 # If you dont use AUTO_UPD ignore them. (AUTO_UPD is used to following latest release/tag of a package without editting Slackbuild everytime...)
-DEV=
-PRJ=
+DEV=visioncortex
+PRJ=vtracer
 AUTO_UPD=$(curl --silent -L "https://api.github.com/repos/$DEV/$PRJ/releases/latest" | jq -r '.tag_name' | sed 's/^v//')
 
 ############################-SRC AND PACKAGE VARS-##################################
 # If use AUTO UPDATE 'VERSION=$AUTO_UPD'  or as a regular package version 'VERSION=0.1.2' etc...
-VERSION=2.0.1
+VERSION="$AUTO_UPD"
 # Binary (output) name
-PRGNAM=qt-sudo
+PRGNAM=vtracer
 # If not special SRCNAM needed then we use the same name as PRGNAM.
-SRCNAM=v2.0.1
+SRCNAM=webapp.2024.5
 # Download link if use AUTO_UPD then SRCmust be empty
 SRCURL=https://github.com/aarnt/qt-sudo/archive/refs/tags/v2.0.1.tar.gz
 # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z (for deb rpm etc use custom_build for all progress)
@@ -212,12 +212,10 @@ cd ..
    }
 
    cargo_build() {
-CFLAGS="$SLKCFLAGS" \
-CXXFLAGS="$SLKCFLAGS" \
 
 /usr/bin/cargo build --release
 
-        install -Dm755 "target/release/$PRGNAM" "$PKG/usr/bin/$PRGNAM"
+        install -Dm755 "target/release/$PRGNAM" "$PKG/usr/local/bin/$PRGNAM"
 
    }
 
@@ -260,7 +258,7 @@ CXXFLAGS="$SLKCFLAGS" \
       # Install the compiled binaries
       make install
   }
-  
+
   debian_build () {
   rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
@@ -275,8 +273,19 @@ CXXFLAGS="$SLKCFLAGS" \
 
    after_build(){
 	  mkdir -p "$PKG"/usr/doc/$PRGNAM-$VERSION
-	  cp -a "$DOCS" "$PKG"/usr/doc/$PRGNAM-"$VERSION" || true
-	  cat "$CWD"/$PRGNAM.SlackBuild > "$PKG"/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+# files...
+for DOCS in $(ls); do
+   cp -a "$DOCS" "$PKG/usr/doc/$PRGNAM-$VERSION/" || true
+# find . -maxdepth 1 -type f -exec cp -a {} "$PKG/usr/doc/$PRGNAM-$VERSION/" \;
+done
+
+# Iterate over directories in the current directory and copy them
+for DOCS_DIR in $(ls -d */); do
+   cp -R "$DOCS_DIR" "$PKG/usr/doc/$PRGNAM-$VERSION/" || true
+# find . -maxdepth 1 -type d ! -name . -exec cp -R {} "$PKG/usr/doc/$PRGNAM-$VERSION/" \;
+done
+
+   cat "$CWD"/$PRGNAM.SlackBuild > "$PKG"/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 	  find "$PKG"/usr/doc/$PRGNAM-$VERSION -type f -exec chmod 644 {} \;
 
 	  mkdir -p "$PKG"/install
@@ -412,7 +421,7 @@ sudo  makepkg -l y -c n "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGT
    }
 
    pkg_install(){
-	upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
+sudo upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
    }
 
 
@@ -603,8 +612,9 @@ fi
 
 NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
 
-DOCS="AUTHORS ChangeLog Changelog CHANGELOG COPYING COPYRIGHT CONFIGURATION* CONTRIBUTING* *FAQ* GPL* HACKING index.ht* *INDEX* INSTALL* License* LICENSE* *README* *Readme* *RELEASE* TODO VERSION"
-
+DOCS="ABOUT* AUTHORS BUGS ChangeLog* COPYING CREDITS FAQ GPL* HACKING \
+      LICENSE MAINTAINERS NEWS README* TODO"
+DOCS_DIR="docs DOCS"
 
   set -e
 
@@ -612,7 +622,7 @@ DOCS="AUTHORS ChangeLog Changelog CHANGELOG COPYING COPYRIGHT CONFIGURATION* CON
 download_src
 prepare_build
 patch_build
-chrooting
+#chrooting
 
 # uncomment what you need:
 #auto_build
@@ -623,9 +633,9 @@ chrooting
 #debian_build
 #perl_build
 #haskel_build
-#cargo_build
+cargo_build
 #golang_build
-custom_build
+#custom_build
 
 # default most of times #
 after_build
@@ -633,11 +643,10 @@ package_build
 
 # uncomment what you need:
 pkg_install
-sig_package
+#sig_package
 clean_src
 
 # Calculate and display build time
 end_time=$(date +%s)
 elapsed_time=$((end_time - start_time))
 echo "Build process completed in $((elapsed_time / 60)) minutes and $((elapsed_time % 60)) seconds."
-
