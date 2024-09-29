@@ -35,11 +35,11 @@ start_time=$(date +%s)
 # If you have slackdesc installed you need these, else ignore them (empty)
 # https://slack-desc.sourceforge.net/
    mkdesc="$(which slackdesc)" || true
-   Homepage=""
+   Homepage="https://github.com/aarnt/qt-sudo"
             #|--------------------------------------|#
-   SortDesc=""
+   SortDesc="Clone LXQt sudo tool, without LXQt libs"
             #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
-   LongDesc=""
+    LongDesc="Clone LXQt sudo tool, without LXQt libs"
 # If a README or README.md dont exist in CWD then SortDec discribtion, if not empty, will be added in a README file.
 
 ##########################-GITHUB-AUTO UPDATE-#####################################
@@ -50,13 +50,13 @@ AUTO_UPD=$(curl --silent -L "https://api.github.com/repos/$DEV/$PRJ/releases/lat
 
 ############################-SRC AND PACKAGE VARS-##################################
 # If use AUTO UPDATE 'VERSION=$AUTO_UPD'  or as a regular package version 'VERSION=0.1.2' etc...
-VERSION=
+VERSION=2.0.1
 # Binary (output) name
-PRGNAM=
+PRGNAM=qt-sudo
 # If not special SRCNAM needed then we use the same name as PRGNAM.
-SRCNAM=
+SRCNAM=v2.0.1
 # Download link if use AUTO_UPD then SRCmust be empty
-SRCURL=
+SRCURL=https://github.com/aarnt/qt-sudo/archive/refs/tags/v2.0.1.tar.gz
 # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z (for deb rpm etc use custom_build for all progress)
 # OR repos: cvn, cvs, git, lftp
 COMPRESS="tar.gz"
@@ -238,17 +238,26 @@ CXXFLAGS="$SLKCFLAGS" \
   }
 
 
-   custom_build() {
-   # example for deb package
-   rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
-	mkdir -p "$TMP" "$PKG" "$OUTPUT"
-	rm -rf "$TMP"/$PRGNAM-$VERSION
-	cd $TMP || exit
-	wget -c $SRCURL
-	ar x $SRCNAM.$COMPRESS
-	rm debian-binary control.tar.xz
-	tar -xJf data.tar.xz -C $PKG
+  custom_build() {
+      # Export necessary environment variables (optional if you want to make them available globally)
+      export QMAKE_CFLAGS="$QMAKE_CFLAGS"
+      export QMAKE_CXXFLAGS="$QMAKE_CXXFLAGS"
+      export QMAKE_LFLAGS="$QMAKE_LFLAGS"
+
+      # Call qmake6 with architecture-specific flags
+      qmake6 \
+          PREFIX="$PKG/usr" \
+          QMAKE_CFLAGS+="$QMAKE_CFLAGS" \
+          QMAKE_CXXFLAGS+="$QMAKE_CXXFLAGS" \
+          QMAKE_LFLAGS+="$QMAKE_LFLAGS"
+
+      # Run make with the number of parallel jobs set by NUMJOBS
+      make "$NUMJOBS"
+
+      # Install the compiled binaries
+      make install
   }
+
 
    after_build(){
 	  mkdir -p "$PKG"/usr/doc/$PRGNAM-$VERSION
@@ -530,7 +539,8 @@ fi
 # here ^^ end prepare_build function ;) #
 
 # Base System vars, here is the top of Script LOL.
-   if [ -z "$ARCH" ]; then
+# Detect the architecture if not already set
+if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586 ;;
     arm*) ARCH=arm ;;
@@ -538,28 +548,44 @@ fi
   esac
 fi
 
+# Output package name if required
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
   exit 0
 fi
 
+# Set compiler flags based on architecture
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
   LIBDIRSUFFIX=""
+  QMAKE_CFLAGS="-O2 -m32 -march=i586 -mtune=i686"
+  QMAKE_CXXFLAGS="-O2 -m32 -march=i586 -mtune=i686"
+  QMAKE_LFLAGS="-L/usr/lib -L/usr/local/lib"
 elif [ "$ARCH" = "i686" ]; then
   SLKCFLAGS="-O2 -march=i686 -mtune=i686"
   LIBDIRSUFFIX=""
+  QMAKE_CFLAGS="-O2 -m32 -march=i686 -mtune=i686"
+  QMAKE_CXXFLAGS="-O2 -m32 -march=i686 -mtune=i686"
+  QMAKE_LFLAGS="-L/usr/lib -L/usr/local/lib"
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -march=x86-64 -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
+  QMAKE_CFLAGS="-O2 -m64 -march=x86-64 -mtune=generic -fPIC"
+  QMAKE_CXXFLAGS="-O2 -m64 -march=x86-64 -mtune=generic -fPIC"
+  QMAKE_LFLAGS="-L/usr/lib64 -L/usr/local/lib64"
 elif [ "$ARCH" = "aarch64" ]; then
   SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
+  QMAKE_CFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
+  QMAKE_CXXFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
+  QMAKE_LFLAGS="-L/usr/lib64 -L/usr/local/lib64"
 else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""
+  QMAKE_CFLAGS="-O2"
+  QMAKE_CXXFLAGS="-O2"
+  QMAKE_LFLAGS="-L/usr/lib"
 fi
-
 
 NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
 
@@ -590,11 +616,12 @@ after_build
 package_build
 
 # uncomment what you need:
-clean_src
-#pkg_install
+pkg_install
 sig_package
+clean_src
 
 # Calculate and display build time
 end_time=$(date +%s)
 elapsed_time=$((end_time - start_time))
 echo "Build process completed in $((elapsed_time / 60)) minutes and $((elapsed_time % 60)) seconds."
+
