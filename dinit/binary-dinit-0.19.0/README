@@ -1,0 +1,11 @@
+dinit: dinit (service manager and init system)
+dinit:
+dinit: Dinit is a service supervisor with dependency support which can also
+dinit: act as the system init program. It was created with the intention of
+dinit: providing a portable init system with dependency management, that
+dinit: was functionally superior to many extant inits. Development goals
+dinit: include clean design, robustness, portability, usability, and
+dinit: avoiding feature.
+dinit:
+dinit:
+dinit: https://github.com/davmac314/dinit
