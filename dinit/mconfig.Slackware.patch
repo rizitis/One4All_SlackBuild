@@ -1,0 +1,22 @@
+--- configs/mconfig.Linux.sh	2024-09-21 03:58:44.000000000 +0300
++++ mconfig.Linux.sh	2024-09-30 08:51:20.687119741 +0300
+@@ -6,8 +6,8 @@
+ INST_PATH_OPTS=$(
+   echo "# Installation path options.";
+   echo "";
+-  echo "SBINDIR=/sbin";
+-  echo "MANDIR=/usr/share/man";
++  echo "SBINDIR=/usr/bin";
++  echo "MANDIR=/usr/man";
+   echo "SYSCONTROLSOCKET=/run/dinitctl"
+ )
+ 
+@@ -94,7 +94,7 @@
+   else
+       echo "TEST_LDFLAGS=\$(TEST_LDFLAGS_BASE)"  
+   fi  
+-  echo "BUILD_SHUTDOWN=yes"
++  echo "BUILD_SHUTDOWN=no"
+   echo ""
+   echo "# Notes:"
+   echo "#   -D_GLIBCXX_USE_CXX11_ABI=1 : force use of new ABI, see above / BUILD"

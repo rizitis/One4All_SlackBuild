@@ -95,8 +95,10 @@ EOF
 ## EDIT YOUR BUILD FUNCTIONS AS FOR YOUR NEEDS ##
 
    patch_build() {
-mkdir -p $PKG/{usr,sbin,run}
-mkdir -p $PKG/run/dinitctl
+patch -p0 < $CWD/mconfig.Slackware.patch || exit
+pushd configs
+sh mconfig.Linux.sh
+popd
 mkdir -p /etc/dinit.d
 mkdir -p $PKG/etc/rc.d/init.d/
 cp -a contrib/sysv-compat/40-dinit $PKG/etc/
@@ -109,17 +111,6 @@ cp -a contrib/shell-completion/bash/dinitctl $PKG/usr/share/bash-completion/comp
   custom_build () {
   CFLAGS="$SLKCFLAGS" \
   CXXFLAGS="$SLKCFLAGS" \
-  ./configure \
-  --prefix=/usr \
-  --exec-prefix=/ \
-  --sbindir=/sbin \
-  --syscontrolsocket=/run/dinitctl \
-  --enable-cgroups \
-  --enable-initgroups \
-  --mandir=/usr/man \
-  --enable-strip \
-  --disable-shutdown
-
   make "$NUMJOBS"
   make "$NUMJOBS" check
   make install DESTDIR=$PKG
@@ -143,23 +134,25 @@ cp -a contrib/shell-completion/bash/dinitctl $PKG/usr/share/bash-completion/comp
    }
 
    meson_build(){
-	  mkdir build
 	  cd build
 	  CFLAGS="$SLKCFLAGS" \
 	  CXXFLAGS="$SLKCFLAGS" \
 	  meson .. \
-	    --buildtype=release \
-	    --infodir=/usr/info \
-	    --libdir=/usr/lib${LIBDIRSUFFIX} \
-	    --localstatedir=/var \
-	    --mandir=/usr/man \
-	    --prefix=/usr \
-	    --sysconfdir=/etc \
-	    -Dstrip=true
+	    -Ddinit-sbindir=/usr/bin \
+            -Dbuild-shutdown=disabled \
+            -Ddinit-control-socket-path=/run/dinitctl \
+            -Duse-initgroups=true \
+            -Dsupport-cgroups=enabled \
+            -Dmandir=/usr/man \
+            -Dunit-tests=true \
+            -Digr-tests=true \
+            -Db_ndebug=false 
 	  "${NINJA:=ninja}" "$NUMJOBS"
 	  DESTDIR=$PKG $NINJA install
 	cd ..
    }
+
+
 
    python_build(){
 	python2 setup.py install --root="$PKG"
@@ -741,7 +734,7 @@ DOCS_DIR="docs DOCS"
 download_src
 prepare_build
 patch_build
-#chrooting
+chrooting
 
 # uncomment what you need:
 #auto_build
@@ -762,10 +755,11 @@ package_build
 
 # uncomment what you need:
 #pkg_install
-#sig_package
+sig_package
 clean_src
 
 # Calculate and display build time
 end_time=$(date +%s)
 elapsed_time=$((end_time - start_time))
 echo "Build process completed in $((elapsed_time / 60)) minutes and $((elapsed_time % 60)) seconds."
+

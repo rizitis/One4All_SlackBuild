@@ -1,25 +1,25 @@
 Starting build process...
 Detected architecture: x86_64
---2024-09-29 21:39:05--  https://github.com/davmac314/dinit/releases/download/v0.19.0/dinit-0.19.0.tar.xz
+--2024-09-30 09:07:11--  https://github.com/davmac314/dinit/releases/download/v0.19.0/dinit-0.19.0.tar.xz
 Resolving github.com (github.com)... 140.82.121.3
 Connecting to github.com (github.com)|140.82.121.3|:443... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/46341079/ee062d72-2133-443c-ae2c-d1ac70f7f8dc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240929%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240929T183810Z&X-Amz-Expires=300&X-Amz-Signature=e3c2159fae28af5a2778021b3c58c62aaa2be5fb32501a1ae1f6337772c67d71&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Ddinit-0.19.0.tar.xz&response-content-type=application%2Foctet-stream [following]
---2024-09-29 21:39:05--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/46341079/ee062d72-2133-443c-ae2c-d1ac70f7f8dc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240929%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240929T183810Z&X-Amz-Expires=300&X-Amz-Signature=e3c2159fae28af5a2778021b3c58c62aaa2be5fb32501a1ae1f6337772c67d71&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Ddinit-0.19.0.tar.xz&response-content-type=application%2Foctet-stream
-Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...
-Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.111.133|:443... connected.
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/46341079/ee062d72-2133-443c-ae2c-d1ac70f7f8dc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240930%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240930T060616Z&X-Amz-Expires=300&X-Amz-Signature=7613c9fe41bc39c98887394beaeb07ddc19a6e0997239df0a901442d9bfe1c08&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Ddinit-0.19.0.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2024-09-30 09:07:12--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/46341079/ee062d72-2133-443c-ae2c-d1ac70f7f8dc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240930%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240930T060616Z&X-Amz-Expires=300&X-Amz-Signature=7613c9fe41bc39c98887394beaeb07ddc19a6e0997239df0a901442d9bfe1c08&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Ddinit-0.19.0.tar.xz&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.109.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.110.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 280408 (274K) [application/octet-stream]
 Saving to: ‘dinit-0.19.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 18%  717K 0s
-    50K .......... .......... .......... .......... .......... 36% 2.82M 0s
-   100K .......... .......... .......... .......... .......... 54% 1.15M 0s
-   150K .......... .......... .......... .......... .......... 73% 4.54M 0s
-   200K .......... .......... .......... .......... .......... 91% 5.75M 0s
-   250K .......... .......... ...                             100%  961K=0.2s
+     0K .......... .......... .......... .......... .......... 18%  731K 0s
+    50K .......... .......... .......... .......... .......... 36%  889K 0s
+   100K .......... .......... .......... .......... .......... 54% 3.70M 0s
+   150K .......... .......... .......... .......... .......... 73% 1.30M 0s
+   200K .......... .......... .......... .......... .......... 91% 5.07M 0s
+   250K .......... .......... ...                             100% 5.09M=0.2s
 
-2024-09-29 21:39:06 (1.54 MB/s) - ‘dinit-0.19.0.tar.xz’ saved [280408/280408]
+2024-09-30 09:07:13 (1.41 MB/s) - ‘dinit-0.19.0.tar.xz’ saved [280408/280408]
 
 dinit-0.19.0/
 dinit-0.19.0/.cirrus.yml
@@ -443,220 +443,54 @@ dinit-0.19.0/src/tests/test-services/t3
 dinit-0.19.0/src/tests/test_procservice.h
 dinit-0.19.0/src/tests/test_service.h
 dinit-0.19.0/src/tests/tests.cc
-/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work
+/home/omen/BUILDS/gpacman/void/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
-Checking C++ compiler...
-  ... g++
-Checking whether "g++" is a working C++ compiler...
-  ... Yes.
-Checking whether the compiler/linker accepts -fsanitize=address,undefined...
-  ... Yes.
-Creating mconfig...
-  ... done.
-Done!
+patching file configs/mconfig.Linux.sh
+/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/configs /home/omen/BUILDS/gpacman/void/work/dinit-0.19.0
+Compiler found          : g++
+Using build options     : -flto -fno-rtti -fno-plt
+Sanitize options        : -fsanitize=address,undefined
+/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0
 make -C build all
-make[1]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/build'
+make[1]: Entering directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/build'
 make -C tools mconfig-gen
-make[2]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/build/tools'
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -o mconfig-gen mconfig-gen.cc  
-make[2]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/build/tools'
-./tools/mconfig-gen SBINDIR=/sbin SYSCONTROLSOCKET=/run/dinitctl \
+make[2]: Entering directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/build/tools'
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -o mconfig-gen mconfig-gen.cc  -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt 
+make[2]: Leaving directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/build/tools'
+./tools/mconfig-gen SBINDIR=/usr/bin SYSCONTROLSOCKET=/run/dinitctl \
 	SHUTDOWN_PREFIX= VERSION=0.19.0 \
 	DEFAULT_AUTO_RESTART=ALWAYS \
 	DEFAULT_START_TIMEOUT=60 \
 	DEFAULT_STOP_TIMEOUT=10 \
 	SUPPORT_CGROUPS=1 \
 	 \
-	USE_INITGROUPS=1 > includes/mconfig.h
-make[1]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/build'
+	 > includes/mconfig.h
+make[1]: Leaving directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/build'
 make -C src all
-make[1]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src'
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinit.cc -o dinit.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c load-service.cc -o load-service.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c service.cc -o service.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c proc-service.cc -o proc-service.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c baseproc-service.cc -o baseproc-service.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c control.cc -o control.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinit-log.cc -o dinit-log.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinit-main.cc -o dinit-main.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c run-child-proc.cc -o run-child-proc.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c options-processing.cc -o options-processing.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinit-env.cc -o dinit-env.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c settings.cc -o settings.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinitctl.cc -o dinitctl.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinitcheck.cc -o dinitcheck.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinit-monitor.cc -o dinit-monitor.o
-g++ -o dinit-monitor dinit-monitor.o  
-In file included from ../dasynq/include/dasynq/daryheap.h:11,
-                 from ../dasynq/include/dasynq/timerbase.h:10,
-                 from ../dasynq/include/dasynq/timerfd.h:10,
-                 from ../dasynq/include/dasynq.h:123,
-                 from dinit-log.cc:8:
-In member function ‘bool dasynq::svector<T>::change_capacity(size_type) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’,
-    inlined from ‘bool dasynq::svector<T>::ensure_capacity(size_type, bool) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:132:31,
-    inlined from ‘void dasynq::svector<T>::reserve(size_t) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:235:29,
-    inlined from ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {}; T = dasynq::v2::dprivate::empty_node; P = dasynq::stable_prio<int>; Compare = dasynq::compare_stable_prio<int, std::less<int> >; int N = 4]’ at ../dasynq/include/dasynq/daryheap.h:222:33,
-    inlined from ‘void dasynq::stable_heap<H, T, P, C>::allocate(handle_t&, U&& ...) [with U = {}; H = dasynq::v2::dprivate::dary_heap_def; T = dasynq::v2::dprivate::empty_node; P = int; C = std::less<int>]’ at ../dasynq/include/dasynq/stableheap.h:80:23,
-    inlined from ‘void dasynq::v2::dprivate::allocate_handle(prio_queue_emptynode&, dasynq::stable_heap<dary_heap_def, empty_node, int, std::less<int> >::handle_t&, base_watcher*)’ at ../dasynq/include/dasynq/basewatchers.h:190:19,
-    inlined from ‘void dasynq::v2::dprivate::event_dispatch<Traits, LoopTraits>::prepare_watcher(dasynq::v2::dprivate::base_watcher*) [with Traits = dasynq::v2::epoll_traits; LoopTraits = dasynq::v2::default_traits<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:463:28,
-    inlined from ‘void dasynq::v2::event_loop<T_Mutex, Traits>::register_fd(base_fd_watcher*, int, int, bool, bool) [with T_Mutex = dasynq::null_mutex; Traits = dasynq::v2::default_traits<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:810:34,
-    inlined from ‘void dasynq::v2::dprivate::fd_watcher<T_Loop>::add_watch(event_loop_t&, int, int, bool, int) [with EventLoop = dasynq::v2::event_loop<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:1704:26,
-    inlined from ‘void init_log(bool)’ at dinit-log.cc:289:36:
-../dasynq/include/dasynq/svec.h:96:32: warning: argument 1 value ‘18446744073709551600’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-   96 |         T *new_storage = (T *)(new (std::nothrow) char[c * sizeof(T)]);
-      |                               ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /usr/include/c++/14.2.0/bits/stl_tempbuf.h:59,
-                 from /usr/include/c++/14.2.0/bits/stl_algo.h:69,
-                 from /usr/include/c++/14.2.0/algorithm:61,
-                 from dinit-log.cc:1:
-/usr/include/c++/14.2.0/new: In function ‘void init_log(bool)’:
-/usr/include/c++/14.2.0/new:147:26: note: in a call to allocation function ‘void* operator new [](std::size_t, const std::nothrow_t&)’ declared here
-  147 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
-      |                          ^~~~~~~~
-In member function ‘bool dasynq::svector<T>::change_capacity(size_type) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’,
-    inlined from ‘bool dasynq::svector<T>::ensure_capacity(size_type, bool) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:132:31,
-    inlined from ‘void dasynq::svector<T>::reserve(size_t) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:235:29,
-    inlined from ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {}; T = dasynq::v2::dprivate::empty_node; P = dasynq::stable_prio<int>; Compare = dasynq::compare_stable_prio<int, std::less<int> >; int N = 4]’ at ../dasynq/include/dasynq/daryheap.h:222:33,
-    inlined from ‘void dasynq::stable_heap<H, T, P, C>::allocate(handle_t&, U&& ...) [with U = {}; H = dasynq::v2::dprivate::dary_heap_def; T = dasynq::v2::dprivate::empty_node; P = int; C = std::less<int>]’ at ../dasynq/include/dasynq/stableheap.h:80:23,
-    inlined from ‘void dasynq::v2::dprivate::allocate_handle(prio_queue_emptynode&, dasynq::stable_heap<dary_heap_def, empty_node, int, std::less<int> >::handle_t&, base_watcher*)’ at ../dasynq/include/dasynq/basewatchers.h:190:19,
-    inlined from ‘void dasynq::v2::dprivate::event_dispatch<Traits, LoopTraits>::prepare_watcher(dasynq::v2::dprivate::base_watcher*) [with Traits = dasynq::v2::epoll_traits; LoopTraits = dasynq::v2::default_traits<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:463:28,
-    inlined from ‘void dasynq::v2::event_loop<T_Mutex, Traits>::register_fd(base_fd_watcher*, int, int, bool, bool) [with T_Mutex = dasynq::null_mutex; Traits = dasynq::v2::default_traits<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:810:34,
-    inlined from ‘void dasynq::v2::dprivate::fd_watcher<T_Loop>::add_watch(event_loop_t&, int, int, bool, int) [with EventLoop = dasynq::v2::event_loop<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:1704:26,
-    inlined from ‘void setup_main_log(int)’ at dinit-log.cc:314:36:
-../dasynq/include/dasynq/svec.h:96:32: warning: argument 1 value ‘18446744073709551600’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-   96 |         T *new_storage = (T *)(new (std::nothrow) char[c * sizeof(T)]);
-      |                               ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/c++/14.2.0/new: In function ‘void setup_main_log(int)’:
-/usr/include/c++/14.2.0/new:147:26: note: in a call to allocation function ‘void* operator new [](std::size_t, const std::nothrow_t&)’ declared here
-  147 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
-      |                          ^~~~~~~~
-In file included from ../dasynq/include/dasynq/daryheap.h:11,
-                 from ../dasynq/include/dasynq/timerbase.h:10,
-                 from ../dasynq/include/dasynq/timerfd.h:10,
-                 from ../dasynq/include/dasynq.h:123,
-                 from dinit.cc:26:
-In member function ‘bool dasynq::svector<T>::change_capacity(size_type) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’,
-    inlined from ‘bool dasynq::svector<T>::ensure_capacity(size_type, bool) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:132:31,
-    inlined from ‘void dasynq::svector<T>::reserve(size_t) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:235:29,
-    inlined from ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {}; T = dasynq::v2::dprivate::empty_node; P = dasynq::stable_prio<int>; Compare = dasynq::compare_stable_prio<int, std::less<int> >; int N = 4]’ at ../dasynq/include/dasynq/daryheap.h:222:33:
-../dasynq/include/dasynq/svec.h:96:32: warning: argument 1 value ‘18446744073709551600’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-   96 |         T *new_storage = (T *)(new (std::nothrow) char[c * sizeof(T)]);
-      |                               ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /usr/include/c++/14.2.0/bits/exception_ptr.h:38,
-                 from /usr/include/c++/14.2.0/exception:166,
-                 from /usr/include/c++/14.2.0/ios:41,
-                 from /usr/include/c++/14.2.0/ostream:40,
-                 from /usr/include/c++/14.2.0/iostream:41,
-                 from dinit.cc:1:
-/usr/include/c++/14.2.0/new: In member function ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {}; T = dasynq::v2::dprivate::empty_node; P = dasynq::stable_prio<int>; Compare = dasynq::compare_stable_prio<int, std::less<int> >; int N = 4]’:
-/usr/include/c++/14.2.0/new:147:26: note: in a call to allocation function ‘void* operator new [](std::size_t, const std::nothrow_t&)’ declared here
-  147 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
-      |                          ^~~~~~~~
-In member function ‘bool dasynq::svector<T>::change_capacity(size_type) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’,
-    inlined from ‘bool dasynq::svector<T>::ensure_capacity(size_type, bool) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:132:31,
-    inlined from ‘void dasynq::svector<T>::reserve(size_t) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:235:29,
-    inlined from ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {}; T = dasynq::v2::dprivate::empty_node; P = dasynq::stable_prio<int>; Compare = dasynq::compare_stable_prio<int, std::less<int> >; int N = 4]’ at ../dasynq/include/dasynq/daryheap.h:222:33,
-    inlined from ‘void dasynq::stable_heap<H, T, P, C>::allocate(handle_t&, U&& ...) [with U = {}; H = dasynq::v2::dprivate::dary_heap_def; T = dasynq::v2::dprivate::empty_node; P = int; C = std::less<int>]’ at ../dasynq/include/dasynq/stableheap.h:80:23,
-    inlined from ‘void dasynq::v2::dprivate::allocate_handle(prio_queue_emptynode&, dasynq::stable_heap<dary_heap_def, empty_node, int, std::less<int> >::handle_t&, base_watcher*)’ at ../dasynq/include/dasynq/basewatchers.h:190:19,
-    inlined from ‘void dasynq::v2::dprivate::event_dispatch<Traits, LoopTraits>::prepare_watcher(dasynq::v2::dprivate::base_watcher*) [with Traits = dasynq::v2::epoll_traits; LoopTraits = dasynq::v2::default_traits<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:463:28,
-    inlined from ‘void dasynq::v2::event_loop<T_Mutex, Traits>::register_timer(base_timer_watcher*, dasynq::clock_type) [with T_Mutex = dasynq::null_mutex; Traits = dasynq::v2::default_traits<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:1033:34:
-../dasynq/include/dasynq/svec.h:96:32: warning: argument 1 value ‘18446744073709551600’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-   96 |         T *new_storage = (T *)(new (std::nothrow) char[c * sizeof(T)]);
-      |                               ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/c++/14.2.0/new: In member function ‘void dasynq::v2::event_loop<T_Mutex, Traits>::register_timer(base_timer_watcher*, dasynq::clock_type) [with T_Mutex = dasynq::null_mutex; Traits = dasynq::v2::default_traits<dasynq::null_mutex>]’:
-/usr/include/c++/14.2.0/new:147:26: note: in a call to allocation function ‘void* operator new [](std::size_t, const std::nothrow_t&)’ declared here
-  147 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
-      |                          ^~~~~~~~
-In member function ‘bool dasynq::svector<T>::change_capacity(size_type) [with T = dasynq::dary_heap<dasynq::timer_data, dasynq::time_val, dasynq::compare_timespec>::heap_node]’,
-    inlined from ‘bool dasynq::svector<T>::ensure_capacity(size_type, bool) [with T = dasynq::dary_heap<dasynq::timer_data, dasynq::time_val, dasynq::compare_timespec>::heap_node]’ at ../dasynq/include/dasynq/svec.h:132:31,
-    inlined from ‘void dasynq::svector<T>::reserve(size_t) [with T = dasynq::dary_heap<dasynq::timer_data, dasynq::time_val, dasynq::compare_timespec>::heap_node]’ at ../dasynq/include/dasynq/svec.h:235:29,
-    inlined from ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {void*&}; T = dasynq::timer_data; P = dasynq::time_val; Compare = dasynq::compare_timespec; int N = 4]’ at ../dasynq/include/dasynq/daryheap.h:222:33,
-    inlined from ‘void dasynq::timer_base<Base>::add_timer_nolock(dasynq::timer_handle_t&, void*, dasynq::clock_type) [with Base = dasynq::v2::child_proc_events<dasynq::v2::dprivate::event_dispatch<dasynq::v2::epoll_traits, dasynq::v2::default_traits<dasynq::null_mutex> > >]’ at ../dasynq/include/dasynq/timerbase.h:475:46,
-    inlined from ‘void dasynq::v2::event_loop<T_Mutex, Traits>::register_timer(base_timer_watcher*, dasynq::clock_type) [with T_Mutex = dasynq::null_mutex; Traits = dasynq::v2::default_traits<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:1035:39:
-../dasynq/include/dasynq/svec.h:96:32: warning: argument 1 value ‘18446744073709551600’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-   96 |         T *new_storage = (T *)(new (std::nothrow) char[c * sizeof(T)]);
-      |                               ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/c++/14.2.0/new: In member function ‘void dasynq::v2::event_loop<T_Mutex, Traits>::register_timer(base_timer_watcher*, dasynq::clock_type) [with T_Mutex = dasynq::null_mutex; Traits = dasynq::v2::default_traits<dasynq::null_mutex>]’:
-/usr/include/c++/14.2.0/new:147:26: note: in a call to allocation function ‘void* operator new [](std::size_t, const std::nothrow_t&)’ declared here
-  147 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
-      |                          ^~~~~~~~
-In file included from ../dasynq/include/dasynq/daryheap.h:11,
-                 from ../dasynq/include/dasynq/timerbase.h:10,
-                 from ../dasynq/include/dasynq/timerfd.h:10,
-                 from ../dasynq/include/dasynq.h:123,
-                 from includes/dinit.h:4,
-                 from proc-service.cc:7:
-In member function ‘bool dasynq::svector<T>::change_capacity(size_type) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’,
-    inlined from ‘bool dasynq::svector<T>::ensure_capacity(size_type, bool) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:132:31,
-    inlined from ‘void dasynq::svector<T>::reserve(size_t) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:235:29,
-    inlined from ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {}; T = dasynq::v2::dprivate::empty_node; P = dasynq::stable_prio<int>; Compare = dasynq::compare_stable_prio<int, std::less<int> >; int N = 4]’ at ../dasynq/include/dasynq/daryheap.h:222:33:
-../dasynq/include/dasynq/svec.h:96:32: warning: argument 1 value ‘18446744073709551600’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-   96 |         T *new_storage = (T *)(new (std::nothrow) char[c * sizeof(T)]);
-      |                               ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /usr/include/c++/14.2.0/bits/std_function.h:39,
-                 from /usr/include/c++/14.2.0/functional:59,
-                 from ../dasynq/include/dasynq/stableheap.h:11,
-                 from ../dasynq/include/dasynq.h:7:
-/usr/include/c++/14.2.0/new: In member function ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {}; T = dasynq::v2::dprivate::empty_node; P = dasynq::stable_prio<int>; Compare = dasynq::compare_stable_prio<int, std::less<int> >; int N = 4]’:
-/usr/include/c++/14.2.0/new:147:26: note: in a call to allocation function ‘void* operator new [](std::size_t, const std::nothrow_t&)’ declared here
-  147 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
-      |                          ^~~~~~~~
-In file included from ../dasynq/include/dasynq/daryheap.h:11,
-                 from ../dasynq/include/dasynq/timerbase.h:10,
-                 from ../dasynq/include/dasynq/timerfd.h:10,
-                 from ../dasynq/include/dasynq.h:123,
-                 from includes/dinit.h:4,
-                 from baseproc-service.cc:10:
-In member function ‘bool dasynq::svector<T>::change_capacity(size_type) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’,
-    inlined from ‘bool dasynq::svector<T>::ensure_capacity(size_type, bool) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:132:31,
-    inlined from ‘void dasynq::svector<T>::reserve(size_t) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:235:29,
-    inlined from ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {}; T = dasynq::v2::dprivate::empty_node; P = dasynq::stable_prio<int>; Compare = dasynq::compare_stable_prio<int, std::less<int> >; int N = 4]’ at ../dasynq/include/dasynq/daryheap.h:222:33:
-../dasynq/include/dasynq/svec.h:96:32: warning: argument 1 value ‘18446744073709551600’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-   96 |         T *new_storage = (T *)(new (std::nothrow) char[c * sizeof(T)]);
-      |                               ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /usr/include/c++/14.2.0/bits/std_function.h:39,
-                 from /usr/include/c++/14.2.0/functional:59,
-                 from ../dasynq/include/dasynq/stableheap.h:11,
-                 from ../dasynq/include/dasynq.h:7:
-/usr/include/c++/14.2.0/new: In member function ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {}; T = dasynq::v2::dprivate::empty_node; P = dasynq::stable_prio<int>; Compare = dasynq::compare_stable_prio<int, std::less<int> >; int N = 4]’:
-/usr/include/c++/14.2.0/new:147:26: note: in a call to allocation function ‘void* operator new [](std::size_t, const std::nothrow_t&)’ declared here
-  147 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
-      |                          ^~~~~~~~
-In member function ‘bool dasynq::svector<T>::change_capacity(size_type) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’,
-    inlined from ‘bool dasynq::svector<T>::ensure_capacity(size_type, bool) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:132:31,
-    inlined from ‘void dasynq::svector<T>::reserve(size_t) [with T = dasynq::dary_heap<dasynq::v2::dprivate::empty_node, dasynq::stable_prio<int>, dasynq::compare_stable_prio<int, std::less<int> >, 4>::heap_node]’ at ../dasynq/include/dasynq/svec.h:235:29,
-    inlined from ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {}; T = dasynq::v2::dprivate::empty_node; P = dasynq::stable_prio<int>; Compare = dasynq::compare_stable_prio<int, std::less<int> >; int N = 4]’ at ../dasynq/include/dasynq/daryheap.h:222:33,
-    inlined from ‘void dasynq::stable_heap<H, T, P, C>::allocate(handle_t&, U&& ...) [with U = {}; H = dasynq::v2::dprivate::dary_heap_def; T = dasynq::v2::dprivate::empty_node; P = int; C = std::less<int>]’ at ../dasynq/include/dasynq/stableheap.h:80:23,
-    inlined from ‘void dasynq::v2::dprivate::allocate_handle(prio_queue_emptynode&, dasynq::stable_heap<dary_heap_def, empty_node, int, std::less<int> >::handle_t&, base_watcher*)’ at ../dasynq/include/dasynq/basewatchers.h:190:19,
-    inlined from ‘void dasynq::v2::dprivate::event_dispatch<Traits, LoopTraits>::prepare_watcher(dasynq::v2::dprivate::base_watcher*) [with Traits = dasynq::v2::epoll_traits; LoopTraits = dasynq::v2::default_traits<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:463:28,
-    inlined from ‘void dasynq::v2::event_loop<T_Mutex, Traits>::register_timer(base_timer_watcher*, dasynq::clock_type) [with T_Mutex = dasynq::null_mutex; Traits = dasynq::v2::default_traits<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:1033:34:
-../dasynq/include/dasynq/svec.h:96:32: warning: argument 1 value ‘18446744073709551600’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-   96 |         T *new_storage = (T *)(new (std::nothrow) char[c * sizeof(T)]);
-      |                               ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/c++/14.2.0/new: In member function ‘void dasynq::v2::event_loop<T_Mutex, Traits>::register_timer(base_timer_watcher*, dasynq::clock_type) [with T_Mutex = dasynq::null_mutex; Traits = dasynq::v2::default_traits<dasynq::null_mutex>]’:
-/usr/include/c++/14.2.0/new:147:26: note: in a call to allocation function ‘void* operator new [](std::size_t, const std::nothrow_t&)’ declared here
-  147 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
-      |                          ^~~~~~~~
-In member function ‘bool dasynq::svector<T>::change_capacity(size_type) [with T = dasynq::dary_heap<dasynq::timer_data, dasynq::time_val, dasynq::compare_timespec>::heap_node]’,
-    inlined from ‘bool dasynq::svector<T>::ensure_capacity(size_type, bool) [with T = dasynq::dary_heap<dasynq::timer_data, dasynq::time_val, dasynq::compare_timespec>::heap_node]’ at ../dasynq/include/dasynq/svec.h:132:31,
-    inlined from ‘void dasynq::svector<T>::reserve(size_t) [with T = dasynq::dary_heap<dasynq::timer_data, dasynq::time_val, dasynq::compare_timespec>::heap_node]’ at ../dasynq/include/dasynq/svec.h:235:29,
-    inlined from ‘void dasynq::dary_heap<T, P, Compare, N>::allocate(handle_t&, U&& ...) [with U = {void*&}; T = dasynq::timer_data; P = dasynq::time_val; Compare = dasynq::compare_timespec; int N = 4]’ at ../dasynq/include/dasynq/daryheap.h:222:33,
-    inlined from ‘void dasynq::timer_base<Base>::add_timer_nolock(dasynq::timer_handle_t&, void*, dasynq::clock_type) [with Base = dasynq::v2::child_proc_events<dasynq::v2::dprivate::event_dispatch<dasynq::v2::epoll_traits, dasynq::v2::default_traits<dasynq::null_mutex> > >]’ at ../dasynq/include/dasynq/timerbase.h:475:46,
-    inlined from ‘void dasynq::v2::event_loop<T_Mutex, Traits>::register_timer(base_timer_watcher*, dasynq::clock_type) [with T_Mutex = dasynq::null_mutex; Traits = dasynq::v2::default_traits<dasynq::null_mutex>]’ at ../dasynq/include/dasynq.h:1035:39:
-../dasynq/include/dasynq/svec.h:96:32: warning: argument 1 value ‘18446744073709551600’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
-   96 |         T *new_storage = (T *)(new (std::nothrow) char[c * sizeof(T)]);
-      |                               ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/c++/14.2.0/new: In member function ‘void dasynq::v2::event_loop<T_Mutex, Traits>::register_timer(base_timer_watcher*, dasynq::clock_type) [with T_Mutex = dasynq::null_mutex; Traits = dasynq::v2::default_traits<dasynq::null_mutex>]’:
-/usr/include/c++/14.2.0/new:147:26: note: in a call to allocation function ‘void* operator new [](std::size_t, const std::nothrow_t&)’ declared here
-  147 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
-      |                          ^~~~~~~~
-g++ -o dinitctl dinitctl.o options-processing.o settings.o  
-g++ -o dinit dinit.o load-service.o service.o proc-service.o baseproc-service.o control.o dinit-log.o dinit-main.o run-child-proc.o options-processing.o dinit-env.o settings.o  
-g++ -o dinitcheck dinitcheck.o options-processing.o settings.o  
-make[1]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src'
+make[1]: Entering directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src'
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinit.cc -o dinit.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c load-service.cc -o load-service.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c service.cc -o service.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c proc-service.cc -o proc-service.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c baseproc-service.cc -o baseproc-service.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c control.cc -o control.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinit-log.cc -o dinit-log.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinit-main.cc -o dinit-main.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c run-child-proc.cc -o run-child-proc.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c options-processing.cc -o options-processing.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinit-env.cc -o dinit-env.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c settings.cc -o settings.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinitctl.cc -o dinitctl.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinitcheck.cc -o dinitcheck.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt  -MMD -MP -Iincludes -I../dasynq/include -I../build/includes -c dinit-monitor.cc -o dinit-monitor.o
+g++ -o dinit-monitor dinit-monitor.o  -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt 
+g++ -o dinitctl dinitctl.o options-processing.o settings.o  -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt 
+g++ -o dinitcheck dinitcheck.o options-processing.o settings.o  -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt 
+g++ -o dinit dinit.o load-service.o service.o proc-service.o baseproc-service.o control.o dinit-log.o dinit-main.o run-child-proc.o options-processing.o dinit-env.o settings.o  -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt 
+make[1]: Leaving directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src'
 make -C doc/manpages all
-make[1]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/doc/manpages'
+make[1]: Entering directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/doc/manpages'
 m4 -DVERSION=0.19.0 -DMONTH=September -DYEAR=2024 -DSHUTDOWN_PREFIX= dinit.8.m4 > dinit.8
 m4 -DVERSION=0.19.0 -DMONTH=September -DYEAR=2024 -DSHUTDOWN_PREFIX= dinitctl.8.m4 > dinitctl.8
 m4 -DVERSION=0.19.0 -DMONTH=September -DYEAR=2024 dinitcheck.8.m4 > dinitcheck.8
@@ -665,39 +499,39 @@ m4 -DVERSION=0.19.0 -DMONTH=September -DYEAR=2024 -DDEFAULT_AUTO_RESTART=ALWAYS\
    -DDEFAULT_START_TIMEOUT=60\
    -DDEFAULT_STOP_TIMEOUT=10 dinit-service.5.m4 > dinit-service.5
 m4 -DVERSION=0.19.0 -DMONTH=September -DYEAR=2024 -DSHUTDOWN_PREFIX= shutdown.8.m4 > shutdown.8
-make[1]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/doc/manpages'
+make[1]: Leaving directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/doc/manpages'
 ***
 *** Build complete; use "make check" to run unit tests, "make check-igr" for
 *** integration tests, or "make install" to install.
 ***
 make -C src check
-make[1]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src'
+make[1]: Entering directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src'
 make -C tests check
-make[2]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src/tests'
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../service.cc -o service.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../proc-service.cc -o proc-service.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../dinit-log.cc -o dinit-log.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../load-service.cc -o load-service.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../baseproc-service.cc -o baseproc-service.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../dinit-env.cc -o dinit-env.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../control.cc -o control.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../settings.cc -o settings.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c tests.cc -o tests.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c test-dinit.cc -o test-dinit.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c test-bpsys.cc -o test-bpsys.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c test-run-child-proc.cc -o test-run-child-proc.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c proctests.cc -o proctests.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c loadtests.cc -o loadtests.o
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c envtests.cc -o envtests.o
-g++ -o tests service.o proc-service.o dinit-log.o load-service.o baseproc-service.o dinit-env.o control.o settings.o tests.o test-dinit.o test-bpsys.o test-run-child-proc.o  -fsanitize=address,undefined 
-g++ -o proctests service.o proc-service.o dinit-log.o load-service.o baseproc-service.o dinit-env.o control.o settings.o proctests.o test-dinit.o test-bpsys.o test-run-child-proc.o  -fsanitize=address,undefined 
-g++ -o envtests service.o proc-service.o dinit-log.o load-service.o baseproc-service.o dinit-env.o control.o settings.o envtests.o test-dinit.o test-bpsys.o test-run-child-proc.o  -fsanitize=address,undefined 
-g++ -o loadtests service.o proc-service.o dinit-log.o load-service.o baseproc-service.o dinit-env.o control.o settings.o loadtests.o test-dinit.o test-bpsys.o test-run-child-proc.o  -fsanitize=address,undefined 
+make[2]: Entering directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src/tests'
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../service.cc -o service.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../proc-service.cc -o proc-service.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../dinit-log.cc -o dinit-log.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../load-service.cc -o load-service.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../baseproc-service.cc -o baseproc-service.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../dinit-env.cc -o dinit-env.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../control.cc -o control.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c ../settings.cc -o settings.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c tests.cc -o tests.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c test-dinit.cc -o test-dinit.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c test-bpsys.cc -o test-bpsys.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c test-run-child-proc.cc -o test-run-child-proc.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c proctests.cc -o proctests.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c loadtests.cc -o loadtests.o
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -Itest-includes -I../../dasynq/include -I../../build/includes -I../includes -c envtests.cc -o envtests.o
+g++ -o tests service.o proc-service.o dinit-log.o load-service.o baseproc-service.o dinit-env.o control.o settings.o tests.o test-dinit.o test-bpsys.o test-run-child-proc.o  -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined 
+g++ -o proctests service.o proc-service.o dinit-log.o load-service.o baseproc-service.o dinit-env.o control.o settings.o proctests.o test-dinit.o test-bpsys.o test-run-child-proc.o  -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined 
+g++ -o loadtests service.o proc-service.o dinit-log.o load-service.o baseproc-service.o dinit-env.o control.o settings.o loadtests.o test-dinit.o test-bpsys.o test-run-child-proc.o  -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined 
+g++ -o envtests service.o proc-service.o dinit-log.o load-service.o baseproc-service.o dinit-env.o control.o settings.o envtests.o test-dinit.o test-bpsys.o test-run-child-proc.o  -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined 
 make -C cptests build-tests
-make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src/tests/cptests'
-g++  -O2 -march=x86-64 -mtune=generic -fPIC -fsanitize=address,undefined  -MMD -MP -I../test-includes -I../../../dasynq/include -I../../../build/includes -I../../includes -c cptests.cc -o cptests.o
-g++ -o cptests cptests.o ../test-bpsys.o ../test-dinit.o ../test-run-child-proc.o ../control.o ../dinit-log.o ../service.o ../load-service.o ../proc-service.o ../baseproc-service.o ../dinit-env.o ../settings.o  -fsanitize=address,undefined 
-make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src/tests/cptests'
+make[3]: Entering directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src/tests/cptests'
+g++ -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined  -MMD -MP -I../test-includes -I../../../dasynq/include -I../../../build/includes -I../../includes -c cptests.cc -o cptests.o
+g++ -o cptests cptests.o ../test-bpsys.o ../test-dinit.o ../test-run-child-proc.o ../control.o ../dinit-log.o ../service.o ../load-service.o ../proc-service.o ../baseproc-service.o ../dinit-env.o ../settings.o  -std=c++11 -Os -Wall -flto -fno-rtti -fno-plt -fsanitize=address,undefined 
+make[3]: Leaving directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src/tests/cptests'
 ./tests
 basic_test1...               PASSED
 basic_test2...               PASSED
@@ -807,7 +641,7 @@ test_plusassign...           PASSED
 test_env_1...                PASSED
 test_env_2...                PASSED
 make -C cptests run-tests
-make[3]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src/tests/cptests'
+make[3]: Entering directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src/tests/cptests'
 ./cptests
 cptest_queryver...           PASSED
 cptest_listservices...       PASSED
@@ -829,21 +663,21 @@ cptest_sendsignal...         PASSED
 cptest_two_commands...       PASSED
 cptest_closehandle...        PASSED
 cptest_invalid...            PASSED
-make[3]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src/tests/cptests'
-make[2]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src/tests'
-make[1]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src'
+make[3]: Leaving directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src/tests/cptests'
+make[2]: Leaving directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src/tests'
+make[1]: Leaving directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src'
 make -C src install
-make[1]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src'
-install -d /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/package-dinit/sbin
-install -s dinit dinitctl dinitcheck dinit-monitor  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/package-dinit/sbin
-make[1]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/src'
+make[1]: Entering directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src'
+install -d /home/omen/BUILDS/gpacman/void/package-dinit/usr/bin
+install -s dinit dinitctl dinitcheck dinit-monitor  /home/omen/BUILDS/gpacman/void/package-dinit/usr/bin
+make[1]: Leaving directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/src'
 make -C doc/manpages install
-make[1]: Entering directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/doc/manpages'
-mkdir -p "/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/package-dinit/usr/man/man8"
-install -m644 dinit.8 dinitctl.8 dinitcheck.8 dinit-monitor.8 "/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/package-dinit/usr/man/man8"
-mkdir -p "/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/package-dinit/usr/man/man5"
-install -m644 dinit-service.5 "/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/package-dinit/usr/man/man5"
-make[1]: Leaving directory '/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/work/dinit-0.19.0/doc/manpages'
+make[1]: Entering directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/doc/manpages'
+mkdir -p "/home/omen/BUILDS/gpacman/void/package-dinit/usr/man/man8"
+install -m644 dinit.8 dinitctl.8 dinitcheck.8 dinit-monitor.8 "/home/omen/BUILDS/gpacman/void/package-dinit/usr/man/man8"
+mkdir -p "/home/omen/BUILDS/gpacman/void/package-dinit/usr/man/man5"
+install -m644 dinit-service.5 "/home/omen/BUILDS/gpacman/void/package-dinit/usr/man/man5"
+make[1]: Leaving directory '/home/omen/BUILDS/gpacman/void/work/dinit-0.19.0/doc/manpages'
 
 Slackware package maker, version 3.14159265.
 
@@ -887,7 +721,7 @@ Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
 
-Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/binary-dinit-0.19.0/dinit-0.19.0-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/BUILDS/gpacman/void/binary-dinit-0.19.0/dinit-0.19.0-x86_64-1_rtz.tlz
 
 ./
 etc/
@@ -899,24 +733,28 @@ etc/rc.d/init.d/40-dinit
 install/
 install/doinst.sh
 install/slack-desc
-run/
-run/dinitctl/
-sbin/
-sbin/dinit
-sbin/dinitcheck
-sbin/dinitctl
-sbin/dinit-monitor
 usr/
+usr/bin/
+usr/bin/dinit
+usr/bin/dinit-monitor
+usr/bin/dinitcheck
+usr/bin/dinitctl
 usr/doc/
 usr/doc/dinit-0.19.0/
-usr/doc/dinit-0.19.0/build/
 usr/doc/dinit-0.19.0/BUILD
-usr/doc/dinit-0.19.0/build/includes/
-usr/doc/dinit-0.19.0/build/includes/mconfig.h
-usr/doc/dinit-0.19.0/build/includes/README
-usr/doc/dinit-0.19.0/build/Makefile
-usr/doc/dinit-0.19.0/build/mconfig.mesontemplate
 usr/doc/dinit-0.19.0/BUILD_MESON
+usr/doc/dinit-0.19.0/CONTRIBUTORS
+usr/doc/dinit-0.19.0/LICENSE
+usr/doc/dinit-0.19.0/Makefile
+usr/doc/dinit-0.19.0/NEWS
+usr/doc/dinit-0.19.0/README.md
+usr/doc/dinit-0.19.0/TODO
+usr/doc/dinit-0.19.0/build/
+usr/doc/dinit-0.19.0/build/Makefile
+usr/doc/dinit-0.19.0/build/includes/
+usr/doc/dinit-0.19.0/build/includes/README
+usr/doc/dinit-0.19.0/build/includes/mconfig.h
+usr/doc/dinit-0.19.0/build/mconfig.mesontemplate
 usr/doc/dinit-0.19.0/build/tools/
 usr/doc/dinit-0.19.0/build/tools/Makefile
 usr/doc/dinit-0.19.0/build/tools/mconfig-gen
@@ -930,6 +768,7 @@ usr/doc/dinit-0.19.0/configs/mconfig.Linux.sh
 usr/doc/dinit-0.19.0/configs/mconfig.OpenBSD
 usr/doc/dinit-0.19.0/configure
 usr/doc/dinit-0.19.0/contrib/
+usr/doc/dinit-0.19.0/contrib/README
 usr/doc/dinit-0.19.0/contrib/freebsd-rc/
 usr/doc/dinit-0.19.0/contrib/freebsd-rc/README
 usr/doc/dinit-0.19.0/contrib/freebsd-rc/tree/
@@ -941,24 +780,23 @@ usr/doc/dinit-0.19.0/contrib/freebsd-rc/tree/etc/rc.d/dinit
 usr/doc/dinit-0.19.0/contrib/freebsd-rc/tree/usr/
 usr/doc/dinit-0.19.0/contrib/freebsd-rc/tree/usr/sbin/
 usr/doc/dinit-0.19.0/contrib/freebsd-rc/tree/usr/sbin/dinitd
-usr/doc/dinit-0.19.0/contrib/README
 usr/doc/dinit-0.19.0/contrib/shell-completion/
 usr/doc/dinit-0.19.0/contrib/shell-completion/bash/
-usr/doc/dinit-0.19.0/contrib/shell-completion/bash/dinitctl
 usr/doc/dinit-0.19.0/contrib/shell-completion/bash/README
+usr/doc/dinit-0.19.0/contrib/shell-completion/bash/dinitctl
 usr/doc/dinit-0.19.0/contrib/shell-completion/fish/
-usr/doc/dinit-0.19.0/contrib/shell-completion/fish/dinitctl.fish
 usr/doc/dinit-0.19.0/contrib/shell-completion/fish/README
+usr/doc/dinit-0.19.0/contrib/shell-completion/fish/dinitctl.fish
 usr/doc/dinit-0.19.0/contrib/shell-completion/zsh/
-usr/doc/dinit-0.19.0/contrib/shell-completion/zsh/_dinit
 usr/doc/dinit-0.19.0/contrib/shell-completion/zsh/README
+usr/doc/dinit-0.19.0/contrib/shell-completion/zsh/_dinit
 usr/doc/dinit-0.19.0/contrib/sysv-compat/
 usr/doc/dinit-0.19.0/contrib/sysv-compat/40-dinit
 usr/doc/dinit-0.19.0/contrib/sysv-compat/README
-usr/doc/dinit-0.19.0/CONTRIBUTORS
 usr/doc/dinit-0.19.0/dasynq/
 usr/doc/dinit-0.19.0/dasynq/include/
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/
+usr/doc/dinit-0.19.0/dasynq/include/dasynq.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/basewatchers.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/btree_set.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/childproc.h
@@ -966,11 +804,10 @@ usr/doc/dinit-0.19.0/dasynq/include/dasynq/config.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/daryheap.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/epoll.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/flags.h
-usr/doc/dinit-0.19.0/dasynq/include/dasynq.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/interrupt.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/itimer.h
-usr/doc/dinit-0.19.0/dasynq/include/dasynq/kqueue.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/kqueue-macos.h
+usr/doc/dinit-0.19.0/dasynq/include/dasynq/kqueue.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/mutex.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/posixtimer.h
 usr/doc/dinit-0.19.0/dasynq/include/dasynq/pselect.h
@@ -987,6 +824,7 @@ usr/doc/dinit-0.19.0/doc/CODE-STYLE
 usr/doc/dinit-0.19.0/doc/COMPARISON
 usr/doc/dinit-0.19.0/doc/CONTRIBUTING
 usr/doc/dinit-0.19.0/doc/DESIGN
+usr/doc/dinit-0.19.0/doc/SECURITY
 usr/doc/dinit-0.19.0/doc/dinit-logo.png
 usr/doc/dinit-0.19.0/doc/getting_started.md
 usr/doc/dinit-0.19.0/doc/linux/
@@ -1023,35 +861,31 @@ usr/doc/dinit-0.19.0/doc/linux/services/tty3
 usr/doc/dinit-0.19.0/doc/linux/services/tty4
 usr/doc/dinit-0.19.0/doc/linux/services/tty5
 usr/doc/dinit-0.19.0/doc/linux/services/tty6
-usr/doc/dinit-0.19.0/doc/linux/services/udevd
 usr/doc/dinit-0.19.0/doc/linux/services/udev-settle
 usr/doc/dinit-0.19.0/doc/linux/services/udev-trigger
+usr/doc/dinit-0.19.0/doc/linux/services/udevd
 usr/doc/dinit-0.19.0/doc/manpages/
+usr/doc/dinit-0.19.0/doc/manpages/Makefile
+usr/doc/dinit-0.19.0/doc/manpages/README
+usr/doc/dinit-0.19.0/doc/manpages/dinit-monitor.8
+usr/doc/dinit-0.19.0/doc/manpages/dinit-monitor.8.m4
+usr/doc/dinit-0.19.0/doc/manpages/dinit-service.5
+usr/doc/dinit-0.19.0/doc/manpages/dinit-service.5.m4
 usr/doc/dinit-0.19.0/doc/manpages/dinit.8
 usr/doc/dinit-0.19.0/doc/manpages/dinit.8.m4
 usr/doc/dinit-0.19.0/doc/manpages/dinitcheck.8
 usr/doc/dinit-0.19.0/doc/manpages/dinitcheck.8.m4
 usr/doc/dinit-0.19.0/doc/manpages/dinitctl.8
 usr/doc/dinit-0.19.0/doc/manpages/dinitctl.8.m4
-usr/doc/dinit-0.19.0/doc/manpages/dinit-monitor.8
-usr/doc/dinit-0.19.0/doc/manpages/dinit-monitor.8.m4
-usr/doc/dinit-0.19.0/doc/manpages/dinit-service.5
-usr/doc/dinit-0.19.0/doc/manpages/dinit-service.5.m4
 usr/doc/dinit-0.19.0/doc/manpages/generate-html.sh
-usr/doc/dinit-0.19.0/doc/manpages/Makefile
 usr/doc/dinit-0.19.0/doc/manpages/meson.build
-usr/doc/dinit-0.19.0/doc/manpages/README
 usr/doc/dinit-0.19.0/doc/manpages/shutdown.8
 usr/doc/dinit-0.19.0/doc/manpages/shutdown.8.m4
-usr/doc/dinit-0.19.0/doc/SECURITY
-usr/doc/dinit-0.19.0/LICENSE
-usr/doc/dinit-0.19.0/Makefile
 usr/doc/dinit-0.19.0/mconfig
 usr/doc/dinit-0.19.0/meson.build
 usr/doc/dinit-0.19.0/meson_options.txt
-usr/doc/dinit-0.19.0/NEWS
-usr/doc/dinit-0.19.0/README.md
 usr/doc/dinit-0.19.0/src/
+usr/doc/dinit-0.19.0/src/Makefile
 usr/doc/dinit-0.19.0/src/baseproc-service.cc
 usr/doc/dinit-0.19.0/src/baseproc-service.d
 usr/doc/dinit-0.19.0/src/baseproc-service.o
@@ -1059,16 +893,6 @@ usr/doc/dinit-0.19.0/src/control.cc
 usr/doc/dinit-0.19.0/src/control.d
 usr/doc/dinit-0.19.0/src/control.o
 usr/doc/dinit-0.19.0/src/dinit
-usr/doc/dinit-0.19.0/src/dinit.cc
-usr/doc/dinit-0.19.0/src/dinitcheck
-usr/doc/dinit-0.19.0/src/dinitcheck.cc
-usr/doc/dinit-0.19.0/src/dinitcheck.d
-usr/doc/dinit-0.19.0/src/dinitcheck.o
-usr/doc/dinit-0.19.0/src/dinitctl
-usr/doc/dinit-0.19.0/src/dinitctl.cc
-usr/doc/dinit-0.19.0/src/dinitctl.d
-usr/doc/dinit-0.19.0/src/dinitctl.o
-usr/doc/dinit-0.19.0/src/dinit.d
 usr/doc/dinit-0.19.0/src/dinit-env.cc
 usr/doc/dinit-0.19.0/src/dinit-env.d
 usr/doc/dinit-0.19.0/src/dinit-env.o
@@ -1082,8 +906,19 @@ usr/doc/dinit-0.19.0/src/dinit-monitor
 usr/doc/dinit-0.19.0/src/dinit-monitor.cc
 usr/doc/dinit-0.19.0/src/dinit-monitor.d
 usr/doc/dinit-0.19.0/src/dinit-monitor.o
+usr/doc/dinit-0.19.0/src/dinit.cc
+usr/doc/dinit-0.19.0/src/dinit.d
 usr/doc/dinit-0.19.0/src/dinit.o
+usr/doc/dinit-0.19.0/src/dinitcheck
+usr/doc/dinit-0.19.0/src/dinitcheck.cc
+usr/doc/dinit-0.19.0/src/dinitcheck.d
+usr/doc/dinit-0.19.0/src/dinitcheck.o
+usr/doc/dinit-0.19.0/src/dinitctl
+usr/doc/dinit-0.19.0/src/dinitctl.cc
+usr/doc/dinit-0.19.0/src/dinitctl.d
+usr/doc/dinit-0.19.0/src/dinitctl.o
 usr/doc/dinit-0.19.0/src/igr-tests/
+usr/doc/dinit-0.19.0/src/igr-tests/Makefile
 usr/doc/dinit-0.19.0/src/igr-tests/add-rm-dep/
 usr/doc/dinit-0.19.0/src/igr-tests/add-rm-dep/expected1
 usr/doc/dinit-0.19.0/src/igr-tests/add-rm-dep/expected2
@@ -1098,13 +933,6 @@ usr/doc/dinit-0.19.0/src/igr-tests/basic/basic.sh
 usr/doc/dinit-0.19.0/src/igr-tests/basic/sd/
 usr/doc/dinit-0.19.0/src/igr-tests/basic/sd/basic
 usr/doc/dinit-0.19.0/src/igr-tests/before-after/
-usr/doc/dinit-0.19.0/src/igr-tests/before-after2/
-usr/doc/dinit-0.19.0/src/igr-tests/before-after2/scripts/
-usr/doc/dinit-0.19.0/src/igr-tests/before-after2/scripts/service.sh
-usr/doc/dinit-0.19.0/src/igr-tests/before-after2/sd/
-usr/doc/dinit-0.19.0/src/igr-tests/before-after2/sd/boot
-usr/doc/dinit-0.19.0/src/igr-tests/before-after2/sd/service1
-usr/doc/dinit-0.19.0/src/igr-tests/before-after2/sd/service2
 usr/doc/dinit-0.19.0/src/igr-tests/before-after/scripts/
 usr/doc/dinit-0.19.0/src/igr-tests/before-after/scripts/service.sh
 usr/doc/dinit-0.19.0/src/igr-tests/before-after/sd/
@@ -1113,6 +941,13 @@ usr/doc/dinit-0.19.0/src/igr-tests/before-after/sd/parent
 usr/doc/dinit-0.19.0/src/igr-tests/before-after/sd/service1
 usr/doc/dinit-0.19.0/src/igr-tests/before-after/sd/service2
 usr/doc/dinit-0.19.0/src/igr-tests/before-after/sd/service3
+usr/doc/dinit-0.19.0/src/igr-tests/before-after2/
+usr/doc/dinit-0.19.0/src/igr-tests/before-after2/scripts/
+usr/doc/dinit-0.19.0/src/igr-tests/before-after2/scripts/service.sh
+usr/doc/dinit-0.19.0/src/igr-tests/before-after2/sd/
+usr/doc/dinit-0.19.0/src/igr-tests/before-after2/sd/boot
+usr/doc/dinit-0.19.0/src/igr-tests/before-after2/sd/service1
+usr/doc/dinit-0.19.0/src/igr-tests/before-after2/sd/service2
 usr/doc/dinit-0.19.0/src/igr-tests/catlog/
 usr/doc/dinit-0.19.0/src/igr-tests/catlog/output.sh
 usr/doc/dinit-0.19.0/src/igr-tests/catlog/sd/
@@ -1132,13 +967,6 @@ usr/doc/dinit-0.19.0/src/igr-tests/check-basic/expected.txt
 usr/doc/dinit-0.19.0/src/igr-tests/check-basic/sd/
 usr/doc/dinit-0.19.0/src/igr-tests/check-basic/sd/boot
 usr/doc/dinit-0.19.0/src/igr-tests/check-cycle/
-usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/
-usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/expected.txt
-usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/sd/
-usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/sd/a
-usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/sd/b
-usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/sd/boot
-usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/sd/c
 usr/doc/dinit-0.19.0/src/igr-tests/check-cycle/expected.txt
 usr/doc/dinit-0.19.0/src/igr-tests/check-cycle/sd/
 usr/doc/dinit-0.19.0/src/igr-tests/check-cycle/sd/a
@@ -1147,6 +975,13 @@ usr/doc/dinit-0.19.0/src/igr-tests/check-cycle/sd/boot
 usr/doc/dinit-0.19.0/src/igr-tests/check-cycle/sd/c
 usr/doc/dinit-0.19.0/src/igr-tests/check-cycle/sd/d
 usr/doc/dinit-0.19.0/src/igr-tests/check-cycle/sd/e
+usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/
+usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/expected.txt
+usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/sd/
+usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/sd/a
+usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/sd/b
+usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/sd/boot
+usr/doc/dinit-0.19.0/src/igr-tests/check-cycle2/sd/c
 usr/doc/dinit-0.19.0/src/igr-tests/check-lint/
 usr/doc/dinit-0.19.0/src/igr-tests/check-lint/expected.txt
 usr/doc/dinit-0.19.0/src/igr-tests/check-lint/sd/
@@ -1172,12 +1007,6 @@ usr/doc/dinit-0.19.0/src/igr-tests/dep-not-found/sd/
 usr/doc/dinit-0.19.0/src/igr-tests/dep-not-found/sd/boot
 usr/doc/dinit-0.19.0/src/igr-tests/dep-not-found/sd/missing-dep-svc
 usr/doc/dinit-0.19.0/src/igr-tests/environ/
-usr/doc/dinit-0.19.0/src/igr-tests/environ2/
-usr/doc/dinit-0.19.0/src/igr-tests/environ2/checkenv.sh
-usr/doc/dinit-0.19.0/src/igr-tests/environ2/env-dinit
-usr/doc/dinit-0.19.0/src/igr-tests/environ2/sd/
-usr/doc/dinit-0.19.0/src/igr-tests/environ2/sd/checkenv
-usr/doc/dinit-0.19.0/src/igr-tests/environ2/sd/env-service
 usr/doc/dinit-0.19.0/src/igr-tests/environ/checkenv.sh
 usr/doc/dinit-0.19.0/src/igr-tests/environ/environment1
 usr/doc/dinit-0.19.0/src/igr-tests/environ/environment2
@@ -1187,6 +1016,12 @@ usr/doc/dinit-0.19.0/src/igr-tests/environ/sd/setenv1
 usr/doc/dinit-0.19.0/src/igr-tests/environ/sd/setenv2
 usr/doc/dinit-0.19.0/src/igr-tests/environ/sd/setenv3
 usr/doc/dinit-0.19.0/src/igr-tests/environ/setenv.sh
+usr/doc/dinit-0.19.0/src/igr-tests/environ2/
+usr/doc/dinit-0.19.0/src/igr-tests/environ2/checkenv.sh
+usr/doc/dinit-0.19.0/src/igr-tests/environ2/env-dinit
+usr/doc/dinit-0.19.0/src/igr-tests/environ2/sd/
+usr/doc/dinit-0.19.0/src/igr-tests/environ2/sd/checkenv
+usr/doc/dinit-0.19.0/src/igr-tests/environ2/sd/env-service
 usr/doc/dinit-0.19.0/src/igr-tests/force-stop/
 usr/doc/dinit-0.19.0/src/igr-tests/force-stop/expected-1
 usr/doc/dinit-0.19.0/src/igr-tests/force-stop/expected-2.err
@@ -1195,8 +1030,8 @@ usr/doc/dinit-0.19.0/src/igr-tests/force-stop/sd/
 usr/doc/dinit-0.19.0/src/igr-tests/force-stop/sd/boot
 usr/doc/dinit-0.19.0/src/igr-tests/force-stop/sd/critical
 usr/doc/dinit-0.19.0/src/igr-tests/force-stop/sd/intermediary
-usr/doc/dinit-0.19.0/src/igr-tests/igr.h
 usr/doc/dinit-0.19.0/src/igr-tests/igr-runner.cc
+usr/doc/dinit-0.19.0/src/igr-tests/igr.h
 usr/doc/dinit-0.19.0/src/igr-tests/log-via-pipe/
 usr/doc/dinit-0.19.0/src/igr-tests/log-via-pipe/scripts/
 usr/doc/dinit-0.19.0/src/igr-tests/log-via-pipe/scripts/consumer.sh
@@ -1205,7 +1040,6 @@ usr/doc/dinit-0.19.0/src/igr-tests/log-via-pipe/sd/
 usr/doc/dinit-0.19.0/src/igr-tests/log-via-pipe/sd/boot
 usr/doc/dinit-0.19.0/src/igr-tests/log-via-pipe/sd/consumer
 usr/doc/dinit-0.19.0/src/igr-tests/log-via-pipe/sd/producer
-usr/doc/dinit-0.19.0/src/igr-tests/Makefile
 usr/doc/dinit-0.19.0/src/igr-tests/meson.build
 usr/doc/dinit-0.19.0/src/igr-tests/no-command-error/
 usr/doc/dinit-0.19.0/src/igr-tests/no-command-error/dinit-run.expected
@@ -1216,8 +1050,8 @@ usr/doc/dinit-0.19.0/src/igr-tests/offline-enable/sd/
 usr/doc/dinit-0.19.0/src/igr-tests/offline-enable/sd/A
 usr/doc/dinit-0.19.0/src/igr-tests/offline-enable/sd/boot
 usr/doc/dinit-0.19.0/src/igr-tests/ps-environ/
-usr/doc/dinit-0.19.0/src/igr-tests/ps-environ/checkenv2.sh
 usr/doc/dinit-0.19.0/src/igr-tests/ps-environ/checkenv.sh
+usr/doc/dinit-0.19.0/src/igr-tests/ps-environ/checkenv2.sh
 usr/doc/dinit-0.19.0/src/igr-tests/ps-environ/dinit-environment
 usr/doc/dinit-0.19.0/src/igr-tests/ps-environ/env-expected
 usr/doc/dinit-0.19.0/src/igr-tests/ps-environ/sd/
@@ -1295,25 +1129,24 @@ usr/doc/dinit-0.19.0/src/includes/control.h
 usr/doc/dinit-0.19.0/src/includes/cpbuffer.h
 usr/doc/dinit-0.19.0/src/includes/dinit-client.h
 usr/doc/dinit-0.19.0/src/includes/dinit-env.h
-usr/doc/dinit-0.19.0/src/includes/dinit.h
 usr/doc/dinit-0.19.0/src/includes/dinit-ll.h
 usr/doc/dinit-0.19.0/src/includes/dinit-log.h
 usr/doc/dinit-0.19.0/src/includes/dinit-socket.h
 usr/doc/dinit-0.19.0/src/includes/dinit-util.h
 usr/doc/dinit-0.19.0/src/includes/dinit-utmp.h
+usr/doc/dinit-0.19.0/src/includes/dinit.h
 usr/doc/dinit-0.19.0/src/includes/file-input-stack.h
 usr/doc/dinit-0.19.0/src/includes/load-service.h
 usr/doc/dinit-0.19.0/src/includes/options-processing.h
 usr/doc/dinit-0.19.0/src/includes/proc-service.h
 usr/doc/dinit-0.19.0/src/includes/service-constants.h
 usr/doc/dinit-0.19.0/src/includes/service-dir.h
-usr/doc/dinit-0.19.0/src/includes/service.h
 usr/doc/dinit-0.19.0/src/includes/service-listener.h
+usr/doc/dinit-0.19.0/src/includes/service.h
 usr/doc/dinit-0.19.0/src/includes/static-string.h
 usr/doc/dinit-0.19.0/src/load-service.cc
 usr/doc/dinit-0.19.0/src/load-service.d
 usr/doc/dinit-0.19.0/src/load-service.o
-usr/doc/dinit-0.19.0/src/Makefile
 usr/doc/dinit-0.19.0/src/meson.build
 usr/doc/dinit-0.19.0/src/options-processing.cc
 usr/doc/dinit-0.19.0/src/options-processing.d
@@ -1332,17 +1165,18 @@ usr/doc/dinit-0.19.0/src/settings.d
 usr/doc/dinit-0.19.0/src/settings.o
 usr/doc/dinit-0.19.0/src/shutdown.cc
 usr/doc/dinit-0.19.0/src/tests/
+usr/doc/dinit-0.19.0/src/tests/Makefile
 usr/doc/dinit-0.19.0/src/tests/baseproc-service.d
 usr/doc/dinit-0.19.0/src/tests/baseproc-service.o
 usr/doc/dinit-0.19.0/src/tests/control.d
 usr/doc/dinit-0.19.0/src/tests/control.o
 usr/doc/dinit-0.19.0/src/tests/cptests/
+usr/doc/dinit-0.19.0/src/tests/cptests/Makefile
 usr/doc/dinit-0.19.0/src/tests/cptests/cptests
 usr/doc/dinit-0.19.0/src/tests/cptests/cptests.cc
 usr/doc/dinit-0.19.0/src/tests/cptests/cptests.d
 usr/doc/dinit-0.19.0/src/tests/cptests/cptests.o
 usr/doc/dinit-0.19.0/src/tests/cptests/fuzz.cc
-usr/doc/dinit-0.19.0/src/tests/cptests/Makefile
 usr/doc/dinit-0.19.0/src/tests/cptests/meson.build
 usr/doc/dinit-0.19.0/src/tests/dinit-env.d
 usr/doc/dinit-0.19.0/src/tests/dinit-env.o
@@ -1358,7 +1192,6 @@ usr/doc/dinit-0.19.0/src/tests/loadtests
 usr/doc/dinit-0.19.0/src/tests/loadtests.cc
 usr/doc/dinit-0.19.0/src/tests/loadtests.d
 usr/doc/dinit-0.19.0/src/tests/loadtests.o
-usr/doc/dinit-0.19.0/src/tests/Makefile
 usr/doc/dinit-0.19.0/src/tests/meson.build
 usr/doc/dinit-0.19.0/src/tests/proc-service.d
 usr/doc/dinit-0.19.0/src/tests/proc-service.o
@@ -1380,33 +1213,32 @@ usr/doc/dinit-0.19.0/src/tests/test-includes/
 usr/doc/dinit-0.19.0/src/tests/test-includes/baseproc-sys.h
 usr/doc/dinit-0.19.0/src/tests/test-includes/dinit.h
 usr/doc/dinit-0.19.0/src/tests/test-includes/file-input-stack.h
-usr/doc/dinit-0.19.0/src/tests/test_procservice.h
 usr/doc/dinit-0.19.0/src/tests/test-run-child-proc.cc
 usr/doc/dinit-0.19.0/src/tests/test-run-child-proc.d
 usr/doc/dinit-0.19.0/src/tests/test-run-child-proc.o
-usr/doc/dinit-0.19.0/src/tests/tests
-usr/doc/dinit-0.19.0/src/tests/tests.cc
-usr/doc/dinit-0.19.0/src/tests/tests.d
-usr/doc/dinit-0.19.0/src/tests/test_service.h
 usr/doc/dinit-0.19.0/src/tests/test-services/
 usr/doc/dinit-0.19.0/src/tests/test-services/t1
 usr/doc/dinit-0.19.0/src/tests/test-services/t2
 usr/doc/dinit-0.19.0/src/tests/test-services/t3
+usr/doc/dinit-0.19.0/src/tests/test_procservice.h
+usr/doc/dinit-0.19.0/src/tests/test_service.h
+usr/doc/dinit-0.19.0/src/tests/tests
+usr/doc/dinit-0.19.0/src/tests/tests.cc
+usr/doc/dinit-0.19.0/src/tests/tests.d
 usr/doc/dinit-0.19.0/src/tests/tests.o
-usr/doc/dinit-0.19.0/TODO
 usr/man/
 usr/man/man5/
 usr/man/man5/dinit-service.5.gz
 usr/man/man8/
+usr/man/man8/dinit-monitor.8.gz
 usr/man/man8/dinit.8.gz
 usr/man/man8/dinitcheck.8.gz
 usr/man/man8/dinitctl.8.gz
-usr/man/man8/dinit-monitor.8.gz
 usr/share/
 usr/share/bash-completion/
 usr/share/bash-completion/completions/
 usr/share/bash-completion/completions/dinitctl
 
-Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/dinit/binary-dinit-0.19.0/dinit-0.19.0-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/BUILDS/gpacman/void/binary-dinit-0.19.0/dinit-0.19.0-x86_64-1_rtz.tlz created.
 
-Build process completed in 0 minutes and 57 seconds.
+Build process completed in 0 minutes and 31 seconds.
