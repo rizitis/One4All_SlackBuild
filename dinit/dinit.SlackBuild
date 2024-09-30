@@ -99,11 +99,9 @@ patch -p0 < $CWD/mconfig.Slackware.patch || exit
 pushd configs
 sh mconfig.Linux.sh
 popd
-mkdir -p /etc/dinit.d
+mkdir -p $PKG/etc/dinit.d/
 mkdir -p $PKG/etc/rc.d/init.d/
-cp -a contrib/sysv-compat/40-dinit $PKG/etc/
 cp -a contrib/sysv-compat/40-dinit $PKG/etc/rc.d/
-cp -a contrib/sysv-compat/40-dinit $PKG/etc/rc.d/init.d/
 mkdir -p $PKG/usr/share/bash-completion/completions
 cp -a contrib/shell-completion/bash/dinitctl $PKG/usr/share/bash-completion/completions/
 }
@@ -146,7 +144,7 @@ cp -a contrib/shell-completion/bash/dinitctl $PKG/usr/share/bash-completion/comp
             -Dmandir=/usr/man \
             -Dunit-tests=true \
             -Digr-tests=true \
-            -Db_ndebug=false 
+            -Db_ndebug=false
 	  "${NINJA:=ninja}" "$NUMJOBS"
 	  DESTDIR=$PKG $NINJA install
 	cd ..
@@ -762,4 +760,3 @@ clean_src
 end_time=$(date +%s)
 elapsed_time=$((end_time - start_time))
 echo "Build process completed in $((elapsed_time / 60)) minutes and $((elapsed_time % 60)) seconds."
-
