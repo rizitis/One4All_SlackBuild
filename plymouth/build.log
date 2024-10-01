@@ -1,35 +1,35 @@
 Starting build process...
 Detected architecture: x86_64
---2024-10-01 19:22:35--  https://www.freedesktop.org/software/plymouth/releases/plymouth-24.004.60.tar.xz
+--2024-10-01 19:28:50--  https://www.freedesktop.org/software/plymouth/releases/plymouth-24.004.60.tar.xz
 Resolving www.freedesktop.org (www.freedesktop.org)... 131.252.210.176
 Connecting to www.freedesktop.org (www.freedesktop.org)|131.252.210.176|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1059904 (1.0M) [application/x-xz]
 Saving to: ‘plymouth-24.004.60.tar.xz’
 
-     0K .......... .......... .......... .......... ..........  4%  126K 8s
-    50K .......... .......... .......... .......... ..........  9% 1.76M 4s
-   100K .......... .......... .......... .......... .......... 14%  287K 4s
-   150K .......... .......... .......... .......... .......... 19% 5.29M 3s
-   200K .......... .......... .......... .......... .......... 24%  266K 2s
-   250K .......... .......... .......... .......... .......... 28% 8.09M 2s
-   300K .......... .......... .......... .......... .......... 33% 4.99M 2s
-   350K .......... .......... .......... .......... .......... 38%  120K 2s
-   400K .......... .......... .......... .......... .......... 43% 93.3M 2s
-   450K .......... .......... .......... .......... .......... 48% 82.8M 1s
-   500K .......... .......... .......... .......... .......... 53% 99.3M 1s
-   550K .......... .......... .......... .......... .......... 57% 63.2M 1s
-   600K .......... .......... .......... .......... .......... 62%  144M 1s
-   650K .......... .......... .......... .......... .......... 67%  170M 1s
-   700K .......... .......... .......... .......... .......... 72%  154M 0s
-   750K .......... .......... .......... .......... .......... 77%  176M 0s
-   800K .......... .......... .......... .......... .......... 82%  179M 0s
-   850K .......... .......... .......... .......... .......... 86%  118M 0s
-   900K .......... .......... .......... .......... .......... 91%  321K 0s
-   950K .......... .......... .......... .......... .......... 96% 7.22M 0s
-  1000K .......... .......... .......... .....                100% 6.82M=1.4s
+     0K .......... .......... .......... .......... ..........  4%  124K 8s
+    50K .......... .......... .......... .......... ..........  9% 1.82M 4s
+   100K .......... .......... .......... .......... .......... 14%  272K 4s
+   150K .......... .......... .......... .......... .......... 19% 16.7M 3s
+   200K .......... .......... .......... .......... .......... 24%  261K 3s
+   250K .......... .......... .......... .......... .......... 28% 6.03M 2s
+   300K .......... .......... .......... .......... .......... 33%  119K 2s
+   350K .......... .......... .......... .......... .......... 38%  103M 2s
+   400K .......... .......... .......... .......... .......... 43%  120M 2s
+   450K .......... .......... .......... .......... .......... 48%  108M 1s
+   500K .......... .......... .......... .......... .......... 53%  114M 1s
+   550K .......... .......... .......... .......... .......... 57%  111M 1s
+   600K .......... .......... .......... .......... .......... 62%  287K 1s
+   650K .......... .......... .......... .......... .......... 67% 50.0M 1s
+   700K .......... .......... .......... .......... .......... 72% 5.58M 1s
+   750K .......... .......... .......... .......... .......... 77% 5.44M 0s
+   800K .......... .......... .......... .......... .......... 82%  273K 0s
+   850K .......... .......... .......... .......... .......... 86% 5.25M 0s
+   900K .......... .......... .......... .......... .......... 91%  241K 0s
+   950K .......... .......... .......... .......... .......... 96% 20.8M 0s
+  1000K .......... .......... .......... .....                100% 78.1M=1.8s
 
-2024-10-01 19:22:37 (738 KB/s) - ‘plymouth-24.004.60.tar.xz’ saved [1059904/1059904]
+2024-10-01 19:28:53 (564 KB/s) - ‘plymouth-24.004.60.tar.xz’ saved [1059904/1059904]
 
 plymouth-24.004.60/
 plymouth-24.004.60/.gitignore
@@ -538,15 +538,15 @@ plymouth-24.004.60/themes/tribar/
 plymouth-24.004.60/themes/tribar/.gitignore
 plymouth-24.004.60/themes/tribar/meson.build
 plymouth-24.004.60/themes/tribar/tribar.plymouth
-/home/omen/BUILDS/SEVERAL-MIXED/plymouth/work
+/home/omen/GITHUB/One4All_SlackBuild/plymouth/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
 patching file src/main.c
 patching file src/libply/meson.build
 The Meson build system
 Version: 1.5.2
-Source dir: /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60
-Build dir: /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build
+Source dir: /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60
+Build dir: /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build
 Build type: native build
 Project name: plymouth
 Project version: 24.004.60
@@ -576,7 +576,7 @@ Program msginit found: YES (/usr/bin/msginit)
 Program msgmerge found: YES (/usr/bin/msgmerge)
 Program xgettext found: YES (/usr/bin/xgettext)
 Run-time dependency intl found: YES
-Program generate_script_string_header.py found: YES (/usr/bin/python3 /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/plugins/splash/script/generate_script_string_header.py)
+Program generate_script_string_header.py found: YES (/usr/bin/python3 /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/plugins/splash/script/generate_script_string_header.py)
 Configuring spinfinity.plymouth using configuration
 Configuring fade-in.plymouth using configuration
 Configuring solar.plymouth using configuration
@@ -606,146 +606,146 @@ plymouth 24.004.60
 
 Found ninja-1.12.1 at /usr/bin/ninja
 [1/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-array.c.o
-[2/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-bitarray.c.o
+[2/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-buffer.c.o
 [3/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-hashtable.c.o
-[4/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-buffer.c.o
+[4/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-list.c.o
 [5/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-command-parser.c.o
 [6/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-event-loop.c.o
 [7/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-key-file.c.o
-[8/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-list.c.o
+[8/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-bitarray.c.o
 [9/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-logger.c.o
-[10/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-progress.c.o
+[10/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-region.c.o
 [11/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-rectangle.c.o
-[12/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-region.c.o
-[13/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-terminal-session.c.o
-[14/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-trigger.c.o
+[12/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-terminal-session.c.o
+[13/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-trigger.c.o
+[14/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-progress.c.o
 [15/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-utils.c.o
-[16/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-device-manager.c.o
-[17/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-input-device.c.o
-[18/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-boot-splash.c.o
-[19/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-kmsg-reader.c.o
-[20/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-keyboard.c.o
+[16/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-boot-splash.c.o
+[17/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-device-manager.c.o
+[18/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-input-device.c.o
+[19/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-keyboard.c.o
+[20/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-kmsg-reader.c.o
 [21/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-pixel-buffer.c.o
 [22/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-pixel-display.c.o
-[23/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-terminal.c.o
-[24/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-renderer.c.o
-[25/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-rich-text.c.o
-[26/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-terminal-emulator.c.o
-[27/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-display.c.o
-[28/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-capslock-icon.c.o
-[29/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-image.c.o
-[30/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-step-bar.c.o
-[31/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-console-viewer.c.o
-[32/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-progress-bar.c.o
-[33/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-animation.c.o
-[34/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-entry.c.o
-[35/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-progress-animation.c.o
-[36/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-progress-bar.c.o
-[37/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-keymap-icon.c.o
-[38/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-label.c.o
+[23/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-renderer.c.o
+[24/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-rich-text.c.o
+[25/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-terminal-emulator.c.o
+[26/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-display.c.o
+[27/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-terminal.c.o
+[28/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-progress-bar.c.o
+[29/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-step-bar.c.o
+[30/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-console-viewer.c.o
+[31/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-entry.c.o
+[32/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-animation.c.o
+[33/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-capslock-icon.c.o
+[34/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-label.c.o
+[35/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-image.c.o
+[36/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-keymap-icon.c.o
+[37/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-progress-bar.c.o
+[38/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-progress-animation.c.o
 [39/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-throbber.c.o
-[40/141] Compiling C object src/plymouthd.p/ply-boot-server.c.o
-[41/141] Compiling C object src/plymouthd.p/main.c.o
-[42/141] Compiling C object src/plymouthd-fd-escrow.p/plymouthd-fd-escrow.c.o
-[43/141] Compiling C object src/plymouthd.p/plugins_splash_details_plugin.c.o
-[44/141] Compiling C object src/plugins/controls/label-pango/label-pango.so.p/plugin.c.o
-[45/141] Compiling C object src/plugins/controls/label-freetype/label-freetype.so.p/plugin.c.o
+[40/141] Compiling C object src/plymouthd-fd-escrow.p/plymouthd-fd-escrow.c.o
+[41/141] Compiling C object src/plymouthd.p/plugins_splash_details_plugin.c.o
+[42/141] Compiling C object src/plymouthd.p/ply-boot-server.c.o
+[43/141] Compiling C object src/plugins/controls/label-freetype/label-freetype.so.p/plugin.c.o
+[44/141] Compiling C object src/plymouthd.p/main.c.o
+[45/141] Compiling C object src/plugins/controls/label-pango/label-pango.so.p/plugin.c.o
 [46/141] Compiling C object src/plugins/splash/fade-throbber/fade-throbber.so.p/plugin.c.o
-[47/141] Compiling C object src/plugins/splash/text/text.so.p/plugin.c.o
-[48/141] Compiling C object src/plugins/splash/details/details.so.p/plugin.c.o
-[49/141] Compiling C object src/plugins/splash/tribar/tribar.so.p/plugin.c.o
-[50/141] Compiling C object src/plugins/splash/space-flares/space-flares.so.p/plugin.c.o
-[51/141] Compiling C object src/plugins/splash/two-step/two-step.so.p/plugin.c.o
-[52/141] Compiling C object src/plugins/renderers/drm/drm.so.p/plugin.c.o
-[53/141] Compiling C object src/plugins/renderers/frame-buffer/frame-buffer.so.p/plugin.c.o
+[47/141] Compiling C object src/plugins/splash/details/details.so.p/plugin.c.o
+[48/141] Compiling C object src/plugins/splash/space-flares/space-flares.so.p/plugin.c.o
+[49/141] Compiling C object src/plugins/splash/text/text.so.p/plugin.c.o
+[50/141] Compiling C object src/plugins/splash/two-step/two-step.so.p/plugin.c.o
+[51/141] Compiling C object src/plugins/splash/tribar/tribar.so.p/plugin.c.o
+[52/141] Compiling C object src/plugins/renderers/frame-buffer/frame-buffer.so.p/plugin.c.o
+[53/141] Compiling C object src/plugins/renderers/drm/drm.so.p/plugin.c.o
 [54/141] Compiling C object src/client/plymouth.p/ply-boot-client.c.o
 [55/141] Compiling C object src/client/plymouth.p/plymouth.c.o
 [56/141] Compiling C object src/client/libply-boot-client.so.5.0.0.p/ply-boot-client.c.o
 [57/141] Building translation po/be/LC_MESSAGES/plymouth-be.mo
-[58/141] Building translation po/da/LC_MESSAGES/plymouth-da.mo
+[58/141] Building translation po/cs/LC_MESSAGES/plymouth-cs.mo
 [59/141] Building translation po/de/LC_MESSAGES/plymouth-de.mo
 [60/141] Compiling C object src/plugins/renderers/x11/x11.so.p/plugin.c.o
-[61/141] Building translation po/cs/LC_MESSAGES/plymouth-cs.mo
+[61/141] Building translation po/da/LC_MESSAGES/plymouth-da.mo
 [62/141] Building translation po/eo/LC_MESSAGES/plymouth-eo.mo
 [63/141] Building translation po/es/LC_MESSAGES/plymouth-es.mo
 [64/141] Building translation po/eu/LC_MESSAGES/plymouth-eu.mo
-[65/141] Building translation po/fur/LC_MESSAGES/plymouth-fur.mo
-[66/141] Building translation po/fr/LC_MESSAGES/plymouth-fr.mo
+[65/141] Building translation po/fr/LC_MESSAGES/plymouth-fr.mo
+[66/141] Building translation po/fur/LC_MESSAGES/plymouth-fur.mo
 [67/141] Building translation po/hi/LC_MESSAGES/plymouth-hi.mo
 [68/141] Building translation po/hr/LC_MESSAGES/plymouth-hr.mo
-[69/141] Building translation po/it/LC_MESSAGES/plymouth-it.mo
-[70/141] Building translation po/hu/LC_MESSAGES/plymouth-hu.mo
-[71/141] Building translation po/id/LC_MESSAGES/plymouth-id.mo
+[69/141] Building translation po/hu/LC_MESSAGES/plymouth-hu.mo
+[70/141] Building translation po/id/LC_MESSAGES/plymouth-id.mo
+[71/141] Building translation po/it/LC_MESSAGES/plymouth-it.mo
 [72/141] Building translation po/lt/LC_MESSAGES/plymouth-lt.mo
 [73/141] Building translation po/ka/LC_MESSAGES/plymouth-ka.mo
 [74/141] Building translation po/nl/LC_MESSAGES/plymouth-nl.mo
-[75/141] Building translation po/pa/LC_MESSAGES/plymouth-pa.mo
-[76/141] Building translation po/pl/LC_MESSAGES/plymouth-pl.mo
-[77/141] Building translation po/pt/LC_MESSAGES/plymouth-pt.mo
-[78/141] Building translation po/pt_BR/LC_MESSAGES/plymouth-pt_BR.mo
-[79/141] Building translation po/ro/LC_MESSAGES/plymouth-ro.mo
-[80/141] Building translation po/ru/LC_MESSAGES/plymouth-ru.mo
-[81/141] Building translation po/sr/LC_MESSAGES/plymouth-sr.mo
-[82/141] Building translation po/sv/LC_MESSAGES/plymouth-sv.mo
-[83/141] Building translation po/sk/LC_MESSAGES/plymouth-sk.mo
-[84/141] Building translation po/tr/LC_MESSAGES/plymouth-tr.mo
-[85/141] Building translation po/uk/LC_MESSAGES/plymouth-uk.mo
-[86/141] Building translation po/zh_CN/LC_MESSAGES/plymouth-zh_CN.mo
-[87/141] Building translation po/zh_HK/LC_MESSAGES/plymouth-zh_HK.mo
-[88/141] Building translation po/zh_TW/LC_MESSAGES/plymouth-zh_TW.mo
+[75/141] Building translation po/pt/LC_MESSAGES/plymouth-pt.mo
+[76/141] Building translation po/pa/LC_MESSAGES/plymouth-pa.mo
+[77/141] Building translation po/pl/LC_MESSAGES/plymouth-pl.mo
+[78/141] Building translation po/ro/LC_MESSAGES/plymouth-ro.mo
+[79/141] Building translation po/ru/LC_MESSAGES/plymouth-ru.mo
+[80/141] Linking target src/libply/libply.so.5.0.0
+[81/141] Building translation po/sk/LC_MESSAGES/plymouth-sk.mo
+[82/141] Building translation po/pt_BR/LC_MESSAGES/plymouth-pt_BR.mo
+[83/141] Building translation po/sr/LC_MESSAGES/plymouth-sr.mo
+[84/141] Building translation po/sv/LC_MESSAGES/plymouth-sv.mo
+[85/141] Building translation po/tr/LC_MESSAGES/plymouth-tr.mo
+[86/141] Building translation po/uk/LC_MESSAGES/plymouth-uk.mo
+[87/141] Building translation po/zh_CN/LC_MESSAGES/plymouth-zh_CN.mo
+[88/141] Building translation po/zh_HK/LC_MESSAGES/plymouth-zh_HK.mo
 [89/141] Building translation po/ms/LC_MESSAGES/plymouth-ms.mo
-[90/141] Linking target src/libply/libply.so.5.0.0
-[91/141] Building translation po/he/LC_MESSAGES/plymouth-he.mo
-[92/141] Building translation po/si/LC_MESSAGES/plymouth-si.mo
-[93/141] Building translation po/fa/LC_MESSAGES/plymouth-fa.mo
-[94/141] Building translation po/gl/LC_MESSAGES/plymouth-gl.mo
-[95/141] Building translation po/fi/LC_MESSAGES/plymouth-fi.mo
-[96/141] Building translation po/ie/LC_MESSAGES/plymouth-ie.mo
-[97/141] Building translation po/cy/LC_MESSAGES/plymouth-cy.mo
+[90/141] Building translation po/zh_TW/LC_MESSAGES/plymouth-zh_TW.mo
+[91/141] Building translation po/si/LC_MESSAGES/plymouth-si.mo
+[92/141] Building translation po/fa/LC_MESSAGES/plymouth-fa.mo
+[93/141] Building translation po/he/LC_MESSAGES/plymouth-he.mo
+[94/141] Building translation po/fi/LC_MESSAGES/plymouth-fi.mo
+[95/141] Building translation po/ie/LC_MESSAGES/plymouth-ie.mo
+[96/141] Building translation po/cy/LC_MESSAGES/plymouth-cy.mo
+[97/141] Building translation po/gl/LC_MESSAGES/plymouth-gl.mo
 [98/141] Linking target src/plymouthd-fd-escrow
-[99/141] Generating src/plugins/splash/script/script-lib-string.script.h with a custom command (wrapped by meson to capture output)
-[100/141] Generating symbol file src/libply/libply.so.5.0.0.p/libply.so.5.0.0.symbols
-[101/141] Merging translations for themes/bgrt/bgrt.plymouth
-[102/141] Linking target src/client/libply-boot-client.so.5.0.0
-[103/141] Linking target src/client/plymouth
-[104/141] Generating docs/plymouthd.8 with a custom command
-[105/141] Generating docs/plymouth.8 with a custom command
-[106/141] Linking target src/libply-splash-core/libply-splash-core.so.5.0.0
-[107/141] Generating src/plugins/splash/script/script-lib-plymouth.script.h with a custom command (wrapped by meson to capture output)
-[108/141] Merging translations for themes/spinner/spinner.plymouth
-[109/141] Generating docs/plymouth-set-default-theme.1 with a custom command
-[110/141] Generating src/plugins/splash/script/script-lib-image.script.h with a custom command (wrapped by meson to capture output)
-[111/141] Generating src/plugins/splash/script/script-lib-sprite.script.h with a custom command (wrapped by meson to capture output)
-[112/141] Generating src/plugins/splash/script/script-lib-math.script.h with a custom command (wrapped by meson to capture output)
-[113/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-math.c.o
+[99/141] Generating src/plugins/splash/script/script-lib-plymouth.script.h with a custom command (wrapped by meson to capture output)
+[100/141] Generating src/plugins/splash/script/script-lib-image.script.h with a custom command (wrapped by meson to capture output)
+[101/141] Generating src/plugins/splash/script/script-lib-string.script.h with a custom command (wrapped by meson to capture output)
+[102/141] Generating src/plugins/splash/script/script-lib-math.script.h with a custom command (wrapped by meson to capture output)
+[103/141] Merging translations for themes/spinner/spinner.plymouth
+[104/141] Merging translations for themes/bgrt/bgrt.plymouth
+[105/141] Generating docs/plymouthd.8 with a custom command
+[106/141] Generating src/plugins/splash/script/script-lib-sprite.script.h with a custom command (wrapped by meson to capture output)
+[107/141] Compiling C object src/plugins/splash/script/script.so.p/script-debug.c.o
+[108/141] Compiling C object src/plugins/splash/script/script.so.p/script-execute.c.o
+[109/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-string.c.o
+[110/141] Compiling C object src/plugins/splash/script/script.so.p/script-scan.c.o
+[111/141] Compiling C object src/plugins/splash/script/script.so.p/plugin.c.o
+[112/141] Compiling C object src/plugins/splash/script/script.so.p/script-object.c.o
+[113/141] Compiling C object src/plugins/splash/script/script.so.p/script.c.o
 [114/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-plymouth.c.o
-[115/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-sprite.c.o
-[116/141] Compiling C object src/plugins/splash/script/script.so.p/script-parse.c.o
-[117/141] Compiling C object src/plugins/splash/script/script.so.p/script-execute.c.o
-[118/141] Compiling C object src/plugins/splash/script/script.so.p/plugin.c.o
+[115/141] Compiling C object src/plugins/splash/script/script.so.p/script-parse.c.o
+[116/141] Generating symbol file src/libply/libply.so.5.0.0.p/libply.so.5.0.0.symbols
+[117/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-math.c.o
+[118/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-sprite.c.o
 [119/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-image.c.o
-[120/141] Compiling C object src/plugins/splash/script/script.so.p/script-object.c.o
-[121/141] Compiling C object src/plugins/splash/script/script.so.p/script-scan.c.o
-[122/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-string.c.o
-[123/141] Compiling C object src/plugins/splash/script/script.so.p/script.c.o
-[124/141] Compiling C object src/plugins/splash/script/script.so.p/script-debug.c.o
-[125/141] Generating docs/plymouth.1 with a custom command
+[120/141] Generating docs/plymouth-set-default-theme.1 with a custom command
+[121/141] Linking target src/client/libply-boot-client.so.5.0.0
+[122/141] Generating docs/plymouth.1 with a custom command
+[123/141] Linking target src/client/plymouth
+[124/141] Generating docs/plymouth.8 with a custom command
+[125/141] Linking target src/libply-splash-core/libply-splash-core.so.5.0.0
 [126/141] Generating symbol file src/libply-splash-core/libply-splash-core.so.5.0.0.p/libply-splash-core.so.5.0.0.symbols
-[127/141] Linking target src/plugins/renderers/frame-buffer/frame-buffer.so
-[128/141] Linking target src/plugins/renderers/drm/drm.so
+[127/141] Linking target src/plugins/renderers/drm/drm.so
+[128/141] Linking target src/plugins/renderers/frame-buffer/frame-buffer.so
 [129/141] Linking target src/plymouthd
 [130/141] Linking target src/plugins/splash/tribar/tribar.so
 [131/141] Linking target src/libply-splash-graphics/libply-splash-graphics.so.5.0.0
 [132/141] Linking target src/plugins/renderers/x11/x11.so
 [133/141] Generating symbol file src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/libply-splash-graphics.so.5.0.0.symbols
 [134/141] Linking target src/plugins/splash/details/details.so
-[135/141] Linking target src/plugins/splash/text/text.so
-[136/141] Linking target src/plugins/splash/space-flares/space-flares.so
-[137/141] Linking target src/plugins/splash/two-step/two-step.so
-[138/141] Linking target src/plugins/controls/label-freetype/label-freetype.so
-[139/141] Linking target src/plugins/splash/script/script.so
-[140/141] Linking target src/plugins/controls/label-pango/label-pango.so
-[141/141] Linking target src/plugins/splash/fade-throbber/fade-throbber.so
+[135/141] Linking target src/plugins/splash/space-flares/space-flares.so
+[136/141] Linking target src/plugins/splash/two-step/two-step.so
+[137/141] Linking target src/plugins/splash/script/script.so
+[138/141] Linking target src/plugins/controls/label-pango/label-pango.so
+[139/141] Linking target src/plugins/controls/label-freetype/label-freetype.so
+[140/141] Linking target src/plugins/splash/fade-throbber/fade-throbber.so
+[141/141] Linking target src/plugins/splash/text/text.so
 Removing RPATH from src/libply-splash-graphics/libply-splash-graphics.so.5.0.0
 RPATH removed from src/libply-splash-graphics/libply-splash-graphics.so.5.0.0
 Removing RPATH from src/libply-splash-core/libply-splash-core.so.5.0.0
@@ -783,335 +783,335 @@ RPATH removed from src/client/plymouth
 [1/17] Generating symbol file src/libply-splash-core/libply-splash-core.so.5.0.0.p/libply-splash-core.so.5.0.0.symbols
 [2/11] Generating symbol file src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/libply-splash-graphics.so.5.0.0.symbols
 [2/3] Installing files.
-Installing po/be/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/be/LC_MESSAGES
-Installing po/cs/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/cs/LC_MESSAGES
-Installing po/da/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/da/LC_MESSAGES
-Installing po/de/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/de/LC_MESSAGES
-Installing po/eo/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/eo/LC_MESSAGES
-Installing po/es/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/es/LC_MESSAGES
-Installing po/eu/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/eu/LC_MESSAGES
-Installing po/fr/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/fr/LC_MESSAGES
-Installing po/fur/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/fur/LC_MESSAGES
-Installing po/hi/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/hi/LC_MESSAGES
-Installing po/hr/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/hr/LC_MESSAGES
-Installing po/hu/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/hu/LC_MESSAGES
-Installing po/id/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/id/LC_MESSAGES
-Installing po/it/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/it/LC_MESSAGES
-Installing po/lt/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/lt/LC_MESSAGES
-Installing po/ka/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/ka/LC_MESSAGES
-Installing po/nl/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/nl/LC_MESSAGES
-Installing po/pa/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/pa/LC_MESSAGES
-Installing po/pl/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/pl/LC_MESSAGES
-Installing po/pt_BR/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/pt_BR/LC_MESSAGES
-Installing po/pt/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/pt/LC_MESSAGES
-Installing po/ro/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/ro/LC_MESSAGES
-Installing po/ru/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/ru/LC_MESSAGES
-Installing po/sk/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/sk/LC_MESSAGES
-Installing po/sr/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/sr/LC_MESSAGES
-Installing po/sv/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/sv/LC_MESSAGES
-Installing po/tr/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/tr/LC_MESSAGES
-Installing po/uk/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/uk/LC_MESSAGES
-Installing po/zh_CN/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/zh_CN/LC_MESSAGES
-Installing po/zh_HK/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/zh_HK/LC_MESSAGES
-Installing po/zh_TW/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/zh_TW/LC_MESSAGES
-Installing po/ms/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/ms/LC_MESSAGES
-Installing po/he/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/he/LC_MESSAGES
-Installing po/si/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/si/LC_MESSAGES
-Installing po/fa/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/fa/LC_MESSAGES
-Installing po/fi/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/fi/LC_MESSAGES
-Installing po/ie/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/ie/LC_MESSAGES
-Installing po/gl/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/gl/LC_MESSAGES
-Installing po/cy/LC_MESSAGES/plymouth.mo to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/locale/cy/LC_MESSAGES
-Installing src/libply/libply.so.5.0.0 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64
-Installing src/libply-splash-core/libply-splash-core.so.5.0.0 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64
-Installing src/libply-splash-graphics/libply-splash-graphics.so.5.0.0 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64
-Installing src/plymouthd to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/sbin
-Installing src/plymouthd-fd-escrow to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/libexec/plymouth
-Installing src/plugins/controls/label-pango/label-pango.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth
-Installing src/plugins/controls/label-freetype/label-freetype.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth
-Installing src/plugins/splash/fade-throbber/fade-throbber.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth
-Installing src/plugins/splash/text/text.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth
-Installing src/plugins/splash/details/details.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth
-Installing src/plugins/splash/space-flares/space-flares.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth
-Installing src/plugins/splash/two-step/two-step.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth
-Installing src/plugins/splash/script/script.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth
-Installing src/plugins/splash/tribar/tribar.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth
-Installing src/plugins/renderers/frame-buffer/frame-buffer.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth/renderers
-Installing src/plugins/renderers/drm/drm.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth/renderers
-Installing src/plugins/renderers/x11/x11.so to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/plymouth/renderers
-Installing src/client/plymouth to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/bin
-Installing src/client/libply-boot-client.so.5.0.0 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64
-Installing themes/spinner/spinner.plymouth to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing themes/bgrt/bgrt.plymouth to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/bgrt
-Installing docs/plymouth.1 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/man/man1
-Installing docs/plymouth.8 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/man/man8
-Installing docs/plymouthd.8 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/man/man8
-Installing docs/plymouth-set-default-theme.1 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/man/man1
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-array.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-bitarray.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-buffer.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-command-parser.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-event-loop.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-hashtable.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-i18n.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-key-file.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-list.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-logger.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-progress.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-rectangle.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-region.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-terminal-session.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-trigger.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply/ply-utils.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-boot-splash-plugin.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-boot-splash.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-device-manager.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-input-device.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-kmsg-reader.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-keyboard.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-pixel-buffer.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-pixel-display.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-renderer-plugin.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-renderer.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-rich-text.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-terminal.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-terminal-emulator.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-text-display.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-text-progress-bar.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-text-step-bar.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-animation.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-capslock-icon.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-console-viewer.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-entry.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-image.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-keymap-icon.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-keymap-metadata.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-label-plugin.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-label.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-progress-animation.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-progress-bar.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-throbber.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/client/ply-boot-client.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-boot-client
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/client/../ply-boot-protocol.h to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/include/plymouth-1/ply-boot-client
-Installing new directory /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/run/plymouth
-Installing new directory /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/var/spool/plymouth
-Installing new directory /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/var/lib/plymouth
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/images/bizcom.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build/meson-private/ply-splash-core.pc to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/pkgconfig
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build/meson-private/ply-splash-graphics.pc to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/pkgconfig
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/plymouthd.defaults to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/src/plymouthd.conf to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/etc/plymouth
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build/meson-private/ply-boot-client.pc to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/pkgconfig
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build/themes/spinfinity/spinfinity.plymouth to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/box.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/bullet.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/entry.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/lock.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/capslock.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/keyboard.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/keymap-render.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/animation-0001.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-00.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-01.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-02.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-03.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-04.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-05.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-06.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-07.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-08.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-09.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-10.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-11.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-12.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-13.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-14.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-15.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-16.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-17.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-18.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-19.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-20.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-21.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-22.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-23.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-24.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-25.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-26.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-27.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-28.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-29.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-30.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-31.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-32.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-33.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build/themes/fade-in/fade-in.plymouth to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/fade-in
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/fade-in/star.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/fade-in
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/fade-in/bullet.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/fade-in
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/fade-in/entry.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/fade-in
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/fade-in/lock.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/fade-in
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/text/text.plymouth to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/text
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/details/details.plymouth to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/details
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build/themes/solar/solar.plymouth to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/solar
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/solar/box.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/solar
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/solar/bullet.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/solar
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/solar/entry.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/solar
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/solar/lock.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/solar
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/solar/progress_bar.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/solar
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/solar/star.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/solar
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build/themes/glow/glow.plymouth to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/box.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/bullet.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/entry.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/lock.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-00.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-01.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-02.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-03.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-04.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-05.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-06.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-07.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-08.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-09.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-10.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-11.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-12.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-13.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-14.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-15.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-16.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-17.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-18.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-19.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-20.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-21.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-22.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-23.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-24.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-25.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-26.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-27.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-28.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-29.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-30.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-31.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/progress-32.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-00.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-01.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-02.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-03.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-04.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-05.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-06.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-07.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-08.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-09.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-10.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-11.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-12.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-13.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-14.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-15.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-16.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-17.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-18.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/glow/throbber-19.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/glow
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build/themes/script/script.plymouth to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/script
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/script/script.script to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/script
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/script/box.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/script
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/script/bullet.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/script
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/script/entry.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/script
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/script/lock.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/script
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/script/progress_box.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/script
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/script/progress_bar.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/script
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/bullet.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/entry.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/lock.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/capslock.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/keyboard.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/keymap-render.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0001.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0002.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0003.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0004.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0005.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0006.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0007.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0008.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0009.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0010.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0011.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0012.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0013.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0014.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0015.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0016.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0017.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0018.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0019.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0020.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0021.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0022.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0023.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0024.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0025.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0026.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0027.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0028.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0029.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0030.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0031.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0032.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0033.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0034.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0035.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0036.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0001.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0002.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0003.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0004.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0005.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0006.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0007.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0008.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0009.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0010.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0011.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0012.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0013.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0014.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0015.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0016.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0017.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0018.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0019.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0020.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0021.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0022.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0023.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0024.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0025.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0026.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0027.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0028.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0029.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0030.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/themes/tribar/tribar.plymouth to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/tribar
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build/scripts/plymouth-generate-initrd to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/libexec/plymouth
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build/scripts/plymouth-populate-initrd to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/libexec/plymouth
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/scripts/plymouth-update-initrd to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/libexec/plymouth
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/build/scripts/plymouth-set-default-theme to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/sbin
-Installing /home/omen/BUILDS/SEVERAL-MIXED/plymouth/work/plymouth-24.004.60/scripts/bootlog to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/etc/logrotate.d
-Installing symlink pointing to libply.so.5.0.0 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/libply.so.5
-Installing symlink pointing to libply.so.5 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/libply.so
-Installing symlink pointing to libply-splash-core.so.5.0.0 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/libply-splash-core.so.5
-Installing symlink pointing to libply-splash-core.so.5 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/libply-splash-core.so
-Installing symlink pointing to libply-splash-graphics.so.5.0.0 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/libply-splash-graphics.so.5
-Installing symlink pointing to libply-splash-graphics.so.5 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/libply-splash-graphics.so
-Installing symlink pointing to libply-boot-client.so.5.0.0 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/libply-boot-client.so.5
-Installing symlink pointing to libply-boot-client.so.5 to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/lib64/libply-boot-client.so
-Installing symlink pointing to /usr/share/plymouth/bizcom.png to /home/omen/BUILDS/SEVERAL-MIXED/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity/header-image.png
+Installing po/be/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/be/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/de/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/es/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/eu/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/fur/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/it/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/lt/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/ka/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/nl/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/pt/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/sk/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/sr/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/sv/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/uk/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/zh_TW/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/ms/LC_MESSAGES
+Installing po/he/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/he/LC_MESSAGES
+Installing po/si/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/si/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/fi/LC_MESSAGES
+Installing po/ie/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/ie/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/gl/LC_MESSAGES
+Installing po/cy/LC_MESSAGES/plymouth.mo to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/locale/cy/LC_MESSAGES
+Installing src/libply/libply.so.5.0.0 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64
+Installing src/libply-splash-core/libply-splash-core.so.5.0.0 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64
+Installing src/libply-splash-graphics/libply-splash-graphics.so.5.0.0 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64
+Installing src/plymouthd to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/sbin
+Installing src/plymouthd-fd-escrow to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/libexec/plymouth
+Installing src/plugins/controls/label-pango/label-pango.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth
+Installing src/plugins/controls/label-freetype/label-freetype.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth
+Installing src/plugins/splash/fade-throbber/fade-throbber.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth
+Installing src/plugins/splash/text/text.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth
+Installing src/plugins/splash/details/details.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth
+Installing src/plugins/splash/space-flares/space-flares.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth
+Installing src/plugins/splash/two-step/two-step.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth
+Installing src/plugins/splash/script/script.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth
+Installing src/plugins/splash/tribar/tribar.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth
+Installing src/plugins/renderers/frame-buffer/frame-buffer.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth/renderers
+Installing src/plugins/renderers/drm/drm.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth/renderers
+Installing src/plugins/renderers/x11/x11.so to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/plymouth/renderers
+Installing src/client/plymouth to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/bin
+Installing src/client/libply-boot-client.so.5.0.0 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64
+Installing themes/spinner/spinner.plymouth to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing themes/bgrt/bgrt.plymouth to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/bgrt
+Installing docs/plymouth.1 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/man/man1
+Installing docs/plymouth.8 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/man/man8
+Installing docs/plymouthd.8 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/man/man8
+Installing docs/plymouth-set-default-theme.1 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/man/man1
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-array.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-bitarray.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-buffer.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-command-parser.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-event-loop.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-hashtable.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-i18n.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-key-file.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-list.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-logger.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-progress.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-rectangle.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-region.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-terminal-session.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-trigger.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply/ply-utils.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-boot-splash-plugin.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-boot-splash.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-device-manager.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-input-device.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-kmsg-reader.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-keyboard.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-pixel-buffer.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-pixel-display.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-renderer-plugin.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-renderer.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-rich-text.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-terminal.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-terminal-emulator.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-text-display.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-text-progress-bar.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-core/ply-text-step-bar.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-core
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-animation.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-capslock-icon.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-console-viewer.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-entry.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-image.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-keymap-icon.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-keymap-metadata.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-label-plugin.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-label.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-progress-animation.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-progress-bar.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/libply-splash-graphics/ply-throbber.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-splash-graphics
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/client/ply-boot-client.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-boot-client
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/client/../ply-boot-protocol.h to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/include/plymouth-1/ply-boot-client
+Installing new directory /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/run/plymouth
+Installing new directory /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/var/spool/plymouth
+Installing new directory /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/var/lib/plymouth
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/images/bizcom.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build/meson-private/ply-splash-core.pc to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/pkgconfig
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build/meson-private/ply-splash-graphics.pc to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/pkgconfig
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/plymouthd.defaults to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/src/plymouthd.conf to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/etc/plymouth
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build/meson-private/ply-boot-client.pc to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/pkgconfig
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build/themes/spinfinity/spinfinity.plymouth to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/box.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/bullet.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/entry.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/lock.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/capslock.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/keyboard.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/keymap-render.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/animation-0001.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-00.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-01.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-02.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-03.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-04.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-05.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-06.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-07.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-08.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-09.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-10.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-11.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-12.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-13.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-14.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-15.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-16.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-17.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-18.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-19.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-20.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-21.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-22.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-23.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-24.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-25.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-26.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-27.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-28.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-29.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-30.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-31.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-32.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinfinity/throbber-33.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build/themes/fade-in/fade-in.plymouth to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/fade-in
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/fade-in/star.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/fade-in
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/fade-in/bullet.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/fade-in
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/fade-in/entry.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/fade-in
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/fade-in/lock.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/fade-in
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/text/text.plymouth to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/text
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/details/details.plymouth to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/details
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build/themes/solar/solar.plymouth to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/solar
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/solar/box.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/solar
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/solar/bullet.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/solar
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/solar/entry.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/solar
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/solar/lock.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/solar
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/solar/progress_bar.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/solar
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/solar/star.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/solar
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build/themes/glow/glow.plymouth to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/box.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/bullet.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/entry.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/lock.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-00.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-01.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-02.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-03.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-04.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-05.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-06.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-07.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-08.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-09.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-10.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-11.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-12.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-13.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-14.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-15.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-16.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-17.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-18.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-19.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-20.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-21.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-22.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-23.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-24.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-25.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-26.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-27.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-28.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-29.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-30.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-31.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/progress-32.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-00.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-01.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-02.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-03.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-04.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-05.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-06.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-07.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-08.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-09.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-10.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-11.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-12.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-13.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-14.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-15.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-16.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-17.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-18.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/glow/throbber-19.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/glow
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build/themes/script/script.plymouth to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/script
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/script/script.script to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/script
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/script/box.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/script
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/script/bullet.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/script
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/script/entry.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/script
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/script/lock.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/script
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/script/progress_box.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/script
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/script/progress_bar.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/script
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/bullet.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/entry.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/lock.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/capslock.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/keyboard.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/keymap-render.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0001.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0002.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0003.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0004.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0005.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0006.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0007.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0008.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0009.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0010.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0011.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0012.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0013.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0014.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0015.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0016.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0017.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0018.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0019.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0020.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0021.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0022.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0023.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0024.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0025.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0026.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0027.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0028.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0029.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0030.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0031.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0032.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0033.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0034.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0035.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/animation-0036.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0001.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0002.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0003.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0004.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0005.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0006.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0007.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0008.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0009.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0010.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0011.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0012.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0013.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0014.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0015.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0016.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0017.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0018.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0019.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0020.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0021.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0022.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0023.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0024.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0025.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0026.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0027.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0028.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0029.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/spinner/throbber-0030.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinner
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/themes/tribar/tribar.plymouth to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/tribar
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build/scripts/plymouth-generate-initrd to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/libexec/plymouth
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build/scripts/plymouth-populate-initrd to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/libexec/plymouth
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/scripts/plymouth-update-initrd to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/libexec/plymouth
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build/scripts/plymouth-set-default-theme to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/sbin
+Installing /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/scripts/bootlog to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/etc/logrotate.d
+Installing symlink pointing to libply.so.5.0.0 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/libply.so.5
+Installing symlink pointing to libply.so.5 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/libply.so
+Installing symlink pointing to libply-splash-core.so.5.0.0 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/libply-splash-core.so.5
+Installing symlink pointing to libply-splash-core.so.5 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/libply-splash-core.so
+Installing symlink pointing to libply-splash-graphics.so.5.0.0 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/libply-splash-graphics.so.5
+Installing symlink pointing to libply-splash-graphics.so.5 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/libply-splash-graphics.so
+Installing symlink pointing to libply-boot-client.so.5.0.0 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/libply-boot-client.so.5
+Installing symlink pointing to libply-boot-client.so.5 to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/lib64/libply-boot-client.so
+Installing symlink pointing to /usr/share/plymouth/bizcom.png to /home/omen/GITHUB/One4All_SlackBuild/plymouth/package-plymouth/usr/share/plymouth/themes/spinfinity/header-image.png
 
 Slackware package maker, version 3.14159265.
 
@@ -1207,7 +1207,7 @@ Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
 
-Creating Slackware package:  /home/omen/BUILDS/SEVERAL-MIXED/plymouth/binary-plymouth-24.004.60/plymouth-24.004.60-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/plymouth/binary-plymouth-24.004.60/plymouth-24.004.60-x86_64-1_rtz.tlz
 
 ./
 etc/
@@ -2483,6 +2483,6 @@ var/spool/
 var/spool/plymouth/
 WARNING:  zero length file usr/doc/plymouth-24.004.60/build/meson-private/meson.lock
 
-Slackware package /home/omen/BUILDS/SEVERAL-MIXED/plymouth/binary-plymouth-24.004.60/plymouth-24.004.60-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/plymouth/binary-plymouth-24.004.60/plymouth-24.004.60-x86_64-1_rtz.tlz created.
 
-Build process completed in 0 minutes and 12 seconds.
+Build process completed in 0 minutes and 13 seconds.
