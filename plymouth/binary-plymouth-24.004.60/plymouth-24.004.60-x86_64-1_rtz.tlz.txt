@@ -1,0 +1,11 @@
+plymouth: plymouth (flicker-free graphical boot process)
+plymouth:
+plymouth: Plymouth is a project from Fedora and now listed among the
+plymouth: freedesktop.org's official resources providing a flicker-free
+plymouth: graphical boot process. It relies on kernel mode setting (KMS) to
+plymouth: set the native resolution of the display as early as possible
+plymouth:
+plymouth:
+plymouth:
+plymouth:
+plymouth: https://gitlab.freedesktop.org/plymouth
