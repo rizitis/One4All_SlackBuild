@@ -1,1 +1,2 @@
-plymouth flicker-free graphical boot process
+This is an non tested package of plymouth...
+SlackBuild use chrpath to remove decades RPATH from build dir. So chrpath  is a dep.
