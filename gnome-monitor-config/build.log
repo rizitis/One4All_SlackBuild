@@ -21,8 +21,8 @@ Turn off this advice by setting config variable advice.detachedHead to false
 HEAD is now at 04b854e README: add a basic guide
 The Meson build system
 Version: 1.5.2
-Source dir: /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/work/gnome-monitor-config
-Build dir: /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/work/gnome-monitor-config/build
+Source dir: /home/omen/GITHUB/One4All_SlackBuild/gnome-monitor-config/work/gnome-monitor-config
+Build dir: /home/omen/GITHUB/One4All_SlackBuild/gnome-monitor-config/work/gnome-monitor-config/build
 Build type: native build
 Project name: gnome-monitor-config
 Project version: undefined
@@ -53,12 +53,8 @@ gnome-monitor-config undefined
 
 Found ninja-1.12.1 at /usr/bin/ninja
 WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
-[1/7] Generating gdbus source src/gmc-dbus-display-config.c
-[2/7] Generating gdbus header src/gmc-dbus-display-config.h
-[3/7] Compiling C object src/gnome-monitor-config.p/meson-generated_.._gmc-dbus-display-config.c.o
-[4/7] Compiling C object src/gnome-monitor-config.p/gmc-display-test.c.o
-[5/7] Compiling C object src/gnome-monitor-config.p/gmc-display-config.c.o
-[6/7] Compiling C object src/gnome-monitor-config.p/gmc-display-config-manager.c.o
+[1/7] Generating gdbus header src/gmc-dbus-display-config.h
+[2/7] Compiling C object src/gnome-monitor-config.p/gmc-display-config-manager.c.o
 In function ‘create_monitors_config_variant’,
     inlined from ‘cc_display_config_manager_apply’ at ../src/gmc-display-config-manager.c:177:5:
 ../src/gmc-display-config-manager.c:150:7: warning: ‘scale’ may be used uninitialized [-Wmaybe-uninitialized]
@@ -80,6 +76,10 @@ In function ‘create_monitors_config_variant’,
 ../src/gmc-display-config-manager.c:107:14: note: ‘scale’ was declared here
   107 |       double scale;
       |              ^~~~~
+[3/7] Compiling C object src/gnome-monitor-config.p/gmc-display-config.c.o
+[4/7] Compiling C object src/gnome-monitor-config.p/gmc-display-test.c.o
+[5/7] Generating gdbus source src/gmc-dbus-display-config.c
+[6/7] Compiling C object src/gnome-monitor-config.p/meson-generated_.._gmc-dbus-display-config.c.o
 [7/7] Linking target src/gnome-monitor-config
 
 Slackware package maker, version 3.14159265.
@@ -98,7 +98,7 @@ Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
 
-Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/gnome-monitor-config/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz
 
 ./
 install/
@@ -107,73 +107,72 @@ install/slack-desc
 usr/
 usr/doc/
 usr/doc/gnome-monitor-config-04b854e/
-usr/doc/gnome-monitor-config-04b854e/build/
-usr/doc/gnome-monitor-config-04b854e/build/build.ninja
-usr/doc/gnome-monitor-config-04b854e/build/compile_commands.json
-usr/doc/gnome-monitor-config-04b854e/build/.gitignore
-usr/doc/gnome-monitor-config-04b854e/build/.hgignore
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-benchmarks.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-buildoptions.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-buildsystem_files.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-compilers.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-dependencies.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-installed.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-install_plan.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-machines.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-projectinfo.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-targets.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-tests.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-info/meson-info.json
-usr/doc/gnome-monitor-config-04b854e/build/meson-logs/
-usr/doc/gnome-monitor-config-04b854e/build/meson-logs/meson-log.txt
-usr/doc/gnome-monitor-config-04b854e/build/meson-private/
-usr/doc/gnome-monitor-config-04b854e/build/meson-private/build.dat
-usr/doc/gnome-monitor-config-04b854e/build/meson-private/cleantrees.dat
-usr/doc/gnome-monitor-config-04b854e/build/meson-private/cmd_line.txt
-usr/doc/gnome-monitor-config-04b854e/build/meson-private/coredata.dat
-usr/doc/gnome-monitor-config-04b854e/build/meson-private/install.dat
-usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson_benchmark_setup.dat
-usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson.lock
-usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson_test_setup.dat
-usr/doc/gnome-monitor-config-04b854e/build/meson-private/sanitycheckc.c
-usr/doc/gnome-monitor-config-04b854e/build/meson-private/sanitycheckc.exe
-usr/doc/gnome-monitor-config-04b854e/build/.ninja_deps
-usr/doc/gnome-monitor-config-04b854e/build/.ninja_log
-usr/doc/gnome-monitor-config-04b854e/build/src/
-usr/doc/gnome-monitor-config-04b854e/build/src/gmc-dbus-display-config.c
-usr/doc/gnome-monitor-config-04b854e/build/src/gmc-dbus-display-config.h
-usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config
-usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/
-usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-config.c.o
-usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-config-manager.c.o
-usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-test.c.o
-usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/meson-generated_.._gmc-dbus-display-config.c.o
 usr/doc/gnome-monitor-config-04b854e/gnome-monitor-config.SlackBuild
-usr/doc/gnome-monitor-config-04b854e/Makefile
-usr/doc/gnome-monitor-config-04b854e/meson.build
 usr/doc/gnome-monitor-config-04b854e/README.md
-usr/doc/gnome-monitor-config-04b854e/src/
-usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config.c
-usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config.h
-usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config-manager.c
-usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config-manager.h
-usr/doc/gnome-monitor-config-04b854e/src/gmc-display-test.c
-usr/doc/gnome-monitor-config-04b854e/src/meson.build
-usr/doc/gnome-monitor-config-04b854e/src/org.gnome.Mutter.DisplayConfig.xml
 usr/local/
 usr/local/bin/
 usr/local/bin/gnome-monitor-config
-WARNING:  zero length file usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson.lock
 
-Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/gnome-monitor-config/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz created.
 
 
 +==============================================================================
-| Upgrading gnome-monitor-config-04b854e-x86_64-1_rtz package using /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz
+| Upgrading gnome-monitor-config-04b854e-x86_64-1_rtz package using /home/omen/GITHUB/One4All_SlackBuild/gnome-monitor-config/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz
 +==============================================================================
 Pre-installing package gnome-monitor-config-04b854e-x86_64-1_rtz...
-Removing package: gnome-monitor-config-04b854e-x86_64-1_rtz-upgraded-2024-10-04,22:40:07
+Removing package: gnome-monitor-config-04b854e-x86_64-1_rtz-upgraded-2024-10-04,22:48:52
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/Makefile
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/.gitignore
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/.hgignore
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/.ninja_deps
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/.ninja_log
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/build.ninja
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/compile_commands.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-benchmarks.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-buildoptions.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-buildsystem_files.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-compilers.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-dependencies.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-install_plan.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-installed.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-machines.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-projectinfo.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-targets.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-tests.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-info/meson-info.json
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-logs/meson-log.txt
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-private/build.dat
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-private/cleantrees.dat
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-private/cmd_line.txt
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-private/coredata.dat
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-private/install.dat
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson.lock
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson_benchmark_setup.dat
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson_test_setup.dat
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-private/sanitycheckc.c
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/meson-private/sanitycheckc.exe
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/src/gmc-dbus-display-config.c
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/src/gmc-dbus-display-config.h
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-config-manager.c.o
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-config.c.o
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-test.c.o
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/meson-generated_.._gmc-dbus-display-config.c.o
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/meson.build
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config-manager.c
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config-manager.h
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config.c
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config.h
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/src/gmc-display-test.c
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/src/meson.build
+  --> Deleting /usr/doc/gnome-monitor-config-04b854e/src/org.gnome.Mutter.DisplayConfig.xml
+  --> Deleting empty directory /usr/doc/gnome-monitor-config-04b854e/src/
+  --> Deleting empty directory /usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/
+  --> Deleting empty directory /usr/doc/gnome-monitor-config-04b854e/build/src/
+  --> Deleting empty directory /usr/doc/gnome-monitor-config-04b854e/build/meson-private/
+  --> Deleting empty directory /usr/doc/gnome-monitor-config-04b854e/build/meson-logs/
+  --> Deleting empty directory /usr/doc/gnome-monitor-config-04b854e/build/meson-info/
+  --> Deleting empty directory /usr/doc/gnome-monitor-config-04b854e/build/
 Verifying package gnome-monitor-config-04b854e-x86_64-1_rtz.tlz.
 Installing package gnome-monitor-config-04b854e-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
@@ -211,5 +210,5 @@ Font directories:
 /root/.fontconfig: not cleaning non-existent cache directory
 /usr/bin/fc-cache: succeeded
 Package gnome-monitor-config-04b854e-x86_64-1_rtz.tlz installed.
-Package gnome-monitor-config-04b854e-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz.
+Package gnome-monitor-config-04b854e-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/gnome-monitor-config/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz.
 rm: cannot remove '*.git': No such file or directory

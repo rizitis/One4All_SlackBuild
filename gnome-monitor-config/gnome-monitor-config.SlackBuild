@@ -736,6 +736,8 @@ meson_build
 
 # default most of times #
 after_build
+rm -r $PKG/usr/doc/gnome-monitor-config-04b854e/{build,src,Makefile,meson.build}
+
 package_build
 
 # uncomment what you need:
