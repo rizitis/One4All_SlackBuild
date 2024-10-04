@@ -1,0 +1,11 @@
+gnome-monitor-config: gnome-monitor-config (monitor configuration utility)
+gnome-monitor-config:
+gnome-monitor-config: 
+gnome-monitor-config: 
+gnome-monitor-config: 
+gnome-monitor-config: 
+gnome-monitor-config: 
+gnome-monitor-config:
+gnome-monitor-config: 
+gnome-monitor-config: 
+gnome-monitor-config:

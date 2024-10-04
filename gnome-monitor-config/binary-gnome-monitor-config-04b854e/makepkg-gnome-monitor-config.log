@@ -1,0 +1,88 @@
+
+Fri Oct  4 22:40:04 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-monitor-config-04b854e/
+usr/doc/gnome-monitor-config-04b854e/build/
+usr/doc/gnome-monitor-config-04b854e/build/build.ninja
+usr/doc/gnome-monitor-config-04b854e/build/compile_commands.json
+usr/doc/gnome-monitor-config-04b854e/build/.gitignore
+usr/doc/gnome-monitor-config-04b854e/build/.hgignore
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-benchmarks.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-buildoptions.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-buildsystem_files.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-compilers.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-dependencies.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-installed.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-install_plan.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-machines.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-projectinfo.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-targets.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-tests.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/meson-info.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-logs/
+usr/doc/gnome-monitor-config-04b854e/build/meson-logs/meson-log.txt
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/build.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/cleantrees.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/cmd_line.txt
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/coredata.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/install.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson_benchmark_setup.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson.lock
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson_test_setup.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/sanitycheckc.c
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/sanitycheckc.exe
+usr/doc/gnome-monitor-config-04b854e/build/.ninja_deps
+usr/doc/gnome-monitor-config-04b854e/build/.ninja_log
+usr/doc/gnome-monitor-config-04b854e/build/src/
+usr/doc/gnome-monitor-config-04b854e/build/src/gmc-dbus-display-config.c
+usr/doc/gnome-monitor-config-04b854e/build/src/gmc-dbus-display-config.h
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-config.c.o
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-config-manager.c.o
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-test.c.o
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/meson-generated_.._gmc-dbus-display-config.c.o
+usr/doc/gnome-monitor-config-04b854e/gnome-monitor-config.SlackBuild
+usr/doc/gnome-monitor-config-04b854e/Makefile
+usr/doc/gnome-monitor-config-04b854e/meson.build
+usr/doc/gnome-monitor-config-04b854e/README.md
+usr/doc/gnome-monitor-config-04b854e/src/
+usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config.c
+usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config.h
+usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config-manager.c
+usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config-manager.h
+usr/doc/gnome-monitor-config-04b854e/src/gmc-display-test.c
+usr/doc/gnome-monitor-config-04b854e/src/meson.build
+usr/doc/gnome-monitor-config-04b854e/src/org.gnome.Mutter.DisplayConfig.xml
+usr/local/
+usr/local/bin/
+usr/local/bin/gnome-monitor-config
+WARNING:  zero length file usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson.lock
+
+Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz created.
+

@@ -1,0 +1,215 @@
+Starting build process...
+Detected architecture: x86_64
+Cloning into 'gnome-monitor-config'...
+Note: switching to '04b854e6411cd9ca75582c108aea63ae3c202f0e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 04b854e README: add a basic guide
+The Meson build system
+Version: 1.5.2
+Source dir: /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/work/gnome-monitor-config
+Build dir: /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/work/gnome-monitor-config/build
+Build type: native build
+Project name: gnome-monitor-config
+Project version: undefined
+C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+C linker for the host machine: cc ld.bfd 2.43.1-slack151
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Run-time dependency cairo found: YES 1.18.0
+Run-time dependency glib-2.0 found: YES 2.82.1
+Run-time dependency gio-2.0 found: YES 2.82.1
+Run-time dependency gio-unix-2.0 found: YES 2.82.1
+Dependency gio-2.0 found: YES 2.82.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Build targets in project: 3
+
+gnome-monitor-config undefined
+
+  User defined options
+    buildtype    : release
+    infodir      : /usr/info
+    libdir       : /usr/lib64
+    localstatedir: /var
+    mandir       : /usr/man
+    prefix       : /usr
+    strip        : true
+    sysconfdir   : /etc
+
+Found ninja-1.12.1 at /usr/bin/ninja
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+[1/7] Generating gdbus source src/gmc-dbus-display-config.c
+[2/7] Generating gdbus header src/gmc-dbus-display-config.h
+[3/7] Compiling C object src/gnome-monitor-config.p/meson-generated_.._gmc-dbus-display-config.c.o
+[4/7] Compiling C object src/gnome-monitor-config.p/gmc-display-test.c.o
+[5/7] Compiling C object src/gnome-monitor-config.p/gmc-display-config.c.o
+[6/7] Compiling C object src/gnome-monitor-config.p/gmc-display-config-manager.c.o
+In function ‘create_monitors_config_variant’,
+    inlined from ‘cc_display_config_manager_apply’ at ../src/gmc-display-config-manager.c:177:5:
+../src/gmc-display-config-manager.c:150:7: warning: ‘scale’ may be used uninitialized [-Wmaybe-uninitialized]
+  150 |       g_variant_builder_add (&config_builder, LOGICAL_MONITOR_CONFIG_FORMAT,
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  151 |                              (int32_t) x,
+      |                              ~~~~~~~~~~~~
+  152 |                              (int32_t) y,
+      |                              ~~~~~~~~~~~~
+  153 |                              scale,
+      |                              ~~~~~~
+  154 |                              (uint32_t) transform,
+      |                              ~~~~~~~~~~~~~~~~~~~~~
+  155 |                              is_primary,
+      |                              ~~~~~~~~~~~
+  156 |                              &monitor_configs_builder);
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/gmc-display-config-manager.c: In function ‘cc_display_config_manager_apply’:
+../src/gmc-display-config-manager.c:107:14: note: ‘scale’ was declared here
+  107 |       double scale;
+      |              ^~~~~
+[7/7] Linking target src/gnome-monitor-config
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-monitor-config-04b854e/
+usr/doc/gnome-monitor-config-04b854e/build/
+usr/doc/gnome-monitor-config-04b854e/build/build.ninja
+usr/doc/gnome-monitor-config-04b854e/build/compile_commands.json
+usr/doc/gnome-monitor-config-04b854e/build/.gitignore
+usr/doc/gnome-monitor-config-04b854e/build/.hgignore
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-benchmarks.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-buildoptions.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-buildsystem_files.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-compilers.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-dependencies.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-installed.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-install_plan.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-machines.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-projectinfo.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-targets.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/intro-tests.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-info/meson-info.json
+usr/doc/gnome-monitor-config-04b854e/build/meson-logs/
+usr/doc/gnome-monitor-config-04b854e/build/meson-logs/meson-log.txt
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/build.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/cleantrees.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/cmd_line.txt
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/coredata.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/install.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson_benchmark_setup.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson.lock
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson_test_setup.dat
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/sanitycheckc.c
+usr/doc/gnome-monitor-config-04b854e/build/meson-private/sanitycheckc.exe
+usr/doc/gnome-monitor-config-04b854e/build/.ninja_deps
+usr/doc/gnome-monitor-config-04b854e/build/.ninja_log
+usr/doc/gnome-monitor-config-04b854e/build/src/
+usr/doc/gnome-monitor-config-04b854e/build/src/gmc-dbus-display-config.c
+usr/doc/gnome-monitor-config-04b854e/build/src/gmc-dbus-display-config.h
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-config.c.o
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-config-manager.c.o
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/gmc-display-test.c.o
+usr/doc/gnome-monitor-config-04b854e/build/src/gnome-monitor-config.p/meson-generated_.._gmc-dbus-display-config.c.o
+usr/doc/gnome-monitor-config-04b854e/gnome-monitor-config.SlackBuild
+usr/doc/gnome-monitor-config-04b854e/Makefile
+usr/doc/gnome-monitor-config-04b854e/meson.build
+usr/doc/gnome-monitor-config-04b854e/README.md
+usr/doc/gnome-monitor-config-04b854e/src/
+usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config.c
+usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config.h
+usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config-manager.c
+usr/doc/gnome-monitor-config-04b854e/src/gmc-display-config-manager.h
+usr/doc/gnome-monitor-config-04b854e/src/gmc-display-test.c
+usr/doc/gnome-monitor-config-04b854e/src/meson.build
+usr/doc/gnome-monitor-config-04b854e/src/org.gnome.Mutter.DisplayConfig.xml
+usr/local/
+usr/local/bin/
+usr/local/bin/gnome-monitor-config
+WARNING:  zero length file usr/doc/gnome-monitor-config-04b854e/build/meson-private/meson.lock
+
+Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz created.
+
+
++==============================================================================
+| Upgrading gnome-monitor-config-04b854e-x86_64-1_rtz package using /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz
++==============================================================================
+Pre-installing package gnome-monitor-config-04b854e-x86_64-1_rtz...
+Removing package: gnome-monitor-config-04b854e-x86_64-1_rtz-upgraded-2024-10-04,22:40:07
+Verifying package gnome-monitor-config-04b854e-x86_64-1_rtz.tlz.
+Installing package gnome-monitor-config-04b854e-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# gnome-monitor-config (monitor configuration utility)
+#
+# 
+#
+# 
+#
+Executing install script for gnome-monitor-config-04b854e-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
+/usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
+/usr/share/fonts/TTF/oxygen: caching, new cache contents: 3 fonts, 0 dirs
+/usr/share/fonts/TTF/static: caching, new cache contents: 36 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package gnome-monitor-config-04b854e-x86_64-1_rtz.tlz installed.
+Package gnome-monitor-config-04b854e-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/binary-gnome-monitor-config-04b854e/gnome-monitor-config-04b854e-x86_64-1_rtz.tlz.
+rm: cannot remove '*.git': No such file or directory
