@@ -1,4 +1,5 @@
 # One4All_SlackBuild
+
     *(personal project)*
 
 
