@@ -88,7 +88,7 @@ This repo is not provided as binary repo for Slackware-current or as SlackBuilds
 > [!TIP]
 > You can edit and ran, ***if needed***, SlackBuilds as regular user...<sup>go, rust, etc.. </sup> <br>
 > In that case ***disable chroot function*** and add a ***sudo before makepkg command*** <br>
-> If a README or README.md dont exist, it will create a simple README file. 
+> If a README or README.md does not exist, it will create a simple README file. 
 
 #### Inspired
 Thanks to: <br>[pete4abw/makesbld](https://github.com/pete4abw/makesbld) <br> [Alien's SlackBuild Toolkit](https://alien.slackbook.org/AST/)<br> [Martin Lefebvre](https://www.slackwiki.com/Different_Approach_To_Buildscripts)<br>[Robby Workman](https://www.slackwiki.com/Writing_A_SlackBuild_Script) <br>[SlackBuildsOrg](https://github.com/SlackBuildsOrg/templates)
