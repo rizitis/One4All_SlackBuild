@@ -1,6 +1,6 @@
 # One4All_SlackBuild
 
-   *(personal project)*
+  *(personal project)*
 
 
 > Personal [SlackBuild Template](https://github.com/rizitis/One4All_SlackBuild/blob/main/TEMPLATE.SlackBuild) for:

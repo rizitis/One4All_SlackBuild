@@ -1,0 +1,186 @@
+Starting build process...
+Detected architecture: x86_64
+--2024-10-05 13:12:52--  https://github.com/sachaos/viddy/releases/download/v1.1.6/viddy-v1.1.6-linux-x86_64.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/395917032/fc100310-b5d9-4f47-a95c-3bc6e951d7e4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20241005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241005T101156Z&X-Amz-Expires=300&X-Amz-Signature=b37aee97b9812d98554d3136dca3fa83cf7c10c08f266f8eef7c5e919d4f2396&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dviddy-v1.1.6-linux-x86_64.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2024-10-05 13:12:53--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/395917032/fc100310-b5d9-4f47-a95c-3bc6e951d7e4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20241005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241005T101156Z&X-Amz-Expires=300&X-Amz-Signature=b37aee97b9812d98554d3136dca3fa83cf7c10c08f266f8eef7c5e919d4f2396&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dviddy-v1.1.6-linux-x86_64.tar.gz&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.111.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3593531 (3.4M) [application/octet-stream]
+Saving to: ‘viddy-1.1.6.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  1%  775K 4s
+    50K .......... .......... .......... .......... ..........  2%  904K 4s
+   100K .......... .......... .......... .......... ..........  4% 3.28M 3s
+   150K .......... .......... .......... .......... ..........  5% 4.61M 2s
+   200K .......... .......... .......... .......... ..........  7% 1.54M 2s
+   250K .......... .......... .......... .......... ..........  8% 5.34M 2s
+   300K .......... .......... .......... .......... ..........  9% 4.03M 2s
+   350K .......... .......... .......... .......... .......... 11% 6.65M 2s
+   400K .......... .......... .......... .......... .......... 12% 4.97M 1s
+   450K .......... .......... .......... .......... .......... 14% 6.54M 1s
+   500K .......... .......... .......... .......... .......... 15% 2.75M 1s
+   550K .......... .......... .......... .......... .......... 17% 5.09M 1s
+   600K .......... .......... .......... .......... .......... 18% 7.14M 1s
+   650K .......... .......... .......... .......... .......... 19%  621K 1s
+   700K .......... .......... .......... .......... .......... 21% 7.27M 1s
+   750K .......... .......... .......... .......... .......... 22% 10.9M 1s
+   800K .......... .......... .......... .......... .......... 24% 10.1M 1s
+   850K .......... .......... .......... .......... .......... 25% 10.6M 1s
+   900K .......... .......... .......... .......... .......... 27% 10.9M 1s
+   950K .......... .......... .......... .......... .......... 28% 18.3M 1s
+  1000K .......... .......... .......... .......... .......... 29% 9.71M 1s
+  1050K .......... .......... .......... .......... .......... 31% 20.9M 1s
+  1100K .......... .......... .......... .......... .......... 32% 93.5M 1s
+  1150K .......... .......... .......... .......... .......... 34% 2.58M 1s
+  1200K .......... .......... .......... .......... .......... 35% 6.43M 1s
+  1250K .......... .......... .......... .......... .......... 37% 11.8M 1s
+  1300K .......... .......... .......... .......... .......... 38% 9.66M 1s
+  1350K .......... .......... .......... .......... .......... 39% 17.0M 1s
+  1400K .......... .......... .......... .......... .......... 41% 21.7M 1s
+  1450K .......... .......... .......... .......... .......... 42%  206M 1s
+  1500K .......... .......... .......... .......... .......... 44%  653K 1s
+  1550K .......... .......... .......... .......... .......... 45% 16.6M 1s
+  1600K .......... .......... .......... .......... .......... 47% 10.2M 1s
+  1650K .......... .......... .......... .......... .......... 48% 10.4M 1s
+  1700K .......... .......... .......... .......... .......... 49% 10.6M 1s
+  1750K .......... .......... .......... .......... .......... 51% 19.3M 0s
+  1800K .......... .......... .......... .......... .......... 52% 4.82M 0s
+  1850K .......... .......... .......... .......... .......... 54% 7.84M 0s
+  1900K .......... .......... .......... .......... .......... 55% 3.43M 0s
+  1950K .......... .......... .......... .......... .......... 56%  116M 0s
+  2000K .......... .......... .......... .......... .......... 58%  119M 0s
+  2050K .......... .......... .......... .......... .......... 59%  132M 0s
+  2100K .......... .......... .......... .......... .......... 61%  148M 0s
+  2150K .......... .......... .......... .......... .......... 62% 77.9M 0s
+  2200K .......... .......... .......... .......... .......... 64% 5.19M 0s
+  2250K .......... .......... .......... .......... .......... 65% 5.23M 0s
+  2300K .......... .......... .......... .......... .......... 66% 3.97M 0s
+  2350K .......... .......... .......... .......... .......... 68% 6.86M 0s
+  2400K .......... .......... .......... .......... .......... 69% 5.02M 0s
+  2450K .......... .......... .......... .......... .......... 71% 7.33M 0s
+  2500K .......... .......... .......... .......... .......... 72% 5.43M 0s
+  2550K .......... .......... .......... .......... .......... 74% 5.00M 0s
+  2600K .......... .......... .......... .......... .......... 75% 4.67M 0s
+  2650K .......... .......... .......... .......... .......... 76% 5.49M 0s
+  2700K .......... .......... .......... .......... .......... 78% 4.07M 0s
+  2750K .......... .......... .......... .......... .......... 79% 4.89M 0s
+  2800K .......... .......... .......... .......... .......... 81% 6.92M 0s
+  2850K .......... .......... .......... .......... .......... 82% 5.02M 0s
+  2900K .......... .......... .......... .......... .......... 84% 5.01M 0s
+  2950K .......... .......... .......... .......... .......... 85% 4.91M 0s
+  3000K .......... .......... .......... .......... .......... 86% 6.44M 0s
+  3050K .......... .......... .......... .......... .......... 88% 5.15M 0s
+  3100K .......... .......... .......... .......... .......... 89% 3.89M 0s
+  3150K .......... .......... .......... .......... .......... 91% 5.06M 0s
+  3200K .......... .......... .......... .......... .......... 92% 5.33M 0s
+  3250K .......... .......... .......... .......... .......... 94% 5.08M 0s
+  3300K .......... .......... .......... .......... .......... 95% 6.64M 0s
+  3350K .......... .......... .......... .......... .......... 96% 5.06M 0s
+  3400K .......... .......... .......... .......... .......... 98% 5.12M 0s
+  3450K .......... .......... .......... .......... .......... 99% 5.05M 0s
+  3500K .........                                             100% 59.9M=0.8s
+
+2024-10-05 13:12:54 (4.35 MB/s) - ‘viddy-1.1.6.tar.gz’ saved [3593531/3593531]
+
+viddy
+/home/omen/GITHUB/One4All_SlackBuild/viddy/work
+README or README.md already exists, skipping creation.
+BIN_PKG = YES
+hm...lets continue and see what happens
+/home/omen/GITHUB/One4All_SlackBuild/viddy/package-viddy/usr/doc/viddy-1.1.6 /home/omen/GITHUB/One4All_SlackBuild/viddy/work
+--2024-10-05 13:12:54--  https://raw.githubusercontent.com/sachaos/viddy/refs/heads/master/LICENSE
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8001::154, 2606:50c0:8000::154, 2606:50c0:8003::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8001::154|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1079 (1.1K) [text/plain]
+Saving to: ‘LICENSE’
+
+     0K .                                                     100% 26.9M=0s
+
+2024-10-05 13:12:55 (26.9 MB/s) - ‘LICENSE’ saved [1079/1079]
+
+/home/omen/GITHUB/One4All_SlackBuild/viddy/work
+ls: cannot access '*/': No such file or directory
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/viddy/binary-viddy-1.1.6/viddy-1.1.6-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/viddy-1.1.6/
+usr/doc/viddy-1.1.6/LICENSE
+usr/doc/viddy-1.1.6/viddy
+usr/doc/viddy-1.1.6/viddy.SlackBuild
+usr/local/
+usr/local/bin/
+usr/local/bin/viddy
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/viddy/binary-viddy-1.1.6/viddy-1.1.6-x86_64-1_rtz.tlz created.
+
+
++==============================================================================
+| Upgrading viddy-1.1.6-x86_64-1_rtz package using /home/omen/GITHUB/One4All_SlackBuild/viddy/binary-viddy-1.1.6/viddy-1.1.6-x86_64-1_rtz.tlz
++==============================================================================
+Pre-installing package viddy-1.1.6-x86_64-1_rtz...
+Removing package: viddy-1.1.6-x86_64-1_rtz-upgraded-2024-10-05,13:13:01
+Verifying package viddy-1.1.6-x86_64-1_rtz.tlz.
+Installing package viddy-1.1.6-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# viddy (Modern watch command)
+#
+# Modern watch command. Time machine and pager etc.
+#
+# https://github.com/sachaos/viddy
+Executing install script for viddy-1.1.6-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
+/usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
+/usr/share/fonts/TTF/oxygen: caching, new cache contents: 3 fonts, 0 dirs
+/usr/share/fonts/TTF/static: caching, new cache contents: 36 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package viddy-1.1.6-x86_64-1_rtz.tlz installed.
+Package viddy-1.1.6-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/viddy/binary-viddy-1.1.6/viddy-1.1.6-x86_64-1_rtz.tlz.
+Build process completed in 0 minutes and 14 seconds.

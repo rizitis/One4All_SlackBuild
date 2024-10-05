@@ -1,0 +1,11 @@
+viddy: viddy (Modern watch command)
+viddy:
+viddy: Modern watch command. Time machine and pager etc.
+viddy:
+viddy:
+viddy:
+viddy:
+viddy:
+viddy:
+viddy:
+viddy: https://github.com/sachaos/viddy
