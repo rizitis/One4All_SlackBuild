@@ -1,0 +1,11 @@
+gnome-podcasts: gnome-podcasts (GTK-based podcast aggregator)
+gnome-podcasts:
+gnome-podcasts: A Podcast application for GNOME. Listen to your favorite podcasts,
+gnome-podcasts: right from your desktop.The project used to be called Hammond, after
+gnome-podcasts: Allan Moore's character Evey Hammond from the graphic novel V for
+gnome-podcasts: Vendetta.It was renamed to GNOME Podcasts on 2018/07/24 shortly
+gnome-podcasts: before its first public release.
+gnome-podcasts:
+gnome-podcasts:
+gnome-podcasts:
+gnome-podcasts: https://gitlab.gnome.org/World/podcasts

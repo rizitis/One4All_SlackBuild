@@ -1,0 +1,1515 @@
+Starting build process...
+Detected architecture: x86_64
+--2024-10-09 21:23:43--  https://gitlab.gnome.org/World/podcasts/-/archive/0.7.1/podcasts-0.7.1.tar.gz
+Resolving gitlab.gnome.org (gitlab.gnome.org)... 2a04:4e42:400::347, 2a04:4e42:200::347, 2a04:4e42::347, ...
+Connecting to gitlab.gnome.org (gitlab.gnome.org)|2a04:4e42:400::347|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/octet-stream]
+Saving to: ‘podcasts-0.7.1.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  367K
+    50K .......... .......... .......... .......... ..........  576K
+   100K .......... .......... .......... .......... .......... 3.69M
+   150K .......... .......... .......... .......... ..........  658K
+   200K .......... .......... .......... .......... .......... 3.39M
+   250K .......... .......... .......... .......... ..........  624K
+   300K .......... .......... .......... .......... .......... 20.9M
+   350K .......... .......... .......... .......... .......... 1.65M
+   400K .......... .......... .......... .......... .......... 1.31M
+   450K .......... .......... .......... .......... ..........  943K
+   500K .......... .......... .......... .......... .......... 1.50M
+   550K .......... .......... .......... .......... .......... 1.36M
+   600K .......... .......... .......... .......... .......... 1.45M
+   650K .......... .......... .......... .......... .......... 1.70M
+   700K .......... .......... .......... .......... .......... 1.40M
+   750K .......... .......... .......... .......... .......... 2.02M
+   800K .......... .......... .......... .......... .......... 1.22M
+   850K .......... .......... .......... .......... .......... 2.10M
+   900K .......... .......... .......... .......... .......... 1.48M
+   950K .......... .......... .......... .......... .......... 2.44M
+  1000K .......... .......... .......... .......... .......... 1.55M
+  1050K .......... .......... .......... .......... .......... 2.48M
+  1100K .......... .......... .......... .......... .......... 1.60M
+  1150K .......... .......... .......... .......... .......... 1.65M
+  1200K .......... .......... .......... .......... .......... 1.85M
+  1250K .......... .......... .......... .......... .......... 2.33M
+  1300K .......... .......... .......... .......... .......... 2.53M
+  1350K .......... .......... .......... .......... .......... 1.85M
+  1400K .......... .......... .......... .......... .......... 2.61M
+  1450K .......... .......... .......... .......... .......... 1.70M
+  1500K .......... .......... .......... .......... .......... 2.61M
+  1550K .......... .......... .......... .......... .......... 1.48M
+  1600K .......... .......... .......... .......... .......... 2.71M
+  1650K .......... .......... .......... .......... .......... 3.05M
+  1700K .......... .......... .......... .......... .......... 1.98M
+  1750K .......... .......... .......... .......... .......... 2.39M
+  1800K .......... .......... .......... .......... .......... 3.37M
+  1850K .......... .......... .......... .......... .......... 2.00M
+  1900K .......... .......... .......... .......... .......... 2.60M
+  1950K .......... .......... .......... .......... .......... 1.55M
+  2000K .......... .......... .......... .......... .......... 3.32M
+  2050K .......... .......... .......... .......... .......... 3.16M
+  2100K .......... .......... .......... .......... .......... 1.88M
+  2150K .......... .......... .......... .......... .......... 3.21M
+  2200K .......... .......... .......... .......... .......... 3.25M
+  2250K .......... .......... .......... .......... .......... 1.88M
+  2300K .......... .......... .......... .......... .......... 2.42M
+  2350K .......... .......... .......... .......... .......... 3.26M
+  2400K .......... .......... .......... .......... .......... 2.07M
+  2450K .......... .......... .......... .......... .......... 3.26M
+  2500K .......... .......... .......... .......... .......... 3.27M
+  2550K .......... .......... .......... .......... .......... 2.05M
+  2600K .......... .......... .......... .......... .......... 3.30M
+  2650K .......... .......... .......... .......... .......... 3.78M
+  2700K .......... .......... .......... .......... .......... 1.74M
+  2750K .......... .......... .......... .......... .......... 3.25M
+  2800K .......... .......... .......... .......... .......    3.99M=1.6s
+
+2024-10-09 21:23:45 (1.72 MB/s) - ‘podcasts-0.7.1.tar.gz’ saved [2915905]
+
+podcasts-0.7.1/
+podcasts-0.7.1/.gitignore
+podcasts-0.7.1/.gitlab-ci.yml
+podcasts-0.7.1/.gitlab/
+podcasts-0.7.1/.gitlab/issue_templates/
+podcasts-0.7.1/.gitlab/issue_templates/BrokenFeed.md
+podcasts-0.7.1/.gitlab/issue_templates/Bug.md
+podcasts-0.7.1/.gitlab/issue_templates/Epic.md
+podcasts-0.7.1/.gitlab/issue_templates/Feature.md
+podcasts-0.7.1/.gitlab/merge_requests_templates/
+podcasts-0.7.1/.gitlab/merge_requests_templates/mr.md
+podcasts-0.7.1/CHANGELOG.md
+podcasts-0.7.1/CONTRIBUTING.md
+podcasts-0.7.1/Cargo.lock
+podcasts-0.7.1/Cargo.toml
+podcasts-0.7.1/LICENSE
+podcasts-0.7.1/README.md
+podcasts-0.7.1/changelog.txt
+podcasts-0.7.1/code-of-conduct.md
+podcasts-0.7.1/meson.build
+podcasts-0.7.1/meson_options.txt
+podcasts-0.7.1/org.gnome.Podcasts.Devel.json
+podcasts-0.7.1/podcasts-data/
+podcasts-0.7.1/podcasts-data/Cargo.toml
+podcasts-0.7.1/podcasts-data/diesel.toml
+podcasts-0.7.1/podcasts-data/migrations/
+podcasts-0.7.1/podcasts-data/migrations/2017-09-15-001128_init_schema/
+podcasts-0.7.1/podcasts-data/migrations/2017-09-15-001128_init_schema/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2017-09-15-001128_init_schema/up.sql
+podcasts-0.7.1/podcasts-data/migrations/2017-12-09-125835_change_episode_pk/
+podcasts-0.7.1/podcasts-data/migrations/2017-12-09-125835_change_episode_pk/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2017-12-09-125835_change_episode_pk/up.sql
+podcasts-0.7.1/podcasts-data/migrations/2017-12-22-145740_add_duration_column/
+podcasts-0.7.1/podcasts-data/migrations/2017-12-22-145740_add_duration_column/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2017-12-22-145740_add_duration_column/up.sql
+podcasts-0.7.1/podcasts-data/migrations/2017-12-30-201631_remove_published_date/
+podcasts-0.7.1/podcasts-data/migrations/2017-12-30-201631_remove_published_date/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2017-12-30-201631_remove_published_date/up.sql
+podcasts-0.7.1/podcasts-data/migrations/2018-06-30-141659_remove_dead_fields/
+podcasts-0.7.1/podcasts-data/migrations/2018-06-30-141659_remove_dead_fields/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2018-06-30-141659_remove_dead_fields/up.sql
+podcasts-0.7.1/podcasts-data/migrations/2018-06-30-150717_rename_tables/
+podcasts-0.7.1/podcasts-data/migrations/2018-06-30-150717_rename_tables/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2018-06-30-150717_rename_tables/up.sql
+podcasts-0.7.1/podcasts-data/migrations/2020-12-12-212018_add_image_cached_column/
+podcasts-0.7.1/podcasts-data/migrations/2020-12-12-212018_add_image_cached_column/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2020-12-12-212018_add_image_cached_column/up.sql
+podcasts-0.7.1/podcasts-data/migrations/2020-12-14-214219_add_image_uri_hash_column/
+podcasts-0.7.1/podcasts-data/migrations/2020-12-14-214219_add_image_uri_hash_column/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2020-12-14-214219_add_image_uri_hash_column/up.sql
+podcasts-0.7.1/podcasts-data/migrations/2021-06-24-185720_add_episode_play_position_column/
+podcasts-0.7.1/podcasts-data/migrations/2021-06-24-185720_add_episode_play_position_column/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2021-06-24-185720_add_episode_play_position_column/up.sql
+podcasts-0.7.1/podcasts-data/migrations/2023-07-21-001200_add_episode_image_column/
+podcasts-0.7.1/podcasts-data/migrations/2023-07-21-001200_add_episode_image_column/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2023-07-21-001200_add_episode_image_column/up.sql
+podcasts-0.7.1/podcasts-data/migrations/2024-02-18-203855_use_rowid_as_episode_pk/
+podcasts-0.7.1/podcasts-data/migrations/2024-02-18-203855_use_rowid_as_episode_pk/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2024-02-18-203855_use_rowid_as_episode_pk/up.sql
+podcasts-0.7.1/podcasts-data/migrations/2024-03-06-213550_add_discovery_settings_table/
+podcasts-0.7.1/podcasts-data/migrations/2024-03-06-213550_add_discovery_settings_table/down.sql
+podcasts-0.7.1/podcasts-data/migrations/2024-03-06-213550_add_discovery_settings_table/up.sql
+podcasts-0.7.1/podcasts-data/src/
+podcasts-0.7.1/podcasts-data/src/database.rs
+podcasts-0.7.1/podcasts-data/src/dbqueries.rs
+podcasts-0.7.1/podcasts-data/src/discovery/
+podcasts-0.7.1/podcasts-data/src/discovery/data.rs
+podcasts-0.7.1/podcasts-data/src/discovery/fyyd.rs
+podcasts-0.7.1/podcasts-data/src/discovery/itunes.rs
+podcasts-0.7.1/podcasts-data/src/discovery/mod.rs
+podcasts-0.7.1/podcasts-data/src/discovery/search.rs
+podcasts-0.7.1/podcasts-data/src/downloader.rs
+podcasts-0.7.1/podcasts-data/src/errors.rs
+podcasts-0.7.1/podcasts-data/src/feed.rs
+podcasts-0.7.1/podcasts-data/src/lib.rs
+podcasts-0.7.1/podcasts-data/src/models/
+podcasts-0.7.1/podcasts-data/src/models/discovery_settings.rs
+podcasts-0.7.1/podcasts-data/src/models/episode.rs
+podcasts-0.7.1/podcasts-data/src/models/mod.rs
+podcasts-0.7.1/podcasts-data/src/models/new_episode.rs
+podcasts-0.7.1/podcasts-data/src/models/new_show.rs
+podcasts-0.7.1/podcasts-data/src/models/new_source.rs
+podcasts-0.7.1/podcasts-data/src/models/show.rs
+podcasts-0.7.1/podcasts-data/src/models/source.rs
+podcasts-0.7.1/podcasts-data/src/opml.rs
+podcasts-0.7.1/podcasts-data/src/parser.rs
+podcasts-0.7.1/podcasts-data/src/pipeline.rs
+podcasts-0.7.1/podcasts-data/src/schema.patch
+podcasts-0.7.1/podcasts-data/src/schema.rs
+podcasts-0.7.1/podcasts-data/src/utils.rs
+podcasts-0.7.1/podcasts-data/tests/
+podcasts-0.7.1/podcasts-data/tests/export_test.opml
+podcasts-0.7.1/podcasts-data/tests/feeds/
+podcasts-0.7.1/podcasts-data/tests/feeds/2018-01-20-GreaterThanCode.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2018-01-20-Intercepted.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2018-01-20-LinuxUnplugged.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2018-01-20-StealTheStars.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2018-01-20-TheTipOff.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2018-02-03-Intercepted.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2018-03-28-Ellinofreneia.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2019-01-27-ACC.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2020-12-29-replyall.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2022-series-i-cinema.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2024-03-13-ndr.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2024-03-14-ndr.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/2024-03-15-streetfightradio.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/de-grote-no-guid.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/de-grote.xml
+podcasts-0.7.1/podcasts-data/tests/feeds/notes.md
+podcasts-0.7.1/podcasts-data/tests/fyyd/
+podcasts-0.7.1/podcasts-data/tests/fyyd/search_1.json
+podcasts-0.7.1/podcasts-data/tests/fyyd/search_5.json
+podcasts-0.7.1/podcasts-data/tests/fyyd/search_empty.json
+podcasts-0.7.1/podcasts-data/tests/fyyd/search_unicode.json
+podcasts-0.7.1/podcasts-data/tests/itunes/
+podcasts-0.7.1/podcasts-data/tests/itunes/search_1.txt
+podcasts-0.7.1/podcasts-data/tests/itunes/search_10.txt
+podcasts-0.7.1/podcasts-data/tests/itunes/search_empty.txt
+podcasts-0.7.1/podcasts-data/tests/itunes/search_unicode.txt
+podcasts-0.7.1/podcasts-gtk/
+podcasts-0.7.1/podcasts-gtk/Cargo.toml
+podcasts-0.7.1/podcasts-gtk/po/
+podcasts-0.7.1/podcasts-gtk/po/LINGUAS
+podcasts-0.7.1/podcasts-gtk/po/POTFILES.in
+podcasts-0.7.1/podcasts-gtk/po/be.po
+podcasts-0.7.1/podcasts-gtk/po/bg.po
+podcasts-0.7.1/podcasts-gtk/po/ca.po
+podcasts-0.7.1/podcasts-gtk/po/cs.po
+podcasts-0.7.1/podcasts-gtk/po/da.po
+podcasts-0.7.1/podcasts-gtk/po/de.po
+podcasts-0.7.1/podcasts-gtk/po/el.po
+podcasts-0.7.1/podcasts-gtk/po/en_GB.po
+podcasts-0.7.1/podcasts-gtk/po/es.po
+podcasts-0.7.1/podcasts-gtk/po/eu.po
+podcasts-0.7.1/podcasts-gtk/po/fa.po
+podcasts-0.7.1/podcasts-gtk/po/fi.po
+podcasts-0.7.1/podcasts-gtk/po/fr.po
+podcasts-0.7.1/podcasts-gtk/po/fur.po
+podcasts-0.7.1/podcasts-gtk/po/gl.po
+podcasts-0.7.1/podcasts-gtk/po/he.po
+podcasts-0.7.1/podcasts-gtk/po/hi.po
+podcasts-0.7.1/podcasts-gtk/po/hr.po
+podcasts-0.7.1/podcasts-gtk/po/hu.po
+podcasts-0.7.1/podcasts-gtk/po/id.po
+podcasts-0.7.1/podcasts-gtk/po/is.po
+podcasts-0.7.1/podcasts-gtk/po/it.po
+podcasts-0.7.1/podcasts-gtk/po/ka.po
+podcasts-0.7.1/podcasts-gtk/po/ko.po
+podcasts-0.7.1/podcasts-gtk/po/lv.po
+podcasts-0.7.1/podcasts-gtk/po/meson.build
+podcasts-0.7.1/podcasts-gtk/po/nl.po
+podcasts-0.7.1/podcasts-gtk/po/oc.po
+podcasts-0.7.1/podcasts-gtk/po/pl.po
+podcasts-0.7.1/podcasts-gtk/po/pt.po
+podcasts-0.7.1/podcasts-gtk/po/pt_BR.po
+podcasts-0.7.1/podcasts-gtk/po/ro.po
+podcasts-0.7.1/podcasts-gtk/po/ru.po
+podcasts-0.7.1/podcasts-gtk/po/sk.po
+podcasts-0.7.1/podcasts-gtk/po/sl.po
+podcasts-0.7.1/podcasts-gtk/po/sr.po
+podcasts-0.7.1/podcasts-gtk/po/sv.po
+podcasts-0.7.1/podcasts-gtk/po/tr.po
+podcasts-0.7.1/podcasts-gtk/po/uk.po
+podcasts-0.7.1/podcasts-gtk/po/zh_CN.po
+podcasts-0.7.1/podcasts-gtk/resources/
+podcasts-0.7.1/podcasts-gtk/resources/gtk/
+podcasts-0.7.1/podcasts-gtk/resources/gtk/discovery_found_podcast.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/discovery_page.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/discovery_search_results.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/empty_show.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/empty_view.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/episode_description.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/episode_menu.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/episode_widget.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/hamburger.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/headerbar.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/help-overlay.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/home_episode.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/home_view.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/player_dialog.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/player_rate.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/player_toolbar.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/secondary_menu.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/show_menu.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/show_widget.ui
+podcasts-0.7.1/podcasts-gtk/resources/gtk/style.css
+podcasts-0.7.1/podcasts-gtk/resources/gtk/window.ui
+podcasts-0.7.1/podcasts-gtk/resources/icons/
+podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/
+podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/scalable/
+podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/scalable/apps/
+podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/scalable/apps/org.gnome.Podcasts.Devel.svg
+podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/scalable/apps/org.gnome.Podcasts.svg
+podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/symbolic/
+podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/symbolic/apps/
+podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/symbolic/apps/org.gnome.Podcasts-symbolic.svg
+podcasts-0.7.1/podcasts-gtk/resources/icons/meson.build
+podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/
+podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/actions/
+podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/actions/skip-back-large-symbolic.svg
+podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/actions/skip-back-symbolic.svg
+podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/actions/skip-forward-large-symbolic.svg
+podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/actions/skip-forward-symbolic.svg
+podcasts-0.7.1/podcasts-gtk/resources/meson.build
+podcasts-0.7.1/podcasts-gtk/resources/org.gnome.Podcasts.appdata.xml.in.in
+podcasts-0.7.1/podcasts-gtk/resources/org.gnome.Podcasts.desktop.in.in
+podcasts-0.7.1/podcasts-gtk/resources/org.gnome.Podcasts.gschema.xml.in
+podcasts-0.7.1/podcasts-gtk/resources/org.gnome.Podcasts.service.in
+podcasts-0.7.1/podcasts-gtk/resources/resources.xml
+podcasts-0.7.1/podcasts-gtk/resources/test/
+podcasts-0.7.1/podcasts-gtk/resources/test/feeds/
+podcasts-0.7.1/podcasts-gtk/resources/test/feeds/2018-01-20-LinuxUnplugged.xml
+podcasts-0.7.1/podcasts-gtk/resources/test/feeds/2020-12-19-LinuxUnplugged.xml
+podcasts-0.7.1/podcasts-gtk/src/
+podcasts-0.7.1/podcasts-gtk/src/app.rs
+podcasts-0.7.1/podcasts-gtk/src/config.rs.in
+podcasts-0.7.1/podcasts-gtk/src/episode_description_parser.rs
+podcasts-0.7.1/podcasts-gtk/src/feed_manager.rs
+podcasts-0.7.1/podcasts-gtk/src/headerbar.rs
+podcasts-0.7.1/podcasts-gtk/src/i18n.rs
+podcasts-0.7.1/podcasts-gtk/src/main.rs
+podcasts-0.7.1/podcasts-gtk/src/manager.rs
+podcasts-0.7.1/podcasts-gtk/src/meson.build
+podcasts-0.7.1/podcasts-gtk/src/settings.rs
+podcasts-0.7.1/podcasts-gtk/src/stacks/
+podcasts-0.7.1/podcasts-gtk/src/stacks/content.rs
+podcasts-0.7.1/podcasts-gtk/src/stacks/home.rs
+podcasts-0.7.1/podcasts-gtk/src/stacks/mod.rs
+podcasts-0.7.1/podcasts-gtk/src/stacks/populated.rs
+podcasts-0.7.1/podcasts-gtk/src/stacks/show.rs
+podcasts-0.7.1/podcasts-gtk/src/utils.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/
+podcasts-0.7.1/podcasts-gtk/src/widgets/aboutdialog.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/base_view.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/discovery_page.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/discovery_search_results.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/download_progress_bar.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/empty_show.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/empty_view.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/episode.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/episode_description.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/episode_menu.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/home_view.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/mod.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/player.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/read_more_label.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/show.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/show_menu.rs
+podcasts-0.7.1/podcasts-gtk/src/widgets/shows_view.rs
+podcasts-0.7.1/podcasts-gtk/src/window.rs
+podcasts-0.7.1/podcasts.doap
+podcasts-0.7.1/release_process.md
+podcasts-0.7.1/rustfmt.toml
+podcasts-0.7.1/screenshots/
+podcasts-0.7.1/screenshots/add_podcast.png
+podcasts-0.7.1/screenshots/home_view.png
+podcasts-0.7.1/screenshots/show_widget.png
+podcasts-0.7.1/screenshots/shows_view.png
+podcasts-0.7.1/scripts/
+podcasts-0.7.1/scripts/dist-vendor.sh
+podcasts-0.7.1/scripts/test.sh
+Creating README in: /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts
+hm...lets continue and see what happens
+The Meson build system
+Version: 1.5.2
+Source dir: /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1
+Build dir: /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1/build
+Build type: native build
+Project name: gnome-podcasts
+Project version: 0.7.1
+Rust compiler for the host machine: rustc -C linker=cc (rustc 1.81.0)
+Rust linker for the host machine: rustc -C linker=cc ld.bfd 2.43.1-slack151
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Run-time dependency sqlite3 found: YES 3.46.1
+Run-time dependency openssl found: YES 3.3.2
+Run-time dependency dbus-1 found: YES 1.14.10
+Run-time dependency glib-2.0 found: YES 2.82.1
+Run-time dependency gio-2.0 found: YES 2.82.1
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.42.12
+Run-time dependency gtk4 found: YES 4.16.3
+Run-time dependency libadwaita-1 found: YES 1.5.3
+Run-time dependency gstreamer-1.0 found: YES 1.24.8
+Run-time dependency gstreamer-base-1.0 found: YES 1.24.8
+Run-time dependency gstreamer-audio-1.0 found: YES 1.24.8
+Run-time dependency gstreamer-play-1.0 found: YES 1.24.8
+Run-time dependency gstreamer-plugins-base-1.0 found: YES 1.24.8
+Run-time dependency gstreamer-plugins-bad-1.0 found: YES 1.24.8
+Run-time dependency gstreamer-bad-audio-1.0 found: YES 1.24.8
+Program cargo found: YES (/usr/bin/cargo)
+Program glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Configuring org.gnome.Podcasts.desktop.in using configuration
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Configuring org.gnome.Podcasts.appdata.xml.in using configuration
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Configuring org.gnome.Podcasts.gschema.xml using configuration
+Configuring org.gnome.Podcasts.service using configuration
+Dependency gio-2.0 found: YES 2.82.1 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program scripts/test.sh found: YES (/home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1/scripts/test.sh)
+Configuring config.rs using configuration
+Message: Building in release mode
+Dependency gio-2.0 found: YES 2.82.1 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 46
+
+gnome-podcasts 0.7.1
+
+  User defined options
+    buildtype    : release
+    infodir      : /usr/info
+    libdir       : /usr/lib64
+    localstatedir: /var
+    mandir       : /usr/man
+    prefix       : /usr
+    strip        : true
+    sysconfdir   : /etc
+
+Found ninja-1.12.1 at /usr/bin/ninja
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+[1/43] Building translation podcasts-gtk/po/be/LC_MESSAGES/gnome-podcasts-be.mo
+[2/43] Building translation podcasts-gtk/po/bg/LC_MESSAGES/gnome-podcasts-bg.mo
+[3/43] Building translation podcasts-gtk/po/cs/LC_MESSAGES/gnome-podcasts-cs.mo
+[4/43] Building translation podcasts-gtk/po/da/LC_MESSAGES/gnome-podcasts-da.mo
+[5/43] Building translation podcasts-gtk/po/ca/LC_MESSAGES/gnome-podcasts-ca.mo
+[6/43] Building translation podcasts-gtk/po/de/LC_MESSAGES/gnome-podcasts-de.mo
+[7/43] Building translation podcasts-gtk/po/el/LC_MESSAGES/gnome-podcasts-el.mo
+[8/43] Building translation podcasts-gtk/po/en_GB/LC_MESSAGES/gnome-podcasts-en_GB.mo
+[9/43] Building translation podcasts-gtk/po/es/LC_MESSAGES/gnome-podcasts-es.mo
+[10/43] Building translation podcasts-gtk/po/eu/LC_MESSAGES/gnome-podcasts-eu.mo
+[11/43] Building translation podcasts-gtk/po/fa/LC_MESSAGES/gnome-podcasts-fa.mo
+[12/43] Building translation podcasts-gtk/po/fi/LC_MESSAGES/gnome-podcasts-fi.mo
+[13/43] Building translation podcasts-gtk/po/fr/LC_MESSAGES/gnome-podcasts-fr.mo
+[14/43] Building translation podcasts-gtk/po/fur/LC_MESSAGES/gnome-podcasts-fur.mo
+[15/43] Building translation podcasts-gtk/po/gl/LC_MESSAGES/gnome-podcasts-gl.mo
+[16/43] Building translation podcasts-gtk/po/he/LC_MESSAGES/gnome-podcasts-he.mo
+[17/43] Building translation podcasts-gtk/po/hi/LC_MESSAGES/gnome-podcasts-hi.mo
+[18/43] Building translation podcasts-gtk/po/hr/LC_MESSAGES/gnome-podcasts-hr.mo
+[19/43] Building translation podcasts-gtk/po/hu/LC_MESSAGES/gnome-podcasts-hu.mo
+[20/43] Building translation podcasts-gtk/po/id/LC_MESSAGES/gnome-podcasts-id.mo
+[21/43] Building translation podcasts-gtk/po/is/LC_MESSAGES/gnome-podcasts-is.mo
+[22/43] Building translation podcasts-gtk/po/it/LC_MESSAGES/gnome-podcasts-it.mo
+[23/43] Building translation podcasts-gtk/po/ko/LC_MESSAGES/gnome-podcasts-ko.mo
+[24/43] Building translation podcasts-gtk/po/nl/LC_MESSAGES/gnome-podcasts-nl.mo
+[25/43] Building translation podcasts-gtk/po/lv/LC_MESSAGES/gnome-podcasts-lv.mo
+[26/43] Building translation podcasts-gtk/po/oc/LC_MESSAGES/gnome-podcasts-oc.mo
+[27/43] Building translation podcasts-gtk/po/ka/LC_MESSAGES/gnome-podcasts-ka.mo
+[28/43] Building translation podcasts-gtk/po/pl/LC_MESSAGES/gnome-podcasts-pl.mo
+[29/43] Building translation podcasts-gtk/po/pt/LC_MESSAGES/gnome-podcasts-pt.mo
+[30/43] Building translation podcasts-gtk/po/sk/LC_MESSAGES/gnome-podcasts-sk.mo
+[31/43] Building translation podcasts-gtk/po/ru/LC_MESSAGES/gnome-podcasts-ru.mo
+[32/43] Building translation podcasts-gtk/po/ro/LC_MESSAGES/gnome-podcasts-ro.mo
+[33/43] Building translation podcasts-gtk/po/pt_BR/LC_MESSAGES/gnome-podcasts-pt_BR.mo
+[34/43] Building translation podcasts-gtk/po/sr/LC_MESSAGES/gnome-podcasts-sr.mo
+[35/43] Building translation podcasts-gtk/po/sl/LC_MESSAGES/gnome-podcasts-sl.mo
+[36/43] Building translation podcasts-gtk/po/zh_CN/LC_MESSAGES/gnome-podcasts-zh_CN.mo
+[37/43] Building translation podcasts-gtk/po/tr/LC_MESSAGES/gnome-podcasts-tr.mo
+[38/43] Building translation podcasts-gtk/po/sv/LC_MESSAGES/gnome-podcasts-sv.mo
+[39/43] Building translation podcasts-gtk/po/uk/LC_MESSAGES/gnome-podcasts-uk.mo
+[40/43] Generating podcasts-gtk/resources/resources_gresource with a custom command
+[40/43] Generating podcasts-gtk/src/cargo-build with a custom command
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded ammonia v3.3.0
+  Downloaded anyhow v1.0.75
+  Downloaded async-executor v1.8.0
+  Downloaded async-channel v2.2.0
+  Downloaded async-lock v3.3.0
+  Downloaded async-fs v2.1.1
+  Downloaded async-io v2.3.2
+  Downloaded async-task v4.7.0
+  Downloaded async-trait v0.1.78
+  Downloaded atom_syndication v0.12.2
+  Downloaded block-buffer v0.10.4
+  Downloaded cfg-if v1.0.0
+  Downloaded crypto-common v0.1.6
+  Downloaded darling_macro v0.14.4
+  Downloaded cfg_aliases v0.1.1
+  Downloaded derive_builder_macro v0.12.0
+  Downloaded equivalent v1.0.1
+  Downloaded event-listener-strategy v0.4.0
+  Downloaded foreign-types-shared v0.1.1
+  Downloaded foreign-types v0.3.2
+  Downloaded blocking v1.5.1
+  Downloaded cairo-rs v0.19.2
+  Downloaded ryu v1.0.15
+  Downloaded semver v1.0.20
+  Downloaded serde_repr v0.1.18
+  Downloaded serde_derive v1.0.190
+  Downloaded rfc822_sanitizer v0.3.6
+  Downloaded form_urlencoded v1.2.0
+  Downloaded bitflags v2.4.1
+  Downloaded concurrent-queue v2.3.0
+  Downloaded bytes v1.5.0
+  Downloaded autocfg v1.1.0
+  Downloaded atomic-waker v1.1.2
+  Downloaded field-offset v0.3.6
+  Downloaded event-listener-strategy v0.5.0
+  Downloaded event-listener v5.2.0
+  Downloaded env_logger v0.10.0
+  Downloaded enumflags2 v0.7.9
+  Downloaded endi v1.1.0
+  Downloaded deranged v0.3.9
+  Downloaded crossbeam-utils v0.8.16
+  Downloaded cfg-expr v0.15.5
+  Downloaded cairo-sys-rs v0.19.2
+  Downloaded try-lock v0.2.4
+  Downloaded tower-service v0.3.2
+  Downloaded tinyvec_macros v0.1.1
+  Downloaded time-core v0.1.2
+  Downloaded target-lexicon v0.12.12
+  Downloaded system-deps v6.2.0
+  Downloaded siphasher v0.3.11
+  Downloaded serde_spanned v0.6.4
+  Downloaded tempfile v3.8.1
+  Downloaded thiserror v1.0.50
+  Downloaded termcolor v1.3.0
+  Downloaded darling_core v0.14.4
+  Downloaded darling v0.14.4
+  Downloaded trait-variant v0.1.2
+  Downloaded slab v0.4.9
+  Downloaded sha1 v0.10.6
+  Downloaded serde_urlencoded v0.7.1
+  Downloaded scopeguard v1.2.0
+  Downloaded scheduled-thread-pool v0.2.7
+  Downloaded rustc_version v0.4.0
+  Downloaded toml v0.8.6
+  Downloaded tokio-macros v2.1.0
+  Downloaded time-macros v0.2.15
+  Downloaded thiserror-impl v1.0.50
+  Downloaded futures-sink v0.3.30
+  Downloaded atomic_refcell v0.1.13
+  Downloaded futures-io v0.3.30
+  Downloaded futures-core v0.3.30
+  Downloaded fragile v2.0.0
+  Downloaded fnv v1.0.7
+  Downloaded digest v0.10.7
+  Downloaded tokio-native-tls v0.3.1
+  Downloaded tinyvec v1.6.0
+  Downloaded string_cache v0.8.7
+  Downloaded static_assertions v1.1.0
+  Downloaded socket2 v0.4.10
+  Downloaded smallvec v1.13.2
+  Downloaded derivative v2.2.0
+  Downloaded socket2 v0.5.5
+  Downloaded futures-task v0.3.30
+  Downloaded futures-macro v0.3.30
+  Downloaded derive_builder_core v0.12.0
+  Downloaded diesel_table_macro_syntax v0.1.0
+  Downloaded diesel_migrations v2.1.0
+  Downloaded generic-array v0.14.7
+  Downloaded either v1.9.0
+  Downloaded glob v0.3.1
+  Downloaded fastrand v2.0.1
+  Downloaded tracing-attributes v0.1.27
+  Downloaded futures-micro v0.5.0
+  Downloaded unicase v2.7.0
+  Downloaded typenum v1.17.0
+  Downloaded strsim v0.10.0
+  Downloaded futf v0.1.5
+  Downloaded event-listener v4.0.3
+  Downloaded derive_builder v0.12.0
+  Downloaded futures-lite v2.3.0
+  Downloaded memoffset v0.9.0
+  Downloaded locale_config v0.3.0
+  Downloaded ident_case v1.0.1
+  Downloaded humantime v2.1.0
+  Downloaded futures-executor v0.3.29
+  Downloaded futures-channel v0.3.29
+  Downloaded async-broadcast v0.7.0
+  Downloaded aho-corasick v1.1.2
+  Downloaded utf-8 v0.7.6
+  Downloaded unicode-bidi v0.3.13
+  Downloaded openssl-probe v0.1.5
+  Downloaded once_cell v1.18.0
+  Downloaded num-integer v0.1.45
+  Downloaded native-tls v0.2.11
+  Downloaded mime_guess v2.0.4
+  Downloaded want v0.3.1
+  Downloaded unicode-ident v1.0.12
+  Downloaded tracing-core v0.1.32
+  Downloaded gsk4-sys v0.8.1
+  Downloaded gsk4 v0.8.1
+  Downloaded graphene-sys v0.19.0
+  Downloaded graphene-rs v0.19.2
+  Downloaded gobject-sys v0.19.0
+  Downloaded glib-sys v0.19.0
+  Downloaded glib-macros v0.19.3
+  Downloaded gettext-rs v0.7.0
+  Downloaded getrandom v0.2.10
+  Downloaded gdk-pixbuf-sys v0.19.0
+  Downloaded gdk-pixbuf v0.19.2
+  Downloaded cpufeatures v0.2.11
+  Downloaded cc v1.0.83
+  Downloaded http-body v0.4.5
+  Downloaded heck v0.5.0
+  Downloaded pretty_env_logger v0.5.0
+  Downloaded diligent-date-parser v0.1.4
+  Downloaded diesel_derives v2.1.2
+  Downloaded pin-project-lite v0.2.13
+  Downloaded percent-encoding v2.3.0
+  Downloaded pango-sys v0.19.0
+  Downloaded pango v0.19.3
+  Downloaded maplit v1.0.2
+  Downloaded itoa v1.0.9
+  Downloaded is-docker v0.2.0
+  Downloaded errno v0.3.5
+  Downloaded enumflags2_derive v0.7.9
+  Downloaded proc-macro-crate v3.1.0
+  Downloaded chrono v0.4.31
+  Downloaded base64 v0.21.5
+  Downloaded polling v3.3.0
+  Downloaded httparse v1.8.0
+  Downloaded hex v0.4.3
+  Downloaded heck v0.4.1
+  Downloaded version_check v0.9.4
+  Downloaded httpdate v1.0.3
+  Downloaded string_cache_codegen v0.5.2
+  Downloaded toml_datetime v0.6.5
+  Downloaded toml v0.7.8
+  Downloaded tendril v0.4.3
+  Downloaded libc v0.2.153
+  Downloaded gdk4-sys v0.8.1
+  Downloaded gdk4 v0.8.1
+  Downloaded futures-util v0.3.30
+  Downloaded log v0.4.20
+  Downloaded xml5ever v0.17.0
+  Downloaded xdg v2.5.2
+  Downloaded temp-dir v0.1.11
+  Downloaded lock_api v0.4.11
+  Downloaded indexmap v1.9.3
+  Downloaded humansize v1.1.1
+  Downloaded gtk4-macros v0.8.1
+  Downloaded zvariant_utils v1.1.0
+  Downloaded zvariant_derive v4.0.2
+  Downloaded regex-syntax v0.8.2
+  Downloaded zbus_names v3.0.0
+  Downloaded zbus_macros v4.1.2
+  Downloaded xml-rs v0.8.19
+  Downloaded xdg-home v1.1.0
+  Downloaded version-compare v0.1.1
+  Downloaded unicode-width v0.1.11
+  Downloaded toml_edit v0.19.15
+  Downloaded toml_edit v0.21.1
+  Downloaded tracing v0.1.40
+  Downloaded tokio-util v0.7.10
+  Downloaded syn v1.0.109
+  Downloaded num_cpus v1.16.0
+  Downloaded num-rational v0.4.1
+  Downloaded new_debug_unreachable v1.0.4
+  Downloaded muldiv v1.0.1
+  Downloaded mime v0.3.17
+  Downloaded unicode-normalization v0.1.22
+  Downloaded lazy_static v1.4.0
+  Downloaded phf_shared v0.10.0
+  Downloaded phf_codegen v0.10.0
+  Downloaded phf v0.10.1
+  Downloaded pathdiff v0.2.1
+  Downloaded paste v1.0.14
+  Downloaded parking_lot_core v0.9.9
+  Downloaded parking_lot v0.12.1
+  Downloaded openssl-macros v0.1.1
+  Downloaded phf_generator v0.10.0
+  Downloaded quote v1.0.35
+  Downloaded reqwest v0.11.22
+  Downloaded rand_chacha v0.3.1
+  Downloaded r2d2 v0.8.10
+  Downloaded proc-macro-error-attr v1.0.4
+  Downloaded powerfmt v0.2.0
+  Downloaded libadwaita-sys v0.6.0
+  Downloaded is-wsl v0.4.0
+  Downloaded serde_json v1.0.108
+  Downloaded url v2.4.1
+  Downloaded serde v1.0.190
+  Downloaded pkg-config v0.3.30
+  Downloaded vcpkg v0.2.15
+  Downloaded pin-utils v0.1.0
+  Downloaded ipnet v2.9.0
+  Downloaded winnow v0.5.19
+  Downloaded toml_edit v0.20.7
+  Downloaded proc-macro2 v1.0.79
+  Downloaded async-oneshot v0.5.0
+  Downloaded open v5.0.0
+  Downloaded num-traits v0.2.17
+  Downloaded never v0.1.0
+  Downloaded mpris-server v0.8.0
+  Downloaded gio-sys v0.19.0
+  Downloaded gio v0.19.3
+  Downloaded rand v0.8.5
+  Downloaded piper v0.2.1
+  Downloaded is-terminal v0.4.9
+  Downloaded gstreamer-play-sys v0.22.0
+  Downloaded gstreamer-play v0.22.0
+  Downloaded gstreamer-base-sys v0.22.0
+  Downloaded hashbrown v0.12.3
+  Downloaded http v0.2.9
+  Downloaded glib v0.19.3
+  Downloaded regex-automata v0.4.6
+  Downloaded nix v0.28.0
+  Downloaded indexmap v2.1.0
+  Downloaded hyper-tls v0.5.0
+  Downloaded parking v2.2.0
+  Downloaded rand_core v0.6.4
+  Downloaded ordered-stream v0.2.0
+  Downloaded itertools v0.12.1
+  Downloaded precomputed-hash v0.1.1
+  Downloaded proc-macro-error v1.0.4
+  Downloaded memchr v2.7.1
+  Downloaded ppv-lite86 v0.2.17
+  Downloaded time v0.3.30
+  Downloaded syn v2.0.53
+  Downloaded rustix v0.38.21
+  Downloaded hyper v0.14.27
+  Downloaded quick-xml v0.30.0
+  Downloaded gstreamer-base v0.22.0
+  Downloaded encoding_rs v0.8.33
+  Downloaded gstreamer-video v0.22.1
+  Downloaded zvariant v4.0.2
+  Downloaded zbus v4.1.2
+  Downloaded libadwaita v0.6.0
+  Downloaded markup5ever v0.11.0
+  Downloaded h2 v0.3.21
+  Downloaded gtk4-sys v0.8.1
+  Downloaded gstreamer-video-sys v0.22.1
+  Downloaded rss v2.0.6
+  Downloaded gstreamer v0.22.3
+  Downloaded mac v0.1.1
+  Downloaded linkify v0.10.0
+  Downloaded option-operations v0.5.0
+  Downloaded migrations_macros v2.1.0
+  Downloaded migrations_internals v2.1.0
+  Downloaded iana-time-zone v0.1.58
+  Downloaded mio v0.8.9
+  Downloaded html5ever v0.26.0
+  Downloaded html2text v0.6.0
+  Downloaded hashbrown v0.14.2
+  Downloaded diesel v2.1.3
+  Downloaded regex v1.10.3
+  Downloaded idna v0.4.0
+  Downloaded gstreamer-sys v0.22.2
+  Downloaded markup5ever_rcdom v0.2.0
+  Downloaded gtk4 v0.8.1
+  Downloaded openssl-sys v0.9.95
+  Downloaded openssl v0.10.59
+  Downloaded tokio v1.33.0
+  Downloaded linux-raw-sys v0.4.10
+  Downloaded libsqlite3-sys v0.26.0
+  Downloaded gettext-sys v0.21.3
+   Compiling proc-macro2 v1.0.79
+   Compiling unicode-ident v1.0.12
+   Compiling serde v1.0.190
+   Compiling equivalent v1.0.1
+   Compiling hashbrown v0.14.2
+   Compiling winnow v0.5.19
+   Compiling pkg-config v0.3.30
+   Compiling libc v0.2.153
+   Compiling autocfg v1.1.0
+   Compiling target-lexicon v0.12.12
+   Compiling smallvec v1.13.2
+   Compiling heck v0.4.1
+   Compiling version-compare v0.1.1
+   Compiling cfg-if v1.0.0
+   Compiling pin-project-lite v0.2.13
+   Compiling memchr v2.7.1
+   Compiling futures-core v0.3.30
+   Compiling once_cell v1.18.0
+   Compiling bitflags v2.4.1
+   Compiling futures-io v0.3.30
+   Compiling syn v1.0.109
+   Compiling version_check v0.9.4
+   Compiling futures-sink v0.3.30
+   Compiling futures-task v0.3.30
+   Compiling pin-utils v0.1.0
+   Compiling futures-channel v0.3.29
+   Compiling thiserror v1.0.50
+   Compiling log v0.4.20
+   Compiling vcpkg v0.2.15
+   Compiling crossbeam-utils v0.8.16
+   Compiling parking_lot_core v0.9.9
+   Compiling heck v0.5.0
+   Compiling parking v2.2.0
+   Compiling ppv-lite86 v0.2.17
+   Compiling slab v0.4.9
+   Compiling num-traits v0.2.17
+   Compiling lock_api v0.4.11
+   Compiling scopeguard v1.2.0
+   Compiling tracing-core v0.1.32
+   Compiling siphasher v0.3.11
+   Compiling rustix v0.38.21
+   Compiling bytes v1.5.0
+   Compiling new_debug_unreachable v1.0.4
+   Compiling quote v1.0.35
+   Compiling phf_shared v0.10.0
+   Compiling cfg-expr v0.15.5
+   Compiling fastrand v2.0.1
+   Compiling indexmap v2.1.0
+   Compiling concurrent-queue v2.3.0
+   Compiling linux-raw-sys v0.4.10
+   Compiling itoa v1.0.9
+   Compiling syn v2.0.53
+   Compiling fnv v1.0.7
+   Compiling ident_case v1.0.1
+   Compiling strsim v0.10.0
+   Compiling typenum v1.17.0
+   Compiling mac v0.1.1
+   Compiling event-listener v4.0.3
+   Compiling futf v0.1.5
+   Compiling aho-corasick v1.1.2
+   Compiling cc v1.0.83
+   Compiling getrandom v0.2.10
+   Compiling unicase v2.7.0
+   Compiling generic-array v0.14.7
+   Compiling memoffset v0.9.0
+   Compiling rand_core v0.6.4
+   Compiling precomputed-hash v0.1.1
+   Compiling semver v1.0.20
+   Compiling anyhow v1.0.75
+   Compiling regex-syntax v0.8.2
+   Compiling iana-time-zone v0.1.58
+   Compiling utf-8 v0.7.6
+   Compiling gio v0.19.3
+   Compiling rand_chacha v0.3.1
+   Compiling tendril v0.4.3
+   Compiling event-listener-strategy v0.4.0
+   Compiling event-listener v5.2.0
+   Compiling phf v0.10.1
+   Compiling indexmap v1.9.3
+   Compiling rand v0.8.5
+   Compiling num-integer v0.1.45
+   Compiling openssl v0.10.59
+   Compiling tinyvec_macros v0.1.1
+   Compiling paste v1.0.14
+   Compiling foreign-types-shared v0.1.1
+   Compiling foreign-types v0.3.2
+   Compiling event-listener-strategy v0.5.0
+   Compiling tinyvec v1.6.0
+   Compiling http v0.2.9
+   Compiling async-lock v3.3.0
+   Compiling num_cpus v1.16.0
+   Compiling mio v0.8.9
+   Compiling socket2 v0.5.5
+   Compiling parking_lot v0.12.1
+   Compiling futures-lite v2.3.0
+   Compiling proc-macro-error-attr v1.0.4
+   Compiling phf_generator v0.10.0
+   Compiling num-rational v0.4.1
+   Compiling string_cache_codegen v0.5.2
+   Compiling phf_codegen v0.10.0
+   Compiling httparse v1.8.0
+   Compiling openssl-sys v0.9.95
+   Compiling hashbrown v0.12.3
+   Compiling percent-encoding v2.3.0
+   Compiling native-tls v0.2.11
+   Compiling form_urlencoded v1.2.0
+   Compiling markup5ever v0.11.0
+   Compiling unicode-normalization v0.1.22
+   Compiling rustc_version v0.4.0
+   Compiling regex-automata v0.4.6
+   Compiling libsqlite3-sys v0.26.0
+   Compiling proc-macro-error v1.0.4
+   Compiling encoding_rs v0.8.33
+   Compiling either v1.9.0
+   Compiling atomic-waker v1.1.2
+   Compiling async-task v4.7.0
+   Compiling try-lock v0.2.4
+   Compiling cfg_aliases v0.1.1
+   Compiling unicode-bidi v0.3.13
+   Compiling openssl-probe v0.1.5
+   Compiling nix v0.28.0
+   Compiling want v0.3.1
+   Compiling option-operations v0.5.0
+   Compiling itertools v0.12.1
+   Compiling piper v0.2.1
+   Compiling idna v0.4.0
+   Compiling field-offset v0.3.6
+   Compiling darling_core v0.14.4
+   Compiling zvariant_utils v1.1.0
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.6
+   Compiling http-body v0.4.5
+   Compiling scheduled-thread-pool v0.2.7
+   Compiling socket2 v0.4.10
+   Compiling diesel_table_macro_syntax v0.1.0
+   Compiling async-channel v2.2.0
+   Compiling muldiv v1.0.1
+   Compiling async-trait v0.1.78
+   Compiling temp-dir v0.1.11
+   Compiling serde_json v1.0.108
+   Compiling static_assertions v1.1.0
+   Compiling tower-service v0.3.2
+   Compiling ryu v1.0.15
+   Compiling httpdate v1.0.3
+   Compiling lazy_static v1.4.0
+   Compiling endi v1.1.0
+   Compiling gettext-sys v0.21.3
+   Compiling r2d2 v0.8.10
+   Compiling quick-xml v0.30.0
+   Compiling digest v0.10.7
+   Compiling regex v1.10.3
+   Compiling url v2.4.1
+   Compiling mime_guess v2.0.4
+   Compiling atomic_refcell v0.1.13
+   Compiling cpufeatures v0.2.11
+   Compiling mime v0.3.17
+   Compiling never v0.1.0
+   Compiling sha1 v0.10.6
+   Compiling is-terminal v0.4.9
+   Compiling async-executor v1.8.0
+   Compiling xdg-home v1.1.0
+   Compiling async-broadcast v0.7.0
+   Compiling is-docker v0.2.0
+   Compiling ordered-stream v0.2.0
+   Compiling termcolor v1.3.0
+   Compiling hex v0.4.3
+   Compiling darling_macro v0.14.4
+   Compiling html5ever v0.26.0
+   Compiling derivative v2.2.0
+   Compiling serde_derive v1.0.190
+   Compiling futures-macro v0.3.30
+   Compiling thiserror-impl v1.0.50
+   Compiling tracing-attributes v0.1.27
+   Compiling tokio-macros v2.1.0
+   Compiling darling v0.14.4
+   Compiling openssl-macros v0.1.1
+   Compiling derive_builder_core v0.12.0
+   Compiling futures-util v0.3.30
+   Compiling enumflags2_derive v0.7.9
+   Compiling tokio v1.33.0
+   Compiling diesel_derives v2.1.2
+   Compiling derive_builder_macro v0.12.0
+   Compiling serde_repr v0.1.18
+   Compiling tracing v0.1.40
+   Compiling maplit v1.0.2
+   Compiling blocking v1.5.1
+   Compiling polling v3.3.0
+   Compiling base64 v0.21.5
+   Compiling derive_builder v0.12.0
+   Compiling ipnet v2.9.0
+   Compiling async-io v2.3.2
+   Compiling async-fs v2.1.1
+   Compiling humantime v2.1.0
+   Compiling env_logger v0.10.0
+   Compiling trait-variant v0.1.2
+   Compiling is-wsl v0.4.0
+   Compiling locale_config v0.3.0
+   Compiling tempfile v3.8.1
+   Compiling futures-micro v0.5.0
+   Compiling xdg v2.5.2
+   Compiling xml-rs v0.8.19
+   Compiling unicode-width v0.1.11
+   Compiling pathdiff v0.2.1
+   Compiling glob v0.3.1
+   Compiling futures-executor v0.3.29
+   Compiling open v5.0.0
+   Compiling async-oneshot v0.5.0
+   Compiling gettext-rs v0.7.0
+   Compiling pretty_env_logger v0.5.0
+   Compiling linkify v0.10.0
+   Compiling fragile v2.0.0
+   Compiling humansize v1.1.1
+   Compiling tokio-util v0.7.10
+   Compiling tokio-native-tls v0.3.1
+   Compiling h2 v0.3.21
+   Compiling toml_datetime v0.6.5
+   Compiling serde_spanned v0.6.4
+   Compiling toml_edit v0.20.7
+   Compiling toml_edit v0.21.1
+   Compiling toml_edit v0.19.15
+   Compiling string_cache v0.8.7
+   Compiling chrono v0.4.31
+   Compiling enumflags2 v0.7.9
+   Compiling serde_urlencoded v0.7.1
+   Compiling proc-macro-crate v3.1.0
+   Compiling toml v0.7.8
+   Compiling hyper v0.14.27
+   Compiling glib-macros v0.19.3
+   Compiling toml v0.8.6
+   Compiling zvariant_derive v4.0.2
+   Compiling migrations_internals v2.1.0
+   Compiling system-deps v6.2.0
+   Compiling diligent-date-parser v0.1.4
+   Compiling atom_syndication v0.12.2
+   Compiling diesel v2.1.3
+   Compiling gtk4-macros v0.8.1
+   Compiling zbus_macros v4.1.2
+   Compiling migrations_macros v2.1.0
+   Compiling zvariant v4.0.2
+   Compiling xml5ever v0.17.0
+   Compiling rss v2.0.6
+   Compiling ammonia v3.3.0
+   Compiling glib-sys v0.19.0
+   Compiling gobject-sys v0.19.0
+   Compiling gio-sys v0.19.0
+   Compiling gdk-pixbuf-sys v0.19.0
+   Compiling pango-sys v0.19.0
+   Compiling cairo-sys-rs v0.19.2
+   Compiling gstreamer-sys v0.22.2
+   Compiling graphene-sys v0.19.0
+   Compiling gdk4-sys v0.8.1
+   Compiling gsk4-sys v0.8.1
+   Compiling gstreamer-base-sys v0.22.0
+   Compiling gtk4-sys v0.8.1
+   Compiling gstreamer-video-sys v0.22.1
+   Compiling libadwaita-sys v0.6.0
+   Compiling glib v0.19.3
+   Compiling gstreamer-play-sys v0.22.0
+   Compiling zbus_names v3.0.0
+   Compiling hyper-tls v0.5.0
+   Compiling rfc822_sanitizer v0.3.6
+   Compiling reqwest v0.11.22
+   Compiling markup5ever_rcdom v0.2.0
+   Compiling html2text v0.6.0
+   Compiling zbus v4.1.2
+   Compiling mpris-server v0.8.0
+   Compiling diesel_migrations v2.1.0
+   Compiling cairo-rs v0.19.2
+   Compiling graphene-rs v0.19.2
+   Compiling gstreamer v0.22.3
+   Compiling podcasts-data v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1/podcasts-data)
+   Compiling gstreamer-base v0.22.0
+   Compiling gstreamer-video v0.22.1
+   Compiling pango v0.19.3
+   Compiling gdk-pixbuf v0.19.2
+   Compiling gdk4 v0.8.1
+   Compiling gstreamer-play v0.22.0
+   Compiling gsk4 v0.8.1
+   Compiling gtk4 v0.8.1
+   Compiling libadwaita v0.6.0
+   Compiling podcasts-gtk v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1/podcasts-gtk)
+warning: use of deprecated method `gtk4::Image::set_from_pixbuf`: Since 4.12
+   --> podcasts-gtk/src/utils.rs:319:23
+    |
+319 |                 image.set_from_pixbuf(Some(&px));
+    |                       ^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `gtk4::Image::set_from_pixbuf`: Since 4.12
+   --> podcasts-gtk/src/utils.rs:364:31
+    |
+364 |                         image.set_from_pixbuf(Some(&px));
+    |                               ^^^^^^^^^^^^^^^
+
+warning: `podcasts-gtk` (bin "podcasts-gtk") generated 2 warnings
+    Finished `release` profile [optimized + debuginfo] target(s) in 2m 15s
+[42/43] Merging translations for podcasts-gtk/resources/org.gnome.Podcasts.appdata.xml
+[0/2] Generating podcasts-gtk/src/cargo-build with a custom command
+warning: use of deprecated method `gtk4::Image::set_from_pixbuf`: Since 4.12
+   --> podcasts-gtk/src/utils.rs:319:23
+    |
+319 |                 image.set_from_pixbuf(Some(&px));
+    |                       ^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `gtk4::Image::set_from_pixbuf`: Since 4.12
+   --> podcasts-gtk/src/utils.rs:364:31
+    |
+364 |                         image.set_from_pixbuf(Some(&px));
+    |                               ^^^^^^^^^^^^^^^
+
+warning: `podcasts-gtk` (bin "podcasts-gtk") generated 2 warnings
+    Finished `release` profile [optimized + debuginfo] target(s) in 0.09s
+[1/2] Installing files.
+Installing podcasts-gtk/po/be/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/be/LC_MESSAGES
+Installing podcasts-gtk/po/bg/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/bg/LC_MESSAGES
+Installing podcasts-gtk/po/ca/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/ca/LC_MESSAGES
+Installing podcasts-gtk/po/cs/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/cs/LC_MESSAGES
+Installing podcasts-gtk/po/da/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/da/LC_MESSAGES
+Installing podcasts-gtk/po/de/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/de/LC_MESSAGES
+Installing podcasts-gtk/po/el/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/el/LC_MESSAGES
+Installing podcasts-gtk/po/en_GB/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/en_GB/LC_MESSAGES
+Installing podcasts-gtk/po/es/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/es/LC_MESSAGES
+Installing podcasts-gtk/po/eu/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/eu/LC_MESSAGES
+Installing podcasts-gtk/po/fa/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/fa/LC_MESSAGES
+Installing podcasts-gtk/po/fi/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/fi/LC_MESSAGES
+Installing podcasts-gtk/po/fr/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/fr/LC_MESSAGES
+Installing podcasts-gtk/po/fur/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/fur/LC_MESSAGES
+Installing podcasts-gtk/po/gl/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/gl/LC_MESSAGES
+Installing podcasts-gtk/po/he/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/he/LC_MESSAGES
+Installing podcasts-gtk/po/hi/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/hi/LC_MESSAGES
+Installing podcasts-gtk/po/hr/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/hr/LC_MESSAGES
+Installing podcasts-gtk/po/hu/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/hu/LC_MESSAGES
+Installing podcasts-gtk/po/id/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/id/LC_MESSAGES
+Installing podcasts-gtk/po/is/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/is/LC_MESSAGES
+Installing podcasts-gtk/po/it/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/it/LC_MESSAGES
+Installing podcasts-gtk/po/ka/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/ka/LC_MESSAGES
+Installing podcasts-gtk/po/ko/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/ko/LC_MESSAGES
+Installing podcasts-gtk/po/lv/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/lv/LC_MESSAGES
+Installing podcasts-gtk/po/nl/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/nl/LC_MESSAGES
+Installing podcasts-gtk/po/oc/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/oc/LC_MESSAGES
+Installing podcasts-gtk/po/pl/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/pl/LC_MESSAGES
+Installing podcasts-gtk/po/pt/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/pt/LC_MESSAGES
+Installing podcasts-gtk/po/pt_BR/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/pt_BR/LC_MESSAGES
+Installing podcasts-gtk/po/ro/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/ro/LC_MESSAGES
+Installing podcasts-gtk/po/ru/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/ru/LC_MESSAGES
+Installing podcasts-gtk/po/sk/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/sk/LC_MESSAGES
+Installing podcasts-gtk/po/sl/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/sl/LC_MESSAGES
+Installing podcasts-gtk/po/sr/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/sr/LC_MESSAGES
+Installing podcasts-gtk/po/sv/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/sv/LC_MESSAGES
+Installing podcasts-gtk/po/tr/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/tr/LC_MESSAGES
+Installing podcasts-gtk/po/uk/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/uk/LC_MESSAGES
+Installing podcasts-gtk/po/zh_CN/LC_MESSAGES/gnome-podcasts.mo to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/locale/zh_CN/LC_MESSAGES
+Installing podcasts-gtk/resources/org.gnome.Podcasts.desktop to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/applications
+Installing podcasts-gtk/resources/org.gnome.Podcasts.appdata.xml to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/metainfo
+Installing podcasts-gtk/src/gnome-podcasts to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/bin
+Installing /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/scalable/apps/org.gnome.Podcasts.svg to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/icons/hicolor/scalable/apps
+Installing /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/scalable/apps/org.gnome.Podcasts.Devel.svg to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/icons/hicolor/scalable/apps
+Installing /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/symbolic/apps/org.gnome.Podcasts-symbolic.svg to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/icons/hicolor/symbolic/apps
+Installing /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1/build/podcasts-gtk/resources/org.gnome.Podcasts.gschema.xml to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/glib-2.0/schemas
+Installing /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1/build/podcasts-gtk/resources/org.gnome.Podcasts.service to /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/share/dbus-1/services
+Skipping custom install script because DESTDIR is set '/usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas'
+Skipping custom install script because DESTDIR is set '/usr/bin/gtk4-update-icon-cache -q -t -f /usr/share/icons/hicolor'
+Skipping custom install script because DESTDIR is set '/usr/bin/update-desktop-database -q /usr/share/applications'
+/home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/package-gnome-podcasts/usr/doc/gnome-podcasts-0.7.1 /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1
+/home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/work/podcasts-0.7.1
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/binary-gnome-podcasts-0.7.1/gnome-podcasts-0.7.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gnome-podcasts
+usr/doc/
+usr/doc/gnome-podcasts-0.7.1/
+usr/doc/gnome-podcasts-0.7.1/CHANGELOG.md
+usr/doc/gnome-podcasts-0.7.1/CONTRIBUTING.md
+usr/doc/gnome-podcasts-0.7.1/Cargo.lock
+usr/doc/gnome-podcasts-0.7.1/Cargo.toml
+usr/doc/gnome-podcasts-0.7.1/LICENSE
+usr/doc/gnome-podcasts-0.7.1/README.md
+usr/doc/gnome-podcasts-0.7.1/changelog.txt
+usr/doc/gnome-podcasts-0.7.1/code-of-conduct.md
+usr/doc/gnome-podcasts-0.7.1/gnome-podcasts.SlackBuild
+usr/doc/gnome-podcasts-0.7.1/meson.build
+usr/doc/gnome-podcasts-0.7.1/meson_options.txt
+usr/doc/gnome-podcasts-0.7.1/org.gnome.Podcasts.Devel.json
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/Cargo.toml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/diesel.toml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-09-15-001128_init_schema/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-09-15-001128_init_schema/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-09-15-001128_init_schema/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-12-09-125835_change_episode_pk/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-12-09-125835_change_episode_pk/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-12-09-125835_change_episode_pk/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-12-22-145740_add_duration_column/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-12-22-145740_add_duration_column/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-12-22-145740_add_duration_column/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-12-30-201631_remove_published_date/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-12-30-201631_remove_published_date/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2017-12-30-201631_remove_published_date/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2018-06-30-141659_remove_dead_fields/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2018-06-30-141659_remove_dead_fields/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2018-06-30-141659_remove_dead_fields/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2018-06-30-150717_rename_tables/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2018-06-30-150717_rename_tables/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2018-06-30-150717_rename_tables/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2020-12-12-212018_add_image_cached_column/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2020-12-12-212018_add_image_cached_column/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2020-12-12-212018_add_image_cached_column/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2020-12-14-214219_add_image_uri_hash_column/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2020-12-14-214219_add_image_uri_hash_column/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2020-12-14-214219_add_image_uri_hash_column/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2021-06-24-185720_add_episode_play_position_column/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2021-06-24-185720_add_episode_play_position_column/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2021-06-24-185720_add_episode_play_position_column/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2023-07-21-001200_add_episode_image_column/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2023-07-21-001200_add_episode_image_column/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2023-07-21-001200_add_episode_image_column/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2024-02-18-203855_use_rowid_as_episode_pk/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2024-02-18-203855_use_rowid_as_episode_pk/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2024-02-18-203855_use_rowid_as_episode_pk/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2024-03-06-213550_add_discovery_settings_table/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2024-03-06-213550_add_discovery_settings_table/down.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/migrations/2024-03-06-213550_add_discovery_settings_table/up.sql
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/database.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/dbqueries.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/discovery/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/discovery/data.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/discovery/fyyd.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/discovery/itunes.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/discovery/mod.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/discovery/search.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/downloader.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/errors.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/feed.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/lib.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/models/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/models/discovery_settings.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/models/episode.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/models/mod.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/models/new_episode.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/models/new_show.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/models/new_source.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/models/show.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/models/source.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/opml.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/parser.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/pipeline.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/schema.patch
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/schema.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/src/utils.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/export_test.opml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2018-01-20-GreaterThanCode.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2018-01-20-Intercepted.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2018-01-20-LinuxUnplugged.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2018-01-20-StealTheStars.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2018-01-20-TheTipOff.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2018-02-03-Intercepted.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2018-03-28-Ellinofreneia.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2019-01-27-ACC.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2020-12-29-replyall.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2022-series-i-cinema.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2024-03-13-ndr.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2024-03-14-ndr.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/2024-03-15-streetfightradio.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/de-grote-no-guid.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/de-grote.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/feeds/notes.md
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/fyyd/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/fyyd/search_1.json
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/fyyd/search_5.json
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/fyyd/search_empty.json
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/fyyd/search_unicode.json
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/itunes/
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/itunes/search_1.txt
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/itunes/search_10.txt
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/itunes/search_empty.txt
+usr/doc/gnome-podcasts-0.7.1/podcasts-data/tests/itunes/search_unicode.txt
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/Cargo.toml
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/LINGUAS
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/POTFILES.in
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/be.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/bg.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/ca.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/cs.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/da.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/de.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/el.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/en_GB.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/es.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/eu.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/fa.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/fi.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/fr.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/fur.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/gl.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/he.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/hi.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/hr.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/hu.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/id.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/is.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/it.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/ka.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/ko.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/lv.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/meson.build
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/nl.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/oc.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/pl.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/pt.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/pt_BR.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/ro.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/ru.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/sk.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/sl.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/sr.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/sv.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/tr.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/uk.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/po/zh_CN.po
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/discovery_found_podcast.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/discovery_page.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/discovery_search_results.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/empty_show.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/empty_view.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/episode_description.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/episode_menu.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/episode_widget.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/hamburger.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/headerbar.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/help-overlay.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/home_episode.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/home_view.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/player_dialog.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/player_rate.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/player_toolbar.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/secondary_menu.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/show_menu.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/show_widget.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/style.css
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/gtk/window.ui
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/scalable/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/scalable/apps/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/scalable/apps/org.gnome.Podcasts.Devel.svg
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/scalable/apps/org.gnome.Podcasts.svg
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/symbolic/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/symbolic/apps/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/hicolor/symbolic/apps/org.gnome.Podcasts-symbolic.svg
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/meson.build
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/actions/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/actions/skip-back-large-symbolic.svg
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/actions/skip-back-symbolic.svg
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/actions/skip-forward-large-symbolic.svg
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/icons/scalable/actions/skip-forward-symbolic.svg
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/meson.build
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/org.gnome.Podcasts.appdata.xml.in.in
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/org.gnome.Podcasts.desktop.in.in
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/org.gnome.Podcasts.gschema.xml.in
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/org.gnome.Podcasts.service.in
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/resources.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/test/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/test/feeds/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/test/feeds/2018-01-20-LinuxUnplugged.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/resources/test/feeds/2020-12-19-LinuxUnplugged.xml
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/app.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/config.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/config.rs.in
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/episode_description_parser.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/feed_manager.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/headerbar.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/i18n.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/main.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/manager.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/meson.build
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/settings.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/stacks/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/stacks/content.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/stacks/home.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/stacks/mod.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/stacks/populated.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/stacks/show.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/utils.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/aboutdialog.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/base_view.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/discovery_page.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/discovery_search_results.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/download_progress_bar.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/empty_show.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/empty_view.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/episode.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/episode_description.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/episode_menu.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/home_view.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/mod.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/player.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/read_more_label.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/show.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/show_menu.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/widgets/shows_view.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts-gtk/src/window.rs
+usr/doc/gnome-podcasts-0.7.1/podcasts.doap
+usr/doc/gnome-podcasts-0.7.1/release_process.md
+usr/doc/gnome-podcasts-0.7.1/rustfmt.toml
+usr/doc/gnome-podcasts-0.7.1/screenshots/
+usr/doc/gnome-podcasts-0.7.1/screenshots/add_podcast.png
+usr/doc/gnome-podcasts-0.7.1/screenshots/home_view.png
+usr/doc/gnome-podcasts-0.7.1/screenshots/show_widget.png
+usr/doc/gnome-podcasts-0.7.1/screenshots/shows_view.png
+usr/doc/gnome-podcasts-0.7.1/scripts/
+usr/doc/gnome-podcasts-0.7.1/scripts/dist-vendor.sh
+usr/doc/gnome-podcasts-0.7.1/scripts/test.sh
+usr/share/
+usr/share/applications/
+usr/share/applications/org.gnome.Podcasts.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.gnome.Podcasts.service
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.gnome.Podcasts.gschema.xml
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/org.gnome.Podcasts.Devel.svg
+usr/share/icons/hicolor/scalable/apps/org.gnome.Podcasts.svg
+usr/share/icons/hicolor/symbolic/
+usr/share/icons/hicolor/symbolic/apps/
+usr/share/icons/hicolor/symbolic/apps/org.gnome.Podcasts-symbolic.svg
+usr/share/locale/
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/fa/
+usr/share/locale/fa/LC_MESSAGES/
+usr/share/locale/fa/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/fur/
+usr/share/locale/fur/LC_MESSAGES/
+usr/share/locale/fur/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/gnome-podcasts.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/gnome-podcasts.mo
+usr/share/metainfo/
+usr/share/metainfo/org.gnome.Podcasts.appdata.xml
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/gnome-podcasts/binary-gnome-podcasts-0.7.1/gnome-podcasts-0.7.1-x86_64-1_rtz.tlz created.
+
+Build process completed in 3 minutes and 0 seconds.
