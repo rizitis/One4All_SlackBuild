@@ -274,13 +274,13 @@ cd ..
    after_build(){
 	  mkdir -p "$PKG"/usr/doc/$PRGNAM-$VERSION
 # files...
-for DOCS in $(ls); do
+for $DOCS in $(ls); do
    cp -a "$DOCS" "$PKG/usr/doc/$PRGNAM-$VERSION/" || true
 # find . -maxdepth 1 -type f -exec cp -a {} "$PKG/usr/doc/$PRGNAM-$VERSION/" \;
 done
 
 # Iterate over directories in the current directory and copy them
-for DOCS_DIR in $(ls -d */); do
+for $DOCS_DIR in $(ls -d */); do
    cp -R "$DOCS_DIR" "$PKG/usr/doc/$PRGNAM-$VERSION/" || true
 # find . -maxdepth 1 -type d ! -name . -exec cp -R {} "$PKG/usr/doc/$PRGNAM-$VERSION/" \;
 done
@@ -402,7 +402,7 @@ MKINS
 
 	  cd "$PKG" || exit
 # add sudo here in case you build as user , else makepkg stop...
-sudo  makepkg -l y -c n "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
+sudo  makepkg --remove-rpaths -l y -c n "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
 	  echo "$DATE $Packager" | sed -e '1r /dev/stdin' "$OUTPUT/makepkg-${PRGNAM}.log" > "$OUTPUT/makepkg-${PRGNAM}.log.tmp" && mv "$OUTPUT/makepkg-${PRGNAM}.log.tmp" "$OUTPUT/makepkg-${PRGNAM}.log"
 
 
