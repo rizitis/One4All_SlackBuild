@@ -1,0 +1,11 @@
+gpu-recorder-gtk: gpu-recorder-gtk (Gtk frontend to gpu-screen-recorder)
+gpu-recorder-gtk:
+gpu-recorder-gtk: Gtk frontend to gpu-screen-recorder, a shadowplay-like screen
+gpu-recorder-gtk: recorder for Linux. The fastest screen recorder for Linux
+gpu-recorder-gtk:
+gpu-recorder-gtk:
+gpu-recorder-gtk:
+gpu-recorder-gtk:
+gpu-recorder-gtk:
+gpu-recorder-gtk:
+gpu-recorder-gtk: git.dec05eba.com/gpu-screen-recorder-gtk
