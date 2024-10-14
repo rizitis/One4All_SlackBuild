@@ -1,0 +1,3 @@
+Be sure that electron libs are in your LD_PATH
+SBo script add them in /usr/share/electron/*.so
+

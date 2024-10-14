@@ -1,0 +1,106 @@
+Starting build process...
+Detected architecture: x86_64
+--2024-10-14 11:31:19--  https://github.com/gitify-app/gitify/releases/download/v5.16.1/gitify_5.16.1_amd64.deb
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/36029706/9aea7079-dd51-4086-96b0-c2c8086ff729?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20241014%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241014T083022Z&X-Amz-Expires=300&X-Amz-Signature=07493b15227961c6f100d6a363846e61f04bdeae7ffc9295f2dcddc41fbc02db&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dgitify_5.16.1_amd64.deb&response-content-type=application%2Foctet-stream [following]
+--2024-10-14 11:31:20--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/36029706/9aea7079-dd51-4086-96b0-c2c8086ff729?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20241014%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241014T083022Z&X-Amz-Expires=300&X-Amz-Signature=07493b15227961c6f100d6a363846e61f04bdeae7ffc9295f2dcddc41fbc02db&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dgitify_5.16.1_amd64.deb&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 416 Range Not Satisfiable
+
+    The file is already fully retrieved; nothing to do.
+
+./gitify.SlackBuild: line 301: `$DOCS': not a valid identifier
+./gitify.SlackBuild: line 301: `$DOCS_DIR': not a valid identifier
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Removing rpath from: ./opt/Gitify/libffmpeg.so
+Removing rpath from: ./opt/Gitify/gitify
+
+Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/gitify/binary-gitify-5.16.1/gitify-5.16.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+opt/
+opt/Gitify/
+opt/Gitify/chrome_100_percent.pak
+opt/Gitify/chrome_200_percent.pak
+opt/Gitify/chrome_crashpad_handler
+opt/Gitify/chrome-sandbox
+opt/Gitify/gitify
+opt/Gitify/icudtl.dat
+opt/Gitify/libEGL.so
+opt/Gitify/libffmpeg.so
+opt/Gitify/libGLESv2.so
+opt/Gitify/libvk_swiftshader.so
+opt/Gitify/libvulkan.so.1
+opt/Gitify/LICENSE.electron.txt
+opt/Gitify/LICENSES.chromium.html
+opt/Gitify/locales/
+opt/Gitify/resources/
+opt/Gitify/resources/app.asar
+opt/Gitify/resources/app-update.yml
+opt/Gitify/resources/package-type
+opt/Gitify/resources.pak
+opt/Gitify/snapshot_blob.bin
+opt/Gitify/v8_context_snapshot.bin
+opt/Gitify/vk_swiftshader_icd.json
+usr/
+usr/doc/
+usr/doc/gitify-5.16.1/
+usr/doc/gitify-5.16.1/gitify.SlackBuild
+usr/doc/gitify-5.16.1/LICENSE
+usr/share/
+usr/share/applications/
+usr/share/applications/gitify.desktop
+usr/share/doc/
+usr/share/doc/gitify/
+usr/share/doc/gitify/changelog.gz
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/1024x1024/
+usr/share/icons/hicolor/1024x1024/apps/
+usr/share/icons/hicolor/1024x1024/apps/gitify.png
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/128x128/apps/gitify.png
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/gitify.png
+usr/share/icons/hicolor/256x256/
+usr/share/icons/hicolor/256x256/apps/
+usr/share/icons/hicolor/256x256/apps/gitify.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/gitify.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/gitify.png
+usr/share/icons/hicolor/512x512/
+usr/share/icons/hicolor/512x512/apps/
+usr/share/icons/hicolor/512x512/apps/gitify.png
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/gitify.png
+
+Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/gitify/binary-gitify-5.16.1/gitify-5.16.1-x86_64-1_rtz.tlz created.
+
+rm: cannot remove '*.deb': No such file or directory
