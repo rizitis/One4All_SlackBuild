@@ -36,11 +36,11 @@ start_time=$(date +%s)
 # If you have slackdesc installed you need these, else ignore them (empty)
 # https://slack-desc.sourceforge.net/
    mkdesc="$(which slackdesc)" || true
-   Homepage="https://github.com/Picocrypt/Picocrypt"
+   Homepage="https://git.gnunet.org/gnunet-gtk"
             #|--------------------------------------|#
-   SortDesc="secure encryption tool"
+   SortDesc="(GTK 3 interfaces)"
             #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
-    LongDesc="Picocrypt is a very small (hence Pico), very simple, yet very secure encryption tool that you can use to protect your files. It's designed to be the go-to tool for encryption, with a focus on security, simplicity, and reliability. Picocrypt uses the secure XChaCha20 cipher and the Argon2id key derivation function to provide a high level of security, even from three-letter agencies like the NSA. Your privacy and security is under attack. Take it back with confidence by protecting your files with Picocrypt."
+    LongDesc="The GTK 3 interfaces for gnunet the secure peer-to-peer networking"
 # If a README or README.md dont exist in CWD then SortDec discribtion, if not empty, will be added in a README file.
 
 ##########################-GITHUB-AUTO UPDATE-#####################################
@@ -51,18 +51,21 @@ AUTO_UPD=$(curl --silent -L "https://api.github.com/repos/$DEV/$PRJ/releases/lat
 
 ############################-SRC AND PACKAGE VARS-##################################
 # If use AUTO UPDATE 'VERSION=$AUTO_UPD'  or as a regular package version 'VERSION=0.1.2' etc...
-VERSION=1.43
+VERSION=0.22.0.18102024
+#
 # Binary (output) name
-PRGNAM=picocrypt-gui
+PRGNAM=gnunet-gtk
 # If not special SRCNAM needed then we use the same name as PRGNAM.
-SRCNAM=Picocrypt
+SRCNAM=gnunet-gtk
 # Download link if use AUTO_UPD then SRCmust be empty
-SRCURL=https://github.com/Picocrypt/Picocrypt/releases/download/1.43/Picocrypt.deb
+SRCURL=https://git.gnunet.org/gnunet-gtk.git
+#
 # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z, deb, rpm
 # OR repos: cvn, cvs, git, lftp
-COMPRESS="deb"
+COMPRESS="git"
 # IF you need:git checkout, else leave it empty.
 GITCHEK=
+#0bdb437d8cdf90902dcabe1d472c52e55fc0f46a bump version.
 # When source package after extract conatins just a binary or we build directly in then set BIN_PKG=YES else leave it empty or whatever but YES.
 BIN_PKG=
 
@@ -78,21 +81,37 @@ OUTPUT=$CWD/binary-$PRGNAM-$VERSION
 # ONLY if you need to create a Desktop entry edit it and call desktop_entry function in your build function, else just ignore it.
 desktop_entry() {
 mkdir -p "$PKG"/usr/share/applications
-cat <<EOF >> "$PKG"/usr/share/applications/$PRGNAM.desktop
+cat <<EOF >> "$PKG"/usr/share/applications/gnunet-statistics-gtk.desktop
 [Desktop Entry]
 Version=1.0
-Name=$PRGNAM
-Comment=$SortDesc
-GenericName=$SRCNAM
-Exec=$PRGNAM
-Icon=$PRGNAM
-Terminal=false
+Name=GNUnet Statistics
+GenericName=GNUnet Statistics
+Comment=Check GNUnet statistics
 Type=Application
-Categories=Utility;
-Keywords=
+Exec=gnunet-statistics-gtk
+Icon=gnunet-statistics-gtk
+Terminal=false
+Categories=GTK;Network;
+StartupNotify=true
+StartupWMClass=gnunet-gtk
 EOF
 }
 
+desktop_entry2() {
+cat <<EOL >> "$PKG"/usr/share/applications/gnunet-peerinfo-gtk.desktop
+[Desktop Entry]
+Version=1.0
+Name=GNUnet Peer Info
+GenericName=GNUnet Peer Info
+Type=Application
+Exec=gnunet-peerinfo-gtk
+Icon=gnunet-peerinfo-gtk
+Terminal=false
+Categories=GTK;Network;P2P;
+StartupNotify=true
+StartupWMClass=gnunet-gtk
+EOL
+}
 ## EDIT YOUR BUILD FUNCTIONS AS FOR YOUR NEEDS ##
 
    patch_build() {
@@ -100,7 +119,27 @@ true
 }
 
   custom_build () {
-  true
+  ./bootstrap
+   ./configure \
+   --prefix=/usr \
+   --with-gnunet=/usr \
+   --with-gnutls \
+   --mandir=/usr/man \
+   --infodir=/usr/info \
+   --docdir=/usr/doc/$PRGNAM-$VERSION \
+   --build="$ARCH"-slackware-linux 
+   make
+   make DESTDIR="$PKG" install
+   
+# For some reason Idk peerinfo not provided either gnunet or gnunet-gtk!
+# But I will left here desktop_entrys and svgs maybe some day I found wtf is going on...
+desktop_entry
+desktop_entry2
+
+mkdir -p "$PKG"/usr/share/icons/hicolor/scalable/apps/
+
+cp -a $CWD/{gnunet-peerinfo-gtk.svg,gnunet-statistics-gtk.svg} "$PKG"/usr/share/icons/hicolor/scalable/apps/
+
   }
 
    auto_build() {
@@ -489,6 +528,8 @@ fi
    package_build() {
    cd $PKG || exit 66
 	  rm -f "$PKG"/{,usr/}lib${LIBDIRSUFFIX}/*.la
+          rm -f "$PKG"/usr/lib/*.la || true
+          rm -f "$PKG"/lib/*.la || true
 	  find "$PKG" | xargs file | grep -e "executable" -e "shared object" | grep ELF \
 	  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
@@ -514,7 +555,11 @@ sudo  makepkg --remove-rpaths -l y -c n "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUI
 
    clean_src(){
 	cd $CWD || exit
-	rm -r package-"$PRGNAM" work *.$COMPRESS
+ if [[ "$COMPRESS" == "git" ]]; then
+	rm -r package-"$PRGNAM" work
+  else
+  rm -r package-"$PRGNAM" work *.$COMPRESS
+ fi
    }
 
    pkg_install(){
@@ -832,7 +877,7 @@ download_src
 prepare_build
 patch_build
 # DONT chroot if deb or rpm
-#chrooting
+chrooting
 
 # uncomment what you need:
 #auto_build
@@ -840,20 +885,20 @@ patch_build
 #python_build
 #cmake_build
 #qmake6_build
-debian_build
+#debian_build
 #rpm_build
 #perl_build
 #haskel_build
 #cargo_build
 #golang_build
-#custom_build
+custom_build
 
 # default most of times #
 after_build
 package_build
 
 # uncomment what you need:
-#pkg_install
+pkg_install
 sig_package
 clean_src
 

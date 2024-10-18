@@ -1,0 +1,11 @@
+gnunet: gnunet (peer-to-peer networking)
+gnunet:
+gnunet: GNUnet is a self-organizing network and it is free software as in
+gnunet: freedom. GNUnet puts you in control of your data. You determine
+gnunet: which data to share with whom, and you're not pressured to accept
+gnunet: compromises. GNUnet is a network protocol stack for building secure,
+gnunet: distributed, and privacy-preserving applications.
+gnunet:
+gnunet:
+gnunet:
+gnunet: https://www.gnunet.org
