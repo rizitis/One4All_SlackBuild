@@ -1,0 +1,4 @@
+*.gss
+core
+~
+# Example with non-ASCII: files with accents 
