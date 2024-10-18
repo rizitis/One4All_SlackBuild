@@ -16,6 +16,8 @@
 - [x] google-golang
 - [x] custom and complex builds
 - [x] binary packaging
+- [x] deb
+- [x] rpm
 
 
 *One TEMPLATE for most of SlackBuilds...<br>
@@ -63,6 +65,8 @@ Here are some optional builds:*
 - [x] zip
 - [x] Z
 - [x] 7z
+- [x] deb
+- [x] rpm
 
 > Also, if needed, by default support and download src package from repos using:
 - [x] cvn co
