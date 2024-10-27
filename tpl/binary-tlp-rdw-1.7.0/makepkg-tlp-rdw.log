@@ -1,0 +1,206 @@
+
+Sun Oct 27 23:47:02 EET 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/bin/nfc	bluetooth
+usr/bin/run-on-bat	run-on-ac
+usr/bin/wifi	bluetooth
+usr/bin/wwan	bluetooth
+usr/share/bash-completion/completions/bluetooth	tlp
+usr/share/bash-completion/completions/nfc	tlp
+usr/share/bash-completion/completions/run-on-ac	tlp
+usr/share/bash-completion/completions/run-on-bat	tlp
+usr/share/bash-completion/completions/tlp-stat	tlp
+usr/share/bash-completion/completions/wifi	tlp
+usr/share/bash-completion/completions/wwan	tlp
+usr/share/fish/vendor_completions.d/bluetooth.fish	tlp.fish
+usr/share/fish/vendor_completions.d/nfc.fish	tlp.fish
+usr/share/fish/vendor_completions.d/run-on-ac.fish	tlp.fish
+usr/share/fish/vendor_completions.d/run-on-bat.fish	tlp.fish
+usr/share/fish/vendor_completions.d/wifi.fish	tlp.fish
+usr/share/fish/vendor_completions.d/wwan.fish	tlp.fish
+
+Making symbolic link creation script:
+( cd usr/bin ; rm -rf nfc )
+( cd usr/bin ; ln -sf bluetooth nfc )
+( cd usr/bin ; rm -rf run-on-bat )
+( cd usr/bin ; ln -sf run-on-ac run-on-bat )
+( cd usr/bin ; rm -rf wifi )
+( cd usr/bin ; ln -sf bluetooth wifi )
+( cd usr/bin ; rm -rf wwan )
+( cd usr/bin ; ln -sf bluetooth wwan )
+( cd usr/share/bash-completion/completions ; rm -rf bluetooth )
+( cd usr/share/bash-completion/completions ; ln -sf tlp bluetooth )
+( cd usr/share/bash-completion/completions ; rm -rf nfc )
+( cd usr/share/bash-completion/completions ; ln -sf tlp nfc )
+( cd usr/share/bash-completion/completions ; rm -rf run-on-ac )
+( cd usr/share/bash-completion/completions ; ln -sf tlp run-on-ac )
+( cd usr/share/bash-completion/completions ; rm -rf run-on-bat )
+( cd usr/share/bash-completion/completions ; ln -sf tlp run-on-bat )
+( cd usr/share/bash-completion/completions ; rm -rf tlp-stat )
+( cd usr/share/bash-completion/completions ; ln -sf tlp tlp-stat )
+( cd usr/share/bash-completion/completions ; rm -rf wifi )
+( cd usr/share/bash-completion/completions ; ln -sf tlp wifi )
+( cd usr/share/bash-completion/completions ; rm -rf wwan )
+( cd usr/share/bash-completion/completions ; ln -sf tlp wwan )
+( cd usr/share/fish/vendor_completions.d ; rm -rf bluetooth.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish bluetooth.fish )
+( cd usr/share/fish/vendor_completions.d ; rm -rf nfc.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish nfc.fish )
+( cd usr/share/fish/vendor_completions.d ; rm -rf run-on-ac.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish run-on-ac.fish )
+( cd usr/share/fish/vendor_completions.d ; rm -rf run-on-bat.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish run-on-bat.fish )
+( cd usr/share/fish/vendor_completions.d ; rm -rf wifi.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish wifi.fish )
+( cd usr/share/fish/vendor_completions.d ; rm -rf wwan.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish wwan.fish )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/bin/nfc'
+removed './usr/bin/run-on-bat'
+removed './usr/bin/wwan'
+removed './usr/bin/wifi'
+removed './usr/share/bash-completion/completions/tlp-stat'
+removed './usr/share/bash-completion/completions/nfc'
+removed './usr/share/bash-completion/completions/run-on-bat'
+removed './usr/share/bash-completion/completions/bluetooth'
+removed './usr/share/bash-completion/completions/run-on-ac'
+removed './usr/share/bash-completion/completions/wwan'
+removed './usr/share/bash-completion/completions/wifi'
+removed './usr/share/fish/vendor_completions.d/run-on-ac.fish'
+removed './usr/share/fish/vendor_completions.d/bluetooth.fish'
+removed './usr/share/fish/vendor_completions.d/nfc.fish'
+removed './usr/share/fish/vendor_completions.d/run-on-bat.fish'
+removed './usr/share/fish/vendor_completions.d/wifi.fish'
+removed './usr/share/fish/vendor_completions.d/wwan.fish'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/tpl/binary-tlp-rdw-1.7.0/tlp-rdw-1.7.0-x86_64-1_rtz.tlz
+
+./
+etc/
+etc/rc.d/
+etc/rc.d/rc.tlp
+etc/tlp.conf
+etc/tlp.d/
+etc/tlp.d/00-template.conf
+etc/tlp.d/README
+install/
+install/doinst.sh
+install/slack-conflicts
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/bluetooth
+usr/bin/run-on-ac
+usr/bin/tlp
+usr/bin/tlp-rdw
+usr/bin/tlp-stat
+usr/doc/
+usr/doc/tlp-rdw-1.7.0/
+usr/doc/tlp-rdw-1.7.0/tlp-rdw.SlackBuild
+usr/lib/
+usr/lib/NetworkManager/
+usr/lib/NetworkManager/dispatcher.d/
+usr/lib/NetworkManager/dispatcher.d/99tlp-rdw-nm
+usr/lib64/
+usr/lib64/elogind/
+usr/lib64/elogind/system-sleep/
+usr/lib64/elogind/system-sleep/49-tlp-sleep
+usr/lib64/udev/
+usr/lib64/udev/rules.d/
+usr/lib64/udev/rules.d/85-tlp-rdw.rules
+usr/lib64/udev/rules.d/85-tlp.rules
+usr/lib64/udev/tlp-rdw-udev
+usr/lib64/udev/tlp-usb-udev
+usr/man/
+usr/man/man1/
+usr/man/man1/bluetooth.1.gz
+usr/man/man1/nfc.1.gz
+usr/man/man1/run-on-ac.1.gz
+usr/man/man1/run-on-bat.1.gz
+usr/man/man1/wifi.1.gz
+usr/man/man1/wwan.1.gz
+usr/man/man8/
+usr/man/man8/tlp-stat.8.gz
+usr/man/man8/tlp.8.gz
+usr/man/man8/tlp.service.8.gz
+usr/share/
+usr/share/bash-completion/
+usr/share/bash-completion/completions/
+usr/share/bash-completion/completions/tlp
+usr/share/bash-completion/completions/tlp-rdw
+usr/share/fish/
+usr/share/fish/vendor_completions.d/
+usr/share/fish/vendor_completions.d/tlp-rdw.fish
+usr/share/fish/vendor_completions.d/tlp-stat.fish
+usr/share/fish/vendor_completions.d/tlp.fish
+usr/share/metainfo/
+usr/share/metainfo/de.linrunner.tlp.metainfo.xml
+usr/share/tlp/
+usr/share/tlp/bat.d/
+usr/share/tlp/bat.d/05-thinkpad
+usr/share/tlp/bat.d/10-thinkpad-legacy
+usr/share/tlp/bat.d/15-lenovo
+usr/share/tlp/bat.d/20-huawei
+usr/share/tlp/bat.d/25-msi
+usr/share/tlp/bat.d/30-samsung
+usr/share/tlp/bat.d/35-lg
+usr/share/tlp/bat.d/36-lg-legacy
+usr/share/tlp/bat.d/40-sony
+usr/share/tlp/bat.d/45-system76
+usr/share/tlp/bat.d/50-toshiba
+usr/share/tlp/bat.d/60-macbook
+usr/share/tlp/bat.d/89-asus
+usr/share/tlp/bat.d/90-generic
+usr/share/tlp/bat.d/TEMPLATE
+usr/share/tlp/defaults.conf
+usr/share/tlp/deprecated.conf
+usr/share/tlp/func.d/
+usr/share/tlp/func.d/05-tlp-func-pm
+usr/share/tlp/func.d/10-tlp-func-cpu
+usr/share/tlp/func.d/15-tlp-func-disk
+usr/share/tlp/func.d/20-tlp-func-usb
+usr/share/tlp/func.d/25-tlp-func-rf
+usr/share/tlp/func.d/30-tlp-func-rf-sw
+usr/share/tlp/func.d/35-tlp-func-batt
+usr/share/tlp/func.d/40-tlp-func-bay
+usr/share/tlp/func.d/45-tlp-func-gpu
+usr/share/tlp/func.d/tlp-func-stat
+usr/share/tlp/rename.conf
+usr/share/tlp/tlp-func-base
+usr/share/tlp/tlp-pcilist
+usr/share/tlp/tlp-readconfs
+usr/share/tlp/tlp-usblist
+usr/share/zsh/
+usr/share/zsh/site-functions/
+usr/share/zsh/site-functions/_tlp
+usr/share/zsh/site-functions/_tlp-radio-device
+usr/share/zsh/site-functions/_tlp-rdw
+usr/share/zsh/site-functions/_tlp-run-on
+usr/share/zsh/site-functions/_tlp-stat
+var/
+var/lib/
+var/lib/tlp/
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/tpl/binary-tlp-rdw-1.7.0/tlp-rdw-1.7.0-x86_64-1_rtz.tlz created.
+

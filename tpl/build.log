@@ -1,0 +1,397 @@
+Starting build process...
+Detected architecture: x86_64
+--2024-10-27 23:47:04--  https://github.com/linrunner/TLP/archive/1.7.0.tar.gz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/linrunner/TLP/tar.gz/refs/tags/1.7.0 [following]
+--2024-10-27 23:47:04--  https://codeload.github.com/linrunner/TLP/tar.gz/refs/tags/1.7.0
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘TLP-1.7.0.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  422K
+    50K .......... .......... .......... .......... ..........  818K
+   100K .......... .......... .......... .......... .......    3.43M=0.2s
+
+2024-10-27 23:47:05 (763 KB/s) - ‘TLP-1.7.0.tar.gz’ saved [151003]
+
+TLP-1.7.0/
+TLP-1.7.0/.github/
+TLP-1.7.0/.github/Bug_Reporting_Howto.md
+TLP-1.7.0/.github/CODE_OF_CONDUCT.md
+TLP-1.7.0/.github/CONTRIBUTING.md
+TLP-1.7.0/.github/ISSUE_TEMPLATE/
+TLP-1.7.0/.github/ISSUE_TEMPLATE/bug_report.md
+TLP-1.7.0/.github/ISSUE_TEMPLATE/feature_request.md
+TLP-1.7.0/.gitignore
+TLP-1.7.0/.perlcriticrc
+TLP-1.7.0/00-template.conf
+TLP-1.7.0/AUTHORS
+TLP-1.7.0/COPYING
+TLP-1.7.0/LICENSE
+TLP-1.7.0/Makefile
+TLP-1.7.0/README.d
+TLP-1.7.0/README.rst
+TLP-1.7.0/VERSION
+TLP-1.7.0/bat.d/
+TLP-1.7.0/bat.d/05-thinkpad
+TLP-1.7.0/bat.d/10-thinkpad-legacy
+TLP-1.7.0/bat.d/15-lenovo
+TLP-1.7.0/bat.d/20-huawei
+TLP-1.7.0/bat.d/25-msi
+TLP-1.7.0/bat.d/30-samsung
+TLP-1.7.0/bat.d/35-lg
+TLP-1.7.0/bat.d/36-lg-legacy
+TLP-1.7.0/bat.d/40-sony
+TLP-1.7.0/bat.d/45-system76
+TLP-1.7.0/bat.d/50-toshiba
+TLP-1.7.0/bat.d/60-macbook
+TLP-1.7.0/bat.d/89-asus
+TLP-1.7.0/bat.d/90-generic
+TLP-1.7.0/bat.d/TEMPLATE
+TLP-1.7.0/changelog
+TLP-1.7.0/completion/
+TLP-1.7.0/completion/bash/
+TLP-1.7.0/completion/bash/tlp-rdw.bash_completion
+TLP-1.7.0/completion/bash/tlp.bash_completion
+TLP-1.7.0/completion/fish/
+TLP-1.7.0/completion/fish/tlp-rdw.fish
+TLP-1.7.0/completion/fish/tlp-stat.fish
+TLP-1.7.0/completion/fish/tlp.fish
+TLP-1.7.0/completion/zsh/
+TLP-1.7.0/completion/zsh/_tlp
+TLP-1.7.0/completion/zsh/_tlp-radio-device
+TLP-1.7.0/completion/zsh/_tlp-rdw
+TLP-1.7.0/completion/zsh/_tlp-run-on
+TLP-1.7.0/completion/zsh/_tlp-stat
+TLP-1.7.0/de.linrunner.tlp.metainfo.xml
+TLP-1.7.0/defaults.conf
+TLP-1.7.0/deprecated.conf
+TLP-1.7.0/func.d/
+TLP-1.7.0/func.d/05-tlp-func-pm
+TLP-1.7.0/func.d/10-tlp-func-cpu
+TLP-1.7.0/func.d/15-tlp-func-disk
+TLP-1.7.0/func.d/20-tlp-func-usb
+TLP-1.7.0/func.d/25-tlp-func-rf
+TLP-1.7.0/func.d/30-tlp-func-rf-sw
+TLP-1.7.0/func.d/35-tlp-func-batt
+TLP-1.7.0/func.d/40-tlp-func-bay
+TLP-1.7.0/func.d/45-tlp-func-gpu
+TLP-1.7.0/func.d/tlp-func-stat
+TLP-1.7.0/man-rdw/
+TLP-1.7.0/man-rdw/tlp-rdw.8
+TLP-1.7.0/man/
+TLP-1.7.0/man/bluetooth.1
+TLP-1.7.0/man/nfc.1
+TLP-1.7.0/man/run-on-ac.1
+TLP-1.7.0/man/run-on-bat.1
+TLP-1.7.0/man/tlp-stat.8
+TLP-1.7.0/man/tlp.8
+TLP-1.7.0/man/tlp.service.8
+TLP-1.7.0/man/wifi.1
+TLP-1.7.0/man/wwan.1
+TLP-1.7.0/rename.conf
+TLP-1.7.0/tlp-func-base.in
+TLP-1.7.0/tlp-pcilist
+TLP-1.7.0/tlp-rdw-nm.in
+TLP-1.7.0/tlp-rdw-udev.in
+TLP-1.7.0/tlp-rdw.in
+TLP-1.7.0/tlp-rdw.rules.in
+TLP-1.7.0/tlp-readconfs.in
+TLP-1.7.0/tlp-rf.in
+TLP-1.7.0/tlp-run-on.in
+TLP-1.7.0/tlp-sleep
+TLP-1.7.0/tlp-sleep.elogind
+TLP-1.7.0/tlp-stat.in
+TLP-1.7.0/tlp-usb-udev.in
+TLP-1.7.0/tlp-usblist
+TLP-1.7.0/tlp.conf.in
+TLP-1.7.0/tlp.in
+TLP-1.7.0/tlp.init
+TLP-1.7.0/tlp.rules.in
+TLP-1.7.0/tlp.service.in
+TLP-1.7.0/tlp.upstart.in
+TLP-1.7.0/unit-tests/
+TLP-1.7.0/unit-tests/charge-thresholds_macbook
+TLP-1.7.0/unit-tests/charge-thresholds_msi
+TLP-1.7.0/unit-tests/charge-thresholds_simulate1
+TLP-1.7.0/unit-tests/charge-thresholds_simulate2
+TLP-1.7.0/unit-tests/charge-thresholds_system76
+TLP-1.7.0/unit-tests/charge-thresholds_thinkpad
+TLP-1.7.0/unit-tests/charge-thresholds_thinkpad-BAT1
+TLP-1.7.0/unit-tests/charge-thresholds_thinkpad-legacy
+TLP-1.7.0/unit-tests/charge-thresholds_toshiba
+TLP-1.7.0/unit-tests/intel-gpu-freqs
+TLP-1.7.0/unit-tests/kmod-helper
+TLP-1.7.0/unit-tests/services-check
+TLP-1.7.0/unit-tests/test-cpufreq.sh
+TLP-1.7.0/unit-tests/test-func
+TLP-1.7.0/unit-tests/unit-tests.rst
+Creating README in: /home/omen/GITHUB/One4All_SlackBuild/tpl
+hm...lets continue and see what happens
+# Package tlp
+install -D -m 755 tlp /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/bin/tlp
+install -D -m 755 tlp-rf /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/bin/bluetooth
+ln -sf bluetooth /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/bin/nfc
+ln -sf bluetooth /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/bin/wifi
+ln -sf bluetooth /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/bin/wwan
+install -m 755 tlp-run-on /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/bin/run-on-ac
+ln -sf run-on-ac /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/bin/run-on-bat
+install -m 755 tlp-stat /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/bin/
+install -D -m 755 -t /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/tlp/func.d func.d/*
+install -m 755 tlp-func-base /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/tlp/
+install -D -m 755 -t /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/tlp/bat.d bat.d/*
+install -m 755 tlp-pcilist /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/tlp/
+install -m 755 tlp-readconfs /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/tlp/
+install -m 755 tlp-usblist /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/tlp/
+install -D -m 755 tlp-usb-udev /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/lib64/udev/tlp-usb-udev
+install -D -m 644 tlp.rules /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/lib64/udev/rules.d/85-tlp.rules
+[ -f /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/etc/tlp.conf ] || install -D -m 644 tlp.conf /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/etc/tlp.conf
+install -d /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/etc/tlp.d
+install -D -m 644 README.d /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/etc/tlp.d/README
+install -D -m 644 00-template.conf /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/etc/tlp.d/00-template.conf
+install -D -m 644 defaults.conf /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/tlp/defaults.conf
+install -D -m 644 rename.conf /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/tlp/rename.conf
+install -D -m 644 deprecated.conf /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/tlp/deprecated.conf
+install -D -m 755 tlp-sleep.elogind /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/lib64/elogind/system-sleep/49-tlp-sleep
+install -D -m 644 completion/bash/tlp.bash_completion /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/bash-completion/completions/tlp
+ln -sf tlp /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/bash-completion/completions/tlp-stat
+ln -sf tlp /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/bash-completion/completions/bluetooth
+ln -sf tlp /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/bash-completion/completions/nfc
+ln -sf tlp /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/bash-completion/completions/wifi
+ln -sf tlp /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/bash-completion/completions/wwan
+ln -sf tlp /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/bash-completion/completions/run-on-ac
+ln -sf tlp /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/bash-completion/completions/run-on-bat
+install -D -m 644 completion/zsh/_tlp /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/zsh/site-functions/_tlp
+install -D -m 644 completion/zsh/_tlp-radio-device /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/zsh/site-functions/_tlp-radio-device
+install -D -m 644 completion/zsh/_tlp-run-on /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/zsh/site-functions/_tlp-run-on
+install -D -m 644 completion/zsh/_tlp-stat /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/zsh/site-functions/_tlp-stat
+install -D -m 644 completion/fish/tlp.fish /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/fish/vendor_completions.d/tlp.fish
+install -D -m 644 completion/fish/tlp-stat.fish /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/fish/vendor_completions.d/tlp-stat.fish
+ln -sf tlp.fish /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/fish/vendor_completions.d/bluetooth.fish
+ln -sf tlp.fish /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/fish/vendor_completions.d/nfc.fish
+ln -sf tlp.fish /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/fish/vendor_completions.d/wifi.fish
+ln -sf tlp.fish /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/fish/vendor_completions.d/wwan.fish
+ln -sf tlp.fish /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/fish/vendor_completions.d/run-on-ac.fish
+ln -sf tlp.fish /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/fish/vendor_completions.d/run-on-bat.fish
+install -D -m 644 de.linrunner.tlp.metainfo.xml /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/metainfo/de.linrunner.tlp.metainfo.xml
+install -d -m 755 /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/var/lib/tlp
+# Package tlp-rdw
+install -D -m 755 tlp-rdw /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/bin/tlp-rdw
+install -D -m 644 tlp-rdw.rules /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/lib64/udev/rules.d/85-tlp-rdw.rules
+install -D -m 755 tlp-rdw-udev /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/lib64/udev/tlp-rdw-udev
+install -D -m 755 tlp-rdw-nm /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/lib/NetworkManager/dispatcher.d/99tlp-rdw-nm
+install -D -m 644 completion/bash/tlp-rdw.bash_completion /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/bash-completion/completions/tlp-rdw
+install -D -m 644 completion/zsh/_tlp-rdw /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/zsh/site-functions/_tlp-rdw
+install -D -m 644 completion/fish/tlp-rdw.fish /home/omen/GITHUB/One4All_SlackBuild/tpl/package-tlp-rdw/usr/share/fish/vendor_completions.d/tlp-rdw.fish
+./tlp-rdw.SlackBuild: line 323: `$DOCS': not a valid identifier
+./tlp-rdw.SlackBuild: line 323: `$DOCS_DIR': not a valid identifier
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/bin/nfc	bluetooth
+usr/bin/run-on-bat	run-on-ac
+usr/bin/wifi	bluetooth
+usr/bin/wwan	bluetooth
+usr/share/bash-completion/completions/bluetooth	tlp
+usr/share/bash-completion/completions/nfc	tlp
+usr/share/bash-completion/completions/run-on-ac	tlp
+usr/share/bash-completion/completions/run-on-bat	tlp
+usr/share/bash-completion/completions/tlp-stat	tlp
+usr/share/bash-completion/completions/wifi	tlp
+usr/share/bash-completion/completions/wwan	tlp
+usr/share/fish/vendor_completions.d/bluetooth.fish	tlp.fish
+usr/share/fish/vendor_completions.d/nfc.fish	tlp.fish
+usr/share/fish/vendor_completions.d/run-on-ac.fish	tlp.fish
+usr/share/fish/vendor_completions.d/run-on-bat.fish	tlp.fish
+usr/share/fish/vendor_completions.d/wifi.fish	tlp.fish
+usr/share/fish/vendor_completions.d/wwan.fish	tlp.fish
+
+Making symbolic link creation script:
+( cd usr/bin ; rm -rf nfc )
+( cd usr/bin ; ln -sf bluetooth nfc )
+( cd usr/bin ; rm -rf run-on-bat )
+( cd usr/bin ; ln -sf run-on-ac run-on-bat )
+( cd usr/bin ; rm -rf wifi )
+( cd usr/bin ; ln -sf bluetooth wifi )
+( cd usr/bin ; rm -rf wwan )
+( cd usr/bin ; ln -sf bluetooth wwan )
+( cd usr/share/bash-completion/completions ; rm -rf bluetooth )
+( cd usr/share/bash-completion/completions ; ln -sf tlp bluetooth )
+( cd usr/share/bash-completion/completions ; rm -rf nfc )
+( cd usr/share/bash-completion/completions ; ln -sf tlp nfc )
+( cd usr/share/bash-completion/completions ; rm -rf run-on-ac )
+( cd usr/share/bash-completion/completions ; ln -sf tlp run-on-ac )
+( cd usr/share/bash-completion/completions ; rm -rf run-on-bat )
+( cd usr/share/bash-completion/completions ; ln -sf tlp run-on-bat )
+( cd usr/share/bash-completion/completions ; rm -rf tlp-stat )
+( cd usr/share/bash-completion/completions ; ln -sf tlp tlp-stat )
+( cd usr/share/bash-completion/completions ; rm -rf wifi )
+( cd usr/share/bash-completion/completions ; ln -sf tlp wifi )
+( cd usr/share/bash-completion/completions ; rm -rf wwan )
+( cd usr/share/bash-completion/completions ; ln -sf tlp wwan )
+( cd usr/share/fish/vendor_completions.d ; rm -rf bluetooth.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish bluetooth.fish )
+( cd usr/share/fish/vendor_completions.d ; rm -rf nfc.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish nfc.fish )
+( cd usr/share/fish/vendor_completions.d ; rm -rf run-on-ac.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish run-on-ac.fish )
+( cd usr/share/fish/vendor_completions.d ; rm -rf run-on-bat.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish run-on-bat.fish )
+( cd usr/share/fish/vendor_completions.d ; rm -rf wifi.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish wifi.fish )
+( cd usr/share/fish/vendor_completions.d ; rm -rf wwan.fish )
+( cd usr/share/fish/vendor_completions.d ; ln -sf tlp.fish wwan.fish )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/bin/nfc'
+removed './usr/bin/run-on-bat'
+removed './usr/bin/wwan'
+removed './usr/bin/wifi'
+removed './usr/share/bash-completion/completions/tlp-stat'
+removed './usr/share/bash-completion/completions/nfc'
+removed './usr/share/bash-completion/completions/run-on-bat'
+removed './usr/share/bash-completion/completions/bluetooth'
+removed './usr/share/bash-completion/completions/run-on-ac'
+removed './usr/share/bash-completion/completions/wwan'
+removed './usr/share/bash-completion/completions/wifi'
+removed './usr/share/fish/vendor_completions.d/run-on-ac.fish'
+removed './usr/share/fish/vendor_completions.d/bluetooth.fish'
+removed './usr/share/fish/vendor_completions.d/nfc.fish'
+removed './usr/share/fish/vendor_completions.d/run-on-bat.fish'
+removed './usr/share/fish/vendor_completions.d/wifi.fish'
+removed './usr/share/fish/vendor_completions.d/wwan.fish'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/tpl/binary-tlp-rdw-1.7.0/tlp-rdw-1.7.0-x86_64-1_rtz.tlz
+
+./
+etc/
+etc/rc.d/
+etc/rc.d/rc.tlp
+etc/tlp.conf
+etc/tlp.d/
+etc/tlp.d/00-template.conf
+etc/tlp.d/README
+install/
+install/doinst.sh
+install/slack-conflicts
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/bluetooth
+usr/bin/run-on-ac
+usr/bin/tlp
+usr/bin/tlp-rdw
+usr/bin/tlp-stat
+usr/doc/
+usr/doc/tlp-rdw-1.7.0/
+usr/doc/tlp-rdw-1.7.0/tlp-rdw.SlackBuild
+usr/lib/
+usr/lib/NetworkManager/
+usr/lib/NetworkManager/dispatcher.d/
+usr/lib/NetworkManager/dispatcher.d/99tlp-rdw-nm
+usr/lib64/
+usr/lib64/elogind/
+usr/lib64/elogind/system-sleep/
+usr/lib64/elogind/system-sleep/49-tlp-sleep
+usr/lib64/udev/
+usr/lib64/udev/rules.d/
+usr/lib64/udev/rules.d/85-tlp-rdw.rules
+usr/lib64/udev/rules.d/85-tlp.rules
+usr/lib64/udev/tlp-rdw-udev
+usr/lib64/udev/tlp-usb-udev
+usr/man/
+usr/man/man1/
+usr/man/man1/bluetooth.1.gz
+usr/man/man1/nfc.1.gz
+usr/man/man1/run-on-ac.1.gz
+usr/man/man1/run-on-bat.1.gz
+usr/man/man1/wifi.1.gz
+usr/man/man1/wwan.1.gz
+usr/man/man8/
+usr/man/man8/tlp-stat.8.gz
+usr/man/man8/tlp.8.gz
+usr/man/man8/tlp.service.8.gz
+usr/share/
+usr/share/bash-completion/
+usr/share/bash-completion/completions/
+usr/share/bash-completion/completions/tlp
+usr/share/bash-completion/completions/tlp-rdw
+usr/share/fish/
+usr/share/fish/vendor_completions.d/
+usr/share/fish/vendor_completions.d/tlp-rdw.fish
+usr/share/fish/vendor_completions.d/tlp-stat.fish
+usr/share/fish/vendor_completions.d/tlp.fish
+usr/share/metainfo/
+usr/share/metainfo/de.linrunner.tlp.metainfo.xml
+usr/share/tlp/
+usr/share/tlp/bat.d/
+usr/share/tlp/bat.d/05-thinkpad
+usr/share/tlp/bat.d/10-thinkpad-legacy
+usr/share/tlp/bat.d/15-lenovo
+usr/share/tlp/bat.d/20-huawei
+usr/share/tlp/bat.d/25-msi
+usr/share/tlp/bat.d/30-samsung
+usr/share/tlp/bat.d/35-lg
+usr/share/tlp/bat.d/36-lg-legacy
+usr/share/tlp/bat.d/40-sony
+usr/share/tlp/bat.d/45-system76
+usr/share/tlp/bat.d/50-toshiba
+usr/share/tlp/bat.d/60-macbook
+usr/share/tlp/bat.d/89-asus
+usr/share/tlp/bat.d/90-generic
+usr/share/tlp/bat.d/TEMPLATE
+usr/share/tlp/defaults.conf
+usr/share/tlp/deprecated.conf
+usr/share/tlp/func.d/
+usr/share/tlp/func.d/05-tlp-func-pm
+usr/share/tlp/func.d/10-tlp-func-cpu
+usr/share/tlp/func.d/15-tlp-func-disk
+usr/share/tlp/func.d/20-tlp-func-usb
+usr/share/tlp/func.d/25-tlp-func-rf
+usr/share/tlp/func.d/30-tlp-func-rf-sw
+usr/share/tlp/func.d/35-tlp-func-batt
+usr/share/tlp/func.d/40-tlp-func-bay
+usr/share/tlp/func.d/45-tlp-func-gpu
+usr/share/tlp/func.d/tlp-func-stat
+usr/share/tlp/rename.conf
+usr/share/tlp/tlp-func-base
+usr/share/tlp/tlp-pcilist
+usr/share/tlp/tlp-readconfs
+usr/share/tlp/tlp-usblist
+usr/share/zsh/
+usr/share/zsh/site-functions/
+usr/share/zsh/site-functions/_tlp
+usr/share/zsh/site-functions/_tlp-radio-device
+usr/share/zsh/site-functions/_tlp-rdw
+usr/share/zsh/site-functions/_tlp-run-on
+usr/share/zsh/site-functions/_tlp-stat
+var/
+var/lib/
+var/lib/tlp/
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/tpl/binary-tlp-rdw-1.7.0/tlp-rdw-1.7.0-x86_64-1_rtz.tlz created.
+
+Build process completed in 0 minutes and 5 seconds.

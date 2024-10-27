@@ -1,0 +1,68 @@
+#!/bin/sh
+# /etc/rc.d/rc.tlp
+# Slackware init script for TLP power management
+
+# Description: Power-saving tool for laptops running Linux
+# Dependencies: Requires TLP to be installed
+
+# Define paths for TLP commands
+TLP_INIT="/usr/sbin/tlp"
+
+# Check if TLP is installed
+if [ ! -x "$TLP_INIT" ]; then
+    echo "TLP is not installed. Exiting."
+    exit 1
+fi
+
+# Start TLP service
+start() {
+    echo "Starting TLP..."
+    "$TLP_INIT" start
+}
+
+# Stop TLP service
+stop() {
+    echo "Stopping TLP..."
+    "$TLP_INIT" stop
+}
+
+# Restart TLP service
+restart() {
+    echo "Restarting TLP..."
+    "$TLP_INIT" restart
+}
+
+# Reload TLP settings without stopping the service
+force_reload() {
+    echo "Reloading TLP settings..."
+    "$TLP_INIT" force-reload
+}
+
+# Show TLP status
+status() {
+    echo "TLP status:"
+    "$TLP_INIT" -s
+}
+
+# Parse command-line arguments
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        restart
+        ;;
+    force-reload)
+        force_reload
+        ;;
+    status)
+        status
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart|force-reload|status}"
+        exit 1
+        ;;
+esac

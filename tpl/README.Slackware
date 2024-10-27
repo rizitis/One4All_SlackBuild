@@ -1,0 +1,9 @@
+0 untested pkg
+1 read slack-conflicts
+2 read /etc/tlp.conf
+
+3 edit /etc/rc.d/rc.local:
+# Start TLP power management
+if [ -x /etc/rc.d/rc.tlp ]; then
+    /etc/rc.d/rc.tlp start
+fi

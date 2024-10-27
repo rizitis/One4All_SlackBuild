@@ -1,0 +1,11 @@
+tlp-rdw: tlp-rdw ((Optimize Linux Laptop Battery Life))
+tlp-rdw:
+tlp-rdw: TLP is a feature-rich command line utility for Linux, saving laptop
+tlp-rdw: battery power without the need to delve deeper into technical
+tlp-rdw: details.TLP’s default settings are already optimized for battery
+tlp-rdw: life and implement Powertop’s recommendations out of the box, so
+tlp-rdw: you can install it and just sit back and relax!But wait, there’s
+tlp-rdw: more! TLP is completely customizable.
+tlp-rdw:
+tlp-rdw:
+tlp-rdw: https://linrunner.de/en/tlp/tlp.html
