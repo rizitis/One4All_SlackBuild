@@ -1,0 +1,11 @@
+mdbook: mdbook ((Create book from markdown files))
+mdbook:
+mdbook: mdBook is a command line tool to create books with Markdown. It is
+mdbook: ideal for creating product or API documentation, tutorials, course
+mdbook: materials or anything that requires a clean, easily navigable and
+mdbook: customizable presentation.
+mdbook:
+mdbook:
+mdbook:
+mdbook:
+mdbook: rust-lang.github.io/mdBook/index.html

@@ -1,0 +1,1056 @@
+Starting build process...
+Detected architecture: x86_64
+--2024-10-28 21:49:53--  https://github.com/rust-lang/mdBook/archive/v0.4.40.tar.gz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/rust-lang/mdBook/tar.gz/refs/tags/v0.4.40 [following]
+--2024-10-28 21:49:53--  https://codeload.github.com/rust-lang/mdBook/tar.gz/refs/tags/v0.4.40
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘mdBook-0.4.40.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  418K
+    50K .......... .......... .......... .......... ..........  847K
+   100K .......... .......... .......... .......... .......... 5.36M
+   150K .......... .......... .......... .......... .......... 5.22M
+   200K .......... .......... .......... .......... .......... 1.03M
+   250K .......... .......... .......... .......... .......... 5.24M
+   300K .......... .......... .......... .......... .......... 5.24M
+   350K .......... .......... .......... .......... ..........  630K
+   400K .......... .......... .......... .......... .......... 3.34M
+   450K .......... .......... .......... .......... .......... 85.3M
+   500K .......... .......... .......... .......... .......... 82.3M
+   550K .......... .......... .......... .......... .......... 1.67M
+   600K .......... .......... .......... .......... .......... 9.81M
+   650K .......... .......... .......... .......... .......... 11.2M
+   700K .......... .......... .......... .......... .......... 9.97M
+   750K .......... .......... .......... .......... .......... 16.8M
+   800K .......... .......... .......... .......... .......... 69.6M
+   850K .......... .......... .......... .......... .......... 14.2M
+   900K .......... .......... .......... .......... .......... 5.24M
+   950K .......... .......... .......... .......... .......... 3.81M
+  1000K .......... .......... .......... .......... .......... 3.69M
+  1050K .......... .......... .......... .......... .......... 5.01M
+  1100K .......... .......... .......... .......... .......... 4.95M
+  1150K .......... .......... .......... .......... .......... 5.29M
+  1200K .......... .......... .......... .......... .......... 4.07M
+  1250K .......... .......... .......... .......... .......... 3.85M
+  1300K .......... .......... .......... .......... .......... 3.85M
+  1350K .......... .......... .......... .......... .......... 4.97M
+  1400K .......... .......... .......... .......... .......... 6.83M
+  1450K .......... .......... .......... .......... .......... 5.47M
+  1500K                                                        19.1M=0.5s
+
+2024-10-28 21:49:54 (2.73 MB/s) - ‘mdBook-0.4.40.tar.gz’ saved [1536327]
+
+mdBook-0.4.40/
+mdBook-0.4.40/.gitattributes
+mdBook-0.4.40/.github/
+mdBook-0.4.40/.github/ISSUE_TEMPLATE/
+mdBook-0.4.40/.github/ISSUE_TEMPLATE/bug_report.yml
+mdBook-0.4.40/.github/ISSUE_TEMPLATE/feature_request.yml
+mdBook-0.4.40/.github/ISSUE_TEMPLATE/question.yml
+mdBook-0.4.40/.github/workflows/
+mdBook-0.4.40/.github/workflows/deploy.yml
+mdBook-0.4.40/.github/workflows/main.yml
+mdBook-0.4.40/.gitignore
+mdBook-0.4.40/CHANGELOG.md
+mdBook-0.4.40/CODE_OF_CONDUCT.md
+mdBook-0.4.40/CONTRIBUTING.md
+mdBook-0.4.40/Cargo.lock
+mdBook-0.4.40/Cargo.toml
+mdBook-0.4.40/LICENSE
+mdBook-0.4.40/README.md
+mdBook-0.4.40/ci/
+mdBook-0.4.40/ci/install-rust.sh
+mdBook-0.4.40/ci/make-release-asset.sh
+mdBook-0.4.40/examples/
+mdBook-0.4.40/examples/nop-preprocessor.rs
+mdBook-0.4.40/guide/
+mdBook-0.4.40/guide/book.toml
+mdBook-0.4.40/guide/src/
+mdBook-0.4.40/guide/src/404.md
+mdBook-0.4.40/guide/src/README.md
+mdBook-0.4.40/guide/src/SUMMARY.md
+mdBook-0.4.40/guide/src/cli/
+mdBook-0.4.40/guide/src/cli/README.md
+mdBook-0.4.40/guide/src/cli/arg-watcher.md
+mdBook-0.4.40/guide/src/cli/build.md
+mdBook-0.4.40/guide/src/cli/clean.md
+mdBook-0.4.40/guide/src/cli/completions.md
+mdBook-0.4.40/guide/src/cli/init.md
+mdBook-0.4.40/guide/src/cli/serve.md
+mdBook-0.4.40/guide/src/cli/test.md
+mdBook-0.4.40/guide/src/cli/watch.md
+mdBook-0.4.40/guide/src/continuous-integration.md
+mdBook-0.4.40/guide/src/for_developers/
+mdBook-0.4.40/guide/src/for_developers/README.md
+mdBook-0.4.40/guide/src/for_developers/backends.md
+mdBook-0.4.40/guide/src/for_developers/mdbook-wordcount/
+mdBook-0.4.40/guide/src/for_developers/mdbook-wordcount/Cargo.toml
+mdBook-0.4.40/guide/src/for_developers/mdbook-wordcount/src/
+mdBook-0.4.40/guide/src/for_developers/mdbook-wordcount/src/main.rs
+mdBook-0.4.40/guide/src/for_developers/preprocessors.md
+mdBook-0.4.40/guide/src/format/
+mdBook-0.4.40/guide/src/format/README.md
+mdBook-0.4.40/guide/src/format/configuration/
+mdBook-0.4.40/guide/src/format/configuration/README.md
+mdBook-0.4.40/guide/src/format/configuration/environment-variables.md
+mdBook-0.4.40/guide/src/format/configuration/general.md
+mdBook-0.4.40/guide/src/format/configuration/preprocessors.md
+mdBook-0.4.40/guide/src/format/configuration/renderers.md
+mdBook-0.4.40/guide/src/format/example.rs
+mdBook-0.4.40/guide/src/format/images/
+mdBook-0.4.40/guide/src/format/images/rust-logo-blk.svg
+mdBook-0.4.40/guide/src/format/markdown.md
+mdBook-0.4.40/guide/src/format/mathjax.md
+mdBook-0.4.40/guide/src/format/mdbook.md
+mdBook-0.4.40/guide/src/format/summary.md
+mdBook-0.4.40/guide/src/format/theme/
+mdBook-0.4.40/guide/src/format/theme/README.md
+mdBook-0.4.40/guide/src/format/theme/editor.md
+mdBook-0.4.40/guide/src/format/theme/index-hbs.md
+mdBook-0.4.40/guide/src/format/theme/syntax-highlighting.md
+mdBook-0.4.40/guide/src/guide/
+mdBook-0.4.40/guide/src/guide/README.md
+mdBook-0.4.40/guide/src/guide/creating.md
+mdBook-0.4.40/guide/src/guide/installation.md
+mdBook-0.4.40/guide/src/guide/reading.md
+mdBook-0.4.40/guide/src/misc/
+mdBook-0.4.40/guide/src/misc/contributors.md
+mdBook-0.4.40/release.toml
+mdBook-0.4.40/src/
+mdBook-0.4.40/src/book/
+mdBook-0.4.40/src/book/book.rs
+mdBook-0.4.40/src/book/init.rs
+mdBook-0.4.40/src/book/mod.rs
+mdBook-0.4.40/src/book/summary.rs
+mdBook-0.4.40/src/cmd/
+mdBook-0.4.40/src/cmd/build.rs
+mdBook-0.4.40/src/cmd/clean.rs
+mdBook-0.4.40/src/cmd/command_prelude.rs
+mdBook-0.4.40/src/cmd/init.rs
+mdBook-0.4.40/src/cmd/mod.rs
+mdBook-0.4.40/src/cmd/serve.rs
+mdBook-0.4.40/src/cmd/test.rs
+mdBook-0.4.40/src/cmd/watch.rs
+mdBook-0.4.40/src/cmd/watch/
+mdBook-0.4.40/src/cmd/watch/native.rs
+mdBook-0.4.40/src/cmd/watch/poller.rs
+mdBook-0.4.40/src/config.rs
+mdBook-0.4.40/src/lib.rs
+mdBook-0.4.40/src/main.rs
+mdBook-0.4.40/src/preprocess/
+mdBook-0.4.40/src/preprocess/cmd.rs
+mdBook-0.4.40/src/preprocess/index.rs
+mdBook-0.4.40/src/preprocess/links.rs
+mdBook-0.4.40/src/preprocess/mod.rs
+mdBook-0.4.40/src/renderer/
+mdBook-0.4.40/src/renderer/html_handlebars/
+mdBook-0.4.40/src/renderer/html_handlebars/hbs_renderer.rs
+mdBook-0.4.40/src/renderer/html_handlebars/helpers/
+mdBook-0.4.40/src/renderer/html_handlebars/helpers/mod.rs
+mdBook-0.4.40/src/renderer/html_handlebars/helpers/navigation.rs
+mdBook-0.4.40/src/renderer/html_handlebars/helpers/theme.rs
+mdBook-0.4.40/src/renderer/html_handlebars/helpers/toc.rs
+mdBook-0.4.40/src/renderer/html_handlebars/mod.rs
+mdBook-0.4.40/src/renderer/html_handlebars/search.rs
+mdBook-0.4.40/src/renderer/markdown_renderer.rs
+mdBook-0.4.40/src/renderer/mod.rs
+mdBook-0.4.40/src/theme/
+mdBook-0.4.40/src/theme/FontAwesome/
+mdBook-0.4.40/src/theme/FontAwesome/css/
+mdBook-0.4.40/src/theme/FontAwesome/css/font-awesome.min.css
+mdBook-0.4.40/src/theme/FontAwesome/fonts/
+mdBook-0.4.40/src/theme/FontAwesome/fonts/FontAwesome.otf
+mdBook-0.4.40/src/theme/FontAwesome/fonts/fontawesome-webfont.eot
+mdBook-0.4.40/src/theme/FontAwesome/fonts/fontawesome-webfont.svg
+mdBook-0.4.40/src/theme/FontAwesome/fonts/fontawesome-webfont.ttf
+mdBook-0.4.40/src/theme/FontAwesome/fonts/fontawesome-webfont.woff
+mdBook-0.4.40/src/theme/FontAwesome/fonts/fontawesome-webfont.woff2
+mdBook-0.4.40/src/theme/ayu-highlight.css
+mdBook-0.4.40/src/theme/book.js
+mdBook-0.4.40/src/theme/clipboard.min.js
+mdBook-0.4.40/src/theme/css/
+mdBook-0.4.40/src/theme/css/chrome.css
+mdBook-0.4.40/src/theme/css/general.css
+mdBook-0.4.40/src/theme/css/print.css
+mdBook-0.4.40/src/theme/css/variables.css
+mdBook-0.4.40/src/theme/favicon.png
+mdBook-0.4.40/src/theme/favicon.svg
+mdBook-0.4.40/src/theme/fonts/
+mdBook-0.4.40/src/theme/fonts/OPEN-SANS-LICENSE.txt
+mdBook-0.4.40/src/theme/fonts/SOURCE-CODE-PRO-LICENSE.txt
+mdBook-0.4.40/src/theme/fonts/fonts.css
+mdBook-0.4.40/src/theme/fonts/mod.rs
+mdBook-0.4.40/src/theme/fonts/open-sans-v17-all-charsets-300.woff2
+mdBook-0.4.40/src/theme/fonts/open-sans-v17-all-charsets-300italic.woff2
+mdBook-0.4.40/src/theme/fonts/open-sans-v17-all-charsets-600.woff2
+mdBook-0.4.40/src/theme/fonts/open-sans-v17-all-charsets-600italic.woff2
+mdBook-0.4.40/src/theme/fonts/open-sans-v17-all-charsets-700.woff2
+mdBook-0.4.40/src/theme/fonts/open-sans-v17-all-charsets-700italic.woff2
+mdBook-0.4.40/src/theme/fonts/open-sans-v17-all-charsets-800.woff2
+mdBook-0.4.40/src/theme/fonts/open-sans-v17-all-charsets-800italic.woff2
+mdBook-0.4.40/src/theme/fonts/open-sans-v17-all-charsets-italic.woff2
+mdBook-0.4.40/src/theme/fonts/open-sans-v17-all-charsets-regular.woff2
+mdBook-0.4.40/src/theme/fonts/source-code-pro-v11-all-charsets-500.woff2
+mdBook-0.4.40/src/theme/head.hbs
+mdBook-0.4.40/src/theme/header.hbs
+mdBook-0.4.40/src/theme/highlight.css
+mdBook-0.4.40/src/theme/highlight.js
+mdBook-0.4.40/src/theme/index.hbs
+mdBook-0.4.40/src/theme/mod.rs
+mdBook-0.4.40/src/theme/playground_editor/
+mdBook-0.4.40/src/theme/playground_editor/ace.js
+mdBook-0.4.40/src/theme/playground_editor/editor.js
+mdBook-0.4.40/src/theme/playground_editor/mod.rs
+mdBook-0.4.40/src/theme/playground_editor/mode-rust.js
+mdBook-0.4.40/src/theme/playground_editor/theme-dawn.js
+mdBook-0.4.40/src/theme/playground_editor/theme-tomorrow_night.js
+mdBook-0.4.40/src/theme/redirect.hbs
+mdBook-0.4.40/src/theme/searcher/
+mdBook-0.4.40/src/theme/searcher/elasticlunr.min.js
+mdBook-0.4.40/src/theme/searcher/mark.min.js
+mdBook-0.4.40/src/theme/searcher/mod.rs
+mdBook-0.4.40/src/theme/searcher/searcher.js
+mdBook-0.4.40/src/theme/tomorrow-night.css
+mdBook-0.4.40/src/utils/
+mdBook-0.4.40/src/utils/fs.rs
+mdBook-0.4.40/src/utils/mod.rs
+mdBook-0.4.40/src/utils/string.rs
+mdBook-0.4.40/src/utils/toml_ext.rs
+mdBook-0.4.40/test_book/
+mdBook-0.4.40/test_book/book.toml
+mdBook-0.4.40/test_book/src/
+mdBook-0.4.40/test_book/src/README.md
+mdBook-0.4.40/test_book/src/SUMMARY.md
+mdBook-0.4.40/test_book/src/individual/
+mdBook-0.4.40/test_book/src/individual/README.md
+mdBook-0.4.40/test_book/src/individual/blockquote.md
+mdBook-0.4.40/test_book/src/individual/code.md
+mdBook-0.4.40/test_book/src/individual/emphasis.md
+mdBook-0.4.40/test_book/src/individual/heading.md
+mdBook-0.4.40/test_book/src/individual/image.md
+mdBook-0.4.40/test_book/src/individual/linebreak.md
+mdBook-0.4.40/test_book/src/individual/link_hr.md
+mdBook-0.4.40/test_book/src/individual/list.md
+mdBook-0.4.40/test_book/src/individual/mathjax.md
+mdBook-0.4.40/test_book/src/individual/mixed.md
+mdBook-0.4.40/test_book/src/individual/paragraph.md
+mdBook-0.4.40/test_book/src/individual/strikethrough.md
+mdBook-0.4.40/test_book/src/individual/table.md
+mdBook-0.4.40/test_book/src/individual/task.md
+mdBook-0.4.40/test_book/src/languages/
+mdBook-0.4.40/test_book/src/languages/README.md
+mdBook-0.4.40/test_book/src/languages/highlight.md
+mdBook-0.4.40/test_book/src/prefix.md
+mdBook-0.4.40/test_book/src/rust/
+mdBook-0.4.40/test_book/src/rust/README.md
+mdBook-0.4.40/test_book/src/rust/rust_codeblock.md
+mdBook-0.4.40/test_book/src/suffix.md
+mdBook-0.4.40/tests/
+mdBook-0.4.40/tests/alternative_backends.rs
+mdBook-0.4.40/tests/build_process.rs
+mdBook-0.4.40/tests/cli/
+mdBook-0.4.40/tests/cli/build.rs
+mdBook-0.4.40/tests/cli/cmd.rs
+mdBook-0.4.40/tests/cli/init.rs
+mdBook-0.4.40/tests/cli/mod.rs
+mdBook-0.4.40/tests/cli/test.rs
+mdBook-0.4.40/tests/cli_tests.rs
+mdBook-0.4.40/tests/custom_preprocessors.rs
+mdBook-0.4.40/tests/dummy_book/
+mdBook-0.4.40/tests/dummy_book/index_html_test/
+mdBook-0.4.40/tests/dummy_book/index_html_test/SUMMARY.md
+mdBook-0.4.40/tests/dummy_book/index_html_test/chapter_1.md
+mdBook-0.4.40/tests/dummy_book/mod.rs
+mdBook-0.4.40/tests/dummy_book/src/
+mdBook-0.4.40/tests/dummy_book/src/README.md
+mdBook-0.4.40/tests/dummy_book/src/SUMMARY.md
+mdBook-0.4.40/tests/dummy_book/src/conclusion.md
+mdBook-0.4.40/tests/dummy_book/src/example.rs
+mdBook-0.4.40/tests/dummy_book/src/first/
+mdBook-0.4.40/tests/dummy_book/src/first/duplicate-headers.md
+mdBook-0.4.40/tests/dummy_book/src/first/heading-attributes.md
+mdBook-0.4.40/tests/dummy_book/src/first/includes.md
+mdBook-0.4.40/tests/dummy_book/src/first/index.md
+mdBook-0.4.40/tests/dummy_book/src/first/markdown.md
+mdBook-0.4.40/tests/dummy_book/src/first/nested-test-with-anchors.rs
+mdBook-0.4.40/tests/dummy_book/src/first/nested-test.rs
+mdBook-0.4.40/tests/dummy_book/src/first/nested.md
+mdBook-0.4.40/tests/dummy_book/src/first/no-headers.md
+mdBook-0.4.40/tests/dummy_book/src/first/partially-included-test-with-anchors.rs
+mdBook-0.4.40/tests/dummy_book/src/first/partially-included-test.rs
+mdBook-0.4.40/tests/dummy_book/src/first/recursive.md
+mdBook-0.4.40/tests/dummy_book/src/first/unicode.md
+mdBook-0.4.40/tests/dummy_book/src/intro.md
+mdBook-0.4.40/tests/dummy_book/src/second.md
+mdBook-0.4.40/tests/dummy_book/src/second/
+mdBook-0.4.40/tests/dummy_book/src/second/nested.md
+mdBook-0.4.40/tests/dummy_book/src2/
+mdBook-0.4.40/tests/dummy_book/src2/README.md
+mdBook-0.4.40/tests/dummy_book/src2/SUMMARY.md
+mdBook-0.4.40/tests/dummy_book/src2/first/
+mdBook-0.4.40/tests/dummy_book/src2/first/README.md
+mdBook-0.4.40/tests/dummy_book/src2/second/
+mdBook-0.4.40/tests/dummy_book/src2/second/README.md
+mdBook-0.4.40/tests/dummy_book/src2/second/index.md
+mdBook-0.4.40/tests/dummy_book/summary-formatting/
+mdBook-0.4.40/tests/dummy_book/summary-formatting/SUMMARY.md
+mdBook-0.4.40/tests/init.rs
+mdBook-0.4.40/tests/parse_existing_summary_files.rs
+mdBook-0.4.40/tests/rendered_output.rs
+mdBook-0.4.40/tests/searchindex_fixture.json
+mdBook-0.4.40/tests/summary_md_files/
+mdBook-0.4.40/tests/summary_md_files/example_book.md
+mdBook-0.4.40/tests/summary_md_files/rust_by_example.md
+mdBook-0.4.40/tests/summary_md_files/rust_ffi_guide.md
+mdBook-0.4.40/tests/summary_md_files/the_book-2nd_edition.md
+mdBook-0.4.40/tests/testing.rs
+mdBook-0.4.40/triagebot.toml
+/home/omen/GITHUB/One4All_SlackBuild/mdbook/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+   Compiling proc-macro2 v1.0.82
+   Compiling unicode-ident v1.0.12
+   Compiling libc v0.2.154
+   Compiling version_check v0.9.4
+   Compiling autocfg v1.3.0
+   Compiling cfg-if v1.0.0
+   Compiling log v0.4.21
+   Compiling itoa v1.0.11
+   Compiling thiserror v1.0.60
+   Compiling memchr v2.7.2
+   Compiling bytes v1.6.0
+   Compiling serde v1.0.201
+   Compiling ppv-lite86 v0.2.17
+   Compiling siphasher v0.3.11
+   Compiling typenum v1.17.0
+   Compiling fnv v1.0.7
+   Compiling once_cell v1.19.0
+   Compiling regex-syntax v0.8.3
+   Compiling pin-project-lite v0.2.14
+   Compiling tinyvec_macros v0.1.1
+   Compiling crossbeam-utils v0.8.19
+   Compiling tinyvec v1.6.0
+   Compiling utf-8 v0.7.6
+   Compiling percent-encoding v2.3.1
+   Compiling phf_shared v0.11.2
+   Compiling phf_shared v0.10.0
+   Compiling bitflags v2.5.0
+   Compiling futures-core v0.3.30
+   Compiling futures-sink v0.3.30
+   Compiling parking_lot_core v0.9.10
+   Compiling rustix v0.38.34
+   Compiling form_urlencoded v1.2.1
+   Compiling scopeguard v1.2.0
+   Compiling smallvec v1.13.2
+   Compiling new_debug_unreachable v1.0.6
+   Compiling linux-raw-sys v0.4.13
+   Compiling unicode-bidi v0.3.15
+   Compiling httparse v1.8.0
+   Compiling lock_api v0.4.12
+   Compiling slab v0.4.9
+   Compiling generic-array v0.14.7
+   Compiling unicase v2.7.0
+   Compiling utf8parse v0.2.1
+   Compiling futures-task v0.3.30
+   Compiling anstyle-parse v0.2.4
+   Compiling serde_json v1.0.117
+   Compiling is_terminal_polyfill v1.70.0
+   Compiling http v0.2.12
+   Compiling ryu v1.0.18
+   Compiling ucd-trie v0.1.6
+   Compiling cpufeatures v0.2.12
+   Compiling colorchoice v1.0.1
+   Compiling anstyle v1.0.7
+   Compiling cc v1.0.97
+   Compiling quote v1.0.36
+   Compiling anstyle-query v1.0.3
+   Compiling aho-corasick v1.1.3
+   Compiling pkg-config v0.3.30
+   Compiling syn v2.0.63
+   Compiling getrandom v0.2.15
+   Compiling mac v0.1.1
+   Compiling pin-utils v0.1.0
+   Compiling futf v0.1.5
+   Compiling anstream v0.6.14
+   Compiling rand_core v0.6.4
+   Compiling tracing-core v0.1.32
+   Compiling equivalent v1.0.1
+   Compiling rand_chacha v0.3.1
+   Compiling mio v0.8.11
+   Compiling socket2 v0.5.7
+   Compiling num_cpus v1.16.0
+   Compiling unicode-normalization v0.1.23
+   Compiling rand v0.8.5
+   Compiling parking_lot v0.12.2
+   Compiling precomputed-hash v0.1.1
+   Compiling hashbrown v0.14.5
+   Compiling same-file v1.0.6
+   Compiling tracing v0.1.40
+   Compiling idna v0.5.0
+   Compiling walkdir v2.5.0
+   Compiling libdbus-sys v0.2.5
+   Compiling crypto-common v0.1.6
+   Compiling block-buffer v0.10.4
+   Compiling phf v0.11.2
+   Compiling digest v0.10.7
+   Compiling url v2.5.0
+   Compiling inotify-sys v0.1.5
+   Compiling mime_guess v2.0.4
+   Compiling sha1 v0.10.6
+   Compiling phf_generator v0.11.2
+   Compiling phf_generator v0.10.0
+   Compiling phf_codegen v0.11.2
+   Compiling string_cache_codegen v0.5.2
+   Compiling indexmap v2.2.6
+   Compiling tendril v0.4.3
+   Compiling http v1.1.0
+   Compiling regex-automata v0.4.6
+   Compiling num-traits v0.2.19
+   Compiling data-encoding v2.6.0
+   Compiling httpdate v1.0.3
+   Compiling clap_lex v0.7.0
+   Compiling strsim v0.11.1
+   Compiling mime v0.3.17
+   Compiling markup5ever v0.12.1
+   Compiling try-lock v0.2.5
+   Compiling byteorder v1.5.0
+   Compiling bitflags v1.3.2
+   Compiling inotify v0.9.6
+   Compiling want v0.3.1
+   Compiling terminal_size v0.3.0
+   Compiling clap_builder v4.5.2
+   Compiling http-body v0.4.6
+   Compiling headers-core v0.2.0
+   Compiling filetime v0.2.23
+   Compiling crossbeam-channel v0.5.12
+   Compiling crossbeam-epoch v0.9.18
+   Compiling futures-channel v0.3.30
+   Compiling pulldown-cmark v0.10.3
+   Compiling base64 v0.21.7
+   Compiling tower-service v0.3.2
+   Compiling anyhow v1.0.83
+   Compiling headers v0.3.9
+   Compiling notify v6.1.1
+   Compiling crossbeam-deque v0.8.5
+   Compiling pulldown-cmark-escape v0.10.1
+   Compiling scoped-tls v1.0.1
+   Compiling iana-time-zone v0.1.60
+   Compiling fastrand v2.1.0
+   Compiling maplit v1.0.2
+   Compiling humantime v2.1.0
+   Compiling notify-debouncer-mini v0.4.1
+   Compiling chrono v0.4.38
+   Compiling tempfile v3.10.1
+   Compiling topological-sort v0.2.2
+   Compiling shlex v1.3.0
+   Compiling pathdiff v0.2.1
+   Compiling regex v1.10.4
+   Compiling bstr v1.9.1
+   Compiling env_filter v0.1.0
+   Compiling clap v4.5.4
+   Compiling globset v0.4.14
+   Compiling serde_derive v1.0.201
+   Compiling thiserror-impl v1.0.60
+   Compiling tokio-macros v2.2.0
+   Compiling futures-macro v0.3.30
+   Compiling html5ever v0.27.0
+   Compiling pin-project-internal v1.1.5
+   Compiling ignore v0.4.22
+   Compiling clap_complete v4.5.2
+   Compiling tokio v1.37.0
+   Compiling env_logger v0.11.3
+   Compiling futures-util v0.3.30
+   Compiling pest v2.7.10
+   Compiling tungstenite v0.21.0
+   Compiling pin-project v1.1.5
+   Compiling pest_meta v2.7.10
+   Compiling pest_generator v2.7.10
+   Compiling pest_derive v2.7.10
+   Compiling dbus v0.9.7
+   Compiling tokio-util v0.7.11
+   Compiling tokio-tungstenite v0.21.0
+   Compiling h2 v0.3.26
+   Compiling string_cache v0.8.7
+   Compiling serde_urlencoded v0.7.1
+   Compiling toml v0.5.11
+   Compiling opener v0.7.0
+   Compiling elasticlunr-rs v3.0.2
+   Compiling handlebars v5.1.2
+   Compiling ammonia v4.0.0
+   Compiling hyper v0.14.28
+   Compiling warp v0.3.7
+   Compiling mdbook v0.4.40 (/home/omen/GITHUB/One4All_SlackBuild/mdbook/work/mdBook-0.4.40)
+    Finished `release` profile [optimized] target(s) in 33.30s
+   Compiling proc-macro2 v1.0.82
+   Compiling unicode-ident v1.0.12
+   Compiling cfg-if v1.0.0
+   Compiling libc v0.2.154
+   Compiling autocfg v1.3.0
+   Compiling log v0.4.21
+   Compiling ppv-lite86 v0.2.17
+   Compiling siphasher v0.3.11
+   Compiling once_cell v1.19.0
+   Compiling version_check v0.9.4
+   Compiling memchr v2.7.2
+   Compiling serde v1.0.201
+   Compiling itoa v1.0.11
+   Compiling utf-8 v0.7.6
+   Compiling parking_lot_core v0.9.10
+   Compiling bytes v1.6.0
+   Compiling regex-syntax v0.8.3
+   Compiling smallvec v1.13.2
+   Compiling scopeguard v1.2.0
+   Compiling new_debug_unreachable v1.0.6
+   Compiling typenum v1.17.0
+   Compiling thiserror v1.0.60
+   Compiling fnv v1.0.7
+   Compiling mac v0.1.1
+   Compiling futf v0.1.5
+   Compiling pin-project-lite v0.2.14
+   Compiling precomputed-hash v0.1.1
+   Compiling crossbeam-utils v0.8.19
+   Compiling tinyvec_macros v0.1.1
+   Compiling futures-sink v0.3.30
+   Compiling bitflags v2.5.0
+   Compiling futures-core v0.3.30
+   Compiling percent-encoding v2.3.1
+   Compiling phf_shared v0.10.0
+   Compiling phf_shared v0.11.2
+   Compiling tinyvec v1.6.0
+   Compiling anstyle v1.0.7
+   Compiling tendril v0.4.3
+   Compiling rustix v0.38.34
+   Compiling form_urlencoded v1.2.1
+   Compiling httparse v1.8.0
+   Compiling utf8parse v0.2.1
+   Compiling linux-raw-sys v0.4.13
+   Compiling unicode-bidi v0.3.15
+   Compiling lock_api v0.4.12
+   Compiling slab v0.4.9
+   Compiling generic-array v0.14.7
+   Compiling unicase v2.7.0
+   Compiling num-traits v0.2.19
+   Compiling anstyle-parse v0.2.4
+   Compiling cc v1.0.97
+   Compiling aho-corasick v1.1.3
+   Compiling ucd-trie v0.1.6
+   Compiling futures-task v0.3.30
+   Compiling http v0.2.12
+   Compiling cpufeatures v0.2.12
+   Compiling syn v1.0.109
+   Compiling quote v1.0.36
+   Compiling ryu v1.0.18
+   Compiling colorchoice v1.0.1
+   Compiling pkg-config v0.3.30
+   Compiling anstyle-query v1.0.3
+   Compiling is_terminal_polyfill v1.70.0
+   Compiling pin-utils v0.1.0
+   Compiling serde_json v1.0.117
+   Compiling syn v2.0.63
+   Compiling mio v0.8.11
+   Compiling socket2 v0.5.7
+   Compiling getrandom v0.2.15
+   Compiling num_cpus v1.16.0
+   Compiling anstream v0.6.14
+   Compiling parking_lot v0.12.2
+   Compiling rand_core v0.6.4
+   Compiling unicode-normalization v0.1.23
+   Compiling rand_chacha v0.3.1
+   Compiling tracing-core v0.1.32
+   Compiling same-file v1.0.6
+   Compiling hashbrown v0.14.5
+   Compiling equivalent v1.0.1
+   Compiling phf v0.11.2
+   Compiling walkdir v2.5.0
+   Compiling rand v0.8.5
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.6
+   Compiling idna v0.5.0
+   Compiling digest v0.10.7
+   Compiling inotify-sys v0.1.5
+   Compiling mime_guess v2.0.4
+   Compiling http v1.1.0
+   Compiling phf v0.10.1
+   Compiling httpdate v1.0.3
+   Compiling sha1 v0.10.6
+   Compiling libdbus-sys v0.2.5
+   Compiling tracing v0.1.40
+   Compiling clap_lex v0.7.0
+   Compiling mime v0.3.17
+   Compiling strsim v0.11.1
+   Compiling regex-automata v0.4.6
+   Compiling try-lock v0.2.5
+   Compiling data-encoding v2.6.0
+   Compiling bitflags v1.3.2
+   Compiling byteorder v1.5.0
+   Compiling url v2.5.0
+   Compiling indexmap v2.2.6
+   Compiling inotify v0.9.6
+   Compiling want v0.3.1
+   Compiling headers-core v0.2.0
+   Compiling http-body v0.4.6
+   Compiling crossbeam-epoch v0.9.18
+   Compiling crossbeam-channel v0.5.12
+   Compiling filetime v0.2.23
+   Compiling futures-channel v0.3.30
+   Compiling tower-service v0.3.2
+   Compiling anyhow v1.0.83
+   Compiling pulldown-cmark v0.10.3
+   Compiling base64 v0.21.7
+   Compiling crossbeam-deque v0.8.5
+   Compiling pulldown-cmark-escape v0.10.1
+   Compiling phf_generator v0.10.0
+   Compiling phf_generator v0.11.2
+   Compiling doc-comment v0.3.3
+   Compiling string_cache_codegen v0.5.2
+   Compiling phf_codegen v0.10.0
+   Compiling humantime v2.1.0
+   Compiling phf_codegen v0.11.2
+   Compiling predicates-core v1.0.6
+   Compiling iana-time-zone v0.1.60
+   Compiling headers v0.3.9
+   Compiling scoped-tls v1.0.1
+   Compiling maplit v1.0.2
+   Compiling notify v6.1.1
+   Compiling fastrand v2.1.0
+   Compiling chrono v0.4.38
+   Compiling float-cmp v0.9.0
+   Compiling semver v1.0.23
+   Compiling assert_cmd v2.0.14
+   Compiling difflib v0.4.0
+   Compiling termtree v0.4.1
+   Compiling markup5ever v0.11.0
+   Compiling markup5ever v0.12.1
+   Compiling notify-debouncer-mini v0.4.1
+   Compiling shlex v1.3.0
+   Compiling normalize-line-endings v0.3.0
+   Compiling topological-sort v0.2.2
+   Compiling bit-vec v0.6.3
+   Compiling pathdiff v0.2.1
+   Compiling predicates-tree v1.0.9
+   Compiling terminal_size v0.3.0
+   Compiling tempfile v3.10.1
+   Compiling clap_builder v4.5.2
+   Compiling bit-set v0.5.3
+   Compiling wait-timeout v0.2.0
+   Compiling yansi v0.5.1
+   Compiling diff v0.1.13
+   Compiling pretty_assertions v1.4.0
+   Compiling html5ever v0.26.0
+   Compiling regex v1.10.4
+   Compiling bstr v1.9.1
+   Compiling clap v4.5.4
+   Compiling serde_derive v1.0.201
+   Compiling thiserror-impl v1.0.60
+   Compiling tokio-macros v2.2.0
+   Compiling futures-macro v0.3.30
+   Compiling html5ever v0.27.0
+   Compiling pin-project-internal v1.1.5
+   Compiling clap_complete v4.5.2
+   Compiling env_filter v0.1.0
+   Compiling predicates v3.1.0
+   Compiling env_logger v0.11.3
+   Compiling tokio v1.37.0
+   Compiling globset v0.4.14
+   Compiling futures-util v0.3.30
+   Compiling ignore v0.4.22
+   Compiling pin-project v1.1.5
+   Compiling pest v2.7.10
+   Compiling tungstenite v0.21.0
+   Compiling dbus v0.9.7
+   Compiling pest_meta v2.7.10
+   Compiling pest_generator v2.7.10
+   Compiling opener v0.7.0
+   Compiling pest_derive v2.7.10
+   Compiling tokio-util v0.7.11
+   Compiling tokio-tungstenite v0.21.0
+   Compiling string_cache v0.8.7
+   Compiling serde_urlencoded v0.7.1
+   Compiling toml v0.5.11
+   Compiling h2 v0.3.26
+   Compiling elasticlunr-rs v3.0.2
+   Compiling handlebars v5.1.2
+   Compiling xml5ever v0.17.0
+   Compiling ammonia v4.0.0
+   Compiling markup5ever_rcdom v0.2.0
+   Compiling select v0.6.0
+   Compiling hyper v0.14.28
+   Compiling warp v0.3.7
+   Compiling mdbook v0.4.40 (/home/omen/GITHUB/One4All_SlackBuild/mdbook/work/mdBook-0.4.40)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 29.55s
+     Running unittests src/lib.rs (target/debug/deps/mdbook-e8edf537362c3ed1)
+
+running 143 tests
+test book::book::tests::book_iter_iterates_over_sequential_items ... ok
+test book::book::tests::cant_load_a_nonexistent_chapter ... ok
+test book::book::tests::for_each_mut_visits_all_items ... ok
+test book::book::tests::iterate_over_nested_book_items ... ok
+test book::book::tests::cant_load_chapters_when_the_link_is_a_directory ... ok
+test book::book::tests::cant_load_chapters_with_an_empty_path ... ok
+test book::summary::tests::allow_space_in_link_destination ... ok
+test book::summary::tests::add_space_for_multi_line_chapter_names ... ok
+test book::book::tests::load_recursive_link_with_separators ... ok
+test book::book::tests::load_a_book_with_a_single_chapter ... ok
+test book::book::tests::load_a_single_chapter_with_utf8_bom_from_disk ... ok
+test book::summary::tests::an_empty_link_location_is_a_draft_chapter ... ok
+test book::summary::tests::can_have_a_subheader_between_nested_items ... ok
+test book::summary::tests::convert_markdown_events_to_a_string ... ok
+test book::book::tests::load_a_single_chapter_from_disk ... ok
+test book::summary::tests::keep_numbering_after_separator ... ok
+test book::summary::tests::no_initial_title ... ok
+test book::summary::tests::parse_initial_title ... ok
+test book::summary::tests::parse_a_link ... ok
+test book::summary::tests::parse_a_numbered_chapter ... ok
+test book::summary::tests::parse_nested_numbered_chapters ... ok
+test book::summary::tests::parse_some_prefix_items ... ok
+test book::summary::tests::parse_title_with_styling ... ok
+test book::summary::tests::section_number_has_correct_dotted_representation ... ok
+test book::summary::tests::parse_prefix_items_with_a_separator ... ok
+test book::summary::tests::parse_numbered_chapters_separated_by_comment ... ok
+test book::tests::add_a_random_renderer_to_the_config ... ok
+test book::summary::tests::suffix_items_cannot_be_followed_by_a_list ... ok
+test book::summary::tests::parse_titled_parts ... ok
+test book::tests::add_a_random_renderer_with_custom_command_to_the_config ... ok
+test book::summary::tests::skip_html_comments ... ok
+test book::tests::config_defaults_to_html_renderer_if_empty ... ok
+test book::tests::config_defaults_to_link_and_index_preprocessor_if_not_set ... ok
+test book::tests::can_determine_third_party_preprocessors ... ok
+test book::tests::config_respects_preprocessor_selection ... ok
+test book::tests::use_default_preprocessors_works ... ok
+test book::tests::preprocessor_before_must_be_array ... ok
+test book::tests::preprocessor_order_is_honored ... ok
+test book::tests::dependencies_dont_register_undefined_preprocessors ... ok
+test config::tests::curly_quotes_or_smart_punctuation ... ok
+test book::tests::cyclic_dependencies_are_detected ... ok
+test book::tests::dependencies_dont_register_builtin_preprocessors_if_disabled ... ok
+test config::tests::disable_runnable ... ok
+test book::tests::preprocessor_should_run_falls_back_to_supports_renderer_method ... ok
+test config::tests::edition_2015 ... ok
+test book::tests::preprocessor_after_must_be_array ... ok
+test config::tests::edition_2018 ... ok
+test book::tests::preprocessors_can_provide_their_own_commands ... ok
+test config::tests::load_arbitrary_output_type ... ok
+test config::tests::parse_env_vars ... ok
+test config::tests::invalid_title_type - should panic ... ok
+test config::tests::invalid_rust_edition - should panic ... ok
+test config::tests::can_still_load_the_previous_format ... ok
+test config::tests::edition_2021 ... ok
+test config::tests::file_404_custom ... ok
+test config::tests::invalid_build_dir_type - should panic ... ok
+test config::tests::print_config ... ok
+test config::tests::set_a_config_item ... ok
+test config::tests::invalid_language_type_error - should panic ... ok
+test config::tests::test_text_direction ... ok
+test config::tests::load_a_complex_config_file ... ok
+test config::tests::file_404_default ... ok
+test config::tests::text_direction_rtl ... ok
+test config::tests::text_direction_none ... ok
+test config::tests::text_direction_ltr ... ok
+test config::tests::update_config_using_env_var ... ok
+test config::tests::update_book_title_via_env ... ok
+test preprocess::links::tests::parse_end_only_range ... ok
+test preprocess::links::tests::parse_start_and_end_range ... ok
+test preprocess::links::tests::parse_start_only_range ... ok
+test config::tests::update_config_using_env_var_and_complex_value ... ok
+test preprocess::links::tests::parse_start_with_garbage_interpreted_as_start_only_range ... ok
+test preprocess::links::tests::parse_with_anchor_followed_by_colon ... ok
+test config::tests::mutate_some_stuff ... ok
+test preprocess::links::tests::parse_with_floating_point_interpreted_as_anchor ... ok
+test preprocess::links::tests::parse_with_garbage_after_two_colons_includes_all ... ok
+test preprocess::links::tests::parse_with_more_than_three_colons_ignores_everything_after_third_colon ... ok
+test preprocess::links::tests::parse_with_nothing_after_colon_includes_all ... ok
+test preprocess::links::tests::parse_with_negative_interpreted_as_anchor ... ok
+test preprocess::links::tests::parse_with_one_based_start_becomes_zero_based ... ok
+test preprocess::links::tests::parse_with_one_number_after_colon_only_that_line ... ok
+test preprocess::links::tests::parse_with_two_colons_includes_all ... ok
+test preprocess::links::tests::parse_with_zero_based_start_stays_zero_based_but_is_probably_an_error ... ok
+test preprocess::links::tests::parse_without_colon_includes_all ... ok
+test preprocess::index::tests::file_stem_exactly_matches_readme_case_insensitively ... ok
+test preprocess::links::tests::test_find_links_partial_link ... ok
+test preprocess::links::tests::test_set_chapter_title ... ok
+test preprocess::links::tests::test_find_links_with_no_range_specified ... ok
+test preprocess::links::tests::test_find_links_with_anchor ... ok
+test preprocess::links::tests::test_find_links_with_from_range ... ok
+test preprocess::links::tests::test_find_links_escaped_link ... ok
+test preprocess::links::tests::test_find_links_no_link ... ok
+test preprocess::links::tests::test_find_links_simple_link ... ok
+test preprocess::links::tests::test_find_links_with_line_number ... ok
+test preprocess::links::tests::test_find_links_with_range ... ok
+test preprocess::links::tests::test_find_links_with_to_range ... ok
+test preprocess::links::tests::test_find_links_with_special_characters ... ok
+test preprocess::links::tests::test_find_links_unknown_link_type ... ok
+test preprocess::links::tests::test_find_links_with_full_range ... ok
+test preprocess::links::tests::test_find_playgrounds_with_properties ... ok
+test preprocess::links::tests::test_replace_all_escaped ... ok
+test preprocess::links::tests::test_find_all_link_types ... ok
+test renderer::html_handlebars::hbs_renderer::tests::test_json_direction ... ok
+test preprocess::links::tests::test_find_links_empty_link ... ok
+test utils::string::tests::take_rustdoc_include_lines_test ... ok
+test utils::tests::escaped_brackets ... ok
+test renderer::html_handlebars::hbs_renderer::tests::add_playground_edition2015 ... ok
+test theme::tests::theme_uses_defaults_with_nonexistent_src_dir ... ok
+test renderer::html_handlebars::hbs_renderer::tests::add_playground ... ok
+test utils::string::tests::take_lines_test ... ok
+test theme::tests::favicon_override ... ok
+test utils::tests::html_munging::it_normalizes_ids ... ok
+test renderer::html_handlebars::helpers::navigation::tests::test_last ... ok
+test renderer::html_handlebars::helpers::navigation::tests::test_first ... ok
+test theme::tests::theme_dir_overrides_defaults ... ok
+test renderer::html_handlebars::hbs_renderer::tests::add_playground_edition2021 ... ok
+test utils::tests::render_markdown::it_can_keep_quotes_straight ... ok
+test utils::fs::tests::copy_files_except_ext_test ... ok
+test utils::tests::render_markdown::it_can_make_quotes_curly_except_when_they_are_in_code ... ok
+test utils::tests::render_markdown::it_can_wrap_tables ... ok
+test utils::tests::render_markdown::rust_code_block_properties_with_whitespace_are_passed_as_space_delimited_class ... ok
+test utils::tests::render_markdown::rust_code_block_without_properties_has_proper_html_class ... ok
+test utils::tests::render_markdown::rust_code_block_properties_are_passed_as_space_delimited_class ... ok
+test utils::tests::render_markdown::whitespace_outside_of_codeblock_header_is_preserved ... ok
+test renderer::html_handlebars::helpers::navigation::tests::test_next_previous ... ok
+test renderer::html_handlebars::hbs_renderer::tests::add_playground_edition2018 ... ok
+test utils::toml_ext::tests::delete_a_nested_item ... ok
+test utils::toml_ext::tests::delete_a_top_level_item ... ok
+test utils::toml_ext::tests::insert_item_at_top_level ... ok
+test utils::tests::render_markdown::preserves_external_links ... ok
+test utils::toml_ext::tests::insert_nested_item ... ok
+test utils::toml_ext::tests::read_nested_item ... ok
+test utils::toml_ext::tests::read_simple_table ... ok
+test utils::tests::id_from_content::it_generates_anchors_from_non_ascii_initial ... ok
+test utils::tests::html_munging::it_generates_unique_ids_from_content ... ok
+test utils::tests::id_from_content::it_generates_anchors ... ok
+test utils::tests::render_markdown::it_can_adjust_markdown_links ... ok
+test renderer::html_handlebars::hbs_renderer::tests::hide_lines_language_rust ... ok
+test renderer::html_handlebars::hbs_renderer::tests::original_build_header_links ... ok
+test preprocess::cmd::tests::round_trip_write_and_parse_input ... ok
+test utils::string::tests::take_anchored_lines_test ... ok
+test renderer::html_handlebars::hbs_renderer::tests::hide_lines_language_other ... ok
+test utils::string::tests::take_rustdoc_include_anchored_lines_test ... ok
+
+test result: ok. 143 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running unittests src/main.rs (target/debug/deps/mdbook-72b418c43644d73c)
+
+running 7 tests
+test verify_app ... ok
+test cmd::watch::native::tests::test_filter_ignored_files ... ok
+test cmd::watch::native::tests::filter_ignored_files_should_handle_parent_dir ... ok
+test cmd::watch::poller::tests::test_ignore ... ok
+test cmd::watch::poller::tests::test_ignore_canonical ... ok
+test cmd::watch::poller::tests::test_scan_extra_watch ... ok
+test cmd::watch::poller::tests::test_ignore_in_parent ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/alternative_backends.rs (target/debug/deps/alternative_backends-8ae8cbfd5f6c1e78)
+
+running 7 tests
+test missing_optional_backends_are_not_fatal ... ok
+test missing_backends_are_fatal ... ok
+test failing_alternate_backend ... ok
+test passing_alternate_backend ... ok
+Hello World!
+test alternate_backend_with_arguments ... ok
+test backends_receive_render_context_via_stdin ... ok
+test relative_command_path ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+
+     Running tests/build_process.rs (target/debug/deps/build_process-59834458ef0e8bf7)
+
+running 2 tests
+test mdbook_runs_preprocessors ... ok
+test mdbook_runs_renderers ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests/cli_tests.rs (target/debug/deps/cli_tests-998822b907164631)
+
+running 4 tests
+test cli::init::base_mdbook_init_can_skip_confirmation_prompts ... ok
+test cli::build::mdbook_cli_dummy_book_generates_index_html ... ok
+test cli::test::mdbook_cli_detects_book_with_failing_tests ... ok
+test cli::test::mdbook_cli_can_correctly_test_a_passing_book ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.33s
+
+     Running tests/custom_preprocessors.rs (target/debug/deps/custom_preprocessors-9264580e7daf505b)
+
+running 4 tests
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on build directory
+    Blocking waiting for file lock on build directory
+    Blocking waiting for file lock on build directory
+   Compiling mdbook v0.4.40 (/home/omen/GITHUB/One4All_SlackBuild/mdbook/work/mdBook-0.4.40)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.13s
+     Running `target/debug/examples/nop-preprocessor supports whatever`
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.13s
+test example_supports_whatever ... ok
+     Running `target/debug/examples/nop-preprocessor supports html`
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.16s
+     Running `target/debug/examples/nop-preprocessor supports not-supported`
+test example_doesnt_support_not_supported ... ok
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.15s
+     Running `target/debug/examples/nop-preprocessor supports html`
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
+     Running `target/debug/examples/nop-preprocessor`
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
+     Running `target/debug/examples/nop-preprocessor`
+Boom!!1!
+test ask_the_preprocessor_to_blow_up ... ok
+test process_the_dummy_book ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.35s
+
+     Running tests/init.rs (target/debug/deps/init-bf50047888757543)
+
+running 5 tests
+test run_mdbook_init_with_custom_book_and_src_locations ... ok
+test run_mdbook_init_should_create_content_from_summary ... ok
+test base_mdbook_init_should_create_default_content ... ok
+test copy_theme ... ok
+test book_toml_isnt_required ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/parse_existing_summary_files.rs (target/debug/deps/parse_existing_summary_files-58eb32683f8daadd)
+
+running 4 tests
+test rust_ffi_guide ... ok
+test example_book ... ok
+test the_book_2nd_edition ... ok
+test rust_by_example ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/rendered_output.rs (target/debug/deps/rendered_output-66b3d98d31051fa8)
+
+running 35 tests
+test create_missing_file_with_config ... ok
+test chapter_files_were_rendered_to_html ... ok
+test failure_on_missing_file ... ok
+test book_with_a_reserved_filename_does_not_build ... ok
+test by_default_mdbook_use_index_preprocessor_to_convert_readme_to_index ... ok
+test edit_url_has_configured_src_dir_edit_url ... ok
+test first_chapter_is_copied_as_index_even_if_not_first_elem ... ok
+test able_to_include_files_in_chapters ... ok
+test able_to_include_playground_files_in_chapters ... ok
+test by_default_mdbook_generates_rendered_content_in_the_book_directory ... ok
+test anchors_include_text_between_but_not_anchor_comments ... ok
+test make_sure_bottom_level_files_contain_links_to_chapters ... ok
+test check_second_toc_level ... ok
+test chapter_content_appears_in_rendered_document ... ok
+test check_correct_relative_links_in_print_page ... ok
+test build_the_dummy_book ... ok
+test custom_header_attributes ... ok
+test edit_url_has_default_src_dir_edit_url ... ok
+test check_correct_cross_links_in_nested_dir ... ok
+test check_first_toc_level ... ok
+test check_spacers ... ok
+test no_index_for_print_html ... ok
+test summary_with_markdown_formatting ... ok
+test redirects_are_emitted_correctly ... ok
+test markdown_options ... ok
+test recursive_includes_are_capped ... ok
+test failure_on_missing_theme_directory ... ok
+test search::book_creates_reasonable_search_index ... ok
+test rustdoc_include_hides_the_unspecified_part_of_the_file ... ok
+test search::search_index_hasnt_changed_accidentally ... ok
+test rendered_code_does_not_have_playground_stuff_in_html_when_disabled_in_config ... ok
+test rendered_code_has_playground_stuff ... ok
+test custom_fonts ... ok
+test example_book_can_build ... ok
+test theme_dir_overrides_work_correctly ... ok
+
+test result: ok. 35 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.68s
+
+     Running tests/testing.rs (target/debug/deps/testing-13ea7fe1242df13e)
+
+running 4 tests
+test mdbook_test_chapter_not_found ... ok
+test mdbook_test_chapter ... ok
+test mdbook_detects_book_with_failing_tests ... ok
+test mdbook_can_correctly_test_a_passing_book ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+
+     Running unittests examples/nop-preprocessor.rs (target/debug/examples/nop_preprocessor-eaf7e0f2392c3717)
+
+running 1 test
+test nop_lib::test::nop_preprocessor_run ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests mdbook
+
+running 5 tests
+test src/lib.rs - (line 50) - compile ... ok
+test src/book/mod.rs - book::MDBook::iter (line 149) - compile ... ok
+test src/lib.rs - (line 30) - compile ... ok
+test src/utils/fs.rs - utils::fs::path_to_root (line 28) ... ok
+test src/config.rs - config (line 11) ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.53s
+
+./mdbook.SlackBuild: line 323: `$DOCS': not a valid identifier
+./mdbook.SlackBuild: line 323: `$DOCS_DIR': not a valid identifier
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/mdbook/binary-mdbook-0.4.40/mdbook-0.4.40-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/mdbook
+usr/doc/
+usr/doc/mdbook-0.4.40/
+usr/doc/mdbook-0.4.40/README.md
+usr/doc/mdbook-0.4.40/mdbook.SlackBuild
+usr/share/
+usr/share/bash-completion/
+usr/share/bash-completion/completions/
+usr/share/bash-completion/completions/mdbook
+usr/share/fish/
+usr/share/fish/vendor_completions.d/
+usr/share/fish/vendor_completions.d/mdbook.fish
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/mdbook/binary-mdbook-0.4.40/mdbook-0.4.40-x86_64-1_rtz.tlz created.
+
+Build process completed in 1 minutes and 16 seconds.
