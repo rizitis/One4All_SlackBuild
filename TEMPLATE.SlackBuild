@@ -38,7 +38,7 @@ start_time=$(date +%s)
    mkdesc="$(which slackdesc)" || true
    Homepage="https://git.gnunet.org/gnunet-gtk"
             #|--------------------------------------|#
-   SortDesc="(GTK 3 interfaces)"
+   SortDesc="GTK 3 interfaces"
             #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
     LongDesc="The GTK 3 interfaces for gnunet the secure peer-to-peer networking"
 # If a README or README.md dont exist in CWD then SortDec discribtion, if not empty, will be added in a README file.
