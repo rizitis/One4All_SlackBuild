@@ -1,0 +1,11 @@
+mdbook-mermaid: mdbook-mermaid ((for mdbook to render mermaid diagrams))
+mdbook-mermaid:
+mdbook-mermaid: A preprocessor for mdbook to add mermaid.js support to render
+mdbook-mermaid: mermaid diagrams
+mdbook-mermaid:
+mdbook-mermaid:
+mdbook-mermaid:
+mdbook-mermaid:
+mdbook-mermaid:
+mdbook-mermaid:
+mdbook-mermaid: github.com/badboy/mdbook-mermaid
