@@ -1,0 +1,11 @@
+devbox: devbox (install development environments)
+devbox:
+devbox: Devbox is a command-line tool that lets you easily create isolated
+devbox: shells for development. You start by defining the list of packages
+devbox: required by your development environment, and devbox uses that
+devbox: definition to create an isolated environment just for your
+devbox: application.
+devbox:
+devbox:
+devbox:
+devbox: https://github.com/jetify-com/devbox

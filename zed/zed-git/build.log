@@ -2,602 +2,685 @@ Log file is located at /home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/build.lo
 Starting build process...
 Running script as non-root user...
 Cloning into 'zed'...
-   Compiling proc-macro2 v1.0.86
+    Updating crates.io index
+    Updating git repository `https://github.com/tree-sitter-grammars/tree-sitter-markdown`
+    Updating git repository `https://github.com/microsoft/python-environment-tools.git`
+    Updating git repository `https://github.com/zed-industries/reqwest.git`
+    Updating git repository `https://github.com/zed-industries/async-stripe`
+ Downloading crates ...
+  Downloaded cranelift-codegen-shared v0.111.1
+  Downloaded wasmtime-versioned-export-macros v24.0.1
+  Downloaded wasmtime-component-util v24.0.1
+  Downloaded is-terminal v0.4.13
+  Downloaded sync_wrapper v1.0.1
+  Downloaded wasmtime-slab v24.0.1
+  Downloaded http-body v1.0.1
+  Downloaded cranelift-bitset v0.111.1
+  Downloaded wasmtime-jit-icache-coherence v24.0.1
+  Downloaded clap v4.5.20
+  Downloaded wasmtime-asm-macros v24.0.1
+  Downloaded cranelift-native v0.111.1
+  Downloaded ec4rs v1.1.1
+  Downloaded thiserror-impl v1.0.64
+  Downloaded wiggle-macro v24.0.1
+  Downloaded arraydeque v0.5.1
+  Downloaded cranelift-control v0.111.1
+  Downloaded rustc-hash v2.0.0
+  Downloaded parking v2.2.1
+  Downloaded http-body-util v0.1.2
+  Downloaded wiggle-generate v24.0.1
+  Downloaded wiggle v24.0.1
+  Downloaded tree-sitter-diff v0.1.0
+  Downloaded sqlformat v0.2.6
+  Downloaded wasmtime-winch v24.0.1
+  Downloaded wasmtime-types v24.0.1
+  Downloaded wasmtime-fiber v24.0.1
+  Downloaded quinn-udp v0.5.5
+  Downloaded wasmtime-wit-bindgen v24.0.1
+  Downloaded hyper-rustls v0.27.3
+  Downloaded cranelift-entity v0.111.1
+  Downloaded thiserror v1.0.64
+  Downloaded hashlink v0.8.4
+  Downloaded tokio-rustls v0.26.0
+  Downloaded proc-macro2 v1.0.87
+  Downloaded cranelift-bforest v0.111.1
+  Downloaded async-tungstenite v0.24.0
+  Downloaded cranelift-frontend v0.111.1
+  Downloaded anyhow v1.0.91
+  Downloaded bytes v1.7.2
+  Downloaded cranelift-isle v0.111.1
+  Downloaded hyper-util v0.1.9
+  Downloaded tungstenite v0.21.0
+  Downloaded cranelift-wasm v0.111.1
+  Downloaded allocator-api2 v0.2.18
+  Downloaded cranelift-codegen-meta v0.111.1
+  Downloaded yansi v1.0.1
+  Downloaded pretty_assertions v1.4.1
+  Downloaded ashpd v0.9.2
+  Downloaded wasmtime-cranelift v24.0.1
+  Downloaded quinn v0.11.5
+  Downloaded winch-codegen v0.22.1
+  Downloaded wasmtime-component-macro v24.0.1
+  Downloaded async-compression v0.4.13
+  Downloaded tokio-util v0.7.12
+  Downloaded emojis v0.6.4
+  Downloaded wasmtime-wasi v24.0.1
+  Downloaded yaml-rust2 v0.8.1
+  Downloaded ipc-channel v0.18.3
+  Downloaded clap_builder v4.5.20
+  Downloaded hyper v1.4.1
+  Downloaded wasmtime-environ v24.0.1
+  Downloaded h2 v0.4.6
+  Downloaded quinn-proto v0.11.8
+  Downloaded rustls-webpki v0.102.8
+  Downloaded tree-sitter-c v0.23.1
+  Downloaded rustls v0.23.13
+  Downloaded wasmtime v24.0.1
+  Downloaded tree-sitter-cpp v0.23.1
+  Downloaded cranelift-codegen v0.111.1
+   Compiling proc-macro2 v1.0.87
    Compiling unicode-ident v1.0.12
    Compiling serde v1.0.209
    Compiling libc v0.2.159
    Compiling cfg-if v1.0.0
    Compiling typeid v1.0.2
    Compiling version_check v0.9.5
-   Compiling shlex v1.3.0
    Compiling autocfg v1.3.0
    Compiling once_cell v1.19.0
+   Compiling shlex v1.3.0
    Compiling memchr v2.7.4
    Compiling itoa v1.0.11
    Compiling byteorder v1.5.0
-   Compiling pin-project-lite v0.2.14
    Compiling crunchy v0.2.2
    Compiling tiny-keccak v2.0.2
-   Compiling anyhow v1.0.89
-   Compiling pkg-config v0.3.30
-   Compiling futures-core v0.3.30
-   Compiling crossbeam-utils v0.8.20
+   Compiling allocator-api2 v0.2.18
    Compiling equivalent v1.0.1
-   Compiling rustix v0.38.35
-   Compiling futures-io v0.3.30
-   Compiling linux-raw-sys v0.4.14
+   Compiling pin-project-lite v0.2.14
    Compiling typenum v1.17.0
-   Compiling parking v2.2.0
-   Compiling thiserror v1.0.63
-   Compiling tracing-core v0.1.32
-   Compiling libm v0.2.8
-   Compiling futures-sink v0.3.30
-   Compiling fastrand v2.1.1
-   Compiling ahash v0.8.11
-   Compiling slab v0.4.9
-   Compiling generic-array v0.14.7
-   Compiling lock_api v0.4.12
+   Compiling futures-core v0.3.30
+   Compiling anyhow v1.0.91
    Compiling scopeguard v1.2.0
+   Compiling crossbeam-utils v0.8.20
+   Compiling futures-io v0.3.30
+   Compiling rustix v0.38.35
+   Compiling ryu v1.0.18
+   Compiling linux-raw-sys v0.4.14
+   Compiling subtle v2.6.1
+   Compiling serde_json v1.0.128
+   Compiling ahash v0.8.11
+   Compiling generic-array v0.14.7
+   Compiling regex-syntax v0.8.4
+   Compiling thiserror v1.0.64
+   Compiling const-oid v0.9.6
+   Compiling pkg-config v0.3.30
+   Compiling lock_api v0.4.12
+   Compiling slab v0.4.9
+   Compiling parking v2.2.1
+   Compiling futures-sink v0.3.30
+   Compiling libm v0.2.8
    Compiling pin-utils v0.1.0
+   Compiling cpufeatures v0.2.13
    Compiling futures-channel v0.3.30
+   Compiling tracing-core v0.1.32
+   Compiling termcolor v1.4.1
    Compiling futures-task v0.3.30
-   Compiling tinyvec_macros v0.1.1
+   Compiling fastrand v2.1.1
+   Compiling atomic-waker v1.1.2
+   Compiling aho-corasick v1.1.3
    Compiling num-traits v0.2.19
+   Compiling bytes v1.7.2
+   Compiling spin v0.9.8
+   Compiling tinyvec_macros v0.1.1
    Compiling syn v1.0.109
    Compiling tinyvec v1.8.0
    Compiling futures-lite v2.3.0
-   Compiling async-task v4.7.1
-   Compiling regex-syntax v0.8.4
-   Compiling aho-corasick v1.1.3
    Compiling quote v1.0.37
    Compiling concurrent-queue v2.5.0
-   Compiling io-lifetimes v1.0.11
-   Compiling polling v2.8.0
+   Compiling lazy_static v1.5.0
+   Compiling rustc-hash v1.1.0
    Compiling syn v2.0.76
    Compiling event-listener v5.3.1
-   Compiling atomic-waker v1.1.2
-   Compiling ryu v1.0.18
-   Compiling const-oid v0.9.6
-   Compiling piper v0.2.4
-   Compiling bytes v1.7.1
-   Compiling rustix v0.37.27
+   Compiling async-task v4.7.1
+   Compiling io-lifetimes v1.0.11
    Compiling jobserver v0.1.32
    Compiling getrandom v0.2.15
+   Compiling piper v0.2.4
+   Compiling either v1.13.0
    Compiling event-listener-strategy v0.5.2
-   Compiling event-listener v2.5.3
-   Compiling rustc-hash v1.1.0
+   Compiling cc v1.1.15
+   Compiling const-random-macro v0.1.16
+   Compiling percent-encoding v2.3.1
    Compiling async-channel v2.3.1
-   Compiling serde_json v1.0.127
+   Compiling unicode-bidi v0.3.15
+   Compiling form_urlencoded v1.2.1
+   Compiling unicode-normalization v0.1.23
+   Compiling rand_core v0.6.4
+   Compiling blocking v1.6.1
+   Compiling polling v2.8.0
+   Compiling rustix v0.37.27
+   Compiling event-listener v2.5.3
+   Compiling parking_lot_core v0.9.10
+   Compiling const-random v0.1.18
    Compiling async-io v1.13.0
+   Compiling bitflags v1.3.2
    Compiling waker-fn v1.2.0
    Compiling fastrand v1.9.0
-   Compiling const-random-macro v0.1.16
-   Compiling bitflags v1.3.2
-   Compiling cc v1.1.15
-   Compiling subtle v2.6.1
-   Compiling unicode-bidi v0.3.15
-   Compiling futures-lite v1.13.0
-   Compiling percent-encoding v2.3.1
-   Compiling async-lock v3.4.0
-   Compiling async-lock v2.8.0
-   Compiling const-random v0.1.18
-   Compiling form_urlencoded v1.2.1
-   Compiling async-fs v1.6.0
-   Compiling parking_lot_core v0.9.10
-   Compiling unicode-normalization v0.1.23
-   Compiling blocking v1.6.1
-   Compiling either v1.13.0
-   Compiling spin v0.9.8
-   Compiling semver v1.0.23
-   Compiling async-executor v1.13.0
-   Compiling crc32fast v1.4.2
    Compiling fnv v1.0.7
-   Compiling linux-raw-sys v0.3.8
-   Compiling cpufeatures v0.2.13
+   Compiling semver v1.0.23
+   Compiling async-lock v2.8.0
+   Compiling async-lock v3.4.0
+   Compiling async-fs v1.6.0
+   Compiling crc32fast v1.4.2
+   Compiling futures-lite v1.13.0
+   Compiling crypto-common v0.1.6
    Compiling block-buffer v0.10.4
-   Compiling http v0.2.12
-   Compiling signal-hook-registry v1.4.2
-   Compiling socket2 v0.4.10
-   Compiling rand_core v0.6.4
+   Compiling http v1.1.0
+   Compiling encoding_rs v0.8.34
+   Compiling digest v0.10.7
    Compiling idna v0.5.0
-   Compiling async-channel v1.9.0
    Compiling bstr v1.10.0
    Compiling unicase v2.7.0
    Compiling same-file v1.0.6
-   Compiling vcpkg v0.2.15
-   Compiling crypto-common v0.1.6
-   Compiling walkdir v2.5.0
-   Compiling digest v0.10.7
-   Compiling event-listener v3.1.0
-   Compiling regex-automata v0.4.7
    Compiling libloading v0.8.5
-   Compiling num-integer v0.1.46
-   Compiling heck v0.4.1
-   Compiling winnow v0.6.18
    Compiling sha2 v0.10.8
+   Compiling walkdir v2.5.0
+   Compiling num-integer v0.1.46
+   Compiling async-executor v1.13.0
+   Compiling signal-hook-registry v1.4.2
+   Compiling base64 v0.22.1
+   Compiling linux-raw-sys v0.3.8
+   Compiling regex-automata v0.4.7
+   Compiling heck v0.4.1
+   Compiling socket2 v0.4.10
    Compiling bitflags v2.6.0
-   Compiling termcolor v1.4.1
+   Compiling winnow v0.6.18
    Compiling adler2 v2.0.0
    Compiling miniz_oxide v0.8.0
-   Compiling dirs-sys v0.3.7
+   Compiling event-listener v3.1.0
    Compiling crossbeam-epoch v0.9.18
-   Compiling encoding_rs v0.8.34
    Compiling new_debug_unreachable v1.0.6
-   Compiling dirs v4.0.0
    Compiling num-bigint v0.4.6
-   Compiling itertools v0.12.1
+   Compiling async-channel v1.9.0
    Compiling crossbeam-deque v0.8.5
-   Compiling collections v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/collections)
-   Compiling paste v1.0.15
+   Compiling itertools v0.12.1
+   Compiling dirs-sys v0.3.7
    Compiling rayon-core v1.12.1
-   Compiling flate2 v1.0.33
+   Compiling paste v1.0.15
+   Compiling dirs v4.0.0
    Compiling dlib v0.5.2
-   Compiling base64 v0.22.1
+   Compiling flate2 v1.0.33
+   Compiling collections v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/collections)
    Compiling convert_case v0.4.0
-   Compiling take-until v0.2.0
    Compiling rustc_version v0.4.1
    Compiling wayland-sys v0.31.4
+   Compiling take-until v0.2.0
    Compiling simd-adler32 v0.3.7
    Compiling wayland-backend v0.3.6
    Compiling indexmap v1.9.3
-   Compiling rustversion v1.0.17
    Compiling static_assertions v1.1.0
-   Compiling lazy_static v1.5.0
+   Compiling minimal-lexical v0.2.1
+   Compiling rustversion v1.0.17
+   Compiling rayon v1.10.0
    Compiling crossbeam-queue v0.3.11
    Compiling quick-xml v0.34.0
    Compiling memoffset v0.9.1
-   Compiling adler v1.0.2
-   Compiling ash v0.38.0+1.3.281
+   Compiling nom v7.1.3
    Compiling scoped-tls v1.0.1
-   Compiling schemars v0.8.21
-   Compiling downcast-rs v1.2.1
-   Compiling cfg_aliases v0.2.1
-   Compiling hashbrown v0.12.3
    Compiling wayland-client v0.31.5
+   Compiling downcast-rs v1.2.1
+   Compiling schemars v0.8.21
+   Compiling ash v0.38.0+1.3.281
+   Compiling hashbrown v0.12.3
+   Compiling cfg_aliases v0.2.1
+   Compiling adler v1.0.2
    Compiling nix v0.29.0
-   Compiling rayon v1.10.0
    Compiling miniz_oxide v0.7.4
    Compiling sha1 v0.10.6
+   Compiling zvariant_utils v2.1.0
+   Compiling serde_derive_internals v0.29.1
    Compiling block-padding v0.3.3
-   Compiling slotmap v1.0.7
-   Compiling minimal-lexical v0.2.1
-   Compiling unicode-width v0.1.13
-   Compiling float-cmp v0.9.0
    Compiling num-rational v0.4.2
-   Compiling cfg_aliases v0.1.1
-   Compiling built v0.7.4
-   Compiling arrayref v0.3.8
+   Compiling slotmap v1.0.7
    Compiling sha1_smol v1.0.1
-   Compiling endi v1.1.0
-   Compiling aligned-vec v0.5.0
+   Compiling arrayref v0.3.8
+   Compiling unicode-width v0.1.13
+   Compiling cfg_aliases v0.1.1
    Compiling option-ext v0.2.0
    Compiling dyn-clone v1.0.17
    Compiling unicode-xid v0.2.5
-   Compiling dirs-sys v0.4.1
-   Compiling v_frame v0.3.8
-   Compiling nom v7.1.3
-   Compiling naga v22.1.0
-   Compiling strict-num v0.1.1
-   Compiling rav1e v0.7.1
-   Compiling inout v0.1.3
    Compiling wayland-scanner v0.31.4
-   Compiling pathfinder_simd v0.5.4
+   Compiling built v0.7.4
+   Compiling endi v1.1.0
+   Compiling float-cmp v0.9.0
+   Compiling aligned-vec v0.5.0
+   Compiling dirs-sys v0.4.1
+   Compiling strict-num v0.1.1
+   Compiling v_frame v0.3.8
+   Compiling naga v22.1.0
+   Compiling inout v0.1.3
    Compiling fdeflate v0.3.4
+   Compiling pathfinder_simd v0.5.4
    Compiling freetype-sys v0.20.1
+   Compiling rav1e v0.7.1
    Compiling num-iter v0.1.45
    Compiling yeslogic-fontconfig-sys v6.0.0
    Compiling num-bigint-dig v0.8.4
    Compiling unicode-segmentation v1.11.0
    Compiling bit-vec v0.7.0
    Compiling as-raw-xcb-connection v1.0.1
-   Compiling dirs v5.0.1
    Compiling png v0.17.13
+   Compiling dirs v5.0.1
    Compiling codespan-reporting v0.11.1
+   Compiling async-fs v2.1.2
    Compiling bit-set v0.6.0
    Compiling hmac v0.12.1
    Compiling nanorand v0.7.0
-   Compiling zvariant_utils v2.1.0
-   Compiling serde_derive_internals v0.29.1
-   Compiling async-fs v2.1.2
-   Compiling memmap2 v0.9.4
    Compiling xdg-home v1.3.0
+   Compiling memmap2 v0.9.4
    Compiling async-broadcast v0.7.1
    Compiling simd_helpers v0.1.0
    Compiling ordered-stream v0.2.0
    Compiling maybe-rayon v0.1.1
-   Compiling raw-window-handle v0.6.2
-   Compiling quick-error v2.0.1
-   Compiling roxmltree v0.20.0
-   Compiling siphasher v1.0.1
-   Compiling imgref v1.10.1
+   Compiling noop_proc_macro v0.3.0
    Compiling bitstream-io v2.5.3
-   Compiling xim-parser v0.2.1 (https://github.com/XDeme1/xim-rs?rev=d50d461764c2213655cd9cf65a0ea94c70d3c4fd#d50d4617)
+   Compiling roxmltree v0.20.0
+   Compiling quick-error v2.0.1
+   Compiling x11rb-protocol v0.13.1
    Compiling ttf-parser v0.21.1
+   Compiling hexf-parse v0.2.1
+   Compiling raw-window-handle v0.6.2
+   Compiling xim-parser v0.2.1 (https://github.com/XDeme1/xim-rs?rev=d50d461764c2213655cd9cf65a0ea94c70d3c4fd#d50d4617)
+   Compiling imgref v1.10.1
    Compiling hex v0.4.3
    Compiling weezl v0.1.8
-   Compiling x11rb-protocol v0.13.1
-   Compiling noop_proc_macro v0.3.0
-   Compiling hexf-parse v0.2.1
-   Compiling fontconfig-parser v0.5.7
+   Compiling siphasher v1.0.1
    Compiling hidden-trait v0.1.2
+   Compiling regex v1.10.6
    Compiling loop9 v0.1.5
    Compiling flume v0.11.0
-   Compiling regex v1.10.6
+   Compiling fontconfig-parser v0.5.7
    Compiling zune-inflate v0.2.54
    Compiling num-complex v0.4.6
    Compiling is-docker v0.2.0
    Compiling half v2.4.1
-   Compiling zune-core v0.4.12
-   Compiling xmlwriter v0.1.0
-   Compiling roxmltree v0.19.0
-   Compiling byteorder-lite v0.1.0
-   Compiling data-url v0.3.1
-   Compiling unicode-bidi-mirroring v0.2.0
-   Compiling unicode-properties v0.1.2
-   Compiling yazi v0.1.6
    Compiling atomic v0.5.3
-   Compiling bit_field v0.10.2
    Compiling imagesize v0.12.0
-   Compiling pico-args v0.5.0
-   Compiling mint v0.5.9
-   Compiling font-kit v0.14.1 (https://github.com/zed-industries/font-kit?rev=40391b7#40391b7c)
-   Compiling sys-locale v0.3.1
-   Compiling unicode-ccc v0.2.0
    Compiling unicode-script v0.5.6
-   Compiling jpeg-decoder v0.3.1
+   Compiling pico-args v0.5.0
    Compiling color_quant v1.1.0
-   Compiling pollster v0.2.5
    Compiling zeno v0.2.3
+   Compiling byteorder-lite v0.1.0
+   Compiling serde_derive v1.0.209
+   Compiling zerocopy-derive v0.7.35
+   Compiling thiserror-impl v1.0.64
+   Compiling futures-macro v0.3.30
+   Compiling tracing-attributes v0.1.27
+   Compiling bytemuck_derive v1.7.1
+   Compiling zeroize_derive v1.4.2
+   Compiling async-trait v0.1.83
+   Compiling derive_more v0.99.18
+   Compiling enumflags2_derive v0.7.10
+   Compiling pin-project-internal v1.1.5
+   Compiling schemars_derive v0.8.21
+   Compiling zeroize v1.8.1
+   Compiling profiling-procmacros v1.0.15
+   Compiling futures-util v0.3.30
+   Compiling strum_macros v0.25.3
+   Compiling serde_repr v0.1.19
+   Compiling zerocopy v0.7.35
+   Compiling profiling v1.0.15
+   Compiling cipher v0.4.4
+   Compiling arg_enum_proc_macro v0.3.4
+   Compiling num-derive v0.4.2
+   Compiling unicode-bidi-mirroring v0.2.0
+   Compiling pollster v0.2.5
+   Compiling unicode-ccc v0.2.0
    Compiling lebe v0.5.2
-   Compiling gif v0.13.1
+   Compiling font-kit v0.14.1 (https://github.com/zed-industries/font-kit?rev=40391b7#40391b7c)
+   Compiling bit_field v0.10.2
+   Compiling bytemuck v1.17.1
+   Compiling xmlwriter v0.1.0
+   Compiling yazi v0.1.6
+   Compiling unicode-properties v0.1.2
+   Compiling jpeg-decoder v0.3.1
+   Compiling data-url v0.3.1
+   Compiling zune-core v0.4.12
+   Compiling pin-project v1.1.5
+   Compiling font-types v0.6.0
+   Compiling rgb v0.8.49
+   Compiling tiny-skia-path v0.11.4
+   Compiling ppv-lite86 v0.2.20
+   Compiling hashbrown v0.14.5
+   Compiling roxmltree v0.19.0
+   Compiling mint v0.5.9
+   Compiling read-fonts v0.20.0
+   Compiling sys-locale v0.3.1
+   Compiling zune-jpeg v0.4.13
+   Compiling tiff v0.9.1
+   Compiling qoi v0.4.1
+   Compiling rand_chacha v0.3.1
+   Compiling cbc v0.1.2
+   Compiling strum v0.25.0
+   Compiling aes v0.8.4
    Compiling image-webp v0.1.3
    Compiling num v0.4.3
-   Compiling zune-jpeg v0.4.13
+   Compiling linkme-impl v0.3.28
+   Compiling gif v0.13.1
    Compiling is-wsl v0.4.0
+   Compiling rand v0.8.5
    Compiling derive_refineable v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/refineable/derive_refineable)
    Compiling pbkdf2 v0.12.2
    Compiling hkdf v0.12.4
    Compiling xim-ctext v0.3.0 (https://github.com/XDeme1/xim-rs?rev=d50d461764c2213655cd9cf65a0ea94c70d3c4fd#d50d4617)
    Compiling md-5 v0.10.6
    Compiling euclid v0.22.11
-   Compiling rangemap v1.5.1
-   Compiling svg_fmt v0.4.3
-   Compiling xcursor v0.3.8
-   Compiling xkeysym v0.2.1
-   Compiling tiff v0.9.1
    Compiling pathdiff v0.2.1
-   Compiling float-ord v0.3.2
-   Compiling self_cell v1.0.4
    Compiling grid v0.13.0
+   Compiling rangemap v1.5.1
+   Compiling xcursor v0.3.8
    Compiling unicode-linebreak v0.1.5
+   Compiling svg_fmt v0.4.3
+   Compiling self_cell v1.0.4
+   Compiling xkeysym v0.2.1
+   Compiling float-ord v0.3.2
    Compiling open v5.3.0
-   Compiling refineable v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/refineable)
-   Compiling gpui_macros v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/gpui_macros)
-   Compiling num_cpus v1.16.0
-   Compiling itertools v0.13.0
-   Compiling seahash v4.1.0
-   Compiling xkbcommon v0.7.0 (https://github.com/ConradIrwin/xkbcommon-rs?rev=fcbb4612185cc129ceeff51d22f7fb51810a03b2#fcbb4612)
-   Compiling libz-sys v1.1.20
-   Compiling serde_derive v1.0.209
-   Compiling zerocopy-derive v0.7.35
-   Compiling thiserror-impl v1.0.63
-   Compiling tracing-attributes v0.1.27
-   Compiling futures-macro v0.3.30
-   Compiling bytemuck_derive v1.7.1
-   Compiling async-trait v0.1.83
-   Compiling zeroize_derive v1.4.2
-   Compiling pin-project-internal v1.1.5
-   Compiling derive_more v0.99.18
-   Compiling enumflags2_derive v0.7.10
-   Compiling schemars_derive v0.8.21
-   Compiling futures-util v0.3.30
-   Compiling profiling-procmacros v1.0.15
-   Compiling serde_repr v0.1.19
-   Compiling zeroize v1.8.1
-   Compiling strum_macros v0.25.3
-   Compiling zerocopy v0.7.35
-   Compiling cipher v0.4.4
-   Compiling profiling v1.0.15
-   Compiling num-derive v0.4.2
-   Compiling arg_enum_proc_macro v0.3.4
-   Compiling linkme-impl v0.3.28
-   Compiling ctor v0.2.8
-   Compiling filedescriptor v0.8.2
-   Compiling cbc v0.1.2
-   Compiling aes v0.8.4
-   Compiling bytemuck v1.17.1
-   Compiling blade-macros v0.3.0 (https://github.com/kvark/blade?rev=e142a3a5e678eb6a13e642ad8401b1f3aa38e969#e142a3a5)
-   Compiling etagere v0.2.13
-   Compiling ppv-lite86 v0.2.20
-   Compiling pin-project v1.1.5
-   Compiling font-types v0.6.0
-   Compiling tiny-skia-path v0.11.4
-   Compiling rgb v0.8.49
-   Compiling hashbrown v0.14.5
-   Compiling qoi v0.4.1
    Compiling linkme v0.3.28
-   Compiling read-fonts v0.20.0
+   Compiling refineable v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/refineable)
+   Compiling filedescriptor v0.8.2
+   Compiling ctor v0.2.8
+   Compiling blade-macros v0.3.0 (https://github.com/kvark/blade?rev=e142a3a5e678eb6a13e642ad8401b1f3aa38e969#e142a3a5)
+   Compiling gpui_macros v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/gpui_macros)
+   Compiling itertools v0.13.0
+   Compiling num_cpus v1.16.0
+   Compiling seahash v4.1.0
+   Compiling vcpkg v0.2.15
+   Compiling xkbcommon v0.7.0 (https://github.com/ConradIrwin/xkbcommon-rs?rev=fcbb4612185cc129ceeff51d22f7fb51810a03b2#fcbb4612)
+   Compiling strsim v0.11.1
+   Compiling etagere v0.2.13
+   Compiling ring v0.17.8
+   Compiling utf8parse v0.2.2
    Compiling tree-sitter-language v0.1.0
+   Compiling futures-executor v0.3.30
    Compiling iana-time-zone v0.1.60
-   Compiling time-core v0.1.2
-   Compiling cranelift-isle v0.111.0
+   Compiling futures v0.3.30
+   Compiling untrusted v0.9.0
    Compiling powerfmt v0.2.0
-   Compiling rand_chacha v0.3.1
    Compiling num-conv v0.1.0
-   Compiling target-lexicon v0.12.16
-   Compiling cranelift-codegen-shared v0.111.0
+   Compiling time-core v0.1.2
+   Compiling cranelift-isle v0.111.1
    Compiling num_threads v0.1.7
    Compiling time-macros v0.2.18
-   Compiling cranelift-codegen-meta v0.111.0
-   Compiling rand v0.8.5
-   Compiling hashbrown v0.13.2
-   Compiling wasmtime-versioned-export-macros v24.0.0
+   Compiling cranelift-codegen-shared v0.111.1
+   Compiling target-lexicon v0.12.16
+   Compiling cranelift-codegen-meta v0.111.1
+   Compiling libz-sys v1.1.20
    Compiling itertools v0.10.5
+   Compiling hashbrown v0.13.2
+   Compiling wasmtime-versioned-export-macros v24.0.1
    Compiling async-attributes v1.1.2
    Compiling arbitrary v1.3.2
    Compiling leb128 v0.2.5
    Compiling slice-group-by v0.3.1
-   Compiling ring v0.17.8
-   Compiling strum v0.25.0
    Compiling bumpalo v3.16.0
    Compiling libgit2-sys v0.17.0+1.8.1
    Compiling cpp_demangle v0.4.4
-   Compiling untrusted v0.9.0
    Compiling home v0.5.9
-   Compiling cobs v0.2.3
+   Compiling httparse v1.9.4
    Compiling rustc-demangle v0.1.24
+   Compiling cobs v0.2.3
    Compiling id-arena v2.2.1
+   Compiling cranelift-control v0.111.1
+   Compiling wasmtime-fiber v24.0.1
    Compiling wasm-encoder v0.215.0
-   Compiling wasmtime-fiber v24.0.0
-   Compiling cranelift-control v0.111.0
    Compiling filetime v0.2.25
    Compiling crossbeam-channel v0.5.13
    Compiling fixedbitset v0.4.2
-   Compiling wasmtime-component-util v24.0.0
-   Compiling httparse v1.9.4
-   Compiling wasmtime-component-macro v24.0.0
    Compiling utf-8 v0.7.6
+   Compiling wasmtime-component-util v24.0.1
+   Compiling wasmtime-component-macro v24.0.1
    Compiling heck v0.3.3
-   Compiling wasmtime v24.0.0
+   Compiling wasmtime v24.0.1
    Compiling inotify-sys v0.1.5
    Compiling xattr v0.2.3
-   Compiling wasmtime-asm-macros v24.0.0
-   Compiling base64 v0.21.7
-   Compiling prost-derive v0.9.0
+   Compiling wasmtime-asm-macros v24.0.1
    Compiling multimap v0.8.3
-   Compiling futures-executor v0.3.30
-   Compiling futures v0.3.30
    Compiling inotify v0.9.6
-   Compiling wasmtime-jit-icache-coherence v24.0.0
+   Compiling prost-derive v0.9.0
+   Compiling anstyle-parse v0.2.5
+   Compiling wasmtime-jit-icache-coherence v24.0.1
+   Compiling is_terminal_polyfill v1.70.1
    Compiling sptr v0.3.2
+   Compiling anstyle-query v1.1.1
+   Compiling anstyle v1.0.8
+   Compiling wasmtime-slab v24.0.1
    Compiling wasmtime-c-api-impl v24.0.0
-   Compiling wasmtime-slab v24.0.0
+   Compiling colorchoice v1.0.2
+   Compiling base64 v0.21.7
    Compiling ring v0.16.20
-   Compiling base64ct v1.6.0
-   Compiling rustls-pemfile v1.0.4
-   Compiling zstd-sys v2.0.13+zstd.1.5.6
-   Compiling tree-sitter v0.23.0
-   Compiling serde_json_lenient v0.2.1
-   Compiling openssl-sys v0.9.103
-   Compiling tree-sitter-json v0.23.0
-   Compiling wasmtime-c-api-macros v24.0.0
-   Compiling rustls v0.20.9
-   Compiling pem-rfc7468 v0.7.0
-   Compiling untrusted v0.7.1
-   Compiling spin v0.5.2
-   Compiling by_address v1.2.1
-   Compiling zstd-safe v5.0.2+zstd.1.5.2
-   Compiling der v0.7.9
-   Compiling palette v0.7.6
-   Compiling data-encoding v2.6.0
-   Compiling palette_derive v0.7.6
-   Compiling openssl-probe v0.1.5
-   Compiling fast-srgb8 v1.0.0
-   Compiling which v4.4.2
-   Compiling tempfile v3.12.0
-   Compiling cranelift-codegen v0.111.0
-   Compiling signature v2.2.0
-   Compiling prost v0.9.0
-   Compiling strsim v0.11.1
-   Compiling zstd v0.11.2+zstd.1.5.2
-   Compiling prost-types v0.9.0
-   Compiling shellexpand v2.1.2
-   Compiling pulldown-cmark v0.12.1
-   Compiling socket2 v0.5.7
-   Compiling async-watch v0.3.1
-   Compiling prost-build v0.9.0
-   Compiling language v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/language)
-   Compiling similar v1.3.0
-   Compiling utf8parse v0.2.2
-   Compiling spki v0.7.3
-   Compiling pkcs8 v0.10.2
-   Compiling erased-serde v0.4.5
    Compiling serde_fmt v1.0.3
+   Compiling erased-serde v0.4.5
    Compiling smallvec v1.13.2
-   Compiling indexmap v2.4.0
    Compiling url v2.5.2
+   Compiling arrayvec v0.7.6
+   Compiling indexmap v2.4.0
+   Compiling serde_spanned v0.6.7
    Compiling value-bag-serde1 v1.9.0
    Compiling value-bag v1.9.0
-   Compiling arrayvec v0.7.6
-   Compiling log v0.4.22
-   Compiling serde_spanned v0.6.7
    Compiling toml_datetime v0.6.8
-   Compiling enumflags2 v0.7.10
    Compiling parking_lot v0.12.3
+   Compiling enumflags2 v0.7.10
+   Compiling gpu-alloc-types v0.3.0
+   Compiling log v0.4.22
+   Compiling uuid v1.10.0
+   Compiling kurbo v0.11.0
+   Compiling tracing v0.1.40
    Compiling globset v0.4.15
    Compiling toml_edit v0.22.20
-   Compiling gpu-alloc-types v0.3.0
-   Compiling tracing v0.1.40
-   Compiling rust-embed-utils v8.5.0
-   Compiling uuid v1.10.0
    Compiling av1-grain v0.2.3
-   Compiling rust-embed-impl v8.5.0
+   Compiling rust-embed-utils v8.5.0
    Compiling async-net v1.8.0
-   Compiling kurbo v0.11.0
    Compiling spirv v0.3.0+sdk-1.3.268.0
+   Compiling rust-embed-impl v8.5.0
    Compiling rust-embed v8.5.0
-   Compiling gpu-alloc-ash v0.7.0
-   Compiling gpu-alloc v0.6.0
-   Compiling simplecss v0.2.1
+   Compiling svgtypes v0.15.2
+   Compiling skrifa v0.20.0
    Compiling sum_tree v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/sum_tree)
+   Compiling http_client v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/http_client)
    Compiling util v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/util)
+   Compiling simplecss v0.2.1
    Compiling proc-macro-crate v3.2.0
    Compiling toml v0.8.19
-   Compiling svgtypes v0.15.2
-   Compiling embed-resource v2.4.3
-   Compiling skrifa v0.20.0
+   Compiling gpu-alloc v0.6.0
    Compiling avif-serialize v0.8.1
-   Compiling ash-window v0.13.0
+   Compiling embed-resource v2.4.3
    Compiling usvg v0.41.0
-   Compiling pathfinder_geometry v0.5.1
+   Compiling swash v0.1.18
    Compiling postage v0.5.0
+   Compiling pathfinder_geometry v0.5.1
    Compiling fontdb v0.18.0
+   Compiling ash-window v0.13.0
+   Compiling gpu-alloc-ash v0.7.0
    Compiling tiny-skia v0.11.4
    Compiling rustybuzz v0.14.1
    Compiling exr v1.72.0
    Compiling semantic_version v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/semantic_version)
-   Compiling taffy v0.4.4
-   Compiling polling v3.7.3
    Compiling zvariant_derive v4.2.0
-   Compiling async-io v2.3.4
-   Compiling zvariant v4.2.0
-   Compiling async-signal v0.2.10
    Compiling zbus_macros v4.4.0
-   Compiling async-process v1.8.1
-   Compiling smol v1.3.0
-   Compiling http_client v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/http_client)
-   Compiling async-net v2.0.0
-   Compiling x11rb v0.13.1
-   Compiling swash v0.1.18
-   Compiling calloop v0.13.0
    Compiling gpui v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/gpui)
    Compiling resvg v0.41.0
-   Compiling wayland-protocols v0.31.2
+   Compiling zvariant v4.2.0
+   Compiling taffy v0.4.4
+   Compiling cranelift-bitset v0.111.1
+   Compiling polling v3.7.3
+   Compiling async-io v2.3.4
+   Compiling x11rb v0.13.1
+   Compiling calloop v0.13.0
+   Compiling cosmic-text v0.11.2 (https://github.com/pop-os/cosmic-text?rev=542b20c#542b20ca)
+   Compiling async-signal v0.2.10
+   Compiling async-net v2.0.0
+   Compiling async-process v1.8.1
+   Compiling smol v1.3.0
    Compiling zbus_names v3.0.0
-   Compiling calloop-wayland-source v0.3.0
-   Compiling wayland-cursor v0.31.5
-   Compiling cranelift-bitset v0.111.0
    Compiling ravif v0.11.10
-   Compiling zbus v4.4.0
-   Compiling cranelift-entity v0.111.0
-   Compiling deranged v0.3.11
-   Compiling chrono v0.4.38
-   Compiling async-global-executor v2.4.1
-   Compiling image v0.25.2
    Compiling blade-graphics v0.5.0 (https://github.com/kvark/blade?rev=e142a3a5e678eb6a13e642ad8401b1f3aa38e969#e142a3a5)
-   Compiling gimli v0.29.0
+   Compiling cranelift-entity v0.111.1
+   Compiling zbus v4.4.0
+   Compiling deranged v0.3.11
+   Compiling image v0.25.2
    Compiling x11-clipboard v0.9.2
    Compiling xim v0.4.0 (https://github.com/XDeme1/xim-rs?rev=d50d461764c2213655cd9cf65a0ea94c70d3c4fd#d50d4617)
-   Compiling blade-util v0.1.0 (https://github.com/kvark/blade?rev=e142a3a5e678eb6a13e642ad8401b1f3aa38e969#e142a3a5)
-   Compiling cosmic-text v0.11.2 (https://github.com/pop-os/cosmic-text?rev=542b20c#542b20ca)
-   Compiling time v0.3.36
+   Compiling chrono v0.4.38
+   Compiling async-global-executor v2.4.1
+   Compiling gimli v0.29.0
    Compiling kv-log-macro v1.0.7
-   Compiling cranelift-bforest v0.111.0
+   Compiling cranelift-codegen v0.111.1
+   Compiling wayland-protocols v0.31.2
+   Compiling wayland-cursor v0.31.5
+   Compiling calloop-wayland-source v0.3.0
+   Compiling blade-util v0.1.0 (https://github.com/kvark/blade?rev=e142a3a5e678eb6a13e642ad8401b1f3aa38e969#e142a3a5)
+   Compiling time v0.3.36
    Compiling async-std v1.12.0
+   Compiling cranelift-bforest v0.111.1
    Compiling wasmparser v0.215.0
    Compiling regalloc2 v0.9.3
    Compiling paths v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/paths)
+   Compiling which v4.4.2
    Compiling object v0.36.4
-   Compiling wayland-protocols-plasma v0.2.0
+   Compiling prost-build v0.9.0
    Compiling clock v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/clock)
    Compiling rope v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/rope)
-   Compiling oo7 v0.3.3
-   Compiling ashpd v0.9.1
+   Compiling prost v0.9.0
    Compiling postcard v1.0.10
+   Compiling prost-types v0.9.0
    Compiling text v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/text)
+   Compiling tempfile v3.12.0
    Compiling petgraph v0.6.5
    Compiling async-tar v0.5.0
    Compiling memfd v0.6.4
    Compiling mio v0.8.11
-   Compiling wasmtime-types v24.0.0
-   Compiling wasmprinter v0.215.0
-   Compiling notify v6.1.1
-   Compiling webpki v0.22.4
-   Compiling wit-parser v0.215.0
-   Compiling sct v0.7.1
-   Compiling proto v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/proto)
-   Compiling wasmtime-environ v24.0.0
-   Compiling wasmtime-wit-bindgen v24.0.0
-   Compiling webpki-roots v0.22.6
-   Compiling tungstenite v0.20.1
-   Compiling pkcs1 v0.7.5
-   Compiling rsa v0.9.6
-   Compiling lsp-types v0.95.1 (https://github.com/zed-industries/lsp-types?rev=72357d6f6d212bdffba3b5ef4b31d8ca856058e7#72357d6f)
    Compiling mio v1.0.2
-   Compiling async-tls v0.12.0
-   Compiling async-tungstenite v0.23.0
-   Compiling ipnet v2.9.0
+   Compiling wayland-protocols-plasma v0.2.0
+   Compiling notify v6.1.1
+   Compiling oo7 v0.3.3
+   Compiling ashpd v0.9.2
+   Compiling anstream v0.6.15
+   Compiling base64ct v1.6.0
+   Compiling pem-rfc7468 v0.7.0
+   Compiling zstd-sys v2.0.13+zstd.1.5.6
+   Compiling tree-sitter v0.23.0
+   Compiling socket2 v0.5.7
+   Compiling serde_json_lenient v0.2.1
    Compiling tokio v1.40.0
+   Compiling wasmtime-types v24.0.1
+   Compiling wit-parser v0.215.0
+   Compiling wasmprinter v0.215.0
+   Compiling der v0.7.9
+   Compiling webpki v0.22.4
+   Compiling tree-sitter-json v0.23.0
+   Compiling wasmtime-c-api-macros v24.0.0
+   Compiling spin v0.5.2
+   Compiling rustls v0.20.9
+   Compiling untrusted v0.7.1
+   Compiling wasmtime-environ v24.0.1
+   Compiling wasmtime-wit-bindgen v24.0.1
+   Compiling spki v0.7.3
+   Compiling sct v0.7.1
+   Compiling zstd-safe v5.0.2+zstd.1.5.2
+   Compiling palette v0.7.6
+   Compiling humantime v2.1.0
+   Compiling data-encoding v2.6.0
+   Compiling by_address v1.2.1
+   Compiling palette_derive v0.7.6
+   Compiling pkcs8 v0.10.2
+   Compiling webpki-roots v0.22.6
+   Compiling proto v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/proto)
+   Compiling rustls-pemfile v1.0.4
+   Compiling ec4rs v1.1.1
+   Compiling rustls-pki-types v1.8.0
+   Compiling fast-srgb8 v1.0.0
+   Compiling pkcs1 v0.7.5
+   Compiling tungstenite v0.21.0
+   Compiling release_channel v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/release_channel)
+   Compiling signature v2.2.0
+   Compiling rsa v0.9.6
+   Compiling shellexpand v2.1.2
+   Compiling async-tls v0.12.0
+   Compiling async-tungstenite v0.24.0
+   Compiling cranelift-frontend v0.111.1
+   Compiling cranelift-native v0.111.1
+   Compiling pulldown-cmark v0.12.1
+   Compiling task v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/task)
+   Compiling fuzzy v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/fuzzy)
+   Compiling cranelift-wasm v0.111.1
+   Compiling lsp-types v0.95.1 (https://github.com/zed-industries/lsp-types?rev=72357d6f6d212bdffba3b5ef4b31d8ca856058e7#72357d6f)
+   Compiling async-watch v0.3.1
+   Compiling language v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/language)
+   Compiling wasmtime-cranelift v24.0.1
+   Compiling rustls-pemfile v2.1.3
+   Compiling ipnet v2.9.0
+   Compiling similar v1.3.0
+   Compiling openssl-probe v0.1.5
+   Compiling rustls-native-certs v0.8.0
+   Compiling tokio-socks v0.5.2
    Compiling libsqlite3-sys v0.28.0
    Compiling glob v0.3.1
-   Compiling clang-sys v1.8.1
-   Compiling cranelift-frontend v0.111.0
-   Compiling cranelift-wasm v0.111.0
-   Compiling cranelift-native v0.111.0
-   Compiling wasmtime-cranelift v24.0.0
-   Compiling release_channel v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/release_channel)
-   Compiling fuzzy v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/fuzzy)
-   Compiling task v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/task)
-   Compiling foreign-types-shared v0.1.1
-   Compiling rustls-pki-types v1.8.0
-   Compiling openssl v0.10.66
+   Compiling tokio-util v0.7.12
+   Compiling http-body v1.0.1
    Compiling prettyplease v0.2.22
-   Compiling rustls-pemfile v2.1.3
-   Compiling foreign-types v0.3.2
+   Compiling clang-sys v1.8.1
+   Compiling try-lock v0.2.5
+   Compiling rustls v0.23.13
+   Compiling want v0.3.1
+   Compiling rustls-webpki v0.102.8
+   Compiling h2 v0.4.6
    Compiling ignore v0.4.23
-   Compiling openssl-macros v0.1.1
    Compiling sysinfo v0.31.4
+   Compiling alsa-sys v0.3.1
+   Compiling tower-service v0.3.3
    Compiling ascii v1.1.0
-   Compiling native-tls v0.2.12
+   Compiling bindgen v0.70.1
    Compiling chunked_transfer v1.5.0
+   Compiling signal-hook v0.3.17
+   Compiling deflate64 v0.1.9
+   Compiling async-compression v0.4.13
    Compiling tiny_http v0.8.2
-   Compiling rustls-native-certs v0.8.0
-   Compiling tokio-util v0.7.11
+   Compiling cexpr v0.6.0
    Compiling feature_flags v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/feature_flags)
    Compiling telemetry_events v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/telemetry_events)
-   Compiling tokio-socks v0.5.2
    Compiling async-recursion v0.3.2
-   Compiling alsa-sys v0.3.1
-   Compiling deflate64 v0.1.9
-   Compiling signal-hook v0.3.17
-   Compiling try-lock v0.2.5
-   Compiling bindgen v0.70.1
-   Compiling want v0.3.1
-   Compiling async-compression v0.4.12
-   Compiling h2 v0.3.26
-   Compiling cexpr v0.6.0
-   Compiling http-body v0.4.6
    Compiling vte_generate_state_changes v0.1.2
-   Compiling mime v0.3.17
-   Compiling siphasher v0.3.11
-   Compiling cursor-icon v1.1.0
-   Compiling httpdate v1.0.3
-   Compiling tower-service v0.3.3
+   Compiling hyper v1.4.1
+   Compiling tokio-rustls v0.26.0
    Compiling indoc v2.0.5
+   Compiling siphasher v0.3.11
+   Compiling unicode_categories v0.1.1
+   Compiling cursor-icon v1.1.0
+   Compiling sqlformat v0.2.6
    Compiling vte v0.13.0
-   Compiling tokio-native-tls v0.3.1
+   Compiling hyper-util v0.1.9
    Compiling async_zip v0.0.17
+   Compiling hyper-rustls v0.27.3
    Compiling which v6.0.3
+   Compiling http-body-util v0.1.2
    Compiling rustix-openpty v0.1.1
    Compiling bincode v1.3.3
+   Compiling serde_urlencoded v0.7.1
+   Compiling sync_wrapper v1.0.1
    Compiling thread_local v1.1.8
-   Compiling unicode_categories v0.1.1
    Compiling cpal v0.15.3
-   Compiling sqlformat v0.2.4
+   Compiling mime v0.3.17
    Compiling alacritty_terminal v0.24.1-dev (https://github.com/alacritty/alacritty?rev=91d034ff8b53867143c005acfaa14609147c9a2c#91d034ff)
    Compiling node_runtime v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/node_runtime)
    Compiling lsp v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/lsp)
+   Compiling reqwest v0.12.8 (https://github.com/zed-industries/reqwest.git?rev=fd110f6998da16bbca97b6dddda9be7827c50e29#fd110f69)
    Compiling alsa v0.9.1
-   Compiling hyper v0.14.30
+   Compiling sqlez v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/sqlez)
    Compiling live_kit_server v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/live_kit_server)
    Compiling simple_asn1 v0.6.2
    Compiling snippet v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/snippet)
-   Compiling sqlez v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/sqlez)
-   Compiling serde_urlencoded v0.7.1
    Compiling convert_case v0.6.0
    Compiling pem v3.0.4
-   Compiling rpc v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/rpc)
-   Compiling sync_wrapper v0.1.2
+   Compiling media v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/media)
    Compiling dasp_sample v0.11.0
    Compiling ui_macros v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/ui_macros)
    Compiling jsonwebtoken v9.3.0
@@ -606,156 +689,168 @@ Cloning into 'zed'...
    Compiling menu v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/menu)
    Compiling live_kit_client v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/live_kit_client)
    Compiling hound v3.5.1
-   Compiling rodio v0.19.0
    Compiling phf v0.11.2
+   Compiling rodio v0.19.0
    Compiling nanoid v0.4.0
    Compiling async-recursion v1.1.1
    Compiling any_vec v0.14.0
-   Compiling anstyle-parse v0.2.5
-   Compiling audio v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/audio)
-   Compiling anstyle-query v1.1.1
-   Compiling hyper-tls v0.5.0
-   Compiling reqwest v0.11.27
-   Compiling media v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/media)
-   Compiling anstyle v1.0.8
-   Compiling is_terminal_polyfill v1.70.1
-   Compiling colorchoice v1.0.2
    Compiling env_filter v0.1.2
    Compiling linkify v0.10.0
-   Compiling humantime v2.1.0
-   Compiling anstream v0.6.15
+   Compiling audio v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/audio)
+   Compiling env_logger v0.11.5
    Compiling file_icons v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/file_icons)
    Compiling diff v0.1.13
-   Compiling yansi v0.5.1
-   Compiling env_logger v0.11.5
-   Compiling pretty_assertions v1.4.0
-   Compiling emojis v0.6.3
+   Compiling yansi v1.0.1
+   Compiling emojis v0.6.4
    Compiling assets v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/assets)
+   Compiling pretty_assertions v1.4.1
    Compiling time_format v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/time_format)
    Compiling ordered-float v2.10.1
-   Compiling io-lifetimes v2.0.3
-   Compiling mac v0.1.1
+   Compiling clap_lex v0.7.2
+   Compiling heck v0.5.0
+   Compiling clap_builder v4.5.20
+   Compiling clap_derive v4.5.18
+   Compiling pet-fs v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling is-terminal v0.4.13
+   Compiling env_logger v0.10.2
    Compiling phf_shared v0.10.0
-   Compiling futf v0.1.5
+   Compiling io-lifetimes v2.0.3
    Compiling command_palette_hooks v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/command_palette_hooks)
-   Compiling precomputed-hash v0.1.1
+   Compiling phf_generator v0.11.2
+   Compiling phf_generator v0.10.0
+   Compiling phf_macros v0.11.2
+   Compiling string_cache_codegen v0.5.2
+   Compiling phf_codegen v0.11.2
+   Compiling mac v0.1.1
+   Compiling futf v0.1.5
+   Compiling markup5ever v0.12.1
    Compiling io-extras v0.18.2
-   Compiling string_cache v0.8.7
+   Compiling precomputed-hash v0.1.1
+   Compiling doxygen-rs v0.4.2
    Compiling tendril v0.4.3
+   Compiling string_cache v0.8.7
    Compiling cap-primitives v3.2.0
    Compiling ambient-authority v0.0.2
+   Compiling lmdb-master-sys v0.2.4
    Compiling fs-set-times v0.20.1
    Compiling zed_actions v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/zed_actions)
    Compiling html5ever v0.27.0
    Compiling maybe-owned v0.3.4
-   Compiling phf_generator v0.11.2
-   Compiling phf_generator v0.10.0
-   Compiling phf_codegen v0.11.2
-   Compiling phf_macros v0.11.2
-   Compiling string_cache_codegen v0.5.2
-   Compiling heed-traits v0.20.0
+   Compiling clap v4.5.20
+   Compiling pet-core v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
    Compiling cap-std v3.2.0
+   Compiling heed-traits v0.20.0
    Compiling camino v1.1.9
    Compiling heed-types v0.20.1
    Compiling wast v35.0.2
-   Compiling markup5ever v0.12.1
+   Compiling xml5ever v0.18.1
+   Compiling pet-python-utils v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
    Compiling synchronoise v1.0.1
+   Compiling pet-virtualenv v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
    Compiling page_size v0.6.0
-   Compiling doxygen-rs v0.4.2
-   Compiling cargo-platform v0.1.8
-   Compiling wiggle-macro v24.0.0
-   Compiling cargo_metadata v0.18.1
-   Compiling lmdb-master-sys v0.2.4
+   Compiling markup5ever_rcdom v0.3.0
    Compiling witx v0.9.1
+   Compiling cargo-platform v0.1.8
+   Compiling wiggle-macro v24.0.1
+   Compiling html_to_markdown v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/html_to_markdown)
+   Compiling cargo_metadata v0.18.1
+   Compiling pet-jsonrpc v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
    Compiling wasmparser v0.201.0
+   Compiling wiggle-generate v24.0.1
    Compiling system-interface v0.27.2
    Compiling cap-fs-ext v3.2.0
+   Compiling heed v0.20.5
+   Compiling pet-reporter v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling hashlink v0.8.4
    Compiling spdx v0.10.6
    Compiling wasm-encoder v0.201.0
-   Compiling xml5ever v0.18.1
-   Compiling wiggle-generate v24.0.0
+   Compiling arraydeque v0.5.1
+   Compiling yaml-rust2 v0.8.1
+   Compiling wiggle v24.0.1
    Compiling cap-net-ext v3.2.0
-   Compiling markup5ever_rcdom v0.3.0
-   Compiling html_to_markdown v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/html_to_markdown)
    Compiling cap-time-ext v3.2.0
    Compiling cap-rand v3.2.0
-   Compiling extension v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/extension)
    Compiling supermaven_api v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/supermaven_api)
-   Compiling curl-sys v0.4.74+curl-8.9.0
-   Compiling bit-vec v0.6.3
    Compiling ucd-trie v0.1.6
+   Compiling bit-vec v0.6.3
+   Compiling extension v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/extension)
    Compiling pest v2.7.11
    Compiling bit-set v0.5.3
-   Compiling blake3 v1.5.4
+   Compiling pet-conda v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling wasmtime-wasi v24.0.1
    Compiling fancy-regex v0.12.0
+   Compiling blake3 v1.5.4
    Compiling anthropic v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/anthropic)
-   Compiling wiggle v24.0.0
    Compiling tiktoken-rs v0.5.9
-   Compiling google_ai v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/google_ai)
-   Compiling heed v0.20.5
-   Compiling wasmtime-wasi v24.0.0
-   Compiling pest_meta v2.7.11
-   Compiling pest_generator v2.7.11
    Compiling ollama v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/ollama)
+   Compiling pest_meta v2.7.11
    Compiling open_ai v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/open_ai)
+   Compiling pest_generator v2.7.11
+   Compiling google_ai v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/google_ai)
    Compiling dashmap v5.5.3
-   Compiling wasm-metadata v0.201.0
-   Compiling wit-parser v0.201.0
    Compiling num-format v0.4.4
    Compiling asynchronous-codec v0.7.0
    Compiling async-dispatcher v0.1.2
    Compiling constant_time_eq v0.3.1
    Compiling futures-timer v3.0.3
-   Compiling curl v0.4.46
+   Compiling pest_derive v2.7.11
    Compiling futures-batch v0.6.1
    Compiling zeromq v0.4.0
-   Compiling pest_derive v2.7.11
    Compiling shellexpand v3.1.0
-   Compiling tree-sitter-cpp v0.23.0
-   Compiling tree-sitter-rust v0.23.0
-   Compiling tree-sitter-gomod v1.0.2 (https://github.com/zed-industries/tree-sitter-go-mod?rev=a9aea5e358cde4d0f8ff20b7bc4fa311e359c7ca#a9aea5e3)
-   Compiling tree-sitter-c v0.23.0
-   Compiling tree-sitter-bash v0.23.1
-   Compiling tree-sitter-typescript v0.23.0
+   Compiling tree-sitter-gowork v0.0.1 (https://github.com/zed-industries/tree-sitter-go-work?rev=acb0617bf7f4fda02c6217676cc64acb89536dc7#acb0617b)
    Compiling tree-sitter-go v0.23.1
    Compiling tree-sitter-jsdoc v0.23.0
-   Compiling tree-sitter-css v0.23.0
+   Compiling tree-sitter-rust v0.23.0
+   Compiling wasm-metadata v0.201.0
+   Compiling wit-parser v0.201.0
+   Compiling tree-sitter-cpp v0.23.1
    Compiling tree-sitter-python v0.23.2
    Compiling tree-sitter-regex v0.23.0
-   Compiling tree-sitter-gowork v0.0.1 (https://github.com/zed-industries/tree-sitter-go-work?rev=acb0617bf7f4fda02c6217676cc64acb89536dc7#acb0617b)
-   Compiling protols-tree-sitter-proto v0.2.0 (https://github.com/zed-industries/tree-sitter-proto?rev=0848bd30a64be48772e15fbb9d5ba8c0cc5772ad#0848bd30)
-   Compiling tree-sitter-md v0.3.2 (https://github.com/zed-industries/tree-sitter-markdown?rev=4cfa6aad6b75052a5077c80fd934757d9267d81b#4cfa6aad)
+   Compiling tree-sitter-typescript v0.23.0
+   Compiling tree-sitter-css v0.23.0
+   Compiling tree-sitter-bash v0.23.1
+   Compiling tree-sitter-c v0.23.1
    Compiling tree-sitter-yaml v0.6.1 (https://github.com/zed-industries/tree-sitter-yaml?rev=baff0b51c64ef6a1fb1f8390f3ad6015b83ec13a#baff0b51)
+   Compiling tree-sitter-md v0.3.2 (https://github.com/tree-sitter-grammars/tree-sitter-markdown?rev=9a23c1a96c0513d8fc6520972beedd419a973539#9a23c1a9)
+   Compiling tree-sitter-diff v0.1.0
+   Compiling tree-sitter-gomod v1.0.2 (https://github.com/zed-industries/tree-sitter-go-mod?rev=a9aea5e358cde4d0f8ff20b7bc4fa311e359c7ca#a9aea5e3)
    Compiling unindent v0.1.11
-   Compiling urlencoding v2.1.3
-   Compiling clap_lex v0.7.2
-   Compiling heck v0.5.0
    Compiling human_bytes v0.4.3
-   Compiling isahc v1.7.2
-   Compiling clap_derive v4.5.18
-   Compiling clap_builder v4.5.18
+   Compiling urlencoding v2.1.3
    Compiling runtimelib v0.15.0
-   Compiling wit-component v0.201.0
    Compiling handlebars v4.5.0
+   Compiling wit-component v0.201.0
+   Compiling pet-env-var-path v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling pet-pyenv v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling pet-global-virtualenvs v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling pet-homebrew v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling pet-poetry v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
    Compiling cargo_toml v0.20.5
-   Compiling tracing-futures v0.2.5
-   Compiling sluice v0.5.5
+   Compiling pet-venv v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling pet-pipenv v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling pet-mac-python-org v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling pet-mac-commandlinetools v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling pet-mac-xcode v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling pet-virtualenvwrapper v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling pet-linux-global-python v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling pet-telemetry v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
    Compiling errno v0.2.8
-   Compiling castaway v0.1.2
    Compiling gimli v0.31.0
    Compiling exec v0.3.1
-   Compiling clap v4.5.18
-   Compiling ipc-channel v0.18.2
+   Compiling pet v0.1.0 (https://github.com/microsoft/python-environment-tools.git?rev=ffcbf3f28c46633abd5448a52b1f396c322e0d6c#ffcbf3f2)
+   Compiling ipc-channel v0.18.3
    Compiling install_cli v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/install_cli)
    Compiling fork v0.2.0
-   Compiling zed v0.156.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/zed)
+   Compiling zed v0.160.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/zed)
+   Compiling reqwest_client v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/reqwest_client)
    Compiling simplelog v0.12.2
-warning: zed@0.156.0: Info: using 'd5f67406b0b7eb9ffd261b79467d17c1dc28a041' hash for ZED_COMMIT_SHA env var
+warning: zed@0.160.0: Info: using '9d12308d06edffbf60459b06b7ce1a5cf6628dd8' hash for ZED_COMMIT_SHA env var
    Compiling cli v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/cli)
-   Compiling isahc_http_client v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/isahc_http_client)
    Compiling addr2line v0.24.1
    Compiling backtrace v0.3.74
    Compiling git2 v0.19.0
+   Compiling zstd v0.11.2+zstd.1.5.2
+   Compiling rpc v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/rpc)
    Compiling git v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/git)
    Compiling fs v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/fs)
    Compiling git_hosting_providers v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/git_hosting_providers)
@@ -772,9 +867,8 @@ warning: zed@0.156.0: Info: using 'd5f67406b0b7eb9ffd261b79467d17c1dc28a041' has
    Compiling multi_buffer v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/multi_buffer)
    Compiling rich_text v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/rich_text)
    Compiling client v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/client)
-   Compiling dev_server_projects v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/dev_server_projects)
-   Compiling channel v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/channel)
    Compiling project v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/project)
+   Compiling channel v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/channel)
    Compiling call v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/call)
    Compiling languages v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/languages)
    Compiling db v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/db)
@@ -786,46 +880,46 @@ warning: zed@0.156.0: Info: using 'd5f67406b0b7eb9ffd261b79467d17c1dc28a041' has
    Compiling context_servers v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/context_servers)
    Compiling assistant_tool v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/assistant_tool)
    Compiling image_viewer v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/image_viewer)
-   Compiling headless v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/headless)
    Compiling picker v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/picker)
    Compiling search v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/search)
    Compiling markdown_preview v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/markdown_preview)
    Compiling copilot v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/copilot)
    Compiling supermaven v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/supermaven)
-   Compiling ui_input v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/ui_input)
    Compiling feedback v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/feedback)
-   Compiling journal v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/journal)
-   Compiling diagnostics v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/diagnostics)
    Compiling go_to_line v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/go_to_line)
    Compiling settings_ui v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/settings_ui)
-   Compiling auto_update v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/auto_update)
-   Compiling tasks_ui v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/tasks_ui)
+   Compiling diagnostics v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/diagnostics)
+   Compiling journal v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/journal)
    Compiling command_palette v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/command_palette)
-   Compiling terminal_view v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/terminal_view)
-   Compiling inline_completion_button v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/inline_completion_button)
-   Compiling vim v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/vim)
+   Compiling tasks_ui v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/tasks_ui)
    Compiling theme_selector v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/theme_selector)
+   Compiling auto_update v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/auto_update)
+   Compiling vim v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/vim)
+   Compiling inline_completion_button v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/inline_completion_button)
    Compiling extensions_ui v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/extensions_ui)
    Compiling language_model v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/language_model)
-   Compiling recent_projects v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/recent_projects)
-   Compiling vcs_menu v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/vcs_menu)
+   Compiling terminal_view v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/terminal_view)
+   Compiling file_finder v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/file_finder)
    Compiling semantic_index v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/semantic_index)
-   Compiling title_bar v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/title_bar)
-   Compiling assistant v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/assistant)
+   Compiling vcs_menu v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/vcs_menu)
+   Compiling recent_projects v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/recent_projects)
    Compiling repl v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/repl)
+   Compiling assistant v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/assistant)
+   Compiling title_bar v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/title_bar)
    Compiling outline v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/outline)
-   Compiling collab_ui v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/collab_ui)
    Compiling breadcrumbs v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/breadcrumbs)
-   Compiling quick_action_bar v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/quick_action_bar)
+   Compiling collab_ui v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/collab_ui)
    Compiling welcome v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/welcome)
+   Compiling quick_action_bar v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/quick_action_bar)
    Compiling language_tools v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/language_tools)
+   Compiling activity_indicator v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/activity_indicator)
    Compiling project_panel v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/project_panel)
    Compiling outline_panel v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/outline_panel)
-   Compiling activity_indicator v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/activity_indicator)
+   Compiling snippets_ui v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/snippets_ui)
+   Compiling toolchain_selector v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/toolchain_selector)
    Compiling language_selector v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/language_selector)
    Compiling project_symbols v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/project_symbols)
-   Compiling file_finder v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/file_finder)
    Compiling tab_switcher v0.1.0 (/home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/work/zed/crates/tab_switcher)
-    Finished `release` profile [optimized + debuginfo] target(s) in 9m 21s
+    Finished `release` profile [optimized + debuginfo] target(s) in 10m 43s
 All required libraries have been copied to /home/omen/GITHUB/One4All_SlackBuild/zed/zed-git/package-zed//home/omen/.local/bin/zed/lib.
-Build process completed in 10 minutes and 1 seconds.
+Build process completed in 11 minutes and 41 seconds.
