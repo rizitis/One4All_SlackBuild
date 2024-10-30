@@ -25,7 +25,7 @@ CWD=$(pwd)
 DATE="$(date)"
 # Setup build log file
 LOGFILE="$CWD/build.log"
-rm $LOGFILE || true
+rm "$LOGFILE" || true
 exec > >(tee -a "$LOGFILE") 2>&1
 
 echo "Starting build process..."
@@ -126,7 +126,7 @@ true
    --with-gnutls \
    --mandir=/usr/man \
    --infodir=/usr/info \
-   --docdir=/usr/doc/$PRGNAM-$VERSION \
+   --docdir=/usr/doc/$PRGNAM-"$VERSION" \
    --build="$ARCH"-slackware-linux 
    make
    make DESTDIR="$PKG" install
@@ -138,7 +138,7 @@ desktop_entry2
 
 mkdir -p "$PKG"/usr/share/icons/hicolor/scalable/apps/
 
-cp -a $CWD/{gnunet-peerinfo-gtk.svg,gnunet-statistics-gtk.svg} "$PKG"/usr/share/icons/hicolor/scalable/apps/
+cp -a "$CWD"/{gnunet-peerinfo-gtk.svg,gnunet-statistics-gtk.svg} "$PKG"/usr/share/icons/hicolor/scalable/apps/
 
   }
 
@@ -151,7 +151,7 @@ cp -a $CWD/{gnunet-peerinfo-gtk.svg,gnunet-statistics-gtk.svg} "$PKG"/usr/share/
 	  --sysconfdir=/etc \
 	  --localstatedir=/var \
 	  --mandir=/usr/man \
-	  --docdir=/usr/doc/$PRGNAM-$VERSION \
+	  --docdir=/usr/doc/$PRGNAM-"$VERSION" \
 	  --disable-static \
 	  --build="$ARCH"-slackware-linux
 
@@ -214,7 +214,7 @@ cd ..
   INSTALLVENDORMAN3DIR=/usr/man/man3
         make
         make test
-        make install DESTDIR=$PKG
+        make install DESTDIR="$PKG"
 
 # Build method #2
 # requires perl-Module-Build or perl-Module-Build-Tiny
@@ -225,7 +225,7 @@ cd ..
         ./Build
         ./Build test
         ./Build install \
-          --destdir $PKG
+          --destdir "$PKG"
    }
 
    haskel_build(){
@@ -234,10 +234,10 @@ cd ..
 	  runghc Setup configure \
 	  --prefix=/usr \
 	  --libdir=/usr/lib${LIBDIRSUFFIX} \
-	  --libsubdir=ghc-"${GHC_VERSION}"/$SRCNAM-$VERSION \
+	  --libsubdir=ghc-"${GHC_VERSION}"/$SRCNAM-"$VERSION" \
 	  --enable-shared \
 	  --enable-library-profiling \
-	  --docdir=/usr/doc/$PRGNAM-$VERSION
+	  --docdir=/usr/doc/$PRGNAM-"$VERSION"
 
 
 	  runghc Setup build
@@ -246,9 +246,9 @@ cd ..
 	  runghc Setup register --gen-pkg-config
 
 	PKGCONFD=/usr/lib${LIBDIRSUFFIX}/ghc-${GHC_VERSION}/package.conf.d
-	PKGID=$( grep -E "^id: " $SRCNAM-$VERSION.conf | cut -d" " -f2 )
+	PKGID=$( grep -E "^id: " $SRCNAM-"$VERSION".conf | cut -d" " -f2 )
 	  mkdir -p "$PKG"/"$PKGCONFD"
-	  mv $SRCNAM-$VERSION.conf "$PKG"/"$PKGCONFD"/"$PKGID".conf
+	  mv $SRCNAM-"$VERSION".conf "$PKG"/"$PKGCONFD"/"$PKGID".conf
    }
 
    cargo_build() {
@@ -295,7 +295,7 @@ cd ..
   }
 
   debian_build () {
-  	pushd $PKG
+  	pushd "$PKG"
 	mkdir -p "$PKG"/usr
   mv "$PKG"/usr/share/man "$PKG"/usr || true
   popd
@@ -311,7 +311,7 @@ cd ..
 
    after_build(){
 if [[ $COMPRESS != "rpm" && $COMPRESS != "deb" ]]; then
-	  mkdir -p "$PKG"/usr/doc/$PRGNAM-$VERSION
+	  mkdir -p "$PKG"/usr/doc/$PRGNAM-"$VERSION"
     
 # files...
    cp  AUTHORS ChangeLog* COPYING CREDITS LICENSE MAINTAINERS NEWS README* "$PKG/usr/doc/$PRGNAM-$VERSION/" || true
@@ -323,8 +323,8 @@ if [[ $COMPRESS != "rpm" && $COMPRESS != "deb" ]]; then
  #find . -maxdepth 1 -type d ! -name . -exec cp -R {} "$PKG/usr/doc/$PRGNAM-$VERSION/" \;
 
 
-   cat "$CWD"/$PRGNAM.SlackBuild > "$PKG"/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
-	  find "$PKG"/usr/doc/$PRGNAM-$VERSION -type f -exec chmod 644 {} \;
+   cat "$CWD"/$PRGNAM.SlackBuild > "$PKG"/usr/doc/$PRGNAM-"$VERSION"/$PRGNAM.SlackBuild
+	  find "$PKG"/usr/doc/$PRGNAM-"$VERSION" -type f -exec chmod 644 {} \;
 
 	  mkdir -p "$PKG"/install
         if [ -f "$CWD"/doinst.sh ]; then
@@ -415,6 +415,8 @@ MKINS
 	if [ -d "$PKG"/usr/man ]; then
 	  ( cd "$PKG"/usr/man
 	  find . -type f -exec gzip -9 {} \;
+	  # shellcheck disable=SC2046
+	  # shellcheck disable=SC2044
 	  for i in $(find . -type l) ; do ln -s $(readlink "$i").gz "$i".gz ; rm "$i" ; done
 	  )
 	fi
@@ -520,13 +522,15 @@ fi
 
 
    package_build() {
-   cd $PKG || exit 66
+   cd "$PKG" || exit 66
 	  rm -f "$PKG"/{,usr/}lib${LIBDIRSUFFIX}/*.la
           rm -f "$PKG"/usr/lib/*.la || true
           rm -f "$PKG"/lib/*.la || true
+	  # shellcheck disable=SC2038
 	  find "$PKG" | xargs file | grep -e "executable" -e "shared object" | grep ELF \
 	  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
+	  # shellcheck disable=SC2038
 	  find "$PKG" -name perllocal.pod \
 	  -o -name ".packlist" \
 	  -o -name "*.bs" \
@@ -534,30 +538,35 @@ fi
 
 	  cd "$PKG" || exit
 # add sudo here in case you build as user , else makepkg stop...
-sudo  makepkg --remove-rpaths -l y -c n "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
+sudo  makepkg --remove-rpaths -l y -c n "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
 	  echo "$DATE $Packager" | sed -e '1r /dev/stdin' "$OUTPUT/makepkg-${PRGNAM}.log" > "$OUTPUT/makepkg-${PRGNAM}.log.tmp" && mv "$OUTPUT/makepkg-${PRGNAM}.log.tmp" "$OUTPUT/makepkg-${PRGNAM}.log"
 
 
 	  cd "$OUTPUT" || exit
-	  md5sum $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".md5
+	  md5sum $PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" > $PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".md5
+	  # shellcheck disable=SC2002
+	  # shellcheck disable=SC2086
 	  cat "$PKG"/install/slack-desc | grep "^${PRGNAM}" > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".txt
+	  # shellcheck disable=SC2086
 	  cat $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".txt > README
 	if [ -f "$PKG"/install/slack-required ]; then
+	  # shellcheck disable=SC2086
 	  cat "$PKG"/install/slack-required > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG".dep
 	fi
    }
 
    clean_src(){
-	cd $CWD || exit
+	cd "$CWD" || exit
  if [[ "$COMPRESS" == "git" ]]; then
 	rm -r package-"$PRGNAM" work
   else
+  # shellcheck disable=SC2035
   rm -r package-"$PRGNAM" work *.$COMPRESS
  fi
    }
 
    pkg_install(){
-sudo upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
+sudo upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
    }
 
 
@@ -565,6 +574,7 @@ sudo upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$B
   sig_package(){
 #  Add you id_rsa, example:
     prikey_path="/root/id_rsa"
+         # shellcheck disable=SC2086
          openssl dgst -sha256 -sign $prikey_path  -out "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".sig "$OUTPUT"/$PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
    }
 
@@ -634,6 +644,7 @@ chrooting(){
 prepare_build(){
 	rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
+	# shellcheck disable=SC2086
 	rm -rf "$TMP"/$PRGNAM-$VERSION
 
 	get_out() {
@@ -676,6 +687,7 @@ prepare_build(){
     if [[ ! -e "$CWD/README" && ! -e "$CWD/README.md" ]]; then
       # If neither file exists, create README
       echo "Creating README in: $CWD"
+      # shellcheck disable=SC2188
       > "$CWD/README"
       echo "$PRGNAM $SortDesc" > "$CWD/README"
     else
@@ -689,7 +701,7 @@ cd "$TMP" || exit
 if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" && $COMPRESS != "rpm" && $COMPRESS != "deb" ]]; then
   get_out "$CWD"/"$SRCNAM"-"$VERSION"."$COMPRESS" || get_out "$CWD"/"$SRCNAM"."$COMPRESS" || exit
   if [[ $BIN_PKG != "YES" ]]; then
-     cd $SRCNAM-$VERSION || cd $PRGNAM-$VERSION || cd $SRCNAM || exit
+     cd $SRCNAM-"$VERSION" || cd $PRGNAM-"$VERSION" || cd $SRCNAM || exit
     else
      echo "BIN_PKG = $BIN_PKG"
   fi
@@ -699,6 +711,7 @@ if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRES
     cd "$CWD"
     ar x $SRCNAM.$COMPRESS
 	rm debian-binary control.tar.xz
+	# shellcheck disable=SC2086
 	tar -xJf data.tar.xz -C $PKG
   elif
     [[ $COMPRESS = "rpm" ]]; then
@@ -737,6 +750,7 @@ fi
 echo "Detected architecture: $ARCH"
 
 # Output package name if required
+# shellcheck disable=SC2236
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   echo "${PRGNAM}-${VERSION}-${ARCH}-${BUILD}${TAG}.${PKGTYPE}"
   exit 0
@@ -891,9 +905,9 @@ after_build
 package_build
 
 # uncomment what you need:
-#pkg_install
+pkg_install
 #sig_package
-#clean_src
+clean_src
 
 # Calculate and display build time
 end_time=$(date +%s)
