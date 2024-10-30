@@ -1,11 +1,11 @@
-ast-grep: ast-grep (tool to send e-mail patches)
+ast-grep: ast-grep (tool code searching, linting, rewriting)
 ast-grep:
-ast-grep: An easy-to-use tool to send e-mail patches.
-ast-grep:
-ast-grep:
-ast-grep:
-ast-grep:
-ast-grep:
+ast-grep: A fast and easy tool for code searching, linting, rewriting at large
+ast-grep: scale. ast-grep is an AST-based tool to search code by pattern code.
+ast-grep: Think of it as your old-friend grep, but matching AST nodes instead
+ast-grep: of text. You can write patterns as if you are writing ordinary code.
+ast-grep: It will match all code that has the same syntactical structure. You
+ast-grep: can use $ sign + upper case letters as wildcard, e.g.
 ast-grep:
 ast-grep:
 ast-grep: https://sr.ht/~emersion/pyonji

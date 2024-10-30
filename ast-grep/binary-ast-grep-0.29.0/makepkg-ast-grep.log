@@ -1,5 +1,5 @@
 
-Wed Oct 30 21:24:29 EET 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Wed Oct 30 21:29:07 EET 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -16,7 +16,7 @@ Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
 
-Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/ast-grep/binary-ast-grep-0.29.0/ast-grep-0.29.0-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/ast-grep/binary-ast-grep-0.29.0/ast-grep-0.29.0-x86_64-1_rtz.tlz
 
 ./
 install/
@@ -31,5 +31,5 @@ usr/local/
 usr/local/bin/
 usr/local/bin/ast-grep
 
-Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/ast-grep/binary-ast-grep-0.29.0/ast-grep-0.29.0-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/ast-grep/binary-ast-grep-0.29.0/ast-grep-0.29.0-x86_64-1_rtz.tlz created.
 

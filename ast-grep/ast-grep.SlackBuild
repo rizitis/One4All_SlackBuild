@@ -39,9 +39,9 @@ start_time=$(date +%s)
    mkdesc="$(which slackdesc)" || true
    Homepage="https://sr.ht/~emersion/pyonji"
             #|--------------------------------------|#
-   SortDesc="tool to send e-mail patches"
+   SortDesc="tool code searching, linting, rewriting"
             #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
-    LongDesc="An easy-to-use tool to send e-mail patches."
+    LongDesc="A fast and easy tool for code searching, linting, rewriting at large scale. ast-grep is an AST-based tool to search code by pattern code. Think of it as your old-friend grep, but matching AST nodes instead of text. You can write patterns as if you are writing ordinary code. It will match all code that has the same syntactical structure. You can use $ sign + upper case letters as wildcard, e.g."
 # If a README or README.md dont exist in CWD then SortDec discribtion, if not empty, will be added in a README file.
 
 ##########################-GITHUB-AUTO UPDATE-#####################################
