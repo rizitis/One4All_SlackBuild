@@ -1,0 +1,196 @@
+
+Thu Oct 31 12:29:56 EET 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+WARNING: /home/omen/GITHUB/One4All_SlackBuild/slack-desktop/package-slack-desktop is chmod 700
+         temporarily changing to chmod 755
+Removing rpath from: ./opt/slack-desktop/libffmpeg.so
+Removing rpath from: ./opt/slack-desktop/slack
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/slack-desktop/binary-slack-desktop-4.41.96/slack-desktop-4.41.96-x86_64-_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+opt/
+opt/slack-desktop/
+opt/slack-desktop/LICENSES-linux.json
+opt/slack-desktop/chrome-sandbox
+opt/slack-desktop/chrome_100_percent.pak
+opt/slack-desktop/chrome_200_percent.pak
+opt/slack-desktop/chrome_crashpad_handler
+opt/slack-desktop/icudtl.dat
+opt/slack-desktop/libEGL.so
+opt/slack-desktop/libGLESv2.so
+opt/slack-desktop/libffmpeg.so
+opt/slack-desktop/libvk_swiftshader.so
+opt/slack-desktop/libvulkan.so.1
+opt/slack-desktop/locales/
+opt/slack-desktop/locales/af.pak
+opt/slack-desktop/locales/am.pak
+opt/slack-desktop/locales/ar.pak
+opt/slack-desktop/locales/bg.pak
+opt/slack-desktop/locales/bn.pak
+opt/slack-desktop/locales/ca.pak
+opt/slack-desktop/locales/cs.pak
+opt/slack-desktop/locales/da.pak
+opt/slack-desktop/locales/de.pak
+opt/slack-desktop/locales/el.pak
+opt/slack-desktop/locales/en-GB.pak
+opt/slack-desktop/locales/en-US.pak
+opt/slack-desktop/locales/es-419.pak
+opt/slack-desktop/locales/es.pak
+opt/slack-desktop/locales/et.pak
+opt/slack-desktop/locales/fa.pak
+opt/slack-desktop/locales/fi.pak
+opt/slack-desktop/locales/fil.pak
+opt/slack-desktop/locales/fr.pak
+opt/slack-desktop/locales/gu.pak
+opt/slack-desktop/locales/he.pak
+opt/slack-desktop/locales/hi.pak
+opt/slack-desktop/locales/hr.pak
+opt/slack-desktop/locales/hu.pak
+opt/slack-desktop/locales/id.pak
+opt/slack-desktop/locales/it.pak
+opt/slack-desktop/locales/ja.pak
+opt/slack-desktop/locales/kn.pak
+opt/slack-desktop/locales/ko.pak
+opt/slack-desktop/locales/lt.pak
+opt/slack-desktop/locales/lv.pak
+opt/slack-desktop/locales/ml.pak
+opt/slack-desktop/locales/mr.pak
+opt/slack-desktop/locales/ms.pak
+opt/slack-desktop/locales/nb.pak
+opt/slack-desktop/locales/nl.pak
+opt/slack-desktop/locales/pl.pak
+opt/slack-desktop/locales/pt-BR.pak
+opt/slack-desktop/locales/pt-PT.pak
+opt/slack-desktop/locales/ro.pak
+opt/slack-desktop/locales/ru.pak
+opt/slack-desktop/locales/sk.pak
+opt/slack-desktop/locales/sl.pak
+opt/slack-desktop/locales/sr.pak
+opt/slack-desktop/locales/sv.pak
+opt/slack-desktop/locales/sw.pak
+opt/slack-desktop/locales/ta.pak
+opt/slack-desktop/locales/te.pak
+opt/slack-desktop/locales/th.pak
+opt/slack-desktop/locales/tr.pak
+opt/slack-desktop/locales/uk.pak
+opt/slack-desktop/locales/ur.pak
+opt/slack-desktop/locales/vi.pak
+opt/slack-desktop/locales/zh-CN.pak
+opt/slack-desktop/locales/zh-TW.pak
+opt/slack-desktop/resources/
+opt/slack-desktop/resources.pak
+opt/slack-desktop/resources/LICENSES.chromium.html
+opt/slack-desktop/resources/animal_stick.mp3
+opt/slack-desktop/resources/app.asar
+opt/slack-desktop/resources/app.asar.unpacked/
+opt/slack-desktop/resources/app.asar.unpacked/dist/
+opt/slack-desktop/resources/app.asar.unpacked/dist/resources/
+opt/slack-desktop/resources/app.asar.unpacked/dist/resources/slack-taskbar-highlight.ico
+opt/slack-desktop/resources/app.asar.unpacked/dist/resources/slack-taskbar-rest.ico
+opt/slack-desktop/resources/app.asar.unpacked/dist/resources/slack-taskbar-unread.ico
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/@tinyspeck/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/@tinyspeck/native-keymap/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/@tinyspeck/native-keymap/build/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/@tinyspeck/native-keymap/build/Release/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/@tinyspeck/native-keymap/build/Release/keymapping.node
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/@tinyspeck/slack-desktop-utils/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/@tinyspeck/slack-desktop-utils/lib/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/@tinyspeck/slack-desktop-utils/lib/binding/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/@tinyspeck/slack-desktop-utils/lib/binding/napi-v8/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/@tinyspeck/slack-desktop-utils/lib/binding/napi-v8/slackdesktoputils.node
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/cf-prefs/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/cf-prefs/build/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/cf-prefs/build/Release/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/cf-prefs/build/Release/cf-prefs.node
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/electron-native-auth/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/electron-native-auth/build/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/electron-native-auth/build/Release/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/electron-native-auth/build/Release/electron_native_auth.node
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/file-handler-info/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/file-handler-info/build/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/file-handler-info/build/Release/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/file-handler-info/build/Release/file_handler_info.node
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/macos-notification-state/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/macos-notification-state/build/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/macos-notification-state/build/Release/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/macos-notification-state/build/Release/notificationstate.node
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/registry-js/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/registry-js/build/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/registry-js/build/Release/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/registry-js/build/Release/registry.node
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/windows-focus-assist/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/windows-focus-assist/build/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/windows-focus-assist/build/Release/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/windows-focus-assist/build/Release/focusassist.node
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/windows-notification-state/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/windows-notification-state/build/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/windows-notification-state/build/Release/
+opt/slack-desktop/resources/app.asar.unpacked/node_modules/windows-notification-state/build/Release/notificationstate.node
+opt/slack-desktop/resources/b2.mp3
+opt/slack-desktop/resources/been_tree.mp3
+opt/slack-desktop/resources/boop.mp3
+opt/slack-desktop/resources/calls_alert_v2.mp3
+opt/slack-desktop/resources/calls_confirmation_v2.mp3
+opt/slack-desktop/resources/calls_incoming_ring_v2.mp3
+opt/slack-desktop/resources/calls_outgoing_ring_v2.mp3
+opt/slack-desktop/resources/calls_pop_v2.mp3
+opt/slack-desktop/resources/calls_they_joined_call_v2.mp3
+opt/slack-desktop/resources/calls_they_left_call_v2.mp3
+opt/slack-desktop/resources/calls_you_joined_call_v2.mp3
+opt/slack-desktop/resources/calls_you_left_call_v2.mp3
+opt/slack-desktop/resources/complete_quest_requirement.mp3
+opt/slack-desktop/resources/confirm_delivery.mp3
+opt/slack-desktop/resources/flitterbug.mp3
+opt/slack-desktop/resources/here_you_go_lighter.mp3
+opt/slack-desktop/resources/hi_flowers_hit.mp3
+opt/slack-desktop/resources/hummus.mp3
+opt/slack-desktop/resources/item_pickup.mp3
+opt/slack-desktop/resources/knock_brush.mp3
+opt/slack-desktop/resources/save_and_checkout.mp3
+opt/slack-desktop/resources/short_boop.mp3
+opt/slack-desktop/slack
+opt/slack-desktop/snapshot_blob.bin
+opt/slack-desktop/v8_context_snapshot.bin
+opt/slack-desktop/version
+opt/slack-desktop/vk_swiftshader_icd.json
+usr/
+usr/doc/
+usr/doc/slack-desktop-4.41.96/
+usr/doc/slack-desktop-4.41.96/LICENSE
+usr/doc/slack-desktop-4.41.96/slack-desktop/
+usr/doc/slack-desktop-4.41.96/slack-desktop.SlackBuild
+usr/doc/slack-desktop-4.41.96/slack-desktop/OPEN_SOURCE_LICENSE_ATTRIBUTIONS
+usr/local/
+usr/local/bin/
+usr/local/bin/slack-desktop
+usr/share/
+usr/share/applications/
+usr/share/applications/slack-desktop.desktop
+usr/share/pixmaps/
+usr/share/pixmaps/slack-desktop.png
+usr/share/slack-desktop/
+
+Restoring permissions of /home/omen/GITHUB/One4All_SlackBuild/slack-desktop/package-slack-desktop to chmod 700
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/slack-desktop/binary-slack-desktop-4.41.96/slack-desktop-4.41.96-x86_64-_rtz.tlz created.
+

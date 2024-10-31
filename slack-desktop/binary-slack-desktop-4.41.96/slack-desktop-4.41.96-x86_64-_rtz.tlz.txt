@@ -1,0 +1,11 @@
+slack-desktop: slack-desktop (Slack Desktop for Linux)
+slack-desktop:
+slack-desktop: In Slack, you ve got all the flexibility to work when, where and how
+slack-desktop: it s best for you. You can easily chat, send audio and video clips,
+slack-desktop: or hop on a huddle to talk things out live.
+slack-desktop:
+slack-desktop:
+slack-desktop:
+slack-desktop:
+slack-desktop:
+slack-desktop: https://slack.com

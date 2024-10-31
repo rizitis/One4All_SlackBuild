@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ELECTRON=$(locate electron | grep "/usr/bin")
+cd /opt/slack-desktop/resources || exit
+$ELECTRON app.asar
