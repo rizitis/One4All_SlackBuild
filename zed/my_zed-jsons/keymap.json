@@ -1,0 +1,79 @@
+// keymap.json, created for standard text editor keybindings (non-Vim mode)
+[
+  {
+    "context": "Editor && !menu",
+    "bindings": {
+      // Basic File Operations
+      "ctrl-s": "workspace::Save",
+      "ctrl-o": "file_finder::Open",
+      "ctrl-w": "pane::CloseActiveItem",
+      "ctrl-n": "file_finder::NewFile",
+      
+      // Clipboard Operations
+      "ctrl-x": "editor::Cut",
+      "ctrl-c": "editor::Copy",
+      "ctrl-v": "editor::Paste",
+      "ctrl-a": "editor::SelectAll",
+      
+      // Undo and Redo
+      "ctrl-z": "editor::Undo",
+      "ctrl-shift-z": "editor::Redo",
+      
+      // Find and Replace
+      "ctrl-f": "editor::Find",
+      "ctrl-h": "editor::Replace",
+      
+      // Toggle Comment
+      "ctrl-/": "editor::ToggleComment",
+      
+      // Navigation
+      "ctrl-g": "editor::GoToLine",
+      "ctrl-p": "file_finder::Toggle",
+      
+      // Pane Movement
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
+    }
+  },
+  {
+    "context": "Editor && !menu",
+    "bindings": {
+      // Save all open files
+      "ctrl-shift-s": "workspace::SaveAll",
+      
+      // Toggle Soft Wrap
+      "ctrl-shift-w": "editor::ToggleSoftWrap"
+    }
+  },
+  {
+    "context": "Workspace && !menu",
+    "bindings": {
+      // Toggle Right Dock (e.g., Project Explorer)
+      "ctrl-b": "workspace::ToggleRightDock",
+      
+      // Open file finder
+      "ctrl-p": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "EmptyPane",
+    "bindings": {
+      // Open recent project
+      "ctrl-shift-p": "projects::OpenRecent"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      // Project Panel File Management
+      "a": "project_panel::NewFile",
+      "A": "project_panel::NewDirectory",
+      "r": "project_panel::Rename",
+      "d": "project_panel::Delete",
+      "q": "workspace::ToggleRightDock"
+    }
+  }
+]
+

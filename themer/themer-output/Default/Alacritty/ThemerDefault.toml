@@ -1,0 +1,83 @@
+[schemes.themer-default-dark.bright]
+black = "#847E85"
+blue = "#85CBFF"
+cyan = "#51D3B1"
+green = "#B6D65D"
+magenta = "#F775CC"
+red = "#FF6673"
+white = "#FFFCFF"
+yellow = "#FFDA6E"
+
+[schemes.themer-default-dark.cursor]
+cursor = "#CC78FA"
+text = "#282629"
+
+[schemes.themer-default-dark.dim]
+black = "#474247"
+blue = "#5AA0D4"
+cyan = "#26A887"
+green = "#8BAB33"
+magenta = "#CC4AA1"
+red = "#D43B48"
+white = "#C1BCC2"
+yellow = "#D4B043"
+
+[schemes.themer-default-dark.normal]
+black = "#656066"
+blue = "#66BFFF"
+cyan = "#26C99E"
+green = "#A4CC35"
+magenta = "#F553BF"
+red = "#FF4050"
+white = "#E0DCE0"
+yellow = "#FFD24A"
+
+[schemes.themer-default-dark.primary]
+background = "#282629"
+foreground = "#E0DCE0"
+
+[schemes.themer-default-dark.selection]
+background = "#66BFFF"
+text = "#282629"
+
+[schemes.themer-default-light.bright]
+black = "#656066"
+blue = "#75B7E7"
+cyan = "#4CD0AD"
+green = "#ACCA57"
+magenta = "#F171C6"
+red = "#F36471"
+white = "#E0DCE0"
+yellow = "#F1C74D"
+
+[schemes.themer-default-light.cursor]
+cursor = "#BF65F0"
+text = "#FFFCFF"
+
+[schemes.themer-default-light.dim]
+black = "#282629"
+blue = "#4A8CBC"
+cyan = "#21A582"
+green = "#819F2C"
+magenta = "#C6469B"
+red = "#C83946"
+white = "#A29DA3"
+yellow = "#C69C23"
+
+[schemes.themer-default-light.normal]
+black = "#474247"
+blue = "#53A6E1"
+cyan = "#1FC598"
+green = "#97BD2D"
+magenta = "#EE4EB8"
+red = "#F03E4D"
+white = "#C1BCC2"
+yellow = "#EEBA21"
+
+[schemes.themer-default-light.primary]
+background = "#FFFCFF"
+foreground = "#474247"
+
+[schemes.themer-default-light.selection]
+background = "#53A6E1"
+text = "#FFFCFF"
