@@ -61,6 +61,12 @@ SRCNAM=ast-grep
 # Download link if use AUTO_UPD then SRCmust be empty
 SRCURL=https://github.com/ast-grep/ast-grep/releases/download/0.29.0/app-x86_64-unknown-linux-gnu.zip
 #
+# ON or OFF/empty
+AGENT=OFF
+# If AGENT is ON Define the download agent or special wget option...
+DOWNLOAD_AGENT=" --content-disposition"
+
+
 # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z, deb, rpm
 # OR repos: cvn, cvs, git, lftp
 COMPRESS="zip"
@@ -570,7 +576,11 @@ download_src() {
     echo "$VERSION or $AUTO_UPD is not set."
     exit 1
   fi
-
+  
+  if [[ $AGENT == ON ]]; then
+   # Use eval to construct and run the download command
+eval wget "${DOWNLOAD_AGENT}" "$SRCURL"
+  else
   if [[ "$VERSION" != "$AUTO_UPD" ]]; then
     sleep 1
     if [[ $COMPRESS == "git" ]]; then
@@ -611,6 +621,7 @@ download_src() {
     echo "Download_src Messed up $VERSION"
     exit 8
   fi
+fi
 }
 
 chrooting(){
