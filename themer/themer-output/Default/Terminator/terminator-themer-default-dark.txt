@@ -1,0 +1,5 @@
+[[Themer Themer Default Dark]]
+  background_color = "#282629"
+  cursor_color = "#E0DCE0"
+  foreground_color = "#E0DCE0"
+  palette = "#282629:#FF4050:#A4CC35:#FFD24A:#26C99E:#CC78FA:#F553BF:#E0DCE0:#C1BCC2:#FF4050:#26C99E:#FFD24A:#66BFFF:#CC78FA:#F553BF:#FFFCFF"

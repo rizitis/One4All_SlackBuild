@@ -1,0 +1,11 @@
+themer: themer (generates themes for your apps)
+themer:
+themer: themer takes a set of colors and generates editor themes, terminal
+themer: themes, themes for other apps, and desktop wallpapers.
+themer:
+themer:
+themer:
+themer:
+themer:
+themer:
+themer: https://themer.dev/

@@ -1,0 +1,23 @@
+{
+  "name": "Themer Default Light",
+  "background": "#FFFCFF",
+  "foreground": "#474247",
+  "cursorColor": "#BF65F0",
+  "selectionBackground": "#53A6E1",
+  "black": "#474247",
+  "brightBlack": "#656066",
+  "red": "#F03E4D",
+  "brightRed": "#F36471",
+  "green": "#97BD2D",
+  "brightGreen": "#ACCA57",
+  "yellow": "#EEBA21",
+  "brightYellow": "#F1C74D",
+  "blue": "#53A6E1",
+  "brightBlue": "#75B7E7",
+  "purple": "#BF65F0",
+  "brightPurple": "#CC83F3",
+  "cyan": "#1FC598",
+  "brightCyan": "#4CD0AD",
+  "white": "#C1BCC2",
+  "brightWhite": "#E0DCE0"
+}
