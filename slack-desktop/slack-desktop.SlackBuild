@@ -599,9 +599,9 @@ download_src() {
       LFTP="$(which lftp)"
       $LFTP -c mirror "$SRCURL"
     elif [[ $COMPRESS == "deb" ]]; then
-      wget -O $SRCNAM.$COMPRESS "$SRCURL"
+      wget  --content-disposition "$SRCURL"
     elif [[ $COMPRESS == "rpm" ]]; then
-      wget -c "$SRCURL"
+      wget  "$SRCURL"
     else
       wget -O "$SRCNAM"-"$VERSION"."$COMPRESS" "$SRCURL"
     fi
