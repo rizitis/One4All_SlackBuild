@@ -1,0 +1,300 @@
+Starting build process...
+Detected architecture: x86_64
+--2024-11-01 13:21:34--  https://github.com/kristoff-it/superhtml/archive/refs/tags/v0.5.3.tar.gz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/kristoff-it/superhtml/tar.gz/refs/tags/v0.5.3 [following]
+--2024-11-01 13:21:35--  https://codeload.github.com/kristoff-it/superhtml/tar.gz/refs/tags/v0.5.3
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘superhtml-0.5.3.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  432K
+    50K .......... .......... .......... .......... ..........  864K
+   100K .......... .......... .......... .......... .......... 5.43M
+   150K .......... .......... .......... .......... .......... 6.28M
+   200K .......... .......... .......... .......... .......... 1.02M
+   250K .......... .......... .......... .......... .......... 5.33M
+   300K .......... .......... .......... .......... .......... 4.95M
+   350K .......... .......... .......... .......... ..........  372K
+   400K .......... .......... .......... .......... .......... 51.4M
+   450K .......... .......... .......... .......... .......... 61.8M
+   500K .......... .......... .......... .......... .......... 72.4M
+   550K .......... .......... .......... .......... .......... 73.4M
+   600K .......... .......... .......... .......... .......... 69.2M
+   650K .......... .......... .......... .......... .......... 75.4M
+   700K .......... .......... .......... .......... .......... 79.2M
+   750K .......... .......... .......... .......... .......... 86.9M
+   800K .......... .......... .......... .......... .......... 6.96M
+   850K .......... .......... .......... .......... .......... 4.13M
+   900K .......... .......... .......... .......... .......... 3.51M
+   950K .......... .......... .......... .......... .......... 5.05M
+  1000K .......... .......... .......... .......... .......... 4.38M
+  1050K .......... .......... .......... .......... .......... 1.96M
+  1100K .......... .......... .......... .......... .......... 2.95M
+  1150K .......... .......... .......... .......... .......... 5.46M
+  1200K .......... .......... .......... .......... .......... 2.37M
+  1250K .......... .......... .......... .......... .......... 2.96M
+  1300K .......... .......... .......... .......... .......... 3.63M
+  1350K .......... .......... .......... .......... .......... 4.20M
+  1400K .......... .......... .......... .......... .......... 2.26M
+  1450K .......... .......... .......... .......... .......... 3.41M
+  1500K .......... .......... .......... .......... .......... 4.13M
+  1550K .......... .......... .......... .......... .......... 4.89M
+  1600K .......... .......... .......... .......... .......... 2.10M
+  1650K .......... .......... .......... .......... .......... 3.46M
+  1700K .......... .......... .......... .......... .......... 4.12M
+  1750K .......... .......... .......... .......... .......... 5.32M
+  1800K .......... .......... .......... .......... .......... 1.88M
+  1850K .......... .......... .......... .......... .......... 3.82M
+  1900K .......... .......... .......... .......... .......... 4.31M
+  1950K .......... .......... .......... .......... .......... 2.51M
+  2000K .......... .......... .......... .......... .......... 3.05M
+  2050K .......... .......... .......... .......... .......... 3.67M
+  2100K .......... .......... .......... .......... .......... 4.99M
+  2150K .......... .......... .......... ....                  4.86M=0.8s
+
+2024-11-01 13:21:36 (2.68 MB/s) - ‘superhtml-0.5.3.tar.gz’ saved [2236567]
+
+superhtml-0.5.3/
+superhtml-0.5.3/.gitattributes
+superhtml-0.5.3/.github/
+superhtml-0.5.3/.github/vscode-autoformat.gif
+superhtml-0.5.3/.github/vscode.png
+superhtml-0.5.3/.github/workflows/
+superhtml-0.5.3/.github/workflows/ci.yml
+superhtml-0.5.3/.gitignore
+superhtml-0.5.3/LICENSE
+superhtml-0.5.3/README.md
+superhtml-0.5.3/build.zig
+superhtml-0.5.3/build.zig.zon
+superhtml-0.5.3/editors/
+superhtml-0.5.3/editors/emacs/
+superhtml-0.5.3/editors/emacs/README.md
+superhtml-0.5.3/editors/vscode/
+superhtml-0.5.3/editors/vscode/.gitignore
+superhtml-0.5.3/editors/vscode/.vscode/
+superhtml-0.5.3/editors/vscode/.vscode/extensions.json
+superhtml-0.5.3/editors/vscode/.vscode/launch.json
+superhtml-0.5.3/editors/vscode/.vscode/settings.json
+superhtml-0.5.3/editors/vscode/.vscode/tasks.json
+superhtml-0.5.3/editors/vscode/.vscodeignore
+superhtml-0.5.3/editors/vscode/CHANGELOG.md
+superhtml-0.5.3/editors/vscode/LICENSE
+superhtml-0.5.3/editors/vscode/README.md
+superhtml-0.5.3/editors/vscode/package-lock.json
+superhtml-0.5.3/editors/vscode/package.json
+superhtml-0.5.3/editors/vscode/src/
+superhtml-0.5.3/editors/vscode/src/extension.ts
+superhtml-0.5.3/editors/vscode/src/formatter.ts
+superhtml-0.5.3/editors/vscode/src/util.ts
+superhtml-0.5.3/editors/vscode/superhtml.language-configuration.json
+superhtml-0.5.3/editors/vscode/syntaxes/
+superhtml-0.5.3/editors/vscode/syntaxes/superhtml-derivative.tmLanguage.json
+superhtml-0.5.3/editors/vscode/syntaxes/superhtml.tmLanguage.json
+superhtml-0.5.3/editors/vscode/tsconfig.json
+superhtml-0.5.3/editors/vscode/vscode.png
+superhtml-0.5.3/src/
+superhtml-0.5.3/src/Ast.zig
+superhtml-0.5.3/src/cli.zig
+superhtml-0.5.3/src/cli/
+superhtml-0.5.3/src/cli/check.zig
+superhtml-0.5.3/src/cli/fmt.zig
+superhtml-0.5.3/src/cli/interface.zig
+superhtml-0.5.3/src/cli/logging.zig
+superhtml-0.5.3/src/cli/lsp.zig
+superhtml-0.5.3/src/cli/lsp/
+superhtml-0.5.3/src/cli/lsp/Document.zig
+superhtml-0.5.3/src/cli/lsp/logic.zig
+superhtml-0.5.3/src/css.zig
+superhtml-0.5.3/src/css/
+superhtml-0.5.3/src/css/Ast.zig
+superhtml-0.5.3/src/css/Tokenizer.zig
+superhtml-0.5.3/src/errors.zig
+superhtml-0.5.3/src/fuzz.zig
+superhtml-0.5.3/src/fuzz/
+superhtml-0.5.3/src/fuzz/afl.zig
+superhtml-0.5.3/src/fuzz/astgen.zig
+superhtml-0.5.3/src/fuzz/cases/
+superhtml-0.5.3/src/fuzz/cases/12.html
+superhtml-0.5.3/src/fuzz/cases/2.html
+superhtml-0.5.3/src/fuzz/cases/3-01.html
+superhtml-0.5.3/src/fuzz/cases/3.html
+superhtml-0.5.3/src/fuzz/cases/4-01.html
+superhtml-0.5.3/src/fuzz/cases/5-01.html
+superhtml-0.5.3/src/fuzz/cases/6-01.html
+superhtml-0.5.3/src/fuzz/cases/6-02.html
+superhtml-0.5.3/src/fuzz/cases/77.html
+superhtml-0.5.3/src/fuzz/cases/round2/
+superhtml-0.5.3/src/fuzz/cases/round2/2.html
+superhtml-0.5.3/src/fuzz/cases/round2/3.html
+superhtml-0.5.3/src/fuzz/cases/round3/
+superhtml-0.5.3/src/fuzz/cases/round3/2.html
+superhtml-0.5.3/src/html.zig
+superhtml-0.5.3/src/html/
+superhtml-0.5.3/src/html/Ast.zig
+superhtml-0.5.3/src/html/Tokenizer.zig
+superhtml-0.5.3/src/html/named_character_references.zig
+superhtml-0.5.3/src/root.zig
+superhtml-0.5.3/src/sitter.zig
+superhtml-0.5.3/src/template.zig
+superhtml-0.5.3/src/vm.zig
+superhtml-0.5.3/src/wasm.zig
+superhtml-0.5.3/tree-sitter-superhtml/
+superhtml-0.5.3/tree-sitter-superhtml/.editorconfig
+superhtml-0.5.3/tree-sitter-superhtml/.gitattributes
+superhtml-0.5.3/tree-sitter-superhtml/.gitignore
+superhtml-0.5.3/tree-sitter-superhtml/.npmignore
+superhtml-0.5.3/tree-sitter-superhtml/Cargo.toml
+superhtml-0.5.3/tree-sitter-superhtml/LICENSE
+superhtml-0.5.3/tree-sitter-superhtml/Makefile
+superhtml-0.5.3/tree-sitter-superhtml/Package.swift
+superhtml-0.5.3/tree-sitter-superhtml/README.md
+superhtml-0.5.3/tree-sitter-superhtml/binding.gyp
+superhtml-0.5.3/tree-sitter-superhtml/bindings/
+superhtml-0.5.3/tree-sitter-superhtml/bindings/c/
+superhtml-0.5.3/tree-sitter-superhtml/bindings/c/tree-sitter-html.h
+superhtml-0.5.3/tree-sitter-superhtml/bindings/c/tree-sitter-html.pc.in
+superhtml-0.5.3/tree-sitter-superhtml/bindings/go/
+superhtml-0.5.3/tree-sitter-superhtml/bindings/go/binding.go
+superhtml-0.5.3/tree-sitter-superhtml/bindings/go/binding_test.go
+superhtml-0.5.3/tree-sitter-superhtml/bindings/go/go.mod
+superhtml-0.5.3/tree-sitter-superhtml/bindings/node/
+superhtml-0.5.3/tree-sitter-superhtml/bindings/node/binding.cc
+superhtml-0.5.3/tree-sitter-superhtml/bindings/node/index.d.ts
+superhtml-0.5.3/tree-sitter-superhtml/bindings/node/index.js
+superhtml-0.5.3/tree-sitter-superhtml/bindings/python/
+superhtml-0.5.3/tree-sitter-superhtml/bindings/python/tree_sitter_html/
+superhtml-0.5.3/tree-sitter-superhtml/bindings/python/tree_sitter_html/__init__.py
+superhtml-0.5.3/tree-sitter-superhtml/bindings/python/tree_sitter_html/__init__.pyi
+superhtml-0.5.3/tree-sitter-superhtml/bindings/python/tree_sitter_html/binding.c
+superhtml-0.5.3/tree-sitter-superhtml/bindings/python/tree_sitter_html/py.typed
+superhtml-0.5.3/tree-sitter-superhtml/bindings/rust/
+superhtml-0.5.3/tree-sitter-superhtml/bindings/rust/build.rs
+superhtml-0.5.3/tree-sitter-superhtml/bindings/rust/lib.rs
+superhtml-0.5.3/tree-sitter-superhtml/bindings/swift/
+superhtml-0.5.3/tree-sitter-superhtml/bindings/swift/TreeSitterHTML/
+superhtml-0.5.3/tree-sitter-superhtml/bindings/swift/TreeSitterHTML/html.h
+superhtml-0.5.3/tree-sitter-superhtml/examples/
+superhtml-0.5.3/tree-sitter-superhtml/examples/deeply-nested-custom.html
+superhtml-0.5.3/tree-sitter-superhtml/examples/deeply-nested.html
+superhtml-0.5.3/tree-sitter-superhtml/grammar.js
+superhtml-0.5.3/tree-sitter-superhtml/package-lock.json
+superhtml-0.5.3/tree-sitter-superhtml/package.json
+superhtml-0.5.3/tree-sitter-superhtml/pyproject.toml
+superhtml-0.5.3/tree-sitter-superhtml/queries/
+superhtml-0.5.3/tree-sitter-superhtml/queries/highlights.scm
+superhtml-0.5.3/tree-sitter-superhtml/queries/injections.scm
+superhtml-0.5.3/tree-sitter-superhtml/setup.py
+superhtml-0.5.3/tree-sitter-superhtml/src/
+superhtml-0.5.3/tree-sitter-superhtml/src/grammar.json
+superhtml-0.5.3/tree-sitter-superhtml/src/node-types.json
+superhtml-0.5.3/tree-sitter-superhtml/src/parser.c
+superhtml-0.5.3/tree-sitter-superhtml/src/scanner.c
+superhtml-0.5.3/tree-sitter-superhtml/src/tag.h
+superhtml-0.5.3/tree-sitter-superhtml/src/tree_sitter/
+superhtml-0.5.3/tree-sitter-superhtml/src/tree_sitter/alloc.h
+superhtml-0.5.3/tree-sitter-superhtml/src/tree_sitter/array.h
+superhtml-0.5.3/tree-sitter-superhtml/src/tree_sitter/parser.h
+superhtml-0.5.3/tree-sitter-superhtml/test/
+superhtml-0.5.3/tree-sitter-superhtml/test/corpus/
+superhtml-0.5.3/tree-sitter-superhtml/test/corpus/main.txt
+superhtml-0.5.3/tree-sitter-superhtml/test/highlight/
+superhtml-0.5.3/tree-sitter-superhtml/test/highlight/attributes.html
+superhtml-0.5.3/tree-sitter-superhtml/test/highlight/doctype.html
+superhtml-0.5.3/tree-sitter-superhtml/test/highlight/erroneous.html
+superhtml-0.5.3/tree-sitter-superhtml/test/highlight/self-closing.html
+/home/omen/GITHUB/One4All_SlackBuild/superhtml/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/superhtml/binary-superhtml-0.5.3/superhtml-0.5.3-x86_64-2_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/doc/
+usr/doc/superhtml-0.5.3/
+usr/doc/superhtml-0.5.3/LICENSE
+usr/doc/superhtml-0.5.3/README.md
+usr/doc/superhtml-0.5.3/superhtml.SlackBuild
+usr/local/
+usr/local/bin/
+usr/local/bin/superhtml
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/superhtml/binary-superhtml-0.5.3/superhtml-0.5.3-x86_64-2_rtz.tlz created.
+
+
++==============================================================================
+| Upgrading superhtml-0.5.3-x86_64-1_rtz package using /home/omen/GITHUB/One4All_SlackBuild/superhtml/binary-superhtml-0.5.3/superhtml-0.5.3-x86_64-2_rtz.tlz
++==============================================================================
+Pre-installing package superhtml-0.5.3-x86_64-2_rtz...
+Removing package: superhtml-0.5.3-x86_64-1_rtz-upgraded-2024-11-01,13:22:03
+Verifying package superhtml-0.5.3-x86_64-2_rtz.tlz.
+Installing package superhtml-0.5.3-x86_64-2_rtz.tlz:
+PACKAGE DESCRIPTION:
+# superhtml (tool to send e-mail patches)
+#
+# An easy-to-use tool to send e-mail patches.
+#
+# https://github.com/kristoff-it/superhtml
+Executing install script for superhtml-0.5.3-x86_64-2_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
+/usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
+/usr/share/fonts/TTF/oxygen: caching, new cache contents: 3 fonts, 0 dirs
+/usr/share/fonts/TTF/static: caching, new cache contents: 36 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package superhtml-0.5.3-x86_64-2_rtz.tlz installed.
+Package superhtml-0.5.3-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/superhtml/binary-superhtml-0.5.3/superhtml-0.5.3-x86_64-2_rtz.tlz.
+Build process completed in 0 minutes and 34 seconds.

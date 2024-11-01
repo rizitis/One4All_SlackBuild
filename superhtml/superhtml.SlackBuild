@@ -37,11 +37,11 @@ start_time=$(date +%s)
 # If you have slackdesc installed you need these, else ignore them (empty)
 # https://slack-desc.sourceforge.net/
    mkdesc="$(which slackdesc)" || true
-   Homepage="https://sr.ht/~emersion/pyonji"
+    Homepage="https://github.com/kristoff-it/superhtml"
             #|--------------------------------------|#
-   SortDesc="tool code searching, linting, rewriting"
+    SortDesc="tool to send e-mail patches"
             #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
-    LongDesc="A fast and easy tool for code searching, linting, rewriting at large scale. ast-grep is an AST-based tool to search code by pattern code. Think of it as your old-friend grep, but matching AST nodes instead of text. You can write patterns as if you are writing ordinary code. It will match all code that has the same syntactical structure. You can use $ sign + upper case letters as wildcard, e.g."
+    LongDesc="An easy-to-use tool to send e-mail patches."
 # If a README or README.md dont exist in CWD then SortDec discribtion, if not empty, will be added in a README file.
 
 ##########################-GITHUB-AUTO UPDATE-#####################################
@@ -52,26 +52,31 @@ AUTO_UPD=$(curl --silent -L "https://api.github.com/repos/$DEV/$PRJ/releases/lat
 
 ############################-SRC AND PACKAGE VARS-##################################
 # If use AUTO UPDATE 'VERSION=$AUTO_UPD'  or as a regular package version 'VERSION=0.1.2' etc...
-VERSION=0.29.0
+VERSION=0.5.3
 #
 # Binary (output) name
-PRGNAM=ast-grep
+PRGNAM=superhtml
 # If not special SRCNAM needed then we use the same name as PRGNAM.
-SRCNAM=ast-grep
+SRCNAM=superhtml
 # Download link if use AUTO_UPD then SRCmust be empty
-SRCURL=https://github.com/ast-grep/ast-grep/releases/download/0.29.0/app-x86_64-unknown-linux-gnu.zip
+SRCURL=https://github.com/kristoff-it/superhtml/archive/refs/tags/v0.5.3.tar.gz
 #
+# ON or OFF/empty
+AGENT=OFF
+# If AGENT is ON Define the download agent or special wget option...
+DOWNLOAD_AGENT=" --content-disposition"
+
 # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z, deb, rpm
 # OR repos: cvn, cvs, git, lftp
-COMPRESS="zip"
+COMPRESS="tar.gz"
 # IF you need:git checkout, else leave it empty.
 GITCHEK=
 #0bdb437d8cdf90902dcabe1d472c52e55fc0f46a bump version.
 # When source package after extract contains just a binary or we build directly in then set BIN_PKG=YES else leave it empty or whatever but YES.
-BIN_PKG=YES
+BIN_PKG=
 
 ######################-WORK_DIRS and OUTPUT-#################################
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_rtz}
 PKGTYPE=${PKGTYPE:-tlz}
 PKG=$CWD/package-$PRGNAM
@@ -116,15 +121,12 @@ EOL
 ## EDIT YOUR BUILD FUNCTIONS AS FOR YOUR NEEDS ##
 
    patch_build() {
-mkdir -p "$PKG"/usr/doc/$PRGNAM-"$VERSION"
-pushd "$PKG"/usr/doc/$PRGNAM-"$VERSION"
-wget https://raw.githubusercontent.com/ast-grep/ast-grep/c9aff6ace291c5a02e48446aa9be1d471b763ca2/LICENSE
-popd
+true
 }
 
   custom_build () {
-  find "$TMP" -name "sg" -type f -print -exec install -vDm755 {} "$PKG/usr/local/bin/$PRGNAM" \;
-
+ zig build -Doptimize=ReleaseFast
+ install -Dm755 "zig-out/bin/$PRGNAM" "$PKG/usr/local/bin/$PRGNAM"
   }
 
    auto_build() {
@@ -304,7 +306,7 @@ if [[ $COMPRESS != "rpm" && $COMPRESS != "deb" ]]; then
 
 
 # Iterate over directories in the current directory and copy them
-   cp -R doc DOCS "$PKG/usr/doc/$PRGNAM-$VERSION/" || true
+   cp -R docs DOCS "$PKG/usr/doc/$PRGNAM-$VERSION/" || true
  #find . -maxdepth 1 -type d ! -name . -exec cp -R {} "$PKG/usr/doc/$PRGNAM-$VERSION/" \;
 
 
@@ -523,7 +525,7 @@ fi
 
 	  cd "$PKG" || exit
 # add sudo here in case you build as user , else makepkg stop...
-sudo  makepkg --remove-rpaths -l y -c n "$OUTPUT"/"$PRGNAM"-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
+sudo  makepkg --remove-rpaths -l y -c n "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
 	  echo "$DATE $Packager" | sed -e '1r /dev/stdin' "$OUTPUT/makepkg-${PRGNAM}.log" > "$OUTPUT/makepkg-${PRGNAM}.log.tmp" && mv "$OUTPUT/makepkg-${PRGNAM}.log.tmp" "$OUTPUT/makepkg-${PRGNAM}.log"
 
 
@@ -571,6 +573,10 @@ download_src() {
     exit 1
   fi
 
+  if [[ $AGENT == ON ]]; then
+   # Use eval to construct and run the download command
+eval wget "${DOWNLOAD_AGENT}" "$SRCURL"
+  else
   if [[ "$VERSION" != "$AUTO_UPD" ]]; then
     sleep 1
     if [[ $COMPRESS == "git" ]]; then
@@ -611,6 +617,7 @@ download_src() {
     echo "Download_src Messed up $VERSION"
     exit 8
   fi
+fi
 }
 
 chrooting(){
@@ -864,7 +871,7 @@ download_src
 prepare_build
 patch_build
 # DONT chroot if deb or rpm or if golang_build
-#chrooting
+chrooting
 
 # uncomment what you need:
 #auto_build
@@ -886,7 +893,7 @@ package_build
 
 # uncomment what you need:
 pkg_install
-#sig_package
+sig_package
 clean_src
 
 # Calculate and display build time
