@@ -29,7 +29,7 @@
 # relpace config.json or edit existed as for your needs.
 
 4 = sudo chmod 600 /var/lib/alist/config.json 
-# 
+# chmod 600 is preferent from 644... 
 4 = sudo /etc/rc.d/rc.alist start
 # from now on you can start/stop alist from rc.alist 
 
