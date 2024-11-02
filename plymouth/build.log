@@ -1,35 +1,35 @@
 Starting build process...
 Detected architecture: x86_64
---2024-10-01 19:49:52--  https://www.freedesktop.org/software/plymouth/releases/plymouth-24.004.60.tar.xz
+--2024-11-01 23:23:31--  https://www.freedesktop.org/software/plymouth/releases/plymouth-24.004.60.tar.xz
 Resolving www.freedesktop.org (www.freedesktop.org)... 131.252.210.176
 Connecting to www.freedesktop.org (www.freedesktop.org)|131.252.210.176|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1059904 (1.0M) [application/x-xz]
 Saving to: ‘plymouth-24.004.60.tar.xz’
 
-     0K .......... .......... .......... .......... ..........  4%  126K 8s
-    50K .......... .......... .......... .......... ..........  9% 1.67M 4s
-   100K .......... .......... .......... .......... .......... 14%  290K 4s
-   150K .......... .......... .......... .......... .......... 19% 5.18M 3s
-   200K .......... .......... .......... .......... .......... 24%  275K 2s
-   250K .......... .......... .......... .......... .......... 28% 7.27M 2s
-   300K .......... .......... .......... .......... .......... 33% 5.22M 2s
-   350K .......... .......... .......... .......... .......... 38% 5.27M 1s
-   400K .......... .......... .......... .......... .......... 43%  235K 1s
-   450K .......... .......... .......... .......... .......... 48% 90.8M 1s
-   500K .......... .......... .......... .......... .......... 53%  123M 1s
-   550K .......... .......... .......... .......... .......... 57%  108M 1s
-   600K .......... .......... .......... .......... .......... 62%  276K 1s
-   650K .......... .......... .......... .......... .......... 67% 10.8M 1s
-   700K .......... .......... .......... .......... .......... 72% 9.77M 0s
-   750K .......... .......... .......... .......... .......... 77% 5.16M 0s
-   800K .......... .......... .......... .......... .......... 82% 20.9M 0s
-   850K .......... .......... .......... .......... .......... 86%  162M 0s
-   900K .......... .......... .......... .......... .......... 91%  209M 0s
-   950K .......... .......... .......... .......... .......... 96% 26.7M 0s
-  1000K .......... .......... .......... .....                100% 6.98M=1.2s
+     0K .......... .......... .......... .......... ..........  4%  127K 8s
+    50K .......... .......... .......... .......... ..........  9% 1.32M 4s
+   100K .......... .......... .......... .......... .......... 14%  303K 4s
+   150K .......... .......... .......... .......... .......... 19% 1.62M 3s
+   200K .......... .......... .......... .......... .......... 24%  298K 2s
+   250K .......... .......... .......... .......... .......... 28% 6.59M 2s
+   300K .......... .......... .......... .......... .......... 33%  117K 2s
+   350K .......... .......... .......... .......... .......... 38% 5.20M 2s
+   400K .......... .......... .......... .......... .......... 43%  194M 2s
+   450K .......... .......... .......... .......... .......... 48%  193M 1s
+   500K .......... .......... .......... .......... .......... 53%  210M 1s
+   550K .......... .......... .......... .......... .......... 57%  216M 1s
+   600K .......... .......... .......... .......... .......... 62%  191M 1s
+   650K .......... .......... .......... .......... .......... 67%  210M 1s
+   700K .......... .......... .......... .......... .......... 72%  234M 0s
+   750K .......... .......... .......... .......... .......... 77%  410M 0s
+   800K .......... .......... .......... .......... .......... 82%  300M 0s
+   850K .......... .......... .......... .......... .......... 86%  240K 0s
+   900K .......... .......... .......... .......... .......... 91%  375K 0s
+   950K .......... .......... .......... .......... .......... 96%  196M 0s
+  1000K .......... .......... .......... .....                100%  189M=1.6s
 
-2024-10-01 19:49:54 (835 KB/s) - ‘plymouth-24.004.60.tar.xz’ saved [1059904/1059904]
+2024-11-01 23:23:33 (654 KB/s) - ‘plymouth-24.004.60.tar.xz’ saved [1059904/1059904]
 
 plymouth-24.004.60/
 plymouth-24.004.60/.gitignore
@@ -544,12 +544,12 @@ hm...lets continue and see what happens
 patching file src/main.c
 patching file src/libply/meson.build
 The Meson build system
-Version: 1.5.2
+Version: 1.6.0
 Source dir: /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60
 Build dir: /home/omen/GITHUB/One4All_SlackBuild/plymouth/work/plymouth-24.004.60/build
 Build type: native build
 Project name: plymouth
-Project version: 24.004.60
+Project version: 24.306.0
 C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
 C linker for the host machine: cc ld.bfd 2.43.1-slack151
 Host machine cpu family: x86_64
@@ -562,14 +562,14 @@ Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
 Run-time dependency libpng found: YES 1.6.44
 Run-time dependency libudev found: YES 251
 Run-time dependency pango found: YES 1.54.0
-Run-time dependency cairo found: YES 1.18.0
+Run-time dependency cairo found: YES 1.18.2
 Run-time dependency pangocairo found: YES 1.54.0
 Run-time dependency freetype2 found: YES 26.2.20
 Run-time dependency gtk+-3.0 found: YES 3.24.43
 Run-time dependency libdrm found: YES 2.4.123
 Run-time dependency libevdev found: YES 1.13.3
 Run-time dependency xkbcommon found: YES 1.7.0
-Run-time dependency xkeyboard-config found: YES 2.42
+Run-time dependency xkeyboard-config found: YES 2.43
 Configuring config.h using configuration
 Program msgfmt found: YES (/usr/bin/msgfmt)
 Program msginit found: YES (/usr/bin/msginit)
@@ -592,7 +592,7 @@ Build targets in project: 72
 WARNING: Project specifies a minimum meson_version '>= 0.61' but uses features which were added in newer versions:
  * 0.62.0: {'dep 'dl' custom lookup'}
 
-plymouth 24.004.60
+plymouth 24.306.0
 
   User defined options
     buildtype          : release
@@ -605,147 +605,147 @@ plymouth 24.004.60
     systemd-integration: false
 
 Found ninja-1.12.1 at /usr/bin/ninja
-[1/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-array.c.o
+[1/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-list.c.o
 [2/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-bitarray.c.o
-[3/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-buffer.c.o
-[4/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-command-parser.c.o
-[5/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-event-loop.c.o
-[6/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-hashtable.c.o
-[7/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-key-file.c.o
-[8/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-list.c.o
-[9/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-logger.c.o
+[3/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-rectangle.c.o
+[4/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-hashtable.c.o
+[5/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-region.c.o
+[6/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-trigger.c.o
+[7/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-array.c.o
+[8/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-command-parser.c.o
+[9/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-event-loop.c.o
 [10/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-progress.c.o
-[11/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-rectangle.c.o
-[12/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-region.c.o
-[13/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-terminal-session.c.o
-[14/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-trigger.c.o
-[15/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-utils.c.o
-[16/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-boot-splash.c.o
-[17/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-device-manager.c.o
-[18/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-input-device.c.o
-[19/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-kmsg-reader.c.o
-[20/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-keyboard.c.o
-[21/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-pixel-buffer.c.o
-[22/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-rich-text.c.o
-[23/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-pixel-display.c.o
-[24/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-terminal.c.o
-[25/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-step-bar.c.o
-[26/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-renderer.c.o
-[27/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-terminal-emulator.c.o
-[28/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-display.c.o
-[29/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-capslock-icon.c.o
-[30/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-animation.c.o
-[31/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-image.c.o
-[32/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-progress-bar.c.o
-[33/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-console-viewer.c.o
-[34/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-keymap-icon.c.o
-[35/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-entry.c.o
-[36/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-label.c.o
-[37/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-progress-animation.c.o
-[38/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-progress-bar.c.o
+[11/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-input-device.c.o
+[12/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-pixel-buffer.c.o
+[13/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-boot-splash.c.o
+[14/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-kmsg-reader.c.o
+[15/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-renderer.c.o
+[16/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-rich-text.c.o
+[17/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-terminal-emulator.c.o
+[18/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-step-bar.c.o
+[19/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-console-viewer.c.o
+[20/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-capslock-icon.c.o
+[21/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-label.c.o
+[22/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-keymap-icon.c.o
+[23/141] Generating src/plugins/splash/script/script-lib-image.script.h with a custom command (wrapped by meson to capture output)
+[24/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-pixel-display.c.o
+[25/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-display.c.o
+[26/141] Generating src/plugins/splash/script/script-lib-plymouth.script.h with a custom command (wrapped by meson to capture output)
+[27/141] Generating src/plugins/splash/script/script-lib-math.script.h with a custom command (wrapped by meson to capture output)
+[28/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-buffer.c.o
+[29/141] Compiling C object src/plymouthd-fd-escrow.p/plymouthd-fd-escrow.c.o
+[30/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-text-progress-bar.c.o
+[31/141] Compiling C object src/plugins/controls/label-freetype/label-freetype.so.p/plugin.c.o
+[32/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-logger.c.o
+[33/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-entry.c.o
+[34/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-key-file.c.o
+[35/141] Generating src/plugins/splash/script/script-lib-sprite.script.h with a custom command (wrapped by meson to capture output)
+[36/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-image.c.o
+[37/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-progress-bar.c.o
+[38/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-progress-animation.c.o
 [39/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-throbber.c.o
-[40/141] Compiling C object src/plymouthd-fd-escrow.p/plymouthd-fd-escrow.c.o
-[41/141] Compiling C object src/plymouthd.p/main.c.o
-[42/141] Compiling C object src/plymouthd.p/plugins_splash_details_plugin.c.o
-[43/141] Compiling C object src/plymouthd.p/ply-boot-server.c.o
-[44/141] Compiling C object src/plugins/controls/label-pango/label-pango.so.p/plugin.c.o
-[45/141] Compiling C object src/plugins/controls/label-freetype/label-freetype.so.p/plugin.c.o
-[46/141] Compiling C object src/plugins/splash/fade-throbber/fade-throbber.so.p/plugin.c.o
-[47/141] Compiling C object src/plugins/splash/text/text.so.p/plugin.c.o
-[48/141] Compiling C object src/plugins/splash/details/details.so.p/plugin.c.o
-[49/141] Compiling C object src/plugins/splash/space-flares/space-flares.so.p/plugin.c.o
-[50/141] Compiling C object src/plugins/splash/two-step/two-step.so.p/plugin.c.o
-[51/141] Compiling C object src/plugins/renderers/frame-buffer/frame-buffer.so.p/plugin.c.o
-[52/141] Compiling C object src/plugins/splash/tribar/tribar.so.p/plugin.c.o
-[53/141] Compiling C object src/plugins/renderers/drm/drm.so.p/plugin.c.o
-[54/141] Compiling C object src/client/plymouth.p/ply-boot-client.c.o
-[55/141] Building translation po/be/LC_MESSAGES/plymouth-be.mo
-[56/141] Building translation po/cs/LC_MESSAGES/plymouth-cs.mo
-[57/141] Compiling C object src/client/plymouth.p/plymouth.c.o
-[58/141] Compiling C object src/client/libply-boot-client.so.5.0.0.p/ply-boot-client.c.o
-[59/141] Building translation po/de/LC_MESSAGES/plymouth-de.mo
-[60/141] Building translation po/eo/LC_MESSAGES/plymouth-eo.mo
-[61/141] Building translation po/da/LC_MESSAGES/plymouth-da.mo
-[62/141] Building translation po/es/LC_MESSAGES/plymouth-es.mo
-[63/141] Compiling C object src/plugins/renderers/x11/x11.so.p/plugin.c.o
+[40/141] Compiling C object src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/ply-animation.c.o
+[41/141] Compiling C object src/client/plymouth.p/ply-boot-client.c.o
+[42/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-terminal-session.c.o
+[43/141] Generating src/plugins/splash/script/script-lib-string.script.h with a custom command (wrapped by meson to capture output)
+[44/141] Compiling C object src/client/libply-boot-client.so.5.0.0.p/ply-boot-client.c.o
+[45/141] Compiling C object src/plugins/splash/script/script.so.p/script-debug.c.o
+[46/141] Compiling C object src/plugins/splash/script/script.so.p/script-execute.c.o
+[47/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-keyboard.c.o
+[48/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-image.c.o
+[49/141] Compiling C object src/plymouthd.p/plugins_splash_details_plugin.c.o
+[50/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-math.c.o
+[51/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-plymouth.c.o
+[52/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-sprite.c.o
+[53/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-string.c.o
+[54/141] Compiling C object src/plugins/splash/script/script.so.p/script-object.c.o
+[55/141] Compiling C object src/plugins/splash/script/script.so.p/script-parse.c.o
+[56/141] Compiling C object src/plugins/splash/script/script.so.p/script.c.o
+[57/141] Building translation po/be/LC_MESSAGES/plymouth-be.mo
+[58/141] Compiling C object src/plugins/splash/script/script.so.p/script-scan.c.o
+[59/141] Building translation po/cs/LC_MESSAGES/plymouth-cs.mo
+[60/141] Building translation po/da/LC_MESSAGES/plymouth-da.mo
+[61/141] Building translation po/de/LC_MESSAGES/plymouth-de.mo
+[62/141] Building translation po/eo/LC_MESSAGES/plymouth-eo.mo
+[63/141] Building translation po/es/LC_MESSAGES/plymouth-es.mo
 [64/141] Building translation po/eu/LC_MESSAGES/plymouth-eu.mo
 [65/141] Building translation po/fr/LC_MESSAGES/plymouth-fr.mo
-[66/141] Building translation po/fur/LC_MESSAGES/plymouth-fur.mo
-[67/141] Building translation po/hr/LC_MESSAGES/plymouth-hr.mo
-[68/141] Building translation po/id/LC_MESSAGES/plymouth-id.mo
-[69/141] Building translation po/it/LC_MESSAGES/plymouth-it.mo
-[70/141] Building translation po/hu/LC_MESSAGES/plymouth-hu.mo
-[71/141] Building translation po/lt/LC_MESSAGES/plymouth-lt.mo
-[72/141] Building translation po/nl/LC_MESSAGES/plymouth-nl.mo
-[73/141] Building translation po/pa/LC_MESSAGES/plymouth-pa.mo
-[74/141] Building translation po/pl/LC_MESSAGES/plymouth-pl.mo
-[75/141] Building translation po/hi/LC_MESSAGES/plymouth-hi.mo
-[76/141] Building translation po/ka/LC_MESSAGES/plymouth-ka.mo
-[77/141] Building translation po/pt_BR/LC_MESSAGES/plymouth-pt_BR.mo
-[78/141] Building translation po/pt/LC_MESSAGES/plymouth-pt.mo
-[79/141] Building translation po/ro/LC_MESSAGES/plymouth-ro.mo
-[80/141] Building translation po/ru/LC_MESSAGES/plymouth-ru.mo
-[81/141] Building translation po/sk/LC_MESSAGES/plymouth-sk.mo
+[66/141] Building translation po/hr/LC_MESSAGES/plymouth-hr.mo
+[67/141] Building translation po/hi/LC_MESSAGES/plymouth-hi.mo
+[68/141] Building translation po/fur/LC_MESSAGES/plymouth-fur.mo
+[69/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-terminal.c.o
+[70/141] Building translation po/id/LC_MESSAGES/plymouth-id.mo
+[71/141] Building translation po/hu/LC_MESSAGES/plymouth-hu.mo
+[72/141] Building translation po/it/LC_MESSAGES/plymouth-it.mo
+[73/141] Building translation po/lt/LC_MESSAGES/plymouth-lt.mo
+[74/141] Building translation po/ka/LC_MESSAGES/plymouth-ka.mo
+[75/141] Building translation po/nl/LC_MESSAGES/plymouth-nl.mo
+[76/141] Building translation po/pa/LC_MESSAGES/plymouth-pa.mo
+[77/141] Building translation po/pl/LC_MESSAGES/plymouth-pl.mo
+[78/141] Building translation po/ro/LC_MESSAGES/plymouth-ro.mo
+[79/141] Building translation po/pt_BR/LC_MESSAGES/plymouth-pt_BR.mo
+[80/141] Building translation po/pt/LC_MESSAGES/plymouth-pt.mo
+[81/141] Building translation po/ru/LC_MESSAGES/plymouth-ru.mo
 [82/141] Building translation po/sr/LC_MESSAGES/plymouth-sr.mo
-[83/141] Building translation po/sv/LC_MESSAGES/plymouth-sv.mo
-[84/141] Building translation po/tr/LC_MESSAGES/plymouth-tr.mo
-[85/141] Building translation po/uk/LC_MESSAGES/plymouth-uk.mo
-[86/141] Building translation po/ms/LC_MESSAGES/plymouth-ms.mo
-[87/141] Building translation po/zh_TW/LC_MESSAGES/plymouth-zh_TW.mo
-[88/141] Building translation po/he/LC_MESSAGES/plymouth-he.mo
-[89/141] Building translation po/si/LC_MESSAGES/plymouth-si.mo
-[90/141] Building translation po/zh_CN/LC_MESSAGES/plymouth-zh_CN.mo
-[91/141] Building translation po/zh_HK/LC_MESSAGES/plymouth-zh_HK.mo
-[92/141] Building translation po/fa/LC_MESSAGES/plymouth-fa.mo
-[93/141] Building translation po/fi/LC_MESSAGES/plymouth-fi.mo
-[94/141] Linking target src/libply/libply.so.5.0.0
-[95/141] Building translation po/cy/LC_MESSAGES/plymouth-cy.mo
-[96/141] Building translation po/gl/LC_MESSAGES/plymouth-gl.mo
-[97/141] Building translation po/ie/LC_MESSAGES/plymouth-ie.mo
-[98/141] Linking target src/plymouthd-fd-escrow
-[99/141] Generating src/plugins/splash/script/script-lib-plymouth.script.h with a custom command (wrapped by meson to capture output)
-[100/141] Generating src/plugins/splash/script/script-lib-math.script.h with a custom command (wrapped by meson to capture output)
-[101/141] Generating symbol file src/libply/libply.so.5.0.0.p/libply.so.5.0.0.symbols
-[102/141] Generating src/plugins/splash/script/script-lib-sprite.script.h with a custom command (wrapped by meson to capture output)
-[103/141] Generating src/plugins/splash/script/script-lib-image.script.h with a custom command (wrapped by meson to capture output)
-[104/141] Generating docs/plymouth.8 with a custom command
-[105/141] Generating docs/plymouth-set-default-theme.1 with a custom command
-[106/141] Generating docs/plymouthd.8 with a custom command
-[107/141] Generating src/plugins/splash/script/script-lib-string.script.h with a custom command (wrapped by meson to capture output)
+[83/141] Compiling C object src/plugins/splash/details/details.so.p/plugin.c.o
+[84/141] Building translation po/sk/LC_MESSAGES/plymouth-sk.mo
+[85/141] Building translation po/sv/LC_MESSAGES/plymouth-sv.mo
+[86/141] Building translation po/tr/LC_MESSAGES/plymouth-tr.mo
+[87/141] Building translation po/uk/LC_MESSAGES/plymouth-uk.mo
+[88/141] Building translation po/zh_CN/LC_MESSAGES/plymouth-zh_CN.mo
+[89/141] Building translation po/zh_HK/LC_MESSAGES/plymouth-zh_HK.mo
+[90/141] Building translation po/zh_TW/LC_MESSAGES/plymouth-zh_TW.mo
+[91/141] Building translation po/fa/LC_MESSAGES/plymouth-fa.mo
+[92/141] Building translation po/ms/LC_MESSAGES/plymouth-ms.mo
+[93/141] Building translation po/si/LC_MESSAGES/plymouth-si.mo
+[94/141] Building translation po/he/LC_MESSAGES/plymouth-he.mo
+[95/141] Building translation po/fi/LC_MESSAGES/plymouth-fi.mo
+[96/141] Building translation po/ie/LC_MESSAGES/plymouth-ie.mo
+[97/141] Building translation po/gl/LC_MESSAGES/plymouth-gl.mo
+[98/141] Building translation po/cy/LC_MESSAGES/plymouth-cy.mo
+[99/141] Compiling C object src/libply/libply.so.5.0.0.p/ply-utils.c.o
+[100/141] Compiling C object src/plugins/splash/text/text.so.p/plugin.c.o
+[101/141] Linking target src/plymouthd-fd-escrow
+[102/141] Linking target src/libply/libply.so.5.0.0
+[103/141] Compiling C object src/plugins/controls/label-pango/label-pango.so.p/plugin.c.o
+[104/141] Compiling C object src/plugins/splash/tribar/tribar.so.p/plugin.c.o
+[105/141] Compiling C object src/plugins/splash/fade-throbber/fade-throbber.so.p/plugin.c.o
+[106/141] Compiling C object src/libply-splash-core/libply-splash-core.so.5.0.0.p/ply-device-manager.c.o
+[107/141] Merging translations for themes/spinner/spinner.plymouth
 [108/141] Merging translations for themes/bgrt/bgrt.plymouth
-[109/141] Compiling C object src/plugins/splash/script/script.so.p/script-debug.c.o
-[110/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-image.c.o
-[111/141] Merging translations for themes/spinner/spinner.plymouth
-[112/141] Compiling C object src/plugins/splash/script/script.so.p/plugin.c.o
-[113/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-string.c.o
-[114/141] Compiling C object src/plugins/splash/script/script.so.p/script-scan.c.o
-[115/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-sprite.c.o
-[116/141] Compiling C object src/plugins/splash/script/script.so.p/script-parse.c.o
-[117/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-math.c.o
-[118/141] Compiling C object src/plugins/splash/script/script.so.p/script-lib-plymouth.c.o
-[119/141] Compiling C object src/plugins/splash/script/script.so.p/script-object.c.o
-[120/141] Compiling C object src/plugins/splash/script/script.so.p/script.c.o
-[121/141] Linking target src/client/libply-boot-client.so.5.0.0
-[122/141] Linking target src/client/plymouth
-[123/141] Compiling C object src/plugins/splash/script/script.so.p/script-execute.c.o
-[124/141] Linking target src/libply-splash-core/libply-splash-core.so.5.0.0
-[125/141] Generating docs/plymouth.1 with a custom command
-[126/141] Generating symbol file src/libply-splash-core/libply-splash-core.so.5.0.0.p/libply-splash-core.so.5.0.0.symbols
-[127/141] Linking target src/plugins/renderers/frame-buffer/frame-buffer.so
-[128/141] Linking target src/plymouthd
-[129/141] Linking target src/plugins/renderers/drm/drm.so
-[130/141] Linking target src/libply-splash-graphics/libply-splash-graphics.so.5.0.0
-[131/141] Linking target src/plugins/splash/tribar/tribar.so
-[132/141] Linking target src/plugins/renderers/x11/x11.so
-[133/141] Generating symbol file src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/libply-splash-graphics.so.5.0.0.symbols
-[134/141] Linking target src/plugins/controls/label-freetype/label-freetype.so
-[135/141] Linking target src/plugins/splash/fade-throbber/fade-throbber.so
-[136/141] Linking target src/plugins/splash/space-flares/space-flares.so
+[109/141] Generating symbol file src/libply/libply.so.5.0.0.p/libply.so.5.0.0.symbols
+[110/141] Compiling C object src/plugins/splash/script/script.so.p/plugin.c.o
+[111/141] Linking target src/client/libply-boot-client.so.5.0.0
+[112/141] Linking target src/libply-splash-core/libply-splash-core.so.5.0.0
+[113/141] Compiling C object src/client/plymouth.p/plymouth.c.o
+[114/141] Generating docs/plymouth.8 with a custom command
+[115/141] Generating docs/plymouth-set-default-theme.1 with a custom command
+[116/141] Generating docs/plymouthd.8 with a custom command
+[117/141] Generating docs/plymouth.1 with a custom command
+[118/141] Linking target src/client/plymouth
+[119/141] Compiling C object src/plugins/renderers/frame-buffer/frame-buffer.so.p/plugin.c.o
+[120/141] Compiling C object src/plymouthd.p/ply-boot-server.c.o
+[121/141] Generating symbol file src/libply-splash-core/libply-splash-core.so.5.0.0.p/libply-splash-core.so.5.0.0.symbols
+[122/141] Linking target src/plugins/renderers/frame-buffer/frame-buffer.so
+[123/141] Linking target src/plugins/splash/tribar/tribar.so
+[124/141] Linking target src/libply-splash-graphics/libply-splash-graphics.so.5.0.0
+[125/141] Generating symbol file src/libply-splash-graphics/libply-splash-graphics.so.5.0.0.p/libply-splash-graphics.so.5.0.0.symbols
+[126/141] Linking target src/plugins/controls/label-freetype/label-freetype.so
+[127/141] Linking target src/plugins/splash/text/text.so
+[128/141] Linking target src/plugins/splash/fade-throbber/fade-throbber.so
+[129/141] Linking target src/plugins/splash/details/details.so
+[130/141] Linking target src/plugins/splash/script/script.so
+[131/141] Compiling C object src/plugins/splash/space-flares/space-flares.so.p/plugin.c.o
+[132/141] Linking target src/plugins/controls/label-pango/label-pango.so
+[133/141] Linking target src/plugins/splash/space-flares/space-flares.so
+[134/141] Compiling C object src/plugins/renderers/x11/x11.so.p/plugin.c.o
+[135/141] Linking target src/plugins/renderers/x11/x11.so
+[136/141] Compiling C object src/plugins/splash/two-step/two-step.so.p/plugin.c.o
 [137/141] Linking target src/plugins/splash/two-step/two-step.so
-[138/141] Linking target src/plugins/splash/script/script.so
-[139/141] Linking target src/plugins/splash/details/details.so
-[140/141] Linking target src/plugins/controls/label-pango/label-pango.so
-[141/141] Linking target src/plugins/splash/text/text.so
+[138/141] Compiling C object src/plugins/renderers/drm/drm.so.p/plugin.c.o
+[139/141] Linking target src/plugins/renderers/drm/drm.so
+[140/141] Compiling C object src/plymouthd.p/main.c.o
+[141/141] Linking target src/plymouthd
 Removing RPATH from src/libply-splash-graphics/libply-splash-graphics.so.5.0.0
 RPATH removed from src/libply-splash-graphics/libply-splash-graphics.so.5.0.0
 Removing RPATH from src/libply-splash-core/libply-splash-core.so.5.0.0
@@ -2486,4 +2486,4 @@ WARNING:  zero length file usr/doc/plymouth-24.004.60/build/meson-private/meson.
 
 Slackware package /home/omen/GITHUB/One4All_SlackBuild/plymouth/binary-plymouth-24.004.60/plymouth-24.004.60-x86_64-1_rtz.tlz created.
 
-Build process completed in 0 minutes and 13 seconds.
+Build process completed in 0 minutes and 18 seconds.

@@ -1,0 +1,11 @@
+alist: alist (file list/WebDAV program)
+alist:
+alist: A file list/WebDAV program that supports multiple storages, powered
+alist: by Gin and Solidjs.
+alist:
+alist:
+alist:
+alist:
+alist:
+alist:
+alist: https://github.com/AlistGo/alist

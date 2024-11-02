@@ -1,0 +1,41 @@
+[BEFORE_INSTALL]
+1 = groupadd -r alist
+# create alist group
+
+2 = useradd -r -g alist -d /var/lib/alist -s /sbin/nologin alist
+# Create the alist user, set home directory, no login shell
+
+3 = usermod -aG alist USER_NAME
+# Add your user name
+
+
+[REQUIRED]
+1 = aria2
+# aria2 is an optional dep
+
+[AFTER_INSTALL]
+0 = sudo -u alist /usr/local/bin/alist server --data /var/lib/alist
+# command and copy from the output admin password that was genarated
+
+1 = http://localhost:5244
+# open browser login as admin and paste password. After that go to manage/profile change your password AND close browser ALSO ctrl+c to kill alist server,
+
+2 = openssl rand -base64 32
+# copy output and paste in /etc/config.json, assume: HG3JiLeaElv9eATdN8HHC1BdDv9t//k+MfJ0/vMtLM0=
+# 
+# "jwt_secret": "HG3JiLeaElv9eATdN8HHC1BdDv9t//k+MfJ0/vMtLM0="
+
+3 = su -c  "cat /etc/alist/config.json > /var/lib/alist/config.json"
+# relpace config.json or edit existed as for your needs.
+
+4 = sudo chmod 600 /var/lib/alist/config.json 
+# 
+4 = sudo /etc/rc.d/rc.alist start
+# from now on you can start/stop alist from rc.alist 
+
+5 = if [ -x /etc/rc.d/rc.alist ]; then
+      /etc/rc.d/rc.alist start
+    fi
+# optional add it in /etc/rc.d/rc.local
+
+

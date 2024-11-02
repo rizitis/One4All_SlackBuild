@@ -1,0 +1,71 @@
+#!/bin/sh
+# /etc/rc.d/rc.alist
+#
+# Start/stop/restart the alist service
+#
+
+# Configuration
+ALIST_USER="alist"
+ALIST_HOME="/var/lib/alist"
+ALIST_BINARY="/usr/local/bin/alist"
+ALIST_ARGS="server --data $ALIST_HOME"
+PIDFILE="/var/run/alist/alist.pid"
+
+# Check if the alist binary exists
+if [ ! -x "$ALIST_BINARY" ]; then
+    echo "Error: $ALIST_BINARY not found or not executable"
+    exit 1
+fi
+
+start() {
+    echo "Starting alist..."
+    if [ -f "$PIDFILE" ] && kill -0 $(cat "$PIDFILE") 2>/dev/null; then
+        echo "alist is already running."
+    else
+        su -s /bin/sh -c "$ALIST_BINARY $ALIST_ARGS & echo \$! > $PIDFILE" $ALIST_USER
+        echo "alist started."
+    fi
+}
+
+stop() {
+    echo "Stopping alist..."
+    if [ -f "$PIDFILE" ]; then
+        kill $(cat "$PIDFILE") && rm -f "$PIDFILE"
+        echo "alist stopped."
+    else
+        echo "alist is not running."
+    fi
+}
+
+restart() {
+    stop
+    sleep 1
+    start
+}
+
+status() {
+    if [ -f "$PIDFILE" ] && kill -0 $(cat "$PIDFILE") 2>/dev/null; then
+        echo "alist is running (PID: $(cat "$PIDFILE"))."
+    else
+        echo "alist is not running."
+    fi
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        restart
+        ;;
+    status)
+        status
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart|status}"
+        exit 1
+        ;;
+esac

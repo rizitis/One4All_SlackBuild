@@ -1,5 +1,6 @@
 #!/bin/bash
-
+#shellcheck disable=SC2045
+#shellcheck disable=SC2038
 Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
    # All rights reserved 08/2024
 #
@@ -154,9 +155,9 @@ CFLAGS="$SLKCFLAGS -Wno-maybe-uninitialized -Wno-unused-value" \
     --mandir=/usr/man \
     --prefix=/usr \
     --sysconfdir=/etc \
-    -Dsystemd-integration=false 
- 
-  "${NINJA:=ninja}" "$NUMJOBS" 
+    -Dsystemd-integration=false
+
+  "${NINJA:=ninja}" "$NUMJOBS"
   for file in src/libply-splash-graphics/libply-splash-graphics.so.5.0.0 \
             src/libply-splash-core/libply-splash-core.so.5.0.0 \
             src/plymouthd \
@@ -181,8 +182,8 @@ CFLAGS="$SLKCFLAGS -Wno-maybe-uninitialized -Wno-unused-value" \
         echo "$file does not exist."
     fi
 done
-  DESTDIR=$PKG $NINJA install 
-  
+  DESTDIR=$PKG $NINJA install
+
   cd ..
 }
 
@@ -625,9 +626,9 @@ if [ -z "$ARCH" ]; then
     mips*) ARCH=mips ;;         # MIPS (various variants)
     riscv64) ARCH=riscv64 ;;    # RISC-V 64-bit
     sparc64) ARCH=sparc64 ;;     # SPARC (64-bit)
-    *) 
+    *)
       echo "Error: Unsupported architecture '$(uname -m)'. Exiting."
-      exit 1 
+      exit 1
       ;;
   esac
 fi
@@ -655,7 +656,7 @@ case "$ARCH" in
     QMAKE_CXXFLAGS="-O2 -m32 -march=i586 -mtune=i686"
     QMAKE_LFLAGS="-L/usr/lib -L/usr/local/lib"
     ;;
-    
+
   "i686")
     SLKCFLAGS="-O2 -march=i686 -mtune=i686"
     LIBDIRSUFFIX=""
@@ -663,7 +664,7 @@ case "$ARCH" in
     QMAKE_CXXFLAGS="-O2 -m32 -march=i686 -mtune=i686"
     QMAKE_LFLAGS="-L/usr/lib -L/usr/local/lib"
     ;;
-    
+
   "x86_64")
     SLKCFLAGS="-O2 -march=x86-64 -mtune=generic -fPIC"
     LIBDIRSUFFIX="64"
@@ -671,7 +672,7 @@ case "$ARCH" in
     QMAKE_CXXFLAGS="-O2 -m64 -march=x86-64 -mtune=generic -fPIC"
     QMAKE_LFLAGS="-L/usr/lib64 -L/usr/local/lib64"
     ;;
-    
+
   "armv7")
     SLKCFLAGS="-O2 -march=armv7-a -mtune=generic -fPIC"
     LIBDIRSUFFIX=""
@@ -679,7 +680,7 @@ case "$ARCH" in
     QMAKE_CXXFLAGS="-O2 -m32 -march=armv7-a -mtune=generic -fPIC"
     QMAKE_LFLAGS="-L/usr/lib -L/usr/local/lib"
     ;;
-    
+
   "armv6")
     SLKCFLAGS="-O2 -march=armv6 -mtune=generic -fPIC"
     LIBDIRSUFFIX=""
@@ -687,7 +688,7 @@ case "$ARCH" in
     QMAKE_CXXFLAGS="-O2 -m32 -march=armv6 -mtune=generic -fPIC"
     QMAKE_LFLAGS="-L/usr/lib -L/usr/local/lib"
     ;;
-    
+
   "aarch64")
     SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
     LIBDIRSUFFIX="64"
@@ -695,7 +696,7 @@ case "$ARCH" in
     QMAKE_CXXFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
     QMAKE_LFLAGS="-L/usr/lib64 -L/usr/local/lib64"
     ;;
-    
+
   "ppc")
     SLKCFLAGS="-O2 -mppc"
     LIBDIRSUFFIX=""
@@ -703,7 +704,7 @@ case "$ARCH" in
     QMAKE_CXXFLAGS="-O2 -m32 -mppc"
     QMAKE_LFLAGS="-L/usr/lib -L/usr/local/lib"
     ;;
-    
+
   "ppc64")
     SLKCFLAGS="-O2 -mppc64"
     LIBDIRSUFFIX="64"
@@ -711,7 +712,7 @@ case "$ARCH" in
     QMAKE_CXXFLAGS="-O2 -m64 -mppc64"
     QMAKE_LFLAGS="-L/usr/lib64 -L/usr/local/lib64"
     ;;
-    
+
   "s390x")
     SLKCFLAGS="-O2 -march=s390x"
     LIBDIRSUFFIX="64"
@@ -719,7 +720,7 @@ case "$ARCH" in
     QMAKE_CXXFLAGS="-O2 -m64 -march=s390x"
     QMAKE_LFLAGS="-L/usr/lib64 -L/usr/local/lib64"
     ;;
-    
+
   "mips")
     SLKCFLAGS="-O2 -march=mips32"
     LIBDIRSUFFIX=""
@@ -727,7 +728,7 @@ case "$ARCH" in
     QMAKE_CXXFLAGS="-O2 -m32 -march=mips32"
     QMAKE_LFLAGS="-L/usr/lib -L/usr/local/lib"
     ;;
-    
+
   "riscv64")
     SLKCFLAGS="-O2 -march=rv64imac -mabi=lp64"
     LIBDIRSUFFIX="64"
@@ -796,4 +797,3 @@ clean_src
 end_time=$(date +%s)
 elapsed_time=$((end_time - start_time))
 echo "Build process completed in $((elapsed_time / 60)) minutes and $((elapsed_time % 60)) seconds."
-

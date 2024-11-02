@@ -1,0 +1,52 @@
+
+Sat Nov  2 16:54:12 EET 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/alist/binary-alist-3.39.1/alist-3.39.1-x86_64-4_rtz.tlz
+
+./
+etc/
+etc/alist/
+etc/alist/config.json
+etc/rc.d/
+etc/rc.d/rc.alist
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/doc/
+usr/doc/alist-3.39.1/
+usr/doc/alist-3.39.1/LICENSE
+usr/doc/alist-3.39.1/README.Slackware
+usr/doc/alist-3.39.1/alist.SlackBuild
+usr/local/
+usr/local/bin/
+usr/local/bin/alist
+var/
+var/cache/
+var/cache/alist/
+var/lib/
+var/lib/alist/
+var/lib/alist/config.json
+var/log/
+var/log/alist/
+var/run/
+var/run/alist/
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/alist/binary-alist-3.39.1/alist-3.39.1-x86_64-4_rtz.tlz created.
+
