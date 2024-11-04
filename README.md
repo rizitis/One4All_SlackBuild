@@ -18,6 +18,7 @@
 - [x] binary packaging
 - [x] deb
 - [x] rpm
+- [x] AppImage
 
 
 *One TEMPLATE for most of SlackBuilds...<br>
