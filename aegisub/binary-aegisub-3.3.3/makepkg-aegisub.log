@@ -1,0 +1,737 @@
+
+Mon Nov  4 21:32:41 EET 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/local/bin/aegisub/usr/lib/io-wmf.so	gdk-pixbuf-2.0/2.10.0/loaders/io-wmf.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-ani.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ani.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-bmp.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-bmp.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-gif.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-icns.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-icns.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-ico.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ico.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-jpeg.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-jpeg.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-png.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-png.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-pnm.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-pnm.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-qtif.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-qtif.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-svg.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-tga.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tga.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-tiff.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tiff.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-xbm.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xbm.so
+usr/local/bin/aegisub/usr/lib/libpixbufloader-xpm.so	gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xpm.so
+
+Making symbolic link creation script:
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf io-wmf.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/io-wmf.so io-wmf.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-ani.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ani.so libpixbufloader-ani.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-bmp.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-bmp.so libpixbufloader-bmp.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-gif.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so libpixbufloader-gif.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-icns.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-icns.so libpixbufloader-icns.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-ico.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ico.so libpixbufloader-ico.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-jpeg.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-jpeg.so libpixbufloader-jpeg.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-png.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-png.so libpixbufloader-png.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-pnm.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-pnm.so libpixbufloader-pnm.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-qtif.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-qtif.so libpixbufloader-qtif.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-svg.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so libpixbufloader-svg.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-tga.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tga.so libpixbufloader-tga.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-tiff.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tiff.so libpixbufloader-tiff.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-xbm.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xbm.so libpixbufloader-xbm.so )
+( cd usr/local/bin/aegisub/usr/lib ; rm -rf libpixbufloader-xpm.so )
+( cd usr/local/bin/aegisub/usr/lib ; ln -sf gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xpm.so libpixbufloader-xpm.so )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-xpm.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-svg.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-tiff.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-ani.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-jpeg.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-png.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-bmp.so'
+removed './usr/local/bin/aegisub/usr/lib/io-wmf.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-icns.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-xbm.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-tga.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-ico.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-qtif.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-gif.so'
+removed './usr/local/bin/aegisub/usr/lib/libpixbufloader-pnm.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Removing rpath from: ./usr/local/bin/aegisub/usr/bin/aegisub
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libwmflite-0.2.so.7
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libicudata.so.60
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpulsecommon-11.1.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXfixes.so.3
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libffms2.so.5
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/librsvg-2.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXinerama.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpango-1.0.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libwmf-0.2.so.7
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libicuuc.so.60
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXxf86vm.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libmount.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXrandr.so.2
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libfftw3.so.3
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libswresample.so.4
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpng16.so.16
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpangocairo-1.0.so.0.4000.14
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libsndfile.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libavcodec.so.59
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libxcb-render.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgmodule-2.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libsystemd.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXi.so.6
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/librsvg-2.so.2
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libicui18n.so.60
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libunibreak.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libwx_gtk2u_adv-3.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXdmcp.so.6
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libwx_gtk2u_core-3.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libswscale.so.6
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libopenal.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libwx_gtk2u_stc-3.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXcursor.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libogg.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libjbig.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/liblzma.so.5
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpangocairo-1.0.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXcomposite.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libboost_system.so.1.65.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libsndio.so.6.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgobject-2.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libnsl.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXdamage.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libxcb-shm.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xpm.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tiff.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ani.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-jpeg.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-png.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-bmp.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/io-wmf.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-icns.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xbm.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tga.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ico.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-qtif.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-pnm.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libapparmor.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgio-2.0.so.0.5600.4
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libFLAC.so.8
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libglib-2.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libwrap.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/librsvg-2.so.2.40.20
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libdatrie.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libblkid.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXrender.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpangoft2-1.0.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libboost_locale.so.1.65.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libdbus-1.so.3
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpixman-1.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXau.so.6
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpangoft2-1.0.so.0.4000.14
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libhunspell-1.6.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libasyncns.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgcrypt.so.20
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libuchardet.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libboost_thread.so.1.65.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libass.so.9
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libboost_regex.so.1.65.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libwx_baseu_xml-3.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libavformat.so.59
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgdk-x11-2.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libtiff.so.5
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpcre.so.3
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libxml2.so.2
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/liblz4.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgobject-2.0.so.0.5600.4
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libcairo.so.2
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgio-2.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpulse.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgdk_pixbuf-2.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libavutil.so.57
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgtk-x11-2.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libatk-1.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpango-1.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libnotify.so.4
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpangocairo-1.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libbsd.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libwx_gtk2u_gl-3.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libjpeg.so.8
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpangoft2-1.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgdk_pixbuf-2.0.so.0.3611.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libboost_filesystem.so.1.65.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libpango-1.0.so.0.4000.14
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgio-2.0.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgobject-2.0.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgraphite2.so.3
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libgdk_pixbuf-2.0.so
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libselinux.so.1
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libwx_baseu-3.0.so.0
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libvorbisenc.so.2
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libXext.so.6
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libffi.so.6
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libcroco-0.6.so.3
+Removing rpath from: ./usr/local/bin/aegisub/usr/lib/libvorbis.so.0
+
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/aegisub/binary-aegisub-3.3.3/aegisub-3.3.3-x86_64-2_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/aegisub-3.3.3/
+usr/doc/aegisub-3.3.3/aegisub.SlackBuild
+usr/local/
+usr/local/bin/
+usr/local/bin/aegisub/
+usr/local/bin/aegisub/usr/
+usr/local/bin/aegisub/usr/bin/
+usr/local/bin/aegisub/usr/bin/aegisub
+usr/local/bin/aegisub/usr/bin/automation/
+usr/local/bin/aegisub/usr/bin/automation/autoload/
+usr/local/bin/aegisub/usr/bin/automation/autoload/cleantags-autoload.lua
+usr/local/bin/aegisub/usr/bin/automation/autoload/kara-templater.lua
+usr/local/bin/aegisub/usr/bin/automation/autoload/karaoke-auto-leadin.lua
+usr/local/bin/aegisub/usr/bin/automation/autoload/macro-1-edgeblur.lua
+usr/local/bin/aegisub/usr/bin/automation/autoload/macro-2-mkfullwitdh.lua
+usr/local/bin/aegisub/usr/bin/automation/autoload/select-overlaps.moon
+usr/local/bin/aegisub/usr/bin/automation/autoload/strip-tags.lua
+usr/local/bin/aegisub/usr/bin/automation/demos/
+usr/local/bin/aegisub/usr/bin/automation/demos/future-windy-blur.lua
+usr/local/bin/aegisub/usr/bin/automation/demos/raytracer-test1.ass
+usr/local/bin/aegisub/usr/bin/automation/demos/raytracer.lua
+usr/local/bin/aegisub/usr/bin/automation/include/
+usr/local/bin/aegisub/usr/bin/automation/include/aegisub/
+usr/local/bin/aegisub/usr/bin/automation/include/aegisub/argcheck.moon
+usr/local/bin/aegisub/usr/bin/automation/include/aegisub/clipboard.lua
+usr/local/bin/aegisub/usr/bin/automation/include/aegisub/ffi.moon
+usr/local/bin/aegisub/usr/bin/automation/include/aegisub/lfs.moon
+usr/local/bin/aegisub/usr/bin/automation/include/aegisub/re.moon
+usr/local/bin/aegisub/usr/bin/automation/include/aegisub/unicode.moon
+usr/local/bin/aegisub/usr/bin/automation/include/aegisub/util.moon
+usr/local/bin/aegisub/usr/bin/automation/include/cleantags.lua
+usr/local/bin/aegisub/usr/bin/automation/include/clipboard.lua
+usr/local/bin/aegisub/usr/bin/automation/include/karaskel-auto4.lua
+usr/local/bin/aegisub/usr/bin/automation/include/karaskel.lua
+usr/local/bin/aegisub/usr/bin/automation/include/lfs.lua
+usr/local/bin/aegisub/usr/bin/automation/include/moonscript.lua
+usr/local/bin/aegisub/usr/bin/automation/include/re.lua
+usr/local/bin/aegisub/usr/bin/automation/include/unicode.lua
+usr/local/bin/aegisub/usr/bin/automation/include/utils-auto4.lua
+usr/local/bin/aegisub/usr/bin/automation/include/utils.lua
+usr/local/bin/aegisub/usr/bin/locale/
+usr/local/bin/aegisub/usr/bin/locale/ar/
+usr/local/bin/aegisub/usr/bin/locale/ar/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/ar/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/be/
+usr/local/bin/aegisub/usr/bin/locale/be/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/be/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/bg/
+usr/local/bin/aegisub/usr/bin/locale/bg/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/bg/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/ca/
+usr/local/bin/aegisub/usr/bin/locale/ca/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/ca/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/cs/
+usr/local/bin/aegisub/usr/bin/locale/cs/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/cs/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/da/
+usr/local/bin/aegisub/usr/bin/locale/da/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/da/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/de/
+usr/local/bin/aegisub/usr/bin/locale/de/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/de/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/el/
+usr/local/bin/aegisub/usr/bin/locale/el/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/el/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/es/
+usr/local/bin/aegisub/usr/bin/locale/es/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/es/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/eu/
+usr/local/bin/aegisub/usr/bin/locale/eu/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/eu/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/fa/
+usr/local/bin/aegisub/usr/bin/locale/fa/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/fa/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/fi/
+usr/local/bin/aegisub/usr/bin/locale/fi/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/fi/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/fr_FR/
+usr/local/bin/aegisub/usr/bin/locale/fr_FR/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/fr_FR/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/gl/
+usr/local/bin/aegisub/usr/bin/locale/gl/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/gl/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/hu/
+usr/local/bin/aegisub/usr/bin/locale/hu/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/hu/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/id/
+usr/local/bin/aegisub/usr/bin/locale/id/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/id/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/it/
+usr/local/bin/aegisub/usr/bin/locale/it/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/it/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/ja/
+usr/local/bin/aegisub/usr/bin/locale/ja/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/ja/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/ko/
+usr/local/bin/aegisub/usr/bin/locale/ko/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/ko/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/nl/
+usr/local/bin/aegisub/usr/bin/locale/nl/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/nl/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/pl/
+usr/local/bin/aegisub/usr/bin/locale/pl/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/pl/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/pt_BR/
+usr/local/bin/aegisub/usr/bin/locale/pt_BR/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/pt_BR/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/pt_PT/
+usr/local/bin/aegisub/usr/bin/locale/pt_PT/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/pt_PT/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/ru/
+usr/local/bin/aegisub/usr/bin/locale/ru/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/ru/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/sr_RS/
+usr/local/bin/aegisub/usr/bin/locale/sr_RS/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/sr_RS/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/sr_RS@latin/
+usr/local/bin/aegisub/usr/bin/locale/sr_RS@latin/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/sr_RS@latin/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/uk_UA/
+usr/local/bin/aegisub/usr/bin/locale/uk_UA/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/uk_UA/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/vi/
+usr/local/bin/aegisub/usr/bin/locale/vi/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/vi/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/zh_CN/
+usr/local/bin/aegisub/usr/bin/locale/zh_CN/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/zh_CN/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/bin/locale/zh_TW/
+usr/local/bin/aegisub/usr/bin/locale/zh_TW/LC_MESSAGES/
+usr/local/bin/aegisub/usr/bin/locale/zh_TW/LC_MESSAGES/aegisub-appimage.mo
+usr/local/bin/aegisub/usr/lib/
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/io-wmf.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ani.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-bmp.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-icns.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ico.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-jpeg.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-png.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-pnm.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-qtif.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tga.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tiff.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xbm.so
+usr/local/bin/aegisub/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xpm.so
+usr/local/bin/aegisub/usr/lib/girepository-1.0/
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Atk-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Atspi-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/DBus-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/DBusGLib-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Dbusmenu-0.4.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GDesktopEnums-3.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GIRepository-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GL-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GLib-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GMenu-3.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GModule-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GObject-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GUdev-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GWeather-3.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Gck-1.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Gcr-3.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GcrUi-3.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Gdk-3.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GdkPixbuf-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GdkX11-3.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Gdm-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Geoclue-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GeocodeGlib-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Gio-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GnomeBluetooth-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GnomeDesktop-3.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Gst-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstAllocators-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstApp-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstAudio-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstBase-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstCheck-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstController-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstGL-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstNet-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstPbutils-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstRtp-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstRtsp-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstSdp-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstTag-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GstVideo-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Gtk-3.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/GtkSource-3.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/HarfBuzz-0.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/IBus-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/JavaScriptCore-4.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Json-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/MPID-3.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/NM-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/NMA-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Notify-0.7.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Pango-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/PangoCairo-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/PangoFT2-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/PangoXft-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Peas-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/PeasGtk-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Polkit-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/PolkitAgent-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/RB-3.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Rsvg-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Secret-1.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Soup-2.4.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/SoupGNOME-2.4.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Totem-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/TotemPlParser-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/UDisks-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/UPowerGlib-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Vte-2.91.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/WebKit2-4.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/WebKit2WebExtension-4.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/Wnck-3.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/cairo-1.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/fontconfig-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/freetype2-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/libxml2-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/xfixes-4.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/xft-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/xlib-2.0.typelib
+usr/local/bin/aegisub/usr/lib/girepository-1.0/xrandr-1.3.typelib
+usr/local/bin/aegisub/usr/lib/libFLAC.so.8
+usr/local/bin/aegisub/usr/lib/libXau.so.6
+usr/local/bin/aegisub/usr/lib/libXcomposite.so.1
+usr/local/bin/aegisub/usr/lib/libXcursor.so.1
+usr/local/bin/aegisub/usr/lib/libXdamage.so.1
+usr/local/bin/aegisub/usr/lib/libXdmcp.so.6
+usr/local/bin/aegisub/usr/lib/libXext.so.6
+usr/local/bin/aegisub/usr/lib/libXfixes.so.3
+usr/local/bin/aegisub/usr/lib/libXi.so.6
+usr/local/bin/aegisub/usr/lib/libXinerama.so.1
+usr/local/bin/aegisub/usr/lib/libXrandr.so.2
+usr/local/bin/aegisub/usr/lib/libXrender.so.1
+usr/local/bin/aegisub/usr/lib/libXxf86vm.so.1
+usr/local/bin/aegisub/usr/lib/libapparmor.so.1
+usr/local/bin/aegisub/usr/lib/libass.so.9
+usr/local/bin/aegisub/usr/lib/libasyncns.so.0
+usr/local/bin/aegisub/usr/lib/libatk-1.0.so.0
+usr/local/bin/aegisub/usr/lib/libavcodec.so.59
+usr/local/bin/aegisub/usr/lib/libavformat.so.59
+usr/local/bin/aegisub/usr/lib/libavutil.so.57
+usr/local/bin/aegisub/usr/lib/libblkid.so.1
+usr/local/bin/aegisub/usr/lib/libboost_filesystem.so.1.65.1
+usr/local/bin/aegisub/usr/lib/libboost_locale.so.1.65.1
+usr/local/bin/aegisub/usr/lib/libboost_regex.so.1.65.1
+usr/local/bin/aegisub/usr/lib/libboost_system.so.1.65.1
+usr/local/bin/aegisub/usr/lib/libboost_thread.so.1.65.1
+usr/local/bin/aegisub/usr/lib/libbsd.so.0
+usr/local/bin/aegisub/usr/lib/libcairo.so.2
+usr/local/bin/aegisub/usr/lib/libcroco-0.6.so.3
+usr/local/bin/aegisub/usr/lib/libdatrie.so.1
+usr/local/bin/aegisub/usr/lib/libdbus-1.so.3
+usr/local/bin/aegisub/usr/lib/libffi.so.6
+usr/local/bin/aegisub/usr/lib/libffms2.so.5
+usr/local/bin/aegisub/usr/lib/libfftw3.so.3
+usr/local/bin/aegisub/usr/lib/libgcrypt.so.20
+usr/local/bin/aegisub/usr/lib/libgdk-x11-2.0.so.0
+usr/local/bin/aegisub/usr/lib/libgdk_pixbuf-2.0.so
+usr/local/bin/aegisub/usr/lib/libgdk_pixbuf-2.0.so.0
+usr/local/bin/aegisub/usr/lib/libgdk_pixbuf-2.0.so.0.3611.0
+usr/local/bin/aegisub/usr/lib/libgio-2.0.so
+usr/local/bin/aegisub/usr/lib/libgio-2.0.so.0
+usr/local/bin/aegisub/usr/lib/libgio-2.0.so.0.5600.4
+usr/local/bin/aegisub/usr/lib/libglib-2.0.so.0
+usr/local/bin/aegisub/usr/lib/libgmodule-2.0.so.0
+usr/local/bin/aegisub/usr/lib/libgobject-2.0.so
+usr/local/bin/aegisub/usr/lib/libgobject-2.0.so.0
+usr/local/bin/aegisub/usr/lib/libgobject-2.0.so.0.5600.4
+usr/local/bin/aegisub/usr/lib/libgraphite2.so.3
+usr/local/bin/aegisub/usr/lib/libgtk-x11-2.0.so.0
+usr/local/bin/aegisub/usr/lib/libhunspell-1.6.so.0
+usr/local/bin/aegisub/usr/lib/libicudata.so.60
+usr/local/bin/aegisub/usr/lib/libicui18n.so.60
+usr/local/bin/aegisub/usr/lib/libicuuc.so.60
+usr/local/bin/aegisub/usr/lib/libjbig.so.0
+usr/local/bin/aegisub/usr/lib/libjpeg.so.8
+usr/local/bin/aegisub/usr/lib/liblz4.so.1
+usr/local/bin/aegisub/usr/lib/liblzma.so.5
+usr/local/bin/aegisub/usr/lib/libmount.so.1
+usr/local/bin/aegisub/usr/lib/libnotify.so.4
+usr/local/bin/aegisub/usr/lib/libnsl.so.1
+usr/local/bin/aegisub/usr/lib/libogg.so.0
+usr/local/bin/aegisub/usr/lib/libopenal.so.1
+usr/local/bin/aegisub/usr/lib/libpango-1.0.so
+usr/local/bin/aegisub/usr/lib/libpango-1.0.so.0
+usr/local/bin/aegisub/usr/lib/libpango-1.0.so.0.4000.14
+usr/local/bin/aegisub/usr/lib/libpangocairo-1.0.so
+usr/local/bin/aegisub/usr/lib/libpangocairo-1.0.so.0
+usr/local/bin/aegisub/usr/lib/libpangocairo-1.0.so.0.4000.14
+usr/local/bin/aegisub/usr/lib/libpangoft2-1.0.so
+usr/local/bin/aegisub/usr/lib/libpangoft2-1.0.so.0
+usr/local/bin/aegisub/usr/lib/libpangoft2-1.0.so.0.4000.14
+usr/local/bin/aegisub/usr/lib/libpcre.so.3
+usr/local/bin/aegisub/usr/lib/libpixman-1.so.0
+usr/local/bin/aegisub/usr/lib/libpng16.so.16
+usr/local/bin/aegisub/usr/lib/libpulse.so.0
+usr/local/bin/aegisub/usr/lib/libpulsecommon-11.1.so
+usr/local/bin/aegisub/usr/lib/librsvg-2.so
+usr/local/bin/aegisub/usr/lib/librsvg-2.so.2
+usr/local/bin/aegisub/usr/lib/librsvg-2.so.2.40.20
+usr/local/bin/aegisub/usr/lib/libselinux.so.1
+usr/local/bin/aegisub/usr/lib/libsndfile.so.1
+usr/local/bin/aegisub/usr/lib/libsndio.so.6.1
+usr/local/bin/aegisub/usr/lib/libswresample.so.4
+usr/local/bin/aegisub/usr/lib/libswscale.so.6
+usr/local/bin/aegisub/usr/lib/libsystemd.so.0
+usr/local/bin/aegisub/usr/lib/libtiff.so.5
+usr/local/bin/aegisub/usr/lib/libuchardet.so.0
+usr/local/bin/aegisub/usr/lib/libunibreak.so.1
+usr/local/bin/aegisub/usr/lib/libvorbis.so.0
+usr/local/bin/aegisub/usr/lib/libvorbisenc.so.2
+usr/local/bin/aegisub/usr/lib/libwmf-0.2.so.7
+usr/local/bin/aegisub/usr/lib/libwmflite-0.2.so.7
+usr/local/bin/aegisub/usr/lib/libwrap.so.0
+usr/local/bin/aegisub/usr/lib/libwx_baseu-3.0.so.0
+usr/local/bin/aegisub/usr/lib/libwx_baseu_xml-3.0.so.0
+usr/local/bin/aegisub/usr/lib/libwx_gtk2u_adv-3.0.so.0
+usr/local/bin/aegisub/usr/lib/libwx_gtk2u_core-3.0.so.0
+usr/local/bin/aegisub/usr/lib/libwx_gtk2u_gl-3.0.so.0
+usr/local/bin/aegisub/usr/lib/libwx_gtk2u_stc-3.0.so.0
+usr/local/bin/aegisub/usr/lib/libxcb-render.so.0
+usr/local/bin/aegisub/usr/lib/libxcb-shm.so.0
+usr/local/bin/aegisub/usr/lib/libxml2.so.2
+usr/share/
+usr/share/applications/
+usr/share/applications/aegisub.desktop
+usr/share/doc/
+usr/share/doc/aegisub-3.3.3/
+usr/share/doc/aegisub-3.3.3/aegisub/
+usr/share/doc/aegisub-3.3.3/aegisub/LICENCE
+usr/share/doc/aegisub-3.3.3/aegisub/README.md
+usr/share/doc/aegisub-3.3.3/aegisub/aegisub-appimage.patch
+usr/share/doc/aegisub-3.3.3/ffmpeg/
+usr/share/doc/aegisub-3.3.3/ffmpeg/CONTRIBUTING.md
+usr/share/doc/aegisub-3.3.3/ffmpeg/Changelog
+usr/share/doc/aegisub-3.3.3/ffmpeg/INSTALL.md
+usr/share/doc/aegisub-3.3.3/ffmpeg/LICENSE.md
+usr/share/doc/aegisub-3.3.3/ffmpeg/MAINTAINERS
+usr/share/doc/aegisub-3.3.3/ffmpeg/README.md
+usr/share/doc/aegisub-3.3.3/ffms2/
+usr/share/doc/aegisub-3.3.3/ffms2/COPYING
+usr/share/doc/aegisub-3.3.3/libapparmor1/
+usr/share/doc/aegisub-3.3.3/libapparmor1/copyright
+usr/share/doc/aegisub-3.3.3/libass/
+usr/share/doc/aegisub-3.3.3/libass/COPYING
+usr/share/doc/aegisub-3.3.3/libass/MAINTAINERS
+usr/share/doc/aegisub-3.3.3/libasyncns0/
+usr/share/doc/aegisub-3.3.3/libasyncns0/copyright
+usr/share/doc/aegisub-3.3.3/libatk1.0-0/
+usr/share/doc/aegisub-3.3.3/libatk1.0-0/copyright
+usr/share/doc/aegisub-3.3.3/libblkid1/
+usr/share/doc/aegisub-3.3.3/libblkid1/copyright
+usr/share/doc/aegisub-3.3.3/libboost-filesystem1.65.1/
+usr/share/doc/aegisub-3.3.3/libboost-filesystem1.65.1/copyright
+usr/share/doc/aegisub-3.3.3/libboost-locale1.65.1/
+usr/share/doc/aegisub-3.3.3/libboost-locale1.65.1/copyright
+usr/share/doc/aegisub-3.3.3/libboost-regex1.65.1/
+usr/share/doc/aegisub-3.3.3/libboost-regex1.65.1/copyright
+usr/share/doc/aegisub-3.3.3/libboost-system1.65.1/
+usr/share/doc/aegisub-3.3.3/libboost-system1.65.1/copyright
+usr/share/doc/aegisub-3.3.3/libboost-thread1.65.1/
+usr/share/doc/aegisub-3.3.3/libboost-thread1.65.1/copyright
+usr/share/doc/aegisub-3.3.3/libbsd0/
+usr/share/doc/aegisub-3.3.3/libbsd0/copyright
+usr/share/doc/aegisub-3.3.3/libc6/
+usr/share/doc/aegisub-3.3.3/libc6/copyright
+usr/share/doc/aegisub-3.3.3/libcairo2/
+usr/share/doc/aegisub-3.3.3/libcairo2/copyright
+usr/share/doc/aegisub-3.3.3/libcroco3/
+usr/share/doc/aegisub-3.3.3/libcroco3/copyright
+usr/share/doc/aegisub-3.3.3/libdatrie1/
+usr/share/doc/aegisub-3.3.3/libdatrie1/copyright
+usr/share/doc/aegisub-3.3.3/libdbus-1-3/
+usr/share/doc/aegisub-3.3.3/libdbus-1-3/copyright
+usr/share/doc/aegisub-3.3.3/libffi6/
+usr/share/doc/aegisub-3.3.3/libffi6/copyright
+usr/share/doc/aegisub-3.3.3/libfftw3-double3/
+usr/share/doc/aegisub-3.3.3/libfftw3-double3/copyright
+usr/share/doc/aegisub-3.3.3/libflac8/
+usr/share/doc/aegisub-3.3.3/libflac8/copyright
+usr/share/doc/aegisub-3.3.3/libgcrypt20/
+usr/share/doc/aegisub-3.3.3/libgcrypt20/copyright
+usr/share/doc/aegisub-3.3.3/libgdk-pixbuf2.0-0/
+usr/share/doc/aegisub-3.3.3/libgdk-pixbuf2.0-0/copyright
+usr/share/doc/aegisub-3.3.3/libglib2.0-0/
+usr/share/doc/aegisub-3.3.3/libglib2.0-0/copyright
+usr/share/doc/aegisub-3.3.3/libgraphite2-3/
+usr/share/doc/aegisub-3.3.3/libgraphite2-3/copyright
+usr/share/doc/aegisub-3.3.3/libgtk2.0-0/
+usr/share/doc/aegisub-3.3.3/libgtk2.0-0/copyright
+usr/share/doc/aegisub-3.3.3/libhunspell-1.6-0/
+usr/share/doc/aegisub-3.3.3/libhunspell-1.6-0/copyright
+usr/share/doc/aegisub-3.3.3/libicu60/
+usr/share/doc/aegisub-3.3.3/libicu60/copyright
+usr/share/doc/aegisub-3.3.3/libjbig0/
+usr/share/doc/aegisub-3.3.3/libjbig0/copyright
+usr/share/doc/aegisub-3.3.3/libjpeg-turbo8/
+usr/share/doc/aegisub-3.3.3/libjpeg-turbo8/copyright
+usr/share/doc/aegisub-3.3.3/liblz4-1/
+usr/share/doc/aegisub-3.3.3/liblz4-1/copyright
+usr/share/doc/aegisub-3.3.3/liblzma5/
+usr/share/doc/aegisub-3.3.3/liblzma5/copyright
+usr/share/doc/aegisub-3.3.3/libmount1/
+usr/share/doc/aegisub-3.3.3/libmount1/copyright
+usr/share/doc/aegisub-3.3.3/libnotify4/
+usr/share/doc/aegisub-3.3.3/libnotify4/copyright
+usr/share/doc/aegisub-3.3.3/libogg0/
+usr/share/doc/aegisub-3.3.3/libogg0/copyright
+usr/share/doc/aegisub-3.3.3/libopenal1/
+usr/share/doc/aegisub-3.3.3/libopenal1/copyright
+usr/share/doc/aegisub-3.3.3/libpango-1.0-0/
+usr/share/doc/aegisub-3.3.3/libpango-1.0-0/copyright
+usr/share/doc/aegisub-3.3.3/libpangocairo-1.0-0/
+usr/share/doc/aegisub-3.3.3/libpangocairo-1.0-0/copyright
+usr/share/doc/aegisub-3.3.3/libpangoft2-1.0-0/
+usr/share/doc/aegisub-3.3.3/libpangoft2-1.0-0/copyright
+usr/share/doc/aegisub-3.3.3/libpcre3/
+usr/share/doc/aegisub-3.3.3/libpcre3/copyright
+usr/share/doc/aegisub-3.3.3/libpixman-1-0/
+usr/share/doc/aegisub-3.3.3/libpixman-1-0/copyright
+usr/share/doc/aegisub-3.3.3/libpng16-16/
+usr/share/doc/aegisub-3.3.3/libpng16-16/copyright
+usr/share/doc/aegisub-3.3.3/libpulse0/
+usr/share/doc/aegisub-3.3.3/libpulse0/copyright
+usr/share/doc/aegisub-3.3.3/librsvg2-2/
+usr/share/doc/aegisub-3.3.3/librsvg2-2/copyright
+usr/share/doc/aegisub-3.3.3/libselinux1/
+usr/share/doc/aegisub-3.3.3/libselinux1/copyright
+usr/share/doc/aegisub-3.3.3/libsndfile1/
+usr/share/doc/aegisub-3.3.3/libsndfile1/copyright
+usr/share/doc/aegisub-3.3.3/libsndio6.1/
+usr/share/doc/aegisub-3.3.3/libsndio6.1/copyright
+usr/share/doc/aegisub-3.3.3/libsystemd0/
+usr/share/doc/aegisub-3.3.3/libsystemd0/copyright
+usr/share/doc/aegisub-3.3.3/libtiff5/
+usr/share/doc/aegisub-3.3.3/libtiff5/copyright
+usr/share/doc/aegisub-3.3.3/libuchardet0/
+usr/share/doc/aegisub-3.3.3/libuchardet0/copyright
+usr/share/doc/aegisub-3.3.3/libunibreak1/
+usr/share/doc/aegisub-3.3.3/libunibreak1/copyright
+usr/share/doc/aegisub-3.3.3/libvorbis0a/
+usr/share/doc/aegisub-3.3.3/libvorbis0a/copyright
+usr/share/doc/aegisub-3.3.3/libvorbisenc2/
+usr/share/doc/aegisub-3.3.3/libvorbisenc2/copyright
+usr/share/doc/aegisub-3.3.3/libwmf0.2-7/
+usr/share/doc/aegisub-3.3.3/libwmf0.2-7/copyright
+usr/share/doc/aegisub-3.3.3/libwrap0/
+usr/share/doc/aegisub-3.3.3/libwrap0/copyright
+usr/share/doc/aegisub-3.3.3/libwxbase3.0-0v5/
+usr/share/doc/aegisub-3.3.3/libwxbase3.0-0v5/copyright
+usr/share/doc/aegisub-3.3.3/libwxgtk3.0-0v5/
+usr/share/doc/aegisub-3.3.3/libwxgtk3.0-0v5/copyright
+usr/share/doc/aegisub-3.3.3/libxau6/
+usr/share/doc/aegisub-3.3.3/libxau6/copyright
+usr/share/doc/aegisub-3.3.3/libxcb-render0/
+usr/share/doc/aegisub-3.3.3/libxcb-render0/copyright
+usr/share/doc/aegisub-3.3.3/libxcb-shm0/
+usr/share/doc/aegisub-3.3.3/libxcb-shm0/copyright
+usr/share/doc/aegisub-3.3.3/libxcomposite1/
+usr/share/doc/aegisub-3.3.3/libxcomposite1/copyright
+usr/share/doc/aegisub-3.3.3/libxcursor1/
+usr/share/doc/aegisub-3.3.3/libxcursor1/copyright
+usr/share/doc/aegisub-3.3.3/libxdamage1/
+usr/share/doc/aegisub-3.3.3/libxdamage1/copyright
+usr/share/doc/aegisub-3.3.3/libxdmcp6/
+usr/share/doc/aegisub-3.3.3/libxdmcp6/copyright
+usr/share/doc/aegisub-3.3.3/libxext6/
+usr/share/doc/aegisub-3.3.3/libxext6/copyright
+usr/share/doc/aegisub-3.3.3/libxfixes3/
+usr/share/doc/aegisub-3.3.3/libxfixes3/copyright
+usr/share/doc/aegisub-3.3.3/libxi6/
+usr/share/doc/aegisub-3.3.3/libxi6/copyright
+usr/share/doc/aegisub-3.3.3/libxinerama1/
+usr/share/doc/aegisub-3.3.3/libxinerama1/copyright
+usr/share/doc/aegisub-3.3.3/libxml2/
+usr/share/doc/aegisub-3.3.3/libxml2/copyright
+usr/share/doc/aegisub-3.3.3/libxrandr2/
+usr/share/doc/aegisub-3.3.3/libxrandr2/copyright
+usr/share/doc/aegisub-3.3.3/libxrender1/
+usr/share/doc/aegisub-3.3.3/libxrender1/copyright
+usr/share/doc/aegisub-3.3.3/libxxf86vm1/
+usr/share/doc/aegisub-3.3.3/libxxf86vm1/copyright
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/aegisub.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/aegisub.png
+usr/share/icons/hicolor/24x24/
+usr/share/icons/hicolor/24x24/apps/
+usr/share/icons/hicolor/24x24/apps/aegisub.png
+usr/share/icons/hicolor/256x256/
+usr/share/icons/hicolor/256x256/apps/
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/aegisub.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/aegisub.png
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/aegisub.png
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/aegisub.svg
+
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/aegisub/binary-aegisub-3.3.3/aegisub-3.3.3-x86_64-2_rtz.tlz created.
+
