@@ -1,0 +1,3 @@
+This is a repackage of AppImage for x86_64
+for x86 replace:
+SRCURL="https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1683370141/aegisub-v3.3.3-i386.AppImage?response-content-disposition=attachment%3B%2520aegisub-v3.3.3-i386.AppImage&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20241104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241104T193645Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=c10de8be27451b3286deca91d2be7681c15d632381fd467ca478e70a5c663a35"

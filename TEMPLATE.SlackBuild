@@ -37,11 +37,11 @@ start_time=$(date +%s)
 # If you have slackdesc installed you need these, else ignore them (empty)
 # https://slack-desc.sourceforge.net/
    mkdesc="$(which slackdesc)" || true
-   Homepage="https://sr.ht/~emersion/pyonji"
+   Homepage="https://github.com/wangqr/Aegisub"
             #|--------------------------------------|#
-   SortDesc="tool to send e-mail patches"
+   SortDesc="General-purpose subtitle editor"
             #|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|#
-    LongDesc="An easy-to-use tool to send e-mail patches."
+    LongDesc="A general-purpose subtitle editor"
 # If a README or README.md dont exist in CWD then SortDec discribtion, if not empty, will be added in a README file.
 
 ##########################-GITHUB-AUTO UPDATE-#####################################
@@ -52,24 +52,30 @@ AUTO_UPD=$(curl --silent -L "https://api.github.com/repos/$DEV/$PRJ/releases/lat
 
 ############################-SRC AND PACKAGE VARS-##################################
 # If use AUTO UPDATE 'VERSION=$AUTO_UPD'  or as a regular package version 'VERSION=0.1.2' etc...
-VERSION=0.29.0
+VERSION=3.3.3
 #
 # Binary (output) name
-PRGNAM=ast-grep
+PRGNAM=aegisub
 # If not special SRCNAM needed then we use the same name as PRGNAM.
-SRCNAM=ast-grep
+SRCNAM=aegisub-v3.3.3-x86-64.AppImage
 # Download link if use AUTO_UPD then SRCmust be empty
-SRCURL=https://github.com/ast-grep/ast-grep/releases/download/0.29.0/app-x86_64-unknown-linux-gnu.zip
+SRCURL="https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1683370141/aegisub-v3.3.3-x86-64.AppImage?response-content-disposition=attachment%3B%2520aegisub-v3.3.3-x86-64.AppImage&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20241103%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241103T200807Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=7e13176b2e7def3ea861cdac150e55fc851b556a888c3ac26e1b3341c4eafb68"
 #
 # ON or OFF/empty
-AGENT=OFF
+AGENT=ON
 # If AGENT is ON Define the download agent or special wget option...
-DOWNLOAD_AGENT=" --content-disposition"
+DOWNLOAD_AGENT () {
+wget -O "aegisub-v3.3.3-x86-64.AppImage" "$SRCURL" \
+     --header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" \
+     --header="Accept-Language: en-US,en;q=0.5" \
+     --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"
+}
+# "--content-disposition"
 
 
 # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z, deb, rpm
 # OR repos: cvn, cvs, git, lftp
-COMPRESS="zip"
+COMPRESS="AppImage"
 # IF you need:git checkout, else leave it empty.
 GITCHEK=
 #0bdb437d8cdf90902dcabe1d472c52e55fc0f46a bump version.
@@ -77,7 +83,7 @@ GITCHEK=
 BIN_PKG=YES
 
 ######################-WORK_DIRS and OUTPUT-#################################
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_rtz}
 PKGTYPE=${PKGTYPE:-tlz}
 PKG=$CWD/package-$PRGNAM
@@ -88,49 +94,51 @@ OUTPUT=$CWD/binary-$PRGNAM-$VERSION
 # ONLY if you need to create a Desktop entry edit it and call desktop_entry function in your build function, else just ignore it.
 desktop_entry() {
 mkdir -p "$PKG"/usr/share/applications
-cat <<EOF >> "$PKG"/usr/share/applications/gnunet-statistics-gtk.desktop
+cat <<EOF > "$PKG"/usr/share/applications/aegisub.desktop
 [Desktop Entry]
 Version=1.0
-Name=GNUnet Statistics
-GenericName=GNUnet Statistics
-Comment=Check GNUnet statistics
+Name=Aegisub
+GenericName=Subtitle Editor
+Comment=Aegisub AppImage repackage
 Type=Application
-Exec=gnunet-statistics-gtk
-Icon=gnunet-statistics-gtk
+PATH=/usr/local/bin/aegisub/usr/bin
+Exec=sh -c "LD_LIBRARY_PATH=/usr/local/bin/aegisub/usr/lib /usr/local/bin/aegisub/usr/bin/aegisub $SHELL"
+Icon=/usr/share/icons/hicolor/48x48/apps/aegisub.png
 Terminal=false
-Categories=GTK;Network;
+Categories=AudioVideo;AudioVideoEditing;
 StartupNotify=true
-StartupWMClass=gnunet-gtk
+MimeType=application/x-srt;text/plain;text/x-ass;text/x-microdvd;text/x-ssa;
+StartupWMClass=aegisub
 EOF
 }
 
-desktop_entry2() {
-cat <<EOL >> "$PKG"/usr/share/applications/gnunet-peerinfo-gtk.desktop
-[Desktop Entry]
-Version=1.0
-Name=GNUnet Peer Info
-GenericName=GNUnet Peer Info
-Type=Application
-Exec=gnunet-peerinfo-gtk
-Icon=gnunet-peerinfo-gtk
-Terminal=false
-Categories=GTK;Network;P2P;
-StartupNotify=true
-StartupWMClass=gnunet-gtk
-EOL
-}
+
 ## EDIT YOUR BUILD FUNCTIONS AS FOR YOUR NEEDS ##
 
    patch_build() {
-mkdir -p "$PKG"/usr/doc/$PRGNAM-"$VERSION"
-pushd "$PKG"/usr/doc/$PRGNAM-"$VERSION"
-wget https://raw.githubusercontent.com/ast-grep/ast-grep/c9aff6ace291c5a02e48446aa9be1d471b763ca2/LICENSE
-popd
+   true
 }
 
   custom_build () {
-  find "$TMP" -name "sg" -type f -print -exec install -vDm755 {} "$PKG/usr/local/bin/$PRGNAM" \;
+  export BOOST_ROOT=/usr
+  export BOOST_LIBRARYDIR=/usr/lib64
+  export BOOST_INCLUDEDIR=/usr/include
+  export PKG_CONFIG_PATH=/usr/lib64/pkgconfig
+  export CMAKE_PREFIX_PATH=/usr/lib64/cmake
 
+  autoreconf -fiv
+  CFLAGS="$SLKCFLAGS" \
+  CPPFLAGS+=' -DU_USING_ICU_NAMESPACE=1' \
+  CXXFLAGS="$CXXFLAGS -Wall -Wextra -Wno-unused-parameter -fno-strict-aliasing" \
+  FORCE_GIT_VERSION="TRUE" \
+  ./configure \
+    --disable-update-checker \
+    --prefix=/usr \
+    --docdir=/usr/doc \
+    --build=$(uname -m)-slackware-linux
+
+  make
+  make install DESTDIR=$PKG
   }
 
    auto_build() {
@@ -257,7 +265,7 @@ cd ..
 	  export CGO_CFLAGS="${CFLAGS}"
 	  export CGO_CXXFLAGS="${CXXFLAGS}"
 	  export CGO_LDFLAGS="${LDFLAGS}"
-	  
+
     go build -buildmode=pie -trimpath -mod=readonly -modcacherw -o "$PRGNAM"
 
   mkdir -p "$PKG"/usr/local/bin/
@@ -299,11 +307,26 @@ cd ..
   mv "$PKG"/usr/share/man "$PKG"/usr || true
   }
 
+  appimage_build () {
+  mkdir -p "$PKG"/usr/local/bin/"$PRGNAM"
+  mkdir -p "$PKG"/usr/share/doc/"$PRGNAM-$VERSION"
+  pushd "$PKG"/usr/local/bin/
+  cd "$TMP" || exit
+  chmod +x "$SRCNAM"
+  ./"$SRCNAM" --appimage-extract
+  mv squashfs-root/usr/share/icons "$PKG"/usr/share
+  mv squashfs-root/usr/share/doc/* "$PKG"/usr/share/doc/"$PRGNAM-$VERSION"/
+  rm -r squashfs-root/usr/share
+  cp -R squashfs-root/usr "$PKG"/usr/local/bin/"$PRGNAM"/
+  popd
+  desktop_entry
+  }
+
 
    after_build(){
 if [[ $COMPRESS != "rpm" && $COMPRESS != "deb" ]]; then
 	  mkdir -p "$PKG"/usr/doc/$PRGNAM-"$VERSION"
-    
+
 # files...
    cp  AUTHORS ChangeLog* COPYING CREDITS LICENSE MAINTAINERS NEWS README* "$PKG/usr/doc/$PRGNAM-$VERSION/" || true
  #find . -maxdepth 1 -type f -exec cp -a {} "$PKG/usr/doc/$PRGNAM-$VERSION/" \;
@@ -576,11 +599,11 @@ download_src() {
     echo "$VERSION or $AUTO_UPD is not set."
     exit 1
   fi
-  
+
   if [[ $AGENT == ON ]]; then
    # Use eval to construct and run the download command
-eval wget "${DOWNLOAD_AGENT}" "$SRCURL"
-  else
+    DOWNLOAD_AGENT
+   else
   if [[ "$VERSION" != "$AUTO_UPD" ]]; then
     sleep 1
     if [[ $COMPRESS == "git" ]]; then
@@ -690,7 +713,7 @@ prepare_build(){
 
 
 cd "$TMP" || exit
-if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" && $COMPRESS != "rpm" && $COMPRESS != "deb" ]]; then
+if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" && $COMPRESS != "rpm" && $COMPRESS != "deb" && $COMPRESS != "AppImage" ]]; then
   get_out "$CWD"/"$SRCNAM"-"$VERSION"."$COMPRESS" || get_out "$CWD"/"$SRCNAM"."$COMPRESS" || exit
   if [[ $BIN_PKG != "YES" ]]; then
      cd $SRCNAM-"$VERSION" || cd $PRGNAM-"$VERSION" || cd $SRCNAM || exit
@@ -704,6 +727,10 @@ if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRES
     ar x $SRCNAM.$COMPRESS
 	rm debian-binary control.tar.xz
 	tar -xJf data.tar.xz -C "$PKG"
+  elif
+    [[ $COMPRESS == "AppImage" ]]; then
+    echo "$COMPRESS="AppImage""
+    mv "$CWD"/"$SRCNAM" "$TMP"
   elif
     [[ $COMPRESS = "rpm" ]]; then
     cd "$CWD"
@@ -875,7 +902,7 @@ download_src
 prepare_build
 patch_build
 # DONT chroot if deb or rpm or if golang_build
-#chrooting
+chrooting
 
 # uncomment what you need:
 #auto_build
@@ -889,7 +916,8 @@ patch_build
 #haskel_build
 #cargo_build
 #golang_build
-custom_build
+appimage_build
+#custom_build
 
 # default most of times #
 after_build
@@ -897,11 +925,10 @@ package_build
 
 # uncomment what you need:
 #pkg_install
-#sig_package
-#clean_src
+sig_package
+clean_src
 
 # Calculate and display build time
 end_time=$(date +%s)
 elapsed_time=$((end_time - start_time))
 echo "Build process completed in $((elapsed_time / 60)) minutes and $((elapsed_time % 60)) seconds."
-
