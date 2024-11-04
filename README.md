@@ -67,6 +67,7 @@ Here are some optional builds:*
 - [x] 7z
 - [x] deb
 - [x] rpm
+- [x] AppImage
 
 > Also, if needed, by default support and download src package from repos using:
 - [x] cvn co
