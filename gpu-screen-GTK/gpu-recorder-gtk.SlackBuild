@@ -50,13 +50,13 @@ AUTO_UPD=$(curl --silent -L "https://api.github.com/repos/$DEV/$PRJ/releases/lat
 
 ############################-SRC AND PACKAGE VARS-##################################
 # If use AUTO UPDATE 'VERSION=$AUTO_UPD'  or as a regular package version 'VERSION=0.1.2' etc...
-VERSION=r388.48d34f5
+VERSION=r402.ee137ee
 # Binary (output) name
 PRGNAM=gpu-recorder-gtk
 # If not special SRCNAM needed then we use the same name as PRGNAM.
 SRCNAM=gpu-screen-recorder-gtk
 # Download link if use AUTO_UPD then SRCmust be empty
-SRCURL=https://dec05eba.com/snapshot/gpu-screen-recorder-gtk.git.r388.48d34f5.tar.gz
+SRCURL=https://dec05eba.com/snapshot/gpu-screen-recorder-gtk.git.r402.ee137ee.tar.gz
 # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z (for deb rpm etc use custom_build for all progress)
 # OR repos: cvn, cvs, git, lftp
 COMPRESS="tar.gz"

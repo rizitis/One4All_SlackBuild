@@ -1,5 +1,5 @@
 
-Sun Oct 13 16:45:15 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Tue Nov  5 12:30:22 EET 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -16,7 +16,7 @@ Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root.root ([y]es, [n]o)? n
 
 
-Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-GTK/binary-gpu-recorder-gtk-r388.48d34f5/gpu-recorder-gtk-r388.48d34f5-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-GTK/binary-gpu-recorder-gtk-r402.ee137ee/gpu-recorder-gtk-r402.ee137ee-x86_64-1_rtz.tlz
 
 ./
 install/
@@ -27,8 +27,8 @@ usr/
 usr/bin/
 usr/bin/gpu-screen-recorder-gtk
 usr/doc/
-usr/doc/gpu-recorder-gtk-r388.48d34f5/
-usr/doc/gpu-recorder-gtk-r388.48d34f5/gpu-recorder-gtk.SlackBuild
+usr/doc/gpu-recorder-gtk-r402.ee137ee/
+usr/doc/gpu-recorder-gtk-r402.ee137ee/gpu-recorder-gtk.SlackBuild
 usr/share/
 usr/share/applications/
 usr/share/applications/com.dec05eba.gpu_screen_recorder.desktop
@@ -58,5 +58,5 @@ usr/share/icons/hicolor/64x64/status/com.dec05eba.gpu_screen_recorder.tray-recor
 usr/share/metainfo/
 usr/share/metainfo/com.dec05eba.gpu_screen_recorder.appdata.xml
 
-Slackware package /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-GTK/binary-gpu-recorder-gtk-r388.48d34f5/gpu-recorder-gtk-r388.48d34f5-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/gpu-screen-GTK/binary-gpu-recorder-gtk-r402.ee137ee/gpu-recorder-gtk-r402.ee137ee-x86_64-1_rtz.tlz created.
 

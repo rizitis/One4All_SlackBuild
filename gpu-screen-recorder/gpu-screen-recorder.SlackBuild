@@ -62,7 +62,7 @@ EOF
 }
 ############################## MAIN VARS #########################################
 # EDIT FOLLOWING AS NEEDED:
-   SRCURL="https://dec05eba.com/snapshot/gpu-screen-recorder.git.r791.aef223d.tar.gz"
+   SRCURL="https://dec05eba.com/snapshot/gpu-screen-recorder.git.r876.030947e.tar.gz"
    # IF you need:git checkout, else leave it empty.
    GITCHEK=
    # Supported COMPRESS types are: tar.gz, tar.xz, bz2, rar, gz, tar, tbz2, tgz, zip, Z, 7z
@@ -70,7 +70,7 @@ EOF
    COMPRESS="tar.gz"
    SRCNAM=gpu-screen-recorder
    PRGNAM=gpu-screen-recorder
-   VERSION=r791.aef223d
+   VERSION=r876.030947e
 
    # When source package after extract conatins just a binary set BIN_PKG=YES else leave it empty or whatever but YES.
    BIN_PKG=YES
