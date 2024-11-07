@@ -1,5 +1,5 @@
 
-Sun Sep 29 11:38:48 EEST 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Thu Nov  7 16:55:24 EET 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
@@ -17,7 +17,7 @@ directory ownerships to root.root ([y]es, [n]o)? n
 
 WARNING: rpath found in ./usr/bin/qt-sudo:   RPATH                /usr/lib64
 
-Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz
 
 ./
 install/
@@ -30,5 +30,5 @@ usr/doc/
 usr/doc/qt-sudo-2.0.1/
 usr/doc/qt-sudo-2.0.1/qt-sudo.SlackBuild
 
-Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz created.
 

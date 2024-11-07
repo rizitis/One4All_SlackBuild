@@ -1,19 +1,19 @@
 Starting build process...
---2024-09-29 11:38:50--  https://github.com/aarnt/qt-sudo/archive/refs/tags/v2.0.1.tar.gz
+--2024-11-07 16:55:26--  https://github.com/aarnt/qt-sudo/archive/refs/tags/v2.0.1.tar.gz
 Resolving github.com (github.com)... 140.82.121.3
 Connecting to github.com (github.com)|140.82.121.3|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://codeload.github.com/aarnt/qt-sudo/tar.gz/refs/tags/v2.0.1 [following]
---2024-09-29 11:38:50--  https://codeload.github.com/aarnt/qt-sudo/tar.gz/refs/tags/v2.0.1
-Resolving codeload.github.com (codeload.github.com)... 140.82.121.9
-Connecting to codeload.github.com (codeload.github.com)|140.82.121.9|:443... connected.
+--2024-11-07 16:55:26--  https://codeload.github.com/aarnt/qt-sudo/tar.gz/refs/tags/v2.0.1
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [application/x-gzip]
 Saving to: ‘v2.0.1-2.0.1.tar.gz’
 
-     0K .......... .......... .......... .........              140K=0.3s
+     0K .......... .......... .......... .........              636K=0.06s
 
-2024-09-29 11:38:51 (140 KB/s) - ‘v2.0.1-2.0.1.tar.gz’ saved [40885]
+2024-11-07 16:55:26 (636 KB/s) - ‘v2.0.1-2.0.1.tar.gz’ saved [40885]
 
 qt-sudo-2.0.1/
 qt-sudo-2.0.1/AUTHORS
@@ -69,11 +69,11 @@ qt-sudo-2.0.1/translations/lxqt-sudo_uk.ts
 qt-sudo-2.0.1/translations/lxqt-sudo_vi.ts
 qt-sudo-2.0.1/translations/lxqt-sudo_zh_CN.ts
 qt-sudo-2.0.1/translations/lxqt-sudo_zh_TW.ts
-/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/work
+/home/omen/GITHUB/One4All_SlackBuild/qt-sudo/work
 README or README.md already exists, skipping creation.
 ./qt-sudo.SlackBuild: line 529: cd: v2.0.1-2.0.1: No such file or directory
 hm...lets continue and see what happens
-Info: creating stash file /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/work/qt-sudo-2.0.1/.qmake.stash
+Info: creating stash file /home/omen/GITHUB/One4All_SlackBuild/qt-sudo/work/qt-sudo-2.0.1/.qmake.stash
 /usr/lib64/qt6/bin/uic passworddialog.ui -o ui_passworddialog.h
 g++ -c -pipe -O2 -m64 -march=x86-64 -mtune=generic -fPIC -g -Wall -Wextra -mno-direct-extern-access -D_REENTRANT -DQT_DEPRECATED_WARNINGS -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING -DQT_NO_CAST_FROM_BYTEARRAY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o main.o main.cpp
 g++ -c -pipe -O2 -m64 -march=x86-64 -mtune=generic -fPIC -g -Wall -Wextra -mno-direct-extern-access -D_REENTRANT -DQT_DEPRECATED_WARNINGS -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING -DQT_NO_CAST_FROM_BYTEARRAY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o sudo.o sudo.cpp
@@ -92,132 +92,132 @@ g++ -c -pipe -O2 -m64 -march=x86-64 -mtune=generic -fPIC -g -Wall -Wextra -mno-d
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_nb_NO.ts -qm .qm/lxqt-sudo_nb_NO.qm
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_ca.ts -qm .qm/lxqt-sudo_ca.qm
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_cs.ts -qm .qm/lxqt-sudo_cs.qm
+Updating '.qm/lxqt-sudo_id.qm'...
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_ko.ts -qm .qm/lxqt-sudo_ko.qm
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+Updating '.qm/lxqt-sudo_uk.qm'...
+Updating '.qm/lxqt-sudo_ar.qm'...
+Updating '.qm/lxqt-sudo_hu.qm'...
 Updating '.qm/lxqt-sudo_vi.qm'...
     Generated 21 translation(s) (21 finished and 0 unfinished)
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_ko.ts -qm .qm/lxqt-sudo_ko.qm
-Updating '.qm/lxqt-sudo_hu.qm'...
+    Generated 21 translation(s) (21 finished and 0 unfinished)
     Generated 20 translation(s) (18 finished and 2 unfinished)
     Ignored 1 untranslated source text(s)
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_et.ts -qm .qm/lxqt-sudo_et.qm
-Updating '.qm/lxqt-sudo_id.qm'...
-Updating '.qm/lxqt-sudo_ar.qm'...
     Generated 21 translation(s) (21 finished and 0 unfinished)
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_et.ts -qm .qm/lxqt-sudo_et.qm
+Updating '.qm/lxqt-sudo_sk.qm'...
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_lg.ts -qm .qm/lxqt-sudo_lg.qm
     Generated 21 translation(s) (21 finished and 0 unfinished)
+Updating '.qm/lxqt-sudo_el.qm'...
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_pa.ts -qm .qm/lxqt-sudo_pa.qm
+Updating '.qm/lxqt-sudo_zh_TW.qm'...
 Updating '.qm/lxqt-sudo_cy.qm'...
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+    Generated 21 translation(s) (21 finished and 0 unfinished)
     Generated 10 translation(s) (10 finished and 0 unfinished)
     Ignored 11 untranslated source text(s)
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_pa.ts -qm .qm/lxqt-sudo_pa.qm
-Updating '.qm/lxqt-sudo_uk.qm'...
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_da.ts -qm .qm/lxqt-sudo_da.qm
-    Generated 21 translation(s) (21 finished and 0 unfinished)
 Updating '.qm/lxqt-sudo_fi.qm'...
-    Generated 21 translation(s) (21 finished and 0 unfinished)
 Updating '.qm/lxqt-sudo_arn.qm'...
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_hr.ts -qm .qm/lxqt-sudo_hr.qm
+    Generated 21 translation(s) (21 finished and 0 unfinished)
     Generated 0 translation(s) (0 finished and 0 unfinished)
     Ignored 21 untranslated source text(s)
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_hr.ts -qm .qm/lxqt-sudo_hr.qm
-Updating '.qm/lxqt-sudo_zh_TW.qm'...
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_zh_CN.ts -qm .qm/lxqt-sudo_zh_CN.qm
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_ru.ts -qm .qm/lxqt-sudo_ru.qm
-    Generated 21 translation(s) (21 finished and 0 unfinished)
-Updating '.qm/lxqt-sudo_el.qm'...
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_he.ts -qm .qm/lxqt-sudo_he.qm
-    Generated 21 translation(s) (21 finished and 0 unfinished)
-Updating '.qm/lxqt-sudo_cs.qm'...
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_de.ts -qm .qm/lxqt-sudo_de.qm
 Updating '.qm/lxqt-sudo_nb_NO.qm'...
-Updating '.qm/lxqt-sudo_es.qm'...
-    Generated 21 translation(s) (21 finished and 0 unfinished)
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_nl.ts -qm .qm/lxqt-sudo_nl.qm
-    Generated 21 translation(s) (21 finished and 0 unfinished)
-    Generated 21 translation(s) (21 finished and 0 unfinished)
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_ru.ts -qm .qm/lxqt-sudo_ru.qm
 Updating '.qm/lxqt-sudo_ca.qm'...
     Generated 21 translation(s) (21 finished and 0 unfinished)
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_he.ts -qm .qm/lxqt-sudo_he.qm
+Updating '.qm/lxqt-sudo_es.qm'...
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_de.ts -qm .qm/lxqt-sudo_de.qm
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_nl.ts -qm .qm/lxqt-sudo_nl.qm
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_pt_BR.ts -qm .qm/lxqt-sudo_pt_BR.qm
+Updating '.qm/lxqt-sudo_cs.qm'...
+    Generated 21 translation(s) (21 finished and 0 unfinished)
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_tr.ts -qm .qm/lxqt-sudo_tr.qm
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_fr.ts -qm .qm/lxqt-sudo_fr.qm
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_ast.ts -qm .qm/lxqt-sudo_ast.qm
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_it.ts -qm .qm/lxqt-sudo_it.qm
-Updating '.qm/lxqt-sudo_sk.qm'...
-    Generated 21 translation(s) (21 finished and 0 unfinished)
 Updating '.qm/lxqt-sudo_ko.qm'...
     Generated 21 translation(s) (21 finished and 0 unfinished)
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_ja.ts -qm .qm/lxqt-sudo_ja.qm
 Updating '.qm/lxqt-sudo_et.qm'...
-Updating '.qm/lxqt-sudo_pa.qm'...
-    Generated 21 translation(s) (21 finished and 0 unfinished)
-    Generated 13 translation(s) (13 finished and 0 unfinished)
-    Ignored 8 untranslated source text(s)
-Updating '.qm/lxqt-sudo_da.qm'...
     Generated 21 translation(s) (21 finished and 0 unfinished)
 Updating '.qm/lxqt-sudo_lg.qm'...
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_it.ts -qm .qm/lxqt-sudo_it.qm
     Generated 21 translation(s) (21 finished and 0 unfinished)
-Updating '.qm/lxqt-sudo_hr.qm'...
-    Generated 21 translation(s) (21 finished and 0 unfinished)
-Updating '.qm/lxqt-sudo_ru.qm'...
-    Generated 21 translation(s) (21 finished and 0 unfinished)
-Updating '.qm/lxqt-sudo_he.qm'...
-Updating '.qm/lxqt-sudo_zh_CN.qm'...
-Updating '.qm/lxqt-sudo_de.qm'...
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_ja.ts -qm .qm/lxqt-sudo_ja.qm
+Updating '.qm/lxqt-sudo_da.qm'...
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_pt.ts -qm .qm/lxqt-sudo_pt.qm
-    Generated 21 translation(s) (21 finished and 0 unfinished)
-    Generated 21 translation(s) (21 finished and 0 unfinished)
+Updating '.qm/lxqt-sudo_zh_CN.qm'...
     Generated 21 translation(s) (21 finished and 0 unfinished)
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_pl.ts -qm .qm/lxqt-sudo_pl.qm
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+Updating '.qm/lxqt-sudo_pa.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+    Ignored 8 untranslated source text(s)
+Updating '.qm/lxqt-sudo_hr.qm'...
+Updating '.qm/lxqt-sudo_nl.qm'...
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+Updating '.qm/lxqt-sudo_ru.qm'...
+Updating '.qm/lxqt-sudo_he.qm'...
+    Generated 21 translation(s) (21 finished and 0 unfinished)
 Updating '.qm/lxqt-sudo_pt_BR.qm'...
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_oc.ts -qm .qm/lxqt-sudo_oc.qm
     Generated 21 translation(s) (21 finished and 0 unfinished)
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_si.ts -qm .qm/lxqt-sudo_si.qm
-Updating '.qm/lxqt-sudo_fr.qm'...
-/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_gl.ts -qm .qm/lxqt-sudo_gl.qm
     Generated 21 translation(s) (21 finished and 0 unfinished)
+Updating '.qm/lxqt-sudo_de.qm'...
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_si.ts -qm .qm/lxqt-sudo_si.qm
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+/usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_gl.ts -qm .qm/lxqt-sudo_gl.qm
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_bg.ts -qm .qm/lxqt-sudo_bg.qm
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo.ts -qm .qm/lxqt-sudo.qm
-Updating '.qm/lxqt-sudo_nl.qm'...
-    Generated 21 translation(s) (21 finished and 0 unfinished)
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_lt.ts -qm .qm/lxqt-sudo_lt.qm
 Updating '.qm/lxqt-sudo_tr.qm'...
-Updating '.qm/lxqt-sudo_ast.qm'...
-Updating '.qm/lxqt-sudo_it.qm'...
-    Generated 21 translation(s) (21 finished and 0 unfinished)
-    Generated 20 translation(s) (20 finished and 0 unfinished)
-    Ignored 1 untranslated source text(s)
-    Generated 21 translation(s) (21 finished and 0 unfinished)
 /usr/lib64/qt6/bin/lrelease translations/lxqt-sudo_sl.ts -qm .qm/lxqt-sudo_sl.qm
+    Generated 21 translation(s) (21 finished and 0 unfinished)
 g++ -pipe -O2 -m64 -march=x86-64 -mtune=generic -fPIC -g -Wall -Wextra -dM -E -o moc_predefs.h /usr/lib64/qt6/mkspecs/features/data/dummy.cpp
-Updating '.qm/lxqt-sudo_ja.qm'...
+Updating '.qm/lxqt-sudo_fr.qm'...
+Updating '.qm/lxqt-sudo_ast.qm'...
     Generated 21 translation(s) (21 finished and 0 unfinished)
 g++ -c -pipe -O2 -m64 -march=x86-64 -mtune=generic -fPIC -g -Wall -Wextra -mno-direct-extern-access -D_REENTRANT -DQT_DEPRECATED_WARNINGS -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING -DQT_NO_CAST_FROM_BYTEARRAY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o passworddialog.o passworddialog.cpp
+    Generated 20 translation(s) (20 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '.qm/lxqt-sudo_it.qm'...
+Updating '.qm/lxqt-sudo_ja.qm'...
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+Updating '.qm/lxqt-sudo_pt.qm'...
+Updating '.qm/lxqt-sudo_pl.qm'...
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+    Generated 21 translation(s) (21 finished and 0 unfinished)
 Updating '.qm/lxqt-sudo_oc.qm'...
-Updating '.qm/lxqt-sudo_si.qm'...
-    Generated 0 translation(s) (0 finished and 0 unfinished)
-    Ignored 21 untranslated source text(s)
     Generated 11 translation(s) (11 finished and 0 unfinished)
     Ignored 10 untranslated source text(s)
 Updating '.qm/lxqt-sudo_gl.qm'...
     Generated 21 translation(s) (21 finished and 0 unfinished)
-Updating '.qm/lxqt-sudo_pl.qm'...
-Updating '.qm/lxqt-sudo_bg.qm'...
-    Generated 21 translation(s) (21 finished and 0 unfinished)
-    Generated 21 translation(s) (21 finished and 0 unfinished)
 Updating '.qm/lxqt-sudo.qm'...
-Updating '.qm/lxqt-sudo_pt.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 21 untranslated source text(s)
+Updating '.qm/lxqt-sudo_si.qm'...
     Generated 0 translation(s) (0 finished and 0 unfinished)
     Ignored 21 untranslated source text(s)
 Updating '.qm/lxqt-sudo_lt.qm'...
     Generated 21 translation(s) (21 finished and 0 unfinished)
-    Generated 21 translation(s) (21 finished and 0 unfinished)
 Updating '.qm/lxqt-sudo_sl.qm'...
+Updating '.qm/lxqt-sudo_bg.qm'...
+    Generated 21 translation(s) (21 finished and 0 unfinished)
     Generated 21 translation(s) (21 finished and 0 unfinished)
 /usr/lib64/qt6/bin/rcc -name qmake_qmake_qm_files qmake_qmake_qm_files.qrc -o qrc_qmake_qmake_qm_files.cpp
-/usr/lib64/qt6/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING -DQT_NO_CAST_FROM_BYTEARRAY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/work/qt-sudo-2.0.1/moc_predefs.h -I/usr/lib64/qt6/mkspecs/linux-g++ -I/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/work/qt-sudo-2.0.1 -I/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/work/qt-sudo-2.0.1 -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I/usr/include/c++/14.2.0 -I/usr/include/c++/14.2.0/x86_64-slackware-linux -I/usr/include/c++/14.2.0/backward -I/usr/lib64/gcc/x86_64-slackware-linux/14.2.0/include -I/usr/local/include -I/usr/lib64/gcc/x86_64-slackware-linux/14.2.0/include-fixed -I/usr/include passworddialog.h -o moc_passworddialog.cpp
-/usr/lib64/qt6/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING -DQT_NO_CAST_FROM_BYTEARRAY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/work/qt-sudo-2.0.1/moc_predefs.h -I/usr/lib64/qt6/mkspecs/linux-g++ -I/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/work/qt-sudo-2.0.1 -I/home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/work/qt-sudo-2.0.1 -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I/usr/include/c++/14.2.0 -I/usr/include/c++/14.2.0/x86_64-slackware-linux -I/usr/include/c++/14.2.0/backward -I/usr/lib64/gcc/x86_64-slackware-linux/14.2.0/include -I/usr/local/include -I/usr/lib64/gcc/x86_64-slackware-linux/14.2.0/include-fixed -I/usr/include sudo.h -o moc_sudo.cpp
+/usr/lib64/qt6/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING -DQT_NO_CAST_FROM_BYTEARRAY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /home/omen/GITHUB/One4All_SlackBuild/qt-sudo/work/qt-sudo-2.0.1/moc_predefs.h -I/usr/lib64/qt6/mkspecs/linux-g++ -I/home/omen/GITHUB/One4All_SlackBuild/qt-sudo/work/qt-sudo-2.0.1 -I/home/omen/GITHUB/One4All_SlackBuild/qt-sudo/work/qt-sudo-2.0.1 -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I/usr/include/c++/14.2.0 -I/usr/include/c++/14.2.0/x86_64-slackware-linux -I/usr/include/c++/14.2.0/backward -I/usr/lib64/gcc/x86_64-slackware-linux/14.2.0/include -I/usr/local/include -I/usr/lib64/gcc/x86_64-slackware-linux/14.2.0/include-fixed -I/usr/include passworddialog.h -o moc_passworddialog.cpp
+/usr/lib64/qt6/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING -DQT_NO_CAST_FROM_BYTEARRAY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /home/omen/GITHUB/One4All_SlackBuild/qt-sudo/work/qt-sudo-2.0.1/moc_predefs.h -I/usr/lib64/qt6/mkspecs/linux-g++ -I/home/omen/GITHUB/One4All_SlackBuild/qt-sudo/work/qt-sudo-2.0.1 -I/home/omen/GITHUB/One4All_SlackBuild/qt-sudo/work/qt-sudo-2.0.1 -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I/usr/include/c++/14.2.0 -I/usr/include/c++/14.2.0/x86_64-slackware-linux -I/usr/include/c++/14.2.0/backward -I/usr/lib64/gcc/x86_64-slackware-linux/14.2.0/include -I/usr/local/include -I/usr/lib64/gcc/x86_64-slackware-linux/14.2.0/include-fixed -I/usr/include sudo.h -o moc_sudo.cpp
 g++ -c -pipe -O2 -m64 -march=x86-64 -mtune=generic -fPIC -g -Wall -Wextra -mno-direct-extern-access -D_REENTRANT -DQT_DEPRECATED_WARNINGS -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING -DQT_NO_CAST_FROM_BYTEARRAY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o qrc_qmake_qmake_qm_files.o qrc_qmake_qmake_qm_files.cpp
 g++ -c -pipe -O2 -m64 -march=x86-64 -mtune=generic -fPIC -g -Wall -Wextra -mno-direct-extern-access -D_REENTRANT -DQT_DEPRECATED_WARNINGS -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING -DQT_NO_CAST_FROM_BYTEARRAY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o moc_sudo.o moc_sudo.cpp
 g++ -c -pipe -O2 -m64 -march=x86-64 -mtune=generic -fPIC -g -Wall -Wextra -mno-direct-extern-access -D_REENTRANT -DQT_DEPRECATED_WARNINGS -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING -DQT_NO_CAST_FROM_BYTEARRAY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I. -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o moc_passworddialog.o moc_passworddialog.cpp
 g++ -L/usr/lib64 -L/usr/local/lib64 -Wl,-rpath,/usr/lib64 -Wl,-rpath-link,/usr/lib64 -o qt-sudo  main.o passworddialog.o sudo.o qrc_qmake_qmake_qm_files.o moc_passworddialog.o moc_sudo.o   -lutil /usr/lib64/libQt6Widgets.so /usr/lib64/libQt6Gui.so /usr/lib64/libQt6Core.so -lpthread -lGLX -lOpenGL   
-/usr/bin/qmake6 -install qinstall -exe qt-sudo /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/package-qt-sudo/usr/bin/qt-sudo
+/usr/bin/qmake6 -install qinstall -exe qt-sudo /home/omen/GITHUB/One4All_SlackBuild/qt-sudo/package-qt-sudo/usr/bin/qt-sudo
 cp: cannot stat 'AUTHORS ChangeLog Changelog CHANGELOG COPYING COPYRIGHT CONFIGURATION* CONTRIBUTING* *FAQ* GPL* HACKING index.ht* *INDEX* INSTALL* License* LICENSE* *README* *Readme* *RELEASE* TODO VERSION': No such file or directory
 
 Slackware package maker, version 3.14159265.
@@ -237,7 +237,7 @@ directory ownerships to root.root ([y]es, [n]o)? n
 
 WARNING: rpath found in ./usr/bin/qt-sudo:   RPATH                /usr/lib64
 
-Creating Slackware package:  /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz
+Creating Slackware package:  /home/omen/GITHUB/One4All_SlackBuild/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz
 
 ./
 install/
@@ -250,14 +250,14 @@ usr/doc/
 usr/doc/qt-sudo-2.0.1/
 usr/doc/qt-sudo-2.0.1/qt-sudo.SlackBuild
 
-Slackware package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz created.
+Slackware package /home/omen/GITHUB/One4All_SlackBuild/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz created.
 
 
 +==============================================================================
-| Upgrading qt-sudo-2.0.1-x86_64-1_rtz package using /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz
+| Upgrading qt-sudo-2.0.1-x86_64-1_rtz package using /home/omen/GITHUB/One4All_SlackBuild/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz
 +==============================================================================
 Pre-installing package qt-sudo-2.0.1-x86_64-1_rtz...
-Removing package: qt-sudo-2.0.1-x86_64-1_rtz-upgraded-2024-09-29,11:38:54
+Removing package: qt-sudo-2.0.1-x86_64-1_rtz-upgraded-2024-11-07,16:55:30
 Verifying package qt-sudo-2.0.1-x86_64-1_rtz.tlz.
 Installing package qt-sudo-2.0.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
@@ -269,10 +269,10 @@ PACKAGE DESCRIPTION:
 Executing install script for qt-sudo-2.0.1-x86_64-1_rtz.tlz.
 Font directories:
 	/usr/share/fonts
-/usr/share/fonts: caching, new cache contents: 0 fonts, 13 dirs
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
 /usr/share/fonts/100dpi: caching, new cache contents: 398 fonts, 0 dirs
 /usr/share/fonts/75dpi: caching, new cache contents: 398 fonts, 0 dirs
-/usr/share/fonts/OTF: caching, new cache contents: 167 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 72 fonts, 0 dirs
 /usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
 /usr/share/fonts/TTF: caching, new cache contents: 473 fonts, 3 dirs
 /usr/share/fonts/TTF/cantarell: caching, new cache contents: 6 fonts, 0 dirs
@@ -284,15 +284,11 @@ Font directories:
 /usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
 /usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
 /usr/share/fonts/misc: caching, new cache contents: 144 fonts, 0 dirs
-/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 1 dirs
-/usr/share/fonts/opentype/fira: caching, new cache contents: 97 fonts, 0 dirs
-/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 1 dirs
-/usr/share/fonts/truetype/roboto-slab: caching, new cache contents: 4 fonts, 0 dirs
 /usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
 /var/cache/fontconfig: cleaning cache directory
 /root/.cache/fontconfig: not cleaning non-existent cache directory
 /root/.fontconfig: not cleaning non-existent cache directory
 /usr/bin/fc-cache: succeeded
 Package qt-sudo-2.0.1-x86_64-1_rtz.tlz installed.
-Package qt-sudo-2.0.1-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/AUTO_SLACKBUILD/hacks/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz.
-Build process completed in 0 minutes and 11 seconds.
+Package qt-sudo-2.0.1-x86_64-1_rtz upgraded with new package /home/omen/GITHUB/One4All_SlackBuild/qt-sudo/binary-qt-sudo-2.0.1/qt-sudo-2.0.1-x86_64-1_rtz.tlz.
+Build process completed in 0 minutes and 10 seconds.

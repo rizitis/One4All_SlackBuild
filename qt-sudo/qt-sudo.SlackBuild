@@ -593,6 +593,8 @@ DOCS="AUTHORS ChangeLog Changelog CHANGELOG COPYING COPYRIGHT CONFIGURATION* CON
 
 
   set -e
+UMASKBKP=$(umask)
+umask 0022
 
 # default most of times exept custom_build() or if you build as user (no chrooting)#
 download_src
@@ -620,6 +622,8 @@ pkg_install
 sig_package
 clean_src
 
+
+umask ${UMASKBKP}
 # Calculate and display build time
 end_time=$(date +%s)
 elapsed_time=$((end_time - start_time))

@@ -1,4 +1,8 @@
 #!/bin/bash
+# shellcheck disable=SC2046
+# shellcheck disable=SC2086
+# shellcheck disable=SC2140
+
 
 Packager="Anagnostakis Ioannis (rizitis@gmail.com) GR"
    # All rights reserved 08/2024
@@ -58,6 +62,8 @@ VERSION=3.3.3
 PRGNAM=aegisub
 # If not special SRCNAM needed then we use the same name as PRGNAM.
 SRCNAM=aegisub-v3.3.3-x86-64.AppImage
+# mdsum, if exist or empty.
+MDSCHK= 
 # Download link if use AUTO_UPD then SRCmust be empty
 SRCURL="https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1683370141/aegisub-v3.3.3-x86-64.AppImage?response-content-disposition=attachment%3B%2520aegisub-v3.3.3-x86-64.AppImage&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20241103%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241103T200807Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=7e13176b2e7def3ea861cdac150e55fc851b556a888c3ac26e1b3341c4eafb68"
 #
@@ -662,6 +668,50 @@ prepare_build(){
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
 	rm -rf "$TMP"/$PRGNAM-"$VERSION"
 
+# Check if MDSCHK is empty
+if [ -z "$MDSCHK" ]; then
+  echo "NO MDSCHK provided. Proceeding without it: $MDSCHK"
+else
+  # Possible filenames to check
+  possible_files=(
+    "$PRGNAM-$VERSION.$COMPRESS"
+    "$SRCNAM-$VERSION.$COMPRESS"
+    "$PRGNAM.$COMPRESS"
+    "$SRCNAM.$COMPRESS"
+    "$PRGNAM"
+    "$SRCNAM"
+  )
+
+  # Find the first existing file
+  found_file=""
+  for file in "${possible_files[@]}"; do
+    if [[ -f "$file" ]]; then
+      found_file="$file"
+      break  # Exit the loop as soon as we find an existing file
+    fi
+  done
+
+  # Verify checksum if a file was found
+  if [[ -n "$found_file" ]]; then
+    echo "Found file: $found_file. Checking MD5..."
+    if echo "$MDSCHK  $found_file" | md5sum -c -; then
+      echo "Checksum matches for $found_file. Proceeding..."
+      exit 0  # Exit successfully if checksum matches
+    else
+      echo "Checksum verification failed for $found_file."
+    fi
+  else
+    echo "No file found. Preparing to re-download..."
+  fi
+
+  # Delete possible files and re-download if checksum fails or no file found
+  echo "Deleting existing files and re-downloading..."
+  for file in "${possible_files[@]}"; do
+    rm -rf "$file"
+  done
+  download_src  # Call the function to re-download sources
+fi
+
 	get_out() {
     if [ -f "$1" ] ; then
         case "$1" in
@@ -896,6 +946,13 @@ NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
 #DOCS_DIR="docs DOCS"
 
   set -e
+  
+UMASKBKP=$(umask)
+umask 0022
+
+# For future TODO use...
+DEPCHK=""
+OPTDEP=""
 
 # default most of times exept custom_build() or if you build as user (no chrooting)#
 download_src
@@ -928,6 +985,7 @@ package_build
 sig_package
 clean_src
 
+umask ${UMASKBKP}
 # Calculate and display build time
 end_time=$(date +%s)
 elapsed_time=$((end_time - start_time))
