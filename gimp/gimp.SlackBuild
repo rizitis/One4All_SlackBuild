@@ -177,6 +177,9 @@ EOF
      --prefix=/usr \
      --sysconfdir=/etc \
      -Denable-multiproc=true \
+     -Denable-console-bin=false \
+     -Drelocatable-bundle=platform-default \
+     -Dcheck-update=no \
      -Dvala=enabled \
      -Dwebp=enabled \
      -Djpeg2000=enabled \
@@ -184,7 +187,7 @@ EOF
      -Dghostscript=enabled \
      -Dfits=enabled \
      -Dheif=enabled \
-     -Denable-default-bin=enabled \
+     -Denable-default-bin=disabled \
      -Dopenmp=enabled \
      -Dprint=true \
      -Dheadless-tests=enabled \
@@ -193,6 +196,7 @@ EOF
      -Dvector-icons=true \
      -Djavascript=enabled \
      -Dlua=true \
+     -Dwith-sendmail="" \
      -Dicc-directory="" \
      -Dstrip=true
    "${NINJA:=ninja}" "$NUMJOBS"

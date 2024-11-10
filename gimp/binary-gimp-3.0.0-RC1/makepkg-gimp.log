@@ -1,16 +1,8 @@
 
-Sun Nov 10 18:12:49 EET 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
+Sun Nov 10 19:33:33 EET 2024 Anagnostakis Ioannis (rizitis@gmail.com) GR
 Slackware package maker, version 3.14159265.
 
 Searching for symbolic links:
-usr/bin/gimp	gimp-3.0
-usr/bin/gimp-3	gimp-3.0
-usr/bin/gimp-console	gimp-console-3.0
-usr/bin/gimp-console-3	gimp-console-3.0
-usr/bin/gimp-test-clipboard	gimp-test-clipboard-3.0
-usr/bin/gimp-test-clipboard-3	gimp-test-clipboard-3.0
-usr/bin/gimptool	gimptool-3.0
-usr/bin/gimptool-3	gimptool-3.0
 usr/lib64/libgimp-3.0.so	libgimp-3.0.so.0
 usr/lib64/libgimp-3.0.so.0	libgimp-3.0.so.0.0.0
 usr/lib64/libgimp-scriptfu-3.0.so	libgimp-scriptfu-3.0.so.0
@@ -31,35 +23,9 @@ usr/lib64/libgimpui-3.0.so	libgimpui-3.0.so.0
 usr/lib64/libgimpui-3.0.so.0	libgimpui-3.0.so.0.0.0
 usr/lib64/libgimpwidgets-3.0.so	libgimpwidgets-3.0.so.0
 usr/lib64/libgimpwidgets-3.0.so.0	libgimpwidgets-3.0.so.0.0.0
-usr/libexec/gimp-debug-tool	gimp-debug-tool-3.0
-usr/libexec/gimp-debug-tool-3	gimp-debug-tool-3.0
-usr/man/man1/gimp-3.1.gz	gimp-3.0.1.gz
-usr/man/man1/gimp-console-3.1.gz	gimp-console-3.0.1.gz
-usr/man/man1/gimp-console.1.gz	gimp-console-3.0.1.gz
-usr/man/man1/gimp.1.gz	gimp-3.0.1.gz
-usr/man/man1/gimptool-3.1.gz	gimptool-3.0.1.gz
-usr/man/man1/gimptool.1.gz	gimptool-3.0.1.gz
-usr/man/man5/gimprc-3.5.gz	gimprc-3.0.5.gz
-usr/man/man5/gimprc.5.gz	gimprc-3.0.5.gz
 usr/share/doc/gimp-3.0/images/gimp-logo.png	/usr/share/gimp/3.0/images/gimp-logo.png
 
 Making symbolic link creation script:
-( cd usr/bin ; rm -rf gimp )
-( cd usr/bin ; ln -sf gimp-3.0 gimp )
-( cd usr/bin ; rm -rf gimp-3 )
-( cd usr/bin ; ln -sf gimp-3.0 gimp-3 )
-( cd usr/bin ; rm -rf gimp-console )
-( cd usr/bin ; ln -sf gimp-console-3.0 gimp-console )
-( cd usr/bin ; rm -rf gimp-console-3 )
-( cd usr/bin ; ln -sf gimp-console-3.0 gimp-console-3 )
-( cd usr/bin ; rm -rf gimp-test-clipboard )
-( cd usr/bin ; ln -sf gimp-test-clipboard-3.0 gimp-test-clipboard )
-( cd usr/bin ; rm -rf gimp-test-clipboard-3 )
-( cd usr/bin ; ln -sf gimp-test-clipboard-3.0 gimp-test-clipboard-3 )
-( cd usr/bin ; rm -rf gimptool )
-( cd usr/bin ; ln -sf gimptool-3.0 gimptool )
-( cd usr/bin ; rm -rf gimptool-3 )
-( cd usr/bin ; ln -sf gimptool-3.0 gimptool-3 )
 ( cd usr/lib64 ; rm -rf libgimp-3.0.so )
 ( cd usr/lib64 ; ln -sf libgimp-3.0.so.0 libgimp-3.0.so )
 ( cd usr/lib64 ; rm -rf libgimp-3.0.so.0 )
@@ -100,26 +66,6 @@ Making symbolic link creation script:
 ( cd usr/lib64 ; ln -sf libgimpwidgets-3.0.so.0 libgimpwidgets-3.0.so )
 ( cd usr/lib64 ; rm -rf libgimpwidgets-3.0.so.0 )
 ( cd usr/lib64 ; ln -sf libgimpwidgets-3.0.so.0.0.0 libgimpwidgets-3.0.so.0 )
-( cd usr/libexec ; rm -rf gimp-debug-tool )
-( cd usr/libexec ; ln -sf gimp-debug-tool-3.0 gimp-debug-tool )
-( cd usr/libexec ; rm -rf gimp-debug-tool-3 )
-( cd usr/libexec ; ln -sf gimp-debug-tool-3.0 gimp-debug-tool-3 )
-( cd usr/man/man1 ; rm -rf gimp-3.1.gz )
-( cd usr/man/man1 ; ln -sf gimp-3.0.1.gz gimp-3.1.gz )
-( cd usr/man/man1 ; rm -rf gimp-console-3.1.gz )
-( cd usr/man/man1 ; ln -sf gimp-console-3.0.1.gz gimp-console-3.1.gz )
-( cd usr/man/man1 ; rm -rf gimp-console.1.gz )
-( cd usr/man/man1 ; ln -sf gimp-console-3.0.1.gz gimp-console.1.gz )
-( cd usr/man/man1 ; rm -rf gimp.1.gz )
-( cd usr/man/man1 ; ln -sf gimp-3.0.1.gz gimp.1.gz )
-( cd usr/man/man1 ; rm -rf gimptool-3.1.gz )
-( cd usr/man/man1 ; ln -sf gimptool-3.0.1.gz gimptool-3.1.gz )
-( cd usr/man/man1 ; rm -rf gimptool.1.gz )
-( cd usr/man/man1 ; ln -sf gimptool-3.0.1.gz gimptool.1.gz )
-( cd usr/man/man5 ; rm -rf gimprc-3.5.gz )
-( cd usr/man/man5 ; ln -sf gimprc-3.0.5.gz gimprc-3.5.gz )
-( cd usr/man/man5 ; rm -rf gimprc.5.gz )
-( cd usr/man/man5 ; ln -sf gimprc-3.0.5.gz gimprc.5.gz )
 ( cd usr/share/doc/gimp-3.0/images ; rm -rf gimp-logo.png )
 ( cd usr/share/doc/gimp-3.0/images ; ln -sf /usr/share/gimp/3.0/images/gimp-logo.png gimp-logo.png )
 
@@ -152,24 +98,6 @@ removed './usr/lib64/libgimpwidgets-3.0.so.0'
 removed './usr/lib64/libgimpmath-3.0.so'
 removed './usr/lib64/libgimp-scriptfu-3.0.so'
 removed './usr/lib64/libgimpmath-3.0.so.0'
-removed './usr/libexec/gimp-debug-tool-3'
-removed './usr/libexec/gimp-debug-tool'
-removed './usr/bin/gimp-console-3'
-removed './usr/bin/gimp-test-clipboard'
-removed './usr/bin/gimptool'
-removed './usr/bin/gimptool-3'
-removed './usr/bin/gimp-test-clipboard-3'
-removed './usr/bin/gimp-console'
-removed './usr/bin/gimp-3'
-removed './usr/bin/gimp'
-removed './usr/man/man1/gimp-3.1.gz'
-removed './usr/man/man1/gimp-console.1.gz'
-removed './usr/man/man1/gimp-console-3.1.gz'
-removed './usr/man/man1/gimptool-3.1.gz'
-removed './usr/man/man1/gimptool.1.gz'
-removed './usr/man/man1/gimp.1.gz'
-removed './usr/man/man5/gimprc-3.5.gz'
-removed './usr/man/man5/gimprc.5.gz'
 removed './usr/share/doc/gimp-3.0/images/gimp-logo.png'
 
 Updating your ./install/doinst.sh...
@@ -201,7 +129,6 @@ install/slack-desc
 usr/
 usr/bin/
 usr/bin/gimp-3.0
-usr/bin/gimp-console-3.0
 usr/bin/gimp-script-fu-interpreter-3.0
 usr/bin/gimp-test-clipboard-3.0
 usr/bin/gimptool-3.0
@@ -978,7 +905,6 @@ usr/libexec/gimp-debug-tool-3.0
 usr/man/
 usr/man/man1/
 usr/man/man1/gimp-3.0.1.gz
-usr/man/man1/gimp-console-3.0.1.gz
 usr/man/man1/gimptool-3.0.1.gz
 usr/man/man5/
 usr/man/man5/gimprc-3.0.5.gz
