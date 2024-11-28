@@ -1,3 +1,5 @@
+# IT WILL MOVE TO https://github.com/rizitis/PLASMA_WORLD
+
 # One4All_SlackBuild
 
   *(personal project)*
